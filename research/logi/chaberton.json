@@ -1,0 +1,45 @@
+{
+  "base": [
+    {"t": "Top: Mont Chaberton, 3131 m, grens Italië (Fenils/Claviere, regio Susa) – Frankrijk (Montgenèvre), oude Italiaanse militaire weg naar het hoogste fort van de Alpen.", "u": "https://en.wikipedia.org/wiki/Mont_Chaberton"},
+    {"t": "Twee toegangsroutes: vanaf Fenils (IT, 1.295 m) over de historische strada militare di Val Morino, 13 km / ~1.836 hm; of vanaf Claviere/Montgenèvre lopend via de 'via normale', 15-16 km retour / ~1.260-1.280 hm.", "u": "https://www.cycling-challenge.com/mont-chaberton/"},
+    {"t": "Tegenstrijdig: Cycling Challenge en Club des Cent Cols beschrijven de Fenils-weg als (deels) berijdbaar mits duwen op het bovenste stuk; Comune-bronnen en Val Susa Oggi melden dat diezelfde weg sinds een grondverzakking in juli 2019 'non agibile' (niet begaanbaar) is en geen heropeningsdatum heeft.", "u": "https://www.valsusaoggi.it/monte-chaberton-vietato-laccesso-al-forte-problemi-di-sicurezza/"},
+    {"t": "Gemotoriseerd verkeer op de strada militare is al sinds 1987 verboden boven Pra Claud; het is dus sowieso een gravel/MTB-only weg, geen berijdbare autoweg.", "u": "https://www.cycling-challenge.com/mont-chaberton/"},
+    {"t": "Route via Batteria Alta (alternatief vanaf Claviere) was in 2026 gesloten wegens onderhoudswerkzaamheden.", "u": "https://www.montechaberton.it/lo-chaberton/itinerari-di-salita"}
+  ],
+  "sleep": [
+    {"t": "Rifugio La Capanna, Strada Gimont 15, Claviere – 500 m van het centrum, restaurant, 49 bedden, zomer met auto bereikbaar en parkeren bij de deur.", "u": "https://ospitalitareligiosa.it/en/structures/ad/la-capanna,3017"},
+    {"t": "Diverse hotels/B&B's in Claviere zelf (Hotel Bes & Spa, Hotel Piccolo Chalet, Hotel Al Foiron) – geen specifieke fietsvriendelijke voorzieningen bevestigd, wel fietsverhuur genoemd bij Hotel Bes & Spa.", "u": "https://www.booking.com/city/it/claviere.html"}
+  ],
+  "park": [
+    {"t": "Claviere: groot plein aan de onderkant van het dorp bij vertrek Gorge di San Gervasio-hangbruggen, of onverhard pleintje net na de brug over de Rio Secco.", "u": "https://invalchisone.it/06-Chaberton%20Alpinistica.htm"},
+    {"t": "Montgenèvre (Franse kant): parkeren aan de Rue des Baïsses, ca. 100 m voor het knooppunt met de wandelroute naar de top.", "u": "https://www.altituderando.com/Mont-Chaberton-3131m-a-la-frontiere-avec-l-Italie"},
+    {"t": "Laadpaal (EV) bij Montgenèvre: eborn-laadpunt aan Place du Bivouac Napoléon / Route d'Italie.", "u": "https://chargemap.com/place-du-bivouac-napoleon-montgenevre.html"},
+    {"t": "Laadpaal (EV) bij Cesana Torinese (10 km van Claviere): Be Charge-laadpunt aan Viale Senatore Bouvier.", "u": "https://fr.chargemap.com/be-charge-4.html"}
+  ],
+  "water": [
+    {"t": "Geen waterpunten onderweg naar de top: officiële site van de Associazione Monte Chaberton waarschuwt expliciet voor 'totale mancanza di punti di rifornimento d'acqua' (volledig gebrek aan waterpunten).", "u": "https://www.montechaberton.it/lo-chaberton/itinerari-di-salita"},
+    {"t": "Zelfde conclusie vanuit Franse kant: 'non ci sono punti d'acqua lungo il percorso, è necessario partire provvisti' – bevoorraad vertrekken is verplicht.", "u": "https://visitvaldisusa.it/monte-chaberton-val-di-susa/"},
+    {"t": "De route kruist wel vroeg de Rio Secco-vallei, maar dit is geen bevestigd drinkwaterpunt.", "u": "https://www.altituderando.com/Mont-Chaberton-3131m-a-la-frontiere-avec-l-Italie"}
+  ],
+  "food": [
+    {"t": "Rifugio La Capanna in Claviere: restaurant met huisgemaakte gerechten, bar, halfpension mogelijk.", "u": "https://ospitalitareligiosa.it/en/structures/ad/la-capanna,3017"},
+    {"t": "Restaurant Gallo Cedrone in Claviere-centrum voor diner.", "u": "https://www.bcoolguide.com/loc/claviere/"},
+    {"t": "Geen bevoorrading onderweg of op de top – meeneemproviand verplicht (zie water).", "u": null}
+  ],
+  "season": [
+    {"t": "Hoofdseizoen juli-augustus; juni geldt als risicovol vanwege sneeuwvelden op de route.", "u": "https://www.summitpost.org/chaberton/155316"},
+    {"t": "Zelfs in de zomer en tot in oktober ligt er nog ijs in de tunnels en gangen van het fort ('much live ice in corridors and staircases').", "u": "https://www.summitpost.org/chaberton/155316"},
+    {"t": "Weersomslag kan snel gaan boven de 3.000 m; wind is een constante factor volgens meerdere beklimmingsverslagen.", "u": "https://centcols.org/en/mont-chaberton/"},
+    {"t": "Forte dello Chaberton (het gebouw zelf, niet de weg) is sinds 25 augustus 2025 tot nader order gesloten voor bezoekers wegens instortingsgevaar – ordonnantie van de gemeente Montgenèvre.", "u": "https://www.valsusaoggi.it/monte-chaberton-vietato-laccesso-al-forte-problemi-di-sicurezza/"}
+  ],
+  "gpx": [
+    {"t": "Komoot-tour 'Val di Susa: Tour 1 – Auf den Mont Chaberton', 31,7 km, 1.830 hm, MTB-getagd (niet officieel gravel), zwaar, met een niet-berijdbaar stuk van 136 m.", "u": "https://www.komoot.com/tour/186792393"},
+    {"t": "Komoot-tour 'MTB-Tour auf den Mont Chaberton', 32,9 km, 2.050 hm, MTB-getagd, zwaar, drie stukken met fietsverbod/onberijdbaarheid.", "u": "https://www.komoot.com/tour/177248305"}
+  ],
+  "quotes": [
+    {"who": "Fietser/redactie, Club des Cent Cols", "q": "Be open-minded and unselfish enough to climb to the summit at 3131 m - you won't regret it!", "tr": "Sta open en onbaatzuchtig genoeg om de top op 3131 m te beklimmen - je zult er geen spijt van krijgen!", "url": "https://centcols.org/en/mont-chaberton/"},
+    {"who": "qpeer-fotobijschrift, quaeldich.de", "q": "Mont Chaberton 3131 m - absolut unfahrbar", "tr": "Mont Chaberton 3131 m - absoluut onberijdbaar", "url": "https://mein.quaeldich.de/qpeer/bilder/?BildID=80744"},
+    {"who": "Wandelaar 'Croziflette', altituderando.com, juli 2025", "q": "Très belle randonnée pour l'aspect historique... trop de monde le week-end", "tr": "Heel mooie tocht vanwege het historische aspect... te druk in het weekend", "url": "https://www.altituderando.com/Mont-Chaberton-3131m-a-la-frontiere-avec-l-Italie"}
+  ],
+  "gap": "Grootste onzekerheid: de status van de historische strada militare (Fenils-kant) is tegenstrijdig – oudere fietsverslagen (2008-2020, Cycling Challenge, Cent Cols, Komoot-tours) beschrijven hem als berijdbaar (met veel duwen), maar recentere Italiaanse bronnen (comune/vereniging) melden dat diezelfde weg sinds een aardverschuiving in 2019 'non agibile' is zonder heropeningsdatum - onduidelijk of dit inmiddels weer beter is. Vrijwel alle geraadpleegde bronnen zijn wandelaars, comune's of MTB-toerders, geen gravelrijders op 650b x 55mm: de twee Komoot-tracks zijn getagd als 'mountain bike', niet als gravel, en meerdere bronnen noemen expliciet stukken die alleen lopend/duwend te nemen zijn - op smalle gravelbanden is dit vermoedelijk voor het grootste deel een hike-a-bike boven de 2.000 m. EV-laadpalen bij Montgenèvre en Cesana zijn bevestigd via Chargemap, maar actuele beschikbaarheid/status (werkend, bezet, prijs) kon niet worden geverifieerd. Geen prijzen voor Rifugio La Capanna gevonden - alleen op aanvraag. Fort zelf is sinds aug 2025 gesloten voor bezoekers (instortingsgevaar), de weg/klim naar de top blijft voor wandelaars wel toegestaan."
+}

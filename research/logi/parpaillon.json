@@ -1,0 +1,133 @@
+{
+  "base": [
+    {
+      "t": "Noordkant vanuit Embrun/Crévoux is duidelijk vriendelijker dan de zuidkant: 25 km en 1.850 hm met de laatste 8,5 km onverhard, tegen 18 km en 1.360 hm vanuit Jausiers-kant met 11 km rotsig gravel en meer 4x4-schade.",
+      "u": "https://bike-cafe.fr/2017/08/gravel-cols-mythiques-le-parpaillon/"
+    },
+    {
+      "t": "Twee toegangswegen naar de tunnel, verbonden door dezelfde militaire weg: via Crévoux (noord, Hautes-Alpes) of via La Condamine-Châtelard/Jausiers (zuid, Ubaye) — geen andere gemotoriseerde route over de col.",
+      "u": "https://www.lacondaminechatelard.fr/col-et-tunnel-du-parpaillon.html"
+    },
+    {
+      "t": "De militaire weg is al jaren niet onderhouden en de staat ervan laat te wensen over; mountainbike wordt sterk aangeraden, wandelen blijft mogelijk ook als de weg voor voertuigen dicht is.",
+      "u": "https://provence-alpes-cotedazur.com/en/things-to-do/water-activities/lakes/serre-poncon/parpaillon-tunnel/"
+    }
+  ],
+  "sleep": [
+    {
+      "t": "Hôtel Le Parpaillon, Le Village, Crévoux: 21 kamers, restaurant met streekkeuken, gratis parkeren op eigen terrein, fietsenverhuur.",
+      "u": "https://www.fr.lastminute.com/hotel/france/crevoux/hotel-le-parpaillon_hid-686859"
+    },
+    {
+      "t": "Gîte Les Mélèzes in Crévoux (1.600 m): zelfstandige verdieping in een dorpshuis, parkeren op enkele meters op eigen terrein, dorpswinkel op 200 m.",
+      "u": "https://www.gites-de-france-hautes-alpes.com/location-vacances-Gite-Les-Melezes-a-Crevoux-05G6332.html"
+    },
+    {
+      "t": "Meerdere andere Gîtes de France in Crévoux beschikbaar (Le Méale, Les Bardeaux, Le Chalet e.a.), stuk voor stuk in het dorp op 1.600 m.",
+      "u": "https://www.gites-de-france-hautes-alpes.com/recherche/locations-vacances-gites-crevoux,type-g,insee-05044.html"
+    }
+  ],
+  "park": [
+    {
+      "t": "Embrun heeft 12 laadpunten (Chargemap): netwerken eborn, EVzen en Qovoltis; 3 snellaadpunten >43 kW, waaronder een 180 kW-lader bij Super U Embrun (Avenue des Métiers 25).",
+      "u": "https://chargemap.com/en-us/cities/embrun-FR"
+    },
+    {
+      "t": "Crévoux heeft slechts 1 laadpunt (eborn, Rue L..., basislaadsnelheid) — voor snelladen dus beter in Embrun blijven vóór het vertrek naar de klim.",
+      "u": "https://chargemap.com/en-us/cities/crevoux-FR"
+    },
+    {
+      "t": "Jausiers heeft 5 laadpunten, waaronder 1 snellader (60 kW) en een Tesla Destination Charger.",
+      "u": "https://chargemap.com/en-us/cities/jausiers-FR"
+    },
+    {
+      "t": "Parkeren bij de trailhead zelf (La Chalp / start onverhard gedeelte) wordt in geen enkele bron met adres of capaciteit bevestigd — onbevestigd.",
+      "u": null
+    }
+  ],
+  "water": [
+    {
+      "t": "Noordzijde: La Chalp (bar + fontein) net vóór het gravel-gedeelte is het laatste betrouwbare waterpunt richting de tunnel.",
+      "u": "https://bike-cafe.fr/2017/08/gravel-cols-mythiques-le-parpaillon/"
+    },
+    {
+      "t": "Bij het kerkhof van La Chalp is ook een kraan, maar die was tijdens een rit in juni 2025 niet werkend; de dorpsbak in La Chalp deed het wel.",
+      "u": "https://www.questel.co.uk/tunnel-du-parpaillon/"
+    },
+    {
+      "t": "Zuidzijde: laatste water bij de Chapelle St Anne, daarna is bevoorrading schaars tot de top; verderop richting Réals wordt een 'hut van de Spanjaarden' als pleisterplaats genoemd.",
+      "u": "https://bike-cafe.fr/2017/08/gravel-cols-mythiques-le-parpaillon/"
+    },
+    {
+      "t": "Op de tunnel/top zelf zijn geen cafés, winkels of toiletten.",
+      "u": "https://provence-alpes-cotedazur.com/en/things-to-do/water-activities/lakes/serre-poncon/parpaillon-tunnel/"
+    }
+  ],
+  "food": [
+    {
+      "t": "Dorpswinkel in Crévoux op 200 m van de gîtes in het dorp; concreet uithangbord of openingstijden niet vermeld.",
+      "u": "https://www.gites-de-france-hautes-alpes.com/location-vacances-Gite-Les-Melezes-a-Crevoux-05G6332.html"
+    },
+    {
+      "t": "Embrun heeft volledige voorzieningen (supermarkt, bakkers) als laatste grote bevoorradingsstop voor wie van het noorden komt; exact adres en openingstijden van de supermarkt kon niet bevestigd worden (bronnen geblokkeerd voor scraping).",
+      "u": null
+    },
+    {
+      "t": "Onderweg en op de tunnel zelf geen horeca; de eerstvolgende bevoorrading ligt in de dorpen aan weerszijden.",
+      "u": "https://provence-alpes-cotedazur.com/en/things-to-do/water-activities/lakes/serre-poncon/parpaillon-tunnel/"
+    }
+  ],
+  "season": [
+    {
+      "t": "De tunnel is al 120+ jaar aan beide uiteinden afgesloten met deuren tegen sneeuw/ijs (historisch hout, later staal); normaal gaan die pas begin juli open en sluiten ze bij de eerste sneeuwval in oktober.",
+      "u": "https://mairie.crevoux.fr/route-dacces-tunnel-parpaillon"
+    },
+    {
+      "t": "Actuele status wijkt sterk af van dat normale ritme: sinds 12 juli 2024 is de tunnel volledig afgesloten (ook voor voetgangers) na een instorting/steenval bij de zuidoostelijke ingang en scheuren in het metselwerk van het gewelf.",
+      "u": "https://www.mon-sejour-en-montagne.com/actualites/degats-au-tunnel-du-parpaillon-vers-une-fermeture-definitive/"
+    },
+    {
+      "t": "Expertiserapport (2024/2025): 'l'ouvrage présente un danger grave et imminent' — geen enkele hersteldatum vastgesteld; ook zomer 2025 bleef de tunnel dicht.",
+      "u": "https://alpesdusud.alpes1.com/news/hautes-alpes/108731/le-tunnel-du-parpaillon-reste-ferme"
+    },
+    {
+      "t": "Stand mei 2026: de tunnel is niet langer met de oude stalen deuren dicht, maar met betonblokken — een fysieke, ogenschijnlijk langdurige afsluiting in plaats van de seizoensgebonden sneeuwdeuren.",
+      "u": "https://www.questel.co.uk/tunnel-du-parpaillon/"
+    },
+    {
+      "t": "Voor actuele status: Département Hautes-Alpes, Antenne technique d'Eygliers, tel. 04 92 45 04 85, of de mairies van Crévoux en La Condamine-Châtelard.",
+      "u": "https://mairie.crevoux.fr/route-dacces-tunnel-parpaillon"
+    }
+  ],
+  "gpx": [
+    {
+      "t": "Komoot smarttour 'The mythical tunnel du Parpaillon', 111 km, 2.960 hm, hard/expert (10:52 u), samengesteld door Komoot met tips van lokale gebruikers.",
+      "u": "https://www.komoot.com/smarttour/e1030301608/the-mythical-tunnel-du-parpaillon"
+    },
+    {
+      "t": "Komoot-tour 'Col du Parpaillon' van gebruiker Jordi, 102 km, 3.480 hm, hard gravel, doorgaans in 2–3 dagen gereden.",
+      "u": "https://www.komoot.com/tour/47108970"
+    }
+  ],
+  "quotes": [
+    {
+      "who": "Expertiserapport geciteerd door Alpes 1, juli 2025",
+      "q": "l'ouvrage présente un danger grave et imminent",
+      "tr": "het bouwwerk vormt een ernstig en dreigend gevaar",
+      "url": "https://alpesdusud.alpes1.com/news/hautes-alpes/108731/le-tunnel-du-parpaillon-reste-ferme"
+    },
+    {
+      "who": "Vince, Vince's Cycling Stuff, mei 2026",
+      "q": "not with the old steel doors, but with ugly concrete blocks",
+      "tr": "niet meer met de oude stalen deuren, maar met lelijke betonblokken",
+      "url": "https://www.questel.co.uk/tunnel-du-parpaillon/"
+    },
+    {
+      "who": "Komoot-gebruiker, reactie op tour, 2024/2025",
+      "q": "Porter son vélo sur les éboulis est la seule option",
+      "tr": "je fiets over het puin dragen is de enige optie",
+      "url": "https://www.komoot.com/fr-fr/guide/3478719/velo-gravel-autour-de-embrun"
+    }
+  ],
+  "gap": "De meeste actuele bronnen zijn lokale nieuwssites, 4x4-forums en gemeentes over de sluiting, niet gravelrijders zelf — over de huidige rijbaarheid bestaan nauwelijks recente fietsersverslagen omdat de tunnel al sinds 12 juli 2024 dicht is. Duidelijke tegenstrijdigheid: officiële/historische bronnen (mairie Crévoux, PACA-toerisme) beschrijven een normaal seizoensritme (deuren dicht om sneeuw/ijs, open van begin juli tot de eerste sneeuw in oktober), terwijl bronnen van 2024–2026 een fysieke, structurele afsluiting met betonblokken beschrijven zonder aangekondigde hersteldatum — dit is dus geen gewone 'nog dicht vanwege ijs'-situatie maar een aanhoudende noodsluiting. Check dus altijd eerst bij de mairie of via een recent forumbericht of de tunnel deze zomer open is voordat je de rit plant. EV-laadgegevens (Chargemap) zijn wel actueel en betrouwbaar; supermarktadressen in Embrun konden niet bevestigd worden doordat de bronsites (Super U, PagesJaunes) scraping blokkeerden."
+}

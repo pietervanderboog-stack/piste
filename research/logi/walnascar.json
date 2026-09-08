@@ -1,0 +1,125 @@
+{
+ "base": [
+  {
+   "t": "Coniston is de logische basis: dorp aan het meer met winkels, pubs en de start van de verharde aanloop naar Walna Scar.",
+   "u": "https://www.visitlakedistrict.com/plan-your-visit/travel/walna-scar-car-park-near-coniston-p1221001"
+  },
+  {
+   "t": "Wie liever aan de andere kant begint: Seathwaite/Turner Hall Farm in de Duddon Valley ligt aan het zuidelijke uiteinde van de route.",
+   "u": "https://en.wikipedia.org/wiki/Walna_Scar"
+  },
+  {
+   "t": "Forumconsensus is rijden van Duddon naar Coniston, dus Coniston is ook de logische eindbestemming/overnachtingsplek.",
+   "u": "https://singletrackworld.com/forum/bike-forum/walna-scar-road-by-gravel-bike/"
+  }
+ ],
+ "sleep": [
+  {
+   "t": "YHA Coniston Holly How en YHA Coniston Coppermines: hostels in/bij het dorp.",
+   "u": "https://www.yha.org.uk/hostel/yha-coniston-holly-how"
+  },
+  {
+   "t": "Hotels/inns in het dorp: Black Bull Inn & Hotel, Crown Inn (17 kamers), Yewdale Inn.",
+   "u": "https://www.uktourismonline.co.uk/north-west-england/cumbria-lake-district/accommodation.php?town=1394"
+  },
+  {
+   "t": "Camping: Coniston Camping Hoathwaite en Coniston Park Coppice Caravan and Motorhome Club Campsite.",
+   "u": "https://www.uktourismonline.co.uk/north-west-england/cumbria-lake-district/accommodation.php?town=1394"
+  },
+  {
+   "t": "Aan de Duddon-kant: Turner Hall Campsite bij Seathwaite, direct naast de voet van de Walna Scar-track (5 pond in de honesty box).",
+   "u": "https://secretcamperuk.wordpress.com/2015/08/05/turner-hall-farm-seathwaite/"
+  }
+ ],
+ "park": [
+  {
+   "t": "Walna Scar Car Park, Bowmanstead, Coniston, LA21 8HD: pay-and-display, 70 plekken, aan het einde van een steile smalle weg vanaf het dorp; betaling via Ringo, circa 6,50 pond voor 4 uur.",
+   "u": "https://en.parkopedia.co.uk/parking/walna_scar_road_coniston/"
+  },
+  {
+   "t": "Toegangsweg naar de parking is smal met gaten in het wegdek; bij tegenliggers moet je vaak een stuk terugsteken.",
+   "u": "https://www.komoot.com/highlight/5084381"
+  },
+  {
+   "t": "Duddon-kant: kleine gratis parkeerplek aan het einde van Walna Scar Road, LA20 6EE / SD 239 696, ruimte voor circa 3-4 auto's, minder druk dan Coniston.",
+   "u": "http://sharkeysdream.co.uk/PAGES/PARKING/PARKING_SPACES_BOTTON_OF_WALNASCAR_ROAD_DUDDON.html"
+  },
+  {
+   "t": "EV-laden in Coniston: Ruskin Avenue Car Park (LA21 8EH, 2x 7kW Pod Point, operationeel) en Bluebird Car and Coach Park (LA21 8DU, 6x 7kW Voltshare); de derde locatie bij Boating Centre (LA21 8EW) stond gemeld als buiten werking.",
+   "u": "https://lakedistrict.gov.uk/explore/visitor-facilities/car-parks/evs-and-car-hire/"
+  }
+ ],
+ "water": [
+  {
+   "t": "Coop Coniston, 6 Yewdale Road, LA21 8DU, open 7 dagen per week — laatste bevoorrading in het dorp voor de klim.",
+   "u": "https://seearoundbritain.com/venues/village-stores-coniston-cumbria-la21-8du"
+  },
+  {
+   "t": "Onderweg zelf geen bevestigde waterpunten gevonden; forumdraad noemt hier niets over.",
+   "u": null
+  }
+ ],
+ "food": [
+  {
+   "t": "Newfield Inn (Seathwaite/Duddonvallei) ligt op ongeveer de helft van een lus-Komoot-route en werkt als pubstop.",
+   "u": "https://www.komoot.com/tour/704954225"
+  },
+  {
+   "t": "Wilson's in Torver wordt door een forumrijder als eindbestemming/pubstop na de afdaling naar Coniston genoemd.",
+   "u": "https://singletrackworld.com/forum/bike-forum/walna-scar-road-by-gravel-bike/"
+  },
+  {
+   "t": "Coniston zelf heeft meerdere pubs en eetgelegenheden in het dorp.",
+   "u": "https://www.uktourismonline.co.uk/north-west-england/cumbria-lake-district/accommodation.php?town=1394"
+  }
+ ],
+ "season": [
+  {
+   "t": "Walna Scar Road is een restricted byway (definitive map modification order 2011): open voor voetgangers, ruiters en fietsers, gesloten voor gemotoriseerd verkeer.",
+   "u": "https://en.wikipedia.org/wiki/Walna_Scar"
+  },
+  {
+   "t": "Rijden of berijden van een motorvoertuig op een restricted byway zonder toestemming van de grondeigenaar is strafbaar.",
+   "u": "https://lakedistrict.gov.uk/explore/plan-your-visit/rights-of-way-access/unsealed-roads/"
+  },
+  {
+   "t": "Geen officiële seizoensafsluiting gevonden voor Walna Scar Road specifiek; het is een berucht rotsig bergpad, geen doorgaande weg met winterafsluiting.",
+   "u": null
+  }
+ ],
+ "gpx": [
+  {
+   "t": "Komoot-tour 'Walna Scar Road' van Barney, mtb-rit, 19,6 km, 790 hm, start bij Torver; middenstuk bij Newfield Inn.",
+   "u": "https://www.komoot.com/tour/704954225"
+  },
+  {
+   "t": "Komoot-tour 'Walna Scar' van Steve Davies, mtb-rit, 38,6 km, 1.120 hm, zwaar, groot deel onverhard (20,7 km).",
+   "u": "https://www.komoot.com/tour/53304502"
+  },
+  {
+   "t": "Lonewalker GPX-bestand (213.gpx) van de Walna Scar Road-wandelroute; bruikbaar als lijntracé, niet fietsspecifiek.",
+   "u": "https://lonewalker.net/walkinfo.php?walk=213"
+  }
+ ],
+ "quotes": [
+  {
+   "who": "martinhutch, Singletrack World forum",
+   "q": "I would descend into Coniston, personally. I think more of that will be rideable.",
+   "tr": "Ik zou zelf afdalen naar Coniston, denk dat meer daarvan rijdbaar is",
+   "url": "https://singletrackworld.com/forum/bike-forum/walna-scar-road-by-gravel-bike/"
+  },
+  {
+   "who": "sturmeyarcher, Singletrack World forum",
+   "q": "managed to ride no more than 25% of the ascent but enjoyed a clean descent",
+   "tr": "reed niet meer dan 25% van de klim, maar had een schone afdaling",
+   "url": "https://singletrackworld.com/forum/bike-forum/walna-scar-road-by-gravel-bike/"
+  },
+  {
+   "who": "Reviewer, Parkopedia",
+   "q": "take a good run up",
+   "tr": "neem goed de aanloop (voor de steile toegangsweg naar de parking)",
+   "url": "https://www.komoot.com/highlight/5084381"
+  }
+ ],
+ "gap": "Waterpunten onderweg (tussen dorp/parking en de top) zijn nergens expliciet bevestigd — noch in forums, noch op Komoot; neem voldoende water mee vanaf Coniston of Seathwaite. EV-laadpalen in Coniston zijn wisselend gemeld: één van de drie locaties (Boating Centre) stond op het moment van bronraadpleging als buiten werking, dus check Zap-Map/Pod Point vooraf. Bronnen over de bridleway/byway-status zijn overwegend wandelaars- en Wikipedia-gericht, niet fietsspecifiek — de juridische status (restricted byway sinds 2011) is duidelijk, maar praktijkervaring van gravelrijders over toegang is dunner dan die over de rotsige ondergrond zelf."
+}

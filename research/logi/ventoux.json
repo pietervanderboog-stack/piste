@@ -1,0 +1,125 @@
+{
+ "base": [
+  {
+   "t": "Bédoin (313 m) is de vaste uitvalsbasis; de piste Graviers Blancs begint als DFCI-track vlak buiten het dorp en telt 15 km met hellingen tussen 6 en 12%.",
+   "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Montee-du-Ventoux-depuis-Bedoin-par-la-piste-des-Graviers-Blancs-descente-par-la-Combe-de-la-Grave-13332"
+  },
+  {
+   "t": "Op Komoot heet dezelfde track de \"White Gravel Trail\": 1.550 hm klimmen, grotendeels een lange, blootgestelde helling op het zuidwestflank, met een slotstuk hoger op de berg dat bij sneeuw en ijs \"particulier délicate\" wordt.",
+   "u": "https://www.komoot.com/fr-fr/highlight/5302798"
+  },
+  {
+   "t": "Chalet Reynard (1.440 m) is het scharnierpunt: hier komt de gravelpiste op de D974 uit voor het laatste asfaltstuk naar de top.",
+   "u": "https://www.provenceguide.com/restaurants/mont-ventoux/restaurant-le-chalet-reynard/provence-4603538-1.html"
+  }
+ ],
+ "sleep": [
+  {
+   "t": "Camping municipal La Pinède en een aire de camping-cars zijn de enige door de gemeente zelf genoemde overnachtingsopties op de eigen Bédoin-site; concrete hotels/gîtes met adres staan niet op deze pagina.",
+   "u": "https://www.bedoin-mont-ventoux.fr/"
+  },
+  {
+   "t": "Logis Hôtel des Pins, 171 Chemin des Crans, 84410 Bédoin — heeft een Tesla-lader op het eigen terrein.",
+   "u": "https://chargemap.com/en-us/vaucluselec-sev84-route-du-mon-ventoux-bedoin.html"
+  },
+  {
+   "t": "Gîtes des Tournillayres, 287 Chemin des Tournillayres, 84410 Bédoin.",
+   "u": "https://chargemap.com/en-us/vaucluselec-sev84-route-du-mon-ventoux-bedoin.html"
+  }
+ ],
+ "park": [
+  {
+   "t": "Startpunt voor de piste Graviers Blancs: parking bij het Office de Tourisme in Bédoin.",
+   "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Montee-du-Ventoux-depuis-Bedoin-par-la-piste-des-Graviers-Blancs-descente-par-la-Combe-de-la-Grave-13332"
+  },
+  {
+   "t": "EV-laden: publieke snellader Vauclus'elec, Route de Carpentras, 84410 Bédoin — Type 2 (22 kW) en huishoudstekker (3 kW), betaling met bankpas contactloos of Alizecharge-badge.",
+   "u": "https://chargemap.com/en-us/vaucluselec-sev84-route-du-mon-ventoux-bedoin.html"
+  },
+  {
+   "t": "Extra laadpunt vlakbij: Logis Hôtel des Pins in Bédoin heeft een Tesla-oplaadpunt op 1,2 km van de dorpslader.",
+   "u": "https://chargemap.com/en-us/vaucluselec-sev84-route-du-mon-ventoux-bedoin.html"
+  }
+ ],
+ "water": [
+  {
+   "t": "Cruciaal en expliciet bevestigd: geen waterpunt tot Chalet Reynard, alleen een café op de top.",
+   "u": "https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/"
+  },
+  {
+   "t": "Fontaine de la Grave, 1,5 km na Chalet Reynard, is het enige waterpunt in de topzone — maar viel in augustus bij 34°C droog en trok wespen aan; behandel hem als back-up, niet als vaste stop.",
+   "u": "https://www.eau-cyclisme.com/vaucluse/fontaine-de-la-grave-poi256.htm"
+  },
+  {
+   "t": "Op de top zelf is geen bevestigd waterpunt; drinkwater is er alleen bij het toilet van Chalet Reynard en bij de Fontaine de la Grave.",
+   "u": "https://www.eau-cyclisme.com/vaucluse/fontaine-de-la-grave-poi256.htm"
+  }
+ ],
+ "food": [
+  {
+   "t": "Chalet Reynard (1.440 m), Route du Mont-Ventoux, 84410 Bédoin — buiten het hoogseizoen beperkte service (bijv. 15/10–30/11 alleen ma/do/vr en weekend 12–17u), afhankelijk van het weer.",
+   "u": "https://www.provenceguide.com/restaurants/mont-ventoux/restaurant-le-chalet-reynard/provence-4603538-1.html"
+  },
+  {
+   "t": "Marché paysan in Bédoin elke vrijdag op de Place de la République — vaste bevoorradingsdag voor lokale producten.",
+   "u": "https://www.bedoin-mont-ventoux.fr/"
+  },
+  {
+   "t": "Onderweg op de klim vanaf Bédoin is de enige genoemde tussenstop Chalet Liotard, met een omweg van ± 150 hoogtemeter af en aan.",
+   "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Montee-du-Ventoux-depuis-Bedoin-par-la-piste-des-Graviers-Blancs-descente-par-la-Combe-de-la-Grave-13332"
+  }
+ ],
+ "season": [
+  {
+   "t": "Officieel: de D974 naar de top vanaf Bédoin/Sault is dit seizoen gesloten van 18 november 2025 tot 17 april 2026 (heropening rond 9:30u); de noordkant via Malaucène blijft dicht tot 13 mei 2026 in de namiddag.",
+   "u": "https://www.ventouxprovence.fr/actualites/acces-au-sommet-du-ventoux.html"
+  },
+  {
+   "t": "De halve slagboom staat bij winterse afsluiting ter hoogte van Chalet Reynard; Chalet Reynard en het skistation Mont Serein blijven met wintermateriaal het hele jaar bereikbaar.",
+   "u": "https://www.ventouxprovence.fr/en/news/access-to-the-top-of-mont-ventoux.html"
+  },
+  {
+   "t": "\"Les journées ventées font perdre de nombreux degrés supplémentaires\" — windgevoeligheid boven Chalet Reynard blijft ook buiten de officiële winterperiode een risico.",
+   "u": "https://www.ventouxprovence.fr/actualites/acces-au-sommet-du-ventoux.html"
+  },
+  {
+   "t": "Het laatste stuk vóór de top wordt bij sneeuw of ijs volgens Komoot-reviewers \"particulier délicate\" en vrijwel niet meer berijdbaar op de fiets.",
+   "u": "https://www.komoot.com/fr-fr/highlight/5302798"
+  }
+ ],
+ "gpx": [
+  {
+   "t": "VisuGPX-track \"Ascension du Mont Ventoux par les blancs graviers\", 50,5 km, 1.641 hm, complete lus vanaf Bédoin (anonieme uploader, online sinds maart 2015, 524 downloads).",
+   "u": "https://www.visugpx.com/gF4bRQn8Q9"
+  },
+  {
+   "t": "Utagawavtt-tour van RenoVaucluse, 43 km, 1.690 hm, start bij het Office de Tourisme in Bédoin, via Graviers Blancs omhoog en Combe de la Grave omlaag.",
+   "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Montee-du-Ventoux-depuis-Bedoin-par-la-piste-des-Graviers-Blancs-descente-par-la-Combe-de-la-Grave-13332"
+  },
+  {
+   "t": "Komoot-collectie \"Chalet Reynard – Graviers Blancs Trail Loop\", 46 km, 1.370 hm.",
+   "u": "https://www.komoot.com/guide/3456976/gravel-biking-around-reserve-de-biosphere-du-mont-ventoux"
+  }
+ ],
+ "quotes": [
+  {
+   "who": "ClimbBikeSki, blog, 2021",
+   "q": "There is no source of water until Chalet Reynard though there is a café at the summit.",
+   "tr": "Er is geen waterpunt tot Chalet Reynard, wel een café op de top.",
+   "url": "https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/"
+  },
+  {
+   "who": "ClimbBikeSki, blog, 2021",
+   "q": "The bottom half is very stony and it was hard to get into a rhythm.",
+   "tr": "De onderste helft is erg stenig en het was lastig om ritme te vinden.",
+   "url": "https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/"
+  },
+  {
+   "who": "Ventoux Provence (officieel)",
+   "q": "Les journées ventées font perdre de nombreux degrés supplémentaires.",
+   "tr": "Op winderige dagen voelt het nog veel kouder aan.",
+   "url": "https://www.ventouxprovence.fr/actualites/acces-au-sommet-du-ventoux.html"
+  }
+ ],
+ "gap": "Vrijwel alle gravel-specifieke bronnen (Komoot, Utagawavtt, VisuGPX) zijn VTT-toertochten of algemene fietsroutes, geen zuivere gravelverslagen op 650b×55mm — de tyre-width-waarschuwing uit climbs.json (min. 40 mm) kon niet los bevestigd worden. Sleep-sectie blijft dun: de gemeente Bédoin noemt zelf alleen camping en camperplaats; hotelnamen komen indirect via een Chargemap-omgevingslijst, niet via een hotel- of boekingssite. Fontaine de la Grave wordt door één bron als onbetrouwbaar in augustus omschreven; een tweede, onafhankelijke bevestiging ontbreekt."
+}

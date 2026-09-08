@@ -1,0 +1,39 @@
+{
+ "base": [
+  {"t":"Pas de Peyrol (1.588-1.589 m) is de hoogste verharde bergpas van het Massif Central, met parkeerplaats, openbaar toilet, bar, snackbar, restaurant en een Maison de Site over de vulkaangeschiedenis.","u":"https://www.salers-tourisme.fr/en/pas-de-peyrol"},
+  {"t":"De weg naar Pas de Peyrol is jaarlijks open van ca. 1 mei tot 1 november (weersafhankelijk, in de praktijk 1 juni–1 november volgens de officiële toegangspagina); van 1 november tot 1 mei is de col volledig afgesloten.","u":"https://www.puymary.fr/se-deplacer-et-se-stationner-puy-mary-acces/?lang=en"}
+ ],
+ "sleep": [
+  {"t":"Camping du Puy Mary in Mandailles-Saint-Julien: familiecamping (4 generaties), 3 ha beboste grond langs de rivier de Jordanne, vlakbij winkels van het dorp.","u":"https://www.camping-puymary.com/en_GB"},
+  {"t":"Gîte d'étape du Falgoux (920 m, op de camping van het dorp): 24 bedden (2 tweepersoonskamers + 2 stapelbedkamers van 10), vanaf €17-20 per bed, hele gîte huren €390; sluit eind augustus.","u":"https://espacenature-puymary.fr/fr/site/35449"}
+ ],
+ "park": [
+  {"t":"Parkeren op Pas de Peyrol is 's zomers (1 juni–30 sept.) betaald: €4 per sticker, geldig voor onbeperkt in-/uitrijden dezelfde dag; parkeren buiten het vak wordt beboet.","u":"https://www.puymary.fr/se-deplacer-et-se-stationner-puy-mary-acces/?lang=en"},
+  {"t":"Campers mogen 8 juli–21 augustus tussen 10.00 en 18.00 uur niet op Pas de Peyrol parkeren; de wegen zijn te smal voor twee campers naast elkaar, dus eenrichtingsregels gelden per tijdstip/seizoen.","u":"https://www.ffrandonnee.fr/s-informer/actualites/les-navettes-estivales-du-volcan-puy-mary-du-08-juillet-au-21-aout"}
+ ],
+ "water": [
+  {"t":"Publiek toilet op Pas de Peyrol zelf bevestigd; drinkwaterpunt specifiek in Le Falgoux is niet in het (onvolledige) register terug te vinden — meenemen vanuit Salers of Mandailles is zekerder.","u":"https://www.eau-cyclisme.com/eau-departement-cantal-d15.htm"},
+  {"t":"In Salers is een openbare fontein (Fontaine de Salers) plus openbaar toilet bevestigd als vulpunt onderweg.","u":"https://www.eau-cyclisme.com/eau-departement-cantal-d15.htm"}
+ ],
+ "food": [
+  {"t":"Buron d'Eylac (aan de voet van Puy Mary, cirque d'Eylac, ca. 5 km van de top, vlak bij GR400): Auvergne-keuken en crêpes — charcuterie, bourriols, kaas, pachades. Open half juni–half september, alleen contant/cheque, sluit bij slecht weer.","u":"https://www.hautesterrestourisme.fr/fr/fiche/restauration/buron-d-eylac-lavigerie_TFO4840203/"},
+  {"t":"Op Pas de Peyrol zelf zijn bar, snackbar en restaurant aanwezig (seizoensgebonden, betaling met kaart/contant/cheque).","u":"https://www.salers-tourisme.fr/en/pas-de-peyrol"}
+ ],
+ "season": [
+  {"t":"Wegseizoen Pas de Peyrol: circa 1 mei/1 juni tot 1 november, daarbuiten volledig gesloten door sneeuw.","u":"https://www.puymary.fr/se-deplacer-et-se-stationner-puy-mary-acces/?lang=en"},
+  {"t":"Van 8 juli tot 21 augustus rijden 9 zomerse pendelbuslijnen ('navettes du volcan') tussen dalen als Le Falgoux, Mandailles, Le Claux, Dienne en Salers en Pas de Peyrol, bedoeld om autogebruik te verminderen — geen verplichte autovrije dag, wel expliciet ontmoedigingsbeleid.","u":"https://www.ffrandonnee.fr/s-informer/actualites/les-navettes-estivales-du-volcan-puy-mary-du-08-juillet-au-21-aout"}
+ ],
+ "gpx": [
+  {"t":"Komoot-tour 'Neronne Pass – Pas de Peyrol Pass (1.589 m) loop from Saint-Projet-de-Salers', 71,9 km, 1.610 m, wegfiets-rit (overwegend asfalt), 4,8/5 (12 reviews).","u":"https://www.komoot.com/smarttour/4021828"},
+  {"t":"Komoot-tour 'Pas de Peyrol Pass (1.589 m) – Ascent to Pas de Peyrol loop from Aurillac', 106 km, 2.050 m, wegfiets-rit vanaf station Aurillac, 4 beklimmingen.","u":"https://www.komoot.com/smarttour/20792307"},
+  {"t":"Komoot Guide 'The best gravel rides in Cantal' noemt de 'Pas de Peyrol Pass Ascent Loop' vanaf Puy de Seycheuse: 65,1 km, 1.900 m, zwaar, 16 beoordelaars — de meest gerichte gravel-optie die we konden bevestigen (geen losse tourpagina meer beschikbaar, alleen via de guide).","u":"https://www.komoot.com/guide/3454103/gravel-biking-in-cantal"},
+  {"t":"Gravel-variant van de GTMC (Grande Traversée du Massif Central) loopt door de Monts du Cantal; volgens de routebeheerder gedraagt de gravel-versie zich eerder als een XC/trail-parcours met af en toe drager-werk — GPX essentieel omdat omleidingen niet bewegwijzerd zijn.","u":"https://www.la-gtmc.com/itineraire/grande-traversee-du-massif-central-gravel"}
+ ],
+ "quotes": [
+  {"who":"Vincent Reboul, Komoot, okt. 2021 (wegfietser)","q":"The last few kilometers have high percentages.","tr":"De laatste kilometers hebben hoge percentages.","url":"https://www.komoot.com/highlight/87241"},
+  {"who":"Martin Donat, Komoot, aug. 2020 (wegfietser)","q":"Inclines between twelve and 15 percent demand everything from you.","tr":"Hellingen tussen twaalf en vijftien procent vragen alles van je.","url":"https://www.komoot.com/highlight/87241"},
+  {"who":"Komoot-tourbeschrijving bij rit van Bart de Veer, gravelrit 65 km, aug. 2020","q":"You may need to push your bike for some segments of this route.","tr":"Op sommige stukken van deze route moet je je fiets mogelijk duwen.","url":"https://www.komoot.com/tour/240653662"},
+  {"who":"La-GTMC.com, officiële routebeschrijving gravel-variant","q":"il faut accepter le portage ponctuel, monter des pneus larges et robustes","tr":"je moet af en toe dragen accepteren en brede, stevige banden monteren.","url":"https://www.la-gtmc.com/itineraire/grande-traversee-du-massif-central-gravel"}
+ ],
+ "gap":"Gemengd beeld, maar minder 'tour-operator-zwaar' dan de bestaande climbs.json-flag suggereert: we vonden echte Komoot-riders (Vincent Reboul, Martin Donat, Bart de Veer) met concrete beklimmingservaringen, plus één officiële gravel-routebeschrijver (GTMC) die eerlijk is over portage. Wat ontbreekt: (1) geen enkele bron noemt expliciet een 'Pas de Peyrol sans voiture'-dag zoals de opdracht veronderstelde — wat we vonden is een zomers pendelbus-netwerk (8 juli–21 aug) plus een middag-camperverbod, geen autovrije dag voor gewone auto's; dit moet als aanname worden behandeld, niet als bevestigd feit. (2) Geen bevestigde laadpalen in Le Falgoux of Mandailles-Saint-Julien zelf (Chargemap toont 0 punten voor Le Falgoux); dichtstbijzijnde bevestigde snellaadpunten liggen in Murat (150 kW CCS, ca. 25-30 km rijden) en mogelijk Salers (bron betaalmuur, niet volledig geverifieerd). (3) Drinkwater in Le Falgoux zelf kon niet bevestigd worden — alleen Salers en het toilet op Pas de Peyrol staan in het (zelf-onbetrouwbaar verklaarde) register. (4) Elevatie/hoogte van de col wisselt tussen bronnen (1.588 m, 1.589 m, 1.592 m) — vermoedelijk afronding, geen materieel verschil. (5) Voor de GTMC-gravelvariant vonden we geen route-specifieke GPX-downloadlink, alleen een verwijzing naar de ON PISTE-app; een direct bruikbare GPX voor de 650b×55mm-kalibratie ontbreekt dus nog."
+}

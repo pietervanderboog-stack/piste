@@ -1,0 +1,42 @@
+{
+  "base": [
+    {"t":"Kobarid (Caporetto) is de logische uitvalsbasis: centraal tussen de Slovenische (Livek/Livške Ravne) en Italiaanse (Robič) toegangswegen naar Kolovrat, met hotels, restaurants en het Kobarid Museum over het Isonzofront.","u":"https://www.kobariski-muzej.si/en/frequently-asked-questions/"},
+    {"t":"Vanaf Kobarid fiets je via Idrsko 5 km klimmend naar Livek, dan nog 3 km over minder goed asfalt naar Livške Ravne, waarna een panoramaweg over de Kolovrat-richel loopt.","u":"https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"},
+    {"t":"De grens Slovenië-Italië bij Robič/Breginj kent geen structurele grenscontroles (beide landen Schengen), maar het wegdek aan de Italiaanse kant richting Breginj is op stukken slecht.","u":"https://julian-alps.com/en/tour/bike-riding/soca-valley-i2a-robidisce-route/65479065/"}
+  ],
+  "sleep": [
+    {"t":"Hotel Hvala Superior - Topli Val, in het centrum van Kobarid, geldt als fietsvriendelijk met eigen restaurant en gratis parkeren naast het hotel.","u":"https://www.hotelhvala.si/hotel-5"},
+    {"t":"Kobarid heeft een breed aanbod aan appartementen en kamers (o.a. Apartments Hlapi, Apartments Pri nas) met gemiddeld ca. 100-120 dollar per nacht in het hoogseizoen.","u":"https://www.booking.com/accommodation/city/si/kobarid.html"}
+  ],
+  "park": [
+    {"t":"In Kobarid zelf is parkeren mogelijk bij het cultureel centrum en bij de Napoleonbrug (betaald, in het hoogseizoen snel vol) of bij het kerkhof.","u":"https://www.socavalley.com/kolovrat-outdoor-museum-self-guided/"},
+    {"t":"Bij het openluchtmuseum Kolovrat zelf ligt een klein parkeerterreintje; alternatief is parkeren bij de Solarie-berghut aan de Italiaanse kant van de richel.","u":"https://www.thewalkofpeace.com/locations/ww1-outdoor-museum-kolovrat-a-view-over-the-front/"},
+    {"t":"EV-laadpunten in de regio zijn schaars en niet direct te verifiëren: Chargemap-pagina's voor Tolmin en Camping Kobarid blokkeerden toegang (402/403); onbevestigde vermelding van 4 laders (max. 11 kW) bij Chalets Nebesa, Livek.","u":null}
+  ],
+  "water": [
+    {"t":"Op de Kolovrat-richel zelf worden geen waterpunten vermeld op route- of klimsites; laatste bevestigde water is in de dorpen in de vallei (Kobarid, Idrsko).","u":"https://www.bike-alpeadria.com/povezovalne_pot/2014051615264274/"},
+    {"t":"In de bredere Soča-vallei bevestigen bikepackers voldoende drinkwaterpunten via openbare fonteinen in dorpen, twee bidons volstonden ook in de zomerhitte — maar dit gaat over de vallei, niet specifiek de kale richel.","u":"https://bikepacking.com/routes/bikepacking-slovenia/"}
+  ],
+  "food": [
+    {"t":"Hotel Hvala's restaurant Topli Val geldt als de populairste eetgelegenheid van Kobarid, gespecialiseerd in vis.","u":"https://www.tripadvisor.com/Hotel_Review-g319788-d277370-Reviews-Hotel_Hvala_Restaurant_Topli_Val_Kobarid-Kobarid_Slovenian_Littoral_Region.html"},
+    {"t":"Gostilna Žvikar (aan de weg Kobarid-Bovec, ca. 4 km voor Bovec) is populair bij fietsers en wandelaars, bekend om jota, stoofpotten en verse forel.","u":"https://zvikar.si/"},
+    {"t":"Onderweg op de Kobarid-Robič-route ligt een historische stenen drinkfontein uit 1917.","u":"https://www.komoot.com/guide/3500174/gravel-biking-around-kobarid"}
+  ],
+  "season": [
+    {"t":"Het Walk of Peace infopunt/openluchtmuseum Kolovrat is in juni open woensdag-zondag 10:00-17:00, in juli-augustus dagelijks 10:00-18:00; gesloten bij slecht weer.","u":"https://www.soca-valley.com/en/in-search-of-adventure/culture/2021011121433003/kolovrat-outdoor-museum/"},
+    {"t":"De Strava-uitdaging over de Kolovrat-klim loopt jaarlijks van 1 juni t/m 30 september; start Volče (voor Solarij), finish bij het openluchtmuseum.","u":"https://www.soca-valley.com/en/activities-presentation/tour-of-slovenia/strava-challenge/"},
+    {"t":"Een hop-on-hop-off toeristenbus die de klim naar Livške Ravne overbrugt, rijdt alleen in juli en augustus.","u":"https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"},
+    {"t":"De Giro d'Italia reed etappe 19 met de Kolovrat-klim medio juni 2022, wat aantoont dat de weg dan al sneeuwvrij en berijdbaar is; expliciete winterafsluiting kon niet worden bevestigd.","u":"https://www.komoot.com/highlight/4931687"}
+  ],
+  "gpx": [
+    {"t":"Outdooractive-route Mt. Kolovrat panoramaweg vanaf Kobarid, 40 km, 1.061 m, overwegend asfalt (72,7%)","u":"https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"},
+    {"t":"Komoot-smarttour Zanuso Bivouac - Kolovrat grensrichel-lus vanaf Tolmin, 33,6 km, 1.190 m, MTB, moeilijkheid 'hard', met afdaal-secties op glad wandelpad","u":"https://www.komoot.com/smarttour/786072"},
+    {"t":"Bike-Alpeadria route Kolovrat (Kobarid-Šmartno/Goriška Brda), 48 km, 1.360 m, asfalt en makadam, moeilijkheid 3/5","u":"https://www.bike-alpeadria.com/povezovalne_pot/2014051615264274/"}
+  ],
+  "quotes": [
+    {"who":"Fietser 'Frank', Komoot-reactie na Giro d'Italia-etappe 19, 2022","q":"The climb itself is steep and quite hard.","tr":"De klim zelf is steil en behoorlijk zwaar.","url":"https://www.komoot.com/highlight/4931687"},
+    {"who":"MTB'er, Komoot-smarttour reactie Zanuso Bivouac-lus","q":"Up in the blazing sun and down on slippery hiking trails…","tr":"Omhoog in de brandende zon en omlaag over gladde wandelpaden…","url":"https://www.komoot.com/smarttour/786072"},
+    {"who":"Bezoeker, Komoot-highlight Kolovrat Openluchtmuseum","q":"Worth visiting WW1 Outdoor museum Kolovrat, it's also free of charge.","tr":"De moeite waard om het openluchtmuseum Kolovrat te bezoeken, het is bovendien gratis.","url":"https://www.komoot.com/highlight/98772"}
+  ],
+  "gap": "Bronnen zijn overwegend wandelaars, toeristenbureaus en race-georiënteerde klimsites (Giro d'Italia, Strava-challenge), niet gravelrijders specifiek — bevestigt het bestaande aandachtspunt in climbs.json. Geen enkele bron noemt bandenmaat; de meeste routebeschrijvingen zijn asfalt-gebaseerd (72-73% verhard volgens outdooractive/bike-alpeadria) met slechts kleine gravel/makadam-stroken, dus 650b x 55mm is ruim voldoende maar overkill voor het merendeel van de klim — het echte MTB-technische stuk zit alleen in de Zanuso Bivouac-afdaling (glad wandelpad, dismount nodig). Water op de kale richel zelf is nergens bevestigd als aanwezig; reken op zelf meenemen vanaf Kobarid/Idrsko. EV-laadinfrastructuur kon niet direct worden geverifieerd (Chargemap blokkeerde toegang met 402/403) — enige aanwijzing is een laadpunt bij Chalets Nebesa in Livek (11 kW, 4 laders), onbevestigd via eigen bronbezoek. Winterafsluiting van de Kolovrat-weg zelf kon niet worden bevestigd of ontkend; enkel indirect bewijs (Giro-etappe medio juni, museum-infopunt alleen juni-augustus bemand) wijst op een praktisch seizoen van juni t/m september. Afstand/hoogtemeter-cijfers lopen tussen bronnen uiteen (40 km/1.061 m vs. 48 km/1.360 m vs. 33,6 km/1.190 m) omdat het verschillende start/eindpunten en lusvarianten betreft — geen tegenstrijdigheid maar wel drie verschillende routes, GPX-keuze hangt af van gewenste lengte en aandeel MTB-technisch terrein."
+}

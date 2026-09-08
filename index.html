@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Piste — onverharde beklimmingen op weekendafstand</title>
+<meta name="description" content="35 onverharde beklimmingen in Europa, gesorteerd op rijtijd vanaf jouw vertrekpunt. Met oordelen van rijders die er geweest zijn, bronnen bij elke bewering en logistiek per basisdorp.">
+<meta property="og:title" content="Piste — onverharde beklimmingen op weekendafstand">
+<meta property="og:description" content="Welke grindbeklimmingen zijn het waard, en passen ze in een weekend? Rijtijd eerst, bronnen bij alles.">
+<meta name="theme-color" content="#F6F3EC">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232F4A3D'/%3E%3Cpath d='M4 24 L13 11 L18 17 L22 13 L28 24 Z' fill='%23F6F3EC'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#/" aria-label="Piste, naar de kaart">
+    <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 24 L13 11 L18 17 L22 13 L28 24 Z"/></svg>
+    <span class="word">Piste</span>
+  </a>
+  <p class="tag">Onverharde beklimmingen die in een weekend passen.</p>
+  <div class="top-right">
+    <label class="from">
+      <span>Vertrek</span>
+      <select id="origin"></select>
+    </label>
+    <button class="pill" id="pickBtn" type="button" title="Kies een eigen vertrekpunt op de kaart">Eigen punt</button>
+  </div>
+</header>
+
+<main id="home">
+  <div id="map" role="region" aria-label="Kaart met beklimmingen"></div>
+
+  <div class="mapbar">
+    <div class="layers" role="group" aria-label="Kaartlaag">
+      <button data-layer="relief" aria-pressed="true">Reliëf</button>
+      <button data-layer="sat" aria-pressed="false">Satelliet</button>
+    </div>
+    <div class="legend">
+      <span><i class="dot near"></i>tot 5 uur</span>
+      <span><i class="dot mid"></i>5 tot 9 uur</span>
+      <span><i class="dot far"></i>langer</span>
+    </div>
+  </div>
+  <div class="picknote" id="picknote" hidden>Klik op de kaart om je vertrekpunt te zetten. <button type="button" id="pickCancel">Annuleren</button></div>
+
+  <aside class="drawer" id="drawer" aria-label="Beklimmingen">
+    <button class="handle" id="handle" type="button" aria-label="Lijst open- of dichtklappen"><span></span></button>
+
+    <div class="filters">
+      <div class="row">
+        <label class="range">
+          <span>Maximaal <b id="maxhv">30 uur</b> rijden</span>
+          <input type="range" id="maxh" min="2" max="30" step="0.5" value="30">
+        </label>
+      </div>
+      <div class="row chips" id="typeChips" role="group" aria-label="Soort">
+        <button data-f="alle" aria-pressed="true">Alles</button>
+        <button data-f="parallel" aria-pressed="false">Naast een bekende col</button>
+        <button data-f="puur" aria-pressed="false">Puur grind</button>
+      </div>
+      <div class="row chips" id="bikeChips" role="group" aria-label="Geschiktheid">
+        <button data-f="alle" aria-pressed="true">Elke fiets</button>
+        <button data-f="gravel" aria-pressed="false">Gravelbike prima</button>
+        <button data-f="grens" aria-pressed="false">Grensgeval</button>
+        <button data-f="mtb" aria-pressed="false">MTB slimmer</button>
+      </div>
+      <div class="row split">
+        <label class="sel"><span>Sorteer op</span>
+          <select id="sort">
+            <option value="drive">rijtijd</option>
+            <option value="alt">hoogste punt</option>
+            <option value="gravel">grindkilometers</option>
+            <option value="gain">stijging</option>
+          </select>
+        </label>
+        <label class="sel"><span>Mijn banden</span>
+          <select id="tyre">
+            <option value="55">50 mm of breder</option>
+            <option value="45">45 mm</option>
+            <option value="40">40 mm of smaller</option>
+          </select>
+        </label>
+        <label class="check"><input type="checkbox" id="ev" checked> Laadstops meerekenen</label>
+      </div>
+      <p class="tyrenote" id="tyrenote" hidden>De oordelen zijn geijkt op 55 mm. Op smallere banden tonen we ze één stap strenger.</p>
+    </div>
+
+    <div class="count"><button class="pill small" id="filtBtn" type="button" aria-expanded="true">Filters</button><b id="cnt">35</b> <span id="cntlbl">beklimmingen binnen bereik</span> <button class="linkbtn" id="share" type="button">Deel deze selectie</button></div>
+    <div class="scroll" id="scroll"><div class="list" id="list"></div><details class="notes"><summary>Hoe de rijtijden en oordelen tot stand komen</summary>
+      <p><b>Rijtijden</b> zijn schattingen: hemelsbreed maal 1,15, met 62, 85 of 100 km/u naarmate de afstand groeit, plus 20 minuten pauze per 300 km en, als je dat aanvinkt, 15 minuten laden per 300 km na de eerste 250 km. Reken op tien procent speling.</p>
+      <p><b>Overtochten</b> zijn vast meegerekend: Calais–Dover 2 uur, Hirtshals–Kristiansand 4,5 uur, Livorno–Bastia 7 uur, Livorno–Olbia 12 uur. Voor Corsica en Sardinië is vliegen en huren realistischer.</p>
+      <p><b>Oordelen</b> zijn geijkt op een gravelbike met 650b × 55 mm. <b>Citaten</b> komen van rijders die er geweest zijn en hebben allemaal een bronlink. Controleer openingsdagen, tol en sneeuw vlak voor vertrek bij de lokale bron.</p>
+      <p>Kaart: Esri World Shaded Relief en World Imagery, CARTO, OpenStreetMap-bijdragers, hoogtedata Mapzen Terrarium via AWS Open Data.</p>
+    </details></div>
+  </aside>
+</main>
+
+<section id="profile" class="profile" hidden></section>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

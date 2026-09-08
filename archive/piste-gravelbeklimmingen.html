@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PISTE — onverharde beklimmingen op rijafstand</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,ital,wght@8..60,0,400;8..60,0,600;8..60,1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#DDDBD1; --paper2:#F2F1EA; --paper3:#E7E5DB;
+  --night:#161B17; --night2:#232B25;
+  --ink:#151A16; --ink2:#525C54; --ink3:#8A9189;
+  --line:#C4C2B4; --line2:#D8D6CA;
+  --verd:#2E6B57; --verd-d:#1D4A3B; --verd-l:#5A9480;
+  --grind:#BE882A; --grind-l:#D8A745;
+  --rust:#94441F; --rust-l:#B45E33;
+  --asfalt:#3F4C54;
+  --display:"Bricolage Grotesque","Helvetica Neue",system-ui,sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --ease:cubic-bezier(.22,.9,.28,1);
+  --r:3px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* grain + contour atmosphere */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
+  mix-blend-mode:multiply}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.3;
+  background-image:repeating-linear-gradient(113deg,transparent 0 48px,rgba(46,107,87,.11) 48px 49px),
+                   repeating-linear-gradient(29deg,transparent 0 82px,rgba(148,68,31,.07) 82px 83px)}
+.wrap{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 14px 70px}
+
+/* ---------- masthead ---------- */
+.mast{position:relative;margin:0 -14px;padding:30px 20px 24px;background:var(--night);color:var(--paper2);overflow:hidden}
+.mast::before{content:"";position:absolute;inset:0;opacity:.5;
+  background-image:repeating-linear-gradient(113deg,transparent 0 26px,rgba(190,136,42,.16) 26px 27px)}
+.mast::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,var(--verd) 0 22%,var(--grind) 22% 62%,var(--rust) 62% 100%)}
+.mast-in{position:relative;max-width:1200px;margin:0 auto}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(44px,13.5vw,86px);letter-spacing:-.05em;line-height:.82;margin:0}
+h1 .dot{color:var(--grind)}
+.mast-sub{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--verd-l);margin-top:12px}
+.thesis{font-size:16.5px;max-width:54ch;margin:14px 0 0;color:#D5D8D2}
+.thesis em{font-style:italic;color:var(--grind-l)}
+.kicker{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:#7C857D;margin-top:12px}
+.reveal{opacity:0;transform:translateY(14px);animation:rise .7s var(--ease) forwards;animation-delay:calc(var(--i,0)*90ms)}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ---------- sticky toolbar ---------- */
+.tools{position:sticky;top:0;z-index:60;margin:0 -14px;padding:9px 14px;
+  background:rgba(221,219,209,.9);backdrop-filter:blur(9px);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.seg{position:relative;display:inline-flex;border:1.5px solid var(--ink);border-radius:100px;overflow:hidden;background:var(--paper2)}
+.seg button{position:relative;z-index:1;font-family:var(--mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;
+  padding:8px 17px;background:none;border:none;cursor:pointer;color:var(--ink);transition:color .3s var(--ease)}
+.seg button[aria-pressed=true]{color:var(--paper2)}
+.seg .ind{position:absolute;z-index:0;top:0;bottom:0;left:0;background:var(--ink);border-radius:100px;transition:transform .42s var(--ease),width .42s var(--ease)}
+.tbtn{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;padding:8px 14px;border:1.5px solid var(--ink);
+  background:var(--paper2);border-radius:100px;cursor:pointer;color:var(--ink);display:inline-flex;align-items:center;gap:7px;
+  transition:background .25s var(--ease),transform .18s var(--ease)}
+.tbtn:hover{background:var(--paper3)}
+.tbtn:active{transform:scale(.96)}
+.tbtn[aria-expanded=true]{background:var(--verd);border-color:var(--verd);color:var(--paper2)}
+.tbtn .chev{transition:transform .35s var(--ease)}
+.tbtn[aria-expanded=true] .chev{transform:rotate(180deg)}
+.dot-badge{background:var(--grind);color:var(--night);border-radius:100px;font-size:10px;padding:1px 6px;font-weight:600}
+.count{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--ink2);white-space:nowrap}
+.count b{color:var(--ink);font-weight:600;font-size:14px}
+
+/* ---------- filter panel ---------- */
+.panel{overflow:hidden;max-height:0;transition:max-height .45s var(--ease),opacity .3s var(--ease);opacity:0}
+.panel.open{max-height:640px;opacity:1}
+.panel-in{border:1.5px solid var(--ink);background:var(--paper2);padding:15px;margin-top:12px;
+  display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(185px,1fr))}
+.ctl .lbl{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);margin-bottom:7px}
+select{width:100%;font-family:var(--mono);font-size:13px;padding:8px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);color:var(--ink)}
+input[type=range]{width:100%;accent-color:var(--verd);height:22px}
+.rangeval{font-family:var(--mono);font-size:13px;color:var(--verd-d);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-family:var(--mono);font-size:11px;padding:5px 10px;border:1px solid var(--line);background:transparent;
+  border-radius:100px;color:var(--ink2);cursor:pointer;transition:all .25s var(--ease)}
+.chip:hover{border-color:var(--ink3)}
+.chip[aria-pressed=true]{background:var(--verd);border-color:var(--verd);color:var(--paper2)}
+.toggle{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--ink2);cursor:pointer;margin-top:9px}
+.toggle input{accent-color:var(--verd);width:16px;height:16px}
+.link{font-family:var(--mono);font-size:11px;background:none;border:none;color:var(--verd-d);text-decoration:underline;cursor:pointer;padding:0;margin-top:7px}
+:focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+
+/* ---------- map ---------- */
+.maprel{position:relative;margin-top:14px}
+#map{height:min(62vh,540px);border:1.5px solid var(--ink);background:#CFCEC4;transition:opacity .4s var(--ease)}
+.mapctl{position:absolute;z-index:500;right:9px;top:9px;display:flex;flex-direction:column;gap:5px}
+.mapbtn{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;background:rgba(242,241,234,.94);border:1.5px solid var(--ink);
+  padding:7px 11px;cursor:pointer;border-radius:var(--r);text-align:left;transition:background .2s var(--ease)}
+.mapbtn[aria-pressed=true]{background:var(--ink);color:var(--paper2)}
+.mapnote{position:absolute;z-index:500;left:9px;bottom:9px;font-family:var(--mono);font-size:10.5px;
+  background:rgba(242,241,234,.94);border:1px solid var(--line);padding:6px 9px;border-radius:var(--r);color:var(--ink2);max-width:66%}
+.pin{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;border:2px solid var(--paper2);
+  box-shadow:0 2px 7px rgba(0,0,0,.4);font-family:var(--mono);font-size:10px;font-weight:600;color:#fff;
+  animation:drop .5s var(--ease) both;cursor:pointer;transition:transform .25s var(--ease)}
+.pin:hover{transform:scale(1.18)}
+.pin.sel{transform:scale(1.32);box-shadow:0 0 0 4px rgba(22,26,22,.9),0 3px 10px rgba(0,0,0,.45)}
+@keyframes drop{from{opacity:0;transform:translateY(-16px) scale(.5)}to{opacity:1;transform:none}}
+.pin-home{width:19px;height:19px;border-radius:50%;background:var(--paper2);border:3px solid var(--ink);box-shadow:0 2px 6px rgba(0,0,0,.4)}
+.pin-home::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:1.5px solid rgba(22,26,22,.35);animation:pulse 2.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+.leaflet-popup-content-wrapper{border-radius:var(--r);font-family:var(--serif);background:var(--paper2)}
+.leaflet-popup-content{margin:11px 13px;font-size:13.5px}
+.leaflet-popup-content .pn{font-family:var(--display);font-size:16px;letter-spacing:-.025em;font-weight:700;display:block;line-height:1.15}
+.leaflet-popup-content .pm{font-family:var(--mono);font-size:11px;color:var(--ink2);margin:5px 0 7px;display:block}
+.pop-btn{font-family:var(--mono);font-size:11px;background:var(--verd);color:#fff;border:none;padding:6px 11px;border-radius:var(--r);cursor:pointer}
+
+/* ---------- horizontal strip ---------- */
+.strip{display:flex;gap:9px;overflow-x:auto;padding:12px 0 4px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.strip::-webkit-scrollbar{height:5px}
+.strip::-webkit-scrollbar-thumb{background:var(--line);border-radius:9px}
+.scard{flex:0 0 208px;scroll-snap-align:start;border:1.5px solid var(--ink);background:var(--paper2);padding:11px;
+  cursor:pointer;text-align:left;font:inherit;color:inherit;transition:transform .25s var(--ease),background .25s var(--ease);
+  opacity:0;animation:rise .5s var(--ease) forwards;animation-delay:calc(var(--i,0)*35ms)}
+.scard:hover{transform:translateY(-3px);background:var(--paper3)}
+.scard.sel{background:var(--night);color:var(--paper2);border-color:var(--night)}
+.scard.sel .sc-m{color:var(--grind-l)}
+.sc-n{font-family:var(--display);font-weight:700;font-size:14.5px;letter-spacing:-.02em;line-height:1.15;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.3em}
+.sc-m{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-top:7px}
+
+/* ---------- list ---------- */
+.list{margin-top:14px}
+.card{display:block;width:100%;font:inherit;color:inherit;text-align:left;cursor:pointer;
+  border:1.5px solid var(--ink);border-bottom:none;background:var(--paper2);padding:19px 17px;position:relative;
+  opacity:0;animation:rise .55s var(--ease) forwards;animation-delay:calc(var(--i,0)*42ms);
+  transition:background .25s var(--ease)}
+.list .card:last-child{border-bottom:1.5px solid var(--ink)}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--verd);transition:width .3s var(--ease)}
+.card:hover{background:var(--paper3)}
+.card:hover::before{width:4px}
+.card-top{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.eyebrow{font-family:var(--mono);font-size:9.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--ink3)}
+.cname{font-family:var(--display);font-weight:700;font-size:clamp(21px,4.7vw,29px);letter-spacing:-.036em;line-height:1.02;margin:6px 0 0}
+.cline{margin:8px 0 0;font-size:15px;color:var(--ink2);max-width:62ch}
+.drive{text-align:right;flex-shrink:0}
+.drive .h{font-family:var(--mono);font-size:clamp(17px,4vw,22px);font-weight:600;line-height:1;white-space:nowrap}
+.drive .l{font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-top:5px}
+
+/* signature band */
+.band{margin-top:17px}
+.band-track{position:relative;display:flex;height:17px;border:1px solid var(--ink);background:var(--paper);overflow:hidden}
+.band-track::after{content:"";position:absolute;top:0;right:0;bottom:0;width:100%;background:var(--paper2);
+  animation:wipe .85s var(--ease) forwards;animation-delay:calc(var(--i,0)*42ms + 140ms)}
+@keyframes wipe{to{width:0}}
+.sg{height:100%}
+.sg.a{background:var(--asfalt)}
+.sg.g{background:repeating-linear-gradient(90deg,var(--grind) 0 3px,var(--grind-l) 3px 6px)}
+.sg.r{background:repeating-linear-gradient(45deg,var(--rust) 0 4px,var(--rust-l) 4px 8px)}
+.band-axis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:5px}
+.band-note{font-family:var(--mono);font-size:10.5px;color:var(--ink2);margin-top:3px}
+
+.stats{display:flex;flex-wrap:wrap;margin-top:15px;border-top:1px solid var(--line2)}
+.stat{padding:10px 18px 0 0;margin-right:14px}
+.stat .v{font-family:var(--mono);font-size:15px;font-weight:600}
+.stat .k{font-family:var(--mono);font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px}
+.tag{font-family:var(--mono);font-size:10px;padding:3px 9px;border:1px solid var(--line);border-radius:100px;color:var(--ink2)}
+.tag.par{border-color:var(--verd);color:var(--verd-d)}
+.tag.puur{border-color:var(--grind);color:#8A6216}
+.tag.mtb{border-color:var(--rust);color:var(--rust)}
+.tag.done{background:var(--night);color:var(--paper2);border-color:var(--night)}
+
+/* ---------- detail sheet ---------- */
+.scrim{position:fixed;inset:0;background:rgba(19,23,20,.5);z-index:900;opacity:0;pointer-events:none;transition:opacity .3s var(--ease);backdrop-filter:blur(2px)}
+.scrim.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;z-index:1000;right:0;top:0;bottom:0;width:min(575px,100%);background:var(--paper2);
+  border-left:1.5px solid var(--ink);transform:translateX(101%);transition:transform .42s var(--ease);overflow-y:auto;overscroll-behavior:contain}
+.sheet.on{transform:none}
+.sheet-in{padding:0 21px 70px}
+.sheet-hd{position:sticky;top:0;z-index:3;background:var(--night);color:var(--paper2);margin:0 -21px 0;padding:15px 21px 17px;overflow:hidden}
+.sheet-hd::before{content:"";position:absolute;inset:0;opacity:.45;background-image:repeating-linear-gradient(113deg,transparent 0 22px,rgba(190,136,42,.18) 22px 23px)}
+.sheet-hd>*{position:relative}
+.closebtn{float:right;font-family:var(--mono);font-size:11px;background:transparent;border:1.5px solid rgba(242,241,234,.5);
+  color:var(--paper2);padding:6px 11px;cursor:pointer;border-radius:100px;transition:background .2s var(--ease)}
+.closebtn:hover{background:rgba(242,241,234,.14)}
+.sheet-hd .eyebrow{color:var(--verd-l)}
+.sheet h2{font-family:var(--display);font-weight:800;font-size:clamp(25px,6.2vw,36px);letter-spacing:-.042em;line-height:.99;margin:9px 0 8px;max-width:15ch}
+.sheet-hd .dh{font-family:var(--mono);font-size:12px;color:var(--grind-l)}
+.stag{opacity:0;animation:rise .5s var(--ease) forwards;animation-delay:calc(var(--i,0)*55ms + 120ms)}
+.verdict{border-left:3px solid var(--verd);padding:3px 0 3px 15px;margin:17px 0;font-size:16px}
+.sec{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);
+  margin:27px 0 11px;padding-bottom:6px;border-bottom:1px solid var(--line2)}
+.notes{margin:0;padding:0;list-style:none}
+.notes li{font-size:14.5px;padding:7px 0 7px 19px;position:relative;color:var(--ink2)}
+.notes li::before{content:"";position:absolute;left:0;top:15px;width:9px;height:1.5px;background:var(--grind)}
+.voice{border-top:1px solid var(--line2);padding:14px 0}
+.voice:first-of-type{border-top:none}
+.voice .who{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink3)}
+.voice blockquote{margin:6px 0;font-size:16.5px;font-style:italic}
+.voice .tr{font-size:13.5px;color:var(--ink2);margin:0 0 7px}
+.voice a{font-family:var(--mono);font-size:10.5px;color:var(--verd-d);word-break:break-all}
+
+/* ---------- profielpagina ---------- */
+.profile{border:1.5px solid var(--ink);background:var(--paper2);margin-top:12px;
+  opacity:0;animation:rise .5s var(--ease) forwards}
+.p-hd{background:var(--night);color:var(--paper2);padding:15px 20px 24px;position:relative;overflow:hidden}
+.p-hd::before{content:"";position:absolute;inset:0;opacity:.45;
+  background-image:repeating-linear-gradient(113deg,transparent 0 24px,rgba(190,136,42,.18) 24px 25px)}
+.p-hd>*{position:relative}
+.p-hd .eyebrow{color:var(--verd-l)}
+.p-hd h2{font-family:var(--display);font-weight:800;font-size:clamp(26px,6.6vw,42px);
+  letter-spacing:-.045em;line-height:.97;margin:10px 0 9px;max-width:16ch}
+.p-hd .dh{font-family:var(--mono);font-size:12px;color:var(--grind-l)}
+.backbtn{font-family:var(--mono);font-size:11px;background:transparent;border:1.5px solid rgba(242,241,234,.45);
+  color:var(--paper2);padding:6px 13px;cursor:pointer;border-radius:100px;transition:background .2s var(--ease)}
+.backbtn:hover{background:rgba(242,241,234,.15)}
+.pnav{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;border-bottom:1px solid var(--line2);
+  position:sticky;top:0;z-index:6;background:rgba(242,241,234,.96);backdrop-filter:blur(8px)}
+.pnav::-webkit-scrollbar{display:none}
+.pnav button{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--ink2);background:none;border:1px solid var(--line);border-radius:100px;padding:5px 12px;
+  white-space:nowrap;cursor:pointer;transition:all .2s var(--ease)}
+.pnav button:hover{background:var(--ink);color:var(--paper2);border-color:var(--ink)}
+.p-body{padding:6px 20px 50px}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{font-size:15px;padding:10px 0 10px 20px;position:relative;border-bottom:1px solid var(--line2);color:var(--ink)}
+.facts li:last-child{border-bottom:none}
+.facts li::before{content:"";position:absolute;left:0;top:19px;width:10px;height:1.5px;background:var(--grind)}
+a.src,span.src{font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--verd-d);border:1px solid var(--line);border-radius:100px;padding:2px 8px;
+  white-space:nowrap;text-decoration:none;margin-left:6px;display:inline-block;vertical-align:1px}
+a.src:hover{background:var(--verd);color:var(--paper2);border-color:var(--verd)}
+span.src{color:var(--ink3);border-style:dashed}
+.caveat{border-left:3px solid var(--rust);background:rgba(148,68,31,.07);padding:12px 15px;font-size:14.5px;margin-top:20px}
+.tag.logi{border-color:var(--verd);background:var(--verd);color:var(--paper2)}
+
+/* ---------- legend + footer ---------- */
+.legend{border:1.5px solid var(--ink);background:var(--paper2);padding:14px 16px;margin-top:22px;display:flex;flex-wrap:wrap;gap:17px;align-items:center}
+.lg{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;color:var(--ink2)}
+.sw{width:22px;height:11px;border:1px solid var(--ink)}
+.sw.rd{border-radius:50%;width:13px;height:13px}
+footer{margin-top:24px;font-family:var(--mono);font-size:10.5px;color:var(--ink3);line-height:1.75;max-width:74ch}
+footer b{color:var(--ink2);font-weight:500}
+.empty{border:1.5px solid var(--ink);background:var(--paper2);padding:26px 18px;text-align:center;color:var(--ink2);font-size:15px}
+.hidden{display:none !important}
+@media(max-width:640px){
+  .panel-in{grid-template-columns:1fr 1fr}
+  .ctl.wide{grid-column:1/-1}
+  .sheet{width:100%;top:auto;height:90vh;border-left:none;border-top:1.5px solid var(--ink);border-radius:11px 11px 0 0;transform:translateY(101%)}
+  .sheet.on{transform:none}
+  .count{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}
+  .reveal,.card,.scard,.stag{opacity:1 !important;transform:none !important}
+  .band-track::after{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="mast-in">
+    <h1 class="reveal" style="--i:0">PISTE<span class="dot">.</span></h1>
+    <div class="mast-sub reveal" style="--i:1"><span id="hdcount">35</span> onverharde beklimmingen · Europa</div>
+    <p class="thesis reveal" style="--i:2">De mooiste beklimmingen van Europa liggen naast de beroemde cols, niet erop. Oude militaire wegen, skiliftpistes en bospistes — <em>grind tot boven de 3000 meter</em>. Gesorteerd op wat er echt telt voor een weekend: hoe lang je in de auto zit.</p>
+    <p class="kicker reveal" style="--i:3">Oordelen geijkt op 650b × 55 mm · rijtijden inclusief laadstops en overtochten</p>
+  </div>
+</header>
+
+<div class="tools">
+  <div class="seg" id="segView"><span class="ind" id="segInd"></span>
+    <button id="btnMap" aria-pressed="true">Kaart</button>
+    <button id="btnList" aria-pressed="false">Lijst</button>
+  </div>
+  <button class="tbtn" id="filtBtn" aria-expanded="false">Filters <span class="dot-badge hidden" id="filtBadge">0</span> <span class="chev">▾</span></button>
+  <div class="count"><b id="cnt">35</b> binnen bereik</div>
+</div>
+
+<div class="panel" id="panel"><div class="panel-in">
+  <div class="ctl">
+    <span class="lbl">Vertrekpunt</span>
+    <select id="origin"></select>
+    <button class="link" id="pickBtn" type="button">of prik een punt op de kaart</button>
+  </div>
+  <div class="ctl">
+    <span class="lbl">Max rijtijd — <span class="rangeval" id="maxhv">30 u</span></span>
+    <input type="range" id="maxh" min="2" max="30" step="0.5" value="30">
+    <label class="toggle" for="ev"><input type="checkbox" id="ev" checked> laadstops meerekenen</label>
+  </div>
+  <div class="ctl">
+    <span class="lbl">Soort</span>
+    <div class="chips" id="typeChips">
+      <button class="chip" data-f="alle" aria-pressed="true">alles</button>
+      <button class="chip" data-f="parallel" aria-pressed="false">parallel aan col</button>
+      <button class="chip" data-f="puur" aria-pressed="false">puur grind</button>
+    </div>
+  </div>
+  <div class="ctl">
+    <span class="lbl">Fiets</span>
+    <div class="chips" id="bikeChips">
+      <button class="chip" data-f="alle" aria-pressed="true">alles</button>
+      <button class="chip" data-f="gravel" aria-pressed="false">gravel prima</button>
+      <button class="chip" data-f="grens" aria-pressed="false">grensgeval</button>
+      <button class="chip" data-f="mtb" aria-pressed="false">MTB slimmer</button>
+    </div>
+  </div>
+  <div class="ctl">
+    <span class="lbl">Sorteren op</span>
+    <select id="sort">
+      <option value="drive">rijtijd — kortst eerst</option>
+      <option value="alt">hoogste punt</option>
+      <option value="gravel">meeste grindkilometers</option>
+      <option value="gain">stijging</option>
+    </select>
+  </div>
+</div></div>
+
+<section id="viewMap">
+  <div class="maprel">
+    <div id="map"></div>
+    <div class="mapctl">
+      <button class="mapbtn" data-layer="relief" aria-pressed="true">Reliëf</button>
+      <button class="mapbtn" data-layer="sat" aria-pressed="false">Satelliet</button>
+      <button class="mapbtn" data-layer="plain" aria-pressed="false">Simpel</button>
+    </div>
+    <div class="mapnote" id="mapnote">Tik op een punt voor details</div>
+  </div>
+  <div class="strip" id="strip"></div>
+</section>
+
+<section id="viewList" class="hidden"><div class="list" id="list"></div></section>
+
+<section id="viewProfile" class="hidden"></section>
+
+<div class="legend">
+  <div class="lg"><span class="sw" style="background:var(--asfalt)"></span> asfalt</div>
+  <div class="lg"><span class="sw" style="background:repeating-linear-gradient(90deg,var(--grind) 0 3px,var(--grind-l) 3px 6px)"></span> grind, rolt</div>
+  <div class="lg"><span class="sw" style="background:repeating-linear-gradient(45deg,var(--rust) 0 4px,var(--rust-l) 4px 8px)"></span> ruw / los / duwen</div>
+  <div class="lg"><span class="sw rd" style="background:#2E6B57"></span> &lt; 5 u</div>
+  <div class="lg"><span class="sw rd" style="background:#BE882A"></span> 5–9 u</div>
+  <div class="lg"><span class="sw rd" style="background:#94441F"></span> &gt; 9 u</div>
+</div>
+
+<footer>
+  <b>Rijtijden</b> zijn schattingen: hemelsbreed × 1,15, gemiddeld 100 km/u op de lange stukken, plus 20 min pauze per 300 km en (indien aangevinkt) 15 min laadstop per 300 km na de eerste 250 km. Reken op ±10%.<br>
+  <b>Overzeese bestemmingen</b> zijn gerekend via een vaste overtocht: Calais–Dover (+2 u), Hirtshals–Kristiansand (+4,5 u), Livorno–Bastia (+7 u), Livorno–Olbia (+12 u). Voor Corsica en Sardinië is vliegen of ter plaatse huren realistischer dan rijden.<br>
+  <b>Hoogteprofielen</b> zijn indicatief en tonen waar het asfalt ophoudt, niet de exacte gradiënt.<br>
+  <b>Citaten</b> komen van echte fietsers en hebben allemaal een bronlink. Controleer openingsdagen, tolregelingen en sneeuwvrij-datum altijd bij de lokale bron voor vertrek.<br>
+  Kaartlagen: Esri World Shaded Relief &amp; World Imagery, CARTO, © OpenStreetMap-bijdragers.
+</footer>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+/* ============================ DATA ============================ */
+const ORIGINS = [
+  {n:"Utrecht",  lat:52.09, lng:5.12},
+  {n:"Amsterdam",lat:52.37, lng:4.90},
+  {n:"Arnhem",   lat:51.98, lng:5.91},
+  {n:"Eindhoven",lat:51.44, lng:5.48},
+  {n:"Rotterdam",lat:51.92, lng:4.48},
+  {n:"Groningen",lat:53.22, lng:6.57},
+  {n:"Antwerpen",lat:51.22, lng:4.40},
+  {n:"Brussel",  lat:50.85, lng:4.35},
+  {n:"Keulen",   lat:50.94, lng:6.96}
+];
+
+/* seg = [vanHoogte, totHoogte, soort]  soort: a=asfalt g=grind r=ruw */
+const CLIMBS = [
+{
+ id:"finestre", name:"Colle delle Finestre + Strada dell'Assietta", area:"Val di Susa, Piemonte", land:"Italië",
+ lat:45.0864, lng:7.0450, top:2178, gain:1680, len:18.5, gravel:8, type:"parallel", bike:"gravel",
+ parallel:"Sestriere / Giro d'Italia",
+ line:"Achtenveertig haarspelden asfalt door bos, dan houdt het asfalt op 1690 m op en klim je de laatste acht kilometer over grind naar de kam. Bovenaan begint de Assietta: vijftig kilometer bergkam boven de 2000 m.",
+ segs:[[500,1690,"a"],[1690,2178,"g"]],
+ verdict:"De meest evidente keuze van de hele lijst, en terecht. Het grind is hard aangereden door de 4×4's, dus het klimmen is puur een kwestie van meters maken; het is de afdaling waar mensen over klagen. Met 55 mm loop je hier ver voor op de gemiddelde bezoeker. Plan de Assietta erachteraan op een woensdag of zaterdag, dan zijn er geen auto's.",
+ notes:[
+  "Assietta-kamweg is 's zomers op woensdag en zaterdag dicht voor gemotoriseerd verkeer — dat is de dag die je wilt.",
+  "Finestre zelf trekt in augustus veel 4×4's; vroeg starten scheelt.",
+  "Water: fontein waar het asfalt ophoudt. Daarboven niets meer.",
+  "Combineer met Colle del Colombardo (ruwer, losser) voor een tweede dag."],
+ voices:[
+  {who:"Fietsster, Komoot-collectie", q:"a bit touch-and-go descending the gravel side", tr:"de afdaling over grind is net wel/net niet", url:"https://www.komoot.com/collection/1285096/colle-del-colombardo-and-the-colle-delle-finestre-two-of-the-italian-gravel-giants"},
+  {who:"Fietser op 40 mm, PJAMM", q:"the brake bumps left my hands numb for a few hours", tr:"van de remkuilen waren m'n handen uren gevoelloos", url:"https://pjammcycling.com/climb/10.Colle-delle-Finestre-Cycling"},
+  {who:"Gezin op vakantie, Climbfinder", q:"The 8km of gravel is exposed and tough. Fun though.", tr:"De 8 km grind ligt open en is zwaar. Wel leuk.", url:"https://climbfinder.com/us/climbs/colle-delle-finestre"}]
+},
+{
+ id:"sommeiller", name:"Colle del Sommeiller", area:"Bardonecchia, Piemonte", land:"Italië",
+ lat:45.108, lng:6.855, top:3009, gain:1700, len:26, gravel:19, type:"puur", bike:"grens",
+ parallel:null,
+ line:"De hoogste berijdbare grindweg van de Alpen. Zesentwintig kilometer door de Rochemolles-vallei langs een stuwmeer omhoog naar een maanlandschap op 3009 m, waar ooit een zomerskigebied lag.",
+ segs:[[1312,1620,"a"],[1620,2600,"g"],[2600,3009,"r"]],
+ verdict:"Dit is het monument van het onverharde klimmen, en de enige plek op deze lijst waar je zonder klauteren op 3000 m staat. Maar de stemmen zijn eensgezind: omhoog gaat prima op grind, omlaag is het rammen. Op 55 mm is het te doen; ga je met vrienden op 40 mm, waarschuw ze.",
+ notes:[
+  "Dicht voor auto's en motoren op dinsdag en donderdag (1 juli – 30 sept). Ga dan.",
+  "Geen water boven Rifugio Scarfiotti — vul daar bij.",
+  "Steenslag gemeld op de bovenste kilometers; helm en oplettendheid.",
+  "Tweede dag vanuit hetzelfde dorp: Fort Jafferau (2805 m) via Col Basset."],
+ voices:[
+  {who:"Fietser, reactie op My Cycling Challenge", q:"I was glad I took my MTB instead of my gravelbike", tr:"ik was blij dat ik m'n MTB had meegenomen in plaats van m'n gravelbike", url:"https://www.cycling-challenge.com/colle-del-sommeiller/"},
+  {who:"Rijder, Komoot-reactie juli 2024", q:"Definitely my most sketchy gravel ride ever!", tr:"Verreweg m'n meest hachelijke gravelrit ooit!", url:"https://www.komoot.com/smarttour/e1030357638/colle-del-sommeiller"},
+  {who:"Bike Café (FR)", q:"au gravel ce que l'Alpe d'Huez est au cyclisme routier", tr:"voor gravel wat de Alpe d'Huez is voor de weg", url:"https://bike-cafe.fr/2020/09/bardonecchia-lexception-du-gravel-en-montagne/"},
+  {who:"Cycloworld", q:"not impossible on a gravel bike; be prepared for a rugged ride", tr:"niet onmogelijk op een gravelbike, maar reken op een ruwe rit", url:"https://www.cycloworld.cc/en/article/col-de-sommeiller-het-ultieme-onverharde-fietsavontuur/2740"}]
+},
+{
+ id:"parpaillon", name:"Tunnel du Parpaillon", area:"Embrun / Ubaye, Hautes-Alpes", land:"Frankrijk",
+ lat:44.470, lng:6.615, top:2643, gain:1900, len:30, gravel:13, type:"parallel", bike:"mtb",
+ parallel:"Col de Vars",
+ line:"Ooit de hoogste weg van Frankrijk, gebouwd door het leger tussen 1891 en 1911 en daarna vergeten toen de Col de Vars werd geasfalteerd. Bovenin een onverlichte tunnel van 520 m op 2643 m — één meter hoger dan de Galibier.",
+ segs:[[780,1860,"a"],[1860,2400,"g"],[2400,2643,"r"]],
+ verdict:"De grootste aaneengesloten klim op deze lijst en de meest cinematografische. De noordkant vanaf Embrun is duidelijk de vriendelijkste; de zuidkant vanuit de Ubaye is door 4×4's stukgereden. De stemmen spreken elkaar tegen over of het op gravel kan — dat verschil zit hem vrijwel volledig in de afdaling, niet in de klim.",
+ notes:[
+  "Tunnel is begin zomer nog dicht met stalen deuren vanwege ijs — check vooraf.",
+  "In de tunnel is het ijskoud en nat, ook in augustus. Fel licht en een jas zijn geen luxe.",
+  "Noordkant (Embrun/Crévoux) is beduidend beter berijdbaar dan de zuidkant (Jausiers).",
+  "De 'Montée du Parpaillon'-bordjes stoppen waar het asfalt ophoudt — daarna nog 10 km."],
+ voices:[
+  {who:"Nederlandse rijder, Cycloworld", q:"A fully is strongly recommended!", tr:"Een fully wordt sterk aangeraden!", url:"https://www.cycloworld.cc/article/col-du-parpaillon-an-adventure-of-a-lifetime/1110"},
+  {who:"Fietser op gravelbike, Vince's Cycling Stuff", q:"The track proved straightforward on a gravel bike", tr:"Het pad bleek prima te doen op een gravelbike", url:"https://www.questel.co.uk/tunnel-du-parpaillon"},
+  {who:"My Cycling Challenge", q:"This requires a mountain bike.", tr:"Hier heb je een mountainbike voor nodig.", url:"https://www.cycling-challenge.com/col-du-parpaillon/"}]
+},
+{
+ id:"moutiere", name:"Col de la Moutière → Faux Col de Restefond", area:"Mercantour, Alpes-Maritimes", land:"Frankrijk",
+ lat:44.3325, lng:6.780, top:2656, gain:1150, len:20, gravel:3.5, type:"parallel", bike:"gravel",
+ parallel:"Cime de la Bonette",
+ line:"De derde, vergeten manier om op de Bonette te komen. Vanaf Saint-Dalmas-le-Selvage stijgend door lariksbos naar de Moutière, dan drieënhalve kilometer grind over een verlaten hoogvlakte tot je op het asfalt van de hoogste weg van Frankrijk uitkomt.",
+ segs:[[1500,2454,"a"],[2454,2656,"g"]],
+ verdict:"De verstandigste manier om een beroemde col te doen zonder het beroemde verkeer. Het grindstuk is kort en licht — meerdere mensen deden het zelfs op racebanden. Let op: de variant vanaf Bayasse (13 km grind) is een compleet ander verhaal en wordt door iedereen afgeraden voor gravel.",
+ notes:[
+  "Rustigste kant van de Bonette; melding van twee auto's in een hele klim.",
+  "Grind kan los liggen na sneeuwsmelt in het vroege seizoen.",
+  "Mercantour-nationaalpark: geen voorzieningen boven Saint-Dalmas.",
+  "Mooie lus terug via Col de Raspaillon en het Vallon des Granges Communes."],
+ voices:[
+  {who:"Vince's Cycling Stuff", q:"It started off quite smooth, with fine gravel", tr:"Het begon vrij glad, met fijn grind", url:"https://www.questel.co.uk/col-de-la-moutiere/"},
+  {who:"My Cycling Challenge, over de Bayasse-variant", q:"This route is NOT for road bikes. A mountain bike is the best idea.", tr:"Deze route is NIET voor racefietsen. Een mountainbike is het beste idee.", url:"https://www.cycling-challenge.com/cime-de-la-bonette-4-routes/"},
+  {who:"Bike Café (FR), over de Bayasse-variant", q:"n'est probablement pas adaptée à la pratique du Gravel", tr:"is waarschijnlijk niet geschikt voor gravel", url:"https://bike-cafe.fr/2017/11/gravel-et-cols-mythiques-cols-de-la-moutiere-bonnette-restefond/"}]
+},
+{
+ id:"altaviadelsale", name:"Alta Via del Sale", area:"Colle di Tenda → Monesi, Ligurische Alpen", land:"Italië",
+ lat:44.140, lng:7.620, top:2100, gain:1510, len:30, gravel:22, type:"puur", bike:"grens",
+ parallel:null,
+ line:"Een militaire weg uit 1939 die dertig kilometer lang tussen 1800 en 2100 m over de Italiaans-Franse grenskam loopt. Karstlandschap, forten, de beroemde haarspeld van de Boaria die in het niets hangt, en een berghut halverwege.",
+ segs:[[1010,1870,"a"],[1870,2100,"g"]],
+ verdict:"Qua landschap misschien de mooiste van allemaal, en de enige waar je een tweedaagse van kunt maken met een hut op 2079 m. Maar de Italiaanse bronnen zijn stelliger dan bij Finestre: dit is een MTB-route waar gravelrijders zich in wagen. Het is ook geen gesloten gebied — op de meeste dagen rijden er jeeps en crossmotoren.",
+ notes:[
+  "Tol: € 1 per fiets bij het toegangshek. Alleen open eind mei – eind september.",
+  "Op dinsdag en donderdag alleen voor voetgangers en fietsers — dat zijn de dagen.",
+  "Rifugio Don Barbera op 2079 m: overnachten, eten, oplaadpunt voor e-MTB's.",
+  "Vanaf Monesi kun je doorzakken tot aan zee bij Ventimiglia (± 138 km totaal)."],
+ voices:[
+  {who:"Torino-Nice Rally-deelnemer, Komoot 2025", q:"Hard, oh it was very hard. Beautiful, oh it was very beautiful.", tr:"Zwaar, o wat was het zwaar. Mooi, o wat was het mooi.", url:"https://www.komoot.com/smarttour/e1391976706/via-del-sale-loop"},
+  {who:"Cuneotrekking (IT)", q:"consigliamo caldamente l'uso di MTB biammortizzate", tr:"we raden dringend een fully-MTB aan", url:"https://cuneotrekking.com/trekking/alta-via-del-sale-in-mtb-limone-piemonte-ventimiglia/"},
+  {who:"Nest.bike (IT)", q:"non sarà improbabile incontrare jeep o moto da cross", tr:"je komt vrijwel zeker jeeps of crossmotoren tegen", url:"https://nest.bike/blog/via-del-sale-da-limone-piemonte-a-ventimiglia-in-bicicletta/"}]
+},
+{
+ id:"valmora", name:"Val Mora & Bocchetta di Forcola — Stelvio onverhard", area:"Bormio / Val Müstair", land:"Italië / Zwitserland",
+ lat:46.530, lng:10.320, top:2760, gain:1750, len:35, gravel:24, type:"parallel", bike:"gravel",
+ parallel:"Passo dello Stelvio / Umbrail",
+ line:"De middeleeuwse zout- en wijnroute die parallel loopt aan de Stelvio. Via het Lago di Cancano en de Fraele-torens omhoog naar hoogalpien terrein boven de 2000 m, met de Bocchetta di Forcola als kroon — en de Stelvio zelf op fietsafstand.",
+ segs:[[1225,1400,"a"],[1400,2500,"g"],[2500,2760,"r"]],
+ verdict:"Voor wie de Stelvio wil doen maar niet met tweehonderd campers wil delen: dit is het antwoord. Het gros rolt uitstekend op grind; alleen het laatste stuk naar de Forcola is duwwerk. Rijtijd is bovendien fors korter dan Piemonte — dit is de best bereikbare écht hoge grindrit op de lijst.",
+ notes:[
+  "Mooiste variant volgens rijders: starten in Santa Maria (CH), Val Mora op, Cancano, dan Stelvio, afdalen via Umbrail.",
+  "Passo Val Alpisella (2290 m) is de makkelijke, brede versie richting Livigno — goede B-optie bij slecht weer.",
+  "Nationaal Park Stelvio en Zwitsers Nationaal Park: let op fietsverboden op sommige paden.",
+  "Hoogseizoen juli–september; boven 2500 m ligt tot ver in juni sneeuw."],
+ voices:[
+  {who:"Alain Rumpf, Komoot", q:"High alpine gravel at its best – Bormio beyond the Stelvio", tr:"Hoogalpien grind op z'n best — Bormio voorbij de Stelvio", url:"https://www.komoot.com/smarttour/e1391884966/passo-umbrail"},
+  {who:"Cyclist (UK), ter plaatse", q:"heading into the unknown is all part of the adventure", tr:"het onbekende in rijden hoort bij het avontuur", url:"https://www.cyclist.co.uk/in-depth/shadow-of-the-stelvio-bormio-gravel-ride"},
+  {who:"Lezer 'Stef', My Cycling Challenge", q:"ride up the amazing Val Mora on nice gravel", tr:"klim de fantastische Val Mora op over lekker grind", url:"https://www.cycling-challenge.com/stelvio-unpaved/"}]
+},
+{
+ id:"ventoux", name:"Mont Ventoux — Piste des Graviers Blancs", area:"Bédoin, Vaucluse", land:"Frankrijk",
+ lat:44.1739, lng:5.2786, top:1910, gain:1600, len:22, gravel:12, type:"parallel", bike:"gravel", done:true,
+ parallel:"Ventoux via Bédoin",
+ line:"De vierde weg omhoog. Vanaf Bédoin door de wijngaarden de Piste des Graviers Blancs op, door het dennenbos naar Chalet Reynard, en dan pas het asfalt van de laatste kilometers naar de top.",
+ segs:[[310,380,"a"],[380,1420,"g"],[1420,1910,"a"]],
+ verdict:"Jullie hebben 'm al gehad in 2022 — hij staat er als ijkpunt. Handig om te weten: alles wat hier hoger staat is technischer of hoger dan dit, en alles wat lager staat is milder. Als jullie de Ventoux-grind prettig vonden, zit je met Finestre, Moutière en Val Mora precies goed.",
+ notes:[
+  "Bronnen adviseren minimaal 40 mm bij lage druk — het grind in de Provence is rotsig.",
+  "Alleen de route vanuit Flassan gaat volledig onverhard tot boven; de rest komt bij Chalet Reynard op asfalt uit.",
+  "Weinig kaartmateriaal online; GPX vooraf laden is echt nodig.",
+  "Onweer kan ook midzomer over de top rollen terwijl het beneden 35 °C is."],
+ voices:[
+  {who:"Routes to Relax", q:"This route avoids the fast traffic and aggressive road cyclists.", tr:"Deze route ontloopt het snelle verkeer en de agressieve wielrenners.", url:"https://routestorelax.com/mont-ventoux-gravel-climb-in-a-summer-storm/"},
+  {who:"ClimbBikeSki", q:"Whilst the trail is all gravel, it wasn't easy to ride up.", tr:"Hoewel het pad volledig grind is, was het niet makkelijk omhoog.", url:"https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/"},
+  {who:"MTBTrails.nl", q:"alleen mijn route vanuit Flassan gaat echt volledig onverhard naar de top", tr:"", url:"https://www.mtbtrails.nl/mtb-trails-fr/mountainbiken-op-de-mont-ventoux"}]
+},
+{
+ id:"picdumidi", name:"Pic du Midi de Bigorre", area:"boven de Col du Tourmalet", land:"Frankrijk",
+ lat:42.9369, lng:0.1425, top:2877, gain:760, len:9, gravel:9, type:"parallel", bike:"mtb",
+ parallel:"Col du Tourmalet",
+ line:"Precies op de top van de Tourmalet begint een onverharde weg die nog 760 meter verder omhoog kronkelt naar het observatorium — via Col de Sencours en Col des Laquets, met wielrenners die je vanaf de col nakijken.",
+ segs:[[2115,2750,"g"],[2750,2877,"r"]],
+ verdict:"Het beste verhaal van de lijst: je rijdt de Tourmalet en gaat dan gewoon door. Maar het bovenste stuk verandert in leisteen en daar loopt iedereen. Alleen doen als de Pyreneeën sowieso het doel zijn — vanuit Utrecht is dit de verste bestemming die er staat.",
+ notes:[
+  "Laatste stuk naar het observatorium is een wandelpad; reken op dragen.",
+  "Combineer met de Tourmalet zelf, anders is het een korte dag.",
+  "Hoog en onbeschut; weersomslag komt snel.",
+  "Toegang tot het observatorium zelf loopt via de kabelbaan uit La Mongie."],
+ voices:[
+  {who:"My Cycling Challenge", q:"one of my very favourite rides ever", tr:"een van m'n allerfijnste ritten ooit", url:"https://www.cycling-challenge.com/the-highest-unpaved-cycling-roads-in-the-alps/"},
+  {who:"Pedalsure-overzicht", q:"there is a steep gravel road that leads to the observatory high up above", tr:"er loopt een steile grindweg naar het observatorium hoog daarboven", url:"https://www.pedalsure.com/blog/10-best-gravel-roads-in-europe"}]
+},
+{
+ id:"chaberton", name:"Mont Chaberton", area:"Montgenèvre / Claviere", land:"Italië → Frankrijk",
+ lat:44.9789, lng:6.755, top:3131, gain:1280, len:16, gravel:16, type:"puur", bike:"mtb",
+ parallel:null,
+ line:"Een militaire weg naar het hoogste fort van de Alpen, op een afgevlakte bergtop van 3131 m met 360 graden uitzicht. Gesloten voor gemotoriseerd verkeer.",
+ segs:[[1850,2800,"g"],[2800,3131,"r"]],
+ verdict:"Spectaculair, maar wees eerlijk over wat het is: zelfs de sterkste rijders duwen hier stukken. Zet 'm op de lijst als bonusdag bij een Bardonecchia- of Briançon-weekend, niet als hoofddoel.",
+ notes:[
+  "Autovrij — dat is precies waarom het bovenstuk zo ruw is.",
+  "Grens tussen Italië en Frankrijk loopt over de top; de weg begint Italiaans.",
+  "Vertigo-waarschuwing in meerdere verslagen op het bovenste deel.",
+  "Vanuit hetzelfde dal ligt Fort Janus (2529 m) als kortere variant."],
+ voices:[
+  {who:"My Cycling Challenge", q:"even the strongest cyclists will likely do some pushing", tr:"zelfs de sterkste fietsers zullen stukken duwen", url:"https://www.cycling-challenge.com/the-highest-unpaved-cycling-roads-in-the-alps/"}]
+},
+{
+ id:"jandri", name:"Col du Jandri", area:"Les Deux Alpes, Oisans", land:"Frankrijk",
+ lat:45.0186, lng:6.2467, top:3158, gain:1500, len:14, gravel:14, type:"puur", bike:"gravel",
+ parallel:"Alpe d'Huez (overkant van het dal)",
+ line:"Een skiliftonderhoudsweg van goede kwaliteit die vanaf Les Deux Alpes doorloopt tot 3158 m, aan de voet van de Glacier de Mont-de-Lans. Het hoogste punt op deze lijst — en er is een bar.",
+ segs:[[1650,3158,"g"]],
+ verdict:"Het gekke aan Jandri: het is de hoogste van allemaal en tegelijk een van de best berijdbare, omdat het een onderhouden dienstweg is. Wie 3000 m wil halen zonder een dag lang te duwen, moet hier zijn. Basiskamp Bourg d'Oisans geeft bovendien Croix de Fer, Sarenne en Alpe d'Huez binnen handbereik.",
+ notes:[
+  "Grind begint pas bij het skidorp; je kunt vanaf Bourg d'Oisans starten voor een monsterklim.",
+  "Le Bar 3200 bovenaan is 's zomers geregeld open.",
+  "Alleen zomerseizoen, als de liftservicewegen vrij zijn.",
+  "Achter het bord van de Croix de Fer begint een tweede grindweg naar 2680 m — goede tweede dag."],
+ voices:[
+  {who:"My Cycling Challenge", q:"completely ride-able on a ski-lift service road", tr:"volledig berijdbaar over een skiliftdienstweg", url:"https://www.cycling-challenge.com/the-best-cycling-climbs-from-bourg-doisans/"}]
+},
+{
+ id:"planche", name:"Super Planche des Belles Filles + Ballon d'Alsace", area:"Zuidelijke Vogezen", land:"Frankrijk",
+ lat:47.7742, lng:6.7767, top:1148, gain:670, len:7, gravel:1, type:"parallel", bike:"gravel",
+ parallel:"La Planche des Belles Filles (Tour de France)",
+ line:"De Tourklim die eindigt op een onverharde muur van 20 procent. Kort, maar het is de enige plek in Europa waar een grindstrook letterlijk de finish van de Tour de France is — en de Ballon d'Alsace ligt om de hoek.",
+ segs:[[480,1080,"a"],[1080,1148,"r"]],
+ verdict:"Als losse beklimming te klein voor een weekend, maar als basis voor twee dagen Vogezen precies goed: op zes uur rijden, bosrijk, en met genoeg grindwegen eromheen om er echte dagen van te maken. Dit is de dichtstbijzijnde plek waar 'klim' nog echt klim betekent.",
+ notes:[
+  "Het onverharde slotstuk is kort maar brutaal — pieken rond 20%.",
+  "Ballon d'Alsace (1178 m) was in 1905 de allereerste Tourbeklimming ooit.",
+  "Rondom La Bresse en Gérardmer liggen honderden kilometers bospistes.",
+  "Gravelfondo Vosges eind september is een goed excuus voor een datum."],
+ voices:[
+  {who:"Grand Cols Cycling Tours", q:"This short, steep climb ends with a tough gravel section.", tr:"Deze korte, steile klim eindigt met een zwaar grindstuk.", url:"https://www.grandcolscyclingtours.com/en-gb/cycling-tours/join-in-tours/a-travers-les-vosges/"},
+  {who:"Nederlandse forumrijder, Fiets.nl", q:"Dichtste plaats waar je echte klimmen kunt vinden is volgens mij de Vogezen.", tr:"", url:"https://www.fiets.nl/forum/viewtopic.php?f=2&t=9228"}]
+},
+{
+ id:"grandballon", name:"Grand Ballon & Route des Crêtes", area:"Hautes-Vosges, Elzas", land:"Frankrijk",
+ lat:47.9022, lng:7.0997, top:1424, gain:920, len:20, gravel:11, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"Het hoogste punt van de Vogezen, bereikbaar via een web van bospistes parallel aan de Route des Crêtes. Meren, hoogveen en kilometers grind zonder auto's.",
+ segs:[[500,700,"a"],[700,1300,"g"],[1300,1424,"a"]],
+ verdict:"Geen enkele beklimming hier is legendarisch, maar de dichtheid is uitzonderlijk: er staan meer dan tweehonderd gravelroutes in de regio. Dit is de bestemming als het weekend om fietsen gaat en niet om één specifieke top afvinken.",
+ notes:[
+  "Fietsen op vrijwel alle paden toegestaan — ruimer dan in Duitsland.",
+  "Lac Blanc, Lac de Retournemer en Hohneck als natuurlijke ankerpunten.",
+  "Bikepark Lac Blanc voor wie een dag wil afwisselen.",
+  "Herfst is hier bijzonder mooi en rustig."],
+ voices:[
+  {who:"MTB'er, Mountainbike.nl-forum", q:"In de Vogezen liggen de betere trails die ik heb gereden.", tr:"", url:"https://www.mountainbike.nl/forum/viewtopic.php?t=156547"},
+  {who:"Komoot-regiogids", q:"over 230 routes available on komoot", tr:"ruim 230 routes beschikbaar op Komoot", url:"https://www.komoot.com/guide/3454106/gravel-biking-in-vosges"}]
+},
+{
+ id:"feldberg", name:"Feldberg & Schauinsland", area:"Hoogzwarte Woud", land:"Duitsland",
+ lat:47.8739, lng:8.0044, top:1450, gain:1100, len:24, gravel:14, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"Twee lange klimmen op één dag, verbonden door bochtige bosafdalingen. De Schotterwege van het Hoogzwarte Woud zijn breed, goed onderhouden en eindeloos.",
+ segs:[[660,1000,"a"],[1000,1450,"g"]],
+ verdict:"De veiligste keuze voor een weekend dat sowieso doorgaat, ook bij matig weer: goed berijdbaar, veel opties, korte rijtijd en fatsoenlijke infrastructuur. Minder groots dan de Alpen, maar je verliest geen halve dag aan de heenreis.",
+ notes:[
+  "Boven 'Der Höchste' wordt het wegdek ruwer.",
+  "In Duitsland gelden per deelstaat regels over fietsen op smalle paden — blijf op de Forstwege.",
+  "Vanaf station Freiburg of Schluchsee te starten; goed bereikbaar met de trein.",
+  "De Schauinsland-Bergstrecke is in het weekend dicht voor motoren."],
+ voices:[
+  {who:"Rijder, Outdooractive-review", q:"Perfect gravel forest roads, great views.", tr:"Perfecte grindbospaden, prachtige uitzichten.", url:"https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/"},
+  {who:"BIKE Magazin (DE)", q:"der Fahrbahnbelag wird ab dem Höchsten etwas ruppiger", tr:"vanaf Der Höchste wordt het wegdek wat ruwer", url:"https://www.bike-magazin.de/touren/deutschland/graveltour-im-schwarzwald-querfeldwald/"}]
+},
+{
+ id:"hogevenen", name:"Hoge Venen via Coo", area:"Stavelot / Baraque Michel, Wallonië", land:"België",
+ lat:50.5361, lng:6.0611, top:675, gain:1000, len:70, gravel:40, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"Vanaf Coo meteen omhoog het hoogveen op: steile aanzetten van 20 procent, bospistes, wortelpaden en dan het open, kale plateau van de Hoge Venen richting Baraque Michel.",
+ segs:[[250,320,"a"],[320,675,"g"]],
+ verdict:"Twee uur veertig rijden en je bent er. Verwacht geen col: het hoogteverschil komt van veel korte, harde klimmen, niet van één lange. Voor een testweekend, een winterse opwarmer of als de agenda geen lange reis toelaat is dit de juiste keuze — en het is de enige bestemming op de lijst die ook op een gewone zaterdag kan.",
+ notes:[
+  "Hoogveen kan drassig zijn; na regen zwaar en op sommige plekken beschermd gebied.",
+  "Le Coffee Ride in Coo publiceert bruikbare gravelroutes en heeft parkeergelegenheid.",
+  "Zomers brandgevaar-afsluitingen in het natuurreservaat komen voor.",
+  "Rond Malmedy liggen de steilste dalwanden; La Roche is pittiger dan Houffalize."],
+ voices:[
+  {who:"Ridersguide.nl, verslag vanaf Coo", q:"Dit is technisch! Meer iets voor een MTB, maar het lukt", tr:"", url:"https://ridersguide.nl/routes/graveltocht-ardennen/"},
+  {who:"MTB'er, Mountainbike.nl-forum", q:"Het landschap bevat diepe steile dalen.", tr:"", url:"https://www.mountainbike.nl/forum/viewtopic.php?f=11&t=71949"}]
+},
+{
+ id:"sanktvith", name:"Sankt Vith & de Vennbahn", area:"Oost-België / Eifelrand", land:"België / Duitsland",
+ lat:50.2814, lng:6.1272, top:690, gain:900, len:65, gravel:45, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"Verlaten bospistes op de grens van de Ardennen en de Eifel, geregen aan de Vennbahn — een oude spoorlijn die als vlakke verbinding tussen de klimmen door loopt.",
+ segs:[[380,400,"a"],[400,690,"g"]],
+ verdict:"De meest ontspannen optie: goed berijdbaar, zonder verrassingen, met dorpjes en cafés op de juiste momenten. Precies wat je wilt als het weekend meer om het gezelschap gaat dan om het lijden. Rijtijd onder de drie uur.",
+ notes:[
+  "De Vennbahn is vlak en verhard — handig om groepen bij elkaar te houden.",
+  "Rond Rodt en Wallerode liggen de mooiste onverharde afdalingen.",
+  "Sankt Vith heeft genoeg overnachtingsopties voor een groep.",
+  "Goed te combineren met een dag Hoge Venen (30 min rijden)."],
+ voices:[
+  {who:"Trailmarkers.nl, weekendorganisatie", q:"het perfecte mini-avontuur", tr:"", url:"https://www.trailmarkers.nl/trail-markers/belgie/gravelbiken-door-de-ardennen"}]
+},
+{
+ id:"kolovrat", name:"Kolovrat & Kobariški Stol", area:"Soča-vallei, Julische Alpen", land:"Slovenië",
+ lat:46.1697, lng:13.5197, top:1240, gain:1010, len:18, gravel:9, type:"puur", bike:"gravel",
+ parallel:"Vršič-pas",
+ line:"Oude militaire wegen uit de Eerste Wereldoorlog boven de smaragdgroene Soča. Bovenop een openluchtmuseum van de Isonzo-linie, daarna kilometers kamweg met uitzicht op de Friulische vlakte.",
+ segs:[[230,900,"a"],[900,1240,"g"]],
+ verdict:"Het meest onderschatte gebied op de lijst, en het enige waar ik weinig onafhankelijke fietsersstemmen vond — wat er staat komt vooral van reisorganisaties. Dat is geen rode vlag, maar wel een reden om zelf GPX'en te checken voordat je elf uur rijdt.",
+ notes:[
+  "Mangart-zadel (1600 m, deels asfalt) geldt bij velen als het hoogtepunt van de streek.",
+  "Vršič-pas is verhard maar druk; de jeepwegen eromheen zijn de rustige variant.",
+  "Combineer met Goriška Brda: wijngaarden, glooiend, goede afsluiter.",
+  "Weinig eerstehands rijdersverslagen gevonden — plan iets ruimer."],
+ voices:[
+  {who:"Bikerumor, verslag ter plaatse", q:"the highlight ride of the trip", tr:"de mooiste rit van de reis", url:"https://bikerumor.com/where-to-ride-gravel-bikes-in-slovenia/"}]
+}
+,
+{
+ id:"nordschwarzwald", name:"Schliffkopf & Hornisgrinde", area:"Noord-Zwarte Woud, Baden", land:"Duitsland",
+ lat:48.5397, lng:8.2044, top:1163, gain:900, len:22, gravel:14, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"De Schwarzwaldhochstraße heeft een onverharde schaduw: kilometers Schotterwege parallel aan de toeristische bergweg, langs hoogveen en de Mummelsee omhoog naar de kale kop van de Hornisgrinde.",
+ segs:[[400,700,"a"],[700,1163,"g"]],
+ verdict:"De noordkant van het Zwarte Woud is minder bekend dan het Feldberg-gebied en juist daarom rustiger. Breed, hard grind, goed te doen op elke gravelbike, en op iets meer dan vijf uur rijden. Als het Feldberg-weekend al eens gedaan is, is dit de logische tweede.",
+ notes:[
+  "Klassieke doorsteek: Achern → Schliffkopf → Mooskopf → Offenburg, ± 140 km en 3400 hm.",
+  "Hoogveen bij de Hornisgrinde is beschermd; blijf op de aangegeven paden.",
+  "Start en finish bij een station is hier goed te doen — handig als niet iedereen wil rijden.",
+  "Wintersluitingen en houtkap kunnen bospistes tijdelijk blokkeren."],
+ voices:[
+  {who:"life-on Magazin (DE)", q:"Der Start ist in Achern, es geht über den Schliffkopf und den Mooskopf", tr:"Start in Achern, over de Schliffkopf en de Mooskopf", url:"https://life-on.de/2025/03/21/erlebnisintensive-gravel-tipps-im-schwarzwald/"},
+  {who:"BIKE Magazin (DE)", q:"auf Schotterwegen durch dichte Wälder fahren", tr:"over grindwegen door dicht bos rijden", url:"https://www.bike-magazin.de/touren/deutschland/gravel-biken-im-schwarzwald-super-doch-wohin-was-tun-wo-schlafen/"}]
+},
+{
+ id:"aigoual", name:"Mont Aigoual — Piste du Col de l'Estrade", area:"Cévennes, Gard", land:"Frankrijk",
+ lat:44.1214, lng:3.5814, top:1567, gain:1100, len:20, gravel:16, type:"parallel", bike:"gravel",
+ parallel:"Mont Aigoual via Col du Minier",
+ line:"Het observatorium van de Aigoual staat op een balkon met uitzicht van de Monts du Cantal tot de Middellandse Zee. Terwijl de wielrenners via de Col du Minier komen, loopt er een volledig onverharde bospiste naar dezelfde top.",
+ segs:[[450,600,"a"],[600,1567,"g"]],
+ verdict:"De beste verhouding tussen sfeer en toegankelijkheid buiten de Alpen. Rollende bospistes, af en toe stevig steil, en een echte top met een gebouw erop. Het massief is bovendien groot genoeg voor drie verschillende dagen — en met de causses en de Gorges de la Jonte ernaast wordt het snel een compleet weekend.",
+ notes:[
+  "De piste vanaf de Col de l'Estrade komt uit bij de Menhir de Trépalou, aan de voet van het observatorium.",
+  "Nationaal Park Cévennes: kerngebied met eigen regels, blijf op pistes en wegen.",
+  "Het weer op de top wijkt sterk af van dat in het dal — meeneemjack is standaard.",
+  "Cycl'Aigoual / Gravel Classic in het voorjaar is een goede datum-aanleiding."],
+ voices:[
+  {who:"Le CRI des Cévennes (FR)", q:"la (très roulante mais parfois raide) piste forestière du Col de l'Estrade", tr:"de (zeer rollende maar soms steile) bospiste van de Col de l'Estrade", url:"https://lecridescevennes.fr/2023/01/22/ma-22-grimper-sur-le-mont-aigoual-en-gravel/"},
+  {who:"Sud Cévennes Tourisme (FR)", q:"Un parcours Gravel bien costaud avec plusieurs cols au dessus de 1000m", tr:"Een stevige gravelroute met meerdere cols boven de 1000 m", url:"https://www.sudcevennes.com/activites/nature/velo/5983011_aigoual-gravel/"},
+  {who:"Velorizons, reisverslag (FR)", q:"Assaut final, et nous découvrons l'observatoire du Mont Aigoual", tr:"Slotaanval, en daar is het observatorium van de Mont Aigoual", url:"https://www.velorizons.com/voyage-velo-route-cyclo/france/massif-central/CG42-gravel-itineraire-cevennes-montpellier.html"}]
+},
+{
+ id:"puymary", name:"Puy Mary & Pas de Peyrol", area:"Monts du Cantal, Auvergne", land:"Frankrijk",
+ lat:45.1069, lng:2.6786, top:1589, gain:1200, len:25, gravel:15, type:"parallel", bike:"gravel",
+ parallel:"Pas de Peyrol (hoogste col van het Centraal Massief)",
+ line:"Een uitgedoofde vulkaan met de hoogste geasfalteerde col van het Centraal Massief op de flank — en daaromheen estive-pistes, veenplateaus en de gravelvariant van de Grande Traversée du Massif Central.",
+ segs:[[700,900,"a"],[900,1589,"g"]],
+ verdict:"Onderschat gebied: open hoogvlaktes, koeien, nauwelijks verkeer. De GTMC heeft sinds kort een expliciete gravelvariant die de technische stukken vermijdt, wat het planwerk enorm scheelt. Wel eerlijk: de meeste bronnen die ik vond zijn reisorganisaties, niet losse rijders — het is minder gedocumenteerd dan de Alpen.",
+ notes:[
+  "GTMC-gravelvariant volgt globaal de MTB-route maar mijdt de technische passages.",
+  "Het Cézallier-plateau ernaast is vlakker en ideaal als hersteldag.",
+  "Weinig bevoorrading op de hoogvlaktes; plan dorpen bewust in.",
+  "Combineert goed met de Cévennes: de GTMC verbindt beide in een paar dagen."],
+ voices:[
+  {who:"Les Others, reisverslag (FR)", q:"une montée qui nous fait grimper 600 mètres de dénivelé sur seulement 8 kilomètres", tr:"een klim die ons 600 hoogtemeters omhoog brengt in slechts 8 kilometer", url:"https://www.lesothers.com/gtmc-massif-central-velo-gravel"},
+  {who:"Partir ici (FR)", q:"une variante adaptée aux vélos gravel et aux VTT chargés", tr:"een variant geschikt voor gravelbikes en bepakte MTB's", url:"https://partir-ici.fr/grande-traversee-massif-central-gtmc-aventure-vtt-gravel-exceptionnelle/"}]
+},
+{
+ id:"colombygex", name:"Colomby de Gex via de Faucille-bospistes", area:"Monts Jura, Ain", land:"Frankrijk",
+ lat:46.3717, lng:6.0022, top:1688, gain:1150, len:20, gravel:15, type:"parallel", bike:"grens",
+ parallel:"Col de la Faucille",
+ line:"De Col de la Faucille is een klassieker met vrachtverkeer. Vanaf Gex kun je vrijwel dezelfde hoogte via bospistes bereiken en dan doorrijden over de kam naar Colomby de Gex, met de Mont Blanc recht tegenover je.",
+ segs:[[600,1100,"g"],[1100,1323,"a"],[1323,1688,"g"]],
+ verdict:"Het slimste alternatief van de lijst: dezelfde col, zonder de trucks, met een kamweg als bonus. Het bovenste stuk over de kam is smaller en ruiger dan een bospiste — daar zit het grensgeval. Wie het rollend wil houden, daalt af naar de Col de Crozet in plaats van de kam te volgen.",
+ notes:[
+  "De hoogste toppen van de Jura liggen ernaast: Crêt de la Neige 1720 m en Le Reculet 1718 m.",
+  "Réserve naturelle de la Haute Chaîne du Jura: fietsen alleen op toegestane paden.",
+  "La Forestière heeft tegenwoordig een gravelvariant, waaronder een tweedaagse van 118 km.",
+  "Genève ligt vlakbij — handig als iemand invliegt in plaats van meerijdt."],
+ voices:[
+  {who:"My Cycling Challenge", q:"it can sometimes be too busy with both fast cars and trucks", tr:"het kan er te druk zijn met snelle auto's en vrachtwagens", url:"https://www.cycling-challenge.com/high-jura-trails-colomby-de-gex-mont-rond/"},
+  {who:"Montagnes du Jura", q:"a 2-day itinerary for gravel bikes that winds for 118 km", tr:"een tweedaagse gravelroute van 118 km", url:"https://en.montagnes-du-jura.fr/the-mountains-of-jura-a-nature-destination/cycling-and-mountain-biking-everywhere-and-for-everyone/cycle-touring-in-the-jura-mountains/exploring-the-jura-mountains-by-gravel-bike/"}]
+},
+{
+ id:"brocken", name:"Brocken & de Harzer Schotterwege", area:"Harz, Saksen-Anhalt", land:"Duitsland",
+ lat:51.7998, lng:10.6156, top:1141, gain:1000, len:25, gravel:15, type:"parallel", bike:"gravel",
+ parallel:"Brockenstraße vanaf Schierke",
+ line:"De hoogste berg van Noord-Duitsland, met een stoomtrein die je onderweg passeert. De Brockenstraße zelf is asfalt; het echte werk zit in de talloze Forstwege eromheen, langs stuwmeren en oude mijnbouwgrachten.",
+ segs:[[350,600,"g"],[600,900,"a"],[900,1141,"a"]],
+ verdict:"Op vier uur rijden de dichtstbijzijnde plek met een echte, lange klim naar een echte top. Reken alleen niet op ongerept bos: de bastkeverplaag heeft grote delen van de sparren gesloopt, en dat zie je. Wie een oefenweekend zoekt voor een Alpenreis later, zit hier goed.",
+ notes:[
+  "De klim naar de top vanaf Schierke is grotendeels geasfalteerd — het grind zit eromheen.",
+  "Nationalpark Harz: fietsen alleen op aangewezen wegen, controleer de kaart.",
+  "Bastkeverschade maakt het landschap kaler dan de foto's van tien jaar geleden.",
+  "Stempelstellen van de Harzer Wandernadel werken verrassend goed als dagstructuur."],
+ voices:[
+  {who:"Canyon-routegids (DE)", q:"Rings um den Brocken gibt es zahlreiche ruhige Gravelstrecken mit ordentlich Höhenmetern", tr:"Rond de Brocken liggen talloze rustige gravelroutes met flink wat hoogtemeters", url:"https://www.canyon.com/de-de/blog-content/gravel-bike-news/besten-gravel-bike-touren-im-harz/b01032024.html"},
+  {who:"Globetrotter, 'Devil's Trail' (DE)", q:"hat der Harz wenig Teuflisches für mich als Gravelbiker", tr:"heeft de Harz weinig duivels voor mij als gravelrijder", url:"https://www.globetrotter.de/magazin/gravel-tour-harz-devils-trail/"},
+  {who:"Rijder, Outdooractive-review", q:"Quite hard, gradient up to 18%", tr:"Best zwaar, hellingen tot 18%", url:"https://www.outdooractive.com/de/gravel-bike-touren/harz-mittelgebirge-/gravel-bike-touren-im-harz-mittelgebirge-/301589287/"}]
+},
+{
+ id:"montsdarree", name:"Roc'h Trevezel & de Monts d'Arrée", area:"Finistère, Bretagne", land:"Frankrijk",
+ lat:48.4100, lng:-3.9075, top:384, gain:1600, len:84, gravel:50, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"Bretonse Highlands: heide, hoogveen, rotsige kammen en holle wegen waar volgens de verhalen de korrigans wonen. Het hoogteverschil is bescheiden, de wind en de leegte niet.",
+ segs:[[180,250,"a"],[250,384,"g"]],
+ verdict:"De enige bestemming op deze lijst waar het landschap belangrijker is dan de hoogtemeters — en waar je na afloop in zee kunt. Het weekend maak je met een lus over de Roc'h, niet met één beklimming. Let op de waarschuwing van rijders zelf: Bretonse rondjes bevatten vaak veel asfalt, dus kies je route zorgvuldig.",
+ notes:[
+  "Vijfentwintig kilometer zonder dorp op de kam — neem twee bidons en extra eten mee.",
+  "Zand en regen slijten de aandrijving hard; kettingpons en extra sluitschakel meenemen.",
+  "Les Roc'h des Monts d'Arrée (september, Huelgoat) heeft tegenwoordig gravelparcoursen van 65 tot 150 km.",
+  "De omgeving van Huelgoat en het meer van Brennilis is het logische basiskamp."],
+ voices:[
+  {who:"Gravel Tro Breizh-gids (FR)", q:"Les Monts d'Arrée sont moins durs en chiffre brut qu'en ressenti.", tr:"De Monts d'Arrée zijn op papier minder zwaar dan ze voelen.", url:"https://saint-jacques-compostelle-bretagne.fr/gravel-tro-breizh/"},
+  {who:"MTB'er, VTTour (FR)", q:"les circuits en BZH ont souvent bcp de route", tr:"routes in Bretagne bevatten vaak veel asfalt", url:"https://vttour.fr/sorties/18153"},
+  {who:"Abicyclette Voyages (FR)", q:"de très belles pistes, à la fois roulantes et techniques", tr:"heel mooie pistes, tegelijk rollend en technisch", url:"https://www.abicyclette-voyages.com/circuit/a-lassaut-des-monts-darree"}]
+},
+{
+ id:"corrieyairack", name:"Corrieyairack Pass", area:"Monadhliath, Schotse Hooglanden", land:"Schotland", cross:"uk",
+ lat:57.0512, lng:-4.6114, top:770, gain:710, len:18, gravel:18, type:"puur", bike:"grens",
+ parallel:null,
+ line:"Generaal Wade's militaire weg uit 1731, dwars over de Monadhliath van Fort Augustus aan Loch Ness naar Melgarve. Beschermd monument, gesloten voor auto's, open voor fietsen — met haarspelden, doorwaadbare beken en niets anders dan leegte.",
+ segs:[[60,320,"g"],[320,600,"g"],[600,770,"r"]],
+ verdict:"Qua verhaal de Schotse Parpaillon: dezelfde achttiende-eeuwse militaire logica, dezelfde afgelegenheid. Rijders op forums zeggen dat de hoofdweg prima gaat op gravel; de klachten gaan over losse stenen en de vermoeiende oostkant. Het serieuze bezwaar is de reis: met Calais–Dover ben je hier een volle dag onderweg, dus dit is een lang weekend, geen weekend.",
+ notes:[
+  "Gemotoriseerd verkeer verboden, fietsen expliciet toegestaan.",
+  "Beekdoorwaadplaatsen kunnen na regen serieus zijn — check de voorspelling.",
+  "Er staat een bothy onderweg; twee halve dagen is een prettiger indeling.",
+  "Shuttle-service beschikbaar vanuit Laggan als je één kant op wilt rijden.",
+  "Hoogspanningsmasten langs de route bederven het wildernisgevoel gedeeltelijk."],
+ voices:[
+  {who:"Forumlid, Singletrack World", q:"The main track is better and would be fine on a gravel bike.", tr:"De hoofdweg is beter en zou prima gaan op een gravelbike.", url:"https://singletrackworld.com/forum/bike-forum/corrieyairack-pass-pylon-route/"},
+  {who:"Komoot-tip, januari 2020", q:"Brutal but beautiful climb. Lot of loose rocks", tr:"Bruut maar prachtig. Veel losse stenen", url:"https://www.komoot.com/highlight/764781"},
+  {who:"Atlas Ride Co", q:"loose gravel, river crossings, and exposure to the elements", tr:"los grind, rivierdoorwaadplaatsen en volle blootstelling aan het weer", url:"https://www.atlasrideco.com/news/scotland-gravel-riding-routes-tours"}]
+},
+{
+ id:"walnascar", name:"Walna Scar Road", area:"Coniston, Lake District", land:"Engeland", cross:"uk",
+ lat:54.3564, lng:-3.1236, top:600, gain:550, len:9, gravel:9, type:"puur", bike:"mtb",
+ parallel:null,
+ line:"Een eeuwenoude pakezelweg over de schouder van de Old Man of Coniston, langs verlaten leisteengroeven. Kort, steil en berucht rotsig — het bekendste onverharde 'pass' van Engeland.",
+ segs:[[50,250,"a"],[250,450,"g"],[450,600,"r"]],
+ verdict:"Hier lopen de stemmen het verst uiteen van alle bestemmingen: de een reed 25 procent van de klim, de ander noemt de afdaling naar Duddon prima op gravel. De consensus is: rij hem van Duddon naar Coniston, reken op duwen omhoog en wees scherp op de rotstuinen omlaag. Op 55 mm haalbaar, maar dit is de enige plek waar ik zou zeggen: alleen doen als iemand in de groep dit leuk vindt.",
+ notes:[
+  "Richting: Duddon → Coniston wordt door forumrijders unaniem aangeraden.",
+  "Bridleway open to all traffic, maar druk met wandelaars bij de parkeerplaats.",
+  "De verharde aanloop vanuit Coniston is absurd steil — meerdere mensen zetten daar al voet aan de grond.",
+  "Rondom Grizedale en de Duddon-vallei ligt genoeg makkelijker grind voor een volle dag."],
+ voices:[
+  {who:"Forumlid, Singletrack World", q:"The erosion has made it a bit spicy in parts", tr:"De erosie heeft het op stukken wat pittig gemaakt", url:"https://singletrackworld.com/forum/topic/walna-scar-road-by-gravel-bike/"},
+  {who:"Mountain Journeys, verslag", q:"much of it is rideable and fun on a gravel bike", tr:"veel ervan is rijdbaar en leuk op een gravelbike", url:"https://www.mountain-journeys.co.uk/lakes-gravel/"},
+  {who:"LakesMTB", q:"only really rideable when you get to the quarry buildings", tr:"pas echt rijdbaar vanaf de groevegebouwen", url:"https://lakesmtb.co.uk/routes/wanna-scar-long/"}]
+}
+,
+{
+ id:"grappa", name:"Monte Grappa — Strada del Covolo", area:"Veneto, voor de Dolomieten", land:"Italië",
+ lat:45.8728, lng:11.8036, top:1775, gain:1500, len:20, gravel:12, type:"parallel", bike:"grens",
+ parallel:"Monte Grappa via Semonzo / Romano",
+ line:"Elf verharde beklimmingen leiden naar Cima Grappa, met een oorlogsmonument waar tienduizenden gevallenen liggen. Er is een twaalfde: een oude muilezelweg met bijna veertig haarspelden vanaf Crespano, over compact grind naar Malga Ardosetta.",
+ segs:[[300,600,"a"],[600,1450,"g"],[1450,1775,"a"]],
+ verdict:"De grootste concentratie zware beklimmingen naar één top ter wereld, en precies daarom leuk: iedereen rijdt de bekende kant, jij komt via het grind boven. Rijders die de pistes van dichtbij zagen omschrijven ze als wisselvallig — het ene moment rollend, het andere steil en gemeen. Reken dus op een grensgeval, niet op een snelweg.",
+ notes:[
+  "De Strada Cadorna over de kam naar het oosten is een prachtige, rustige afsluiter.",
+  "Op de top ligt het Sacrario Militare; de Rifugio Bassano ernaast is een fietserscafé.",
+  "Op heldere dagen zie je de lagune van Venetië liggen.",
+  "Het Asiago-plateau ligt naast de deur voor een tweede dag."],
+ voices:[
+  {who:"Top Bike Climbs / PJAMM", q:"almost 40 hairpin bends that lead up to Malga Ardosetta", tr:"bijna 40 haarspelden die naar Malga Ardosetta leiden", url:"https://pjammcycling.com/zone/55.Monte%20Grappa"},
+  {who:"Cycloworld, ter plaatse", q:"one moment rolling and almost friendly, the next steep and mean", tr:"het ene moment rollend en bijna vriendelijk, het volgende steil en gemeen", url:"https://www.cycloworld.cc/en/article/monte-grappa-a-climb-with-a-soul/5728"}]
+},
+{
+ id:"asiago", name:"Altopiano di Asiago — militaire wegen", area:"Vicentijnse Voor-Alpen", land:"Italië",
+ lat:45.8778, lng:11.5097, top:1400, gain:1005, len:45, gravel:27, type:"puur", bike:"grens",
+ parallel:null,
+ line:"Een hoogvlakte vol wegen uit de Eerste Wereldoorlog, malga's waar nog kaas wordt gemaakt, en bosroutes die tussen de zuidelijke Dolomieten door lopen. Ongeveer zestig procent onverhard.",
+ segs:[[1000,1100,"a"],[1100,1400,"g"]],
+ verdict:"Wie de Dolomieten in gedachten heeft maar geen zin heeft in campers op de Sellaronda, komt hier beter uit. Eerlijk erbij: over dit gebied schrijven vooral reisorganisaties, geen losse rijders — de beschrijvingen die ik vond noemen los gesteente en grof grind, en raden gravel- of MTB-ervaring aan. Plan het als verkenning, niet als afvinklijst.",
+ notes:[
+  "Ongeveer 60% van het terrein is onverhard: bospistes en muilezelpaden.",
+  "Malga's onderweg serveren lunch — de kaascultuur is hier eeuwenoud.",
+  "Het militair ossuarium van Asiago is een logisch keerpunt in een lus.",
+  "Korte dagafstanden zijn hier normaal; het terrein kost meer tijd dan de kilometers suggereren."],
+ voices:[
+  {who:"Trek Travel, routebeschrijving", q:"loose rocks and chunky gravel", tr:"los gesteente en grof grind", url:"https://trektravel.com/tour/cycling/italian-dolomites-gravel/"},
+  {who:"Dolomiti Gravel (IT)", q:"climbs are the steepest and longer, descents are thrilling technical", tr:"de klimmen zijn het steilst en langst, de afdalingen technisch en spannend", url:"https://www.dolomitigravel.com/"}]
+},
+{
+ id:"corsica", name:"Bocca di Verghio & de Gravel20", area:"Centraal Corsica", land:"Frankrijk", cross:"co",
+ lat:42.3050, lng:8.9000, top:1477, gain:1200, len:25, gravel:12, type:"parallel", bike:"gravel",
+ parallel:"GT20 / Bocca di Verghju, hoogste weg van Corsica",
+ line:"De GT20 doorkruist het eiland van Bastia naar Bonifacio over de hoogste weg van Corsica. Ernaast ligt de Gravel20: dezelfde doorsteek maar met honderd kilometer onverhard, ter plaatse gecontroleerd.",
+ segs:[[600,900,"a"],[900,1477,"g"]],
+ verdict:"Corsica is spectaculair maar verraderlijk om te plannen: de makers van de Gravel20 waarschuwen expliciet dat veel sporen die op de kaart bestaan in werkelijkheid afgesloten, privé, dichtgegroeid of onberijdbaar zijn. Gebruik dus een gevalideerde track en niet je eigen Komoot-lijn. En reken op de boot: dit is geen weekend, dit is een week.",
+ notes:[
+  "De GT20 zelf is grotendeels asfalt; de Gravel20 is de onverharde variant van ± 500 km met ± 100 km grind.",
+  "Voorjaar en najaar worden aangeraden — rustiger wegen, dragelijker temperaturen.",
+  "De RT20 dwars door het eiland is druk; de GT20 mijdt hem grotendeels, maar niet overal.",
+  "Vliegen naar Bastia of Ajaccio en ter plaatse huren is vrijwel altijd sneller dan rijden."],
+ voices:[
+  {who:"Gattu Bike Corsica, makers van de Gravel20", q:"tracks that appear on maps but are actually closed, private, overgrown", tr:"sporen die op de kaart staan maar in werkelijkheid afgesloten, privé of dichtgegroeid zijn", url:"https://www.gattu.corsica/en/gravel20"},
+  {who:"Komoot GT20-collectie", q:"a VTC, gravel, road, or electric bike are all suitable", tr:"een hybride, gravel-, race- of elektrische fiets zijn allemaal geschikt", url:"https://www.komoot.com/collection/2567507/the-great-crossing-of-corsica-by-bike-gt-20"},
+  {who:"Epic Road Rides", q:"This is a busy road, so extra caution is advised", tr:"Dit is een drukke weg, dus extra voorzichtigheid is geboden", url:"https://epicroadrides.com/destinations/cycling-france/corsica/"}]
+},
+{
+ id:"gennargentu", name:"Gennargentu & Supramonte", area:"Barbagia / Ogliastra", land:"Italië", cross:"sa",
+ lat:40.0053, lng:9.3086, top:1400, gain:1200, len:30, gravel:22, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"Het ruige binnenland van Sardinië: kalkstenen hoogvlaktes, oude mijnbouwsporen, kurkeiken en dorpen waar de tijd stilstaat. Fonni ligt op duizend meter en is het hoogste dorp van het eiland.",
+ segs:[[600,800,"a"],[800,1400,"g"]],
+ verdict:"Van alle bestemmingen op deze lijst degene met het beste seizoen: april-mei en september-oktober zijn hier ideaal, precies wanneer de Alpen nog dicht of al koud zijn. De Komoot-community geeft Sardinië gemiddeld 4,4 sterren over ruim 480 beoordelingen, wat een breed gedragen oordeel is. Het bezwaar is puur logistiek: met auto en boot ben je meer dan een dag onderweg.",
+ notes:[
+  "Beste periodes: april–mei en september–oktober; midzomer is te heet in het binnenland.",
+  "Op sommige etappes meer dan 30 km zonder bar of bron — plan water bewust.",
+  "Oude mijnbouwsporen en bosroutes vormen het grootste deel van het onverharde netwerk.",
+  "Vliegen op Cagliari of Olbia en ter plaatse huren scheelt twee reisdagen."],
+ voices:[
+  {who:"Komoot-regiogids", q:"an average score of 4.4 stars from over 480 reviews", tr:"gemiddeld 4,4 sterren uit ruim 480 beoordelingen", url:"https://www.komoot.com/guide/3440916/gravel-biking-in-sardinia"},
+  {who:"SardiniaCycling, routebeschrijving", q:"The trail culminates at Passo Tascusì", tr:"De route eindigt op de Passo Tascusì", url:"https://www.sardiniacycling.com/en/biking-tours/epic-sardinia-gravel-edition.html"},
+  {who:"Cycling Destination (NL)", q:"The gravel bike can take you in even more directions.", tr:"", url:"https://cyclingdestination.cc/en/stories/fietsen-op-sardinie-gravel"}]
+},
+{
+ id:"picos", name:"Vuelta a los Picos de Europa", area:"Asturië / Cantabrië / León", land:"Spanje",
+ lat:43.1500, lng:-4.8000, top:1562, gain:1600, len:68, gravel:25, type:"parallel", bike:"grens",
+ parallel:"Lagos de Covadonga (Vuelta a España)",
+ line:"Een ronde van vier etappes om het nationale park, over de Puerto del Pontón, Panderrueda en Pandetrave, met een afdaling naar Fuente Dé die door een kabelbaan wordt onderbroken. Beren en wolven leven hier nog.",
+ segs:[[400,900,"a"],[900,1562,"g"]],
+ verdict:"Landschappelijk vergelijkbaar met de Dolomieten maar zonder de drukte — en met bijna vierduizend kilometer fietsroute in Asturië alleen al. Let op één specifieke waarschuwing van een rijder die de ronde deed: de piste omlaag naar Fuente Dé is met bepakking op gravel alleen met veel voorzichtigheid te doen. Plan die etappe zonder tassen of neem de kabelbaan.",
+ notes:[
+  "De Camín Real de la Mesa (Romeinse weg) en de Senda del Oso zijn de klassieke losse dagen.",
+  "Kabelbaan bij Fuente Dé: reserveren, en hij sluit bij harde wind.",
+  "Het weer in de Picos is uitgesproken Atlantisch — reken op regen, ook in juli.",
+  "Lagos de Covadonga is verhard maar in de zomer voor auto's afgesloten; dat maakt hem fietsbaar."],
+ voices:[
+  {who:"Rijder, Wikiloc-verslag (ES)", q:"en gravel con alforjas se hace bien con mucho cuidado", tr:"op gravel met bepakking gaat het goed, mits heel voorzichtig", url:"https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"},
+  {who:"Espaciobike (ES)", q:"la multitud de senderos de tierra permiten diseñar rutas de grava increíbles", tr:"de vele onverharde paden maken ongelooflijke gravelroutes mogelijk", url:"https://espaciobike.com/gravel-en-asturias/"},
+  {who:"Cycle Fiesta", q:"similar to The Dolomites in Italy, but with more vibrant colors", tr:"vergelijkbaar met de Dolomieten, maar met levendiger kleuren", url:"https://www.cyclefiesta.com/multimedia/climbs/asturias/asturias.htm"}]
+},
+{
+ id:"rallarvegen", name:"Rallarvegen", area:"Hardangervidda: Haugastøl – Finse – Flåm", land:"Noorwegen", cross:"no",
+ lat:60.6022, lng:7.5083, top:1343, gain:600, len:82, gravel:70, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"De aanlegweg van de Bergensbanen, tussen 1902 en 1909 met paard en kar over de Hardangervidda aangelegd. Sinds de jaren zeventig een fietsroute, en volgens vrijwel elke Noorse lijst de mooiste van het land.",
+ segs:[[988,1343,"g"],[1343,600,"g"]],
+ verdict:"Als één route op deze lijst onvergetelijk is zonder dat je ervoor hoeft te lijden, is dit hem. Vanaf Finse is het netto afdalen, het grind is grotendeels compact, en er rijden meer dan twintigduizend fietsers per zomer — dat zegt iets over de toegankelijkheid, maar ook over de drukte. Rijders melden sneeuwvelden tot ver in juli en losse stukken waar je afstapt.",
+ notes:[
+  "Altijd Finse → Flåm rijden; andersom is aanzienlijk zwaarder.",
+  "Finse is alleen per trein bereikbaar — de auto blijft in Haugastøl of Geilo staan.",
+  "Seizoen ongeveer half juli tot half september; check het Rallarvegen-rapport vooraf.",
+  "Het stuk Haugastøl–Finse is breed en makkelijk; Finse–Flåm is het echte werk.",
+  "Onderweg twee cafés en DNT-hutten, dus hoog overnachten is goed te doen."],
+ voices:[
+  {who:"Fietser, Tripadvisor-review", q:"The very rough or very steep patches I walked", tr:"De heel ruwe of heel steile stukken liep ik", url:"https://www.tripadvisor.com/Attraction_Review-g7159542-d3497800-Reviews-Rallarvegen_The_Navvy_Road-Ulvik_Ulvik_Municipality_Hardanger_Hordaland_Western_.html"},
+  {who:"Noorse fietser, geciteerd door Cycloscope", q:"You have to do Finse to Flåm. There is nothing else like it.", tr:"Je moet Finse–Flåm doen. Er is niets dat erop lijkt.", url:"https://cycloscope.net/cycling-rallarvegen-from-finse-to-flam/"},
+  {who:"Bikepacking.com", q:"more than 20,000 cyclists visiting it each summer", tr:"ruim 20.000 fietsers per zomer", url:"https://bikepacking.com/routes/of-milk-and-navvies/"}]
+},
+{
+ id:"strynefjell", name:"Gamle Strynefjellsvegen", area:"Grotli – Videsæter, Vestland", land:"Noorwegen", cross:"no",
+ lat:62.0333, lng:7.4167, top:1139, gain:1050, len:27, gravel:15, type:"parallel", bike:"gravel",
+ parallel:"Rv15 door de Strynefjell-tunnels",
+ line:"Tussen 1889 en 1894 met de hand gebouwd, in 2009 als monument beschermd, en sindsdien de historische omweg naast de tunnelroute. Handgestapelde muren en eindeloze rijen wachtstenen langs het wegdek.",
+ segs:[[850,1139,"g"],[1139,700,"a"]],
+ verdict:"Let op een tegenstrijdigheid in de bronnen die je reisplan bepaalt: de oostkant vanaf Grotli is grind, maar één gedetailleerd verslag beschrijft de westkant vanaf Hjelle als ruw asfalt over vrijwel de hele klim, met slechts een kort grindplateau bovenop. Kortom: rijd hem vanaf Grotli als je grind wilt. Verder is dit de meest sfeervolle korte klim op de lijst — gesloten voor groot verkeer, en pas open vanaf 15 juni.",
+ notes:[
+  "Open van ongeveer 15 juni tot eind september; check vegvesen.no.",
+  "Grotli-kant is grind, Hjelle-kant is oud ruw asfalt. Kies bewust.",
+  "Geen cafés of kranen onderweg; bevoorraad in Grotli of Hjelle.",
+  "Zomerskigebied halverwege; daarna een lange afdaling langs watervallen.",
+  "Herfstkleuren worden door vrijwel elke bron als het hoogtepunt genoemd."],
+ voices:[
+  {who:"Cycle Norway", q:"Some people have cried cycling it!", tr:"Sommige mensen hebben er huilend op gefietst!", url:"https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"},
+  {who:"CyclingRoutes.cc, ter plaatse", q:"The surface stays rough asphalt the whole way", tr:"Het wegdek blijft de hele klim ruw asfalt", url:"https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"},
+  {who:"Nasjonale turistveger", q:"a museum experience in itself", tr:"op zichzelf al een museumervaring", url:"https://www.nasjonaleturistveger.no/en/routes/gamle-strynefjellsvegen/"}]
+},
+{
+ id:"gardetta", name:"Altopiano della Gardetta & Colle Fauniera", area:"Val Maira, Cottische Alpen", land:"Italië",
+ lat:44.4139, lng:7.0917, top:2481, gain:1700, len:25, gravel:15, type:"parallel", bike:"gravel",
+ parallel:"Colle Fauniera (Giro 1999, Pantani)",
+ line:"Vijftien kilometer militaire strada bianca die altijd boven de 2000 meter blijft, in een halve cirkel om de dolomitische Rocca la Meja heen. Vier colletjes achter elkaar, kudden schapen, vervallen kazernes, en op het einde het Pantani-monument op de Fauniera.",
+ segs:[[1000,2083,"a"],[2083,2450,"g"],[2450,2481,"a"]],
+ verdict:"Geverifieerd en beter dan verwacht. Dit is de zeldzame combinatie van een beroemde verharde col en een echt hoogvlakte-grindtraject in één dag, zonder duwwerk. Let op de nuance in de Italiaanse verslagen: onderweg wordt het grind grover en heb je evenwicht nodig, en één rijder noemt het stuk langs Rocca la Meja duidelijk technischer. Op 55 mm zit je goed.",
+ notes:[
+  "Drie verharde kanten naar de Fauniera, allemaal rustig; de kant vanaf Ponte Marmora is de smalste.",
+  "Rifugio Gardetta op 2335 m is het logische middelpunt van de lus.",
+  "Elektrische veeafrasteringen kruisen de piste — er zit steeds een geïsoleerde handgreep aan, weer vastmaken.",
+  "Laatste fontein ligt bij km 6 van de klim naar Colle di Esischie.",
+  "Het plateau is erkend Italiaans geologisch erfgoed; gemotoriseerd verkeer komt er ook."],
+ voices:[
+  {who:"My Cycling Challenge", q:"Fifteen (amazing) kms along unpaved old military roads", tr:"Vijftien (fantastische) kilometer over onverharde oude militaire wegen", url:"https://www.cycling-challenge.com/colle-fauniera-and-beyond/"},
+  {who:"Turista Gravel (IT), eigen verslag", q:"la ghiaia si fa grossa, serve un buon colpo di pedale", tr:"het grind wordt grof, je hebt een stevige pedaalslag nodig", url:"https://turistagravel.home.blog/2019/02/10/altopiano-della-gardetta/"},
+  {who:"Life in Travel (IT)", q:"Il percorso si fa decisamente più tecnico", tr:"De route wordt beslist technischer", url:"https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html"}]
+},
+{
+ id:"valviola", name:"Passo di Val Viola", area:"Valdidentro – Poschiavo", land:"Italië / Zwitserland",
+ lat:46.4050, lng:10.1400, top:2489, gain:600, len:18, gravel:16, type:"puur", bike:"gravel",
+ parallel:null,
+ line:"Vanaf Arnoga een gelijkmatig stijgende, goed onderhouden grindweg door een breed hoogdal met bergmeertjes, tot aan de Zwitserse grens op 2489 meter. Bij Rifugio Viola staat polenta klaar.",
+ segs:[[1890,2489,"g"]],
+ verdict:"Geverifieerd, en de conclusie is scherper dan de suggestie: de klim vanaf Arnoga is een groene, goed berijdbare grindweg — dit is een van de vriendelijkste manieren om op bijna 2500 meter te komen. Het addertje zit aan de andere kant. Meerdere Italiaanse verslagen melden dat alleen de eerste 300 hoogtemeters van de afdaling richting Sfazù niet fietsbaar zijn. Rijd hem dus als heen-en-terug vanaf Arnoga, of accepteer dat je één stuk draagt.",
+ notes:[
+  "Seizoen juni tot september; het dal ligt hoog en houdt sneeuw lang vast.",
+  "Rifugio Viola halverwege is een bekend rustpunt.",
+  "De doorsteek naar Poschiavo kan met de Berninatrein terug — hele wagons zijn ingericht voor fietsen.",
+  "Combineert logisch met Val Mora en Alpisella vanuit hetzelfde basiskamp."],
+ voices:[
+  {who:"Trailforks, trailbeschrijving", q:"Steady climb well maintained and rideable", tr:"Gelijkmatige klim, goed onderhouden en berijdbaar", url:"https://www.trailforks.com/trails/passo-viola/"},
+  {who:"Max e Gio MTB (IT)", q:"itinerario completamente ciclabile tranne che per il tratto iniziale di discesa", tr:"volledig fietsbare route, op het eerste stuk van de afdaling na", url:"https://max-gio-mtb.jimdofree.com/percorsi-mtb/svizzera/val-viola-val-poschiavo/"},
+  {who:"Training Camp (IT), over de Zwitserse afdaling", q:"Spero che le vostre sospensioni funzionino bene", tr:"Ik hoop dat jullie vering goed werkt", url:"https://training.camp/it/route/2825/passo-della-vallaccia-e-val-viola-/"}]
+},
+{
+ id:"pfitscherjoch", name:"Pfitscher Joch / Passo di Vizze", area:"Zillertaler Alpen, Zuid-Tirol", land:"Italië / Oostenrijk",
+ lat:46.9903, lng:11.6708, top:2251, gain:1300, len:25, gravel:9, type:"parallel", bike:"gravel",
+ parallel:"Brennerpas",
+ line:"Aan het eind van het Pfitschertal begint een militaire weg uit de Eerste Wereldoorlog die in negen kilometer aardepiste naar de hoofdkam van de Alpen klimt. Autovrij, met een berghut op de pas en uitzicht over twee landen.",
+ segs:[[950,1450,"a"],[1450,2251,"g"]],
+ verdict:"Geverifieerd, met één cruciale correctie op de suggestie: dit werkt alleen vanaf de zuidkant. De Duitse passendatabase noemt de aardepiste zelfs met smalle banden berijdbaar, en rijders bevestigen dat het klimmen prima gaat. Maar wie de oversteek naar het Zillertal wil maken, draagt aan de noordkant richting Schlegeis kilometerslang. Als klim: uitstekend en verrassend toegankelijk. Als doorsteek: neem wandelschoenen mee.",
+ notes:[
+  "Zuidkant vanaf Sterzing/Stein is grind en berijdbaar; noordkant vanaf de Schlegeis is dragen.",
+  "Gesloten voor doorgaand gemotoriseerd verkeer; alleen de onderste kilometers zijn nog toegankelijk voor auto's.",
+  "Bovenin liggen op regelmatige afstand stalen waterafvoergoten dwars over de weg — let op je velgen.",
+  "Het Pfitscherjochhaus op de pas is 's zomers open.",
+  "Vanaf Jenbach kun je met de trein terug als je toch oversteekt."],
+ voices:[
+  {who:"Quäldich, passenbeschrijving (DE)", q:"welche allerdings auch mit schmaler Bereifung befahrbar ist", tr:"die overigens ook met smalle banden berijdbaar is", url:"https://www.quaeldich.de/paesse/pfitscher-joch/"},
+  {who:"Berginsel, bikepackingverslag (DE)", q:"Pfitscher Joch zwar fahrbar, aber nicht asphaltiert", tr:"Pfitscher Joch is fietsbaar, maar niet geasfalteerd", url:"https://www.berginsel.de/bikepacking-zillertal-trail/"},
+  {who:"Gravelrijder, Outdooractive (DE)", q:"eine anspruchsvolle Herausforderung für mein Gravel-Bike", tr:"een veeleisende uitdaging voor mijn gravelbike", url:"https://www.outdooractive.com/de/gravel-bike-touren/zillertal/gravel-bike-touren-im-zillertal/288066237/"}]
+},
+{
+ id:"rochilles", name:"Col des Rochilles & Camp des Rochilles", area:"Cerces, boven Plan Lachat", land:"Frankrijk",
+ lat:45.0578, lng:6.4642, top:2496, gain:1250, len:20, gravel:14, type:"parallel", bike:"grens",
+ parallel:"Col du Galibier (noordkant)",
+ line:"Vanaf Plan Lachat, halverwege de Galibier, gaat links een grindweg omhoog naar een nog gebruikte legerbasis uit de Maginotlinie. Daarachter liggen vijf onverharde cols en drie bergmeren, allemaal boven de 2400 meter.",
+ segs:[[1430,2000,"a"],[2000,2450,"g"],[2450,2496,"r"]],
+ verdict:"Geverifieerd en de mooiste van de vier: je rijdt de drukke Galibier-weg tot Plan Lachat en slaat dan af het grind en de stilte in. Tot Camp des Rochilles is het volgens rijders geen makkelijk wegdek maar prima te doen. Voorbij het Seuil des Rochilles verandert het karakter: één rijder meldt een uur duwen en vijf minuten dragen richting de Drayères-hut. Kies dus bewust waar je omkeert.",
+ notes:[
+  "Plan Lachat ligt op 1986 m; de afslag naar Rochilles zie je vanaf de Galibier-weg liggen.",
+  "De legerbasis is nog in gebruik en het gebied is deels schietterrein — informeer vooraf naar openstelling.",
+  "Tot Col de la Paré en Camp des Rochilles is rijdbaar; het stuk naar het Seuil is het omslagpunt.",
+  "Drie meren boven de 2400 m: Grand Ban, Rond en Sainte-Marguerite.",
+  "Goed te combineren met Col du Granon en de gravelcols daarboven als tweede dag."],
+ voices:[
+  {who:"My Cycling Challenge", q:"It's not an easy surface, but perfectly rideable.", tr:"Geen makkelijk wegdek, maar prima berijdbaar.", url:"https://www.cycling-challenge.com/col-hunting-behind-le-grand-galibier/"},
+  {who:"Gravelrijder, Komoot-notitie", q:"be ready to push and carry for 3km and 300hm", tr:"reken op duwen en dragen over 3 km en 300 hoogtemeter", url:"https://www.komoot.com/smarttour/e1030354455/vallee-de-claree-col-des-rochilles-et-ancienne-route-du-galibier"},
+  {who:"Rijder, reactie op Cols-Cyclisme (FR)", q:"Une heure de poussage et 5 minutes de portage", tr:"Een uur duwen en vijf minuten dragen", url:"https://www.cols-cyclisme.com/cerces/france/col-des-rochilles-depuis-valloire-c1455.htm"}]
+}
+];
+/* ============================ LOGISTIEK ============================ */
+/* Elk item: {t: bewering, u: bron-URL of null}. q = rijderscitaat. */
+const LOGI = {
+hogevenen:{
+ base:[{t:"Stavelot of Coo als dalbasis; Baraque Michel zelf (674 m, gemeente Jalhay) is herberg én startpunt op het plateau.",u:"https://en.wikipedia.org/wiki/Baraque_Michel"},
+       {t:"Signal de Botrange (694 m) is het hoogste punt van België en ligt op de route.",u:"https://visitwallonia.be/nl/produit/attractions/activites/natuurreservaat/-ruimte/signaal-van-botrange/11105"}],
+ sleep:[{t:"Restaurant Baraque Michel bij de parking — Baraque Michel 36, 4845 Jalhay.",u:"https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"},
+        {t:"Domaine des Hautes Fagnes, Rue de Botrange 133, 4950 Robertville.",u:"https://ardennen.nl/wandelen/wandeling-naar-baraque-michel-op-de-hoge-venen/"}],
+ park:[{t:"Parking Baraque Michel, plaats voor ± 100 auto's — vroeg komen op mooie dagen.",u:"https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"},
+       {t:"EV-laadpunten in de directe omgeving: onbevestigd.",u:null}],
+ water:[{t:"Waterpunten in het gebied genoemd door VisitWallonia; exacte drinkfonteinen op de route onbevestigd.",u:"https://visitwallonia.be/nl/produit/attractions/activites/natuurreservaat/-ruimte/signaal-van-botrange/11105"}],
+ food:[{t:"Restaurant Baraque Michel; Natuurcentrum Botrange ligt binnen 500 m van de route.",u:"https://www.wikiloc.com/hiking-trails/hoge-venen-baraque-michel-en-signal-de-botrange-63113314"}],
+ season:[{t:"KMI telt gemiddeld 43 dagen sneeuwbedekking per jaar in de Hoge Venen.",u:"https://www.met4opreis.be/bestemmingen/belgie/langlaufen-in-de-hoge-venen"},
+         {t:"Gemiddeld 6,1 °C, 170 regendagen, 115 vorstdagen en mist op ± 176 dagen per jaar.",u:"https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"},
+         {t:"Modderig en glad na regen.",u:"https://www.alltrails.com/trail/belgium/liege/signal-de-botrange-boucle"},
+         {t:"Let op de betreedverboden (zones C/D) in het natuurreservaat — status checken bij Natuurcentrum Botrange.",u:null}],
+ quotes:[{who:"Reisbeesten",q:"Er is plaats voor ongeveer 100 auto's. Kom dus zeker op tijd!",tr:"",url:"https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"}],
+ gap:"Weinig gravel-specifieke ooggetuigenverslagen; vrijwel alle bronnen zijn wandelverslagen."
+},
+sanktvith:{
+ base:[{t:"Sankt Vith; vertrek aan Cultuurcentrum Triangel, Vennbahnstrasse 2. Ruim horeca-aanbod in het stadje.",u:"https://www.vennbahn.eu/nl/etappe/lus-8/"}],
+ sleep:[{t:"Relaxhotel Pip Margraff in Sankt Vith.",u:"https://www.komoot.com/ja-jp/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"},
+        {t:"Hotel Zum Burghof in Schönberg.",u:"https://www.vennbahn.eu/nl/etappe/lus-8/"}],
+ park:[{t:"Sankt Vith: bij Cultuurcentrum Triangel, Vennbahnstrasse 2.",u:"https://www.vennbahn.eu/nl/etappe/lus-8/"},
+       {t:"Noordelijk beginpunt: APAG Parkhaus Hauptbahnhof, Lagerhausstraße 20, Aachen — 3 km van de Vennbahn.",u:"https://www.ostbelgien.eu/en/vennbahn"},
+       {t:"EV-laadpunten: onbevestigd.",u:null}],
+ water:[{t:"Onbevestigd; navragen bij Toeristisch Agentschap Ostbelgien, Hauptstrasse 54, Sankt Vith.",u:"https://www.vennbahn.eu/nl/tourguide/"}],
+ food:[{t:"Ruim horeca-aanbod in Sankt Vith.",u:"https://www.vennbahn.eu/nl/etappe/lus-8/"}],
+ season:[{t:"De officiële Vennbahn is volledig geasfalteerd — de gravelvariant loopt ernaast.",u:"https://www.ostbelgien.eu/en/vennbahn"},
+         {t:"Officiële waarschuwing: druk verkeer bij het verlaten van Sankt Vith; tussen kn 42 en 44 een afdaling van 18%.",u:"https://www.vennbahn.eu/nl/etappe/lus-8/"}],
+ quotes:[{who:"Gijs Hardeman, Komoot",q:"this variant consists mostly of gravel, forest paths, single tracks, and tree roots",tr:"deze variant bestaat vooral uit grind, bospaden, singletrack en boomwortels",url:"https://www.komoot.com/ja-jp/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"},
+         {who:"Gijs Hardeman, Komoot",q:"We parked our car in Kornelismünster, from where we rolled onto the Vennbahn",tr:"We parkeerden in Kornelimünster en rolden vandaar de Vennbahn op",url:"https://www.komoot.com/ja-jp/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"}],
+ gap:""
+},
+brocken:{
+ base:[{t:"Schierke (klim naar de top begint hier), Torfhaus (westkant, grindroute) of Wernigerode.",u:"https://www.quaeldich.de/paesse/brocken/"},
+       {t:"De enige weg naar de top is voorbehouden aan fietsers en paardenkoetsen.",u:"https://www.quaeldich.de/paesse/brocken/"},
+       {t:"Fietsverhuur in Schierke: Ferienanlage Zum Wildbach, Barenberg 15f, tel. 039455-58 99 70.",u:"https://www.schierke-am-brocken.de/zeitzubleiben/rad-und-mountainbike-schierke"}],
+ sleep:[{t:"Overnachten in Schierke; Brockenhotel op de top alleen met voorbestelling.",u:"https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"},
+        {t:"Reparatieset te leen bij Tourist-Information Schierke.",u:"https://www.schierke-am-brocken.de/zeitzubleiben/rad-und-mountainbike-schierke"}],
+ park:[{t:"Schierke; EV-laden onbevestigd.",u:null}],
+ water:[{t:"Horeca op de top (Brockenwirt); drinkwaterpunten onderweg onbevestigd.",u:"https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"}],
+ food:[{t:"Brockenwirt en Touristensaal op de top; horeca in Schierke.",u:"https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"}],
+ season:[{t:"Eerste sneeuw meestal in september, blijft vaak liggen tot maart.",u:"https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"},
+         {t:"De Brockenstraße vanaf Schierke is nieuw geasfalteerd; grindalternatieven zijn de alte Schierker Straße (start bij Ehrenfriedhof Oderhaus, B4) en de nieuwe Goetheweg vanaf Schierke.",u:"https://www.quaeldich.de/paesse/brocken/befahrungen/westauffahrt-vom-torfhaus-schotter/"},
+         {t:"Nationalpark Harz: fietsen alleen op aangewezen wegen.",u:"https://www.komoot.com/highlight/471452"}],
+ quotes:[{who:"Forumlid, Rennrad-News",q:"halte den Schotter für zu grob. Auswaschungen im Bereich Quitschenberg",tr:"vind het grind te grof; uitspoelingen rond de Quitschenberg",url:"https://www.rennrad-news.de/forum/threads/brocken-harz-goetheweg.185684/"},
+         {who:"Forumlid, Rennrad-News",q:"den neuen Götheweg ab Schierke bin ich letzten Herbst mit 36mm Slicks gefahren",tr:"de nieuwe Goetheweg vanaf Schierke reed ik vorig najaar met 36 mm slicks",url:"https://www.rennrad-news.de/forum/threads/brocken-harz-goetheweg.185684/"}],
+ gap:"Contradictie: de één vindt de Goetheweg vanaf Torfhaus te grof voor smalle banden, een ander reed de Schierke-kant probleemloos op 36 mm."
+},
+nordschwarzwald:{
+ base:[{t:"Baiersbronn (officiële gravelroute start hier), Achern of Ottenhöfen. Wander-Informationszentrum Baiersbronn, tel. +49 7442 8414-66.",u:"https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"}],
+ sleep:[{t:"Schliffkopfhotel bij het gebied genoemd; specifieke bike-accommodatie onbevestigd.",u:"https://www.schwarzwald-informationen.de/nationalpark-nordschwarzwald/schliffkopf-grinden.html"}],
+ park:[{t:"Parkplatz Steinmäuerle am Schliffkopf en Parkplatz Ruhestein / Nationalparkzentrum.",u:"https://www.schwarzwald-informationen.de/wandern-im-nationalpark-schwarzwald.html"},
+       {t:"EV-laden onbevestigd.",u:null}],
+ water:[{t:"Onbevestigd; Mummelsee-Hotel op de route als vaste stop.",u:"https://www.schwarzwald-informationen.de/wandern-im-nationalpark-schwarzwald.html"}],
+ food:[{t:"Mummelsee-Hotel en restaurants langs de Schwarzwaldhochstraße B500.",u:"https://www.schwarzwald-informationen.de/nationalpark-nordschwarzwald/schliffkopf-grinden.html"}],
+ season:[{t:"Hoogste punt 1163 m (Hornisgrinde), laagste 458 m; route is niet bewegwijzerd.",u:"https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"},
+         {t:"Seizoensgebonden afsluitingen in Wildschutzgebieten, vooral in de winter — checken via het Wander-Informationszentrum.",u:"https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"}],
+ quotes:[{who:"Reviewer, Climbfinder",q:"Coming back by the Hornisgrinde brings you at the bottom very fast",tr:"Terug via de Hornisgrinde ben je razendsnel beneden",url:"https://climbfinder.com/de/anstiege/schliffkopf-ottenhofen-im-schwarzwald"}],
+ gap:"Weinig gravel-specifieke ooggetuigenverslagen; waterpunten en accommodatie zijn nog onbevestigd."
+},
+grandballon:{
+ base:[{t:"Munster, Guebwiller of La Bresse. Col de la Schlucht (1135 m) is een strategisch kruispunt en goede uitvalsbasis.",u:"https://mlclabresse.fr/route-des-cretes-vosges/"},
+       {t:"Grand Ballon is met 1424 m het hoogste punt van de Vogezen.",u:"https://www.visorando.com/parcours-le-grand-ballon.html"}],
+ sleep:[{t:"Kleine refuges en auberges rond Markstein, Hohneck en Grand Ballon; Gîtes de France langs de Route des Crêtes.",u:"https://www.routes-touristiques.com/tourisme/les-circuits/alsace/route-des-cretes-d-alsace-68-et-88.html"},
+        {t:"Chalet-hôtel du Grand Ballon vlak bij de top.",u:"https://www.utagawavtt.com/randonnee-vtt-gps/Boucle-Thann-Grand-Ballon-6566"}],
+ park:[{t:"Parking bij de Col du Grand Ballon (1341 m).",u:"https://mlclabresse.fr/route-des-cretes-vosges/"},
+       {t:"EV-laden onbevestigd.",u:null}],
+ water:[{t:"Publieke fonteinen in de dorpen langs de route; drink nooit meerwater vanwege cyanobacteriën.",u:"https://www.rectoverso.co/itineraires/bikepacking-vosges"}],
+ food:[{t:"Markstein (1190 m) met horeca; talrijke dorpen met bevoorrading.",u:"https://mlclabresse.fr/route-des-cretes-vosges/"}],
+ season:[{t:"Officieel: vanaf de eerste sneeuwval in de herfst is de Route des Crêtes gesloten tot 1 mei.",u:"https://www.ballons-hautes-vosges.com/gastronomique-historique-naturel-en-montagne/la-route-des-cretes-et-le-grand-ballon.html"},
+         {t:"Zeer druk met motoren en campers; geel hesje en licht aangeraden.",u:"https://www.rectoverso.co/itineraires/bikepacking-vosges"}],
+ quotes:[{who:"Recto Verso (FR)",q:"des villages où se ravitailler en eau dans les fontaines publiques",tr:"dorpen waar je water kunt tappen uit publieke fonteinen",url:"https://www.rectoverso.co/itineraires/bikepacking-vosges"},
+         {who:"UtagawaVTT (FR)",q:"on évite la route des crêtes en prenant le chemin à droite",tr:"we mijden de Route des Crêtes door rechts het pad te nemen",url:"https://www.utagawavtt.com/randonnee-vtt-gps/Boucle-Thann-Grand-Ballon-6566"}],
+ gap:""
+},
+planche:{
+ base:[{t:"Plancher-les-Mines aan de voet van de Super Planche; Giromagny of Lepuix-Gy als alternatief. Office de Tourisme Giromagny, 45 Grande Rue, tel. 03 84 56 24 19.",u:"https://www.ballondalsace.fr/tous-les-commerces-2/hebergement/"},
+       {t:"Col du Ballon d'Alsace ligt op 1178 m, de top op 1247 m.",u:"https://en.wikipedia.org/wiki/Col_du_Ballon_d%27Alsace"}],
+ sleep:[{t:"Hôtel-Restaurant du Sommet op de top van de Ballon d'Alsace: 24 kamers, 63 personen, hele jaar open, met afgesloten fietsgarage; tel. 03 84 29 30 60, menu € 15–34.",u:"http://www.hotelrestaurantdusommet.com/"},
+        {t:"Refuge Les Amis de la Nature — Chalet «Quand Même», 1056 m, ± 50 plaatsen, fietsgarage.",u:"https://www.visit.alsace/en/241001565-mountain-shelter-les-amis-de-la-nature/"},
+        {t:"Refuge du Foyer Communautaire, 1088 m, capaciteit 99.",u:"https://www.visit.alsace/en/241001567-mountain-shelter-foyer-communautaire/"},
+        {t:"Refuge CAF du Langenberg, 1050 m; reservering 06 08 22 60 12.",u:"https://www.gites-refuges.com/www/detail-185.htm"},
+        {t:"In Plancher-les-Mines: Gîte «La Petite Fontaine» (Gîtes de France).",u:"https://www.gites-de-france-haute-saone.com/fr/location/locations-gites-plancher-les-mines-la-petite-fontaine-h70g003257"}],
+ park:[{t:"Grote parking aan de voet van de skipistes, met drinkwater en toiletten; ook camperovernachting mogelijk.",u:"https://park4night.com/en/place/16597"},
+       {t:"Parking langs de D16 richting Col de Servance, geasfalteerd en vlak.",u:"https://park4night.com/en/place/83719"},
+       {t:"EV: Plancher-les-Mines heeft één publieke laadpaal.",u:"https://fr.chargemap.com/cities/plancher-les-mines-FR"},
+       {t:"EV: laadpalen van Territoire d'Énergie 90 aan 12 Place Général de Gaulle in Giromagny — praktischer als basis dan de top.",u:"https://fr.chargemap.com/territoire-d-energie-90-te90-12-place-de-gaulle-giromagny.html"}],
+ water:[{t:"Drinkfontein bij het centre de secours tegenover de bar, aan de parking onderaan de skipistes — laatste betrouwbare dorpspunt vóór de klim.",u:"https://www.visorando.com/randonnee-la-planche-des-belles-filles-a-partir-de/"},
+        {t:"Kraantje met drinkbaar water naast de winkel op de top.",u:"https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"},
+        {t:"Ballon d'Alsace-kant: Source des Sapins op 1128 m, ± 1,9 km van de top.",u:"https://www.refuges.info/point/7316/sommet/Vosges/Ballon-d-Alsace/"}],
+ food:[{t:"Bakkerij ± 100 m ten zuiden van de Place de l'Hôtel de Ville in Plancher-les-Mines.",u:"https://www.visorando.com/randonnee-la-planche-des-belles-filles-a-partir-de/"},
+       {t:"Op de top van de Super Planche 's ochtends vroeg geen betrouwbare horeca; Hôtel du Sommet op de Ballon d'Alsace is het hele jaar open.",u:"http://www.hotelrestaurantdusommet.com/"}],
+ season:[{t:"Het onverharde slotstuk piekt op 24%; Demi Vollering noemde het na haar verkenning «a killer».",u:"https://www.cyclingnews.com/features/tour-de-france-femmes-la-super-planche-des-belles-filles/"},
+         {t:"Haute-Saône Tourisme adviseert expliciet een gravelbike voor de Super Planche.",u:"https://en.hautesaonetourisme.com/offers/montee-de-la-planche-des-belles-filles-plancher-les-mines-en-5225868/"}],
+ quotes:[{who:"mboeck, Climbfinder",q:"Ik viel uiteindelijk stil en ben de laatste 30 meter maar gewoon omhoog gerend",tr:"",url:"https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"},
+         {who:"BlueF0x_J, Climbfinder",q:"de tent boven op Planche was nog dicht om 10u in de ochtend",tr:"",url:"https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"}],
+ gap:""
+},
+feldberg:{
+ base:[{t:"Todtnau, Kirchzarten of Hinterzarten; de officiële gravelroute start in Schönau richting Todtnau.",u:"https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"},
+       {t:"Taxi- en ophaalservice voor fietsers: Frank Witte, Hinterzarten.",u:"https://www.hochschwarzwald.de/erleben/radfahren/radtouren-im-hochschwarzwald"},
+       {t:"De Feldberg is met 1493 m de hoogste berg van Baden-Württemberg, met gemiddeld 157 dagen gesloten sneeuwdek.",u:"https://de.wikipedia.org/wiki/Feldberg_(Berg_im_Schwarzwald)"}],
+ sleep:[{t:"Raimartihof bij de Feldsee en Todtnauer Hütte op de klim; prijzen onbevestigd.",u:"https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"}],
+ park:[{t:"Todtnau (Wohnmobilstellplatz genoemd op de route); EV-laden onbevestigd.",u:"https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"}],
+ water:[{t:"Onbevestigd; Raimartihof en Todtnauer Hütte als vaste stops.",u:"https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"}],
+ food:[{t:"Berggasthof Stübenwasen (1270 m), Todtnauer Hütte, Raimartihof en Hinterwaldkopfhütte.",u:"https://www.chilli-freiburg.de/specials/freizeit-in-der-region/freizeit-in-der-regio/dem-himmel-so-nah-radtour-vom-schauinsland-zum-feldberg/"}],
+ season:[{t:"Passstraße Feldberg vanaf Todtnau tijdelijk gesloten door werkzaamheden; alternatief via de Todtnauer Hütte met een kort grindstuk.",u:"https://www.hochschwarzwald.de/erleben/radfahren/radtouren-im-hochschwarzwald"}],
+ quotes:[{who:"Reviewer, Outdooractive",q:"Der Trail parallel zur Bahnlinie war heute stark zugewachsen",tr:"Het pad langs de spoorlijn was vandaag sterk dichtgegroeid",url:"https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/"},
+         {who:"Reviewer, Outdooractive",q:"eine steile Schotterrampe hoch, mit der die meisten Rennradreifen überfordert sein sollten",tr:"een steile grindramp waar de meeste racebanden het bij afleggen",url:"https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/"}],
+ gap:""
+},
+colombygex:{
+ base:[{t:"Gex (klim start hier), Mijoux of Lélex. Col de la Faucille 1323 m; Colomby de Gex 1688 m.",u:"https://www.cycling-challenge.com/high-jura-trails-colomby-de-gex-mont-rond/"}],
+ sleep:[{t:"Hôtel «La Petite Chaumière» op de Col de la Faucille; contactgegevens en prijzen onbevestigd.",u:"https://www.paysdegex-montsjura.com/en/routes-and-trails/walking-tour-la-faucille-colomby-de-gex/"}],
+ park:[{t:"Gratis parking op de Col de la Faucille; ook parking du Pailly nabij de col.",u:"https://www.paysdegex-montsjura.com/en/routes-and-trails/walking-tour-la-faucille-colomby-de-gex/"},
+       {t:"Parking du Florimont (960 m) langs de klim vanaf Gex.",u:"https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"},
+       {t:"EV-laden onbevestigd.",u:null}],
+ water:[{t:"Fontaine Napoléon op 1049 m langs de klim vanaf Gex; op de kam zelf geen bevestigde waterpunten.",u:"https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"}],
+ food:[{t:"Restaurant Florimont langs de klim; horeca op de Col de la Faucille.",u:"https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"}],
+ season:[{t:"Praktikabel van april tot november, afhankelijk van sneeuw.",u:"https://www.montagnes-du-jura.fr/itineraires-pedestres/randonnee-pedestre-la-faucille-colomby-de-gex"},
+         {t:"Réserve naturelle de la Haute Chaîne du Jura: honden verboden; de bosstrook tussen de route de la Maréchaude en de kammen is zone de quiétude en niet toegankelijk van 15/12 tot 15/05.",u:"https://skitour.fr/topos/2899"}],
+ quotes:[{who:"My Cycling Challenge",q:"my first goal was to climb to the col primarily on gravel forest roads",tr:"mijn eerste doel was de col vooral over grindbospaden te beklimmen",url:"https://www.cycling-challenge.com/high-jura-trails-colomby-de-gex-mont-rond/"},
+         {who:"Cols-cyclisme (FR)",q:"un kilomètre à près de 8,5 % qui débute peu avant la fontaine Napoléon",tr:"een kilometer van bijna 8,5% die vlak voor de Fontaine Napoléon begint",url:"https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"}],
+ gap:""
+},
+valmora:{
+ base:[{t:"Santa Maria Val Müstair (CH), Bormio of Livigno (IT); de tour start meestal in Müstair of Sta. Maria.",u:"https://www.outdooractive.com/de/route/mountainbike/engadin-samnaun-val-muestair/muestair-umbrailpass-bocchetta-di-forcola-val-mora-muestair/800995414/"}],
+ sleep:[{t:"Accommodatie in Sta. Maria Val Müstair; de Gästekarte Val Müstair geeft gratis openbaar vervoer.",u:"https://www.ride-mtb.com/en/node/35268"}],
+ park:[{t:"In Sta. Maria of Müstair; EV-laden onbevestigd.",u:null},
+       {t:"PostAuto-shuttle naar de Umbrailpass, lijn 90.821 Tirano–Bormio–Stelvio–Sta. Maria–Müstair; fietsreservering verplicht tot 19 uur de vorige dag.",u:"https://www.bergfex.com/sommer/lombardei/touren/mountainbike/2304184,bocchetta-di-forcola--bocchetta-di-pedenolo--val-mora-singletrailgarantie-und-spuren-des-1-weltkrieg/"}],
+ water:[{t:"Cruciaal: de fontein in het centrum van Santa Maria is het laatste water vóór de lange klim naar de Umbrailpass (2503 m). Daarna volgen er geen meer tot het eind van de route.",u:"https://community.mtb-mag.com/t/val-mora-bocchetta-di-forcola.48154/"}],
+ food:[{t:"Einkehrmöglichkeit bij Lago di Fraele; Ristorante Solena in San Giacomo.",u:"https://www.ride-mtb.com/en/node/35268"}],
+ season:[{t:"Hoogalpiene route; shuttle en toegang seizoensgebonden, check PostAuto vooraf.",u:"https://www.ride-mtb.com/en/node/35268"}],
+ quotes:[{who:"Forumlid, MTB-MAG (IT)",q:"da qui in poi non ci sono più fontane sino alla fine dell'itinerario!",tr:"vanaf hier zijn er geen fonteinen meer tot het eind van de route!",url:"https://community.mtb-mag.com/t/val-mora-bocchetta-di-forcola.48154/"},
+         {who:"Ride-MTB (DE)",q:"Postauto bis Umbrail-Pass für Biker -> Reservation obligatorisch bis am Vortag 19 h",tr:"PostAuto tot de Umbrailpass: reserveren verplicht tot 19 uur de dag ervoor",url:"https://www.ride-mtb.com/en/node/35268"},
+         {who:"Reviewer, Ride-MTB",q:"Der Kiesweg-Anteil ist bei gefühlten 100%… Einmal und nie wieder!",tr:"Het aandeel grindweg voelt als 100%… Eén keer en nooit weer!",url:"https://www.ride-mtb.com/en/node/35268"}],
+ gap:"Contradictie: dezelfde tour wordt door de één landschappelijk grandioos genoemd en door de ander als eentonig grindwerk afgedaan."
+},
+valviola:{
+ base:[{t:"Arnoga (1870 m) in Valdidentro, langs de SS301 Foscagno tussen Bormio en Livigno.",u:"https://www.rifugioviola.it/come-raggiungerci"},
+       {t:"Fietsverhuur ter plaatse: Rent a Bike Arnoga, tel. +39 371 587 8288.",u:"https://www.rifugioviola.it/bici"}],
+ sleep:[{t:"Rifugio Viola op 2314 m, familie Fraquelli sinds 1972: warme douche, pinbetaling mogelijk, oplaadpunt voor e-bikes.",u:"https://www.rifugioviola.it/"},
+        {t:"Reservering aanbevolen in weekends en in augustus.",u:"https://www.rifugioviola.it/bici"},
+        {t:"Ook Rifugio Federico in het fondovalle, Agriturismo Baita Caricc en Hotel di Arnoga bij het startpunt.",u:"https://www.rifugioviola.it/come-raggiungerci"}],
+ park:[{t:"Op de haarspeld bij het Husky Village in Arnoga, of iets verder bij Hotel di Arnoga.",u:"https://www.saliinvetta.com/trekking/italia/lombardia/rifugio-viola/2132-rifugio-viola-da-arnoga-altumeira-so"},
+       {t:"Parkeren bij Altumeira (2065 m) is het hele jaar tolplichtig; de automaat geeft alleen dagtickets, meerdaags via Proloco Valdidentro.",u:"https://www.rifugioviola.it/come-raggiungerci"},
+       {t:"EV: e-bikes kunnen laden bij het rifugio; auto-laden onbevestigd.",u:"https://www.rifugioviola.it/bici"}],
+ water:[{t:"Onbevestigd op de klim zelf; Rifugio Viola is het vaste waterpunt.",u:"https://www.rifugioviola.it/"}],
+ food:[{t:"Rifugio Viola serveert Valtellinese gerechten, waaronder polenta; shuttle-contact Armando 335 7696100.",u:"https://www.saliinvetta.com/trekking/italia/lombardia/rifugio-viola/2132-rifugio-viola-da-arnoga-altumeira-so"}],
+ season:[{t:"Zomerroute; openingsdata van het rifugio zijn indicatief — bel vooraf aan het begin en eind van het seizoen.",u:"https://www.rifugi.lombardia.it/en/sondrio/valdidentro/hut-viola.html"},
+         {t:"Val Viola Pass ligt op 2468 m, op de grens met Poschiavo.",u:"https://en.wikipedia.org/wiki/Val_Viola_Pass"}],
+ quotes:[{who:"Bormio.eu",q:"Da Arnoga: Tempo in bici 1.30 ore | Dislivello 500 m",tr:"Vanaf Arnoga: 1,5 uur fietsen, 500 hoogtemeter",url:"https://www.bormio.eu/it/rifugio-viola-1"},
+         {who:"Rifugio Viola",q:"Si consiglia la prenotazione anticipata soprattutto nei weekend",tr:"Vooraf reserveren wordt aangeraden, zeker in het weekend",url:"https://www.rifugioviola.it/bici"}],
+ gap:"Weinig zuivere gravelverslagen; de meeste bronnen zijn MTB- of wandelverslagen."
+},
+pfitscherjoch:{
+ base:[{t:"Sterzing/Vipiteno; door het Pfitschtal via Wiesen, Afens en St. Jakob naar Stein, waar de onverharde passweg begint.",u:"https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"},
+       {t:"Trein naar Sterzing, daarna buslijn 311 naar St. Jakob.",u:"https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"}],
+ sleep:[{t:"Pfitscherjochhaus (Rifugio Passo di Vizze), 2276 m — oudste privé-berghut van Zuid-Tirol, sinds 1888 in handen van familie Volgger, vijfde generatie.",u:"https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"},
+        {t:"30 slaapplaatsen plus 10 noodbedden; geopend medio juni tot medio oktober, overnachten tot eind september.",u:"https://www.mayrhofen.at/en/service-providers/pfitscherjochhaus-2276m-pfitsch"},
+        {t:"Adres Val di Vizze 138/a, 39049 Pfitsch; tel. +39 0472 630 119.",u:"https://www.hdsports.org/berghuetten/pfitscher-joch-haus-rifugio-passo-di-vizze"},
+        {t:"Reserveren via de eigen site van de hut.",u:"https://www.pfitscherjochhaus.com/de/kontakt/"}],
+ park:[{t:"Grote parkeerplaats bij de vierde haarspeldbocht boven Stein, aan de onverharde passweg.",u:"https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"},
+       {t:"EV-laden onbevestigd.",u:null}],
+ water:[{t:"Onbevestigd op de klim; het Pfitscherjochhaus is het vaste punt bovenaan.",u:"https://www.bergwelten.com/h/pfitscher-joch-haus"}],
+ food:[{t:"Restaurant bij het Pfitscherjochhaus; het 12 km lange stuk vanaf het Pfitschtal is onverhard, in 1936 met de hand aangelegd en nooit gerenoveerd.",u:"https://www.bergwelten.com/h/pfitscher-joch-haus"}],
+ season:[{t:"Hut open van juni tot oktober; de route is sinds enkele jaren de hele zomer doorgaand berijdbaar vanaf het zuiden.",u:"https://www.bergwelten.com/h/pfitscher-joch-haus"}],
+ quotes:[{who:"Bergwelten (DE)",q:"das 12 km lange Teilstück ist besonders reizvoll",tr:"het 12 km lange deel is bijzonder aantrekkelijk",url:"https://www.bergwelten.com/h/pfitscher-joch-haus"},
+         {who:"Höhenrausch (DE)",q:"am großen Parkplatz in der 4. Kehre das Auto abstellen",tr:"zet de auto op de grote parkeerplaats in de vierde haarspeld",url:"https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"}],
+ gap:""
+},
+montsdarree:{
+ base:[{t:"Huelgoat (startpunt van de Roc'h-evenementen), Brennilis of Sizun. Office de tourisme Monts d'Arrée, tel. 02 98 99 72 32.",u:"https://vttenfinistere.fr/bases/monts-darree-montagnes-noires/"},
+       {t:"Roc'h Trévezel ligt op ± 385 m, het hoogste punt van de route.",u:"https://www.lesroch.org/reco-du-mythique-120-km/"}],
+ sleep:[{t:"Hôtel du Lac in Huelgoat, drie sterren, 200 m van de Chaos du Moulin; kamers € 61–118.",u:"https://www.hoteldulac-huelgoat.com/"},
+        {t:"Hôtel-Restaurant Le Bretagne (pand uit 1801), € 99–109 per kamer inclusief ontbijt.",u:"https://www.montsdarreetourisme.bzh/hotels/"},
+        {t:"Troglogîtes de Roc'h Gwell Yann als etappepunt op de route.",u:"https://www.lesroch.org/reco-du-mythique-120-km/"}],
+ park:[{t:"Huelgoat (stade / start Roc'h); EV-laden onbevestigd.",u:null}],
+ water:[{t:"De ravito-punten (Maison du lac de Brennilis op km 50, La Feuillée) zijn tijdelijke evenementbevoorradingen, geen permanente waterpunten. Permanente fonteinen op de kam: onbevestigd.",u:"https://www.lesroch.org/reco-roch-n1-gravel-65-km/"}],
+ food:[{t:"Horeca in Huelgoat; La Feuillée is de hoogste gemeente van Bretagne.",u:"https://www.lesroch.org/reco-du-mythique-120-km/"}],
+ season:[{t:"Het hele jaar berijdbaar door het lage reliëf.",u:null},
+         {t:"Les Roc'h des Monts d'Arrée valt medio september en heeft gravelparcoursen van 65 tot 150 km.",u:"https://www.gravelpassion.fr/evenements-calendrier-gravel/roch-des-monts-darree/"},
+         {t:"De route ligt in het Parc Naturel Régional d'Armorique.",u:"https://vttenfinistere.fr/bases/monts-darree-montagnes-noires/"}],
+ quotes:[{who:"Les Roc'h (FR)",q:"Une pause s'impose au Roc'h Trévézel, dernier point culminant du parcours",tr:"Een pauze is verplicht op de Roc'h Trévezel, het laatste hoogtepunt",url:"https://www.lesroch.org/reco-du-mythique-120-km/"},
+         {who:"Les Roc'h (FR)",q:"Laissez vous ensuite glisser jusqu'au ravito de la maison du lac de Brennilis",tr:"Laat je vervolgens glijden tot de bevoorrading bij het meer van Brennilis",url:"https://www.lesroch.org/reco-roch-n1-gravel-65-km/"}],
+ gap:"Permanente waterpunten zijn onbevestigd; wat online staat zijn evenementbevoorradingen."
+},
+sommeiller:{
+ base:[{t:"Bardonecchia (1300 m); via de fractie Rochemolles begint na ± 8 km de onverharde weg naar Rifugio Scarfiotti.",u:"https://www.raccontapassi.it/punta-sommeiller-dal-rifugio-scarfiotti/"},
+       {t:"Aangeprezen als de hoogste panoramaweg van Europa, top 3009 m.",u:"https://www.lagendanews.com/bardonecchia-attivo-il-pedaggio-per-la-strada-piu-alta-deuropa-verso-il-colle-del-sommeiller/"}],
+ sleep:[{t:"Rifugio Camillo Scarfiotti, 2165 m, eigendom van CAI Torino: 24 slaapplaatsen, lakenzak verplicht, warme douches, wifi.",u:"https://rifugidelpiemonte.it/rifugio-scarfiotti/"},
+        {t:"Reserveren via CAI, tel. 02 2057231.",u:"https://www.prenotarifugi.cai.it/dettaglio/Rifugio+Scarfiotti/?id=5844"},
+        {t:"Let op: het rifugio was recent gesloten voor renovatie — status vooraf checken.",u:"https://www.gulliver.it/itinerari/sommeiller-colle-dal-rifugio-scarfiotti/2025/07/11/324394/"}],
+ park:[{t:"Parcheggio bij Rochemolles (stuwdam) en een ruime parking bij Rifugio Scarfiotti.",u:"https://www.chaletdellaguida.it/escursioni-da-rochemolles-rifugio-scarfiotti-colle-del-sommeiller.html"},
+       {t:"Ook parkeren mogelijk bij Picreaux en op de Colle zelf.",u:"https://www.outdooractive.com/en/route/offroad/bardonecchia/bardonecchia-sommeiller-pass/800741105/"},
+       {t:"EV-laden onbevestigd.",u:null}],
+ water:[{t:"Onbevestigd op de klim; Rifugio Scarfiotti is het laatste vaste punt vóór de top.",u:"https://rifugidelpiemonte.it/rifugio-scarfiotti/"}],
+ food:[{t:"Rifugio Scarfiotti heeft bar en restaurant met traditionele Val di Susa-keuken. Boven het rifugio geen bevoorrading meer tot de top.",u:"https://rifugidelpiemonte.it/rifugio-scarfiotti/"}],
+ season:[{t:"De weg Rochemolles–Colle Sommeiller is tolplichtig (€ 8 voor motorvoertuigen), 1 juli tot 30 september, 8:30–18:00.",u:"https://www.lagendanews.com/bardonecchia-attivo-il-pedaggio-per-la-strada-piu-alta-deuropa-verso-il-colle-del-sommeiller/"},
+         {t:"Gemeentelijke communicatie meldt sluiting voor motorvoertuigen op dinsdag én donderdag; andere bronnen noemen alleen donderdag. Controleer de gemeentesite vóór vertrek.",u:"https://bardonecchia.it/wp-content/uploads/2025/09/O2-N%C2%B0-100-del-08-09-2025-REGOLAMENTAZIONE-DEI-SENTIERI-MULATTIERE-E-STRADE-FORESTALI-MONTANE.pdf"},
+         {t:"In het voorjaar vaak nog gesloten voor sneeuwruiming.",u:"https://www.torinocronaca.it/news/provincia/655384/colle-del-sommeiller-ancora-chiuso-avanti-i-lavori-per-liberare-la-strada-dalla-neve.html"}],
+ quotes:[{who:"Raccontapassi (IT)",q:"la strada sterrata e molto dissestata: buche profonde, massi e alcuni guadi",tr:"de grindweg is zwaar aangetast: diepe kuilen, rotsblokken en enkele doorwaadplaatsen",url:"https://www.raccontapassi.it/punta-sommeiller-dal-rifugio-scarfiotti/"},
+         {who:"Chalet della Guida (IT)",q:"Evitare la carrozzabile che è estremamente polverosa al passaggio dei mezzi motorizzati!",tr:"Mijd de rijweg, die is extreem stoffig als er gemotoriseerd verkeer passeert!",url:"https://www.chaletdellaguida.it/escursioni-da-rochemolles-rifugio-scarfiotti-colle-del-sommeiller.html"},
+         {who:"Gulliver (IT)",q:"Rifugio Scarfiotti (attualmente chiuso per restauro)",tr:"Rifugio Scarfiotti (momenteel gesloten voor renovatie)",url:"https://www.gulliver.it/itinerari/sommeiller-colle-dal-rifugio-scarfiotti/2025/07/11/324394/"}],
+ gap:"Contradictie over de autovrije dagen: gemeente noemt dinsdag én donderdag, andere bronnen alleen donderdag."
+},
+rochilles:{
+ base:[{t:"Valloire; de klim begint bij Plan Lachat aan de Galibier-weg. Seuil des Rochilles ligt op 2459 m.",u:"https://refugedesdrayeres.ffcam.fr/"},
+       {t:"Gîte Le Refuge in Valloire ligt 3 km van het centrum.",u:"https://www.gites-de-france-savoie.com/Hebergements/gite/le-refuge-73G306255.html"}],
+ sleep:[{t:"Refuge des Drayères (FFCAM), 2180 m, aan de Clarée-kant achter de Rochilles: 64 slaapplaatsen, demi-pension € 63.",u:"https://refugedesdrayeres.ffcam.fr/"},
+        {t:"Bewaakt van 17 juni tot 27 september 2026; online reserveren aanbevolen.",u:"https://refugedesdrayeres.ffcam.fr/reservation.html"},
+        {t:"Lakenzak (drap de sac) is verplicht.",u:"https://paysages-hautesalpes.fr/refuge-drayeres/"},
+        {t:"In Valloire: Gîte Le Refuge, negen logementen, sauna, schoendroger, lakens inbegrepen.",u:"https://www.gites-de-france-savoie.com/Hebergements/gite/le-refuge-73G306255.html"}],
+ park:[{t:"Bij Plan Lachat of langs de Galibier-weg; specifieke parking en EV-laden onbevestigd. Valloire dorp is de aangewezen laadbasis, maar dat is nog niet aan een bron gekoppeld.",u:null}],
+ water:[{t:"Refuge des Drayères: gratis drinkwater en heet water voor thermosflessen.",u:"https://outtrip.fr/refuge-garde/refuge-des-drayeres"},
+        {t:"De bron van de Clarée ligt vlak bij het refuge. Exacte fonteinen op de klim vanaf Plan Lachat: onbevestigd.",u:"https://refugedesdrayeres.ffcam.fr/"}],
+ food:[{t:"Refuge des Drayères biedt demi-pension, picknick, middag- en avondmaal en een kleine épicerie, op reservering.",u:"https://outtrip.fr/refuge-garde/refuge-des-drayeres"}],
+ season:[{t:"Refuge bewaakt van 17 juni tot 27 september 2026.",u:"https://refugedesdrayeres.ffcam.fr/reservation.html"},
+         {t:"In de winter vergt toegang twaalf kilometer lopen vanaf Névache.",u:"https://paysages-hautesalpes.fr/refuge-drayeres/"}],
+ quotes:[{who:"Paysages Hautes-Alpes (FR)",q:"Le port du drap de sac est obligatoire aux Drayères",tr:"Een lakenzak is verplicht in de Drayères",url:"https://paysages-hautesalpes.fr/refuge-drayeres/"},
+         {who:"Skitour (FR)",q:"il est dorénavant conseillé de réserver votre nuitée",tr:"het wordt voortaan aangeraden je overnachting te reserveren",url:"https://skitour.fr/refuges/34"}],
+ gap:"Weinig eerstehands gravelverslagen specifiek voor de klim Plan Lachat – Rochilles."
+},
+jandri:{
+ base:[{t:"Les Deux Alpes (klim start bij Alpe du Mont-de-Lans) of Bourg d'Oisans / Le Clapier voor de volledige stijging van ± 2734 m.",u:"https://www.centcols.org/libre_service/jandri/col_du_jandri.htm"},
+       {t:"Col du Jandri ligt op ± 3150 m.",u:"https://centcols.org/en/the-jandri-pass/"}],
+ sleep:[{t:"Ruim aanbod in skistation Les Deux Alpes; concrete bike-accommodatie onbevestigd.",u:null}],
+ park:[{t:"In Les Deux Alpes; EV-laden onbevestigd (skistations hebben doorgaans laadinfrastructuur, maar dat is hier niet bevestigd).",u:null}],
+ water:[{t:"Onbevestigd; het hoogterestaurant onderweg is het enige vaste punt.",u:"https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"}],
+ food:[{t:"Restaurant en kabelbaanstation «Jandri 2» op 2189 m; hoger op de piste nog een hoogterestaurant.",u:"https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"}],
+ season:[{t:"Sneeuwvrij vanaf ongeveer begin juli, afhankelijk van het jaar.",u:"http://rideonthewildside.unblog.fr/col-du-jandri-un-col-a-plus-de-3000m/"},
+         {t:"Gesignaleerd als gesloten voor gemotoriseerd verkeer, maar er rijden af en toe servicevoertuigen.",u:"https://www.cycling-challenge.com/col-du-jandri-glacier-de-mont-de-lans/"},
+         {t:"Goede remmen zijn essentieel voor de afdaling.",u:"https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"}],
+ quotes:[{who:"My Cycling Challenge",q:"Although signed as closed to motor traffic, there was the very occasional car",tr:"Hoewel aangeduid als gesloten voor gemotoriseerd verkeer reed er af en toe een auto",url:"https://www.cycling-challenge.com/col-du-jandri-glacier-de-mont-de-lans/"},
+         {who:"Centcols (FR)",q:"très souvent caillouteuse, poussiéreuse et pentue, elle impose parfois la marche",tr:"vaak steenachtig, stoffig en steil; soms moet je lopen",url:"https://www.centcols.org/libre_service/jandri/col_du_jandri.htm"},
+         {who:"Alpes4ever (FR)",q:"VTT en bon état obligatoire (surtout les freins pour le retour)",tr:"Een MTB in goede staat is verplicht, vooral de remmen voor de terugweg",url:"https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"}],
+ gap:"Accommodatie, waterpunten en EV-laadinfrastructuur zijn nog onbevestigd."
+},
+finestre:{
+ base:[{t:"Susa of Meana di Susa; comfortabele parkeerplaats rechts vóór het dorp.",u:"https://turbolento.net/prodotto/colle-delle-finestre-e-assietta/"},
+       {t:"De klim is 18,45 km, top 2176/2178 m, met de laatste ± 8 km onverhard.",u:"https://www.mondociclismo.it/2019/07/01/ciclismo-le-grandi-salite-il-colle-delle-finestre-altimetria-ed-analisi-percorso/"}],
+ sleep:[{t:"Rifugi bij Pian dell'Alpe aan de Val Chisone-kant om te overnachten; concrete namen en contactgegevens onbevestigd.",u:"https://climbfinder.com/us/climbs/colle-delle-finestre"}],
+ park:[{t:"Meana di Susa, parkeerplaats rechts vóór het dorp; alternatief Sant'Ambrogio di Torino voor extra warming-up.",u:"https://www.delmenico.it/colle-delle-finestre-sestriere/"},
+       {t:"EV-laden onbevestigd.",u:null}],
+ water:[{t:"Cruciaal: fontein bij een wit huis op ± 1455 m op het Colletto di Meana, precies waar het asfalt eindigt en de sterrato begint.",u:"https://www.komoot.com/highlight/3723093"},
+        {t:"Er is ook een fontein op de Colle, maar één rijder meldde die op 17/08/2025 buiten werking.",u:"https://climbfinder.com/us/climbs/colle-delle-finestre"}],
+ food:[{t:"Weinig onderweg; bevoorraden in Susa of Meana en bij de rifugi op Pian dell'Alpe. Voor de Assietta-ronde: Sestriere, Cesana of Oulx.",u:"https://visitvaldisusa.it/colle-delle-finestre/"}],
+ season:[{t:"Strada dell'Assietta (SP173) normaal open van 1 juli tot 31 oktober; winterafsluiting 1 november tot 30 juni.",u:"https://www.stradaassietta.it/"},
+         {t:"Volledig gesloten voor gemotoriseerd verkeer op woensdag en zaterdag, 9:00–17:00, in juli en augustus.",u:"https://www.stradaassietta.it/"},
+         {t:"Snelheidslimiet 30 km/u; geen voertuigen zwaarder dan 3,5 t of breder dan 2 m.",u:"https://www.stradaassietta.it/estate-2024/"}],
+ quotes:[{who:"Reviewer, Climbfinder (IT)",q:"in corrispondenza di una fontanella cominciano i 6 km di sterrato",tr:"bij een fonteintje beginnen de 6 km grind",url:"https://climbfinder.com/us/climbs/colle-delle-finestre"},
+         {who:"Reviewer, Climbfinder (IT)",q:"la fontanella al colle non funzionava (17/08/2025)",tr:"het fonteintje op de col werkte niet (17-08-2025)",url:"https://climbfinder.com/us/climbs/colle-delle-finestre"},
+         {who:"Following My Way (IT)",q:"pietre e sabbia fine abbondano soprattutto negli ultimi km",tr:"stenen en fijn zand zijn er volop, vooral op de laatste kilometers",url:"https://followingmyway.blogspot.com/2015/07/il-colle-delle-finestre.html"}],
+ gap:""
+}
+};
+const LOGI_LBL={base:"Basisdorp",sleep:"Slapen",park:"Parkeren & laden",water:"Water",food:"Bevoorrading",season:"Seizoen & toegang"};
+
+/* ============================ HELPERS ============================ */
+const $=s=>document.querySelector(s);
+const RM=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+function hav(a,b,c,d){const R=6371,r=Math.PI/180;const x=(c-a)*r,y=(d-b)*r;
+  const h=Math.sin(x/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+const CROSS={uk:{a:[50.95,1.86],b:[51.13,1.31],h:2},no:{a:[57.59,9.96],b:[58.15,8.00],h:4.5},
+             co:{a:[43.55,10.31],b:[42.70,9.45],h:7},sa:{a:[43.55,10.31],b:[40.92,9.50],h:12}};
+function driveH(o,c,ev){
+  let gc,fixed=0;const x=c.cross?CROSS[c.cross]:null;
+  if(x){gc=hav(o.lat,o.lng,x.a[0],x.a[1])+hav(x.b[0],x.b[1],c.lat,c.lng);fixed=x.h;}
+  else gc=hav(o.lat,o.lng,c.lat,c.lng);
+  const road=gc*1.15,sp=road<150?62:road<400?85:100;
+  let h=road/sp+fixed;
+  h+=Math.max(0,Math.floor((road-300)/300))*(20/60);
+  if(ev) h+=Math.max(0,Math.ceil((road-250)/300))*(15/60);
+  return h;
+}
+function fmtH(h){const t=Math.round(h*60);return Math.floor(t/60)+" u "+String(t%60).padStart(2,"0");}
+const BANDCOL={near:"#2E6B57",mid:"#BE882A",far:"#94441F"};
+function band(h){return h<5?"near":h<9?"mid":"far";}
+const BIKELBL={gravel:"gravelbike prima",grens:"grensgeval",mtb:"MTB slimmer"};
+const SEGLBL={a:"asfalt",g:"grind",r:"ruw"};
+const esc=t=>String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+
+let state={origin:{...ORIGINS[0]},maxh:30,type:"alle",bike:"alle",sort:"drive",ev:true,
+           view:"map",prevView:"map",sel:null,picking:false,layer:"relief"};
+
+/* ============================ MAP ============================ */
+const map=L.map("map",{scrollWheelZoom:false,zoomControl:true,worldCopyJump:false}).setView([47.5,7.5],5);
+const LAYERS={
+  relief:L.layerGroup([
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}",{maxNativeZoom:13,maxZoom:18,attribution:"Esri"}),
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/light_only_labels/{z}/{x}/{y}{r}.png",{maxZoom:18,subdomains:"abcd",opacity:.85,attribution:"CARTO, OSM"})
+  ]),
+  sat:L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxNativeZoom:17,maxZoom:18,attribution:"Esri"}),
+  plain:L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{maxZoom:18,subdomains:"abcd",attribution:"CARTO, OSM"})
+};
+let current="relief",errCount=0,fellBack=false;
+LAYERS.relief.addTo(map);
+function watch(layer){
+  const list=layer.eachLayer?[]:[layer];
+  if(layer.eachLayer) layer.eachLayer(l=>list.push(l));
+  list.forEach(l=>l.on("tileerror",()=>{
+    errCount++;
+    if(errCount>14&&!fellBack&&current!=="plain"){fellBack=true;setLayer("plain");
+      $("#mapnote").textContent="Reliëfkaart laadde niet — teruggevallen op de simpele kaart.";}
+  }));
+}
+Object.values(LAYERS).forEach(watch);
+function setLayer(key){
+  if(key===current) return;
+  map.removeLayer(LAYERS[current]);LAYERS[key].addTo(map);current=key;state.layer=key;
+  document.querySelectorAll(".mapbtn").forEach(b=>b.setAttribute("aria-pressed",b.dataset.layer===key));
+  Object.values(markers).forEach(m=>m.bringToFront&&m.bringToFront());
+}
+document.querySelectorAll(".mapbtn").forEach(b=>b.addEventListener("click",()=>{errCount=0;setLayer(b.dataset.layer)}));
+map.on("click",e=>{
+  if(!state.picking){map.scrollWheelZoom.enable();return;}
+  state.origin={n:"Eigen punt",lat:+e.latlng.lat.toFixed(3),lng:+e.latlng.lng.toFixed(3)};
+  state.picking=false;$("#pickBtn").textContent="of prik een punt op de kaart";
+  $("#mapnote").textContent="Vertrekpunt verplaatst";$("#origin").value="__custom";render(true);
+});
+
+let markers={},homeMarker=null;
+function drawHome(){
+  if(homeMarker)map.removeLayer(homeMarker);
+  homeMarker=L.marker([state.origin.lat,state.origin.lng],{zIndexOffset:1200,
+    icon:L.divIcon({className:"",html:'<div class="pin-home"></div>',iconSize:[19,19],iconAnchor:[9,9]})
+  }).addTo(map).bindTooltip(state.origin.n,{direction:"top",offset:[0,-8]});
+}
+function drawMarkers(rows,fit){
+  Object.values(markers).forEach(m=>map.removeLayer(m));markers={};
+  rows.forEach((c,i)=>{
+    const col=BANDCOL[band(c._h)];
+    const m=L.marker([c.lat,c.lng],{icon:L.divIcon({className:"",iconSize:[27,27],iconAnchor:[13,13],
+      html:'<div class="pin'+(state.sel===c.id?" sel":"")+'" style="background:'+col+';animation-delay:'+(RM?0:Math.min(i*28,700))+'ms">'+(i+1)+'</div>'})}).addTo(map);
+    m.bindPopup('<span class="pn">'+esc(c.name)+'</span><span class="pm">'+esc(c.area)+' · '+c.top+' m · '+fmtH(c._h)+' rijden</span>'+
+      '<button class="pop-btn" onclick="openDetail(\''+c.id+'\')">Details →</button>');
+    m.on("click",()=>{state.sel=c.id;syncSel();});
+    markers[c.id]=m;
+  });
+  if(fit&&rows.length){
+    const b=L.latLngBounds(rows.map(c=>[c.lat,c.lng]).concat([[state.origin.lat,state.origin.lng]]));
+    map.flyToBounds(b,{padding:[42,42],duration:RM?0:.9,maxZoom:8});
+  }
+}
+function syncSel(){
+  document.querySelectorAll(".pin").forEach(p=>p.classList.remove("sel"));
+  document.querySelectorAll(".scard").forEach(el=>el.classList.toggle("sel",el.dataset.id===state.sel));
+  const m=markers[state.sel];
+  if(m){const el=m.getElement&&m.getElement();if(el){const p=el.querySelector(".pin");p&&p.classList.add("sel");}}
+  const card=document.querySelector('.scard[data-id="'+state.sel+'"]');
+  if(card&&card.scrollIntoView)card.scrollIntoView({behavior:RM?"auto":"smooth",inline:"center",block:"nearest"});
+}
+function focusOn(c){
+  state.sel=c.id;
+  map.flyTo([c.lat,c.lng],Math.max(map.getZoom(),8),{duration:RM?0:.8});
+  const m=markers[c.id];if(m)setTimeout(()=>m.openPopup(),RM?0:450);
+  syncSel();
+}
+
+/* ============================ RENDER ============================ */
+function bandHTML(c,i){
+  const lo=c.segs[0][0],hi=c.segs[c.segs.length-1][1];
+  const span=Math.max(1,Math.abs(hi-lo));
+  const segs=c.segs.map(s=>'<div class="sg '+s[2]+'" style="width:'+(Math.abs(s[1]-s[0])/span*100)+'%" title="'+SEGLBL[s[2]]+' '+s[0]+'–'+s[1]+' m"></div>').join("");
+  const g=c.segs.find(s=>s[2]!=="a");
+  return '<div class="band"><div class="band-track" style="--i:'+(i||0)+'">'+segs+'</div>'+
+    '<div class="band-axis"><span>'+lo+' m</span><span>'+hi+' m</span></div>'+
+    (g?'<div class="band-note">onverhard vanaf '+g[0]+' m</div>':'')+'</div>';
+}
+function tagsHTML(c){
+  const t=[];
+  if(c.done)t.push('<span class="tag done">al gereden · 2022</span>');
+  t.push(c.type==="parallel"?'<span class="tag par">parallel · '+esc(c.parallel)+'</span>':'<span class="tag puur">puur grind</span>');
+  t.push('<span class="tag'+(c.bike==="mtb"?" mtb":"")+'">'+BIKELBL[c.bike]+'</span>');
+  if(LOGI[c.id]) t.push('<span class="tag logi">logistiek uitgezocht</span>');
+  t.push('<span class="tag">'+esc(c.land)+'</span>');
+  return '<div class="tags">'+t.join("")+'</div>';
+}
+function cardHTML(c,i){
+  return '<button class="card" data-id="'+c.id+'" style="--i:'+i+'">'+
+   '<div class="card-top"><div><div class="eyebrow">'+esc(c.area)+'</div><h3 class="cname">'+esc(c.name)+'</h3></div>'+
+   '<div class="drive"><div class="h">'+fmtH(c._h)+'</div><div class="l">rijden</div></div></div>'+
+   '<p class="cline">'+esc(c.line)+'</p>'+bandHTML(c,i)+
+   '<div class="stats">'+
+     '<div class="stat"><div class="v">'+c.top+' m</div><div class="k">top</div></div>'+
+     '<div class="stat"><div class="v">'+c.gain+' m</div><div class="k">stijging</div></div>'+
+     '<div class="stat"><div class="v">'+c.gravel+' km</div><div class="k">grind</div></div>'+
+     '<div class="stat"><div class="v">'+c.len+' km</div><div class="k">klim</div></div>'+
+   '</div>'+tagsHTML(c)+'</button>';
+}
+function stripHTML(c,i){
+  return '<button class="scard'+(state.sel===c.id?" sel":"")+'" data-id="'+c.id+'" style="--i:'+i+'">'+
+    '<div class="sc-n">'+esc(c.name)+'</div>'+
+    '<div class="sc-m">'+fmtH(c._h)+' · '+c.top+' m'+(LOGI[c.id]?' · dossier':'')+'</div></button>';
+}
+function rows(){
+  let r=CLIMBS.map(c=>({...c,_h:driveH(state.origin,c,state.ev)}));
+  r=r.filter(c=>c._h<=state.maxh+.001);
+  if(state.type!=="alle")r=r.filter(c=>c.type===state.type);
+  if(state.bike!=="alle")r=r.filter(c=>c.bike===state.bike);
+  const S={drive:(a,b)=>a._h-b._h,alt:(a,b)=>b.top-a.top,gravel:(a,b)=>b.gravel-a.gravel,gain:(a,b)=>b.gain-a.gain};
+  return r.sort(S[state.sort]);
+}
+function activeFilters(){
+  let n=0;
+  if(state.type!=="alle")n++;if(state.bike!=="alle")n++;
+  if(state.maxh<30)n++;if(state.sort!=="drive")n++;
+  if(state.origin.n!==ORIGINS[0].n)n++;
+  return n;
+}
+function render(fit){
+  const r=rows();
+  $("#cnt").textContent=r.length;
+  const n=activeFilters();
+  $("#filtBadge").textContent=n;$("#filtBadge").classList.toggle("hidden",n===0);
+  $("#list").innerHTML=r.length?r.map(cardHTML).join(""):'<div class="empty">Niets binnen deze filters. Rek de rijtijd op of zet een filter uit.</div>';
+  $("#strip").innerHTML=r.length?r.map(stripHTML).join(""):'';
+  $("#list").querySelectorAll(".card").forEach(el=>el.addEventListener("click",()=>openDetail(el.dataset.id)));
+  $("#strip").querySelectorAll(".scard").forEach(el=>el.addEventListener("click",()=>{
+    const c=r.find(x=>x.id===el.dataset.id);if(c)focusOn(c);
+  }));
+  drawHome();drawMarkers(r,fit);
+}
+
+/* ============================ PROFIELPAGINA ============================ */
+function srcLink(u){
+  return u ? ' <a class="src" href="'+u+'" target="_blank" rel="noopener">bron</a>'
+           : ' <span class="src">onbevestigd</span>';
+}
+function voiceHTML(v){
+  return '<div class="voice"><div class="who">'+esc(v.who)+'</div>'+
+    '<blockquote>\u201c'+esc(v.q)+'\u201d</blockquote>'+
+    (v.tr?'<div class="tr">'+esc(v.tr)+'</div>':'')+
+    '<a href="'+v.url+'" target="_blank" rel="noopener">'+esc(v.url.replace(/^https?:\/\//,"").slice(0,62))+'</a></div>';
+}
+function logiHTML(id){
+  const L=LOGI[id];
+  if(!L) return '<div id="p-logi" class="stag" style="--i:5"><div class="sec">Logistiek</div>'+
+    '<p class="caveat">Voor deze bestemming is het logistieke dossier nog niet uitgezocht. '+
+    'De zestien bestemmingen met de kortste rijtijd vanaf Utrecht hebben er wel een.</p></div>';
+  let h='',n=5;
+  ["base","sleep","park","water","food","season"].forEach(k=>{
+    if(!L[k]||!L[k].length) return;
+    h+='<div id="p-'+k+'" class="stag" style="--i:'+(n++)+'"><div class="sec">'+LOGI_LBL[k]+'</div>'+
+       '<ul class="facts">'+L[k].map(f=>'<li>'+esc(f.t)+srcLink(f.u)+'</li>').join("")+'</ul></div>';
+  });
+  if(L.gap) h+='<div class="stag" style="--i:'+(n++)+'"><div class="caveat">'+esc(L.gap)+'</div></div>';
+  if(L.quotes&&L.quotes.length)
+    h+='<div id="p-praktijk" class="stag" style="--i:'+(n++)+'"><div class="sec">Rijders over de praktijk</div>'+
+       L.quotes.map(voiceHTML).join("")+'</div>';
+  return h;
+}
+function navHTML(id){
+  const items=[["p-verdict","Oordeel"]];
+  const L=LOGI[id];
+  if(L){["base","sleep","park","water","food","season"].forEach(k=>{
+    if(L[k]&&L[k].length) items.push(["p-"+k,LOGI_LBL[k]]);
+  });}
+  items.push(["p-stemmen","Stemmen"]);
+  return '<div class="pnav">'+items.map(i=>'<button data-go="'+i[0]+'">'+i[1]+'</button>').join("")+'</div>';
+}
+window.openDetail=function(id){
+  const c=CLIMBS.find(x=>x.id===id); if(!c) return;
+  state.sel=id;
+  const h=driveH(state.origin,c,state.ev);
+  $("#viewProfile").innerHTML='<article class="profile">'+
+    '<div class="p-hd"><button class="backbtn" id="backBtn">\u2190 terug</button>'+
+      '<div class="eyebrow" style="margin-top:14px">'+esc(c.area)+' \u00b7 '+esc(c.land)+'</div>'+
+      '<h2>'+esc(c.name)+'</h2>'+
+      '<div class="dh">'+fmtH(h)+' rijden vanaf '+esc(state.origin.n)+(state.ev?' \u00b7 incl. laadstops':'')+'</div></div>'+
+    navHTML(id)+
+    '<div class="p-body">'+
+      '<div class="stag" style="--i:0"><p style="margin:18px 0 0">'+esc(c.line)+'</p>'+bandHTML(c,0)+'</div>'+
+      '<div class="stag" style="--i:1"><div class="stats">'+
+        '<div class="stat"><div class="v">'+c.top+' m</div><div class="k">top</div></div>'+
+        '<div class="stat"><div class="v">'+c.gain+' m</div><div class="k">stijging</div></div>'+
+        '<div class="stat"><div class="v">'+c.gravel+' km</div><div class="k">grind</div></div>'+
+        '<div class="stat"><div class="v">'+c.len+' km</div><div class="k">klim</div></div>'+
+      '</div>'+tagsHTML(c)+'</div>'+
+      '<div id="p-verdict" class="stag" style="--i:2"><div class="sec">Is dit echt een goede optie?</div>'+
+        '<div class="verdict">'+esc(c.verdict)+'</div></div>'+
+      '<div class="stag" style="--i:3"><div class="sec">Kort praktisch</div><ul class="notes">'+
+        c.notes.map(n=>'<li>'+esc(n)+'</li>').join("")+'</ul></div>'+
+      '<div id="p-stemmen" class="stag" style="--i:4"><div class="sec">Wat rijders over de route zeggen</div>'+
+        c.voices.map(voiceHTML).join("")+'</div>'+
+      logiHTML(id)+
+    '</div></article>';
+  $("#backBtn").addEventListener("click",goBack);
+  $("#viewProfile").querySelectorAll(".pnav button").forEach(b=>b.addEventListener("click",()=>{
+    const el=document.getElementById(b.dataset.go);
+    if(el) el.scrollIntoView({behavior:RM?"auto":"smooth",block:"start"});
+  }));
+  showView("profile");
+};
+function goBack(){ showView(state.prevView||"list"); }
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&state.view==="profile")goBack()});
+
+/* ============================ CONTROLS ============================ */
+const sel=$("#origin");
+ORIGINS.forEach((o,i)=>{const op=document.createElement("option");op.value=i;op.textContent=o.n;sel.appendChild(op)});
+const opc=document.createElement("option");opc.value="__custom";opc.textContent="Eigen punt op de kaart";sel.appendChild(opc);
+sel.addEventListener("change",()=>{
+  if(sel.value==="__custom"){startPick();return;}
+  state.origin={...ORIGINS[+sel.value]};render(true);
+});
+function startPick(){
+  state.picking=true;$("#pickBtn").textContent="tik nu op de kaart…";
+  $("#mapnote").textContent="Tik op de kaart om je vertrekpunt te zetten";
+  showView("map");$("#panel").classList.remove("open");$("#filtBtn").setAttribute("aria-expanded","false");
+  document.getElementById("map").scrollIntoView({behavior:RM?"auto":"smooth",block:"center"});
+}
+$("#pickBtn").addEventListener("click",startPick);
+$("#maxh").addEventListener("input",e=>{
+  state.maxh=+e.target.value;
+  $("#maxhv").textContent=(Number.isInteger(state.maxh)?state.maxh:state.maxh.toFixed(1).replace(".",","))+" u";
+  render();
+});
+$("#ev").addEventListener("change",e=>{state.ev=e.target.checked;render()});
+$("#sort").addEventListener("change",e=>{state.sort=e.target.value;render()});
+function chipGroup(s,key){
+  const g=$(s);
+  g.addEventListener("click",e=>{
+    const b=e.target.closest(".chip");if(!b)return;
+    g.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));
+    state[key]=b.dataset.f;render(true);
+  });
+}
+chipGroup("#typeChips","type");chipGroup("#bikeChips","bike");
+$("#filtBtn").addEventListener("click",()=>{
+  const open=$("#panel").classList.toggle("open");
+  $("#filtBtn").setAttribute("aria-expanded",open);
+});
+function moveInd(){
+  const on=$("#segView").querySelector('button[aria-pressed="true"]');
+  const ind=$("#segInd");
+  ind.style.width=on.offsetWidth+"px";ind.style.transform="translateX("+on.offsetLeft+"px)";
+}
+function showView(v){
+  if(v!=="profile"&&state.view!=="profile") state.prevView=v;
+  if(v!=="profile"&&state.view==="profile") state.prevView=v;
+  state.view=v;
+  const inProfile=(v==="profile");
+  $("#viewMap").classList.toggle("hidden",v!=="map");
+  $("#viewList").classList.toggle("hidden",v!=="list");
+  $("#viewProfile").classList.toggle("hidden",!inProfile);
+  document.querySelector(".tools").classList.toggle("hidden",inProfile);
+  $("#panel").classList.toggle("hidden",inProfile);
+  document.querySelector(".legend").classList.toggle("hidden",inProfile);
+  document.querySelector("footer").classList.toggle("hidden",inProfile);
+  if(!inProfile){
+    $("#btnMap").setAttribute("aria-pressed",v==="map");
+    $("#btnList").setAttribute("aria-pressed",v==="list");
+    moveInd();
+  }
+  window.scrollTo({top:0,behavior:RM?"auto":"smooth"});
+  if(v==="map")setTimeout(()=>map.invalidateSize(),80);
+}
+$("#btnMap").addEventListener("click",()=>showView("map"));
+$("#btnList").addEventListener("click",()=>showView("list"));
+window.addEventListener("resize",moveInd);
+document.fonts&&document.fonts.ready.then(moveInd);
+
+$("#hdcount").textContent=CLIMBS.length;
+render(true);
+moveInd();
+setTimeout(()=>{map.invalidateSize();},250);
+</script>
+</body>
+</html>

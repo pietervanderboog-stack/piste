@@ -1,0 +1,57 @@
+{
+ "id": "rallarvegen",
+ "name": "Rallarvegen",
+ "area": "Hardangervidda: Haugastøl – Finse – Flåm",
+ "land": "Noorwegen",
+ "cross": "no",
+ "lat": 60.6022,
+ "lng": 7.5083,
+ "top": 1343,
+ "gain": 600,
+ "len": 82,
+ "gravel": 70,
+ "type": "puur",
+ "bike": "gravel",
+ "parallel": null,
+ "line": "De aanlegweg van de Bergensbanen, tussen 1902 en 1909 met paard en kar over de Hardangervidda aangelegd. Sinds de jaren zeventig een fietsroute, en volgens vrijwel elke Noorse lijst de mooiste van het land.",
+ "segs": [
+  [
+   988,
+   1343,
+   "g"
+  ],
+  [
+   1343,
+   600,
+   "g"
+  ]
+ ],
+ "verdict": "Als één route op deze lijst onvergetelijk is zonder dat je ervoor hoeft te lijden, is dit hem. Vanaf Finse is het netto afdalen, het grind is grotendeels compact, en er rijden meer dan twintigduizend fietsers per zomer — dat zegt iets over de toegankelijkheid, maar ook over de drukte. Rijders melden sneeuwvelden tot ver in juli en losse stukken waar je afstapt.",
+ "notes": [
+  "Altijd Finse → Flåm rijden; andersom is aanzienlijk zwaarder.",
+  "Finse is alleen per trein bereikbaar — de auto blijft in Haugastøl of Geilo staan.",
+  "Seizoen ongeveer half juli tot half september; check het Rallarvegen-rapport vooraf.",
+  "Het stuk Haugastøl–Finse is breed en makkelijk; Finse–Flåm is het echte werk.",
+  "Onderweg twee cafés en DNT-hutten, dus hoog overnachten is goed te doen."
+ ],
+ "voices": [
+  {
+   "who": "Fietser, Tripadvisor-review",
+   "q": "The very rough or very steep patches I walked",
+   "tr": "De heel ruwe of heel steile stukken liep ik",
+   "url": "https://www.tripadvisor.com/Attraction_Review-g7159542-d3497800-Reviews-Rallarvegen_The_Navvy_Road-Ulvik_Ulvik_Municipality_Hardanger_Hordaland_Western_.html"
+  },
+  {
+   "who": "Noorse fietser, geciteerd door Cycloscope",
+   "q": "You have to do Finse to Flåm. There is nothing else like it.",
+   "tr": "Je moet Finse–Flåm doen. Er is niets dat erop lijkt.",
+   "url": "https://cycloscope.net/cycling-rallarvegen-from-finse-to-flam/"
+  },
+  {
+   "who": "Bikepacking.com",
+   "q": "more than 20,000 cyclists visiting it each summer",
+   "tr": "ruim 20.000 fietsers per zomer",
+   "url": "https://bikepacking.com/routes/of-milk-and-navvies/"
+  }
+ ]
+}

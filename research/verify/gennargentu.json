@@ -1,0 +1,59 @@
+{
+ "id": "gennargentu",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.komoot.com/guide/3440916/gravel-biking-in-sardinia",
+   "status": "ok",
+   "note": "Citaat staat letterlijk op de pagina (FAQ-sectie). Attributie 'Komoot-regiogids' klopt, maar dit is redactionele statistiek van Komoot, geen echte fietser — botst met redactieregel 2. Voorstel: vervangen door een first-hand rijderscitaat over water/hitte (Tristan Bogaard, TranSardinia, bikepacking.com).",
+   "fix": {
+    "who": "Tristan Bogaard, bikepacker (TranSardinia)",
+    "q": "Be sure to carry two or three litres, and you should always be fine",
+    "tr": "Neem twee tot drie liter mee, dan zit je altijd goed",
+    "url": "https://bikepacking.com/routes/transardinia/"
+   }
+  },
+  {
+   "i": 1,
+   "url": "https://www.sardiniacycling.com/en/biking-tours/epic-sardinia-gravel-edition.html",
+   "status": "wrong-attribution",
+   "note": "Citaat staat letterlijk op de pagina, maar het is touroperator-marketing (8-daagse betaalde tour), geen fietser of officiële bron. Vervangen door climbfinder-review van gatz87 (Italiaans, origineel) over Passo Tascusì.",
+   "fix": {
+    "who": "Fietser gatz87, climbfinder-review Passo Tascusì",
+    "q": "Normalmente è poco frequentata ma d'estate nonostante la quota potrebbe essere calda",
+    "tr": "Normaal is het er rustig, maar 's zomers kan het ondanks de hoogte heet zijn",
+    "url": "https://climbfinder.com/it/salite/arcu-de-tascusi-passo-di-tascusi-desulu-desulo"
+   }
+  },
+  {
+   "i": 2,
+   "url": "https://cyclingdestination.cc/en/stories/fietsen-op-sardinie-gravel",
+   "status": "ok",
+   "note": "Citaat letterlijk aanwezig. Auteurs Maks Groeneveld en Jeffrey Wiese (@outfor.adventures) zijn echte fietsers; Cycling Destination is community-platform, geen touroperator. tr was leeg — voorstel toegevoegd. Let op: artikel noemt Fonni/Tascusì niet, wel Supramonte en Gennargentu.",
+   "fix": {
+    "tr": "Met de gravelbike kun je nog meer kanten op."
+   }
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "deviates",
+  "note": "Geen enkele database-klim dekt onze regio-cijfers (top 1400 / gain 1200 / len 30 / gravel 22). Climbfinder Passo Tascusì vanaf Desulo: 14,4 km, 660 m, top 1246 m, ASFALT; vanaf Tonara: 13,6 km, 397 m, top 1247 m. Climbfinder Bruncu Spina vanaf Fonni: 14,3 km, 605 m, top 1554 m, ASFALT. Onze len en gain komen ongeveer overeen met de SOM van Tascusì-Desulo + Bruncu Spina-Fonni (28,7 km / 1265 m), maar onze top 1400 valt tussen beide toppen in en beide klimmen zijn op climbfinder volledig verhard — de 22 km gravel is met geen klimdatabase te onderbouwen. Enige onverharde referentie: Wikiloc-MTB-lus Gusana–Fonni–Bruncu Spina–Tascusì (53 km, 1340 m, max 1822 m). Advies: cijfers expliciet labelen als regio-composiet of herleiden tot één te controleren traject.",
+  "source": "https://climbfinder.com/it/salite/arcu-de-tascusi-passo-di-tascusi-desulu-desulo"
+ },
+ "gpx": [
+  {
+   "t": "Wikiloc-route (MTB) van nugoresu, lus Gusana–Fonni–Bruncu Spina–Tascusì, 53 km, 1.340 m",
+   "u": "https://www.wikiloc.com/mountain-biking-trails/gusana-fonni-bruncuspina-tascusi-gusana-mountain-bike-11008620"
+  },
+  {
+   "t": "Wikiloc-route van gabrielenigiotti, Fonni–Bruncu Spina–Nuoro (eenrichting), 81 km, 1.650 m",
+   "u": "https://www.wikiloc.com/offroading-trails/fonni-bruncu-spina-nuoro-41053694"
+  },
+  {
+   "t": "TranSardinia van Tristan Bogaard (bikepacking.com, GPX via RideWithGPS), 446 km, 10.443 m, 53% onverhard, door Supramonte en Gennargentu",
+   "u": "https://bikepacking.com/routes/transardinia/"
+  }
+ ],
+ "summary": "Alle drie de citaten staan letterlijk op hun pagina, maar twee komen niet van fietsers: één is Komoot-redactiestatistiek, één is touroperator-marketing (SardiniaCycling). Vervangende first-hand citaten gevonden op climbfinder en bikepacking.com. De cijfers zijn een regio-composiet die met geen enkele klimdatabase te controleren is: Passo Tascusì en Bruncu Spina staan op climbfinder allebei als volledig geasfalteerd, en de 22 km gravel rust alleen op een Wikiloc-MTB-lus. Komoot heeft geen gravel-tours in het Gennargentu-binnenland; de dekking van echte gravelrijders is dun."
+}

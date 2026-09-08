@@ -1,0 +1,1888 @@
+[
+ {
+  "id": "finestre",
+  "name": "Colle delle Finestre + Strada dell'Assietta",
+  "area": "Val di Susa, Piemonte",
+  "land": "Italië",
+  "lat": 45.0864,
+  "lng": 7.045,
+  "top": 2178,
+  "gain": 1680,
+  "len": 18.5,
+  "gravel": 8,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Sestriere / Giro d'Italia",
+  "line": "Achtenveertig haarspelden asfalt door bos, dan houdt het asfalt op 1690 m op en klim je de laatste acht kilometer over grind naar de kam. Bovenaan begint de Assietta: vijftig kilometer bergkam boven de 2000 m.",
+  "segs": [
+   [
+    500,
+    1690,
+    "a"
+   ],
+   [
+    1690,
+    2178,
+    "g"
+   ]
+  ],
+  "verdict": "De meest evidente keuze van de hele lijst, en terecht. Het grind is hard aangereden door de 4×4's, dus het klimmen is puur een kwestie van meters maken; het is de afdaling waar mensen over klagen. Met 55 mm loop je hier ver voor op de gemiddelde bezoeker. Plan de Assietta erachteraan op een woensdag of zaterdag, dan zijn er geen auto's.",
+  "notes": [
+   "Assietta-kamweg is 's zomers op woensdag en zaterdag dicht voor gemotoriseerd verkeer — dat is de dag die je wilt.",
+   "Finestre zelf trekt in augustus veel 4×4's; vroeg starten scheelt.",
+   "Water: fontein waar het asfalt ophoudt. Daarboven niets meer.",
+   "Combineer met Colle del Colombardo (ruwer, losser) voor een tweede dag."
+  ],
+  "voices": [
+   {
+    "who": "Fietsster, Komoot-collectie",
+    "q": "a bit touch-and-go descending the gravel side",
+    "tr": "de afdaling over grind is net wel/net niet",
+    "url": "https://www.komoot.com/collection/1285096/colle-del-colombardo-and-the-colle-delle-finestre-two-of-the-italian-gravel-giants"
+   },
+   {
+    "who": "Fietser op 40 mm, PJAMM",
+    "q": "the brake bumps left my hands numb for a few hours",
+    "tr": "van de remkuilen waren m'n handen uren gevoelloos",
+    "url": "https://pjammcycling.com/climb/10.Colle-delle-Finestre-Cycling"
+   },
+   {
+    "who": "Gezin op vakantie, Climbfinder",
+    "q": "The 8km of gravel is exposed and tough. Fun though.",
+    "tr": "De 8 km grind ligt open en is zwaar. Wel leuk.",
+    "url": "https://climbfinder.com/us/climbs/colle-delle-finestre"
+   }
+  ]
+ },
+ {
+  "id": "sommeiller",
+  "name": "Colle del Sommeiller",
+  "area": "Bardonecchia, Piemonte",
+  "land": "Italië",
+  "lat": 45.108,
+  "lng": 6.855,
+  "top": 3009,
+  "gain": 1700,
+  "len": 26,
+  "gravel": 19,
+  "type": "puur",
+  "bike": "grens",
+  "parallel": null,
+  "line": "De hoogste berijdbare grindweg van de Alpen. Zesentwintig kilometer door de Rochemolles-vallei langs een stuwmeer omhoog naar een maanlandschap op 3009 m, waar ooit een zomerskigebied lag.",
+  "segs": [
+   [
+    1312,
+    1620,
+    "a"
+   ],
+   [
+    1620,
+    2600,
+    "g"
+   ],
+   [
+    2600,
+    3009,
+    "r"
+   ]
+  ],
+  "verdict": "Dit is het monument van het onverharde klimmen, en de enige plek op deze lijst waar je zonder klauteren op 3000 m staat. Maar de stemmen zijn eensgezind: omhoog gaat prima op grind, omlaag is het rammen. Op 55 mm is het te doen; ga je met vrienden op 40 mm, waarschuw ze.",
+  "notes": [
+   "Dicht voor auto's en motoren op dinsdag en donderdag (1 juli – 30 sept). Ga dan.",
+   "Geen water boven Rifugio Scarfiotti — vul daar bij.",
+   "Steenslag gemeld op de bovenste kilometers; helm en oplettendheid.",
+   "Tweede dag vanuit hetzelfde dorp: Fort Jafferau (2805 m) via Col Basset."
+  ],
+  "voices": [
+   {
+    "who": "Fietser, reactie op My Cycling Challenge",
+    "q": "I was glad I took my MTB instead of my gravelbike",
+    "tr": "ik was blij dat ik m'n MTB had meegenomen in plaats van m'n gravelbike",
+    "url": "https://www.cycling-challenge.com/colle-del-sommeiller/"
+   },
+   {
+    "who": "Rijder, Komoot-reactie juli 2024",
+    "q": "Definitely my most sketchy gravel ride ever!",
+    "tr": "Verreweg m'n meest hachelijke gravelrit ooit!",
+    "url": "https://www.komoot.com/smarttour/e1030357638/colle-del-sommeiller"
+   },
+   {
+    "who": "Bike Café (FR)",
+    "q": "au gravel ce que l'Alpe d'Huez est au cyclisme routier",
+    "tr": "voor gravel wat de Alpe d'Huez is voor de weg",
+    "url": "https://bike-cafe.fr/2020/09/bardonecchia-lexception-du-gravel-en-montagne/"
+   },
+   {
+    "who": "Cycloworld",
+    "q": "not impossible on a gravel bike; be prepared for a rugged ride",
+    "tr": "niet onmogelijk op een gravelbike, maar reken op een ruwe rit",
+    "url": "https://www.cycloworld.cc/en/article/col-de-sommeiller-het-ultieme-onverharde-fietsavontuur/2740"
+   }
+  ]
+ },
+ {
+  "id": "parpaillon",
+  "name": "Tunnel du Parpaillon",
+  "area": "Embrun / Ubaye, Hautes-Alpes",
+  "land": "Frankrijk",
+  "lat": 44.47,
+  "lng": 6.615,
+  "top": 2643,
+  "gain": 1900,
+  "len": 30,
+  "gravel": 13,
+  "type": "parallel",
+  "bike": "mtb",
+  "parallel": "Col de Vars",
+  "line": "Ooit de hoogste weg van Frankrijk, gebouwd door het leger tussen 1891 en 1911 en daarna vergeten toen de Col de Vars werd geasfalteerd. Bovenin een onverlichte tunnel van 520 m op 2643 m — één meter hoger dan de Galibier.",
+  "segs": [
+   [
+    780,
+    1860,
+    "a"
+   ],
+   [
+    1860,
+    2400,
+    "g"
+   ],
+   [
+    2400,
+    2643,
+    "r"
+   ]
+  ],
+  "verdict": "De grootste aaneengesloten klim op deze lijst en de meest cinematografische. De noordkant vanaf Embrun is duidelijk de vriendelijkste; de zuidkant vanuit de Ubaye is door 4×4's stukgereden. De stemmen spreken elkaar tegen over of het op gravel kan — dat verschil zit hem vrijwel volledig in de afdaling, niet in de klim.",
+  "notes": [
+   "Tunnel is begin zomer nog dicht met stalen deuren vanwege ijs — check vooraf.",
+   "In de tunnel is het ijskoud en nat, ook in augustus. Fel licht en een jas zijn geen luxe.",
+   "Noordkant (Embrun/Crévoux) is beduidend beter berijdbaar dan de zuidkant (Jausiers).",
+   "De 'Montée du Parpaillon'-bordjes stoppen waar het asfalt ophoudt — daarna nog 10 km."
+  ],
+  "voices": [
+   {
+    "who": "Nederlandse rijder, Cycloworld",
+    "q": "A fully is strongly recommended!",
+    "tr": "Een fully wordt sterk aangeraden!",
+    "url": "https://www.cycloworld.cc/article/col-du-parpaillon-an-adventure-of-a-lifetime/1110"
+   },
+   {
+    "who": "Fietser op gravelbike, Vince's Cycling Stuff",
+    "q": "The track proved straightforward on a gravel bike",
+    "tr": "Het pad bleek prima te doen op een gravelbike",
+    "url": "https://www.questel.co.uk/tunnel-du-parpaillon"
+   },
+   {
+    "who": "My Cycling Challenge",
+    "q": "This requires a mountain bike.",
+    "tr": "Hier heb je een mountainbike voor nodig.",
+    "url": "https://www.cycling-challenge.com/col-du-parpaillon/"
+   }
+  ]
+ },
+ {
+  "id": "moutiere",
+  "name": "Col de la Moutière → Faux Col de Restefond",
+  "area": "Mercantour, Alpes-Maritimes",
+  "land": "Frankrijk",
+  "lat": 44.3325,
+  "lng": 6.78,
+  "top": 2656,
+  "gain": 1150,
+  "len": 20,
+  "gravel": 3.5,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Cime de la Bonette",
+  "line": "De derde, vergeten manier om op de Bonette te komen. Vanaf Saint-Dalmas-le-Selvage stijgend door lariksbos naar de Moutière, dan drieënhalve kilometer grind over een verlaten hoogvlakte tot je op het asfalt van de hoogste weg van Frankrijk uitkomt.",
+  "segs": [
+   [
+    1500,
+    2454,
+    "a"
+   ],
+   [
+    2454,
+    2656,
+    "g"
+   ]
+  ],
+  "verdict": "De verstandigste manier om een beroemde col te doen zonder het beroemde verkeer. Het grindstuk is kort en licht — meerdere mensen deden het zelfs op racebanden. Let op: de variant vanaf Bayasse (13 km grind) is een compleet ander verhaal en wordt door iedereen afgeraden voor gravel.",
+  "notes": [
+   "Rustigste kant van de Bonette; melding van twee auto's in een hele klim.",
+   "Grind kan los liggen na sneeuwsmelt in het vroege seizoen.",
+   "Mercantour-nationaalpark: geen voorzieningen boven Saint-Dalmas.",
+   "Mooie lus terug via Col de Raspaillon en het Vallon des Granges Communes."
+  ],
+  "voices": [
+   {
+    "who": "Vince's Cycling Stuff",
+    "q": "It started off quite smooth, with fine gravel",
+    "tr": "Het begon vrij glad, met fijn grind",
+    "url": "https://www.questel.co.uk/col-de-la-moutiere/"
+   },
+   {
+    "who": "My Cycling Challenge, over de Bayasse-variant",
+    "q": "This route is NOT for road bikes. A mountain bike is the best idea.",
+    "tr": "Deze route is NIET voor racefietsen. Een mountainbike is het beste idee.",
+    "url": "https://www.cycling-challenge.com/cime-de-la-bonette-4-routes/"
+   },
+   {
+    "who": "Bike Café (FR), over de Bayasse-variant",
+    "q": "n'est probablement pas adaptée à la pratique du Gravel",
+    "tr": "is waarschijnlijk niet geschikt voor gravel",
+    "url": "https://bike-cafe.fr/2017/11/gravel-et-cols-mythiques-cols-de-la-moutiere-bonnette-restefond/"
+   }
+  ]
+ },
+ {
+  "id": "altaviadelsale",
+  "name": "Alta Via del Sale",
+  "area": "Colle di Tenda → Monesi, Ligurische Alpen",
+  "land": "Italië",
+  "lat": 44.14,
+  "lng": 7.62,
+  "top": 2100,
+  "gain": 1510,
+  "len": 30,
+  "gravel": 22,
+  "type": "puur",
+  "bike": "grens",
+  "parallel": null,
+  "line": "Een militaire weg uit 1939 die dertig kilometer lang tussen 1800 en 2100 m over de Italiaans-Franse grenskam loopt. Karstlandschap, forten, de beroemde haarspeld van de Boaria die in het niets hangt, en een berghut halverwege.",
+  "segs": [
+   [
+    1010,
+    1870,
+    "a"
+   ],
+   [
+    1870,
+    2100,
+    "g"
+   ]
+  ],
+  "verdict": "Qua landschap misschien de mooiste van allemaal, en de enige waar je een tweedaagse van kunt maken met een hut op 2079 m. Maar de Italiaanse bronnen zijn stelliger dan bij Finestre: dit is een MTB-route waar gravelrijders zich in wagen. Het is ook geen gesloten gebied — op de meeste dagen rijden er jeeps en crossmotoren.",
+  "notes": [
+   "Tol: € 1 per fiets bij het toegangshek. Alleen open eind mei – eind september.",
+   "Op dinsdag en donderdag alleen voor voetgangers en fietsers — dat zijn de dagen.",
+   "Rifugio Don Barbera op 2079 m: overnachten, eten, oplaadpunt voor e-MTB's.",
+   "Vanaf Monesi kun je doorzakken tot aan zee bij Ventimiglia (± 138 km totaal)."
+  ],
+  "voices": [
+   {
+    "who": "Torino-Nice Rally-deelnemer, Komoot 2025",
+    "q": "Hard, oh it was very hard. Beautiful, oh it was very beautiful.",
+    "tr": "Zwaar, o wat was het zwaar. Mooi, o wat was het mooi.",
+    "url": "https://www.komoot.com/smarttour/e1391976706/via-del-sale-loop"
+   },
+   {
+    "who": "Cuneotrekking (IT)",
+    "q": "consigliamo caldamente l'uso di MTB biammortizzate",
+    "tr": "we raden dringend een fully-MTB aan",
+    "url": "https://cuneotrekking.com/trekking/alta-via-del-sale-in-mtb-limone-piemonte-ventimiglia/"
+   },
+   {
+    "who": "Nest.bike (IT)",
+    "q": "non sarà improbabile incontrare jeep o moto da cross",
+    "tr": "je komt vrijwel zeker jeeps of crossmotoren tegen",
+    "url": "https://nest.bike/blog/via-del-sale-da-limone-piemonte-a-ventimiglia-in-bicicletta/"
+   }
+  ]
+ },
+ {
+  "id": "valmora",
+  "name": "Val Mora & Bocchetta di Forcola — Stelvio onverhard",
+  "area": "Bormio / Val Müstair",
+  "land": "Italië / Zwitserland",
+  "lat": 46.53,
+  "lng": 10.32,
+  "top": 2760,
+  "gain": 1750,
+  "len": 35,
+  "gravel": 24,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Passo dello Stelvio / Umbrail",
+  "line": "De middeleeuwse zout- en wijnroute die parallel loopt aan de Stelvio. Via het Lago di Cancano en de Fraele-torens omhoog naar hoogalpien terrein boven de 2000 m, met de Bocchetta di Forcola als kroon — en de Stelvio zelf op fietsafstand.",
+  "segs": [
+   [
+    1225,
+    1400,
+    "a"
+   ],
+   [
+    1400,
+    2500,
+    "g"
+   ],
+   [
+    2500,
+    2760,
+    "r"
+   ]
+  ],
+  "verdict": "Voor wie de Stelvio wil doen maar niet met tweehonderd campers wil delen: dit is het antwoord. Het gros rolt uitstekend op grind; alleen het laatste stuk naar de Forcola is duwwerk. Rijtijd is bovendien fors korter dan Piemonte — dit is de best bereikbare écht hoge grindrit op de lijst.",
+  "notes": [
+   "Mooiste variant volgens rijders: starten in Santa Maria (CH), Val Mora op, Cancano, dan Stelvio, afdalen via Umbrail.",
+   "Passo Val Alpisella (2290 m) is de makkelijke, brede versie richting Livigno — goede B-optie bij slecht weer.",
+   "Nationaal Park Stelvio en Zwitsers Nationaal Park: let op fietsverboden op sommige paden.",
+   "Hoogseizoen juli–september; boven 2500 m ligt tot ver in juni sneeuw."
+  ],
+  "voices": [
+   {
+    "who": "Alain Rumpf, Komoot",
+    "q": "High alpine gravel at its best – Bormio beyond the Stelvio",
+    "tr": "Hoogalpien grind op z'n best — Bormio voorbij de Stelvio",
+    "url": "https://www.komoot.com/smarttour/e1391884966/passo-umbrail"
+   },
+   {
+    "who": "Cyclist (UK), ter plaatse",
+    "q": "heading into the unknown is all part of the adventure",
+    "tr": "het onbekende in rijden hoort bij het avontuur",
+    "url": "https://www.cyclist.co.uk/in-depth/shadow-of-the-stelvio-bormio-gravel-ride"
+   },
+   {
+    "who": "Lezer 'Stef', My Cycling Challenge",
+    "q": "ride up the amazing Val Mora on nice gravel",
+    "tr": "klim de fantastische Val Mora op over lekker grind",
+    "url": "https://www.cycling-challenge.com/stelvio-unpaved/"
+   }
+  ]
+ },
+ {
+  "id": "ventoux",
+  "name": "Mont Ventoux — Piste des Graviers Blancs",
+  "area": "Bédoin, Vaucluse",
+  "land": "Frankrijk",
+  "lat": 44.1739,
+  "lng": 5.2786,
+  "top": 1910,
+  "gain": 1600,
+  "len": 22,
+  "gravel": 12,
+  "type": "parallel",
+  "bike": "gravel",
+  "done": true,
+  "parallel": "Ventoux via Bédoin",
+  "line": "De vierde weg omhoog. Vanaf Bédoin door de wijngaarden de Piste des Graviers Blancs op, door het dennenbos naar Chalet Reynard, en dan pas het asfalt van de laatste kilometers naar de top.",
+  "segs": [
+   [
+    310,
+    380,
+    "a"
+   ],
+   [
+    380,
+    1420,
+    "g"
+   ],
+   [
+    1420,
+    1910,
+    "a"
+   ]
+  ],
+  "verdict": "Jullie hebben 'm al gehad in 2022 — hij staat er als ijkpunt. Handig om te weten: alles wat hier hoger staat is technischer of hoger dan dit, en alles wat lager staat is milder. Als jullie de Ventoux-grind prettig vonden, zit je met Finestre, Moutière en Val Mora precies goed.",
+  "notes": [
+   "Bronnen adviseren minimaal 40 mm bij lage druk — het grind in de Provence is rotsig.",
+   "Alleen de route vanuit Flassan gaat volledig onverhard tot boven; de rest komt bij Chalet Reynard op asfalt uit.",
+   "Weinig kaartmateriaal online; GPX vooraf laden is echt nodig.",
+   "Onweer kan ook midzomer over de top rollen terwijl het beneden 35 °C is."
+  ],
+  "voices": [
+   {
+    "who": "Routes to Relax",
+    "q": "This route avoids the fast traffic and aggressive road cyclists.",
+    "tr": "Deze route ontloopt het snelle verkeer en de agressieve wielrenners.",
+    "url": "https://routestorelax.com/mont-ventoux-gravel-climb-in-a-summer-storm/"
+   },
+   {
+    "who": "ClimbBikeSki",
+    "q": "Whilst the trail is all gravel, it wasn't easy to ride up.",
+    "tr": "Hoewel het pad volledig grind is, was het niet makkelijk omhoog.",
+    "url": "https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/"
+   },
+   {
+    "who": "MTBTrails.nl",
+    "q": "alleen mijn route vanuit Flassan gaat echt volledig onverhard naar de top",
+    "tr": "",
+    "url": "https://www.mtbtrails.nl/mtb-trails-fr/mountainbiken-op-de-mont-ventoux"
+   }
+  ]
+ },
+ {
+  "id": "picdumidi",
+  "name": "Pic du Midi de Bigorre",
+  "area": "boven de Col du Tourmalet",
+  "land": "Frankrijk",
+  "lat": 42.9369,
+  "lng": 0.1425,
+  "top": 2877,
+  "gain": 760,
+  "len": 9,
+  "gravel": 9,
+  "type": "parallel",
+  "bike": "mtb",
+  "parallel": "Col du Tourmalet",
+  "line": "Precies op de top van de Tourmalet begint een onverharde weg die nog 760 meter verder omhoog kronkelt naar het observatorium — via Col de Sencours en Col des Laquets, met wielrenners die je vanaf de col nakijken.",
+  "segs": [
+   [
+    2115,
+    2750,
+    "g"
+   ],
+   [
+    2750,
+    2877,
+    "r"
+   ]
+  ],
+  "verdict": "Het beste verhaal van de lijst: je rijdt de Tourmalet en gaat dan gewoon door. Maar het bovenste stuk verandert in leisteen en daar loopt iedereen. Alleen doen als de Pyreneeën sowieso het doel zijn — vanuit Utrecht is dit de verste bestemming die er staat.",
+  "notes": [
+   "Laatste stuk naar het observatorium is een wandelpad; reken op dragen.",
+   "Combineer met de Tourmalet zelf, anders is het een korte dag.",
+   "Hoog en onbeschut; weersomslag komt snel.",
+   "Toegang tot het observatorium zelf loopt via de kabelbaan uit La Mongie."
+  ],
+  "voices": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "one of my very favourite rides ever",
+    "tr": "een van m'n allerfijnste ritten ooit",
+    "url": "https://www.cycling-challenge.com/the-highest-unpaved-cycling-roads-in-the-alps/"
+   },
+   {
+    "who": "Pedalsure-overzicht",
+    "q": "there is a steep gravel road that leads to the observatory high up above",
+    "tr": "er loopt een steile grindweg naar het observatorium hoog daarboven",
+    "url": "https://www.pedalsure.com/blog/10-best-gravel-roads-in-europe"
+   }
+  ]
+ },
+ {
+  "id": "chaberton",
+  "name": "Mont Chaberton",
+  "area": "Montgenèvre / Claviere",
+  "land": "Italië → Frankrijk",
+  "lat": 44.9789,
+  "lng": 6.755,
+  "top": 3131,
+  "gain": 1280,
+  "len": 16,
+  "gravel": 16,
+  "type": "puur",
+  "bike": "mtb",
+  "parallel": null,
+  "line": "Een militaire weg naar het hoogste fort van de Alpen, op een afgevlakte bergtop van 3131 m met 360 graden uitzicht. Gesloten voor gemotoriseerd verkeer.",
+  "segs": [
+   [
+    1850,
+    2800,
+    "g"
+   ],
+   [
+    2800,
+    3131,
+    "r"
+   ]
+  ],
+  "verdict": "Spectaculair, maar wees eerlijk over wat het is: zelfs de sterkste rijders duwen hier stukken. Zet 'm op de lijst als bonusdag bij een Bardonecchia- of Briançon-weekend, niet als hoofddoel.",
+  "notes": [
+   "Autovrij — dat is precies waarom het bovenstuk zo ruw is.",
+   "Grens tussen Italië en Frankrijk loopt over de top; de weg begint Italiaans.",
+   "Vertigo-waarschuwing in meerdere verslagen op het bovenste deel.",
+   "Vanuit hetzelfde dal ligt Fort Janus (2529 m) als kortere variant."
+  ],
+  "voices": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "even the strongest cyclists will likely do some pushing",
+    "tr": "zelfs de sterkste fietsers zullen stukken duwen",
+    "url": "https://www.cycling-challenge.com/the-highest-unpaved-cycling-roads-in-the-alps/"
+   }
+  ]
+ },
+ {
+  "id": "jandri",
+  "name": "Col du Jandri",
+  "area": "Les Deux Alpes, Oisans",
+  "land": "Frankrijk",
+  "lat": 45.0186,
+  "lng": 6.2467,
+  "top": 3158,
+  "gain": 1500,
+  "len": 14,
+  "gravel": 14,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": "Alpe d'Huez (overkant van het dal)",
+  "line": "Een skiliftonderhoudsweg van goede kwaliteit die vanaf Les Deux Alpes doorloopt tot 3158 m, aan de voet van de Glacier de Mont-de-Lans. Het hoogste punt op deze lijst — en er is een bar.",
+  "segs": [
+   [
+    1650,
+    3158,
+    "g"
+   ]
+  ],
+  "verdict": "Het gekke aan Jandri: het is de hoogste van allemaal en tegelijk een van de best berijdbare, omdat het een onderhouden dienstweg is. Wie 3000 m wil halen zonder een dag lang te duwen, moet hier zijn. Basiskamp Bourg d'Oisans geeft bovendien Croix de Fer, Sarenne en Alpe d'Huez binnen handbereik.",
+  "notes": [
+   "Grind begint pas bij het skidorp; je kunt vanaf Bourg d'Oisans starten voor een monsterklim.",
+   "Le Bar 3200 bovenaan is 's zomers geregeld open.",
+   "Alleen zomerseizoen, als de liftservicewegen vrij zijn.",
+   "Achter het bord van de Croix de Fer begint een tweede grindweg naar 2680 m — goede tweede dag."
+  ],
+  "voices": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "completely ride-able on a ski-lift service road",
+    "tr": "volledig berijdbaar over een skiliftdienstweg",
+    "url": "https://www.cycling-challenge.com/the-best-cycling-climbs-from-bourg-doisans/"
+   }
+  ]
+ },
+ {
+  "id": "planche",
+  "name": "Super Planche des Belles Filles + Ballon d'Alsace",
+  "area": "Zuidelijke Vogezen",
+  "land": "Frankrijk",
+  "lat": 47.7742,
+  "lng": 6.7767,
+  "top": 1148,
+  "gain": 670,
+  "len": 7,
+  "gravel": 1,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "La Planche des Belles Filles (Tour de France)",
+  "line": "De Tourklim die eindigt op een onverharde muur van 20 procent. Kort, maar het is de enige plek in Europa waar een grindstrook letterlijk de finish van de Tour de France is — en de Ballon d'Alsace ligt om de hoek.",
+  "segs": [
+   [
+    480,
+    1080,
+    "a"
+   ],
+   [
+    1080,
+    1148,
+    "r"
+   ]
+  ],
+  "verdict": "Als losse beklimming te klein voor een weekend, maar als basis voor twee dagen Vogezen precies goed: op zes uur rijden, bosrijk, en met genoeg grindwegen eromheen om er echte dagen van te maken. Dit is de dichtstbijzijnde plek waar 'klim' nog echt klim betekent.",
+  "notes": [
+   "Het onverharde slotstuk is kort maar brutaal — pieken rond 20%.",
+   "Ballon d'Alsace (1178 m) was in 1905 de allereerste Tourbeklimming ooit.",
+   "Rondom La Bresse en Gérardmer liggen honderden kilometers bospistes.",
+   "Gravelfondo Vosges eind september is een goed excuus voor een datum."
+  ],
+  "voices": [
+   {
+    "who": "Grand Cols Cycling Tours",
+    "q": "This short, steep climb ends with a tough gravel section.",
+    "tr": "Deze korte, steile klim eindigt met een zwaar grindstuk.",
+    "url": "https://www.grandcolscyclingtours.com/en-gb/cycling-tours/join-in-tours/a-travers-les-vosges/"
+   },
+   {
+    "who": "Nederlandse forumrijder, Fiets.nl",
+    "q": "Dichtste plaats waar je echte klimmen kunt vinden is volgens mij de Vogezen.",
+    "tr": "",
+    "url": "https://www.fiets.nl/forum/viewtopic.php?f=2&t=9228"
+   }
+  ]
+ },
+ {
+  "id": "grandballon",
+  "name": "Grand Ballon & Route des Crêtes",
+  "area": "Hautes-Vosges, Elzas",
+  "land": "Frankrijk",
+  "lat": 47.9022,
+  "lng": 7.0997,
+  "top": 1424,
+  "gain": 920,
+  "len": 20,
+  "gravel": 11,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "Het hoogste punt van de Vogezen, bereikbaar via een web van bospistes parallel aan de Route des Crêtes. Meren, hoogveen en kilometers grind zonder auto's.",
+  "segs": [
+   [
+    500,
+    700,
+    "a"
+   ],
+   [
+    700,
+    1300,
+    "g"
+   ],
+   [
+    1300,
+    1424,
+    "a"
+   ]
+  ],
+  "verdict": "Geen enkele beklimming hier is legendarisch, maar de dichtheid is uitzonderlijk: er staan meer dan tweehonderd gravelroutes in de regio. Dit is de bestemming als het weekend om fietsen gaat en niet om één specifieke top afvinken.",
+  "notes": [
+   "Fietsen op vrijwel alle paden toegestaan — ruimer dan in Duitsland.",
+   "Lac Blanc, Lac de Retournemer en Hohneck als natuurlijke ankerpunten.",
+   "Bikepark Lac Blanc voor wie een dag wil afwisselen.",
+   "Herfst is hier bijzonder mooi en rustig."
+  ],
+  "voices": [
+   {
+    "who": "MTB'er, Mountainbike.nl-forum",
+    "q": "In de Vogezen liggen de betere trails die ik heb gereden.",
+    "tr": "",
+    "url": "https://www.mountainbike.nl/forum/viewtopic.php?t=156547"
+   },
+   {
+    "who": "Komoot-regiogids",
+    "q": "over 230 routes available on komoot",
+    "tr": "ruim 230 routes beschikbaar op Komoot",
+    "url": "https://www.komoot.com/guide/3454106/gravel-biking-in-vosges"
+   }
+  ]
+ },
+ {
+  "id": "feldberg",
+  "name": "Feldberg & Schauinsland",
+  "area": "Hoogzwarte Woud",
+  "land": "Duitsland",
+  "lat": 47.8739,
+  "lng": 8.0044,
+  "top": 1450,
+  "gain": 1100,
+  "len": 24,
+  "gravel": 14,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "Twee lange klimmen op één dag, verbonden door bochtige bosafdalingen. De Schotterwege van het Hoogzwarte Woud zijn breed, goed onderhouden en eindeloos.",
+  "segs": [
+   [
+    660,
+    1000,
+    "a"
+   ],
+   [
+    1000,
+    1450,
+    "g"
+   ]
+  ],
+  "verdict": "De veiligste keuze voor een weekend dat sowieso doorgaat, ook bij matig weer: goed berijdbaar, veel opties, korte rijtijd en fatsoenlijke infrastructuur. Minder groots dan de Alpen, maar je verliest geen halve dag aan de heenreis.",
+  "notes": [
+   "Boven 'Der Höchste' wordt het wegdek ruwer.",
+   "In Duitsland gelden per deelstaat regels over fietsen op smalle paden — blijf op de Forstwege.",
+   "Vanaf station Freiburg of Schluchsee te starten; goed bereikbaar met de trein.",
+   "De Schauinsland-Bergstrecke is in het weekend dicht voor motoren."
+  ],
+  "voices": [
+   {
+    "who": "Rijder, Outdooractive-review",
+    "q": "Perfect gravel forest roads, great views.",
+    "tr": "Perfecte grindbospaden, prachtige uitzichten.",
+    "url": "https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/"
+   },
+   {
+    "who": "BIKE Magazin (DE)",
+    "q": "der Fahrbahnbelag wird ab dem Höchsten etwas ruppiger",
+    "tr": "vanaf Der Höchste wordt het wegdek wat ruwer",
+    "url": "https://www.bike-magazin.de/touren/deutschland/graveltour-im-schwarzwald-querfeldwald/"
+   }
+  ]
+ },
+ {
+  "id": "hogevenen",
+  "name": "Hoge Venen via Coo",
+  "area": "Stavelot / Baraque Michel, Wallonië",
+  "land": "België",
+  "lat": 50.5361,
+  "lng": 6.0611,
+  "top": 675,
+  "gain": 1000,
+  "len": 70,
+  "gravel": 40,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "Vanaf Coo meteen omhoog het hoogveen op: steile aanzetten van 20 procent, bospistes, wortelpaden en dan het open, kale plateau van de Hoge Venen richting Baraque Michel.",
+  "segs": [
+   [
+    250,
+    320,
+    "a"
+   ],
+   [
+    320,
+    675,
+    "g"
+   ]
+  ],
+  "verdict": "Twee uur veertig rijden en je bent er. Verwacht geen col: het hoogteverschil komt van veel korte, harde klimmen, niet van één lange. Voor een testweekend, een winterse opwarmer of als de agenda geen lange reis toelaat is dit de juiste keuze — en het is de enige bestemming op de lijst die ook op een gewone zaterdag kan.",
+  "notes": [
+   "Hoogveen kan drassig zijn; na regen zwaar en op sommige plekken beschermd gebied.",
+   "Le Coffee Ride in Coo publiceert bruikbare gravelroutes en heeft parkeergelegenheid.",
+   "Zomers brandgevaar-afsluitingen in het natuurreservaat komen voor.",
+   "Rond Malmedy liggen de steilste dalwanden; La Roche is pittiger dan Houffalize."
+  ],
+  "voices": [
+   {
+    "who": "Ridersguide.nl, verslag vanaf Coo",
+    "q": "Dit is technisch! Meer iets voor een MTB, maar het lukt",
+    "tr": "",
+    "url": "https://ridersguide.nl/routes/graveltocht-ardennen/"
+   },
+   {
+    "who": "MTB'er, Mountainbike.nl-forum",
+    "q": "Het landschap bevat diepe steile dalen.",
+    "tr": "",
+    "url": "https://www.mountainbike.nl/forum/viewtopic.php?f=11&t=71949"
+   }
+  ]
+ },
+ {
+  "id": "sanktvith",
+  "name": "Sankt Vith & de Vennbahn",
+  "area": "Oost-België / Eifelrand",
+  "land": "België / Duitsland",
+  "lat": 50.2814,
+  "lng": 6.1272,
+  "top": 690,
+  "gain": 900,
+  "len": 65,
+  "gravel": 45,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "Verlaten bospistes op de grens van de Ardennen en de Eifel, geregen aan de Vennbahn — een oude spoorlijn die als vlakke verbinding tussen de klimmen door loopt.",
+  "segs": [
+   [
+    380,
+    400,
+    "a"
+   ],
+   [
+    400,
+    690,
+    "g"
+   ]
+  ],
+  "verdict": "De meest ontspannen optie: goed berijdbaar, zonder verrassingen, met dorpjes en cafés op de juiste momenten. Precies wat je wilt als het weekend meer om het gezelschap gaat dan om het lijden. Rijtijd onder de drie uur.",
+  "notes": [
+   "De Vennbahn is vlak en verhard — handig om groepen bij elkaar te houden.",
+   "Rond Rodt en Wallerode liggen de mooiste onverharde afdalingen.",
+   "Sankt Vith heeft genoeg overnachtingsopties voor een groep.",
+   "Goed te combineren met een dag Hoge Venen (30 min rijden)."
+  ],
+  "voices": [
+   {
+    "who": "Trailmarkers.nl, weekendorganisatie",
+    "q": "het perfecte mini-avontuur",
+    "tr": "",
+    "url": "https://www.trailmarkers.nl/trail-markers/belgie/gravelbiken-door-de-ardennen"
+   }
+  ]
+ },
+ {
+  "id": "kolovrat",
+  "name": "Kolovrat & Kobariški Stol",
+  "area": "Soča-vallei, Julische Alpen",
+  "land": "Slovenië",
+  "lat": 46.1697,
+  "lng": 13.5197,
+  "top": 1240,
+  "gain": 1010,
+  "len": 18,
+  "gravel": 9,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": "Vršič-pas",
+  "line": "Oude militaire wegen uit de Eerste Wereldoorlog boven de smaragdgroene Soča. Bovenop een openluchtmuseum van de Isonzo-linie, daarna kilometers kamweg met uitzicht op de Friulische vlakte.",
+  "segs": [
+   [
+    230,
+    900,
+    "a"
+   ],
+   [
+    900,
+    1240,
+    "g"
+   ]
+  ],
+  "verdict": "Het meest onderschatte gebied op de lijst, en het enige waar ik weinig onafhankelijke fietsersstemmen vond — wat er staat komt vooral van reisorganisaties. Dat is geen rode vlag, maar wel een reden om zelf GPX'en te checken voordat je elf uur rijdt.",
+  "notes": [
+   "Mangart-zadel (1600 m, deels asfalt) geldt bij velen als het hoogtepunt van de streek.",
+   "Vršič-pas is verhard maar druk; de jeepwegen eromheen zijn de rustige variant.",
+   "Combineer met Goriška Brda: wijngaarden, glooiend, goede afsluiter.",
+   "Weinig eerstehands rijdersverslagen gevonden — plan iets ruimer."
+  ],
+  "voices": [
+   {
+    "who": "Bikerumor, verslag ter plaatse",
+    "q": "the highlight ride of the trip",
+    "tr": "de mooiste rit van de reis",
+    "url": "https://bikerumor.com/where-to-ride-gravel-bikes-in-slovenia/"
+   }
+  ]
+ },
+ {
+  "id": "nordschwarzwald",
+  "name": "Schliffkopf & Hornisgrinde",
+  "area": "Noord-Zwarte Woud, Baden",
+  "land": "Duitsland",
+  "lat": 48.5397,
+  "lng": 8.2044,
+  "top": 1163,
+  "gain": 900,
+  "len": 22,
+  "gravel": 14,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "De Schwarzwaldhochstraße heeft een onverharde schaduw: kilometers Schotterwege parallel aan de toeristische bergweg, langs hoogveen en de Mummelsee omhoog naar de kale kop van de Hornisgrinde.",
+  "segs": [
+   [
+    400,
+    700,
+    "a"
+   ],
+   [
+    700,
+    1163,
+    "g"
+   ]
+  ],
+  "verdict": "De noordkant van het Zwarte Woud is minder bekend dan het Feldberg-gebied en juist daarom rustiger. Breed, hard grind, goed te doen op elke gravelbike, en op iets meer dan vijf uur rijden. Als het Feldberg-weekend al eens gedaan is, is dit de logische tweede.",
+  "notes": [
+   "Klassieke doorsteek: Achern → Schliffkopf → Mooskopf → Offenburg, ± 140 km en 3400 hm.",
+   "Hoogveen bij de Hornisgrinde is beschermd; blijf op de aangegeven paden.",
+   "Start en finish bij een station is hier goed te doen — handig als niet iedereen wil rijden.",
+   "Wintersluitingen en houtkap kunnen bospistes tijdelijk blokkeren."
+  ],
+  "voices": [
+   {
+    "who": "life-on Magazin (DE)",
+    "q": "Der Start ist in Achern, es geht über den Schliffkopf und den Mooskopf",
+    "tr": "Start in Achern, over de Schliffkopf en de Mooskopf",
+    "url": "https://life-on.de/2025/03/21/erlebnisintensive-gravel-tipps-im-schwarzwald/"
+   },
+   {
+    "who": "BIKE Magazin (DE)",
+    "q": "auf Schotterwegen durch dichte Wälder fahren",
+    "tr": "over grindwegen door dicht bos rijden",
+    "url": "https://www.bike-magazin.de/touren/deutschland/gravel-biken-im-schwarzwald-super-doch-wohin-was-tun-wo-schlafen/"
+   }
+  ]
+ },
+ {
+  "id": "aigoual",
+  "name": "Mont Aigoual — Piste du Col de l'Estrade",
+  "area": "Cévennes, Gard",
+  "land": "Frankrijk",
+  "lat": 44.1214,
+  "lng": 3.5814,
+  "top": 1567,
+  "gain": 1100,
+  "len": 20,
+  "gravel": 16,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Mont Aigoual via Col du Minier",
+  "line": "Het observatorium van de Aigoual staat op een balkon met uitzicht van de Monts du Cantal tot de Middellandse Zee. Terwijl de wielrenners via de Col du Minier komen, loopt er een volledig onverharde bospiste naar dezelfde top.",
+  "segs": [
+   [
+    450,
+    600,
+    "a"
+   ],
+   [
+    600,
+    1567,
+    "g"
+   ]
+  ],
+  "verdict": "De beste verhouding tussen sfeer en toegankelijkheid buiten de Alpen. Rollende bospistes, af en toe stevig steil, en een echte top met een gebouw erop. Het massief is bovendien groot genoeg voor drie verschillende dagen — en met de causses en de Gorges de la Jonte ernaast wordt het snel een compleet weekend.",
+  "notes": [
+   "De piste vanaf de Col de l'Estrade komt uit bij de Menhir de Trépalou, aan de voet van het observatorium.",
+   "Nationaal Park Cévennes: kerngebied met eigen regels, blijf op pistes en wegen.",
+   "Het weer op de top wijkt sterk af van dat in het dal — meeneemjack is standaard.",
+   "Cycl'Aigoual / Gravel Classic in het voorjaar is een goede datum-aanleiding."
+  ],
+  "voices": [
+   {
+    "who": "Le CRI des Cévennes (FR)",
+    "q": "la (très roulante mais parfois raide) piste forestière du Col de l'Estrade",
+    "tr": "de (zeer rollende maar soms steile) bospiste van de Col de l'Estrade",
+    "url": "https://lecridescevennes.fr/2023/01/22/ma-22-grimper-sur-le-mont-aigoual-en-gravel/"
+   },
+   {
+    "who": "Sud Cévennes Tourisme (FR)",
+    "q": "Un parcours Gravel bien costaud avec plusieurs cols au dessus de 1000m",
+    "tr": "Een stevige gravelroute met meerdere cols boven de 1000 m",
+    "url": "https://www.sudcevennes.com/activites/nature/velo/5983011_aigoual-gravel/"
+   },
+   {
+    "who": "Velorizons, reisverslag (FR)",
+    "q": "Assaut final, et nous découvrons l'observatoire du Mont Aigoual",
+    "tr": "Slotaanval, en daar is het observatorium van de Mont Aigoual",
+    "url": "https://www.velorizons.com/voyage-velo-route-cyclo/france/massif-central/CG42-gravel-itineraire-cevennes-montpellier.html"
+   }
+  ]
+ },
+ {
+  "id": "puymary",
+  "name": "Puy Mary & Pas de Peyrol",
+  "area": "Monts du Cantal, Auvergne",
+  "land": "Frankrijk",
+  "lat": 45.1069,
+  "lng": 2.6786,
+  "top": 1589,
+  "gain": 1200,
+  "len": 25,
+  "gravel": 15,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Pas de Peyrol (hoogste col van het Centraal Massief)",
+  "line": "Een uitgedoofde vulkaan met de hoogste geasfalteerde col van het Centraal Massief op de flank — en daaromheen estive-pistes, veenplateaus en de gravelvariant van de Grande Traversée du Massif Central.",
+  "segs": [
+   [
+    700,
+    900,
+    "a"
+   ],
+   [
+    900,
+    1589,
+    "g"
+   ]
+  ],
+  "verdict": "Onderschat gebied: open hoogvlaktes, koeien, nauwelijks verkeer. De GTMC heeft sinds kort een expliciete gravelvariant die de technische stukken vermijdt, wat het planwerk enorm scheelt. Wel eerlijk: de meeste bronnen die ik vond zijn reisorganisaties, niet losse rijders — het is minder gedocumenteerd dan de Alpen.",
+  "notes": [
+   "GTMC-gravelvariant volgt globaal de MTB-route maar mijdt de technische passages.",
+   "Het Cézallier-plateau ernaast is vlakker en ideaal als hersteldag.",
+   "Weinig bevoorrading op de hoogvlaktes; plan dorpen bewust in.",
+   "Combineert goed met de Cévennes: de GTMC verbindt beide in een paar dagen."
+  ],
+  "voices": [
+   {
+    "who": "Les Others, reisverslag (FR)",
+    "q": "une montée qui nous fait grimper 600 mètres de dénivelé sur seulement 8 kilomètres",
+    "tr": "een klim die ons 600 hoogtemeters omhoog brengt in slechts 8 kilometer",
+    "url": "https://www.lesothers.com/gtmc-massif-central-velo-gravel"
+   },
+   {
+    "who": "Partir ici (FR)",
+    "q": "une variante adaptée aux vélos gravel et aux VTT chargés",
+    "tr": "een variant geschikt voor gravelbikes en bepakte MTB's",
+    "url": "https://partir-ici.fr/grande-traversee-massif-central-gtmc-aventure-vtt-gravel-exceptionnelle/"
+   }
+  ]
+ },
+ {
+  "id": "colombygex",
+  "name": "Colomby de Gex via de Faucille-bospistes",
+  "area": "Monts Jura, Ain",
+  "land": "Frankrijk",
+  "lat": 46.3717,
+  "lng": 6.0022,
+  "top": 1688,
+  "gain": 1150,
+  "len": 20,
+  "gravel": 15,
+  "type": "parallel",
+  "bike": "grens",
+  "parallel": "Col de la Faucille",
+  "line": "De Col de la Faucille is een klassieker met vrachtverkeer. Vanaf Gex kun je vrijwel dezelfde hoogte via bospistes bereiken en dan doorrijden over de kam naar Colomby de Gex, met de Mont Blanc recht tegenover je.",
+  "segs": [
+   [
+    600,
+    1100,
+    "g"
+   ],
+   [
+    1100,
+    1323,
+    "a"
+   ],
+   [
+    1323,
+    1688,
+    "g"
+   ]
+  ],
+  "verdict": "Het slimste alternatief van de lijst: dezelfde col, zonder de trucks, met een kamweg als bonus. Het bovenste stuk over de kam is smaller en ruiger dan een bospiste — daar zit het grensgeval. Wie het rollend wil houden, daalt af naar de Col de Crozet in plaats van de kam te volgen.",
+  "notes": [
+   "De hoogste toppen van de Jura liggen ernaast: Crêt de la Neige 1720 m en Le Reculet 1718 m.",
+   "Réserve naturelle de la Haute Chaîne du Jura: fietsen alleen op toegestane paden.",
+   "La Forestière heeft tegenwoordig een gravelvariant, waaronder een tweedaagse van 118 km.",
+   "Genève ligt vlakbij — handig als iemand invliegt in plaats van meerijdt."
+  ],
+  "voices": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "it can sometimes be too busy with both fast cars and trucks",
+    "tr": "het kan er te druk zijn met snelle auto's en vrachtwagens",
+    "url": "https://www.cycling-challenge.com/high-jura-trails-colomby-de-gex-mont-rond/"
+   },
+   {
+    "who": "Montagnes du Jura",
+    "q": "a 2-day itinerary for gravel bikes that winds for 118 km",
+    "tr": "een tweedaagse gravelroute van 118 km",
+    "url": "https://en.montagnes-du-jura.fr/the-mountains-of-jura-a-nature-destination/cycling-and-mountain-biking-everywhere-and-for-everyone/cycle-touring-in-the-jura-mountains/exploring-the-jura-mountains-by-gravel-bike/"
+   }
+  ]
+ },
+ {
+  "id": "brocken",
+  "name": "Brocken & de Harzer Schotterwege",
+  "area": "Harz, Saksen-Anhalt",
+  "land": "Duitsland",
+  "lat": 51.7998,
+  "lng": 10.6156,
+  "top": 1141,
+  "gain": 1000,
+  "len": 25,
+  "gravel": 15,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Brockenstraße vanaf Schierke",
+  "line": "De hoogste berg van Noord-Duitsland, met een stoomtrein die je onderweg passeert. De Brockenstraße zelf is asfalt; het echte werk zit in de talloze Forstwege eromheen, langs stuwmeren en oude mijnbouwgrachten.",
+  "segs": [
+   [
+    350,
+    600,
+    "g"
+   ],
+   [
+    600,
+    900,
+    "a"
+   ],
+   [
+    900,
+    1141,
+    "a"
+   ]
+  ],
+  "verdict": "Op vier uur rijden de dichtstbijzijnde plek met een echte, lange klim naar een echte top. Reken alleen niet op ongerept bos: de bastkeverplaag heeft grote delen van de sparren gesloopt, en dat zie je. Wie een oefenweekend zoekt voor een Alpenreis later, zit hier goed.",
+  "notes": [
+   "De klim naar de top vanaf Schierke is grotendeels geasfalteerd — het grind zit eromheen.",
+   "Nationalpark Harz: fietsen alleen op aangewezen wegen, controleer de kaart.",
+   "Bastkeverschade maakt het landschap kaler dan de foto's van tien jaar geleden.",
+   "Stempelstellen van de Harzer Wandernadel werken verrassend goed als dagstructuur."
+  ],
+  "voices": [
+   {
+    "who": "Canyon-routegids (DE)",
+    "q": "Rings um den Brocken gibt es zahlreiche ruhige Gravelstrecken mit ordentlich Höhenmetern",
+    "tr": "Rond de Brocken liggen talloze rustige gravelroutes met flink wat hoogtemeters",
+    "url": "https://www.canyon.com/de-de/blog-content/gravel-bike-news/besten-gravel-bike-touren-im-harz/b01032024.html"
+   },
+   {
+    "who": "Globetrotter, 'Devil's Trail' (DE)",
+    "q": "hat der Harz wenig Teuflisches für mich als Gravelbiker",
+    "tr": "heeft de Harz weinig duivels voor mij als gravelrijder",
+    "url": "https://www.globetrotter.de/magazin/gravel-tour-harz-devils-trail/"
+   },
+   {
+    "who": "Rijder, Outdooractive-review",
+    "q": "Quite hard, gradient up to 18%",
+    "tr": "Best zwaar, hellingen tot 18%",
+    "url": "https://www.outdooractive.com/de/gravel-bike-touren/harz-mittelgebirge-/gravel-bike-touren-im-harz-mittelgebirge-/301589287/"
+   }
+  ]
+ },
+ {
+  "id": "montsdarree",
+  "name": "Roc'h Trevezel & de Monts d'Arrée",
+  "area": "Finistère, Bretagne",
+  "land": "Frankrijk",
+  "lat": 48.41,
+  "lng": -3.9075,
+  "top": 384,
+  "gain": 1600,
+  "len": 84,
+  "gravel": 50,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "Bretonse Highlands: heide, hoogveen, rotsige kammen en holle wegen waar volgens de verhalen de korrigans wonen. Het hoogteverschil is bescheiden, de wind en de leegte niet.",
+  "segs": [
+   [
+    180,
+    250,
+    "a"
+   ],
+   [
+    250,
+    384,
+    "g"
+   ]
+  ],
+  "verdict": "De enige bestemming op deze lijst waar het landschap belangrijker is dan de hoogtemeters — en waar je na afloop in zee kunt. Het weekend maak je met een lus over de Roc'h, niet met één beklimming. Let op de waarschuwing van rijders zelf: Bretonse rondjes bevatten vaak veel asfalt, dus kies je route zorgvuldig.",
+  "notes": [
+   "Vijfentwintig kilometer zonder dorp op de kam — neem twee bidons en extra eten mee.",
+   "Zand en regen slijten de aandrijving hard; kettingpons en extra sluitschakel meenemen.",
+   "Les Roc'h des Monts d'Arrée (september, Huelgoat) heeft tegenwoordig gravelparcoursen van 65 tot 150 km.",
+   "De omgeving van Huelgoat en het meer van Brennilis is het logische basiskamp."
+  ],
+  "voices": [
+   {
+    "who": "Gravel Tro Breizh-gids (FR)",
+    "q": "Les Monts d'Arrée sont moins durs en chiffre brut qu'en ressenti.",
+    "tr": "De Monts d'Arrée zijn op papier minder zwaar dan ze voelen.",
+    "url": "https://saint-jacques-compostelle-bretagne.fr/gravel-tro-breizh/"
+   },
+   {
+    "who": "MTB'er, VTTour (FR)",
+    "q": "les circuits en BZH ont souvent bcp de route",
+    "tr": "routes in Bretagne bevatten vaak veel asfalt",
+    "url": "https://vttour.fr/sorties/18153"
+   },
+   {
+    "who": "Abicyclette Voyages (FR)",
+    "q": "de très belles pistes, à la fois roulantes et techniques",
+    "tr": "heel mooie pistes, tegelijk rollend en technisch",
+    "url": "https://www.abicyclette-voyages.com/circuit/a-lassaut-des-monts-darree"
+   }
+  ]
+ },
+ {
+  "id": "corrieyairack",
+  "name": "Corrieyairack Pass",
+  "area": "Monadhliath, Schotse Hooglanden",
+  "land": "Schotland",
+  "cross": "uk",
+  "lat": 57.0512,
+  "lng": -4.6114,
+  "top": 770,
+  "gain": 710,
+  "len": 18,
+  "gravel": 18,
+  "type": "puur",
+  "bike": "grens",
+  "parallel": null,
+  "line": "Generaal Wade's militaire weg uit 1731, dwars over de Monadhliath van Fort Augustus aan Loch Ness naar Melgarve. Beschermd monument, gesloten voor auto's, open voor fietsen — met haarspelden, doorwaadbare beken en niets anders dan leegte.",
+  "segs": [
+   [
+    60,
+    320,
+    "g"
+   ],
+   [
+    320,
+    600,
+    "g"
+   ],
+   [
+    600,
+    770,
+    "r"
+   ]
+  ],
+  "verdict": "Qua verhaal de Schotse Parpaillon: dezelfde achttiende-eeuwse militaire logica, dezelfde afgelegenheid. Rijders op forums zeggen dat de hoofdweg prima gaat op gravel; de klachten gaan over losse stenen en de vermoeiende oostkant. Het serieuze bezwaar is de reis: met Calais–Dover ben je hier een volle dag onderweg, dus dit is een lang weekend, geen weekend.",
+  "notes": [
+   "Gemotoriseerd verkeer verboden, fietsen expliciet toegestaan.",
+   "Beekdoorwaadplaatsen kunnen na regen serieus zijn — check de voorspelling.",
+   "Er staat een bothy onderweg; twee halve dagen is een prettiger indeling.",
+   "Shuttle-service beschikbaar vanuit Laggan als je één kant op wilt rijden.",
+   "Hoogspanningsmasten langs de route bederven het wildernisgevoel gedeeltelijk."
+  ],
+  "voices": [
+   {
+    "who": "Forumlid, Singletrack World",
+    "q": "The main track is better and would be fine on a gravel bike.",
+    "tr": "De hoofdweg is beter en zou prima gaan op een gravelbike.",
+    "url": "https://singletrackworld.com/forum/bike-forum/corrieyairack-pass-pylon-route/"
+   },
+   {
+    "who": "Komoot-tip, januari 2020",
+    "q": "Brutal but beautiful climb. Lot of loose rocks",
+    "tr": "Bruut maar prachtig. Veel losse stenen",
+    "url": "https://www.komoot.com/highlight/764781"
+   },
+   {
+    "who": "Atlas Ride Co",
+    "q": "loose gravel, river crossings, and exposure to the elements",
+    "tr": "los grind, rivierdoorwaadplaatsen en volle blootstelling aan het weer",
+    "url": "https://www.atlasrideco.com/news/scotland-gravel-riding-routes-tours"
+   }
+  ]
+ },
+ {
+  "id": "walnascar",
+  "name": "Walna Scar Road",
+  "area": "Coniston, Lake District",
+  "land": "Engeland",
+  "cross": "uk",
+  "lat": 54.3564,
+  "lng": -3.1236,
+  "top": 600,
+  "gain": 550,
+  "len": 9,
+  "gravel": 9,
+  "type": "puur",
+  "bike": "mtb",
+  "parallel": null,
+  "line": "Een eeuwenoude pakezelweg over de schouder van de Old Man of Coniston, langs verlaten leisteengroeven. Kort, steil en berucht rotsig — het bekendste onverharde 'pass' van Engeland.",
+  "segs": [
+   [
+    50,
+    250,
+    "a"
+   ],
+   [
+    250,
+    450,
+    "g"
+   ],
+   [
+    450,
+    600,
+    "r"
+   ]
+  ],
+  "verdict": "Hier lopen de stemmen het verst uiteen van alle bestemmingen: de een reed 25 procent van de klim, de ander noemt de afdaling naar Duddon prima op gravel. De consensus is: rij hem van Duddon naar Coniston, reken op duwen omhoog en wees scherp op de rotstuinen omlaag. Op 55 mm haalbaar, maar dit is de enige plek waar ik zou zeggen: alleen doen als iemand in de groep dit leuk vindt.",
+  "notes": [
+   "Richting: Duddon → Coniston wordt door forumrijders unaniem aangeraden.",
+   "Bridleway open to all traffic, maar druk met wandelaars bij de parkeerplaats.",
+   "De verharde aanloop vanuit Coniston is absurd steil — meerdere mensen zetten daar al voet aan de grond.",
+   "Rondom Grizedale en de Duddon-vallei ligt genoeg makkelijker grind voor een volle dag."
+  ],
+  "voices": [
+   {
+    "who": "Forumlid, Singletrack World",
+    "q": "The erosion has made it a bit spicy in parts",
+    "tr": "De erosie heeft het op stukken wat pittig gemaakt",
+    "url": "https://singletrackworld.com/forum/topic/walna-scar-road-by-gravel-bike/"
+   },
+   {
+    "who": "Mountain Journeys, verslag",
+    "q": "much of it is rideable and fun on a gravel bike",
+    "tr": "veel ervan is rijdbaar en leuk op een gravelbike",
+    "url": "https://www.mountain-journeys.co.uk/lakes-gravel/"
+   },
+   {
+    "who": "LakesMTB",
+    "q": "only really rideable when you get to the quarry buildings",
+    "tr": "pas echt rijdbaar vanaf de groevegebouwen",
+    "url": "https://lakesmtb.co.uk/routes/wanna-scar-long/"
+   }
+  ]
+ },
+ {
+  "id": "grappa",
+  "name": "Monte Grappa — Strada del Covolo",
+  "area": "Veneto, voor de Dolomieten",
+  "land": "Italië",
+  "lat": 45.8728,
+  "lng": 11.8036,
+  "top": 1775,
+  "gain": 1500,
+  "len": 20,
+  "gravel": 12,
+  "type": "parallel",
+  "bike": "grens",
+  "parallel": "Monte Grappa via Semonzo / Romano",
+  "line": "Elf verharde beklimmingen leiden naar Cima Grappa, met een oorlogsmonument waar tienduizenden gevallenen liggen. Er is een twaalfde: een oude muilezelweg met bijna veertig haarspelden vanaf Crespano, over compact grind naar Malga Ardosetta.",
+  "segs": [
+   [
+    300,
+    600,
+    "a"
+   ],
+   [
+    600,
+    1450,
+    "g"
+   ],
+   [
+    1450,
+    1775,
+    "a"
+   ]
+  ],
+  "verdict": "De grootste concentratie zware beklimmingen naar één top ter wereld, en precies daarom leuk: iedereen rijdt de bekende kant, jij komt via het grind boven. Rijders die de pistes van dichtbij zagen omschrijven ze als wisselvallig — het ene moment rollend, het andere steil en gemeen. Reken dus op een grensgeval, niet op een snelweg.",
+  "notes": [
+   "De Strada Cadorna over de kam naar het oosten is een prachtige, rustige afsluiter.",
+   "Op de top ligt het Sacrario Militare; de Rifugio Bassano ernaast is een fietserscafé.",
+   "Op heldere dagen zie je de lagune van Venetië liggen.",
+   "Het Asiago-plateau ligt naast de deur voor een tweede dag."
+  ],
+  "voices": [
+   {
+    "who": "Top Bike Climbs / PJAMM",
+    "q": "almost 40 hairpin bends that lead up to Malga Ardosetta",
+    "tr": "bijna 40 haarspelden die naar Malga Ardosetta leiden",
+    "url": "https://pjammcycling.com/zone/55.Monte%20Grappa"
+   },
+   {
+    "who": "Cycloworld, ter plaatse",
+    "q": "one moment rolling and almost friendly, the next steep and mean",
+    "tr": "het ene moment rollend en bijna vriendelijk, het volgende steil en gemeen",
+    "url": "https://www.cycloworld.cc/en/article/monte-grappa-a-climb-with-a-soul/5728"
+   }
+  ]
+ },
+ {
+  "id": "asiago",
+  "name": "Altopiano di Asiago — militaire wegen",
+  "area": "Vicentijnse Voor-Alpen",
+  "land": "Italië",
+  "lat": 45.8778,
+  "lng": 11.5097,
+  "top": 1400,
+  "gain": 1005,
+  "len": 45,
+  "gravel": 27,
+  "type": "puur",
+  "bike": "grens",
+  "parallel": null,
+  "line": "Een hoogvlakte vol wegen uit de Eerste Wereldoorlog, malga's waar nog kaas wordt gemaakt, en bosroutes die tussen de zuidelijke Dolomieten door lopen. Ongeveer zestig procent onverhard.",
+  "segs": [
+   [
+    1000,
+    1100,
+    "a"
+   ],
+   [
+    1100,
+    1400,
+    "g"
+   ]
+  ],
+  "verdict": "Wie de Dolomieten in gedachten heeft maar geen zin heeft in campers op de Sellaronda, komt hier beter uit. Eerlijk erbij: over dit gebied schrijven vooral reisorganisaties, geen losse rijders — de beschrijvingen die ik vond noemen los gesteente en grof grind, en raden gravel- of MTB-ervaring aan. Plan het als verkenning, niet als afvinklijst.",
+  "notes": [
+   "Ongeveer 60% van het terrein is onverhard: bospistes en muilezelpaden.",
+   "Malga's onderweg serveren lunch — de kaascultuur is hier eeuwenoud.",
+   "Het militair ossuarium van Asiago is een logisch keerpunt in een lus.",
+   "Korte dagafstanden zijn hier normaal; het terrein kost meer tijd dan de kilometers suggereren."
+  ],
+  "voices": [
+   {
+    "who": "Trek Travel, routebeschrijving",
+    "q": "loose rocks and chunky gravel",
+    "tr": "los gesteente en grof grind",
+    "url": "https://trektravel.com/tour/cycling/italian-dolomites-gravel/"
+   },
+   {
+    "who": "Dolomiti Gravel (IT)",
+    "q": "climbs are the steepest and longer, descents are thrilling technical",
+    "tr": "de klimmen zijn het steilst en langst, de afdalingen technisch en spannend",
+    "url": "https://www.dolomitigravel.com/"
+   }
+  ]
+ },
+ {
+  "id": "corsica",
+  "name": "Bocca di Verghio & de Gravel20",
+  "area": "Centraal Corsica",
+  "land": "Frankrijk",
+  "cross": "co",
+  "lat": 42.305,
+  "lng": 8.9,
+  "top": 1477,
+  "gain": 1200,
+  "len": 25,
+  "gravel": 12,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "GT20 / Bocca di Verghju, hoogste weg van Corsica",
+  "line": "De GT20 doorkruist het eiland van Bastia naar Bonifacio over de hoogste weg van Corsica. Ernaast ligt de Gravel20: dezelfde doorsteek maar met honderd kilometer onverhard, ter plaatse gecontroleerd.",
+  "segs": [
+   [
+    600,
+    900,
+    "a"
+   ],
+   [
+    900,
+    1477,
+    "g"
+   ]
+  ],
+  "verdict": "Corsica is spectaculair maar verraderlijk om te plannen: de makers van de Gravel20 waarschuwen expliciet dat veel sporen die op de kaart bestaan in werkelijkheid afgesloten, privé, dichtgegroeid of onberijdbaar zijn. Gebruik dus een gevalideerde track en niet je eigen Komoot-lijn. En reken op de boot: dit is geen weekend, dit is een week.",
+  "notes": [
+   "De GT20 zelf is grotendeels asfalt; de Gravel20 is de onverharde variant van ± 500 km met ± 100 km grind.",
+   "Voorjaar en najaar worden aangeraden — rustiger wegen, dragelijker temperaturen.",
+   "De RT20 dwars door het eiland is druk; de GT20 mijdt hem grotendeels, maar niet overal.",
+   "Vliegen naar Bastia of Ajaccio en ter plaatse huren is vrijwel altijd sneller dan rijden."
+  ],
+  "voices": [
+   {
+    "who": "Gattu Bike Corsica, makers van de Gravel20",
+    "q": "tracks that appear on maps but are actually closed, private, overgrown",
+    "tr": "sporen die op de kaart staan maar in werkelijkheid afgesloten, privé of dichtgegroeid zijn",
+    "url": "https://www.gattu.corsica/en/gravel20"
+   },
+   {
+    "who": "Komoot GT20-collectie",
+    "q": "a VTC, gravel, road, or electric bike are all suitable",
+    "tr": "een hybride, gravel-, race- of elektrische fiets zijn allemaal geschikt",
+    "url": "https://www.komoot.com/collection/2567507/the-great-crossing-of-corsica-by-bike-gt-20"
+   },
+   {
+    "who": "Epic Road Rides",
+    "q": "This is a busy road, so extra caution is advised",
+    "tr": "Dit is een drukke weg, dus extra voorzichtigheid is geboden",
+    "url": "https://epicroadrides.com/destinations/cycling-france/corsica/"
+   }
+  ]
+ },
+ {
+  "id": "gennargentu",
+  "name": "Gennargentu & Supramonte",
+  "area": "Barbagia / Ogliastra",
+  "land": "Italië",
+  "cross": "sa",
+  "lat": 40.0053,
+  "lng": 9.3086,
+  "top": 1400,
+  "gain": 1200,
+  "len": 30,
+  "gravel": 22,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "Het ruige binnenland van Sardinië: kalkstenen hoogvlaktes, oude mijnbouwsporen, kurkeiken en dorpen waar de tijd stilstaat. Fonni ligt op duizend meter en is het hoogste dorp van het eiland.",
+  "segs": [
+   [
+    600,
+    800,
+    "a"
+   ],
+   [
+    800,
+    1400,
+    "g"
+   ]
+  ],
+  "verdict": "Van alle bestemmingen op deze lijst degene met het beste seizoen: april-mei en september-oktober zijn hier ideaal, precies wanneer de Alpen nog dicht of al koud zijn. De Komoot-community geeft Sardinië gemiddeld 4,4 sterren over ruim 480 beoordelingen, wat een breed gedragen oordeel is. Het bezwaar is puur logistiek: met auto en boot ben je meer dan een dag onderweg.",
+  "notes": [
+   "Beste periodes: april–mei en september–oktober; midzomer is te heet in het binnenland.",
+   "Op sommige etappes meer dan 30 km zonder bar of bron — plan water bewust.",
+   "Oude mijnbouwsporen en bosroutes vormen het grootste deel van het onverharde netwerk.",
+   "Vliegen op Cagliari of Olbia en ter plaatse huren scheelt twee reisdagen."
+  ],
+  "voices": [
+   {
+    "who": "Komoot-regiogids",
+    "q": "an average score of 4.4 stars from over 480 reviews",
+    "tr": "gemiddeld 4,4 sterren uit ruim 480 beoordelingen",
+    "url": "https://www.komoot.com/guide/3440916/gravel-biking-in-sardinia"
+   },
+   {
+    "who": "SardiniaCycling, routebeschrijving",
+    "q": "The trail culminates at Passo Tascusì",
+    "tr": "De route eindigt op de Passo Tascusì",
+    "url": "https://www.sardiniacycling.com/en/biking-tours/epic-sardinia-gravel-edition.html"
+   },
+   {
+    "who": "Cycling Destination (NL)",
+    "q": "The gravel bike can take you in even more directions.",
+    "tr": "",
+    "url": "https://cyclingdestination.cc/en/stories/fietsen-op-sardinie-gravel"
+   }
+  ]
+ },
+ {
+  "id": "picos",
+  "name": "Vuelta a los Picos de Europa",
+  "area": "Asturië / Cantabrië / León",
+  "land": "Spanje",
+  "lat": 43.15,
+  "lng": -4.8,
+  "top": 1562,
+  "gain": 1600,
+  "len": 68,
+  "gravel": 25,
+  "type": "parallel",
+  "bike": "grens",
+  "parallel": "Lagos de Covadonga (Vuelta a España)",
+  "line": "Een ronde van vier etappes om het nationale park, over de Puerto del Pontón, Panderrueda en Pandetrave, met een afdaling naar Fuente Dé die door een kabelbaan wordt onderbroken. Beren en wolven leven hier nog.",
+  "segs": [
+   [
+    400,
+    900,
+    "a"
+   ],
+   [
+    900,
+    1562,
+    "g"
+   ]
+  ],
+  "verdict": "Landschappelijk vergelijkbaar met de Dolomieten maar zonder de drukte — en met bijna vierduizend kilometer fietsroute in Asturië alleen al. Let op één specifieke waarschuwing van een rijder die de ronde deed: de piste omlaag naar Fuente Dé is met bepakking op gravel alleen met veel voorzichtigheid te doen. Plan die etappe zonder tassen of neem de kabelbaan.",
+  "notes": [
+   "De Camín Real de la Mesa (Romeinse weg) en de Senda del Oso zijn de klassieke losse dagen.",
+   "Kabelbaan bij Fuente Dé: reserveren, en hij sluit bij harde wind.",
+   "Het weer in de Picos is uitgesproken Atlantisch — reken op regen, ook in juli.",
+   "Lagos de Covadonga is verhard maar in de zomer voor auto's afgesloten; dat maakt hem fietsbaar."
+  ],
+  "voices": [
+   {
+    "who": "Rijder, Wikiloc-verslag (ES)",
+    "q": "en gravel con alforjas se hace bien con mucho cuidado",
+    "tr": "op gravel met bepakking gaat het goed, mits heel voorzichtig",
+    "url": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   },
+   {
+    "who": "Espaciobike (ES)",
+    "q": "la multitud de senderos de tierra permiten diseñar rutas de grava increíbles",
+    "tr": "de vele onverharde paden maken ongelooflijke gravelroutes mogelijk",
+    "url": "https://espaciobike.com/gravel-en-asturias/"
+   },
+   {
+    "who": "Cycle Fiesta",
+    "q": "similar to The Dolomites in Italy, but with more vibrant colors",
+    "tr": "vergelijkbaar met de Dolomieten, maar met levendiger kleuren",
+    "url": "https://www.cyclefiesta.com/multimedia/climbs/asturias/asturias.htm"
+   }
+  ]
+ },
+ {
+  "id": "rallarvegen",
+  "name": "Rallarvegen",
+  "area": "Hardangervidda: Haugastøl – Finse – Flåm",
+  "land": "Noorwegen",
+  "cross": "no",
+  "lat": 60.6022,
+  "lng": 7.5083,
+  "top": 1343,
+  "gain": 600,
+  "len": 82,
+  "gravel": 70,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "De aanlegweg van de Bergensbanen, tussen 1902 en 1909 met paard en kar over de Hardangervidda aangelegd. Sinds de jaren zeventig een fietsroute, en volgens vrijwel elke Noorse lijst de mooiste van het land.",
+  "segs": [
+   [
+    988,
+    1343,
+    "g"
+   ],
+   [
+    1343,
+    600,
+    "g"
+   ]
+  ],
+  "verdict": "Als één route op deze lijst onvergetelijk is zonder dat je ervoor hoeft te lijden, is dit hem. Vanaf Finse is het netto afdalen, het grind is grotendeels compact, en er rijden meer dan twintigduizend fietsers per zomer — dat zegt iets over de toegankelijkheid, maar ook over de drukte. Rijders melden sneeuwvelden tot ver in juli en losse stukken waar je afstapt.",
+  "notes": [
+   "Altijd Finse → Flåm rijden; andersom is aanzienlijk zwaarder.",
+   "Finse is alleen per trein bereikbaar — de auto blijft in Haugastøl of Geilo staan.",
+   "Seizoen ongeveer half juli tot half september; check het Rallarvegen-rapport vooraf.",
+   "Het stuk Haugastøl–Finse is breed en makkelijk; Finse–Flåm is het echte werk.",
+   "Onderweg twee cafés en DNT-hutten, dus hoog overnachten is goed te doen."
+  ],
+  "voices": [
+   {
+    "who": "Fietser, Tripadvisor-review",
+    "q": "The very rough or very steep patches I walked",
+    "tr": "De heel ruwe of heel steile stukken liep ik",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g7159542-d3497800-Reviews-Rallarvegen_The_Navvy_Road-Ulvik_Ulvik_Municipality_Hardanger_Hordaland_Western_.html"
+   },
+   {
+    "who": "Noorse fietser, geciteerd door Cycloscope",
+    "q": "You have to do Finse to Flåm. There is nothing else like it.",
+    "tr": "Je moet Finse–Flåm doen. Er is niets dat erop lijkt.",
+    "url": "https://cycloscope.net/cycling-rallarvegen-from-finse-to-flam/"
+   },
+   {
+    "who": "Bikepacking.com",
+    "q": "more than 20,000 cyclists visiting it each summer",
+    "tr": "ruim 20.000 fietsers per zomer",
+    "url": "https://bikepacking.com/routes/of-milk-and-navvies/"
+   }
+  ]
+ },
+ {
+  "id": "strynefjell",
+  "name": "Gamle Strynefjellsvegen",
+  "area": "Grotli – Videsæter, Vestland",
+  "land": "Noorwegen",
+  "cross": "no",
+  "lat": 62.0333,
+  "lng": 7.4167,
+  "top": 1139,
+  "gain": 1050,
+  "len": 27,
+  "gravel": 15,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Rv15 door de Strynefjell-tunnels",
+  "line": "Tussen 1889 en 1894 met de hand gebouwd, in 2009 als monument beschermd, en sindsdien de historische omweg naast de tunnelroute. Handgestapelde muren en eindeloze rijen wachtstenen langs het wegdek.",
+  "segs": [
+   [
+    850,
+    1139,
+    "g"
+   ],
+   [
+    1139,
+    700,
+    "a"
+   ]
+  ],
+  "verdict": "Let op een tegenstrijdigheid in de bronnen die je reisplan bepaalt: de oostkant vanaf Grotli is grind, maar één gedetailleerd verslag beschrijft de westkant vanaf Hjelle als ruw asfalt over vrijwel de hele klim, met slechts een kort grindplateau bovenop. Kortom: rijd hem vanaf Grotli als je grind wilt. Verder is dit de meest sfeervolle korte klim op de lijst — gesloten voor groot verkeer, en pas open vanaf 15 juni.",
+  "notes": [
+   "Open van ongeveer 15 juni tot eind september; check vegvesen.no.",
+   "Grotli-kant is grind, Hjelle-kant is oud ruw asfalt. Kies bewust.",
+   "Geen cafés of kranen onderweg; bevoorraad in Grotli of Hjelle.",
+   "Zomerskigebied halverwege; daarna een lange afdaling langs watervallen.",
+   "Herfstkleuren worden door vrijwel elke bron als het hoogtepunt genoemd."
+  ],
+  "voices": [
+   {
+    "who": "Cycle Norway",
+    "q": "Some people have cried cycling it!",
+    "tr": "Sommige mensen hebben er huilend op gefietst!",
+    "url": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"
+   },
+   {
+    "who": "CyclingRoutes.cc, ter plaatse",
+    "q": "The surface stays rough asphalt the whole way",
+    "tr": "Het wegdek blijft de hele klim ruw asfalt",
+    "url": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"
+   },
+   {
+    "who": "Nasjonale turistveger",
+    "q": "a museum experience in itself",
+    "tr": "op zichzelf al een museumervaring",
+    "url": "https://www.nasjonaleturistveger.no/en/routes/gamle-strynefjellsvegen/"
+   }
+  ]
+ },
+ {
+  "id": "gardetta",
+  "name": "Altopiano della Gardetta & Colle Fauniera",
+  "area": "Val Maira, Cottische Alpen",
+  "land": "Italië",
+  "lat": 44.4139,
+  "lng": 7.0917,
+  "top": 2481,
+  "gain": 1700,
+  "len": 25,
+  "gravel": 15,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Colle Fauniera (Giro 1999, Pantani)",
+  "line": "Vijftien kilometer militaire strada bianca die altijd boven de 2000 meter blijft, in een halve cirkel om de dolomitische Rocca la Meja heen. Vier colletjes achter elkaar, kudden schapen, vervallen kazernes, en op het einde het Pantani-monument op de Fauniera.",
+  "segs": [
+   [
+    1000,
+    2083,
+    "a"
+   ],
+   [
+    2083,
+    2450,
+    "g"
+   ],
+   [
+    2450,
+    2481,
+    "a"
+   ]
+  ],
+  "verdict": "Geverifieerd en beter dan verwacht. Dit is de zeldzame combinatie van een beroemde verharde col en een echt hoogvlakte-grindtraject in één dag, zonder duwwerk. Let op de nuance in de Italiaanse verslagen: onderweg wordt het grind grover en heb je evenwicht nodig, en één rijder noemt het stuk langs Rocca la Meja duidelijk technischer. Op 55 mm zit je goed.",
+  "notes": [
+   "Drie verharde kanten naar de Fauniera, allemaal rustig; de kant vanaf Ponte Marmora is de smalste.",
+   "Rifugio Gardetta op 2335 m is het logische middelpunt van de lus.",
+   "Elektrische veeafrasteringen kruisen de piste — er zit steeds een geïsoleerde handgreep aan, weer vastmaken.",
+   "Laatste fontein ligt bij km 6 van de klim naar Colle di Esischie.",
+   "Het plateau is erkend Italiaans geologisch erfgoed; gemotoriseerd verkeer komt er ook."
+  ],
+  "voices": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "Fifteen (amazing) kms along unpaved old military roads",
+    "tr": "Vijftien (fantastische) kilometer over onverharde oude militaire wegen",
+    "url": "https://www.cycling-challenge.com/colle-fauniera-and-beyond/"
+   },
+   {
+    "who": "Turista Gravel (IT), eigen verslag",
+    "q": "la ghiaia si fa grossa, serve un buon colpo di pedale",
+    "tr": "het grind wordt grof, je hebt een stevige pedaalslag nodig",
+    "url": "https://turistagravel.home.blog/2019/02/10/altopiano-della-gardetta/"
+   },
+   {
+    "who": "Life in Travel (IT)",
+    "q": "Il percorso si fa decisamente più tecnico",
+    "tr": "De route wordt beslist technischer",
+    "url": "https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html"
+   }
+  ]
+ },
+ {
+  "id": "valviola",
+  "name": "Passo di Val Viola",
+  "area": "Valdidentro – Poschiavo",
+  "land": "Italië / Zwitserland",
+  "lat": 46.405,
+  "lng": 10.14,
+  "top": 2489,
+  "gain": 600,
+  "len": 18,
+  "gravel": 16,
+  "type": "puur",
+  "bike": "gravel",
+  "parallel": null,
+  "line": "Vanaf Arnoga een gelijkmatig stijgende, goed onderhouden grindweg door een breed hoogdal met bergmeertjes, tot aan de Zwitserse grens op 2489 meter. Bij Rifugio Viola staat polenta klaar.",
+  "segs": [
+   [
+    1890,
+    2489,
+    "g"
+   ]
+  ],
+  "verdict": "Geverifieerd, en de conclusie is scherper dan de suggestie: de klim vanaf Arnoga is een groene, goed berijdbare grindweg — dit is een van de vriendelijkste manieren om op bijna 2500 meter te komen. Het addertje zit aan de andere kant. Meerdere Italiaanse verslagen melden dat alleen de eerste 300 hoogtemeters van de afdaling richting Sfazù niet fietsbaar zijn. Rijd hem dus als heen-en-terug vanaf Arnoga, of accepteer dat je één stuk draagt.",
+  "notes": [
+   "Seizoen juni tot september; het dal ligt hoog en houdt sneeuw lang vast.",
+   "Rifugio Viola halverwege is een bekend rustpunt.",
+   "De doorsteek naar Poschiavo kan met de Berninatrein terug — hele wagons zijn ingericht voor fietsen.",
+   "Combineert logisch met Val Mora en Alpisella vanuit hetzelfde basiskamp."
+  ],
+  "voices": [
+   {
+    "who": "Trailforks, trailbeschrijving",
+    "q": "Steady climb well maintained and rideable",
+    "tr": "Gelijkmatige klim, goed onderhouden en berijdbaar",
+    "url": "https://www.trailforks.com/trails/passo-viola/"
+   },
+   {
+    "who": "Max e Gio MTB (IT)",
+    "q": "itinerario completamente ciclabile tranne che per il tratto iniziale di discesa",
+    "tr": "volledig fietsbare route, op het eerste stuk van de afdaling na",
+    "url": "https://max-gio-mtb.jimdofree.com/percorsi-mtb/svizzera/val-viola-val-poschiavo/"
+   },
+   {
+    "who": "Training Camp (IT), over de Zwitserse afdaling",
+    "q": "Spero che le vostre sospensioni funzionino bene",
+    "tr": "Ik hoop dat jullie vering goed werkt",
+    "url": "https://training.camp/it/route/2825/passo-della-vallaccia-e-val-viola-/"
+   }
+  ]
+ },
+ {
+  "id": "pfitscherjoch",
+  "name": "Pfitscher Joch / Passo di Vizze",
+  "area": "Zillertaler Alpen, Zuid-Tirol",
+  "land": "Italië / Oostenrijk",
+  "lat": 46.9903,
+  "lng": 11.6708,
+  "top": 2251,
+  "gain": 1300,
+  "len": 25,
+  "gravel": 9,
+  "type": "parallel",
+  "bike": "gravel",
+  "parallel": "Brennerpas",
+  "line": "Aan het eind van het Pfitschertal begint een militaire weg uit de Eerste Wereldoorlog die in negen kilometer aardepiste naar de hoofdkam van de Alpen klimt. Autovrij, met een berghut op de pas en uitzicht over twee landen.",
+  "segs": [
+   [
+    950,
+    1450,
+    "a"
+   ],
+   [
+    1450,
+    2251,
+    "g"
+   ]
+  ],
+  "verdict": "Geverifieerd, met één cruciale correctie op de suggestie: dit werkt alleen vanaf de zuidkant. De Duitse passendatabase noemt de aardepiste zelfs met smalle banden berijdbaar, en rijders bevestigen dat het klimmen prima gaat. Maar wie de oversteek naar het Zillertal wil maken, draagt aan de noordkant richting Schlegeis kilometerslang. Als klim: uitstekend en verrassend toegankelijk. Als doorsteek: neem wandelschoenen mee.",
+  "notes": [
+   "Zuidkant vanaf Sterzing/Stein is grind en berijdbaar; noordkant vanaf de Schlegeis is dragen.",
+   "Gesloten voor doorgaand gemotoriseerd verkeer; alleen de onderste kilometers zijn nog toegankelijk voor auto's.",
+   "Bovenin liggen op regelmatige afstand stalen waterafvoergoten dwars over de weg — let op je velgen.",
+   "Het Pfitscherjochhaus op de pas is 's zomers open.",
+   "Vanaf Jenbach kun je met de trein terug als je toch oversteekt."
+  ],
+  "voices": [
+   {
+    "who": "Quäldich, passenbeschrijving (DE)",
+    "q": "welche allerdings auch mit schmaler Bereifung befahrbar ist",
+    "tr": "die overigens ook met smalle banden berijdbaar is",
+    "url": "https://www.quaeldich.de/paesse/pfitscher-joch/"
+   },
+   {
+    "who": "Berginsel, bikepackingverslag (DE)",
+    "q": "Pfitscher Joch zwar fahrbar, aber nicht asphaltiert",
+    "tr": "Pfitscher Joch is fietsbaar, maar niet geasfalteerd",
+    "url": "https://www.berginsel.de/bikepacking-zillertal-trail/"
+   },
+   {
+    "who": "Gravelrijder, Outdooractive (DE)",
+    "q": "eine anspruchsvolle Herausforderung für mein Gravel-Bike",
+    "tr": "een veeleisende uitdaging voor mijn gravelbike",
+    "url": "https://www.outdooractive.com/de/gravel-bike-touren/zillertal/gravel-bike-touren-im-zillertal/288066237/"
+   }
+  ]
+ },
+ {
+  "id": "rochilles",
+  "name": "Col des Rochilles & Camp des Rochilles",
+  "area": "Cerces, boven Plan Lachat",
+  "land": "Frankrijk",
+  "lat": 45.0578,
+  "lng": 6.4642,
+  "top": 2496,
+  "gain": 1250,
+  "len": 20,
+  "gravel": 14,
+  "type": "parallel",
+  "bike": "grens",
+  "parallel": "Col du Galibier (noordkant)",
+  "line": "Vanaf Plan Lachat, halverwege de Galibier, gaat links een grindweg omhoog naar een nog gebruikte legerbasis uit de Maginotlinie. Daarachter liggen vijf onverharde cols en drie bergmeren, allemaal boven de 2400 meter.",
+  "segs": [
+   [
+    1430,
+    2000,
+    "a"
+   ],
+   [
+    2000,
+    2450,
+    "g"
+   ],
+   [
+    2450,
+    2496,
+    "r"
+   ]
+  ],
+  "verdict": "Geverifieerd en de mooiste van de vier: je rijdt de drukke Galibier-weg tot Plan Lachat en slaat dan af het grind en de stilte in. Tot Camp des Rochilles is het volgens rijders geen makkelijk wegdek maar prima te doen. Voorbij het Seuil des Rochilles verandert het karakter: één rijder meldt een uur duwen en vijf minuten dragen richting de Drayères-hut. Kies dus bewust waar je omkeert.",
+  "notes": [
+   "Plan Lachat ligt op 1986 m; de afslag naar Rochilles zie je vanaf de Galibier-weg liggen.",
+   "De legerbasis is nog in gebruik en het gebied is deels schietterrein — informeer vooraf naar openstelling.",
+   "Tot Col de la Paré en Camp des Rochilles is rijdbaar; het stuk naar het Seuil is het omslagpunt.",
+   "Drie meren boven de 2400 m: Grand Ban, Rond en Sainte-Marguerite.",
+   "Goed te combineren met Col du Granon en de gravelcols daarboven als tweede dag."
+  ],
+  "voices": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "It's not an easy surface, but perfectly rideable.",
+    "tr": "Geen makkelijk wegdek, maar prima berijdbaar.",
+    "url": "https://www.cycling-challenge.com/col-hunting-behind-le-grand-galibier/"
+   },
+   {
+    "who": "Gravelrijder, Komoot-notitie",
+    "q": "be ready to push and carry for 3km and 300hm",
+    "tr": "reken op duwen en dragen over 3 km en 300 hoogtemeter",
+    "url": "https://www.komoot.com/smarttour/e1030354455/vallee-de-claree-col-des-rochilles-et-ancienne-route-du-galibier"
+   },
+   {
+    "who": "Rijder, reactie op Cols-Cyclisme (FR)",
+    "q": "Une heure de poussage et 5 minutes de portage",
+    "tr": "Een uur duwen en vijf minuten dragen",
+    "url": "https://www.cols-cyclisme.com/cerces/france/col-des-rochilles-depuis-valloire-c1455.htm"
+   }
+  ]
+ }
+]

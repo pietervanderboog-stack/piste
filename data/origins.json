@@ -1,0 +1,16 @@
+[
+ {"n":"Utrecht","lat":52.09,"lng":5.12},
+ {"n":"Amsterdam","lat":52.37,"lng":4.9},
+ {"n":"Rotterdam","lat":51.92,"lng":4.48},
+ {"n":"Den Haag","lat":52.08,"lng":4.31},
+ {"n":"Eindhoven","lat":51.44,"lng":5.48},
+ {"n":"Arnhem","lat":51.98,"lng":5.91},
+ {"n":"Zwolle","lat":52.51,"lng":6.09},
+ {"n":"Groningen","lat":53.22,"lng":6.57},
+ {"n":"Maastricht","lat":50.85,"lng":5.69},
+ {"n":"Antwerpen","lat":51.22,"lng":4.4},
+ {"n":"Gent","lat":51.05,"lng":3.72},
+ {"n":"Brussel","lat":50.85,"lng":4.35},
+ {"n":"Luik","lat":50.63,"lng":5.57},
+ {"n":"Keulen","lat":50.94,"lng":6.96}
+]

@@ -1,0 +1,1166 @@
+{
+ "hogevenen": {
+  "base": [
+   {
+    "t": "Stavelot of Coo als dalbasis; Baraque Michel zelf (674 m, gemeente Jalhay) is herberg én startpunt op het plateau.",
+    "u": "https://en.wikipedia.org/wiki/Baraque_Michel"
+   },
+   {
+    "t": "Signal de Botrange (694 m) is het hoogste punt van België en ligt op de route.",
+    "u": "https://visitwallonia.be/nl/produit/attractions/activites/natuurreservaat/-ruimte/signaal-van-botrange/11105"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Restaurant Baraque Michel bij de parking — Baraque Michel 36, 4845 Jalhay.",
+    "u": "https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"
+   },
+   {
+    "t": "Domaine des Hautes Fagnes, Rue de Botrange 133, 4950 Robertville.",
+    "u": "https://ardennen.nl/wandelen/wandeling-naar-baraque-michel-op-de-hoge-venen/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Parking Baraque Michel, plaats voor ± 100 auto's — vroeg komen op mooie dagen.",
+    "u": "https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"
+   },
+   {
+    "t": "EV-laadpunten in de directe omgeving: onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Waterpunten in het gebied genoemd door VisitWallonia; exacte drinkfonteinen op de route onbevestigd.",
+    "u": "https://visitwallonia.be/nl/produit/attractions/activites/natuurreservaat/-ruimte/signaal-van-botrange/11105"
+   }
+  ],
+  "food": [
+   {
+    "t": "Restaurant Baraque Michel; Natuurcentrum Botrange ligt binnen 500 m van de route.",
+    "u": "https://www.wikiloc.com/hiking-trails/hoge-venen-baraque-michel-en-signal-de-botrange-63113314"
+   }
+  ],
+  "season": [
+   {
+    "t": "KMI telt gemiddeld 43 dagen sneeuwbedekking per jaar in de Hoge Venen.",
+    "u": "https://www.met4opreis.be/bestemmingen/belgie/langlaufen-in-de-hoge-venen"
+   },
+   {
+    "t": "Gemiddeld 6,1 °C, 170 regendagen, 115 vorstdagen en mist op ± 176 dagen per jaar.",
+    "u": "https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"
+   },
+   {
+    "t": "Modderig en glad na regen.",
+    "u": "https://www.alltrails.com/trail/belgium/liege/signal-de-botrange-boucle"
+   },
+   {
+    "t": "Let op de betreedverboden (zones C/D) in het natuurreservaat — status checken bij Natuurcentrum Botrange.",
+    "u": null
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Reisbeesten",
+    "q": "Er is plaats voor ongeveer 100 auto's. Kom dus zeker op tijd!",
+    "tr": "",
+    "url": "https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"
+   }
+  ],
+  "gap": "Weinig gravel-specifieke ooggetuigenverslagen; vrijwel alle bronnen zijn wandelverslagen."
+ },
+ "sanktvith": {
+  "base": [
+   {
+    "t": "Sankt Vith; vertrek aan Cultuurcentrum Triangel, Vennbahnstrasse 2. Ruim horeca-aanbod in het stadje.",
+    "u": "https://www.vennbahn.eu/nl/etappe/lus-8/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Relaxhotel Pip Margraff in Sankt Vith.",
+    "u": "https://www.komoot.com/ja-jp/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"
+   },
+   {
+    "t": "Hotel Zum Burghof in Schönberg.",
+    "u": "https://www.vennbahn.eu/nl/etappe/lus-8/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Sankt Vith: bij Cultuurcentrum Triangel, Vennbahnstrasse 2.",
+    "u": "https://www.vennbahn.eu/nl/etappe/lus-8/"
+   },
+   {
+    "t": "Noordelijk beginpunt: APAG Parkhaus Hauptbahnhof, Lagerhausstraße 20, Aachen — 3 km van de Vennbahn.",
+    "u": "https://www.ostbelgien.eu/en/vennbahn"
+   },
+   {
+    "t": "EV-laadpunten: onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Onbevestigd; navragen bij Toeristisch Agentschap Ostbelgien, Hauptstrasse 54, Sankt Vith.",
+    "u": "https://www.vennbahn.eu/nl/tourguide/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Ruim horeca-aanbod in Sankt Vith.",
+    "u": "https://www.vennbahn.eu/nl/etappe/lus-8/"
+   }
+  ],
+  "season": [
+   {
+    "t": "De officiële Vennbahn is volledig geasfalteerd — de gravelvariant loopt ernaast.",
+    "u": "https://www.ostbelgien.eu/en/vennbahn"
+   },
+   {
+    "t": "Officiële waarschuwing: druk verkeer bij het verlaten van Sankt Vith; tussen kn 42 en 44 een afdaling van 18%.",
+    "u": "https://www.vennbahn.eu/nl/etappe/lus-8/"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Gijs Hardeman, Komoot",
+    "q": "this variant consists mostly of gravel, forest paths, single tracks, and tree roots",
+    "tr": "deze variant bestaat vooral uit grind, bospaden, singletrack en boomwortels",
+    "url": "https://www.komoot.com/ja-jp/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"
+   },
+   {
+    "who": "Gijs Hardeman, Komoot",
+    "q": "We parked our car in Kornelismünster, from where we rolled onto the Vennbahn",
+    "tr": "We parkeerden in Kornelimünster en rolden vandaar de Vennbahn op",
+    "url": "https://www.komoot.com/ja-jp/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"
+   }
+  ],
+  "gap": ""
+ },
+ "brocken": {
+  "base": [
+   {
+    "t": "Schierke (klim naar de top begint hier), Torfhaus (westkant, grindroute) of Wernigerode.",
+    "u": "https://www.quaeldich.de/paesse/brocken/"
+   },
+   {
+    "t": "De enige weg naar de top is voorbehouden aan fietsers en paardenkoetsen.",
+    "u": "https://www.quaeldich.de/paesse/brocken/"
+   },
+   {
+    "t": "Fietsverhuur in Schierke: Ferienanlage Zum Wildbach, Barenberg 15f, tel. 039455-58 99 70.",
+    "u": "https://www.schierke-am-brocken.de/zeitzubleiben/rad-und-mountainbike-schierke"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Overnachten in Schierke; Brockenhotel op de top alleen met voorbestelling.",
+    "u": "https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"
+   },
+   {
+    "t": "Reparatieset te leen bij Tourist-Information Schierke.",
+    "u": "https://www.schierke-am-brocken.de/zeitzubleiben/rad-und-mountainbike-schierke"
+   }
+  ],
+  "park": [
+   {
+    "t": "Schierke; EV-laden onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Horeca op de top (Brockenwirt); drinkwaterpunten onderweg onbevestigd.",
+    "u": "https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"
+   }
+  ],
+  "food": [
+   {
+    "t": "Brockenwirt en Touristensaal op de top; horeca in Schierke.",
+    "u": "https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"
+   }
+  ],
+  "season": [
+   {
+    "t": "Eerste sneeuw meestal in september, blijft vaak liggen tot maart.",
+    "u": "https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"
+   },
+   {
+    "t": "De Brockenstraße vanaf Schierke is nieuw geasfalteerd; grindalternatieven zijn de alte Schierker Straße (start bij Ehrenfriedhof Oderhaus, B4) en de nieuwe Goetheweg vanaf Schierke.",
+    "u": "https://www.quaeldich.de/paesse/brocken/befahrungen/westauffahrt-vom-torfhaus-schotter/"
+   },
+   {
+    "t": "Nationalpark Harz: fietsen alleen op aangewezen wegen.",
+    "u": "https://www.komoot.com/highlight/471452"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Forumlid, Rennrad-News",
+    "q": "halte den Schotter für zu grob. Auswaschungen im Bereich Quitschenberg",
+    "tr": "vind het grind te grof; uitspoelingen rond de Quitschenberg",
+    "url": "https://www.rennrad-news.de/forum/threads/brocken-harz-goetheweg.185684/"
+   },
+   {
+    "who": "Forumlid, Rennrad-News",
+    "q": "den neuen Götheweg ab Schierke bin ich letzten Herbst mit 36mm Slicks gefahren",
+    "tr": "de nieuwe Goetheweg vanaf Schierke reed ik vorig najaar met 36 mm slicks",
+    "url": "https://www.rennrad-news.de/forum/threads/brocken-harz-goetheweg.185684/"
+   }
+  ],
+  "gap": "Contradictie: de één vindt de Goetheweg vanaf Torfhaus te grof voor smalle banden, een ander reed de Schierke-kant probleemloos op 36 mm."
+ },
+ "nordschwarzwald": {
+  "base": [
+   {
+    "t": "Baiersbronn (officiële gravelroute start hier), Achern of Ottenhöfen. Wander-Informationszentrum Baiersbronn, tel. +49 7442 8414-66.",
+    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Schliffkopfhotel bij het gebied genoemd; specifieke bike-accommodatie onbevestigd.",
+    "u": "https://www.schwarzwald-informationen.de/nationalpark-nordschwarzwald/schliffkopf-grinden.html"
+   }
+  ],
+  "park": [
+   {
+    "t": "Parkplatz Steinmäuerle am Schliffkopf en Parkplatz Ruhestein / Nationalparkzentrum.",
+    "u": "https://www.schwarzwald-informationen.de/wandern-im-nationalpark-schwarzwald.html"
+   },
+   {
+    "t": "EV-laden onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Onbevestigd; Mummelsee-Hotel op de route als vaste stop.",
+    "u": "https://www.schwarzwald-informationen.de/wandern-im-nationalpark-schwarzwald.html"
+   }
+  ],
+  "food": [
+   {
+    "t": "Mummelsee-Hotel en restaurants langs de Schwarzwaldhochstraße B500.",
+    "u": "https://www.schwarzwald-informationen.de/nationalpark-nordschwarzwald/schliffkopf-grinden.html"
+   }
+  ],
+  "season": [
+   {
+    "t": "Hoogste punt 1163 m (Hornisgrinde), laagste 458 m; route is niet bewegwijzerd.",
+    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+   },
+   {
+    "t": "Seizoensgebonden afsluitingen in Wildschutzgebieten, vooral in de winter — checken via het Wander-Informationszentrum.",
+    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Reviewer, Climbfinder",
+    "q": "Coming back by the Hornisgrinde brings you at the bottom very fast",
+    "tr": "Terug via de Hornisgrinde ben je razendsnel beneden",
+    "url": "https://climbfinder.com/de/anstiege/schliffkopf-ottenhofen-im-schwarzwald"
+   }
+  ],
+  "gap": "Weinig gravel-specifieke ooggetuigenverslagen; waterpunten en accommodatie zijn nog onbevestigd."
+ },
+ "grandballon": {
+  "base": [
+   {
+    "t": "Munster, Guebwiller of La Bresse. Col de la Schlucht (1135 m) is een strategisch kruispunt en goede uitvalsbasis.",
+    "u": "https://mlclabresse.fr/route-des-cretes-vosges/"
+   },
+   {
+    "t": "Grand Ballon is met 1424 m het hoogste punt van de Vogezen.",
+    "u": "https://www.visorando.com/parcours-le-grand-ballon.html"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Kleine refuges en auberges rond Markstein, Hohneck en Grand Ballon; Gîtes de France langs de Route des Crêtes.",
+    "u": "https://www.routes-touristiques.com/tourisme/les-circuits/alsace/route-des-cretes-d-alsace-68-et-88.html"
+   },
+   {
+    "t": "Chalet-hôtel du Grand Ballon vlak bij de top.",
+    "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Boucle-Thann-Grand-Ballon-6566"
+   }
+  ],
+  "park": [
+   {
+    "t": "Parking bij de Col du Grand Ballon (1341 m).",
+    "u": "https://mlclabresse.fr/route-des-cretes-vosges/"
+   },
+   {
+    "t": "EV-laden onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Publieke fonteinen in de dorpen langs de route; drink nooit meerwater vanwege cyanobacteriën.",
+    "u": "https://www.rectoverso.co/itineraires/bikepacking-vosges"
+   }
+  ],
+  "food": [
+   {
+    "t": "Markstein (1190 m) met horeca; talrijke dorpen met bevoorrading.",
+    "u": "https://mlclabresse.fr/route-des-cretes-vosges/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Officieel: vanaf de eerste sneeuwval in de herfst is de Route des Crêtes gesloten tot 1 mei.",
+    "u": "https://www.ballons-hautes-vosges.com/gastronomique-historique-naturel-en-montagne/la-route-des-cretes-et-le-grand-ballon.html"
+   },
+   {
+    "t": "Zeer druk met motoren en campers; geel hesje en licht aangeraden.",
+    "u": "https://www.rectoverso.co/itineraires/bikepacking-vosges"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Recto Verso (FR)",
+    "q": "des villages où se ravitailler en eau dans les fontaines publiques",
+    "tr": "dorpen waar je water kunt tappen uit publieke fonteinen",
+    "url": "https://www.rectoverso.co/itineraires/bikepacking-vosges"
+   },
+   {
+    "who": "UtagawaVTT (FR)",
+    "q": "on évite la route des crêtes en prenant le chemin à droite",
+    "tr": "we mijden de Route des Crêtes door rechts het pad te nemen",
+    "url": "https://www.utagawavtt.com/randonnee-vtt-gps/Boucle-Thann-Grand-Ballon-6566"
+   }
+  ],
+  "gap": ""
+ },
+ "planche": {
+  "base": [
+   {
+    "t": "Plancher-les-Mines aan de voet van de Super Planche; Giromagny of Lepuix-Gy als alternatief. Office de Tourisme Giromagny, 45 Grande Rue, tel. 03 84 56 24 19.",
+    "u": "https://www.ballondalsace.fr/tous-les-commerces-2/hebergement/"
+   },
+   {
+    "t": "Col du Ballon d'Alsace ligt op 1178 m, de top op 1247 m.",
+    "u": "https://en.wikipedia.org/wiki/Col_du_Ballon_d%27Alsace"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Hôtel-Restaurant du Sommet op de top van de Ballon d'Alsace: 24 kamers, 63 personen, hele jaar open, met afgesloten fietsgarage; tel. 03 84 29 30 60, menu € 15–34.",
+    "u": "http://www.hotelrestaurantdusommet.com/"
+   },
+   {
+    "t": "Refuge Les Amis de la Nature — Chalet «Quand Même», 1056 m, ± 50 plaatsen, fietsgarage.",
+    "u": "https://www.visit.alsace/en/241001565-mountain-shelter-les-amis-de-la-nature/"
+   },
+   {
+    "t": "Refuge du Foyer Communautaire, 1088 m, capaciteit 99.",
+    "u": "https://www.visit.alsace/en/241001567-mountain-shelter-foyer-communautaire/"
+   },
+   {
+    "t": "Refuge CAF du Langenberg, 1050 m; reservering 06 08 22 60 12.",
+    "u": "https://www.gites-refuges.com/www/detail-185.htm"
+   },
+   {
+    "t": "In Plancher-les-Mines: Gîte «La Petite Fontaine» (Gîtes de France).",
+    "u": "https://www.gites-de-france-haute-saone.com/fr/location/locations-gites-plancher-les-mines-la-petite-fontaine-h70g003257"
+   }
+  ],
+  "park": [
+   {
+    "t": "Grote parking aan de voet van de skipistes, met drinkwater en toiletten; ook camperovernachting mogelijk.",
+    "u": "https://park4night.com/en/place/16597"
+   },
+   {
+    "t": "Parking langs de D16 richting Col de Servance, geasfalteerd en vlak.",
+    "u": "https://park4night.com/en/place/83719"
+   },
+   {
+    "t": "EV: Plancher-les-Mines heeft één publieke laadpaal.",
+    "u": "https://fr.chargemap.com/cities/plancher-les-mines-FR"
+   },
+   {
+    "t": "EV: laadpalen van Territoire d'Énergie 90 aan 12 Place Général de Gaulle in Giromagny — praktischer als basis dan de top.",
+    "u": "https://fr.chargemap.com/territoire-d-energie-90-te90-12-place-de-gaulle-giromagny.html"
+   }
+  ],
+  "water": [
+   {
+    "t": "Drinkfontein bij het centre de secours tegenover de bar, aan de parking onderaan de skipistes — laatste betrouwbare dorpspunt vóór de klim.",
+    "u": "https://www.visorando.com/randonnee-la-planche-des-belles-filles-a-partir-de/"
+   },
+   {
+    "t": "Kraantje met drinkbaar water naast de winkel op de top.",
+    "u": "https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"
+   },
+   {
+    "t": "Ballon d'Alsace-kant: Source des Sapins op 1128 m, ± 1,9 km van de top.",
+    "u": "https://www.refuges.info/point/7316/sommet/Vosges/Ballon-d-Alsace/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Bakkerij ± 100 m ten zuiden van de Place de l'Hôtel de Ville in Plancher-les-Mines.",
+    "u": "https://www.visorando.com/randonnee-la-planche-des-belles-filles-a-partir-de/"
+   },
+   {
+    "t": "Op de top van de Super Planche 's ochtends vroeg geen betrouwbare horeca; Hôtel du Sommet op de Ballon d'Alsace is het hele jaar open.",
+    "u": "http://www.hotelrestaurantdusommet.com/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Het onverharde slotstuk piekt op 24%; Demi Vollering noemde het na haar verkenning «a killer».",
+    "u": "https://www.cyclingnews.com/features/tour-de-france-femmes-la-super-planche-des-belles-filles/"
+   },
+   {
+    "t": "Haute-Saône Tourisme adviseert expliciet een gravelbike voor de Super Planche.",
+    "u": "https://en.hautesaonetourisme.com/offers/montee-de-la-planche-des-belles-filles-plancher-les-mines-en-5225868/"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "mboeck, Climbfinder",
+    "q": "Ik viel uiteindelijk stil en ben de laatste 30 meter maar gewoon omhoog gerend",
+    "tr": "",
+    "url": "https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"
+   },
+   {
+    "who": "BlueF0x_J, Climbfinder",
+    "q": "de tent boven op Planche was nog dicht om 10u in de ochtend",
+    "tr": "",
+    "url": "https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"
+   }
+  ],
+  "gap": ""
+ },
+ "feldberg": {
+  "base": [
+   {
+    "t": "Todtnau, Kirchzarten of Hinterzarten; de officiële gravelroute start in Schönau richting Todtnau.",
+    "u": "https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"
+   },
+   {
+    "t": "Taxi- en ophaalservice voor fietsers: Frank Witte, Hinterzarten.",
+    "u": "https://www.hochschwarzwald.de/erleben/radfahren/radtouren-im-hochschwarzwald"
+   },
+   {
+    "t": "De Feldberg is met 1493 m de hoogste berg van Baden-Württemberg, met gemiddeld 157 dagen gesloten sneeuwdek.",
+    "u": "https://de.wikipedia.org/wiki/Feldberg_(Berg_im_Schwarzwald)"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Raimartihof bij de Feldsee en Todtnauer Hütte op de klim; prijzen onbevestigd.",
+    "u": "https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"
+   }
+  ],
+  "park": [
+   {
+    "t": "Todtnau (Wohnmobilstellplatz genoemd op de route); EV-laden onbevestigd.",
+    "u": "https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"
+   }
+  ],
+  "water": [
+   {
+    "t": "Onbevestigd; Raimartihof en Todtnauer Hütte als vaste stops.",
+    "u": "https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"
+   }
+  ],
+  "food": [
+   {
+    "t": "Berggasthof Stübenwasen (1270 m), Todtnauer Hütte, Raimartihof en Hinterwaldkopfhütte.",
+    "u": "https://www.chilli-freiburg.de/specials/freizeit-in-der-region/freizeit-in-der-regio/dem-himmel-so-nah-radtour-vom-schauinsland-zum-feldberg/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Passstraße Feldberg vanaf Todtnau tijdelijk gesloten door werkzaamheden; alternatief via de Todtnauer Hütte met een kort grindstuk.",
+    "u": "https://www.hochschwarzwald.de/erleben/radfahren/radtouren-im-hochschwarzwald"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Reviewer, Outdooractive",
+    "q": "Der Trail parallel zur Bahnlinie war heute stark zugewachsen",
+    "tr": "Het pad langs de spoorlijn was vandaag sterk dichtgegroeid",
+    "url": "https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/"
+   },
+   {
+    "who": "Reviewer, Outdooractive",
+    "q": "eine steile Schotterrampe hoch, mit der die meisten Rennradreifen überfordert sein sollten",
+    "tr": "een steile grindramp waar de meeste racebanden het bij afleggen",
+    "url": "https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/"
+   }
+  ],
+  "gap": ""
+ },
+ "colombygex": {
+  "base": [
+   {
+    "t": "Gex (klim start hier), Mijoux of Lélex. Col de la Faucille 1323 m; Colomby de Gex 1688 m.",
+    "u": "https://www.cycling-challenge.com/high-jura-trails-colomby-de-gex-mont-rond/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Hôtel «La Petite Chaumière» op de Col de la Faucille; contactgegevens en prijzen onbevestigd.",
+    "u": "https://www.paysdegex-montsjura.com/en/routes-and-trails/walking-tour-la-faucille-colomby-de-gex/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Gratis parking op de Col de la Faucille; ook parking du Pailly nabij de col.",
+    "u": "https://www.paysdegex-montsjura.com/en/routes-and-trails/walking-tour-la-faucille-colomby-de-gex/"
+   },
+   {
+    "t": "Parking du Florimont (960 m) langs de klim vanaf Gex.",
+    "u": "https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"
+   },
+   {
+    "t": "EV-laden onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Fontaine Napoléon op 1049 m langs de klim vanaf Gex; op de kam zelf geen bevestigde waterpunten.",
+    "u": "https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"
+   }
+  ],
+  "food": [
+   {
+    "t": "Restaurant Florimont langs de klim; horeca op de Col de la Faucille.",
+    "u": "https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"
+   }
+  ],
+  "season": [
+   {
+    "t": "Praktikabel van april tot november, afhankelijk van sneeuw.",
+    "u": "https://www.montagnes-du-jura.fr/itineraires-pedestres/randonnee-pedestre-la-faucille-colomby-de-gex"
+   },
+   {
+    "t": "Réserve naturelle de la Haute Chaîne du Jura: honden verboden; de bosstrook tussen de route de la Maréchaude en de kammen is zone de quiétude en niet toegankelijk van 15/12 tot 15/05.",
+    "u": "https://skitour.fr/topos/2899"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "my first goal was to climb to the col primarily on gravel forest roads",
+    "tr": "mijn eerste doel was de col vooral over grindbospaden te beklimmen",
+    "url": "https://www.cycling-challenge.com/high-jura-trails-colomby-de-gex-mont-rond/"
+   },
+   {
+    "who": "Cols-cyclisme (FR)",
+    "q": "un kilomètre à près de 8,5 % qui débute peu avant la fontaine Napoléon",
+    "tr": "een kilometer van bijna 8,5% die vlak voor de Fontaine Napoléon begint",
+    "url": "https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"
+   }
+  ],
+  "gap": ""
+ },
+ "valmora": {
+  "base": [
+   {
+    "t": "Santa Maria Val Müstair (CH), Bormio of Livigno (IT); de tour start meestal in Müstair of Sta. Maria.",
+    "u": "https://www.outdooractive.com/de/route/mountainbike/engadin-samnaun-val-muestair/muestair-umbrailpass-bocchetta-di-forcola-val-mora-muestair/800995414/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Accommodatie in Sta. Maria Val Müstair; de Gästekarte Val Müstair geeft gratis openbaar vervoer.",
+    "u": "https://www.ride-mtb.com/en/node/35268"
+   }
+  ],
+  "park": [
+   {
+    "t": "In Sta. Maria of Müstair; EV-laden onbevestigd.",
+    "u": null
+   },
+   {
+    "t": "PostAuto-shuttle naar de Umbrailpass, lijn 90.821 Tirano–Bormio–Stelvio–Sta. Maria–Müstair; fietsreservering verplicht tot 19 uur de vorige dag.",
+    "u": "https://www.bergfex.com/sommer/lombardei/touren/mountainbike/2304184,bocchetta-di-forcola--bocchetta-di-pedenolo--val-mora-singletrailgarantie-und-spuren-des-1-weltkrieg/"
+   }
+  ],
+  "water": [
+   {
+    "t": "Cruciaal: de fontein in het centrum van Santa Maria is het laatste water vóór de lange klim naar de Umbrailpass (2503 m). Daarna volgen er geen meer tot het eind van de route.",
+    "u": "https://community.mtb-mag.com/t/val-mora-bocchetta-di-forcola.48154/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Einkehrmöglichkeit bij Lago di Fraele; Ristorante Solena in San Giacomo.",
+    "u": "https://www.ride-mtb.com/en/node/35268"
+   }
+  ],
+  "season": [
+   {
+    "t": "Hoogalpiene route; shuttle en toegang seizoensgebonden, check PostAuto vooraf.",
+    "u": "https://www.ride-mtb.com/en/node/35268"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Forumlid, MTB-MAG (IT)",
+    "q": "da qui in poi non ci sono più fontane sino alla fine dell'itinerario!",
+    "tr": "vanaf hier zijn er geen fonteinen meer tot het eind van de route!",
+    "url": "https://community.mtb-mag.com/t/val-mora-bocchetta-di-forcola.48154/"
+   },
+   {
+    "who": "Ride-MTB (DE)",
+    "q": "Postauto bis Umbrail-Pass für Biker -> Reservation obligatorisch bis am Vortag 19 h",
+    "tr": "PostAuto tot de Umbrailpass: reserveren verplicht tot 19 uur de dag ervoor",
+    "url": "https://www.ride-mtb.com/en/node/35268"
+   },
+   {
+    "who": "Reviewer, Ride-MTB",
+    "q": "Der Kiesweg-Anteil ist bei gefühlten 100%… Einmal und nie wieder!",
+    "tr": "Het aandeel grindweg voelt als 100%… Eén keer en nooit weer!",
+    "url": "https://www.ride-mtb.com/en/node/35268"
+   }
+  ],
+  "gap": "Contradictie: dezelfde tour wordt door de één landschappelijk grandioos genoemd en door de ander als eentonig grindwerk afgedaan."
+ },
+ "valviola": {
+  "base": [
+   {
+    "t": "Arnoga (1870 m) in Valdidentro, langs de SS301 Foscagno tussen Bormio en Livigno.",
+    "u": "https://www.rifugioviola.it/come-raggiungerci"
+   },
+   {
+    "t": "Fietsverhuur ter plaatse: Rent a Bike Arnoga, tel. +39 371 587 8288.",
+    "u": "https://www.rifugioviola.it/bici"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Rifugio Viola op 2314 m, familie Fraquelli sinds 1972: warme douche, pinbetaling mogelijk, oplaadpunt voor e-bikes.",
+    "u": "https://www.rifugioviola.it/"
+   },
+   {
+    "t": "Reservering aanbevolen in weekends en in augustus.",
+    "u": "https://www.rifugioviola.it/bici"
+   },
+   {
+    "t": "Ook Rifugio Federico in het fondovalle, Agriturismo Baita Caricc en Hotel di Arnoga bij het startpunt.",
+    "u": "https://www.rifugioviola.it/come-raggiungerci"
+   }
+  ],
+  "park": [
+   {
+    "t": "Op de haarspeld bij het Husky Village in Arnoga, of iets verder bij Hotel di Arnoga.",
+    "u": "https://www.saliinvetta.com/trekking/italia/lombardia/rifugio-viola/2132-rifugio-viola-da-arnoga-altumeira-so"
+   },
+   {
+    "t": "Parkeren bij Altumeira (2065 m) is het hele jaar tolplichtig; de automaat geeft alleen dagtickets, meerdaags via Proloco Valdidentro.",
+    "u": "https://www.rifugioviola.it/come-raggiungerci"
+   },
+   {
+    "t": "EV: e-bikes kunnen laden bij het rifugio; auto-laden onbevestigd.",
+    "u": "https://www.rifugioviola.it/bici"
+   }
+  ],
+  "water": [
+   {
+    "t": "Onbevestigd op de klim zelf; Rifugio Viola is het vaste waterpunt.",
+    "u": "https://www.rifugioviola.it/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Rifugio Viola serveert Valtellinese gerechten, waaronder polenta; shuttle-contact Armando 335 7696100.",
+    "u": "https://www.saliinvetta.com/trekking/italia/lombardia/rifugio-viola/2132-rifugio-viola-da-arnoga-altumeira-so"
+   }
+  ],
+  "season": [
+   {
+    "t": "Zomerroute; openingsdata van het rifugio zijn indicatief — bel vooraf aan het begin en eind van het seizoen.",
+    "u": "https://www.rifugi.lombardia.it/en/sondrio/valdidentro/hut-viola.html"
+   },
+   {
+    "t": "Val Viola Pass ligt op 2468 m, op de grens met Poschiavo.",
+    "u": "https://en.wikipedia.org/wiki/Val_Viola_Pass"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Bormio.eu",
+    "q": "Da Arnoga: Tempo in bici 1.30 ore | Dislivello 500 m",
+    "tr": "Vanaf Arnoga: 1,5 uur fietsen, 500 hoogtemeter",
+    "url": "https://www.bormio.eu/it/rifugio-viola-1"
+   },
+   {
+    "who": "Rifugio Viola",
+    "q": "Si consiglia la prenotazione anticipata soprattutto nei weekend",
+    "tr": "Vooraf reserveren wordt aangeraden, zeker in het weekend",
+    "url": "https://www.rifugioviola.it/bici"
+   }
+  ],
+  "gap": "Weinig zuivere gravelverslagen; de meeste bronnen zijn MTB- of wandelverslagen."
+ },
+ "pfitscherjoch": {
+  "base": [
+   {
+    "t": "Sterzing/Vipiteno; door het Pfitschtal via Wiesen, Afens en St. Jakob naar Stein, waar de onverharde passweg begint.",
+    "u": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
+   },
+   {
+    "t": "Trein naar Sterzing, daarna buslijn 311 naar St. Jakob.",
+    "u": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Pfitscherjochhaus (Rifugio Passo di Vizze), 2276 m — oudste privé-berghut van Zuid-Tirol, sinds 1888 in handen van familie Volgger, vijfde generatie.",
+    "u": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
+   },
+   {
+    "t": "30 slaapplaatsen plus 10 noodbedden; geopend medio juni tot medio oktober, overnachten tot eind september.",
+    "u": "https://www.mayrhofen.at/en/service-providers/pfitscherjochhaus-2276m-pfitsch"
+   },
+   {
+    "t": "Adres Val di Vizze 138/a, 39049 Pfitsch; tel. +39 0472 630 119.",
+    "u": "https://www.hdsports.org/berghuetten/pfitscher-joch-haus-rifugio-passo-di-vizze"
+   },
+   {
+    "t": "Reserveren via de eigen site van de hut.",
+    "u": "https://www.pfitscherjochhaus.com/de/kontakt/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Grote parkeerplaats bij de vierde haarspeldbocht boven Stein, aan de onverharde passweg.",
+    "u": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
+   },
+   {
+    "t": "EV-laden onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Onbevestigd op de klim; het Pfitscherjochhaus is het vaste punt bovenaan.",
+    "u": "https://www.bergwelten.com/h/pfitscher-joch-haus"
+   }
+  ],
+  "food": [
+   {
+    "t": "Restaurant bij het Pfitscherjochhaus; het 12 km lange stuk vanaf het Pfitschtal is onverhard, in 1936 met de hand aangelegd en nooit gerenoveerd.",
+    "u": "https://www.bergwelten.com/h/pfitscher-joch-haus"
+   }
+  ],
+  "season": [
+   {
+    "t": "Hut open van juni tot oktober; de route is sinds enkele jaren de hele zomer doorgaand berijdbaar vanaf het zuiden.",
+    "u": "https://www.bergwelten.com/h/pfitscher-joch-haus"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Bergwelten (DE)",
+    "q": "das 12 km lange Teilstück ist besonders reizvoll",
+    "tr": "het 12 km lange deel is bijzonder aantrekkelijk",
+    "url": "https://www.bergwelten.com/h/pfitscher-joch-haus"
+   },
+   {
+    "who": "Höhenrausch (DE)",
+    "q": "am großen Parkplatz in der 4. Kehre das Auto abstellen",
+    "tr": "zet de auto op de grote parkeerplaats in de vierde haarspeld",
+    "url": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
+   }
+  ],
+  "gap": ""
+ },
+ "montsdarree": {
+  "base": [
+   {
+    "t": "Huelgoat (startpunt van de Roc'h-evenementen), Brennilis of Sizun. Office de tourisme Monts d'Arrée, tel. 02 98 99 72 32.",
+    "u": "https://vttenfinistere.fr/bases/monts-darree-montagnes-noires/"
+   },
+   {
+    "t": "Roc'h Trévezel ligt op ± 385 m, het hoogste punt van de route.",
+    "u": "https://www.lesroch.org/reco-du-mythique-120-km/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Hôtel du Lac in Huelgoat, drie sterren, 200 m van de Chaos du Moulin; kamers € 61–118.",
+    "u": "https://www.hoteldulac-huelgoat.com/"
+   },
+   {
+    "t": "Hôtel-Restaurant Le Bretagne (pand uit 1801), € 99–109 per kamer inclusief ontbijt.",
+    "u": "https://www.montsdarreetourisme.bzh/hotels/"
+   },
+   {
+    "t": "Troglogîtes de Roc'h Gwell Yann als etappepunt op de route.",
+    "u": "https://www.lesroch.org/reco-du-mythique-120-km/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Huelgoat (stade / start Roc'h); EV-laden onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "De ravito-punten (Maison du lac de Brennilis op km 50, La Feuillée) zijn tijdelijke evenementbevoorradingen, geen permanente waterpunten. Permanente fonteinen op de kam: onbevestigd.",
+    "u": "https://www.lesroch.org/reco-roch-n1-gravel-65-km/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Horeca in Huelgoat; La Feuillée is de hoogste gemeente van Bretagne.",
+    "u": "https://www.lesroch.org/reco-du-mythique-120-km/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Het hele jaar berijdbaar door het lage reliëf.",
+    "u": null
+   },
+   {
+    "t": "Les Roc'h des Monts d'Arrée valt medio september en heeft gravelparcoursen van 65 tot 150 km.",
+    "u": "https://www.gravelpassion.fr/evenements-calendrier-gravel/roch-des-monts-darree/"
+   },
+   {
+    "t": "De route ligt in het Parc Naturel Régional d'Armorique.",
+    "u": "https://vttenfinistere.fr/bases/monts-darree-montagnes-noires/"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Les Roc'h (FR)",
+    "q": "Une pause s'impose au Roc'h Trévézel, dernier point culminant du parcours",
+    "tr": "Een pauze is verplicht op de Roc'h Trévezel, het laatste hoogtepunt",
+    "url": "https://www.lesroch.org/reco-du-mythique-120-km/"
+   },
+   {
+    "who": "Les Roc'h (FR)",
+    "q": "Laissez vous ensuite glisser jusqu'au ravito de la maison du lac de Brennilis",
+    "tr": "Laat je vervolgens glijden tot de bevoorrading bij het meer van Brennilis",
+    "url": "https://www.lesroch.org/reco-roch-n1-gravel-65-km/"
+   }
+  ],
+  "gap": "Permanente waterpunten zijn onbevestigd; wat online staat zijn evenementbevoorradingen."
+ },
+ "sommeiller": {
+  "base": [
+   {
+    "t": "Bardonecchia (1300 m); via de fractie Rochemolles begint na ± 8 km de onverharde weg naar Rifugio Scarfiotti.",
+    "u": "https://www.raccontapassi.it/punta-sommeiller-dal-rifugio-scarfiotti/"
+   },
+   {
+    "t": "Aangeprezen als de hoogste panoramaweg van Europa, top 3009 m.",
+    "u": "https://www.lagendanews.com/bardonecchia-attivo-il-pedaggio-per-la-strada-piu-alta-deuropa-verso-il-colle-del-sommeiller/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Rifugio Camillo Scarfiotti, 2165 m, eigendom van CAI Torino: 24 slaapplaatsen, lakenzak verplicht, warme douches, wifi.",
+    "u": "https://rifugidelpiemonte.it/rifugio-scarfiotti/"
+   },
+   {
+    "t": "Reserveren via CAI, tel. 02 2057231.",
+    "u": "https://www.prenotarifugi.cai.it/dettaglio/Rifugio+Scarfiotti/?id=5844"
+   },
+   {
+    "t": "Let op: het rifugio was recent gesloten voor renovatie — status vooraf checken.",
+    "u": "https://www.gulliver.it/itinerari/sommeiller-colle-dal-rifugio-scarfiotti/2025/07/11/324394/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Parcheggio bij Rochemolles (stuwdam) en een ruime parking bij Rifugio Scarfiotti.",
+    "u": "https://www.chaletdellaguida.it/escursioni-da-rochemolles-rifugio-scarfiotti-colle-del-sommeiller.html"
+   },
+   {
+    "t": "Ook parkeren mogelijk bij Picreaux en op de Colle zelf.",
+    "u": "https://www.outdooractive.com/en/route/offroad/bardonecchia/bardonecchia-sommeiller-pass/800741105/"
+   },
+   {
+    "t": "EV-laden onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Onbevestigd op de klim; Rifugio Scarfiotti is het laatste vaste punt vóór de top.",
+    "u": "https://rifugidelpiemonte.it/rifugio-scarfiotti/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Rifugio Scarfiotti heeft bar en restaurant met traditionele Val di Susa-keuken. Boven het rifugio geen bevoorrading meer tot de top.",
+    "u": "https://rifugidelpiemonte.it/rifugio-scarfiotti/"
+   }
+  ],
+  "season": [
+   {
+    "t": "De weg Rochemolles–Colle Sommeiller is tolplichtig (€ 8 voor motorvoertuigen), 1 juli tot 30 september, 8:30–18:00.",
+    "u": "https://www.lagendanews.com/bardonecchia-attivo-il-pedaggio-per-la-strada-piu-alta-deuropa-verso-il-colle-del-sommeiller/"
+   },
+   {
+    "t": "Gemeentelijke communicatie meldt sluiting voor motorvoertuigen op dinsdag én donderdag; andere bronnen noemen alleen donderdag. Controleer de gemeentesite vóór vertrek.",
+    "u": "https://bardonecchia.it/wp-content/uploads/2025/09/O2-N%C2%B0-100-del-08-09-2025-REGOLAMENTAZIONE-DEI-SENTIERI-MULATTIERE-E-STRADE-FORESTALI-MONTANE.pdf"
+   },
+   {
+    "t": "In het voorjaar vaak nog gesloten voor sneeuwruiming.",
+    "u": "https://www.torinocronaca.it/news/provincia/655384/colle-del-sommeiller-ancora-chiuso-avanti-i-lavori-per-liberare-la-strada-dalla-neve.html"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Raccontapassi (IT)",
+    "q": "la strada sterrata e molto dissestata: buche profonde, massi e alcuni guadi",
+    "tr": "de grindweg is zwaar aangetast: diepe kuilen, rotsblokken en enkele doorwaadplaatsen",
+    "url": "https://www.raccontapassi.it/punta-sommeiller-dal-rifugio-scarfiotti/"
+   },
+   {
+    "who": "Chalet della Guida (IT)",
+    "q": "Evitare la carrozzabile che è estremamente polverosa al passaggio dei mezzi motorizzati!",
+    "tr": "Mijd de rijweg, die is extreem stoffig als er gemotoriseerd verkeer passeert!",
+    "url": "https://www.chaletdellaguida.it/escursioni-da-rochemolles-rifugio-scarfiotti-colle-del-sommeiller.html"
+   },
+   {
+    "who": "Gulliver (IT)",
+    "q": "Rifugio Scarfiotti (attualmente chiuso per restauro)",
+    "tr": "Rifugio Scarfiotti (momenteel gesloten voor renovatie)",
+    "url": "https://www.gulliver.it/itinerari/sommeiller-colle-dal-rifugio-scarfiotti/2025/07/11/324394/"
+   }
+  ],
+  "gap": "Contradictie over de autovrije dagen: gemeente noemt dinsdag én donderdag, andere bronnen alleen donderdag."
+ },
+ "rochilles": {
+  "base": [
+   {
+    "t": "Valloire; de klim begint bij Plan Lachat aan de Galibier-weg. Seuil des Rochilles ligt op 2459 m.",
+    "u": "https://refugedesdrayeres.ffcam.fr/"
+   },
+   {
+    "t": "Gîte Le Refuge in Valloire ligt 3 km van het centrum.",
+    "u": "https://www.gites-de-france-savoie.com/Hebergements/gite/le-refuge-73G306255.html"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Refuge des Drayères (FFCAM), 2180 m, aan de Clarée-kant achter de Rochilles: 64 slaapplaatsen, demi-pension € 63.",
+    "u": "https://refugedesdrayeres.ffcam.fr/"
+   },
+   {
+    "t": "Bewaakt van 17 juni tot 27 september 2026; online reserveren aanbevolen.",
+    "u": "https://refugedesdrayeres.ffcam.fr/reservation.html"
+   },
+   {
+    "t": "Lakenzak (drap de sac) is verplicht.",
+    "u": "https://paysages-hautesalpes.fr/refuge-drayeres/"
+   },
+   {
+    "t": "In Valloire: Gîte Le Refuge, negen logementen, sauna, schoendroger, lakens inbegrepen.",
+    "u": "https://www.gites-de-france-savoie.com/Hebergements/gite/le-refuge-73G306255.html"
+   }
+  ],
+  "park": [
+   {
+    "t": "Bij Plan Lachat of langs de Galibier-weg; specifieke parking en EV-laden onbevestigd. Valloire dorp is de aangewezen laadbasis, maar dat is nog niet aan een bron gekoppeld.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Refuge des Drayères: gratis drinkwater en heet water voor thermosflessen.",
+    "u": "https://outtrip.fr/refuge-garde/refuge-des-drayeres"
+   },
+   {
+    "t": "De bron van de Clarée ligt vlak bij het refuge. Exacte fonteinen op de klim vanaf Plan Lachat: onbevestigd.",
+    "u": "https://refugedesdrayeres.ffcam.fr/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Refuge des Drayères biedt demi-pension, picknick, middag- en avondmaal en een kleine épicerie, op reservering.",
+    "u": "https://outtrip.fr/refuge-garde/refuge-des-drayeres"
+   }
+  ],
+  "season": [
+   {
+    "t": "Refuge bewaakt van 17 juni tot 27 september 2026.",
+    "u": "https://refugedesdrayeres.ffcam.fr/reservation.html"
+   },
+   {
+    "t": "In de winter vergt toegang twaalf kilometer lopen vanaf Névache.",
+    "u": "https://paysages-hautesalpes.fr/refuge-drayeres/"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Paysages Hautes-Alpes (FR)",
+    "q": "Le port du drap de sac est obligatoire aux Drayères",
+    "tr": "Een lakenzak is verplicht in de Drayères",
+    "url": "https://paysages-hautesalpes.fr/refuge-drayeres/"
+   },
+   {
+    "who": "Skitour (FR)",
+    "q": "il est dorénavant conseillé de réserver votre nuitée",
+    "tr": "het wordt voortaan aangeraden je overnachting te reserveren",
+    "url": "https://skitour.fr/refuges/34"
+   }
+  ],
+  "gap": "Weinig eerstehands gravelverslagen specifiek voor de klim Plan Lachat – Rochilles."
+ },
+ "jandri": {
+  "base": [
+   {
+    "t": "Les Deux Alpes (klim start bij Alpe du Mont-de-Lans) of Bourg d'Oisans / Le Clapier voor de volledige stijging van ± 2734 m.",
+    "u": "https://www.centcols.org/libre_service/jandri/col_du_jandri.htm"
+   },
+   {
+    "t": "Col du Jandri ligt op ± 3150 m.",
+    "u": "https://centcols.org/en/the-jandri-pass/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Ruim aanbod in skistation Les Deux Alpes; concrete bike-accommodatie onbevestigd.",
+    "u": null
+   }
+  ],
+  "park": [
+   {
+    "t": "In Les Deux Alpes; EV-laden onbevestigd (skistations hebben doorgaans laadinfrastructuur, maar dat is hier niet bevestigd).",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Onbevestigd; het hoogterestaurant onderweg is het enige vaste punt.",
+    "u": "https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Restaurant en kabelbaanstation «Jandri 2» op 2189 m; hoger op de piste nog een hoogterestaurant.",
+    "u": "https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Sneeuwvrij vanaf ongeveer begin juli, afhankelijk van het jaar.",
+    "u": "http://rideonthewildside.unblog.fr/col-du-jandri-un-col-a-plus-de-3000m/"
+   },
+   {
+    "t": "Gesignaleerd als gesloten voor gemotoriseerd verkeer, maar er rijden af en toe servicevoertuigen.",
+    "u": "https://www.cycling-challenge.com/col-du-jandri-glacier-de-mont-de-lans/"
+   },
+   {
+    "t": "Goede remmen zijn essentieel voor de afdaling.",
+    "u": "https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "Although signed as closed to motor traffic, there was the very occasional car",
+    "tr": "Hoewel aangeduid als gesloten voor gemotoriseerd verkeer reed er af en toe een auto",
+    "url": "https://www.cycling-challenge.com/col-du-jandri-glacier-de-mont-de-lans/"
+   },
+   {
+    "who": "Centcols (FR)",
+    "q": "très souvent caillouteuse, poussiéreuse et pentue, elle impose parfois la marche",
+    "tr": "vaak steenachtig, stoffig en steil; soms moet je lopen",
+    "url": "https://www.centcols.org/libre_service/jandri/col_du_jandri.htm"
+   },
+   {
+    "who": "Alpes4ever (FR)",
+    "q": "VTT en bon état obligatoire (surtout les freins pour le retour)",
+    "tr": "Een MTB in goede staat is verplicht, vooral de remmen voor de terugweg",
+    "url": "https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"
+   }
+  ],
+  "gap": "Accommodatie, waterpunten en EV-laadinfrastructuur zijn nog onbevestigd."
+ },
+ "finestre": {
+  "base": [
+   {
+    "t": "Susa of Meana di Susa; comfortabele parkeerplaats rechts vóór het dorp.",
+    "u": "https://turbolento.net/prodotto/colle-delle-finestre-e-assietta/"
+   },
+   {
+    "t": "De klim is 18,45 km, top 2176/2178 m, met de laatste ± 8 km onverhard.",
+    "u": "https://www.mondociclismo.it/2019/07/01/ciclismo-le-grandi-salite-il-colle-delle-finestre-altimetria-ed-analisi-percorso/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Rifugi bij Pian dell'Alpe aan de Val Chisone-kant om te overnachten; concrete namen en contactgegevens onbevestigd.",
+    "u": "https://climbfinder.com/us/climbs/colle-delle-finestre"
+   }
+  ],
+  "park": [
+   {
+    "t": "Meana di Susa, parkeerplaats rechts vóór het dorp; alternatief Sant'Ambrogio di Torino voor extra warming-up.",
+    "u": "https://www.delmenico.it/colle-delle-finestre-sestriere/"
+   },
+   {
+    "t": "EV-laden onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Cruciaal: fontein bij een wit huis op ± 1455 m op het Colletto di Meana, precies waar het asfalt eindigt en de sterrato begint.",
+    "u": "https://www.komoot.com/highlight/3723093"
+   },
+   {
+    "t": "Er is ook een fontein op de Colle, maar één rijder meldde die op 17/08/2025 buiten werking.",
+    "u": "https://climbfinder.com/us/climbs/colle-delle-finestre"
+   }
+  ],
+  "food": [
+   {
+    "t": "Weinig onderweg; bevoorraden in Susa of Meana en bij de rifugi op Pian dell'Alpe. Voor de Assietta-ronde: Sestriere, Cesana of Oulx.",
+    "u": "https://visitvaldisusa.it/colle-delle-finestre/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Strada dell'Assietta (SP173) normaal open van 1 juli tot 31 oktober; winterafsluiting 1 november tot 30 juni.",
+    "u": "https://www.stradaassietta.it/"
+   },
+   {
+    "t": "Volledig gesloten voor gemotoriseerd verkeer op woensdag en zaterdag, 9:00–17:00, in juli en augustus.",
+    "u": "https://www.stradaassietta.it/"
+   },
+   {
+    "t": "Snelheidslimiet 30 km/u; geen voertuigen zwaarder dan 3,5 t of breder dan 2 m.",
+    "u": "https://www.stradaassietta.it/estate-2024/"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Reviewer, Climbfinder (IT)",
+    "q": "in corrispondenza di una fontanella cominciano i 6 km di sterrato",
+    "tr": "bij een fonteintje beginnen de 6 km grind",
+    "url": "https://climbfinder.com/us/climbs/colle-delle-finestre"
+   },
+   {
+    "who": "Reviewer, Climbfinder (IT)",
+    "q": "la fontanella al colle non funzionava (17/08/2025)",
+    "tr": "het fonteintje op de col werkte niet (17-08-2025)",
+    "url": "https://climbfinder.com/us/climbs/colle-delle-finestre"
+   },
+   {
+    "who": "Following My Way (IT)",
+    "q": "pietre e sabbia fine abbondano soprattutto negli ultimi km",
+    "tr": "stenen en fijn zand zijn er volop, vooral op de laatste kilometers",
+    "url": "https://followingmyway.blogspot.com/2015/07/il-colle-delle-finestre.html"
+   }
+  ],
+  "gap": ""
+ }
+}
