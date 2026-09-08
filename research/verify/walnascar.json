@@ -1,0 +1,43 @@
+{
+ "id": "walnascar",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://singletrackworld.com/forum/topic/walna-scar-road-by-gravel-bike/",
+   "status": "ok",
+   "note": "403 voor bots, met Playwright bereikbaar. Letterlijk in post van een Full Member die het op een CX met 32 mm reed (max 25% van de klim rijdend).",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.mountain-journeys.co.uk/lakes-gravel/",
+   "status": "ok",
+   "note": "Letterlijk; gaat over de afdaling van Walna Scar naar Duddon. Auteur Mark Eddy (gids, eerstehands rit 51 km/1438 m).",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://lakesmtb.co.uk/routes/wanna-scar-long/",
+   "status": "ok",
+   "note": "Letterlijk aanwezig; MTB-routebeschrijving, geen gravelrijder.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Walna Scar-top 620 m, pas 'iets lager' (Wikipedia), dus 600 m plausibel. Coniston ~50 m: 9 km/550 m klopt. Komoot 'Walna Scar Road' lus 19,6 km/790 m.",
+  "source": "https://en.wikipedia.org/wiki/Walna_Scar"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-MTB-tour 'Walna Scar Road' (lus vanaf Coniston), 19,6 km, 790 m",
+   "u": "https://www.komoot.com/tour/704954225"
+  },
+  {
+   "t": "Komoot-MTB-route 'Coniston Shore Bridleway – Walna Scar Descent loop from Coniston', 20,9 km, 660 m",
+   "u": "https://www.komoot.com/smarttour/27143040"
+  }
+ ],
+ "summary": "Alle drie de citaten staan letterlijk op de bron en twee zijn eerstehands rijders; de Singletrack-post bevat zelfs bandbreedte (32 mm) en het eerlijke '25% rijdend'. Geen klimdatabase-entry, maar Wikipedia en Komoot bevestigen hoogte en lengte."
+}

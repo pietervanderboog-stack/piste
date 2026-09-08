@@ -1,0 +1,109 @@
+{
+ "id": "nordschwarzwald",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://life-on.de/2025/03/21/erlebnisintensive-gravel-tipps-im-schwarzwald/",
+   "status": "ok",
+   "note": "Verbatim (persbericht Schwarzwald Tourismus, overgenomen door life-on).",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.bike-magazin.de/touren/deutschland/gravel-biken-im-schwarzwald-super-doch-wohin-was-tun-wo-schlafen/",
+   "status": "ok",
+   "note": "Verbatim.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Start Rosenplatz Baiersbronn bevestigd; telefoonnummer 8414-66, 'Wander-Informationszentrum', Achern en Ottenhöfen staan niet op de pagina.",
+   "fix": {
+    "t": "Baiersbronn (officiële gravelroute start op de Rosenplatz); Achern of Ottenhöfen als alternatief aan de westkant.",
+    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "ok",
+   "note": "Schliffkopfhotel genoemd (historisch artikel, geen accommodatiegegevens).",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "Parkplatz Steinmäuerle en Ruhestein/Nationalparkzentrum bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Mummelsee genoemd; geen waterpunten op de bron, 'onbevestigd' correct.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Deze pagina noemt Mummelsee noch B500. De officiële routepagina noemt Mummelsee en 'Einkehrmöglichkeiten' aan de Schwarzwaldhochstraße.",
+   "fix": {
+    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+   }
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "unsupported",
+   "note": "1163 m en 458 m bevestigd; 'niet bewegwijzerd' staat er niet (alleen MTB-bewegwijzering van station naar Rosenplatz).",
+   "fix": {
+    "t": "Hoogste punt 1163 m (Hornisgrinde), laagste 458 m; 70 km, 1.013 hm; ondergrond 47% asfalt, 19% fijn grind, 27% natuurpad.",
+    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+   }
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "unsupported",
+   "note": "Geen woord over Wildschutzgebiete of winterafsluitingen op de pagina; ook niet na uitklappen.",
+   "fix": {
+    "u": null
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "misquote",
+   "note": "Engels citaat staat verbatim op de EN-pagina, niet op de DE-URL.",
+   "fix": {
+    "url": "https://climbfinder.com/en/climbs/schliffkopf-ottenhofen-im-schwarzwald"
+   }
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Climbfinder Hornisgrinde vanuit Ottenhöfen: 15,4 km, 850 m, top 1151 m; vanuit Achern 17,9 km, 1015 m. Data 1163/900/22/14: top klopt (Hornisgrinde 1163), stijging binnen 6%, lengte langer door de gravelomweg.",
+  "source": "https://climbfinder.com/nl/beklimmingen/hornisgrinde-ottenhofen"
+ },
+ "gpx": [
+  {
+   "t": "Officiële GPX Baiersbronner Hornisgrinde Gravel (Schwarzwald Tourismus), 70 km, 1.013 m",
+   "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+  },
+  {
+   "t": "Komoot-route Baiersbronn Hornisgrinde Gravel van Baiersbronn Touristik, 70,1 km, 1.180 m",
+   "u": "https://www.komoot.com/smarttour/e2033912531/baiersbronner-hornisgrinde-gravel"
+  },
+  {
+   "t": "Komoot-gravelroute Schliffkopf 1000-meter Trail – Sandkopf vanuit Wilder See/Hornisgrinde, 35 km, 630 m",
+   "u": "https://www.komoot.com/smarttour/33715420"
+  }
+ ],
+ "summary": "Cijfers en officiële routegegevens kloppen, maar vier feiten waren aangedikt met details (telefoonnummer, 'niet bewegwijzerd', Wildschutz-afsluitingen, B500-horeca) die de bronpagina's niet bevatten. Geen echte gravel-ooggetuige buiten één Climbfinder-review; de gap-tekst is terecht."
+}

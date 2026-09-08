@@ -1,0 +1,46 @@
+{
+ "id": "gardetta",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.cycling-challenge.com/colle-fauniera-and-beyond/",
+   "status": "ok",
+   "note": "Verbatim: 'Fifteen (amazing) kms along unpaved old military roads (always above 2000 metres)'. Will (My Cycling Challenge) is een rijder; tr klopt.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://turistagravel.home.blog/2019/02/10/altopiano-della-gardetta/",
+   "status": "misquote",
+   "note": "Pagina geeft HTTP 403 maar rendert wel (WordPress). Werkelijke zin: 'la ghiaia diventa piu grossa e sconnessa: serve un buon colpo di pedale e un discreto equilibrio.' Ons citaat is een parafrase.",
+   "fix": {
+    "q": "la ghiaia diventa più grossa e sconnessa: serve un buon colpo di pedale",
+    "tr": "het grind wordt grover en hobbeliger: je hebt een stevige pedaalslag nodig"
+   }
+  },
+  {
+   "i": 2,
+   "url": "https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html",
+   "status": "ok",
+   "note": "Verbatim: 'Il percorso si fa decisamente piu tecnico e ci si mettono anche le vacche...'. Eigen MTB-verslag (met hond Nala); slaat op het singletrack-pad onder Rocca La Meja, niet op de militaire weg; context vermelden.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Climbfinder Colle Fauniera vanaf Demonte: 24,4 km, 1.716 m, top 2.471 m (verhard). Onze 25 km / 1.700 m / 2.481 m passen (top: cycling-challenge en Wikiloc zeggen 2.481). Gravel 15 km bevestigd door cycling-challenge en Wikiloc ('15 Km on an old military unpaved road').",
+  "source": "https://climbfinder.com/en/climbs/colle-fauniera-demonte"
+ },
+ "gpx": [
+  {
+   "t": "Wikiloc-route van ant1606 (lus vanaf Marmora, Fauniera + Gardetta-plateau), 45 km, 1.423 m",
+   "u": "https://www.wikiloc.com/wikiloc/view.do?id=14682984"
+  },
+  {
+   "t": "Climbfinder-profiel Colle Fauniera vanaf Demonte, 24,4 km, 1.716 m (verhard, export naar GPS)",
+   "u": "https://climbfinder.com/en/climbs/colle-fauniera-demonte"
+  }
+ ],
+ "summary": "Sterke set: twee eerstehands verslagen (Cycling Challenge, Life in Travel) en een gravelblog dat licht geparafraseerd is; het letterlijke citaat is voorgesteld. Cijfers sporen met climbfinder (Demonte-zijde) en de 15 km onverhard wordt door twee onafhankelijke rijders genoemd. De Wikiloc-lus van ant1606 dekt het volledige onverharde plateau."
+}

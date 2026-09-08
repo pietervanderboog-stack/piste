@@ -1,0 +1,37 @@
+{
+ "id": "kolovrat",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://bikerumor.com/where-to-ride-gravel-bikes-in-slovenia/",
+   "status": "wrong-attribution",
+   "note": "Pagina laadt (403 alleen voor bots). 'the highlight ride of the trip' gaat over de Mangart-zadelweg; Kolovrat, Kobarid en Stol komen nergens in het artikel voor. Vervanging: Bikepacking.com Slovenia West Loop noemt expliciet 'a terrific off-road track on the Kolovrat Ridge on the Italian border'.",
+   "fix": {
+    "url": "https://bikepacking.com/routes/bikepacking-slovenia/",
+    "q": "a terrific off-road track on the Kolovrat Ridge on the Italian border",
+    "tr": "een geweldige onverharde weg over de Kolovrat-kam op de Italiaanse grens"
+   }
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "deviates",
+  "note": "Climbfinder Kolovrat vanuit Tolmin (asfalt): 12,3 km, 969 m, top 1138 m. Quäldich: Kolovrat 1169 m, hoogste punt Kuk; 'ca. 5,5 km nach wie vor nicht asphaltiert' op de oude route via Kambresko. Data: top 1240 (Kuk 1243 m, ok), gain 1010 ok, len 18 ok, maar gravel 9 km vs 5,5 km onverhard bij Quäldich (+64%).",
+  "source": "https://www.quaeldich.de/paesse/kolovrat/"
+ },
+ "gpx": [
+  {
+   "t": "Bikepacking.com Slovenia West Loop (GPX-download), 426 km, 8.878 m, 75% onverhard, incl. Kolovrat-kam",
+   "u": "https://bikepacking.com/routes/bikepacking-slovenia/"
+  },
+  {
+   "t": "Velontour-route van Ksenija Vogrinc, Kolovrat-panoramaweg vanuit Kobarid, 40 km, 1.061 m (asfalt)",
+   "u": "https://www.velontour.info/radtouren/detail/kolovrat-auf-der-panoramastrasse-mit-blick-auf-das-soca-tal"
+  },
+  {
+   "t": "Climbfinder Kolovrat vanuit Tolmin, 12,3 km, 969 m (GPS-export)",
+   "u": "https://climbfinder.com/en/climbs/kolovrat-tolmin"
+  }
+ ],
+ "summary": "De enige stem was verkeerd toegeschreven: het Bikerumor-citaat gaat over Mangart en het artikel noemt Kolovrat niet eens. Bikepacking.com levert een echte Kolovrat-zin als vervanging. De gravelkilometers (9) lijken te hoog tegenover Quäldich (5,5 km onverhard); geen Komoot-graveltour gevonden en geen logistiek dossier."
+}

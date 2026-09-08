@@ -96,6 +96,9 @@ input[type=range]{width:100%;accent-color:var(--moss);margin:0}
 .scroll{flex:1;overflow-y:auto;overscroll-behavior:contain}
 .scroll::-webkit-scrollbar{width:8px}.scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
 .list{padding:6px 10px 10px}
+.intro{margin:12px 12px 4px;padding:14px 16px;background:var(--sage2);border-radius:var(--r2);font-size:14.5px;line-height:1.5;color:var(--moss)}
+.intro p{margin:0 0 6px}
+.intro .linkbtn{margin:0}
 .pill.small{padding:4px 10px;font-size:12.5px}
 .drawer:not(.filt) .filters{display:none}
 .drawer:not(.filt) #filtBtn{background:var(--linen2)}

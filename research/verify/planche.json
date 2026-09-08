@@ -1,0 +1,197 @@
+{
+ "id": "planche",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.grandcolscyclingtours.com/en-gb/cycling-tours/join-in-tours/a-travers-les-vosges/",
+   "status": "ok",
+   "note": "Verbatim. Let op: touroperator-tekst, geen rijder.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.fiets.nl/forum/viewtopic.php?f=2&t=9228",
+   "status": "ok",
+   "note": "Verbatim, forumpost 31 mei 2010 (Vlaamse forumgebruiker). 'Nederlandse forumrijder' is ruwweg fair; 'Forumrijder, Fiets.nl (2010)' is preciezer.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Office de Tourisme des Vosges du Sud, 45 Grande Rue, 90200 Giromagny, 0384562419 bevestigd. Plancher-les-Mines/Lepuix-Gy als basis is redactioneel.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "1178 m col, 1247 m top bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Pagina: 24 kamers, restaurant 150 couverts, menu vanaf € 25, tel. 03 84 29 30 60, sluiting half november–half december. '63 personen', 'fietsgarage', 'hele jaar open' en 'menu € 15–34' staan er NIET.",
+   "fix": {
+    "t": "Hôtel-Restaurant du Sommet op de top van de Ballon d'Alsace (1180 m): 24 kamers, restaurant met 150 couverts, menu vanaf € 25; gesloten half november tot half december; tel. 03 84 29 30 60.",
+    "u": "http://www.hotelrestaurantdusommet.com/"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "ok",
+   "note": "1056 m, ±50 personen, 'Closed bicycle garage' bevestigd; de naam 'Quand Même' staat niet op visit.alsace maar wel op de refuges.info-kaart.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 2,
+   "status": "ok",
+   "note": "1088 m, capaciteit 99 bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 3,
+   "status": "ok",
+   "note": "1050 m, 'Tél. rés. 06.08.22.60.12' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 4,
+   "status": "ok",
+   "note": "Gîte La Petite Fontaine, Plancher-les-Mines bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "Reviews: 'Eau potable et toilettes accessibles', overnachten mogelijk; plek heet 'Plancher-les-Mines - Planche des Belles Filles'.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 1,
+   "status": "ok",
+   "note": "D16 richting Servance, vlak bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 2,
+   "status": "unsupported",
+   "note": "Chargemap telt 2 laadpunten in Plancher-les-Mines, niet één.",
+   "fix": {
+    "t": "EV: Chargemap telt 2 publieke laadpunten in Plancher-les-Mines.",
+    "u": "https://fr.chargemap.com/cities/plancher-les-mines-FR"
+   }
+  },
+  {
+   "section": "park",
+   "i": 3,
+   "status": "ok",
+   "note": "'12 Pl. de Gaulle, 90200 Giromagny' bevestigd; netwerknaam TE90 alleen in de URL.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "'Fontaine d'eau potable près du centre de secours (en face du bar)' bij de parking onderaan de skipistes bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 1,
+   "status": "ok",
+   "note": "Review: 'Er is ook een kraantje met drinkbaar water naast de winkel'.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 2,
+   "status": "dead",
+   "note": "refuges.info-punt 7316 is 404. Dors Dehors bevestigt Source des Sapins op 1128 m, 1,1 km van de Fontaine du col du Ballon d'Alsace (1170 m). '1,9 km van de top' niet te bevestigen.",
+   "fix": {
+    "t": "Ballon d'Alsace-kant: Source des Sapins op 1128 m, ± 1,1 km onder de fontein op de Col du Ballon d'Alsace.",
+    "u": "https://dorsdehors.com/point-d-eau/source-des-sapins"
+   }
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "'Une boulangerie … à 100 m au Sud de la Place de l'Hôtel de Ville' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 1,
+   "status": "unsupported",
+   "note": "Hotel du Sommet is NIET het hele jaar open: 'Jours de fermeture: mi-novembre à mi-décembre'. Deel over de Super Planche wordt gesteund door Climbfinder-review (tent dicht om 10u) en Visorando (bar alleen weekend buiten juli-aug).",
+   "fix": {
+    "t": "Bar-restaurant onderaan de Planche alleen in het weekend open (dagelijks in juli-augustus); Hôtel du Sommet op de Ballon d'Alsace is open behalve half november tot half december.",
+    "u": "https://www.visorando.com/randonnee-la-planche-des-belles-filles-a-partir-de/"
+   }
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "24% en Vollering-citaat 'a killer' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "'You'll need a gravel bike to tackle the Super Planche des Belles Filles' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "misquote",
+   "note": "Nederlands origineel staat alleen op de NL-pagina; de /us/-pagina toont een automatische Engelse vertaling. Citaat is verbatim op de NL-URL.",
+   "fix": {
+    "url": "https://climbfinder.com/nl/beklimmingen/planche-des-belles-filles-plancher-les-mines"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "misquote",
+   "note": "Idem: verbatim op de NL-pagina, niet op /us/.",
+   "fix": {
+    "url": "https://climbfinder.com/nl/beklimmingen/planche-des-belles-filles-plancher-les-mines"
+   }
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Climbfinder Super Planche: 7 km, 614 m, top 1148 m, steilste 100 m 22,9%, gravel-slot. Data 1148/670/7/1: gain +9%, binnen marge.",
+  "source": "https://climbfinder.com/en/climbs/planche-des-belles-filles"
+ },
+ "gpx": [
+  {
+   "t": "Officiële GPX van Haute-Saône Tourisme, Montée de la Planche des Belles Filles, 7 km, 614 m",
+   "u": "https://en.hautesaonetourisme.com/offers/montee-de-la-planche-des-belles-filles-plancher-les-mines-en-5225868/"
+  },
+  {
+   "t": "Komoot-route La Planche des Belles Filles – Ballon de Servance vanuit Servance-Miellin, 71,8 km, 2.050 m (deels onverhard)",
+   "u": "https://www.komoot.com/smarttour/4333581"
+  },
+  {
+   "t": "Komoot-gravelroute Ballon d'Alsace – Col du Ballon d'Alsace vanuit Giromagny, 56 km, 1.390 m",
+   "u": "https://www.komoot.com/smarttour/23674330"
+  }
+ ],
+ "summary": "Groot dossier met veel harde adressen die grotendeels kloppen; de zwakke plek is het Hôtel du Sommet (hele jaar open, 63 personen, fietsgarage en menuprijzen staan niet op de bron) en het aantal laadpalen. De Climbfinder-citaten waren wel echt maar aan de verkeerde taalversie gekoppeld; Source des Sapins krijgt een nieuwe bron."
+}

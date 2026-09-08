@@ -1,0 +1,126 @@
+{
+ "id": "grandballon",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.mountainbike.nl/forum/viewtopic.php?t=156547",
+   "status": "ok",
+   "note": "Verbatim forumpost.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.komoot.com/guide/3454106/gravel-biking-in-vosges",
+   "status": "misquote",
+   "note": "Pagina toont nu '194 rides' (1.369 riders), niet 230. Bovendien is dit een aggregaat/marketingtekst van Komoot, geen rijder — valt buiten de citaatregel.",
+   "fix": {
+    "remove": true
+   }
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Munster, La Bresse, Col de la Schlucht (1135 m) als 'carrefour stratégique / camp de base' bevestigd; Guebwiller staat niet op de pagina.",
+   "fix": {
+    "t": "Munster of La Bresse; Col de la Schlucht (1135 m) is een strategisch kruispunt en goede uitvalsbasis.",
+    "u": "https://mlclabresse.fr/route-des-cretes-vosges/"
+   }
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "1424 m, hoogste punt Vogezen bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "ok",
+   "note": "Refuges, auberges en gîtes rond Markstein/Hohneck bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "ok",
+   "note": "'Hôtel du Grand Ballon' genoemd in het routeverslag.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "'col du Grand Ballon (1341 m), ne restez pas sur le parking' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Fonteinen in dorpen en waarschuwing voor cyanobacteriën in meren bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "Markstein 1190 m bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "'dès les premières chutes de neige … fermé jusqu'au 01 mai' bevestigd; openingsperiode 1 mei–15 november 2026.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "'très fréquentée, notamment par les motos et les camping-cars … gilet jaune et des lampes' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "misquote",
+   "note": "Origineel: 'de nombreux villages où se ravitailler en nourriture et en eau dans les fontaines publiques' — 'en nourriture et' is weggelaten.",
+   "fix": {
+    "q": "villages où se ravitailler en nourriture et en eau dans les fontaines publiques",
+    "tr": "dorpen waar je eten en water kunt halen, water uit publieke fonteinen"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "ok",
+   "note": "Verbatim.",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Climbfinder Col du Grand Ballon vanuit Willer-sur-Thur (asfalt): 15,8 km, ±970 m, col 1341 m; top Grand Ballon 1424 m (Visorando). Data 1424/920/20/11 is een andere (deels onverharde) lijn; geen database voor het gravelgedeelte, top en stijging plausibel.",
+  "source": "https://climbfinder.com/en/climbs/grand-ballon-willer-sur-thur"
+ },
+ "gpx": [
+  {
+   "t": "UtagawaVTT-track van manufoucault, Boucle Thann – Grand Ballon, 33 km, 1.150 m (GPX-download)",
+   "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Boucle-Thann-Grand-Ballon-6566"
+  },
+  {
+   "t": "Komoot-route Markstein – Grand Ballon vanuit Buhl, 52,5 km, 1.170 m (vooral verhard)",
+   "u": "https://www.komoot.com/smarttour/42802192"
+  },
+  {
+   "t": "Komoot-etappes van Recto Verso, Tour des Ballons des Vosges in 5 dagen vanuit Thann, 162 km, 4.800 m",
+   "u": "https://www.komoot.fr/tour/833037089"
+  }
+ ],
+ "summary": "Bronnen zijn overwegend Franse VTT- en bikepackingverslagen die de feiten dragen; alleen Guebwiller en het Komoot-'230 routes'-citaat vallen door de mand. Het Komoot-aggregaat hoort er als 'stem' niet in; verwijderen. Verder alleen kleine correcties."
+}

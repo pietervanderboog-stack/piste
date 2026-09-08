@@ -1,0 +1,43 @@
+{
+ "id": "picos",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402",
+   "status": "ok",
+   "note": "403 voor bots, met Playwright bereikbaar. Spaans origineel (es.wikiloc.com) bevat de zin letterlijk: '...en gravel con alforjas se hace bien con mucho cuidado.' Auteur lucasgb, eigen 4-daagse ronde sept. 2022, 184 km / 5.145 m. Attributie en tr kloppen.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://espaciobike.com/gravel-en-asturias/",
+   "status": "ok",
+   "note": "Verbatim aanwezig. Espaciobike is een fietsblog/redactie, geen rijder; attributie 'Espaciobike (ES)' is eerlijk, tr klopt.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://www.cyclefiesta.com/multimedia/climbs/asturias/asturias.htm",
+   "status": "ok",
+   "note": "Verbatim aanwezig ('similar to The Dolomites in Italy, but with more vibrant colors and without any crowds'). Cycle Fiesta is een touroperator: attributie correct, maar het is promotietekst, geen rijdersstem.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "deviates",
+  "note": "Top 1562 komt overeen met Puerto de Pandetrave (climbfinder: 1563 m, vanaf Portilla de la Reina 10,1 km / 341 m, verhard). Onze gain 1600 / len 68 / gravel 25 zijn aan geen enkele klim of etappe te koppelen: de Wikiloc-ronde is 184 km / 5.145 m; etappe 2 Posada de Valdeon-Fuente De is 20 km / 971 m. Cijfers zijn een eigen samenstelling zonder bron.",
+  "source": "https://climbfinder.com/en/climbs/puerto-de-pandetrave-portilla-de-la-reina"
+ },
+ "gpx": [
+  {
+   "t": "Wikiloc-route van lucasgb (4 etappes rond het park), 184 km, 5.145 m",
+   "u": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+  },
+  {
+   "t": "Climbfinder-profiel Puerto de Pandetrave vanaf Portilla de la Reina, 10,1 km, 341 m (verhard, export naar GPS)",
+   "u": "https://climbfinder.com/en/climbs/puerto-de-pandetrave-portilla-de-la-reina"
+  }
+ ],
+ "summary": "Alle drie de citaten staan letterlijk op de bronpagina's; alleen de Wikiloc-stem is een echte rijder, de andere twee zijn blog- en touroperatortekst. De harde cijfers (68 km, 1.600 m, 25 km gravel) zijn niet herleidbaar tot een klim of bron en verdienen een herdefinitie (bijv. etappe Posada de Valdeon-Pandetrave-Fuente De). Komoot-routes zijn zonder zoekmachine niet gevonden; de Wikiloc-route dekt de onverharde afdaling wel."
+}

@@ -1,0 +1,42 @@
+{
+ "id": "grappa",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://pjammcycling.com/zone/55.Monte%20Grappa",
+   "status": "wrong-attribution",
+   "note": "Letterlijk aanwezig, maar PJAMM citeert hier het Participant's Handbook van het Brevetto del Grappa ('Dirt road of Covolo ... almost 40 hairpin bends that lead up to Malga Ardosetta'). Het is dus geen PJAMM-observatie.",
+   "fix": {
+    "who": "Brevetto del Grappa-handboek, geciteerd door PJAMM"
+   }
+  },
+  {
+   "i": 1,
+   "url": "https://www.cycloworld.cc/en/article/monte-grappa-a-climb-with-a-soul/5728",
+   "status": "misquote",
+   "note": "De /en/-URL levert het Nederlandse origineel (Eveline van der Hek, 06-09-2025). Origineel: 'de ene keer glooiend en bijna vriendelijk, de andere keer steil en gemeen'. Cruciaal: 'We hebben ze zelf nog niet geprobeerd' — het is van horen zeggen, niet 'ter plaatse' gereden.",
+   "fix": {
+    "q": "de ene keer glooiend en bijna vriendelijk, de andere keer steil en gemeen",
+    "tr": "(origineel Nederlands; over de onverharde paden, van horen zeggen)",
+    "who": "Cycloworld, Eveline van der Hek — reed het asfalt, de gravel niet zelf"
+   }
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Top 1775 m bevestigd. Wegklim Semonzo 16,8 km/1530 Hm (quaeldich); onze Covolo-lijn 20 km/1500 m is een andere weg, dus niet direct vergelijkbaar. Wikiloc-lussen via de Mulattiera del Covolo: 27–29 km met 1550–1690 m.",
+  "source": "https://www.quaeldich.de/paesse/monte-grappa/"
+ },
+ "gpx": [
+  {
+   "t": "Wikiloc-route 'Borso – Sentiero 196 – Rifugio Ardosetta – Mulattiera del Covolo' (e-MTB), 28,6 km, 1.548 m",
+   "u": "https://it.wikiloc.com/percorsi-bici-elettrica/borso-sentiero-196-rifugio-ardosetta-mulattiera-del-covolo-119500089"
+  },
+  {
+   "t": "Wikiloc-route 'Mulattiera del Covolo, Cima Grappa, sentiero delle Meatte' (e-MTB), 27,4 km, 1.689 m",
+   "u": "https://it.wikiloc.com/percorsi-bici-elettrica/mulattiera-del-covolo-cima-grappa-sentiero-delle-meatte-e-valle-di-san-liberale-89200559"
+  }
+ ],
+ "summary": "Beide stemmen hebben een attributieprobleem: het PJAMM-citaat komt uit het brevetto-handboek en de Cycloworld-auteur reed de gravel niet zelf (en het origineel is Nederlands). Cijfers voor de top kloppen; voor de Strada del Covolo zelf is er geen klimdatabase-entry, wel meerdere Wikiloc-tracks."
+}

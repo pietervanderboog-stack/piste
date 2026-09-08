@@ -1,0 +1,48 @@
+{
+ "id": "strynefjell",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/",
+   "status": "ok",
+   "note": "403 voor bots, met Playwright bereikbaar. Verbatim: 'Some people have cried cycling it!'. Cycle Norway is een routegids geschreven door een fietser (eerste persoon); attributie ok. tr wringt ('huilend op gefietst'); voorstel hieronder.",
+   "fix": {
+    "q": "Some people have cried cycling it!",
+    "tr": "Sommige mensen hebben er huilend gefietst!"
+   }
+  },
+  {
+   "i": 1,
+   "url": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling",
+   "status": "wrong-attribution",
+   "note": "Citaat staat letterlijk op de pagina, maar de site is een route-aggregator (geen verslag 'ter plaatse') en de bewering is fout: de pagina beschrijft de verharde klim Hjelle-Videsaeter (18 km, 1.062 m, top 1.098 m) en negeert het grindgedeelte Videsaeter-Grotli. Nasjonale turistveger ('Parts of the route run on gravel roads') en Cycle Norway (75% onverhard, 30-35 mm banden) spreken dit tegen. Ondermijnt onze eigen gravel=15 km.",
+   "fix": {
+    "remove": true
+   }
+  },
+  {
+   "i": 2,
+   "url": "https://www.nasjonaleturistveger.no/en/routes/gamle-strynefjellsvegen/",
+   "status": "ok",
+   "note": "Verbatim: 'The old roadway between east and west is a museum experience in itself.' Officiele bron, tr klopt.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Nasjonale turistveger: 27 km, 465-1.139 m (top 1139 en len 27 exact). Gain 1050 past bij start Hjelle/Oppstryn (cyclingroutes.cc: 1.062 m). Gravel 15 km: Cycle Norway zegt 75% onverhard van 27 km (ca. 20 km), RWGPS-route 54% van 29,6 km (ca. 16 km): binnen marge, maar noteer de spreiding. Voice 1 beweert 'rough asphalt the whole way' en is onjuist voor het grindtraject.",
+  "source": "https://www.nasjonaleturistveger.no/en/routes/gamle-strynefjellsvegen/"
+ },
+ "gpx": [
+  {
+   "t": "RideWithGPS-route van Cycle Norway (NSR Gamle Strynefjellsvegen, Grotli-Videsæter), 29,6 km, 456 m, 54% onverhard",
+   "u": "https://ridewithgps.com/routes/41403109?privacy_code=jqwJuos1XHltCJRU"
+  },
+  {
+   "t": "GPX-download van Cycle Norway (Gamle Strynefjellsvegen)",
+   "u": "https://cyclenorway.com/wp-content/uploads/2025/09/NSR__Gamle_Strynefjellsvegen.gpx"
+  }
+ ],
+ "summary": "Twee sterke bronnen (officiele Nasjonale turistveger en Cycle Norway) en een die de zaak ondermijnt: CyclingRoutes.cc noemt de klim 'rough asphalt the whole way', wat alleen voor de westflank geldt en onze gravelclaim tegenspreekt; verwijderen. Cijfers kloppen met de officiele 27 km en 1.139 m; het aantal grindkilometers varieert per bron tussen 15 en 20."
+}

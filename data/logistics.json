@@ -38,7 +38,7 @@
   ],
   "food": [
    {
-    "t": "Restaurant Baraque Michel; Natuurcentrum Botrange ligt binnen 500 m van de route.",
+    "t": "Natuurcentrum Botrange en Mont Rigi liggen binnen 500 m van de route; Restaurant Baraque Michel bij de parking.",
     "u": "https://www.wikiloc.com/hiking-trails/hoge-venen-baraque-michel-en-signal-de-botrange-63113314"
    }
   ],
@@ -53,7 +53,7 @@
    },
    {
     "t": "Modderig en glad na regen.",
-    "u": "https://www.alltrails.com/trail/belgium/liege/signal-de-botrange-boucle"
+    "u": null
    },
    {
     "t": "Let op de betreedverboden (zones C/D) in het natuurreservaat — status checken bij Natuurcentrum Botrange.",
@@ -68,7 +68,21 @@
     "url": "https://www.reisbeesten.be/wandelroutes-baraque-michel-hoge-venen/"
    }
   ],
-  "gap": "Weinig gravel-specifieke ooggetuigenverslagen; vrijwel alle bronnen zijn wandelverslagen."
+  "gap": "Weinig gravel-specifieke ooggetuigenverslagen; vrijwel alle bronnen zijn wandelverslagen.",
+  "gpx": [
+   {
+    "t": "Komoot-gravelroute Loop from Malmedy – Parc naturel des Hautes Fagnes-Eifel, 56 km, 755 m",
+    "u": "https://www.komoot.com/smarttour/e1852732981/loop-from-malmedy-parc-naturel-des-hautes-fagnes-eifel"
+   },
+   {
+    "t": "Komoot-gravelroute High Fens Nature Reserve – Brackvenn vanuit Xhoffraix, 66 km, 900 m",
+    "u": "https://www.komoot.com/smarttour/38023010"
+   },
+   {
+    "t": "Ridersguide.nl graveltocht Ardennen vanaf Coo (routebeschrijving met GPX)",
+    "u": "https://ridersguide.nl/routes/graveltocht-ardennen/"
+   }
+  ]
  },
  "sanktvith": {
   "base": [
@@ -80,7 +94,7 @@
   "sleep": [
    {
     "t": "Relaxhotel Pip Margraff in Sankt Vith.",
-    "u": "https://www.komoot.com/ja-jp/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"
+    "u": null
    },
    {
     "t": "Hotel Zum Burghof in Schönberg.",
@@ -137,7 +151,21 @@
     "url": "https://www.komoot.com/ja-jp/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"
    }
   ],
-  "gap": ""
+  "gap": "",
+  "gpx": [
+   {
+    "t": "Officiële GPX Vennbahn-lus 8 'Zwischen Our und Amel' vanuit Sankt Vith (vennbahn.eu)",
+    "u": "https://www.vennbahn.eu/wp-content/uploads/2022/04/Zwischen-Our-und-Amel.gpx"
+   },
+   {
+    "t": "Komoot-collectie van Gijs Hardeman, Vennbahn-Variant (5 etappes), 355 km, 4.540 m",
+    "u": "https://www.komoot.com/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"
+   },
+   {
+    "t": "Komoot-gravelroute Saint Vith Town Centre – Koderbach vanuit Sankt Vith, 31 km, 535 m",
+    "u": "https://www.komoot.com/smarttour/27616866"
+   }
+  ]
  },
  "brocken": {
   "base": [
@@ -188,12 +216,12 @@
     "u": "https://www.harzinfo.de/erlebnisse/wandern/die-wege-zum-brocken"
    },
    {
-    "t": "De Brockenstraße vanaf Schierke is nieuw geasfalteerd; grindalternatieven zijn de alte Schierker Straße (start bij Ehrenfriedhof Oderhaus, B4) en de nieuwe Goetheweg vanaf Schierke.",
-    "u": "https://www.quaeldich.de/paesse/brocken/befahrungen/westauffahrt-vom-torfhaus-schotter/"
+    "t": "De Brockenstraße vanaf Schierke is geasfalteerd (sinds 2011/2012); het grindalternatief is de Neue Goetheweg langs het spoor vanaf Torfhaus, fijn grind, door een rijder op 28 mm gereden.",
+    "u": "https://www.quaeldich.de/paesse/brocken/kommentare/"
    },
    {
-    "t": "Nationalpark Harz: fietsen alleen op aangewezen wegen.",
-    "u": "https://www.komoot.com/highlight/471452"
+    "t": "Nationalpark Harz: fietsen is toegestaan op de meeste wandelwegen; uitzonderingen staan ter plaatse aangegeven.",
+    "u": "https://www.nationalpark-harz.de/de/natur-erleben/verhalten-im-nationalpark.php"
    }
   ],
   "quotes": [
@@ -210,12 +238,26 @@
     "url": "https://www.rennrad-news.de/forum/threads/brocken-harz-goetheweg.185684/"
    }
   ],
-  "gap": "Contradictie: de één vindt de Goetheweg vanaf Torfhaus te grof voor smalle banden, een ander reed de Schierke-kant probleemloos op 36 mm."
+  "gap": "Contradictie: de één vindt de Goetheweg vanaf Torfhaus te grof voor smalle banden, een ander reed de Schierke-kant probleemloos op 36 mm.",
+  "gpx": [
+   {
+    "t": "Komoot-gravelroute 'Neuer Goetheweg loop from Torfhaus', 16,7 km, 350 m",
+    "u": "https://www.komoot.com/smarttour/23627943"
+   },
+   {
+    "t": "Komoot-tour van The Gravel Fest, '2022 FEST 60' (Brocken-omgeving), 68,5 km, 1.410 m",
+    "u": "https://www.komoot.com/de-de/tour/750074600"
+   },
+   {
+    "t": "Komoot-tour van The Gravel Fest, '2022 FEST 120' met Brockenauffahrt, 117 km, 2.720 m",
+    "u": "https://www.komoot.com/de-de/tour/658941842"
+   }
+  ]
  },
  "nordschwarzwald": {
   "base": [
    {
-    "t": "Baiersbronn (officiële gravelroute start hier), Achern of Ottenhöfen. Wander-Informationszentrum Baiersbronn, tel. +49 7442 8414-66.",
+    "t": "Baiersbronn (officiële gravelroute start op de Rosenplatz); Achern of Ottenhöfen als alternatief aan de westkant.",
     "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
    }
   ],
@@ -244,17 +286,17 @@
   "food": [
    {
     "t": "Mummelsee-Hotel en restaurants langs de Schwarzwaldhochstraße B500.",
-    "u": "https://www.schwarzwald-informationen.de/nationalpark-nordschwarzwald/schliffkopf-grinden.html"
+    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
    }
   ],
   "season": [
    {
-    "t": "Hoogste punt 1163 m (Hornisgrinde), laagste 458 m; route is niet bewegwijzerd.",
+    "t": "Hoogste punt 1163 m (Hornisgrinde), laagste 458 m; 70 km, 1.013 hm; ondergrond 47% asfalt, 19% fijn grind, 27% natuurpad.",
     "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
    },
    {
     "t": "Seizoensgebonden afsluitingen in Wildschutzgebieten, vooral in de winter — checken via het Wander-Informationszentrum.",
-    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+    "u": null
    }
   ],
   "quotes": [
@@ -262,15 +304,29 @@
     "who": "Reviewer, Climbfinder",
     "q": "Coming back by the Hornisgrinde brings you at the bottom very fast",
     "tr": "Terug via de Hornisgrinde ben je razendsnel beneden",
-    "url": "https://climbfinder.com/de/anstiege/schliffkopf-ottenhofen-im-schwarzwald"
+    "url": "https://climbfinder.com/en/climbs/schliffkopf-ottenhofen-im-schwarzwald"
    }
   ],
-  "gap": "Weinig gravel-specifieke ooggetuigenverslagen; waterpunten en accommodatie zijn nog onbevestigd."
+  "gap": "Weinig gravel-specifieke ooggetuigenverslagen; waterpunten en accommodatie zijn nog onbevestigd.",
+  "gpx": [
+   {
+    "t": "Officiële GPX Baiersbronner Hornisgrinde Gravel (Schwarzwald Tourismus), 70 km, 1.013 m",
+    "u": "https://www.schwarzwald-tourismus.info/touren/baiersbronner-hornisgrinde-gravel-423799164f"
+   },
+   {
+    "t": "Komoot-route Baiersbronn Hornisgrinde Gravel van Baiersbronn Touristik, 70,1 km, 1.180 m",
+    "u": "https://www.komoot.com/smarttour/e2033912531/baiersbronner-hornisgrinde-gravel"
+   },
+   {
+    "t": "Komoot-gravelroute Schliffkopf 1000-meter Trail – Sandkopf vanuit Wilder See/Hornisgrinde, 35 km, 630 m",
+    "u": "https://www.komoot.com/smarttour/33715420"
+   }
+  ]
  },
  "grandballon": {
   "base": [
    {
-    "t": "Munster, Guebwiller of La Bresse. Col de la Schlucht (1135 m) is een strategisch kruispunt en goede uitvalsbasis.",
+    "t": "Munster of La Bresse; Col de la Schlucht (1135 m) is een strategisch kruispunt en goede uitvalsbasis.",
     "u": "https://mlclabresse.fr/route-des-cretes-vosges/"
    },
    {
@@ -334,7 +390,21 @@
     "url": "https://www.utagawavtt.com/randonnee-vtt-gps/Boucle-Thann-Grand-Ballon-6566"
    }
   ],
-  "gap": ""
+  "gap": "",
+  "gpx": [
+   {
+    "t": "UtagawaVTT-track van manufoucault, Boucle Thann – Grand Ballon, 33 km, 1.150 m (GPX-download)",
+    "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Boucle-Thann-Grand-Ballon-6566"
+   },
+   {
+    "t": "Komoot-route Markstein – Grand Ballon vanuit Buhl, 52,5 km, 1.170 m (vooral verhard)",
+    "u": "https://www.komoot.com/smarttour/42802192"
+   },
+   {
+    "t": "Komoot-etappes van Recto Verso, Tour des Ballons des Vosges in 5 dagen vanuit Thann, 162 km, 4.800 m",
+    "u": "https://www.komoot.fr/tour/833037089"
+   }
+  ]
  },
  "planche": {
   "base": [
@@ -349,7 +419,7 @@
   ],
   "sleep": [
    {
-    "t": "Hôtel-Restaurant du Sommet op de top van de Ballon d'Alsace: 24 kamers, 63 personen, hele jaar open, met afgesloten fietsgarage; tel. 03 84 29 30 60, menu € 15–34.",
+    "t": "Hôtel-Restaurant du Sommet op de top van de Ballon d'Alsace (1180 m): 24 kamers, restaurant met 150 couverts, menu vanaf € 25; gesloten half november tot half december; tel. 03 84 29 30 60.",
     "u": "http://www.hotelrestaurantdusommet.com/"
    },
    {
@@ -379,7 +449,7 @@
     "u": "https://park4night.com/en/place/83719"
    },
    {
-    "t": "EV: Plancher-les-Mines heeft één publieke laadpaal.",
+    "t": "EV: Chargemap telt 2 publieke laadpunten in Plancher-les-Mines.",
     "u": "https://fr.chargemap.com/cities/plancher-les-mines-FR"
    },
    {
@@ -397,8 +467,8 @@
     "u": "https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"
    },
    {
-    "t": "Ballon d'Alsace-kant: Source des Sapins op 1128 m, ± 1,9 km van de top.",
-    "u": "https://www.refuges.info/point/7316/sommet/Vosges/Ballon-d-Alsace/"
+    "t": "Ballon d'Alsace-kant: Source des Sapins op 1128 m, ± 1,1 km onder de fontein op de Col du Ballon d'Alsace.",
+    "u": "https://dorsdehors.com/point-d-eau/source-des-sapins"
    }
   ],
   "food": [
@@ -407,8 +477,8 @@
     "u": "https://www.visorando.com/randonnee-la-planche-des-belles-filles-a-partir-de/"
    },
    {
-    "t": "Op de top van de Super Planche 's ochtends vroeg geen betrouwbare horeca; Hôtel du Sommet op de Ballon d'Alsace is het hele jaar open.",
-    "u": "http://www.hotelrestaurantdusommet.com/"
+    "t": "Bar-restaurant onderaan de Planche alleen in het weekend open (dagelijks in juli-augustus); Hôtel du Sommet op de Ballon d'Alsace is open behalve half november tot half december.",
+    "u": "https://www.visorando.com/randonnee-la-planche-des-belles-filles-a-partir-de/"
    }
   ],
   "season": [
@@ -426,16 +496,30 @@
     "who": "mboeck, Climbfinder",
     "q": "Ik viel uiteindelijk stil en ben de laatste 30 meter maar gewoon omhoog gerend",
     "tr": "",
-    "url": "https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"
+    "url": "https://climbfinder.com/nl/beklimmingen/planche-des-belles-filles-plancher-les-mines"
    },
    {
     "who": "BlueF0x_J, Climbfinder",
     "q": "de tent boven op Planche was nog dicht om 10u in de ochtend",
     "tr": "",
-    "url": "https://climbfinder.com/us/climbs/planche-des-belles-filles-plancher-les-mines"
+    "url": "https://climbfinder.com/nl/beklimmingen/planche-des-belles-filles-plancher-les-mines"
    }
   ],
-  "gap": ""
+  "gap": "",
+  "gpx": [
+   {
+    "t": "Officiële GPX van Haute-Saône Tourisme, Montée de la Planche des Belles Filles, 7 km, 614 m",
+    "u": "https://en.hautesaonetourisme.com/offers/montee-de-la-planche-des-belles-filles-plancher-les-mines-en-5225868/"
+   },
+   {
+    "t": "Komoot-route La Planche des Belles Filles – Ballon de Servance vanuit Servance-Miellin, 71,8 km, 2.050 m (deels onverhard)",
+    "u": "https://www.komoot.com/smarttour/4333581"
+   },
+   {
+    "t": "Komoot-gravelroute Ballon d'Alsace – Col du Ballon d'Alsace vanuit Giromagny, 56 km, 1.390 m",
+    "u": "https://www.komoot.com/smarttour/23674330"
+   }
+  ]
  },
  "feldberg": {
   "base": [
@@ -472,7 +556,7 @@
   ],
   "food": [
    {
-    "t": "Berggasthof Stübenwasen (1270 m), Todtnauer Hütte, Raimartihof en Hinterwaldkopfhütte.",
+    "t": "Berggasthof Stübenwasen (1270 m), St. Wilhelmer Hütte (1423 m, hoogste Almhütte van Baden-Württemberg) en Zastler Hütte in de afdaling.",
     "u": "https://www.chilli-freiburg.de/specials/freizeit-in-der-region/freizeit-in-der-regio/dem-himmel-so-nah-radtour-vom-schauinsland-zum-feldberg/"
    }
   ],
@@ -482,21 +566,22 @@
     "u": "https://www.hochschwarzwald.de/erleben/radfahren/radtouren-im-hochschwarzwald"
    }
   ],
-  "quotes": [
+  "quotes": [],
+  "gap": "",
+  "gpx": [
    {
-    "who": "Reviewer, Outdooractive",
-    "q": "Der Trail parallel zur Bahnlinie war heute stark zugewachsen",
-    "tr": "Het pad langs de spoorlijn was vandaag sterk dichtgegroeid",
-    "url": "https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/"
+    "t": "Officiële GPS-track 'Der Feldberg und der Schauinsland (Gravelbike Tour)', Schwarzwaldregion Belchen, 69,9 km, 1.891 m",
+    "u": "https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"
    },
    {
-    "who": "Reviewer, Outdooractive",
-    "q": "eine steile Schotterrampe hoch, mit der die meisten Rennradreifen überfordert sein sollten",
-    "tr": "een steile grindramp waar de meeste racebanden het bij afleggen",
-    "url": "https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/"
+    "t": "Komoot-tour van Tillmann, Feldberg über Kirchzarten und Rückfahrt über Schauinsland, 64,4 km, 1.840 m",
+    "u": "https://www.komoot.com/de-de/tour/48997889"
+   },
+   {
+    "t": "Komoot-gravelroute Feldsee – Feldberg Summit vanuit Todtnauberg, 32 km, 920 m",
+    "u": "https://www.komoot.com/smarttour/23629481"
    }
-  ],
-  "gap": ""
+  ]
  },
  "colombygex": {
   "base": [
@@ -513,7 +598,7 @@
   ],
   "park": [
    {
-    "t": "Gratis parking op de Col de la Faucille; ook parking du Pailly nabij de col.",
+    "t": "Gratis parking op de Col de la Faucille (start van de wandelroute naar Colomby de Gex).",
     "u": "https://www.paysdegex-montsjura.com/en/routes-and-trails/walking-tour-la-faucille-colomby-de-gex/"
    },
    {
@@ -543,7 +628,7 @@
     "u": "https://www.montagnes-du-jura.fr/itineraires-pedestres/randonnee-pedestre-la-faucille-colomby-de-gex"
    },
    {
-    "t": "Réserve naturelle de la Haute Chaîne du Jura: honden verboden; de bosstrook tussen de route de la Maréchaude en de kammen is zone de quiétude en niet toegankelijk van 15/12 tot 15/05.",
+    "t": "Réserve naturelle de la Haute Chaîne du Jura: honden verboden, ook aangelijnd (Pays de Gex). De bosstrook tussen de route de la Maréchaude en de kammen is zone de quiétude: in de winter alleen op gemarkeerde routes.",
     "u": "https://skitour.fr/topos/2899"
    }
   ],
@@ -561,19 +646,29 @@
     "url": "https://www.cols-cyclisme.com/jura/france/col-de-la-faucille-depuis-gex-c587.htm"
    }
   ],
-  "gap": ""
+  "gap": "",
+  "gpx": [
+   {
+    "t": "Bikemap-route van Will (cycling-challenge), 'Faucille unpaved, Colomby de Gex', 34,7 km, 1.216 m",
+    "u": "https://www.bikemap.net/en/r/4062103/"
+   },
+   {
+    "t": "Komoot-gravelroute 'Across the Swiss and French Jura on a gravel bike', 142 km, 2.640 m (passeert de Faucille-zone, niet de kam)",
+    "u": "https://www.komoot.com/smarttour/e1646159261/across-the-swiss-and-french-jura-on-a-gravel-bike"
+   }
+  ]
  },
  "valmora": {
   "base": [
    {
     "t": "Santa Maria Val Müstair (CH), Bormio of Livigno (IT); de tour start meestal in Müstair of Sta. Maria.",
-    "u": "https://www.outdooractive.com/de/route/mountainbike/engadin-samnaun-val-muestair/muestair-umbrailpass-bocchetta-di-forcola-val-mora-muestair/800995414/"
+    "u": "https://unterwegs.sob.ch/de/tour/muestair-umbrailpass-bocchetta-di-forcola-val-mora-muestair"
    }
   ],
   "sleep": [
    {
     "t": "Accommodatie in Sta. Maria Val Müstair; de Gästekarte Val Müstair geeft gratis openbaar vervoer.",
-    "u": "https://www.ride-mtb.com/en/node/35268"
+    "u": null
    }
   ],
   "park": [
@@ -582,7 +677,7 @@
     "u": null
    },
    {
-    "t": "PostAuto-shuttle naar de Umbrailpass, lijn 90.821 Tirano–Bormio–Stelvio–Sta. Maria–Müstair; fietsreservering verplicht tot 19 uur de vorige dag.",
+    "t": "PostAuto-shuttle naar de Umbrailpass bespaart de klim vanuit Sta. Maria; vooraf online reserveren voor de fiets. Lijnnummer en reserveringsdeadline onbevestigd.",
     "u": "https://www.bergfex.com/sommer/lombardei/touren/mountainbike/2304184,bocchetta-di-forcola--bocchetta-di-pedenolo--val-mora-singletrailgarantie-und-spuren-des-1-weltkrieg/"
    }
   ],
@@ -594,8 +689,8 @@
   ],
   "food": [
    {
-    "t": "Einkehrmöglichkeit bij Lago di Fraele; Ristorante Solena in San Giacomo.",
-    "u": "https://www.ride-mtb.com/en/node/35268"
+    "t": "Pauzeplek onderweg: Rifugio Val Fraele bij San Giacomo di Fraele (1955 m), aan de Cancano-meren.",
+    "u": "https://www.bergfex.com/sommer/lombardei/touren/mountainbike/2304184,bocchetta-di-forcola--bocchetta-di-pedenolo--val-mora-singletrailgarantie-und-spuren-des-1-weltkrieg/"
    }
   ],
   "season": [
@@ -610,21 +705,23 @@
     "q": "da qui in poi non ci sono più fontane sino alla fine dell'itinerario!",
     "tr": "vanaf hier zijn er geen fonteinen meer tot het eind van de route!",
     "url": "https://community.mtb-mag.com/t/val-mora-bocchetta-di-forcola.48154/"
-   },
-   {
-    "who": "Ride-MTB (DE)",
-    "q": "Postauto bis Umbrail-Pass für Biker -> Reservation obligatorisch bis am Vortag 19 h",
-    "tr": "PostAuto tot de Umbrailpass: reserveren verplicht tot 19 uur de dag ervoor",
-    "url": "https://www.ride-mtb.com/en/node/35268"
-   },
-   {
-    "who": "Reviewer, Ride-MTB",
-    "q": "Der Kiesweg-Anteil ist bei gefühlten 100%… Einmal und nie wieder!",
-    "tr": "Het aandeel grindweg voelt als 100%… Eén keer en nooit weer!",
-    "url": "https://www.ride-mtb.com/en/node/35268"
    }
   ],
-  "gap": "Contradictie: dezelfde tour wordt door de één landschappelijk grandioos genoemd en door de ander als eentonig grindwerk afgedaan."
+  "gap": "Contradictie: dezelfde tour wordt door de één landschappelijk grandioos genoemd en door de ander als eentonig grindwerk afgedaan.",
+  "gpx": [
+   {
+    "t": "Komoot-route 'Val Mora Gravel Tour' van Switzerland Tourism, 56,2 km, 1.570 m (41 km onverhard)",
+    "u": "https://www.komoot.com/smarttour/e1002317858/val-mora-gravel-tour"
+   },
+   {
+    "t": "SOB-tour Muestair - Umbrailpass - Bocchetta di Forcola - Val Mora, 69,5 km, 2.285 m (GPX)",
+    "u": "https://unterwegs.sob.ch/de/tour/muestair-umbrailpass-bocchetta-di-forcola-val-mora-muestair"
+   },
+   {
+    "t": "Komoot-tour van Gravel Club (Stelvio - Umbrail - Forcola - Cancano - Val Mora), 118 km, 2.640 m",
+    "u": "https://www.komoot.com/tour/452544801"
+   }
+  ]
  },
  "valviola": {
   "base": [
@@ -639,12 +736,12 @@
   ],
   "sleep": [
    {
-    "t": "Rifugio Viola op 2314 m, familie Fraquelli sinds 1972: warme douche, pinbetaling mogelijk, oplaadpunt voor e-bikes.",
-    "u": "https://www.rifugioviola.it/"
+    "t": "Rifugio Viola op 2314 m, familie Fraquelli sinds 1972: slaapzaal met 16 bedden en kamer met 6 bedden, douche; halfpension € 60-75 (zomer 2026), reserveren met aanbetaling verplicht.",
+    "u": "https://www.rifugioviola.it/pernottamento"
    },
    {
-    "t": "Reservering aanbevolen in weekends en in augustus.",
-    "u": "https://www.rifugioviola.it/bici"
+    "t": "Overnachten: reserveren is altijd verplicht (aanbetaling); fietsverhuur Rent a Bike Arnoga: vooraf reserveren in weekends en augustus.",
+    "u": "https://www.rifugioviola.it/pernottamento"
    },
    {
     "t": "Ook Rifugio Federico in het fondovalle, Agriturismo Baita Caricc en Hotel di Arnoga bij het startpunt.",
@@ -673,7 +770,7 @@
   ],
   "food": [
    {
-    "t": "Rifugio Viola serveert Valtellinese gerechten, waaronder polenta; shuttle-contact Armando 335 7696100.",
+    "t": "Rifugio Viola serveert lunch met typische Valtellinese producten (rifugioviola.it); shuttle Arnoga-Altumeira: Armando 335 7696100 of Michel 349 7179743.",
     "u": "https://www.saliinvetta.com/trekking/italia/lombardia/rifugio-viola/2132-rifugio-viola-da-arnoga-altumeira-so"
    }
   ],
@@ -698,10 +795,24 @@
     "who": "Rifugio Viola",
     "q": "Si consiglia la prenotazione anticipata soprattutto nei weekend",
     "tr": "Vooraf reserveren wordt aangeraden, zeker in het weekend",
-    "url": "https://www.rifugioviola.it/bici"
+    "url": "https://www.rifugioviola.it/pernottamento"
    }
   ],
-  "gap": "Weinig zuivere gravelverslagen; de meeste bronnen zijn MTB- of wandelverslagen."
+  "gap": "Weinig zuivere gravelverslagen; de meeste bronnen zijn MTB- of wandelverslagen.",
+  "gpx": [
+   {
+    "t": "GPX-download van Bormio Bike (Val Viola Bormina: Arnoga-Altumeira-Rifugio Viola-Dosdè-Arnoga), 19,2 km, 823 m",
+    "u": "https://www.bormiobike.it/IT/tracciato/la-val-viola.aspx"
+   },
+   {
+    "t": "Training.camp-route van marco (Passo della Vallaccia e Val Viola, met GPX), 75 km, 1.900 m",
+    "u": "https://training.camp/it/route/2825/passo-della-vallaccia-e-val-viola-/"
+   },
+   {
+    "t": "Trailforks-trail Passo Viola #32 (Trans-Altarezia etappe Arnoga-Poschiavo), 4,3 km, 253 m",
+    "u": "https://www.trailforks.com/trails/passo-viola/"
+   }
+  ]
  },
  "pfitscherjoch": {
   "base": [
@@ -720,12 +831,12 @@
     "u": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
    },
    {
-    "t": "30 slaapplaatsen plus 10 noodbedden; geopend medio juni tot medio oktober, overnachten tot eind september.",
-    "u": "https://www.mayrhofen.at/en/service-providers/pfitscherjochhaus-2276m-pfitsch"
+    "t": "30 slaapplaatsen plus 10 noodbedden; geopend medio juni tot medio oktober (Hoehenrausch); overnachten tot eind september, daarna alleen dagbedrijf (Mayrhofen).",
+    "u": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
    },
    {
-    "t": "Adres Val di Vizze 138/a, 39049 Pfitsch; tel. +39 0472 630 119.",
-    "u": "https://www.hdsports.org/berghuetten/pfitscher-joch-haus-rifugio-passo-di-vizze"
+    "t": "Adres St. Jakob 103, I-39049 Pfitsch; tel. +39 0472 630 119, mobiel +39 333 840 4587.",
+    "u": "https://www.pfitscherjochhaus.com/de/kontakt/"
    },
    {
     "t": "Reserveren via de eigen site van de hut.",
@@ -774,7 +885,13 @@
     "url": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
    }
   ],
-  "gap": ""
+  "gap": "",
+  "gpx": [
+   {
+    "t": "Quäldich-passpagina met kaart en profiel (Sterzing-Pfitscher Joch), 33 km, 1.348 m; geen directe GPX, wel Tourenplaner",
+    "u": "https://www.quaeldich.de/paesse/pfitscher-joch/"
+   }
+  ]
  },
  "montsdarree": {
   "base": [
@@ -789,7 +906,7 @@
   ],
   "sleep": [
    {
-    "t": "Hôtel du Lac in Huelgoat, drie sterren, 200 m van de Chaos du Moulin; kamers € 61–118.",
+    "t": "Hôtel du Lac in Huelgoat, twee sterren, 200 m van de Chaos du Moulin; kamers € 61–118.",
     "u": "https://www.hoteldulac-huelgoat.com/"
    },
    {
@@ -847,7 +964,21 @@
     "url": "https://www.lesroch.org/reco-roch-n1-gravel-65-km/"
    }
   ],
-  "gap": "Permanente waterpunten zijn onbevestigd; wat online staat zijn evenementbevoorradingen."
+  "gap": "Permanente waterpunten zijn onbevestigd; wat online staat zijn evenementbevoorradingen.",
+  "gpx": [
+   {
+    "t": "Officiële GPX van VTT en Finistère, GIT 'Crêtes Complètes' (Monts d'Arrée), 73 km",
+    "u": "https://vttenfinistere.fr/wp-content/uploads/2026/04/GITVTT-Bretagne-Finistere-Montarr-Cretes-Completes-73-km-2026.gpx"
+   },
+   {
+    "t": "Officiële GPX van VTT en Finistère, GIT 'Coeur Monts d'Arrée', 96 km",
+    "u": "https://vttenfinistere.fr/wp-content/uploads/2026/04/GITVTT-Bretagne-Finistere-Montarr-Coeur-Monts-Arree-96-km-2026-1-1.gpx"
+   },
+   {
+    "t": "Komoot-MTB-route 'Gouffre de Huelgoat – Roc'h Trevezel loop from Huelgoat', 96,8 km, 1.530 m",
+    "u": "https://www.komoot.com/smarttour/39339452"
+   }
+  ]
  },
  "sommeiller": {
   "base": [
@@ -862,11 +993,11 @@
   ],
   "sleep": [
    {
-    "t": "Rifugio Camillo Scarfiotti, 2165 m, eigendom van CAI Torino: 24 slaapplaatsen, lakenzak verplicht, warme douches, wifi.",
+    "t": "Rifugio Camillo Scarfiotti, 2165 m: 24 slaapplaatsen, lakenzak of slaapzak verplicht (te koop in het rifugio), warme douches. Was dicht voor werkzaamheden; heropening voorzien zomer 2026.",
     "u": "https://rifugidelpiemonte.it/rifugio-scarfiotti/"
    },
    {
-    "t": "Reserveren via CAI, tel. 02 2057231.",
+    "t": "Reserveren via prenotarifugi.cai.it of tel. +39 0122 901892 / +39 339 3506816; in 2026 dagelijks open van juni tot eind september.",
     "u": "https://www.prenotarifugi.cai.it/dettaglio/Rifugio+Scarfiotti/?id=5844"
    },
    {
@@ -881,7 +1012,7 @@
    },
    {
     "t": "Ook parkeren mogelijk bij Picreaux en op de Colle zelf.",
-    "u": "https://www.outdooractive.com/en/route/offroad/bardonecchia/bardonecchia-sommeiller-pass/800741105/"
+    "u": null
    },
    {
     "t": "EV-laden onbevestigd.",
@@ -902,8 +1033,8 @@
   ],
   "season": [
    {
-    "t": "De weg Rochemolles–Colle Sommeiller is tolplichtig (€ 8 voor motorvoertuigen), 1 juli tot 30 september, 8:30–18:00.",
-    "u": "https://www.lagendanews.com/bardonecchia-attivo-il-pedaggio-per-la-strada-piu-alta-deuropa-verso-il-colle-del-sommeiller/"
+    "t": "De weg Rochemolles-Colle del Sommeiller is 1 juli-30 september tolplichtig voor motorvoertuigen (EUR 8 in 2025, EUR 10 contant in 2026), 8:30-18:00; 1 mei-30 juni en 1 okt-30 nov open als het wegdek het toelaat.",
+    "u": "https://bardonecchia.it/en/off-road-routes/colle-del-sommeiller/"
    },
    {
     "t": "Gemeentelijke communicatie meldt sluiting voor motorvoertuigen op dinsdag én donderdag; andere bronnen noemen alleen donderdag. Controleer de gemeentesite vóór vertrek.",
@@ -934,27 +1065,37 @@
     "url": "https://www.gulliver.it/itinerari/sommeiller-colle-dal-rifugio-scarfiotti/2025/07/11/324394/"
    }
   ],
-  "gap": "Contradictie over de autovrije dagen: gemeente noemt dinsdag én donderdag, andere bronnen alleen donderdag."
+  "gap": "Contradictie over de autovrije dagen: gemeente noemt dinsdag én donderdag, andere bronnen alleen donderdag.",
+  "gpx": [
+   {
+    "t": "Komoot-route 'Colle del Sommeiller' (gravel, vanaf Bardonecchia), 56,8 km, 1.810 m",
+    "u": "https://www.komoot.com/smarttour/e1030357638/colle-del-sommeiller"
+   },
+   {
+    "t": "Officiele routebeschrijving gemeente Bardonecchia, 26 km (7 km asfalt / 19 km grind), met verkeersregeling 2026",
+    "u": "https://bardonecchia.it/en/off-road-routes/colle-del-sommeiller/"
+   }
+  ]
  },
  "rochilles": {
   "base": [
    {
     "t": "Valloire; de klim begint bij Plan Lachat aan de Galibier-weg. Seuil des Rochilles ligt op 2459 m.",
-    "u": "https://refugedesdrayeres.ffcam.fr/"
+    "u": "https://www.cycling-challenge.com/col-hunting-behind-le-grand-galibier/"
    },
    {
     "t": "Gîte Le Refuge in Valloire ligt 3 km van het centrum.",
-    "u": "https://www.gites-de-france-savoie.com/Hebergements/gite/le-refuge-73G306255.html"
+    "u": null
    }
   ],
   "sleep": [
    {
-    "t": "Refuge des Drayères (FFCAM), 2180 m, aan de Clarée-kant achter de Rochilles: 64 slaapplaatsen, demi-pension € 63.",
+    "t": "Refuge des Drayères (FFCAM), 2180 m, aan de Clarée-kant achter de Rochilles: 60 slaapplaatsen in dortoirs van 4, 6 en 8; demi-pension € 63 (tarief 2026, paysages-hautesalpes.fr).",
     "u": "https://refugedesdrayeres.ffcam.fr/"
    },
    {
-    "t": "Bewaakt van 17 juni tot 27 september 2026; online reserveren aanbevolen.",
-    "u": "https://refugedesdrayeres.ffcam.fr/reservation.html"
+    "t": "Bewaakt in de zomer van begin juni tot half september (winter: begin februari tot half april); online reserveren via FFCAM.",
+    "u": "https://refugedesdrayeres.ffcam.fr/"
    },
    {
     "t": "Lakenzak (drap de sac) is verplicht.",
@@ -962,7 +1103,7 @@
    },
    {
     "t": "In Valloire: Gîte Le Refuge, negen logementen, sauna, schoendroger, lakens inbegrepen.",
-    "u": "https://www.gites-de-france-savoie.com/Hebergements/gite/le-refuge-73G306255.html"
+    "u": null
    }
   ],
   "park": [
@@ -974,7 +1115,7 @@
   "water": [
    {
     "t": "Refuge des Drayères: gratis drinkwater en heet water voor thermosflessen.",
-    "u": "https://outtrip.fr/refuge-garde/refuge-des-drayeres"
+    "u": null
    },
    {
     "t": "De bron van de Clarée ligt vlak bij het refuge. Exacte fonteinen op de klim vanaf Plan Lachat: onbevestigd.",
@@ -983,14 +1124,14 @@
   ],
   "food": [
    {
-    "t": "Refuge des Drayères biedt demi-pension, picknick, middag- en avondmaal en een kleine épicerie, op reservering.",
+    "t": "Refuge des Drayères: demi-pension, avondmaal, ontbijt en picknick (tarieven 2023 op Outtrip); maaltijden op reservering.",
     "u": "https://outtrip.fr/refuge-garde/refuge-des-drayeres"
    }
   ],
   "season": [
    {
-    "t": "Refuge bewaakt van 17 juni tot 27 september 2026.",
-    "u": "https://refugedesdrayeres.ffcam.fr/reservation.html"
+    "t": "Refuge bewaakt van begin juni tot half september (zomer; FFCAM-homepage).",
+    "u": "https://refugedesdrayeres.ffcam.fr/"
    },
    {
     "t": "In de winter vergt toegang twaalf kilometer lopen vanaf Névache.",
@@ -1011,13 +1152,19 @@
     "url": "https://skitour.fr/refuges/34"
    }
   ],
-  "gap": "Weinig eerstehands gravelverslagen specifiek voor de klim Plan Lachat – Rochilles."
+  "gap": "Weinig eerstehands gravelverslagen specifiek voor de klim Plan Lachat – Rochilles.",
+  "gpx": [
+   {
+    "t": "Komoot-smarttour (gepland door komoot, met GPX-download) Vallée de Clarée - Col des Rochilles - oude Galibier-weg, 84 km, 2.060 m",
+    "u": "https://www.komoot.com/smarttour/e1030354455/vallee-de-claree-col-des-rochilles-et-ancienne-route-du-galibier"
+   }
+  ]
  },
  "jandri": {
   "base": [
    {
     "t": "Les Deux Alpes (klim start bij Alpe du Mont-de-Lans) of Bourg d'Oisans / Le Clapier voor de volledige stijging van ± 2734 m.",
-    "u": "https://www.centcols.org/libre_service/jandri/col_du_jandri.htm"
+    "u": "https://centcols.org/en/the-jandri-pass/"
    },
    {
     "t": "Col du Jandri ligt op ± 3150 m.",
@@ -1073,7 +1220,7 @@
     "who": "Centcols (FR)",
     "q": "très souvent caillouteuse, poussiéreuse et pentue, elle impose parfois la marche",
     "tr": "vaak steenachtig, stoffig en steil; soms moet je lopen",
-    "url": "https://www.centcols.org/libre_service/jandri/col_du_jandri.htm"
+    "url": "https://centcols.org/fr/le-col-du-jandri/"
    },
    {
     "who": "Alpes4ever (FR)",
@@ -1082,7 +1229,21 @@
     "url": "https://alpes4ever.com/france/isere/les-plus-de-3000-m/col-du-jandri/"
    }
   ],
-  "gap": "Accommodatie, waterpunten en EV-laadinfrastructuur zijn nog onbevestigd."
+  "gap": "Accommodatie, waterpunten en EV-laadinfrastructuur zijn nog onbevestigd.",
+  "gpx": [
+   {
+    "t": "Komoot-route 'Les 2 Alpes Bike Park and Col du Jandri Loop', 23,6 km, 1.610 m",
+    "u": "https://www.komoot.com/smarttour/e1376458461/les-2-alpes-bike-park-and-col-du-jandri-loop"
+   },
+   {
+    "t": "Openrunner-track van hd.farcy (VTT, heen-en-terug), 28,9 km, 1.683 m",
+    "u": "https://www.openrunner.com/route-details/146235"
+   },
+   {
+    "t": "Komoot-highlight Jandri Pass met tips en routes in de buurt",
+    "u": "https://www.komoot.com/highlight/6291459"
+   }
+  ]
  },
  "finestre": {
   "base": [
@@ -1161,6 +1322,2531 @@
     "url": "https://followingmyway.blogspot.com/2015/07/il-colle-delle-finestre.html"
    }
   ],
-  "gap": ""
+  "gap": "",
+  "gpx": [
+   {
+    "t": "Komoot-tour van Niccolo (Finestre + Assietta + Oulx), 94,7 km, 2.760 m",
+    "u": "https://www.komoot.com/tour/276292166"
+   },
+   {
+    "t": "Komoot-route 'Assietta gravel ring from Susa - Salbertrand variant', 74,1 km, 2.500 m",
+    "u": "https://www.komoot.com/smarttour/e1276140692/anello-gravel-dellassietta-da-susa-variante-salbertrand"
+   },
+   {
+    "t": "Komoot-collectie van Katie-Jane L'Herpiniere, dag 2 Colle delle Finestre, 33,1 km, 1.850 m",
+    "u": "https://www.komoot.com/collection/1285096/colle-del-colombardo-and-the-colle-delle-finestre-two-of-the-italian-gravel-giants"
+   }
+  ]
+ },
+ "aigoual": {
+  "base": [
+   {
+    "t": "De piste forestière van de Col de l'Estrade is 'zeer rollend maar soms steil' en leidt rechtstreeks naar de voet van het observatorium, ter hoogte van de Menhir de Trépalou.",
+    "u": "https://lecridescevennes.fr/2023/01/22/ma-22-grimper-sur-le-mont-aigoual-en-gravel/"
+   },
+   {
+    "t": "Een GPS-getrackte lus vanaf de Col de l'Estrade (1180 m) naar de top is 30 km, 880 m stijgen/dalen, 80% onverhard/piste, UtagawaVTT-moeilijkheidsgraad rood (fysiek 5/6), e-bike geschikt zonder dragen, max. helling 18%.",
+    "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Mont-Aigoual-33821"
+   },
+   {
+    "t": "De verharde weg vanuit Meyrueis (D996/D18 via Col du Perjuret) is 26 km met 862 m stijging, gemiddeld 3,3% — dit is de parallelle asfaltroute die de meeste wielrenners nemen, niet de piste zelf.",
+    "u": "https://www.cols-cyclisme.com/cevennes/france/mont-aigoual-depuis-meyrueis-c152.htm"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Valleraugue heeft het dichtst bij de Aigoual gelegen aanbod: camping Le Mouretou en meerdere gîtes op 1 km van de bergvoet, plus tientallen kamers/gîtes binnen 10 km.",
+    "u": "https://www.tourismegard.com/destination/villes-villages/encore-plus-de-villes-et-villages/valleraugue/ou-dormir/"
+   },
+   {
+    "t": "In Meyrueis (Lozère-zijde) is camping Domaine Aigoual-Cévennes de belangrijkste optie, op 800 m van het dorpscentrum, maar dit dorp ligt aan de andere (verharde) kant van het massief, niet bij de start van de Estrade-piste.",
+    "u": "https://www.mobilhome-express.fr/camping-meyrueis-domaine-aigoual-cevennes-meyrueis/camping-103363.html"
+   },
+   {
+    "t": "Het park-gîte Aire de Côte (1080 m), vlak bij de piste, was van 2021 t/m 2024 gesloten wegens droogte en verbouwing en is sinds zomer 2025 weer open — check actuele status voor vertrek.",
+    "u": "https://www.cevennes-parcnational.fr/fr/actualites/coup-dur-aire-de-cote-nouvrira-pas-en-2024"
+   }
+  ],
+  "park": [
+   {
+    "t": "Openbaar laadpunt in Valleraugue, Avenue de l'Aigoual: 2 punten, max. 18 kW, stekkers EF/T2/T3, toegang via badge/app, betaald, hele jaar open.",
+    "u": "https://www.tourismegard.com/fr/fiche/commerce-et-service/borne-de-recharge-electrique-valleraugue-valleraugue_TFO6089186/"
+   },
+   {
+    "t": "In Meyrueis is een Freshmile-laadpunt 'Le Jardin des Cévennes' geregistreerd op Chargemap; exacte vermogen/tarief kon niet worden geopend (pagina achter betaalmuur) — onbevestigd in detail.",
+    "u": "https://fr.chargemap.com/meyrueis-route-de-la-breze.html"
+   },
+   {
+    "t": "Autoverkeer in de kernzone van het Nationaal Park Cévennes is beperkt tot aangewezen wegen/pistes; buiten die pistes rijden is overal verboden — parkeer dus bij een officiële trailhead (bv. Espérou of Aire de Côte) en fiets verder.",
+    "u": "https://www.cevennes-parcnational.fr/fr/le-parc-national-des-cevennes/la-reglementation-du-coeur/la-circulation-et-le-stationnement-des"
+   }
+  ],
+  "water": [
+   {
+    "t": "Laatste bevestigde waterpunt onderweg is het captage bij de Maison forestière d'Aire de Côte (1095 m); laatst geobserveerd 'vloeide overvloedig' (mei 2022), met een overloop-buis die ook werkt als het gîte gesloten is.",
+    "u": "https://www.refuges.info/point/8220/point-d-eau/Cevennes/Point-d-eau-de-la-Maison-forestiere-d-Aire-de-Cote/"
+   },
+   {
+    "t": "Het observatorium op de top zelf telt als hervulpunt zolang het café open is (mei–oktober, zie 'food'); buiten het seizoen is er op de top geen bevestigde waterbron.",
+    "u": "https://www.stationaltiaigoual.com/restaurant-observatoire-aigoual"
+   },
+   {
+    "t": "Het park meldt structurele droogteproblemen rond Aire de Côte — de nabijgelegen Pouset-bron neemt af 'zoals alle waterlopen in de regio', dus dit waterpunt is geen garantie in de zomer.",
+    "u": "https://www.cevennes-parcnational.fr/fr/actualites/aire-de-cote-comment-letablissement-sest-mobilise-face-au-manque-deau"
+   }
+  ],
+  "food": [
+   {
+    "t": "Restaurant/bar van het Observatoire du Mont Aigoual is seizoensgebonden: open vanaf 1 mei, dagelijks 10–17u, lunch 12–15u, daarbuiten bar/snacks — reserveren voor de lunch wordt aangeraden.",
+    "u": "https://www.stationaltiaigoual.com/restaurant-observatoire-aigoual"
+   },
+   {
+    "t": "Andere bronnen noemen een iets ruimer seizoen (18 april t/m 31 oktober) voor hetzelfde restaurant — een kleine tegenstrijdigheid met de officiële 1-mei-datum, dus check vlak voor vertrek.",
+    "u": "https://www.tourismegard.com/fr/fiche/restauration/restaurant-de-l-observatoire-l-esperou_TFO6013582/"
+   },
+   {
+    "t": "Buiten het seizoen (november–april) is er op de top geen horeca bevestigd; de dichtstbijzijnde alternatieven liggen in Valleraugue of L'Espérou onderaan.",
+    "u": null
+   }
+  ],
+  "season": [
+   {
+    "t": "In de kernzone van het park mag je fietsen op wegen, pistes en bewegwijzerde paden, maar 'hors-piste' is overal verboden wegens verstoring/schade aan het milieu — de Estrade-piste zelf is dus toegestaan zolang je op het spoor blijft.",
+    "u": "https://www.cevennes-parcnational.fr/fr/le-parc-national-des-cevennes/la-reglementation-du-coeur/la-circulation-et-le-stationnement-des"
+   },
+   {
+    "t": "Sommige routes worden door het park 'afgeraden' voor gebruiksconflicten of moeilijkheidsgraad zonder ze formeel te verbieden — check de dynamische kaart van het park vóór vertrek voor de actuele status van specifieke tracés.",
+    "u": "https://www.cevennes-parcnational.fr/fr/le-parc-national-des-cevennes/la-reglementation-du-coeur/les-activites-de-pleine-nature-0"
+   },
+   {
+    "t": "Geen enkele geraadpleegde bron meldt een actuele bosexploitatie-sluiting van de Col de l'Estrade voor 2025/2026 — dit betekent niet dat de piste gegarandeerd open is, alleen dat er geen sluitingsbericht gevonden is.",
+    "u": null
+   }
+  ],
+  "gpx": [
+   {
+    "t": "UtagawaVTT-track 'Mont Aigoual' via Col de l'Estrade, 30 km, 880 m D+/D-, 80% piste/onverhard, rood (moeilijk), e-bike geschikt, max. helling 18%.",
+    "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Mont-Aigoual-33821"
+   },
+   {
+    "t": "Le Cri des Cévennes MA-22: routebeschrijving 'Grimper sur le Mont Aigoual en gravel', volledig over bospiste via Col de l'Estrade — geen los GPX-bestand op de pagina, wel gedetailleerde routetekst.",
+    "u": "https://lecridescevennes.fr/2023/01/22/ma-22-grimper-sur-le-mont-aigoual-en-gravel/"
+   },
+   {
+    "t": "Komoot-lijst 'Mount Aigoual – Hiking & Cycling Routes' verzamelt meerdere tochten rond de berg, maar geen enkele daarvan is expliciet getagd als gravel-tocht over de Col de l'Estrade — voor nu geen kant-en-klare Komoot-GPX voor deze specifieke piste gevonden.",
+    "u": "https://www.komoot.com/highlight/756745"
+   },
+   {
+    "t": "GPX 'Aigoual gravel' van Sud Cévennes Tourisme (parcours 21, Le Vigan – L'Espérou – Col du Minier)",
+    "u": "https://www.sudcevennes.com/sejour-vacances-gard/5983011_aigoual-gravel/"
+   },
+   {
+    "t": "Komoot-highlight Mont Aigoual met gravel-tips en routes in de buurt",
+    "u": "https://www.komoot.com/highlight/5637211"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Brunoo34, UtagawaVTT, juli 2021 (bewerkt jan. 2022)",
+    "q": "Très agréable, parcours à l'ombre dans les bois",
+    "tr": "Heel aangenaam, parcours in de schaduw van het bos",
+    "url": "https://www.utagawavtt.com/randonnee-vtt-gps/Mont-Aigoual-33821"
+   },
+   {
+    "who": "Le Cri des Cévennes, blogger/rijder, jan. 2023",
+    "q": "L'accès au Mont Aigoual hors des routes n'est pas si aisé, ses reliefs acérés sont là pour nous le rappeler",
+    "tr": "De toegang tot de Mont Aigoual buiten de wegen is niet zo makkelijk, het scherpe reliëf herinnert je daar steeds aan",
+    "url": "https://lecridescevennes.fr/2023/01/22/ma-22-grimper-sur-le-mont-aigoual-en-gravel/"
+   }
+  ],
+  "gap": "Dit is vooral MTB/e-bike- en wandelmateriaal, geen gravel-specifieke bronnen op 650b x 55mm: UtagawaVTT rijdt e-MTB, cyclaigoual-event-pagina geeft alleen een indicatieve afstand (60-70 km) zonder parcoursdetails, en er is geen bevestigde Komoot/Strava-GPX exact over de Col de l'Estrade-piste gevonden — alleen routebeschrijvingen. De officiële parkregels zeggen niets specifiek over fietsen (enkel motorvoertuigen expliciet geregeld); 'hors-piste' is verboden maar de Estrade-piste zelf wordt nergens met naam vrijgegeven of gesloten verklaard. Twee bronnen spreken elkaar tegen over het seizoen van het observatorium-restaurant (1 mei vs. 18 april). Meyrueis ligt qua afstand en wegkant niet praktisch voor deze piste — Valleraugue/L'Espérou zijn de logische basissen, maar geen enkele bron bevestigt een parkeerplaats exact bij het beginpunt van de Col de l'Estrade zelf."
+ },
+ "altaviadelsale": {
+  "base": [
+   {
+    "t": "Limone Piemonte (1010 m) is de gangbare basis: start bij de parking tegenover het station, vanwaar de Alta Via del Sale via Valle Vermenagna omhoog gaat.",
+    "u": "https://cuneotrekking.com/itinerari/mtb/alta-via-del-sale-tappa-1-limone-piemonte-rifugio-don-barbera/"
+   },
+   {
+    "t": "Voor een tweedaagse is Piaggia of Upega (gemeente Briga Alta, Franse/Ligurische zijde) een logische tussenbasis dicht bij Rifugio Don Barbera, met meerdere logeeradressen.",
+    "u": "https://briga.info/prenotazioni-monesi-limone-alta-via-del-sale/"
+   },
+   {
+    "t": "Monesi di Triora is de eindbasis aan zeezijde; hier zit ook de enige noodhulp voor mechanisch mankement op de hele route.",
+    "u": "https://www.bikeitalia.it/2022/09/12/la-via-del-sale-in-mtb-25-cose-da-sapere/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Rifugio Don Barbera, 2079 m: 5 slaapzalen, 44 bedden, open van eind mei/begin juni tot oktober (afhankelijk van weer); tel. +39 0174 086157, info@rifugiodonbarbera.eu.",
+    "u": "https://briga.info/strutture/rifugio-don-barbera/"
+   },
+   {
+    "t": "Osteria La Briga in Piaggia: recent gerenoveerde kamers, restaurant, bar en winkel met lokale ingrediënten.",
+    "u": "https://briga.info/prenotazioni-monesi-limone-alta-via-del-sale/"
+   },
+   {
+    "t": "Locanda d'Upega, Via Provinciale 14, Upega: familiebedrijf met eigen badkamers per kamer.",
+    "u": "https://briga.info/prenotazioni-monesi-limone-alta-via-del-sale/"
+   },
+   {
+    "t": "In Monesi: Hotel/Rifugio La Vecchia Partenza, halfpension vanaf € 55, verhuurt ook ski's en mountainbikes.",
+    "u": "https://italiarecensioni.com/liguria/la-vecchia-partenza-276764"
+   }
+  ],
+  "park": [
+   {
+    "t": "In Limone Piemonte zelf is geen officiële camper-/autoparking; velen zetten de auto op een grasstrook langs de statale richting Colle di Tenda.",
+    "u": "https://www.camperonline.it/forum/viaggiare/aree-di-sosta-campeggi/limone-piemonte-via-del-sale/24948"
+   },
+   {
+    "t": "Alternatief: 3–4 km richting Colle di Tenda ligt bij Limonetto een grote onverharde parking; ook Vernante (10 min terug) heeft een rustige rivierparking.",
+    "u": "https://www.camperonline.it/forum/viaggiare/aree-di-sosta-campeggi/limone-piemonte-via-del-sale/24948"
+   },
+   {
+    "t": "EV: één publiek laadpunt in Limone Piemonte, Via Roma bij de Chiesa di S. Antonio, merk Enel Way «Waypump».",
+    "u": "https://www.limoneturismo.it/pagina.php?id=101&lang=ita"
+   },
+   {
+    "t": "Chargemap toont momenteel 0 apart geregistreerde laadstations in Limone Piemonte zelf — reken op het Enel-punt of laad elders in de vallei.",
+    "u": "https://chargemap.com/it-it/cities/limone-piemonte-IT"
+   }
+  ],
+  "water": [
+   {
+    "t": "Cruciaal: de route ligt volledig boven de 1000 m en heeft weinig gecontroleerd drinkwater; de enige bevestigde punten zijn Rifugio Le Marmotte, Rifugio La Terza, Rifugio Allavena en Rifugio Don Barbera.",
+    "u": "https://www.bikeitalia.it/2022/09/12/la-via-del-sale-in-mtb-25-cose-da-sapere/"
+   },
+   {
+    "t": "Fontana bij Panice Soprana, onderweg op etappe 1 vanaf Limone.",
+    "u": "https://cuneotrekking.com/itinerari/mtb/alta-via-del-sale-tappa-1-limone-piemonte-rifugio-don-barbera/"
+   },
+   {
+    "t": "Chalet Le Marmotte op 1784 m: drinkwater plus rustpunt en e-MTB-oplaadpunt.",
+    "u": "https://cuneotrekking.com/itinerari/mtb/alta-via-del-sale-tappa-1-limone-piemonte-rifugio-don-barbera/"
+   },
+   {
+    "t": "Rifugio Don Barbera (2079 m) is het laatste vaste waterpunt vóór de afdaling naar Monesi.",
+    "u": "https://briga.info/strutture/rifugio-don-barbera/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Chalet Le Marmotte (1784 m) heeft bar/eten onderweg.",
+    "u": "https://cuneotrekking.com/itinerari/mtb/alta-via-del-sale-tappa-1-limone-piemonte-rifugio-don-barbera/"
+   },
+   {
+    "t": "Rifugio Don Barbera: bar, restaurant, halfpension, ook groeps- en schoolarrangementen.",
+    "u": "https://briga.info/strutture/rifugio-don-barbera/"
+   },
+   {
+    "t": "Geen mechanische bijstand op de hele 100 km-route; enige noodadressen zijn Hotel La Vecchia Partenza in Monesi en verhuurder Bottero Ski in Limone 1400.",
+    "u": "https://www.bikeitalia.it/2022/09/12/la-via-del-sale-in-mtb-25-cose-da-sapere/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Officieel seizoen 2026 van de tolweg: 20 juni t/m 18 oktober, dagelijks 8:00–20:00 (laatste toegang 18:00) — later en korter dan de eerder aangenomen «eind mei–eind september».",
+    "u": "https://www.altaviadelsale.it/en/ticket-shop/alta-via-del-sale-2026"
+   },
+   {
+    "t": "Rifugio Don Barbera zelf hanteert een ruimer venster: open van eind mei/begin juni tot oktober of de eerste sneeuwval — een kleine tegenstrijdigheid met de tolwegdata.",
+    "u": "https://briga.info/strutture/rifugio-don-barbera/"
+   },
+   {
+    "t": "Tol bevestigd: € 20 voor auto's/quads, € 15 voor motoren, € 1 voor fietsen en e-bikes per toegangspoort — het bestaande € 1-tarief voor fietsers klopt.",
+    "u": "https://www.altaviadelsale.it/en/ticket-shop/alta-via-del-sale-2026"
+   },
+   {
+    "t": "Bevestigd: op dinsdag en donderdag de hele dag gesloten voor gemotoriseerd verkeer, wandelaars en fietsers mogen elke dag — precies zoals in climbs.json vermeld.",
+    "u": "https://www.altaviadelsale.it/en/ticket-shop/alta-via-del-sale-2026"
+   },
+   {
+    "t": "Zes toegangspoorten: Limone Piemonte, Ormea-Upega di Briga Alta, Triora, Pigna, La Brigue en Tenda.",
+    "u": "https://www.altaviadelsale.it/en/ticket-shop/alta-via-del-sale-2026"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot-tour «Alta Via del Sale Gravel – Ep 1 – Primo Giorno» van Massimo, 30,2 km, 1500 hm, zwaar; enkel stukje van 83 m waar fietsen verboden is.",
+    "u": "https://www.komoot.com/tour/1000875180"
+   },
+   {
+    "t": "Komoot-tour «L'Alta Via del Sale» van Jeanne Lepoix, volledige meerdaagse versie 94,3 km, 2760 hm, zwaar, 67,8 km onverhard.",
+    "u": "https://www.komoot.com/tour/1753828783"
+   },
+   {
+    "t": "Komoot Smarttour «Via del Sale Loop», gereden door een Torino-Nice Rally-deelnemer in 2025.",
+    "u": "https://www.komoot.com/smarttour/e1391976706/via-del-sale-loop"
+   },
+   {
+    "t": "Komoot-collectie van Situazione Gravel 'Via del Sale Limone-Ventimiglia', 2 etappes, 230 km, 5.510 m",
+    "u": "https://www.komoot.com/collection/2331038/-via-del-sale-limone-ventimiglia-gravel-mtb"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Bikeitalia-gids, 2022",
+    "q": "per 100 km non c'è un solo punto di assistenza meccanica",
+    "tr": "over de volle 100 km is er geen enkel punt voor mechanische hulp",
+    "url": "https://www.bikeitalia.it/2022/09/12/la-via-del-sale-in-mtb-25-cose-da-sapere/"
+   },
+   {
+    "who": "Yankee74, CamperOnLine-forum 2007",
+    "q": "a Limone una vera e propria area attrezzata non c'è",
+    "tr": "in Limone is er geen echt ingerichte parkeerplaats",
+    "url": "https://www.camperonline.it/forum/viaggiare/aree-di-sosta-campeggi/limone-piemonte-via-del-sale/24948"
+   },
+   {
+    "who": "luci52, CamperOnLine-forum 2007",
+    "q": "comodissimo come punto sosta tranquillo e sicuro",
+    "tr": "heel praktisch als rustige en veilige pleisterplaats",
+    "url": "https://www.camperonline.it/forum/viaggiare/aree-di-sosta-campeggi/limone-piemonte-via-del-sale/24948"
+   }
+  ],
+  "gap": "Seizoensdata verschillen per bron: de officiële tolweg meldt 2026 pas open van 20 juni tot 18 oktober, terwijl Rifugio Don Barbera zelf eind mei/begin juni–oktober aanhoudt en climbs.json uitging van eind mei–eind september — check bij vertrek de actuele data op altaviadelsale.it. Toegangsdagen (di/do autovrij) en het tol van € 1/fiets zijn wél bevestigd door de officiële bron. E-MTB-laden bestaat (Chalet Le Marmotte en Rifugio Don Barbera) maar is volgens Bikeitalia traag en 's nachts soms uitgeschakeld — geen garantie voor een volle accu 's ochtends. Parkeren bij Colle di Tenda zelf is niet apart bevestigd; bronnen wijzen vooral op Limone/Limonetto/Vernante lager in de vallei. De meeste bronnen zijn MTB-, wandel- of camperforums, geen gravelspecifieke ritverslagen — dat bevestigt de voorzichtige toon in climbs.json."
+ },
+ "asiago": {
+  "base": [
+   {
+    "t": "Asiago zelf is de logische uitvalsbasis: het Stadio del Ghiaccio (ijsstadion) is het vertrekpunt en de parkeerplek voor de MTB-routes naar zowel Monte Ortigara als Zebio/Forte Interrotto.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_itinerario_per_mountain_bike_mtb_asiago_-_zebio_-_forte_interrotto/"
+   },
+   {
+    "t": "De volledige route vanaf Asiago naar de top van Monte Ortigara is 46 km met 1500-1680 hm stijging (afhankelijk van de afdaling) en een top op 2105 m - fors hoger dan de 1400 m top die in onze eigen fiche staat.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_mtb_monte_ortigara/"
+   },
+   {
+    "t": "Bassano del Grappa, zo'n uur rijden van Venetië aan de voet van de Prealpen, is het aanrijpunt dat tour-operators als vertrek-/eindstation voor de Altopiano gebruiken.",
+    "u": "https://trektravel.com/tour/cycling/italian-dolomites-gravel/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Linta Hotel Wellness & Spa in Asiago, met wellnesscentrum en restaurant met uitzicht op het dorp, dient als basishotel voor de Trek Travel gravel-tour.",
+    "u": "https://trektravel.com/tour/cycling/italian-dolomites-gravel/"
+   },
+   {
+    "t": "Rifugio Malga Campomulo (1530 m) biedt kamer-en-ontbijt; geen half pension, gasten eten à la carte in het restaurant van de rifugio zelf.",
+    "u": "https://www.asiago.it/it/rifugi/rifugio_malga_campomulo/rifugio/"
+   },
+   {
+    "t": "Camping in of bij Asiago: onbevestigd - geen aparte campingpagina gevonden op de toeristische site van de Altopiano.",
+    "u": null
+   }
+  ],
+  "park": [
+   {
+    "t": "Parkeerplaats bij het Stadio del Ghiaccio in Asiago is het aangewezen vertrekpunt voor de MTB-routes het militaire wegennet in.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_itinerario_per_mountain_bike_mtb_asiago_-_zebio_-_forte_interrotto/"
+   },
+   {
+    "t": "Rifugio Campomulo heeft een parkeerplaats met meer dan 1000 plekken op 1530 m, direct bij de ingang van het netwerk richting Marcesina en Piazzale delle Lozze.",
+    "u": "https://www.asiago.it/it/rifugi/rifugio_malga_campomulo/rifugio/"
+   },
+   {
+    "t": "EV: Chargemap telt 8 laadpunten in Asiago; één (Go Electric Stations, 22 kW) staat aan de Via Monte Zebio, vlak bij het vertrekpunt van de Zebio-route; het snelste punt is Plenitude On The Road aan Via Lavarone (tot 100 kW).",
+    "u": "https://www.chargemap.com/cities/asiago-IT"
+   }
+  ],
+  "water": [
+   {
+    "t": "Rifugio Campomulo heeft douches en toiletten - het enige bevestigde waterpunt op de route; een aparte drinkfontein wordt niet genoemd.",
+    "u": "https://www.asiago.it/it/rifugi/rifugio_malga_campomulo/rifugio/"
+   },
+   {
+    "t": "Onderweg naar Piazzale delle Lozze liggen Rifugio Malga Moline en Rifugio Barricata als mogelijke pleisterplaatsen, maar alleen \"nei periodi di apertura\" (seizoensgebonden) - waterbeschikbaarheid daar is onbevestigd.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_itinerario_per_mountain_bike_mtb_campomulo-marcesina-piazzale_lozze/"
+   },
+   {
+    "t": "Voor het stuk tussen Camporovere en de top van de Ortigara (via Val Galmarara en de baiti Bordignon/Cuvolin) wordt geen enkel waterpunt genoemd: onbevestigd.",
+    "u": null
+   }
+  ],
+  "food": [
+   {
+    "t": "Ristorante Rifugio Campomulo: dagelijks lunch van 11:30 tot 14:00 (weekend tot 15:00, niet reserveerbaar), diner alleen op reservering van 19:30 tot 20:30, tel. 0424 445115.",
+    "u": "https://www.asiago.it/it/ristoranti/rifugio-campomulo/ristorante/"
+   },
+   {
+    "t": "Rifugio Malga Moline en Rifugio Barricata langs de Campomulo-Marcesina-Lozze-route zijn eveneens eetgelegenheden, maar seizoensgebonden.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_itinerario_per_mountain_bike_mtb_campomulo-marcesina-piazzale_lozze/"
+   },
+   {
+    "t": "Free Time Asiago, in het centrum, verhuurt e-bikes en MTB's, heeft een werkplaats voor fiets en moto, en deelt gratis GPS-tracks.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_itinerario_per_mountain_bike_mtb_asiago_-_zebio_-_forte_interrotto/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Trek Travel plant de Asiago-Dolomieten gravelreis in 2027 tussen 21 juni en 28 augustus - buiten dat venster wordt het gebied niet als seizoensklaar aangeboden.",
+    "u": "https://trektravel.com/tour/cycling/italian-dolomites-gravel/"
+   },
+   {
+    "t": "De routebeschrijving naar Monte Ortigara staat op asiago.it als \"niet geverifieerd\" (laatste update 24-05-2019); de Zebio/Forte Interrotto-route is expliciet \"begaanbaar\" bevestigd op 10-06-2025, wat suggereert dat begin juni de wegen doorgaans open zijn.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_mtb_monte_ortigara/"
+   },
+   {
+    "t": "Op de laatste kilometers naar de top (sentiero 839 en 840-841) moet de fiets herhaaldelijk aan de hand of op de schouder worden genomen door rotsen en trappen - geen doorlopend berijdbare gravelroute.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_mtb_monte_ortigara/"
+   },
+   {
+    "t": "De ondersteuningsbus van Trek Travel kan de route niet overal volgen \"along mule tracks and forested roads\" - een indicatie dat delen van het traject niet met gewone voertuigen bereikbaar zijn.",
+    "u": "https://trektravel.com/tour/cycling/italian-dolomites-gravel/"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Asiago.it/Altopianobike-route \"Asiago - Monte Ortigara\", 46 km, 1500-1680 hm stijging, top 2105 m, moeilijkheidsgraad DIFFICILE.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_mtb_monte_ortigara/"
+   },
+   {
+    "t": "Asiago.it/Altopianobike-route \"Asiago - Zebio - Forte Interrotto\", 30 km, 970 hm stijging, top 1674 m, moeilijkheidsgraad MEDIO-IMPEGNATIVO.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_itinerario_per_mountain_bike_mtb_asiago_-_zebio_-_forte_interrotto/"
+   },
+   {
+    "t": "Asiago.it/Altopianobike-route \"Campomulo - Marcesina - Piazzale Lozze\", 31 km, 850 hm stijging, top 1781 m, moeilijkheidsgraad MEDIO.",
+    "u": "https://www.asiago.it/it/mountain_bike/art_itinerario_per_mountain_bike_mtb_campomulo-marcesina-piazzale_lozze/"
+   },
+   {
+    "t": "Komoot-collectie van Situazione Gravel, 'Tre giorni in gravel sull'altipiano di Asiago', 172 km, 3.810 m",
+    "u": "https://www.komoot.com/it-it/collection/1777954/-tre-giorni-in-gravel-sull-altipiano-di-asiago"
+   },
+   {
+    "t": "Komoot-gravelroute 'Asiago Dolce, un piccolo assaggio gravel in altopiano', 41 km, 680 m",
+    "u": "https://www.komoot.com/it-it/tour/437762619"
+   },
+   {
+    "t": "Komoot-gravelroute van Max, 'Altopiano di Asiago (Barricata–Forte Lisser–Gallio)', 142 km, 2.650 m",
+    "u": "https://www.komoot.com/it-it/tour/886344860"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Gordon W., Trek Travel Guest",
+    "q": "The routes were beautiful and well chosen.",
+    "tr": "De routes waren mooi en goed gekozen.",
+    "url": "https://trektravel.com/tour/cycling/italian-dolomites-gravel/"
+   }
+  ],
+  "gap": "Deze fiche leunt zwaar op één tour-operator (Trek Travel) en de lokale toeristenbond (asiago.it, i.s.m. Altopianobike) - beide schrijven voor een publiek dat begeleid en/of op MTB rijdt, niet voor losse gravelrijders op 650b x 55mm. Zoekmachines waren tijdens dit onderzoek uitgeput (WebSearch-budget op) en Wikiloc/TripAdvisor/Chargemap-zoekpagina's blokkeerden geautomatiseerde toegang (403/402), waardoor geen enkele onafhankelijke Komoot-, Strava- of Wikiloc-GPX en geen enkele quote van een losse fietser kon worden gevonden - alleen tourbeschrijvingen en de gemeentelijke MTB-catalogus. Er is een aantoonbare tegenspraak: de eigen climbs.json-fiche noemt top 1400 m/1005 hm voor deze klim, terwijl de op bronnen gebaseerde volledige route naar de top van Monte Ortigara 2105 m/1500-1680 hm is - vermoedelijk beschrijft climbs.json een kortere lus op het plateau zelf, niet de doorstoot naar de eigenlijke top. Water op het traject tussen Camporovere en de top is nergens bevestigd."
+ },
+ "chaberton": {
+  "base": [
+   {
+    "t": "Top: Mont Chaberton, 3131 m, grens Italië (Fenils/Claviere, regio Susa) – Frankrijk (Montgenèvre), oude Italiaanse militaire weg naar het hoogste fort van de Alpen.",
+    "u": "https://en.wikipedia.org/wiki/Mont_Chaberton"
+   },
+   {
+    "t": "Twee toegangsroutes: vanaf Fenils (IT, 1.295 m) over de historische strada militare di Val Morino, 13 km / ~1.836 hm; of vanaf Claviere/Montgenèvre lopend via de 'via normale', 15-16 km retour / ~1.260-1.280 hm.",
+    "u": "https://www.cycling-challenge.com/mont-chaberton/"
+   },
+   {
+    "t": "Tegenstrijdig: Cycling Challenge en Club des Cent Cols beschrijven de Fenils-weg als (deels) berijdbaar mits duwen op het bovenste stuk; Comune-bronnen en Val Susa Oggi melden dat diezelfde weg sinds een grondverzakking in juli 2019 'non agibile' (niet begaanbaar) is en geen heropeningsdatum heeft.",
+    "u": "https://www.valsusaoggi.it/monte-chaberton-vietato-laccesso-al-forte-problemi-di-sicurezza/"
+   },
+   {
+    "t": "Gemotoriseerd verkeer op de strada militare is al sinds 1987 verboden boven Pra Claud; het is dus sowieso een gravel/MTB-only weg, geen berijdbare autoweg.",
+    "u": "https://www.cycling-challenge.com/mont-chaberton/"
+   },
+   {
+    "t": "Route via Batteria Alta (alternatief vanaf Claviere) was in 2026 gesloten wegens onderhoudswerkzaamheden.",
+    "u": "https://www.montechaberton.it/lo-chaberton/itinerari-di-salita"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Rifugio La Capanna, Strada Gimont 15, Claviere – 500 m van het centrum, restaurant, 49 bedden, zomer met auto bereikbaar en parkeren bij de deur.",
+    "u": "https://ospitalitareligiosa.it/en/structures/ad/la-capanna,3017"
+   },
+   {
+    "t": "Diverse hotels/B&B's in Claviere zelf (Hotel Bes & Spa, Hotel Piccolo Chalet, Hotel Al Foiron) – geen specifieke fietsvriendelijke voorzieningen bevestigd, wel fietsverhuur genoemd bij Hotel Bes & Spa.",
+    "u": "https://www.booking.com/city/it/claviere.html"
+   }
+  ],
+  "park": [
+   {
+    "t": "Claviere: groot plein aan de onderkant van het dorp bij vertrek Gorge di San Gervasio-hangbruggen, of onverhard pleintje net na de brug over de Rio Secco.",
+    "u": "https://invalchisone.it/06-Chaberton%20Alpinistica.htm"
+   },
+   {
+    "t": "Montgenèvre (Franse kant): parkeren aan de Rue des Baïsses, ca. 100 m voor het knooppunt met de wandelroute naar de top.",
+    "u": "https://www.altituderando.com/Mont-Chaberton-3131m-a-la-frontiere-avec-l-Italie"
+   },
+   {
+    "t": "Laadpaal (EV) bij Montgenèvre: eborn-laadpunt aan Place du Bivouac Napoléon / Route d'Italie.",
+    "u": "https://chargemap.com/place-du-bivouac-napoleon-montgenevre.html"
+   },
+   {
+    "t": "Laadpaal (EV) bij Cesana Torinese (10 km van Claviere): Be Charge-laadpunt aan Viale Senatore Bouvier.",
+    "u": "https://fr.chargemap.com/be-charge-4.html"
+   }
+  ],
+  "water": [
+   {
+    "t": "Geen waterpunten onderweg naar de top: officiële site van de Associazione Monte Chaberton waarschuwt expliciet voor 'totale mancanza di punti di rifornimento d'acqua' (volledig gebrek aan waterpunten).",
+    "u": "https://www.montechaberton.it/lo-chaberton/itinerari-di-salita"
+   },
+   {
+    "t": "Zelfde conclusie vanuit Franse kant: 'non ci sono punti d'acqua lungo il percorso, è necessario partire provvisti' – bevoorraad vertrekken is verplicht.",
+    "u": "https://visitvaldisusa.it/monte-chaberton-val-di-susa/"
+   },
+   {
+    "t": "De route kruist wel vroeg de Rio Secco-vallei, maar dit is geen bevestigd drinkwaterpunt.",
+    "u": "https://www.altituderando.com/Mont-Chaberton-3131m-a-la-frontiere-avec-l-Italie"
+   }
+  ],
+  "food": [
+   {
+    "t": "Rifugio La Capanna in Claviere: restaurant met huisgemaakte gerechten, bar, halfpension mogelijk.",
+    "u": "https://ospitalitareligiosa.it/en/structures/ad/la-capanna,3017"
+   },
+   {
+    "t": "Restaurant Gallo Cedrone in Claviere-centrum voor diner.",
+    "u": "https://www.bcoolguide.com/loc/claviere/"
+   },
+   {
+    "t": "Geen bevoorrading onderweg of op de top – meeneemproviand verplicht (zie water).",
+    "u": null
+   }
+  ],
+  "season": [
+   {
+    "t": "Hoofdseizoen juli-augustus; juni geldt als risicovol vanwege sneeuwvelden op de route.",
+    "u": "https://www.summitpost.org/chaberton/155316"
+   },
+   {
+    "t": "Zelfs in de zomer en tot in oktober ligt er nog ijs in de tunnels en gangen van het fort ('much live ice in corridors and staircases').",
+    "u": "https://www.summitpost.org/chaberton/155316"
+   },
+   {
+    "t": "Weersomslag kan snel gaan boven de 3.000 m; wind is een constante factor volgens meerdere beklimmingsverslagen.",
+    "u": "https://centcols.org/en/mont-chaberton/"
+   },
+   {
+    "t": "Forte dello Chaberton (het gebouw zelf, niet de weg) is sinds 25 augustus 2025 tot nader order gesloten voor bezoekers wegens instortingsgevaar – ordonnantie van de gemeente Montgenèvre.",
+    "u": "https://www.valsusaoggi.it/monte-chaberton-vietato-laccesso-al-forte-problemi-di-sicurezza/"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot-tour 'Val di Susa: Tour 1 – Auf den Mont Chaberton', 31,7 km, 1.830 hm, MTB-getagd (niet officieel gravel), zwaar, met een niet-berijdbaar stuk van 136 m.",
+    "u": "https://www.komoot.com/tour/186792393"
+   },
+   {
+    "t": "Komoot-tour 'MTB-Tour auf den Mont Chaberton', 32,9 km, 2.050 hm, MTB-getagd, zwaar, drie stukken met fietsverbod/onberijdbaarheid.",
+    "u": "https://www.komoot.com/tour/177248305"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Fietser/redactie, Club des Cent Cols",
+    "q": "Be open-minded and unselfish enough to climb to the summit at 3131 m - you won't regret it!",
+    "tr": "Sta open en onbaatzuchtig genoeg om de top op 3131 m te beklimmen - je zult er geen spijt van krijgen!",
+    "url": "https://centcols.org/en/mont-chaberton/"
+   },
+   {
+    "who": "qpeer-fotobijschrift, quaeldich.de",
+    "q": "Mont Chaberton 3131 m - absolut unfahrbar",
+    "tr": "Mont Chaberton 3131 m - absoluut onberijdbaar",
+    "url": "https://mein.quaeldich.de/qpeer/bilder/?BildID=80744"
+   },
+   {
+    "who": "Wandelaar 'Croziflette', altituderando.com, juli 2025",
+    "q": "Très belle randonnée pour l'aspect historique... trop de monde le week-end",
+    "tr": "Heel mooie tocht vanwege het historische aspect... te druk in het weekend",
+    "url": "https://www.altituderando.com/Mont-Chaberton-3131m-a-la-frontiere-avec-l-Italie"
+   }
+  ],
+  "gap": "Grootste onzekerheid: de status van de historische strada militare (Fenils-kant) is tegenstrijdig – oudere fietsverslagen (2008-2020, Cycling Challenge, Cent Cols, Komoot-tours) beschrijven hem als berijdbaar (met veel duwen), maar recentere Italiaanse bronnen (comune/vereniging) melden dat diezelfde weg sinds een aardverschuiving in 2019 'non agibile' is zonder heropeningsdatum - onduidelijk of dit inmiddels weer beter is. Vrijwel alle geraadpleegde bronnen zijn wandelaars, comune's of MTB-toerders, geen gravelrijders op 650b x 55mm: de twee Komoot-tracks zijn getagd als 'mountain bike', niet als gravel, en meerdere bronnen noemen expliciet stukken die alleen lopend/duwend te nemen zijn - op smalle gravelbanden is dit vermoedelijk voor het grootste deel een hike-a-bike boven de 2.000 m. EV-laadpalen bij Montgenèvre en Cesana zijn bevestigd via Chargemap, maar actuele beschikbaarheid/status (werkend, bezet, prijs) kon niet worden geverifieerd. Geen prijzen voor Rifugio La Capanna gevonden - alleen op aanvraag. Fort zelf is sinds aug 2025 gesloten voor bezoekers (instortingsgevaar), de weg/klim naar de top blijft voor wandelaars wel toegestaan."
+ },
+ "corrieyairack": {
+  "base": [
+   {
+    "t": "Fort Augustus (westkant, Loch Ness) is de logische uitvalsbasis: bus- en winkelvoorzieningen, en de start/finish van de Corrieyairack ligt vlak bij het centrum.",
+    "u": "https://www.walkhighlands.co.uk/cairngorms/corrieyairack-pass.shtml"
+   },
+   {
+    "t": "Officieel loopt de beschermde militaire weg 34 km van Garvamore (bij Laggan) tot net voorbij Ardachy Lodge bij Fort Augustus, met de top op 775 m.",
+    "u": "https://scotways.com/heritage-path/HP211/"
+   },
+   {
+    "t": "Walkhighlands rekent de volledige oversteek Laggan-Fort Augustus op 39,5 km met 732 m stijging; door tot bijna Melgarve te rijden kun je de rit met 17 km inkorten.",
+    "u": "https://www.walkhighlands.co.uk/cairngorms/corrieyairack-pass.shtml"
+   },
+   {
+    "t": "Er is geen dagelijks openbaar vervoer terug naar Laggan vanuit Fort Augustus; bij een enkele oversteek moet je zelf een auto verzetten of een shuttle regelen.",
+    "u": "https://www.walkhighlands.co.uk/cairngorms/corrieyairack-pass.shtml"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Morag's Lodge in Fort Augustus: hostel met beveiligde fietsenstalling en droogruimte, dorm vanaf £25.",
+    "u": "https://moragslodge.com/"
+   },
+   {
+    "t": "Laggan Glamping: glampingpods op zo'n 3 mijl van Laggan Wolftrax, zelfverzorging.",
+    "u": "https://www.visitscotland.com/info/accommodation/laggan-glamping-p2079581"
+   },
+   {
+    "t": "Bunroy campsite in Roy Bridge als rustiger alternatief, op ruim 25 km van Laggan Wolftrax en loopafstand van twee pubs.",
+    "u": "https://www.unique-cottages.co.uk/holiday-ideas/activities/mountain-biking/laggan-wolftrax"
+   },
+   {
+    "t": "Concrete namen voor B&B's in Fort Augustus zelf zijn niet geverifieerd op een eerstehands bron; onbevestigd.",
+    "u": null
+   }
+  ],
+  "park": [
+   {
+    "t": "Aan de oostkant: parkeren bij Garva Bridge, of net voor het einde van het asfalt bij Melgarve.",
+    "u": "https://www.walkhighlands.co.uk/cairngorms/corrieyairack-pass.shtml"
+   },
+   {
+    "t": "Circa 2,5 km voorbij Garva Bridge eindigt de openbare weg bij een doorwaadplaats met een 'Road Closed'-bord; daarna begint het onverharde tracé.",
+    "u": "https://www.walkhighlands.co.uk/cairngorms/corrieyairack-pass.shtml"
+   },
+   {
+    "t": "Aan de westkant: Pay & Display parkeerplaats in Fort Augustus (PH32 4DD).",
+    "u": "https://www.zapmap.com/locations/fort-augustus-charging-points/"
+   },
+   {
+    "t": "EV Fort Augustus: laadpunten op de Pay & Display parking (EZO, met rapid), bij The Lovat Loch Ness (Evolt, fast/rapid) en bij St Benedict's Abbey (Pod, alleen slow).",
+    "u": "https://www.zapmap.com/locations/fort-augustus-charging-points/"
+   },
+   {
+    "t": "EV bij Laggan/Garva Bridge: onbevestigd op een bron die ik zelf kon openen.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Laggan Coffee Bothy & Gallery in Laggan Bridge is de laatste betrouwbare stop met water/koffie aan de oostkant; open di-za 9:30-16:00, zo 11:00-14:00.",
+    "u": "https://www.laggan.com/laggan-stores.asp"
+   },
+   {
+    "t": "Onderweg zijn er meerdere beekoversteken, maar natuurlijke waterbronnen worden als onbetrouwbaar omschreven; neem eigen voorraad mee.",
+    "u": "https://www.komoot.com/highlight/764781"
+   },
+   {
+    "t": "Tussen Melgarve en Fort Augustus passeert de route geen enkele winkel, kraan of horecagelegenheid volgens de etappebeschrijving.",
+    "u": "https://www.walkhighlands.co.uk/cairngorms/corrieyairack-pass.shtml"
+   }
+  ],
+  "food": [
+   {
+    "t": "Laggan Coffee Bothy & Gallery: café/cadeauwinkel in Laggan Bridge, de enige horeca vlak bij de oostelijke start.",
+    "u": "https://www.laggan.com/laggan-stores.asp"
+   },
+   {
+    "t": "Laggan Wolftrax Centre (bij het MTB-trailcentrum) heeft een café met warme/koude gerechten, toiletten en munt-douches, maar ligt niet aan de Corrieyairack-route zelf.",
+    "u": "https://forestryandland.gov.scot/visit/laggan-wolftrax"
+   },
+   {
+    "t": "Fort Augustus heeft een breed aanbod aan pubs en restaurants voor bevoorrading na de rit.",
+    "u": "https://www.scotland.org.uk/guide/places/fort-augustus-visitor-guide"
+   }
+  ],
+  "season": [
+   {
+    "t": "De route is een Scheduled Ancient Monument; schade toebrengen is een strafbaar feit.",
+    "u": "https://scotways.com/heritage-path/HP211/"
+   },
+   {
+    "t": "Highland Council: gemotoriseerd verkeer is verboden, de weg wordt niet onderhouden als publieke weg en de raad aanvaardt geen aansprakelijkheid voor ongevallen.",
+    "u": "https://scotways.com/heritage-path/HP211/"
+   },
+   {
+    "t": "Reeenjacht (stalking): reebokken worden het hele jaar bejaagd met piek augustus-half oktober, hindes van 21 oktober tot 15 februari; check vooraf via de 'Heading for the Scottish Hills'-dienst en vermijd gebieden waar gejaagd wordt.",
+    "u": "https://www.outdooraccess-scotland.scot/practical-guide-all/field-sports/deer-stalking-open-hill"
+   },
+   {
+    "t": "Op zondag wordt doorgaans niet gejaagd.",
+    "u": "https://www.outdooraccess-scotland.scot/practical-guide-all/field-sports/deer-stalking-open-hill"
+   },
+   {
+    "t": "Beste seizoen mei-oktober; in de winter is ervaring met lawinegevaar nodig.",
+    "u": "https://www.komoot.com/highlight/764781"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot-lus van Laggan (community-tour), 76,8 km, 1.670 hm, inclusief een stuk waar je waarschijnlijk moet lopen (na 37 km, 276 m steil stuk).",
+    "u": "https://www.komoot.com/smarttour/e1022054583/the-corrieyairack-pass-a-loop-from-laggan"
+   },
+   {
+    "t": "Walkhighlands-track Laggan-Fort Augustus (enkele reis), 39,5 km, 732 hm stijging, met GPX/KMZ-export op de paginazelf.",
+    "u": "https://www.walkhighlands.co.uk/cairngorms/corrieyairack-pass.shtml"
+   },
+   {
+    "t": "Komoot-highlight-segment van de klim zelf, 18,5 km met 410 hm omhoog en 660 hm omlaag (Fort Augustus-richting).",
+    "u": "https://www.komoot.com/highlight/764781"
+   },
+   {
+    "t": "Komoot-tour 'Stage 2: Fort Augustus to Loch Laggan — The Badger Divide' (over de pas), 60,2 km, 1.180 m",
+    "u": "https://www.komoot.com/tour/111874173"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "ScotWays (officieel, heritage path)",
+    "q": "Please leave your vehicles before reaching the military road.",
+    "tr": "Laat je auto achter voordat je de militaire weg bereikt.",
+    "url": "https://scotways.com/heritage-path/HP211/"
+   },
+   {
+    "who": "Forumlid, Singletrack World",
+    "q": "Access at the Garva Bridge end is/will be a problem",
+    "tr": "Toegang aan de kant van Garva Bridge is/wordt een probleem",
+    "url": "https://singletrackworld.com/forum/bike-forum/corrieyairack-pass-pylon-route/"
+   },
+   {
+    "who": "Walkhighlands, routebeschrijving",
+    "q": "do not rely on staying here",
+    "tr": "reken er niet op dat je hier kunt overnachten",
+    "url": "https://www.walkhighlands.co.uk/cairngorms/corrieyairack-pass.shtml"
+   }
+  ],
+  "gap": "Bronnen spreken elkaar tegen over rijrichting: Basecamp/algemene MTB-adviezen noemen west-naar-oost (Fort Augustus naar Laggan) prettiger om de afdaling aan de oostkant beter berijdbaar te maken, terwijl een Singletrack World-forumlid juist zegt dat de lijn vanaf de Fort Augustus-kant makkelijker klimt en de afdaling naar het oosten toe vermoeiend is - wij nemen geen van beide als hard gegeven. Ook de lengte van 'de klim' loopt uiteen: climbs.json houdt 18 km aan voor het gravelgedeelte, maar de volledige oversteek Laggan-Fort Augustus is volgens ScotWays en Walkhighlands 34-39,5 km inclusief verhard voortraject. Melgarve bothy wordt door meerdere bronnen als onbetrouwbaar open omschreven (soms op slot, soms opengebroken) - reken er niet op als vaste overnachting. Dekking is overwegend wandelaars (Walkhighlands, ScotWays) en enkele MTB-forums; eerstehands gravelbike-ervaringen met 650b x 55 mm zijn dun, en concrete EV-laadpunten of B&B-namen aan de Laggan/Garva-kant kon ik niet met een werkende bron bevestigen."
+ },
+ "corsica": {
+  "base": [
+   {
+    "t": "Corte, historische hoofdstad middenin het eiland, is het logische kruispunt tussen Bastia, de westkust en de Bocca di Verghio — vandaar bereik je zowel Calacuccia/Albertacce (oostzijde klim) als Evisa (westzijde) binnen drie kwartier.",
+    "u": "https://en.wikipedia.org/wiki/Corte,_Haute-Corse"
+   },
+   {
+    "t": "Evisa (850 m) is het laatste dorp aan de westkant vlak voor de klim naar de Bocca; de officiële GT20-etappe Porto–Vergio loopt er dwars doorheen met een aparte stijging van 8% net na het dorp.",
+    "u": "https://en.francevelotourisme.com/cycle-route/crossing-corsica-by-bike-gt20/porto-vergio"
+   },
+   {
+    "t": "De klim zelf: 33 km, 1.547 hm stijging, gemiddeld 4% (piek 8% bij Evisa), van 28 m aan zee tot de top op 1.477 m — 100% asfalt op de GT20-hoofdroute, de Gravel20 volgt een aparte onverharde variant.",
+    "u": "https://en.francevelotourisme.com/cycle-route/crossing-corsica-by-bike-gt20/porto-vergio"
+   },
+   {
+    "t": "Vanaf de oostkant loopt de D84 vanaf Albertacce (Niolu-vallei) 18,2 km aan gemiddeld 3,5% naar de top; vanaf Evisa is het 12 km aan 5,3%.",
+    "u": "https://fr.wikipedia.org/wiki/Col_de_Vergio"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Hôtel Castel de Vergio, 20224 Albertacce, tel. 06 12 74 87 04 — 2-sterrenhotel (26 kamers), gîte met dortoirs (10 plaatsen) en camping (60 plaatsen), pal aan de D84 een paar honderd meter onder de top. Exacte openingsdata wisselen per bron (gîtes-refuges.com noemt geen data, één losse databron meldde het etablissement gesloten in oktober 2022) — check vooraf.",
+    "u": "https://www.hotel-castel-vergio.com/"
+   },
+   {
+    "t": "In Evisa: Aïtone Hotel** (feb–nov, +33 4 95 26 20 04), La Châtaigneraie** (heel het jaar, +33 4 95 26 24 47), Scopa Rossa** (mrt–okt, +33 4 95 26 20 22), U Pozzu** (vanaf 1 mei, +33 4 95 26 22 89); camping L'Acciola** is het hele jaar open (+33 4 95 26 23 01).",
+    "u": "https://www.evisa-corsica.com/hebergements"
+   },
+   {
+    "t": "Gîtes de France in Evisa: A Filetta (1 mei–30 sept, +33 4 95 10 54 31, 77 m² bij het dorpsplein) en Villa des Roses (apr–sept, +33 6 14 61 19 84, 4 personen, wijk La Costa).",
+    "u": "https://www.evisa-corsica.com/hebergements"
+   }
+  ],
+  "park": [
+   {
+    "t": "Grote parkeerplaats op de top zelf, naast het Christusstandbeeld uit 1984 en tegenover de kleine skistation-installaties van Castel de Vergio.",
+    "u": "https://www.dangerousroads.org/europe/france/4633-bocca-%C3%A0-verghju-%E2%80%93-col-de-vergio.html"
+   },
+   {
+    "t": "EV-laadpalen in Corte: netwerken Evota, Freshmile en DRIVECO Partner Network zijn actief in de stad; exacte locaties/snelheden onbevestigd omdat de Chargemap-pagina niet direct te openen was (betaalmuur).",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Gratis, vrij toegankelijk water bij Castel de Vergio, direct aan de D84 vlak onder de top — de facto het laatste (en betrouwbaarste) waterpunt voor wie van Corte- of Porto-kant komt.",
+    "u": "https://www.refuges.info/point/8306/gite-d-etape/Castel-de-Vergio/"
+   },
+   {
+    "t": "Refuge de Ciottulu di i Mori (1.990 m, hoogste refuge van Corsica), bij Albertacce — heeft een fontein en sinds 2025 drie nieuwe warme douches, maar ligt op de GR20 en is alleen via wandelpad bereikbaar, niet vanaf de weg; bemand van mei/juni tot sept/okt.",
+    "u": "https://fr.wikipedia.org/wiki/Refuge_de_Ciottulu_a_i_Mori"
+   },
+   {
+    "t": "Concrete waterpunten in de dorpen Albertacce en Calacuccia zelf zijn niet bevestigd in de geraadpleegde bronnen — reken op de dorpsfonteinen die in vrijwel elk Corsicaans dorp aanwezig zijn, maar de exacte locatie is onbevestigd.",
+    "u": null
+   }
+  ],
+  "food": [
+   {
+    "t": "Bij Castel de Vergio: epicerie (kruidenierswinkel) in de gîte plus restaurant/self-service in het hotel, direct aan de top — de enige bevoorrading op de pas zelf.",
+    "u": "https://www.hotel-castel-vergio.com/"
+   },
+   {
+    "t": "Evisa heeft meerdere hotel-restaurants (Aïtone, La Châtaigneraie, Scopa Rossa, U Pozzu) met wisselende seizoensopening — buiten het seizoen (nov–feb) valt een deel weg.",
+    "u": "https://www.evisa-corsica.com/hebergements"
+   },
+   {
+    "t": "Corte is de enige plek in de omgeving met een echte stadskern en volwaardige supermarkten — logische plek om voor meerdere dagen bij te bevoorraden voordat je de Niolu- of Evisa-kant induikt.",
+    "u": "https://en.wikipedia.org/wiki/Corte,_Haute-Corse"
+   }
+  ],
+  "season": [
+   {
+    "t": "De Bocca di Verghio kent geen officiële winterafsluiting, maar 's winters houdt de PC Neige de Corte de wegomstandigheden in de gaten en informeert weggebruikers over sneeuw/ijs; de Corte-kant wordt door de eigen wegendienst sneeuwvrij gehouden.",
+    "u": "https://fr.wikipedia.org/wiki/Col_de_Vergio"
+   },
+   {
+    "t": "Praktisch gezien kan de pas 's winters wél dicht liggen door sneeuw boven ~1.000 m, waardoor een complete GT20-oversteek onmogelijk wordt — voorjaar (apr–jun) en najaar (sept–okt) worden als beste periodes genoemd, zomer is heet (30–35°C+) en druk.",
+    "u": "https://www.baroudeurcycling.com/blog-posts-uk/cycling-corsica-complete-guide-gt20-gravel-cycling-routes"
+   },
+   {
+    "t": "Wildkamperen is op Corsica verboden — relevant voor wie de Gravel20 zelfstandig plant zonder vooraf geregelde overnachtingen.",
+    "u": "https://www.baroudeurcycling.com/blog-posts-uk/cycling-corsica-complete-guide-gt20-gravel-cycling-routes"
+   },
+   {
+    "t": "Castel de Vergio (hotel/gîte/camping op de top) is normaliter open van 1 mei tot begin oktober; buiten dat venster valt de enige bevoorrading/waterpunt op de pas zelf mogelijk weg.",
+    "u": "https://www.refuges.info/point/8306/gite-d-etape/Castel-de-Vergio/"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Officiële GT20-etappe Porto–Vergio (France Vélo Tourisme / GT20), 33 km, 1.547 hm, 100% asfalt — dit is de geasfalteerde hoofdroute, niet de onverharde Gravel20-variant.",
+    "u": "https://en.francevelotourisme.com/cycle-route/crossing-corsica-by-bike-gt20/porto-vergio"
+   },
+   {
+    "t": "Gattu Bike Corsica's Gravel20 (~500 km totaal, ~100 km grind, 11.500 hm) is de door de organisatie zelf ter plaatse gevalideerde track van Bastia naar Porto-Vecchio/Bonifacio; geen los downloadbaar GPX-bestand gevonden op de pagina zelf — de track wordt aangeboden via hun gids- en boekingsdiensten (trace + gids, of volledig verzorgd traject), niet als gratis download.",
+    "u": "https://www.gattu.corsica/en/gravel20"
+   },
+   {
+    "t": "Losse Komoot-tour specifiek voor het Col de Vergio/Niolu-segment (grind) is niet gevonden; wel bestaat een Komoot-collectie voor de volledige GT20 en een wandel-smarttour 'Boucle du Lac de Nino depuis le Col de Vergio' — geen van beide is een gravel-specifieke fietstrack voor dit stuk.",
+    "u": "https://www.komoot.com/smarttour/e1037857476/boucle-du-lac-de-nino-depuis-le-col-de-vergio"
+   },
+   {
+    "t": "Komoot-tour van Visit Corsica, 'Stage 7: Portu to Verghju – GT 20' (asfalt), 36 km, 1.560 m",
+    "u": "https://www.komoot.com/tour/1474402125"
+   },
+   {
+    "t": "Wikiloc-route 'Córcega – Ruta GT20' (hele GT20, asfalt), 784 km, 10.009 m",
+    "u": "https://es.wikiloc.com/rutas-cicloturismo/corcega-ruta-gt20-205339005"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Gattu Bike Corsica, makers van de Gravel20",
+    "q": "tracks that appear on maps but are actually closed, private, overgrown, impassable",
+    "tr": "sporen die op de kaart bestaan maar in werkelijkheid afgesloten, privé, dichtgegroeid of onberijdbaar zijn",
+    "url": "https://www.gattu.corsica/en/gravel20"
+   },
+   {
+    "who": "Baroudeur Cycling, GT20-gids",
+    "q": "Col de Vergio can be closed in winter",
+    "tr": "de Col de Vergio kan 's winters gesloten zijn",
+    "url": "https://www.baroudeurcycling.com/blog-posts-uk/cycling-corsica-complete-guide-gt20-gravel-cycling-routes"
+   },
+   {
+    "who": "France Vélo Tourisme, officiële etappebeschrijving",
+    "q": "maximum gradient of 8% through Evisa",
+    "tr": "maximaal 8% steilte door Evisa",
+    "url": "https://en.francevelotourisme.com/cycle-route/crossing-corsica-by-bike-gt20/porto-vergio"
+   }
+  ],
+  "gap": "De meeste bronnen zijn officiële toeristische/wegbeheerpagina's, hotelsites en één gespecialiseerde verhuurder/organisator (Gattu) — geen Nederlandstalige en nauwelijks harde first-hand gravelrijdersverslagen specifiek over dit stuk zijn gevonden. Concrete openingsdata van Castel de Vergio lopen uiteen tussen bronnen (geen data vs. 1 mei–4 okt vs. een los rapport over sluiting in 2022) en zijn niet definitief te bevestigen. EV-laadpalen in Corte/Niolu/Evisa en exacte dorpsfonteinen in Albertacce/Calacuccia kon ik niet bevestigen (Chargemap-pagina achter betaalmuur, directferries.fr blokkeerde toegang). Geen downloadbare GPX specifiek voor het onverharde Gravel20-tracé is publiek gevonden; de officiële track lijkt alleen via Gattu's boekingsdienst beschikbaar."
+ },
+ "gardetta": {
+  "base": [
+   {
+    "t": "Canosio (Borgata Preit, ± 1.500 m) in de Val Maira is het meest praktische vertrekpunt: dichtst bij de asfaltklim naar Colle del Preit, waar de onverharde plateauweg begint.",
+    "u": "https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html"
+   },
+   {
+    "t": "Toegang tot het plateau verloopt via een slagboom bij Grange Selvest: groen licht geeft doorgang tot Colle del Preit, rood licht sluit dat stuk af. Sinds augustus 2026 gelden er seizoensgebonden parkeertarieven bij zowel Colle del Preit (P1) als Grange Selvest (P2).",
+    "u": "https://www.comune.canosio.cn.it"
+   },
+   {
+    "t": "Marmora en Chialvetta zijn alternatieve dalbases verderop in de Val Maira, met meer overnachtingsopties dan het kleinere Canosio.",
+    "u": "https://www.vallemaira.org/strutture/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Lou Lindal in Canosio, Borgata Preit 1: hotel/rifugio en officiële etappestop, open mei-september, tel. +39 328 748 4076.",
+    "u": "https://www.vallemaira.org/strutture/"
+   },
+   {
+    "t": "In Marmora: Albergo diffuso Ceaglio (Borg. Vernetti 5, jan-okt), Locanda occitana Lou Pitavin (Borgata Finello 2, apr-okt) en Brieis Relais Alpino (Borgata Brieis 1, het hele jaar).",
+    "u": "https://www.vallemaira.org/strutture/"
+   },
+   {
+    "t": "Rifugio Gardetta zelf (2.335 m): 48 slaapplaatsen plus een kampeerveld; reserveren is verplicht om te slapen, te eten, af te halen of een tent op te zetten (via WhatsApp of e-mail).",
+    "u": "https://www.rifugiogardetta.it"
+   }
+  ],
+  "park": [
+   {
+    "t": "Parkeren bij Borgata Preit vlak voor het einde van de verharde weg naar Colle del Preit; vandaar verder te voet of op de fiets het plateau op.",
+    "u": "https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html"
+   },
+   {
+    "t": "Betaalde parkeerplaatsen bij Colle del Preit (P1) en bij de slagboom van Grange Selvest (P2), sinds augustus 2026 seizoensgebonden in werking.",
+    "u": "https://www.comune.canosio.cn.it"
+   },
+   {
+    "t": "Het onverharde plateaugedeelte zelf is voor gemotoriseerd verkeer verboden; het is alleen te voet, per MTB/gravelbike, e-bike of te paard te bereiken vanuit de valleien Maira, Grana en Stura.",
+    "u": "https://www.rifugiogardetta.it"
+   },
+   {
+    "t": "EV-laden in Canosio, Marmora of Dronero: onbevestigd — Chargemap-pagina's waren niet te openen (betaalmuur) en Enel X Way gaf geen resultaten voor Dronero.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Fontein bij Colle del Preit (2.076 m), aan het einde van de verharde klim en het begin van het onverharde stuk.",
+    "u": "https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html"
+   },
+   {
+    "t": "Rifugio Gardetta (2.335 m) serveert eten en drinken, op reservering; dit is het enige bevestigde vaste punt verder op het plateau.",
+    "u": "https://www.rifugiogardetta.it"
+   },
+   {
+    "t": "Geen andere waterpunten bevestigd tussen Colle del Preit en de Fauniera-kant van het plateau.",
+    "u": "https://www.cycling-challenge.com/colle-fauniera-and-beyond/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Rifugio Gardetta: restaurant en catering, reservering verplicht, ook voor take-away.",
+    "u": "https://www.rifugiogardetta.it"
+   },
+   {
+    "t": "Agriturismo La Meja bij Colle del Preit serveert kaasfondue en polenta.",
+    "u": "https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html"
+   },
+   {
+    "t": "Een agriturismo bij Colle del Preit wordt ook door een andere bron genoemd als vast rustpunt op de heenweg.",
+    "u": "https://www.cycling-challenge.com/colle-fauniera-and-beyond/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Rifugio Gardetta is in 2026 open van 1 juni tot 19 september; van 1 tot 15 juni is de dienstverlening beperkt, volledige service vanaf 15 juni.",
+    "u": "https://www.rifugiogardetta.it"
+   },
+   {
+    "t": "Zelfs in juni zijn er nog sneeuwvelden gemeld op het plateau, met rotsachtige en soms modderige stukken tussen Colle del Preit en de Fauniera.",
+    "u": "https://www.cycling-challenge.com/colle-fauniera-and-beyond/"
+   },
+   {
+    "t": "Tegenstrijdig geregeld: één bron meldt een weekendafsluiting voor gemotoriseerd verkeer (9-17u, juli-sept) tussen Colle Cologna en Rifugio Gardetta, een andere spreekt algemener van een gedeeltelijk verbod voor motorvoertuigen in het weekend op het hele plateau. De slagboomregeling bij Grange Selvest (groen/rood licht, sinds 2026 met parkeertarief) lijkt het actuele, officiële mechanisme, los van deze oudere weekendregels uit rijverslagen.",
+    "u": "https://www.cycling-challenge.com/colle-fauniera-and-beyond/"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Routebeschrijving Turista Gravel: lus vanaf Dronero via Canosio, ± 98 km, ± 2.400 hm, eerste 25 km asfalt daarna 18 km onverhard militair traject Colle del Preit-Rifugio Gardetta; geen downloadbaar GPX-bestand op de pagina zelf, wel gedetailleerde routebeschrijving.",
+    "u": "https://turistagravel.home.blog/2019/02/10/altopiano-della-gardetta/"
+   },
+   {
+    "t": "Routebeschrijving Life in Travel: MTB-lus vanaf Borgata Preit, 32 km, 1.000-2.000 hm, hoogste punt Colle d'Anoccia (2.533 m), laatste stuk single-track 'beslist technischer'; geen los GPX-bestand gevonden, wel volledige routetekst.",
+    "u": "https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html"
+   },
+   {
+    "t": "Cycling Challenge-verslag 'Colle Fauniera and Beyond' beschrijft de lus Marmora-Colle d'Esischie-Fauniera-Colle Valcavera-Colle del Preit-Demonte, met foto's per segment; ook hier geen los downloadbaar GPX-bestand aangetroffen.",
+    "u": "https://www.cycling-challenge.com/colle-fauniera-and-beyond/"
+   },
+   {
+    "t": "Wikiloc-route van ant1606 (lus vanaf Marmora, Fauniera + Gardetta-plateau), 45 km, 1.423 m",
+    "u": "https://www.wikiloc.com/wikiloc/view.do?id=14682984"
+   },
+   {
+    "t": "Climbfinder-profiel Colle Fauniera vanaf Demonte, 24,4 km, 1.716 m (verhard, export naar GPS)",
+    "u": "https://climbfinder.com/en/climbs/colle-fauniera-demonte"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "My Cycling Challenge",
+    "q": "maybe the most alluring and unspoilt pass around 2500 metres in the Alps",
+    "tr": "misschien de mooiste en meest onbedorven col rond 2500 meter in de Alpen",
+    "url": "https://www.cycling-challenge.com/colle-fauniera-and-beyond/"
+   },
+   {
+    "who": "Turista Gravel (IT), eigen verslag",
+    "q": "la ghiaia si fa grossa, serve un buon colpo di pedale",
+    "tr": "het grind wordt grof, je hebt een stevige pedaalslag nodig",
+    "url": "https://turistagravel.home.blog/2019/02/10/altopiano-della-gardetta/"
+   },
+   {
+    "who": "Life in Travel (IT)",
+    "q": "Il percorso si fa decisamente più tecnico",
+    "tr": "De route wordt beslist technischer",
+    "url": "https://www.lifeintravel.it/viaggi/italia-in-bicicletta/altopiano-della-gardetta-in-mtb-su-strade-militari.html"
+   }
+  ],
+  "gap": "Geen enkele bron levert een daadwerkelijk downloadbaar of los te bekijken GPX-bestand (Komoot/Strava/Wikiloc-zoekpogingen liepen dood op een uitgeputte zoekbudget, een 403 op Wikiloc en een 404 op Strava); de drie gpx-vermeldingen hierboven zijn uitgeschreven routebeschrijvingen op reisblogs, geen platformtracks — plan dus zelf een track op basis van deze beschrijvingen. De toegangsregels voor het plateau zijn niet volledig eenduidig: oudere rijdersverslagen (Cycling Challenge, Life in Travel) noemen een weekendverbod voor motorvoertuigen tussen juli en september, terwijl de gemeente Canosio in 2026 een nieuwer slagboom- en betaald-parkeersysteem beschrijft (Grange Selvest, groen/rood licht) — onduidelijk hoe deze twee regelingen zich precies tot elkaar verhouden, dus check ter plekke. EV-laden in de Val Maira-dorpen kon niet bevestigd worden: Chargemap-pagina's zaten achter een betaalmuur en Enel X Way gaf geen resultaten voor Dronero. Bandenmaat wordt in geen van de bronnen expliciet genoemd; alle drie zijn MTB-verslagen, geen gravelbike-specifieke bronnen — één auteur schrijft wel dat zijn gravelbike 'suffered a bit' op het laatste single-track-stuk, wat aangeeft dat 650b x 55mm richting de grens van comfortabel zit op het ruwste deel."
+ },
+ "gennargentu": {
+  "base": [
+   {
+    "t": "Fonni is met ruim 1000 m het hoogstgelegen dorp van Sardinië en de logische uitvalsbasis: hier begint de klim naar Bruncu Spina (1829 m), de tweede top van het eiland na Punta La Marmora.",
+    "u": "https://en.wikipedia.org/wiki/Bruncu_Spina"
+   },
+   {
+    "t": "Desulo ligt aan dezelfde SP69 tussen Fonni en het binnenland, iets dichter bij Tonara en Aritzo — handig als je de zuidkant van het massief wilt combineren.",
+    "u": "https://en.wikipedia.org/wiki/Fonni"
+   },
+   {
+    "t": "De weg naar Bruncu Spina tak je ± 5 km voorbij Fonni af van de provinciale weg naar Desulo, daarna nog 9,5 km asfalt naar de skiliften.",
+    "u": "https://en.wikipedia.org/wiki/Bruncu_Spina"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "B&B Gennargentu in Fonni: privékamers met eigen badkamer, waardering 9,8; goede basis voor een vroege start richting Bruncu Spina.",
+    "u": "https://www.booking.com/hotel/it/b-amp-b-gennargentu-fonni.html"
+   },
+   {
+    "t": "Agriturismo Parco Donnortei, Località Donnortei, 08023 Fonni (NU): 25 kamers aan de voet van Monte Spada, tel. +39 0784 58575 / +39 338 4030714.",
+    "u": "https://www.agriturismodonnortei.com/"
+   },
+   {
+    "t": "Hotel Sa Muvara (4 sterren, zwembad en wellness) ligt op ± 19 km van Fonni; SardiniaCycling boekt op zijn 8-daagse Gennargentu-tour een 3-sterrenhotel in Fonni zelf (op de foto Hotel Sa Orte).",
+    "u": "https://sardinias.it/guida/fonni"
+   },
+   {
+    "t": "Concrete accommodatie in Desulo zelf — namen, adressen en prijzen — kon ik niet met een bron staven; alleen de omliggende dorpen (Fonni, Orgosolo) zijn goed gedocumenteerd.",
+    "u": null
+   }
+  ],
+  "park": [
+   {
+    "t": "In Fonni: parkeren bij de campo sportivo/kerk San Cristoforo aan het begin van de route naar Bruncu Spina, of bij de periferia nord.",
+    "u": "https://itinerari.mtb-mag.com/tours/view/13247"
+   },
+   {
+    "t": "Bij Bruncu Spina zelf een parkeerplaats bij het skistation aan het einde van de 9,5 km asfalt vanaf de afslag na Fonni.",
+    "u": "https://en.wikipedia.org/wiki/Bruncu_Spina"
+   },
+   {
+    "t": "EV-laden: Eni Plenitude en Enel X noemen Fonni, Desulo, Tonara en Sorgono binnen hun dekkingsgebied in de provincie Nuoro, maar geen van beide sites toont een concreet laadpunt-adres in deze dorpen — reken niet op een snellader ter plekke.",
+    "u": "https://ontheroad.eniplenitude.com/sardegna/nuoro"
+   }
+  ],
+  "water": [
+   {
+    "t": "Cruciaal: TranSardinia (bikepacking.com) markeert dorpsfonteinen op de GPX en waarschuwt dat fonteinen in het achterland seizoensafhankelijk kunnen opdrogen — reken op 15 tot maximaal 30 km tussen betrouwbare punten.",
+    "u": "https://bikepacking.com/routes/transardinia/"
+   },
+   {
+    "t": "Fonni dankt zijn naam aan het Latijnse fons (bron) en telt van oudsher veel bronwaterfonteinen in het dorp zelf — het laatste zekere punt vóór de klim naar Bruncu Spina.",
+    "u": "https://en.wikipedia.org/wiki/Fonni"
+   },
+   {
+    "t": "Op de klim zelf naar Bruncu Spina worden geen vaste waterpunten genoemd; de route kruist wel de Rio Ispada en Rio Dudulu, maar dat is oppervlaktewater, geen drinkwater.",
+    "u": "https://itinerari.mtb-mag.com/tours/view/13247"
+   },
+   {
+    "t": "Onbevestigd of het rifugio-gebied bij Bruncu Spina (voormalig sterrenwacht/skistation) een kraan of horeca met water heeft — geen enkele bron bevestigt een open voorziening op de top.",
+    "u": null
+   }
+  ],
+  "food": [
+   {
+    "t": "In Fonni: Ristorante Bar Miramontes (localiteit Surunele) met antipasti, ravioli en grillvlees, en Su Ninnieri voor vleesgerechten.",
+    "u": "https://sardinias.it/guida/fonni"
+   },
+   {
+    "t": "In Tonara: bar BAR..Bagia aan Viale della Regione 67, hoog gewaardeerd (4,8/5), met terras en gratis straatparkeren.",
+    "u": "https://restaurantguru.com/BARBagia-Tonara"
+   },
+   {
+    "t": "Boven Fonni, richting en op Bruncu Spina, is geen horeca bevestigd — bevoorraad je dus in het dorp zelf voor je vertrekt.",
+    "u": null
+   }
+  ],
+  "season": [
+   {
+    "t": "April–mei en september–oktober zijn de aanbevolen maanden voor gravel in Sardinië: mild klimaat, minder toeristen, en de zomerhitte in het binnenland (temperaturen kunnen dan te hoog oplopen) blijft uit.",
+    "u": "https://www.komoot.com/guide/3440916/gravel-biking-in-sardinia"
+   },
+   {
+    "t": "Op Bruncu Spina valt gemiddeld meer dan 2 meter sneeuw per winterseizoen; sneeuwvelden kunnen tot mei-juni blijven liggen, dus vroeg voorjaar is af te raden.",
+    "u": "https://www.sardegnasentieri.it/da-vedere/bruncu-spina-punto-di-arrivo-t-721a"
+   },
+   {
+    "t": "Jachtseizoen: de algemene opening in Sardinië loopt van eind september tot eind januari (wildzwijn tot 29 januari, op zondag/donderdag/feestdagen); nationale parken en natuurreservaten — waaronder delen van het Gennargentu-massief — zijn hiervan uitgezonderd, maar check vooraf de laag «Aree no caccia» op sardegnasentieri.it.",
+    "u": "https://www.regione.sardegna.it/notizie/pubblicato-il-calendario-venatorio-2025-2026"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "MTB-MAG tour 475: Fonni – Bruncu Spina, 45,5 km, +1200 hm, technisch niveau 4/7, met volledige hoogteprofiel en beschrijving per sectie.",
+    "u": "https://itinerari.mtb-mag.com/tours/view/13247"
+   },
+   {
+    "t": "TranSardinia (bikepacking.com), zevendaagse MTB/gravel-doorsteek van Sardinië: GPX-bestand TranSardinia-v202605.gpx met pins voor slaapplekken, winkels en waterpunten; passeert de voet van het Gennargentu- en Supramonte-massief.",
+    "u": "https://bikepacking.com/routes/transardinia/"
+   },
+   {
+    "t": "Komoot-gids «The best gravel rides in Sardinia» noemt het Gennargentu-massief als terrein met onverharde paden, oude mijnwegen en bospaden, zonder een specifieke Fonni–Bruncu Spina-tour te linken — voor die klim moet je dus terugvallen op MTB-MAG of TranSardinia.",
+    "u": "https://www.komoot.com/guide/3440916/gravel-biking-in-sardinia"
+   },
+   {
+    "t": "Wikiloc-route (MTB) van nugoresu, lus Gusana–Fonni–Bruncu Spina–Tascusì, 53 km, 1.340 m",
+    "u": "https://www.wikiloc.com/mountain-biking-trails/gusana-fonni-bruncuspina-tascusi-gusana-mountain-bike-11008620"
+   },
+   {
+    "t": "Wikiloc-route van gabrielenigiotti, Fonni–Bruncu Spina–Nuoro (eenrichting), 81 km, 1.650 m",
+    "u": "https://www.wikiloc.com/offroading-trails/fonni-bruncu-spina-nuoro-41053694"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "MTB-MAG, tour 475 (IT)",
+    "q": "rampe ripide ma asfaltate e poi sterrate con ottimo fondo compatto",
+    "tr": "steile rampen, eerst asfalt en dan grind met een uitstekende vaste ondergrond",
+    "url": "https://itinerari.mtb-mag.com/tours/view/13247"
+   },
+   {
+    "who": "MTB-MAG, tour 475 (IT)",
+    "q": "10 min a piedi e attenti ai rovi!",
+    "tr": "10 minuten lopen en let op de doornstruiken!",
+    "url": "https://itinerari.mtb-mag.com/tours/view/13247"
+   },
+   {
+    "who": "TranSardinia, bikepacking.com (EN)",
+    "q": "Be sure to carry two or three litres, and you should always be fine.",
+    "tr": "Zorg dat je twee tot drie liter meeneemt, dan zit je altijd goed.",
+    "url": "https://bikepacking.com/routes/transardinia/"
+   }
+  ],
+  "gap": "De meeste bronnen voor Bruncu Spina zelf zijn wandel-, 4x4- of skiforums, geen gravelverslagen; MTB-MAG (tour 475) is de enige eerstehands fietsbeschrijving met een concreet hoogteprofiel. Slaapplekken en waterpunten in Desulo zelf zijn niet met een bron te staven — alleen Fonni is goed gedocumenteerd. EV-laadinfrastructuur is voor de hele Barbagia niet met een concreet adres te bevestigen, ondanks dat providers het gebied als 'gedekt' vermelden."
+ },
+ "grappa": {
+  "base": [
+   {
+    "t": "De onverharde kant is niet een van de elf klassieke asfaltroutes naar Cima Grappa (o.a. via Romano d'Ezzelino/Strada Cadorna of Semonzo/Strada Generale Giardino), maar de mulattiera del Covolo: start bij het Santuario Madonna del Covolo in Crespano del Grappa (gemeente Pieve del Grappa), 578 m, via Malga/Rifugio Ardosetta (1451 m) naar Cima Grappa (1775 m), dislivello 1200 m.",
+    "u": "https://www.gulliver.it/itinerari/grappa-monte-dal-santuario-madonna-del-covolo/"
+   },
+   {
+    "t": "De Strada Cadorna, die het hele jaar open blijft en vanaf Romano d'Ezzelino naar Rifugio Bassano/Cima Grappa klimt, is expliciet een aparte, verharde toegangsweg – bevestigt dat de Covolo-kant de enige onverharde is.",
+    "u": "https://www.cimagrappa.it/contatti.php"
+   },
+   {
+    "t": "Een volledige mountainbike-lus vanaf Crespano (via Possagno, Strada degli Alpini, Malga Archeson, pad 152, Cima Grappa, Ardosetta en terug via de mulattiera 105/Covolo) is bijna 35 km met bijna 2.000 hm – fors meer dan de kale klim, door de extra lus via Archeson.",
+    "u": "https://www.wikiloc.com/mountain-biking-trails/crespano-del-grappa-possagno-strada-degli-alpini-archeson-sent-152-cima-grappa-ardosetta-sent-105-c-38008329"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Montegrappa Bike Hotel (netwerk van Garden Relais, Locanda Montegrappa en Il Residence) in Borso del Grappa: bewaakte fietsenstalling, fietsersontbijt, mechanische bijstand en verhuur van mountainbike/e-bike/racefiets.",
+    "u": "https://montegrappabikehotel.it/"
+   },
+   {
+    "t": "Rifugio Ardosetta zelf, halverwege de klim op 1451 m, heeft ook slaapplekken: 30 bedden waarvan 4 in een CAI-bivak; open elk weekend het hele jaar en dagelijks in juli-augustus.",
+    "u": "https://komoot.com/it-it/guide/620102/rifugi-di-montagna-nei-dintorni-di-crespano-del-grappa"
+   },
+   {
+    "t": "Camping Santafelicita bij Semonzo (Borso del Grappa), aan de zuidflank van de Grappa, als goedkoper alternatief voor een hotel.",
+    "u": "https://www.tripadvisor.com/Hotel_Review-g1440350-d6882007-Reviews-Camping_Santafelicita-Semonzo_Borso_del_Grappa_Province_of_Treviso_Veneto.html"
+   },
+   {
+    "t": "Concrete hotels/B&B's specifiek in Bassano del Grappa of Feltre met adres en fietsvoorzieningen: onbevestigd – geen van de geraadpleegde bronnen noemt dat expliciet voor deze twee basisplaatsen.",
+    "u": null
+   }
+  ],
+  "park": [
+   {
+    "t": "Bij het Santuario Madonna del Covolo, het startpunt van de mulattiera, is een ruim parkeerterrein waar je met de auto tot aan het santuario kunt rijden.",
+    "u": "https://www.gulliver.it/itinerari/grappa-monte-dal-santuario-madonna-del-covolo/"
+   },
+   {
+    "t": "Let op: op zondag is er in Crespano markt, wat parkeren bij het startpunt lastiger maakt volgens een rijder die de route reed.",
+    "u": "https://itinerari.mtb-mag.com/tours/view/6496"
+   },
+   {
+    "t": "EV-laden: Chargemap telt 0 laadpunten in zowel Bassano del Grappa als Pieve del Grappa/Crespano del Grappa (stand van onderzoek); Feltre heeft wél 10 laadpunten, o.a. van Volkswagen en Greenman Energy aan de Viale Monte Grappa.",
+    "u": "https://it.chargemap.com/cities/feltre-IT"
+   },
+   {
+    "t": "EV-laden op of bij de top (Cima Grappa/Rifugio Bassano): onbevestigd, geen laadpunt gevonden.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Rifugio Ardosetta (1451 m), halverwege de grindklim, heeft een bar met koude en warme dranken – het meest betrouwbare bevoorradingspunt onderweg, al is het 'orario variabile' (alleen via WhatsApp te bevestigen).",
+    "u": "https://www.rifugioardosetta.com/"
+   },
+   {
+    "t": "Rifugio Bassano op de top heeft een barservice die de hele dag actief is; een aparte drinkfontein wordt nergens genoemd.",
+    "u": "https://www.cimagrappa.it/contatti.php"
+   },
+   {
+    "t": "Een publieke drinkfontein op de top zelf (bij het Sacrario Militare) is niet bevestigd in de geraadpleegde bronnen – alleen een historische regenwatercisterne wordt genoemd, geen tapkraan voor fietsers.",
+    "u": null
+   },
+   {
+    "t": "Een los tappunt op de mulattiera del Covolo zelf, tussen Crespano en Ardosetta, is niet bevestigd.",
+    "u": null
+   }
+  ],
+  "food": [
+   {
+    "t": "Rifugio Ardosetta serveert huisgemaakte keuken met Morlacco-kaas en malga-yoghurt; open elk weekend het jaar rond en dagelijks in juli-augustus – reserveren kan alleen via WhatsApp (+39 389 287 2700).",
+    "u": "https://komoot.com/it-it/guide/620102/rifugi-di-montagna-nei-dintorni-di-crespano-del-grappa"
+   },
+   {
+    "t": "Rifugio Bassano op de top: keuken alleen 's middags, avondservice enkel op reservering; bar de hele dag open met broodjes; adres Via Madonna Del Covolo 161, tel. +39 0423 53101.",
+    "u": "https://www.cimagrappa.it/contatti.php"
+   },
+   {
+    "t": "Bij het Santuario Madonna del Covolo zelf, aan de voet van de klim, is een restaurant.",
+    "u": "https://www.gulliver.it/itinerari/grappa-monte-dal-santuario-madonna-del-covolo/"
+   }
+  ],
+  "season": [
+   {
+    "t": "De Sacrario-terreinen op de top zijn het hele jaar dagelijks open; het museum/Galleria Vittorio Emanuele III is open 9:00-11:50 en 13:00-16:50, gesloten op maandag en feestdagen.",
+    "u": "https://www.cimamontegrappa.it/sacrario-militare-cima-grappa/"
+   },
+   {
+    "t": "Van de asfaltroutes blijft alleen de Strada Cadorna (via Romano d'Ezzelino) 's winters volledig sneeuwvrij; de Strada Generale Giardino (via Semonzo/Borso del Grappa) is dan alleen open tot Baita Camol/Campo Croce, daarna gesloten voor sneeuw of aardverschuivingen. Over de winterstatus van de mulattiera del Covolo zelf is niets bevestigd.",
+    "u": "https://www.oraridiapertura24.it/filiale/Bassano%20del%20Grappa-Sacrario%20Militare%20di%20Cima%20Grappa%20e%20Museo%20della%20Grande%20Guerra-1102418Y.html"
+   },
+   {
+    "t": "Losstaand voorbeeld van hoe fragiel de wintertoegang op de Grappa is: de SP141 naar Rifugio Ardosetta (andere, verharde route via Alano di Piave) werd op 5 november 2025 met onmiddellijke ingang afgesloten wegens winterrisico, tot woede van de uitbaatster ('Non so per quanto ancora potrò tenere aperto. Così il Grappa rischia di morire'); na protest enkele uren later voorlopig heropend.",
+    "u": "https://www.ildolomiti.it/montagna/2025/non-so-per-quanto-ancora-potro-tenere-aperto-cosi-il-grappa-rischia-di-morire-lasciate-le-strade-accessibili-il-rifugio-ardosetta-e-salvo-per-ora-viabilita-riaperta"
+   },
+   {
+    "t": "Autovrije dagen specifiek voor de mulattiera del Covolo (die sowieso geen autoverkeer heeft) of voor de rest van het Grappa-massief: niet bevestigd in de geraadpleegde bronnen.",
+    "u": null
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Wikiloc-lus van Alek Nardello: Crespano del Grappa-Possagno-Strada degli Alpini-Archeson-pad 152-Cima Grappa-Ardosetta-pad 105 (Covolo)-Crespano, 34,5 km, 1.976 hm, moeilijk, opgenomen juni 2019.",
+    "u": "https://www.wikiloc.com/mountain-biking-trails/crespano-del-grappa-possagno-strada-degli-alpini-archeson-sent-152-cima-grappa-ardosetta-sent-105-c-38008329"
+   },
+   {
+    "t": "Komoot-tour 'Monte Grappa: MTB-Tour zum Rifugio Ardosetta' van MOUNTAINBIKE Magazin, 37 km, 1.500 hm, zwaar, 4u22; oppervlaktemix volgens Komoot: 15,4 km asfalt/verhard tegenover 11 km onverhard plus 2,3 km grind en 3,9 km alpien terrein.",
+    "u": "https://www.komoot.com/tour/174627189"
+   },
+   {
+    "t": "MTB-MAG-route 'Il Grappa da Crespano', 71 km, 2.700 hm, start Crespano del Grappa (Via XI Febbraio 11); de mulattiera 105 naar Casera Ardosetta (8 km, gem. ~11%) is 'volledig berijdbaar maar zwaar', laatste stuk naar Rifugio Bassano gaat over asfalt.",
+    "u": "https://itinerari.mtb-mag.com/tours/view/16307"
+   },
+   {
+    "t": "Wikiloc-route 'Borso – Sentiero 196 – Rifugio Ardosetta – Mulattiera del Covolo' (e-MTB), 28,6 km, 1.548 m",
+    "u": "https://it.wikiloc.com/percorsi-bici-elettrica/borso-sentiero-196-rifugio-ardosetta-mulattiera-del-covolo-119500089"
+   },
+   {
+    "t": "Wikiloc-route 'Mulattiera del Covolo, Cima Grappa, sentiero delle Meatte' (e-MTB), 27,4 km, 1.689 m",
+    "u": "https://it.wikiloc.com/percorsi-bici-elettrica/mulattiera-del-covolo-cima-grappa-sentiero-delle-meatte-e-valle-di-san-liberale-89200559"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Rifugio Ardosetta, uitbaatster Laura Roncali, il Dolomiti nov. 2025",
+    "q": "Non so per quanto ancora potrò tenere aperto. Così il Grappa rischia di morire",
+    "tr": "Ik weet niet hoe lang ik nog open kan blijven. Zo loopt de Grappa het risico dood te gaan",
+    "url": "https://www.ildolomiti.it/montagna/2025/non-so-per-quanto-ancora-potro-tenere-aperto-cosi-il-grappa-rischia-di-morire-lasciate-le-strade-accessibili-il-rifugio-ardosetta-e-salvo-per-ora-viabilita-riaperta"
+   },
+   {
+    "who": "Fietser ManueleSW, Komoot, feb. 2022",
+    "q": "nice managers and good food",
+    "tr": "vriendelijke uitbaters en goed eten",
+    "url": "https://www.komoot.com/highlight/3840588"
+   },
+   {
+    "who": "MTB-MAG-auteur over pad 105/Covolo",
+    "q": "interamente percorribile ma impegnativa",
+    "tr": "volledig berijdbaar maar zwaar",
+    "url": "https://itinerari.mtb-mag.com/tours/view/16307"
+   }
+  ],
+  "gap": "Dekking is sterk gedomineerd door wandel-/MTB-bronnen (Gulliver, Wikiloc, MTB-MAG, Komoot MTB-gidsen) en niet door gravel-specifieke racefiets-community's zoals Strava/RideWithGPS – geen enkele gravelbike-specifieke rit met 650b×55mm-referentie is gevonden voor de Covolo-kant. Cijfers over de klim lopen uiteen: Gulliver noemt 1200 hm vanaf het Santuario (578→1775 m), MTB-MAG noemt 8 km/~11% alleen voor het stuk tot Ardosetta binnen een langere 71 km-lus, en de briefing zelf noemt ~20 km/1500 hm voor de hele rit vanaf Crespano-centrum – vermoedelijk door verschillende startpunten (dorp vs. santuario) en of de Ardosetta-lus wordt meegeteld. Waterpunten zijn het zwakste onderdeel: geen enkele bron bevestigt een publieke drinkfontein op de top of onderweg op de mulattiera zelf; Rifugio Ardosetta is de enige met zekerheid bevestigde bevoorrading, maar heeft wisselende openingstijden die alleen via WhatsApp te checken zijn. EV-laadpunten in de directe omgeving van de klim (Crespano/Pieve del Grappa, Bassano del Grappa) ontbreken op Chargemap; Feltre heeft wel een redelijk aanbod, wat voor de basiskeuze meeweegt richting Feltre als 'EV-vriendelijker', ondanks dat Bassano dichter bij de klimstart ligt."
+ },
+ "kolovrat": {
+  "base": [
+   {
+    "t": "Kobarid (Caporetto) is de logische uitvalsbasis: centraal tussen de Slovenische (Livek/Livške Ravne) en Italiaanse (Robič) toegangswegen naar Kolovrat, met hotels, restaurants en het Kobarid Museum over het Isonzofront.",
+    "u": "https://www.kobariski-muzej.si/en/frequently-asked-questions/"
+   },
+   {
+    "t": "Vanaf Kobarid fiets je via Idrsko 5 km klimmend naar Livek, dan nog 3 km over minder goed asfalt naar Livške Ravne, waarna een panoramaweg over de Kolovrat-richel loopt.",
+    "u": "https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"
+   },
+   {
+    "t": "De grens Slovenië-Italië bij Robič/Breginj kent geen structurele grenscontroles (beide landen Schengen), maar het wegdek aan de Italiaanse kant richting Breginj is op stukken slecht.",
+    "u": "https://julian-alps.com/en/tour/bike-riding/soca-valley-i2a-robidisce-route/65479065/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Hotel Hvala Superior - Topli Val, in het centrum van Kobarid, geldt als fietsvriendelijk met eigen restaurant en gratis parkeren naast het hotel.",
+    "u": "https://www.hotelhvala.si/hotel-5"
+   },
+   {
+    "t": "Kobarid heeft een breed aanbod aan appartementen en kamers (o.a. Apartments Hlapi, Apartments Pri nas) met gemiddeld ca. 100-120 dollar per nacht in het hoogseizoen.",
+    "u": "https://www.booking.com/accommodation/city/si/kobarid.html"
+   }
+  ],
+  "park": [
+   {
+    "t": "In Kobarid zelf is parkeren mogelijk bij het cultureel centrum en bij de Napoleonbrug (betaald, in het hoogseizoen snel vol) of bij het kerkhof.",
+    "u": "https://www.socavalley.com/kolovrat-outdoor-museum-self-guided/"
+   },
+   {
+    "t": "Bij het openluchtmuseum Kolovrat zelf ligt een klein parkeerterreintje; alternatief is parkeren bij de Solarie-berghut aan de Italiaanse kant van de richel.",
+    "u": "https://www.thewalkofpeace.com/locations/ww1-outdoor-museum-kolovrat-a-view-over-the-front/"
+   },
+   {
+    "t": "EV-laadpunten in de regio zijn schaars en niet direct te verifiëren: Chargemap-pagina's voor Tolmin en Camping Kobarid blokkeerden toegang (402/403); onbevestigde vermelding van 4 laders (max. 11 kW) bij Chalets Nebesa, Livek.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Op de Kolovrat-richel zelf worden geen waterpunten vermeld op route- of klimsites; laatste bevestigde water is in de dorpen in de vallei (Kobarid, Idrsko).",
+    "u": "https://www.bike-alpeadria.com/povezovalne_pot/2014051615264274/"
+   },
+   {
+    "t": "In de bredere Soča-vallei bevestigen bikepackers voldoende drinkwaterpunten via openbare fonteinen in dorpen, twee bidons volstonden ook in de zomerhitte — maar dit gaat over de vallei, niet specifiek de kale richel.",
+    "u": "https://bikepacking.com/routes/bikepacking-slovenia/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Hotel Hvala's restaurant Topli Val geldt als de populairste eetgelegenheid van Kobarid, gespecialiseerd in vis.",
+    "u": "https://www.tripadvisor.com/Hotel_Review-g319788-d277370-Reviews-Hotel_Hvala_Restaurant_Topli_Val_Kobarid-Kobarid_Slovenian_Littoral_Region.html"
+   },
+   {
+    "t": "Gostilna Žvikar (aan de weg Kobarid-Bovec, ca. 4 km voor Bovec) is populair bij fietsers en wandelaars, bekend om jota, stoofpotten en verse forel.",
+    "u": "https://zvikar.si/"
+   },
+   {
+    "t": "Onderweg op de Kobarid-Robič-route ligt een historische stenen drinkfontein uit 1917.",
+    "u": "https://www.komoot.com/guide/3500174/gravel-biking-around-kobarid"
+   }
+  ],
+  "season": [
+   {
+    "t": "Het Walk of Peace infopunt/openluchtmuseum Kolovrat is in juni open woensdag-zondag 10:00-17:00, in juli-augustus dagelijks 10:00-18:00; gesloten bij slecht weer.",
+    "u": "https://www.soca-valley.com/en/in-search-of-adventure/culture/2021011121433003/kolovrat-outdoor-museum/"
+   },
+   {
+    "t": "De Strava-uitdaging over de Kolovrat-klim loopt jaarlijks van 1 juni t/m 30 september; start Volče (voor Solarij), finish bij het openluchtmuseum.",
+    "u": "https://www.soca-valley.com/en/activities-presentation/tour-of-slovenia/strava-challenge/"
+   },
+   {
+    "t": "Een hop-on-hop-off toeristenbus die de klim naar Livške Ravne overbrugt, rijdt alleen in juli en augustus.",
+    "u": "https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"
+   },
+   {
+    "t": "De Giro d'Italia reed etappe 19 met de Kolovrat-klim medio juni 2022, wat aantoont dat de weg dan al sneeuwvrij en berijdbaar is; expliciete winterafsluiting kon niet worden bevestigd.",
+    "u": "https://www.komoot.com/highlight/4931687"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Outdooractive-route Mt. Kolovrat panoramaweg vanaf Kobarid, 40 km, 1.061 m, overwegend asfalt (72,7%)",
+    "u": "https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"
+   },
+   {
+    "t": "Komoot-smarttour Zanuso Bivouac - Kolovrat grensrichel-lus vanaf Tolmin, 33,6 km, 1.190 m, MTB, moeilijkheid 'hard', met afdaal-secties op glad wandelpad",
+    "u": "https://www.komoot.com/smarttour/786072"
+   },
+   {
+    "t": "Bike-Alpeadria route Kolovrat (Kobarid-Šmartno/Goriška Brda), 48 km, 1.360 m, asfalt en makadam, moeilijkheid 3/5",
+    "u": "https://www.bike-alpeadria.com/povezovalne_pot/2014051615264274/"
+   },
+   {
+    "t": "Bikepacking.com Slovenia West Loop (GPX-download), 426 km, 8.878 m, 75% onverhard, incl. Kolovrat-kam",
+    "u": "https://bikepacking.com/routes/bikepacking-slovenia/"
+   },
+   {
+    "t": "Velontour-route van Ksenija Vogrinc, Kolovrat-panoramaweg vanuit Kobarid, 40 km, 1.061 m (asfalt)",
+    "u": "https://www.velontour.info/radtouren/detail/kolovrat-auf-der-panoramastrasse-mit-blick-auf-das-soca-tal"
+   },
+   {
+    "t": "Climbfinder Kolovrat vanuit Tolmin, 12,3 km, 969 m (GPS-export)",
+    "u": "https://climbfinder.com/en/climbs/kolovrat-tolmin"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Fietser 'Frank', Komoot-reactie na Giro d'Italia-etappe 19, 2022",
+    "q": "The climb itself is steep and quite hard.",
+    "tr": "De klim zelf is steil en behoorlijk zwaar.",
+    "url": "https://www.komoot.com/highlight/4931687"
+   },
+   {
+    "who": "MTB'er, Komoot-smarttour reactie Zanuso Bivouac-lus",
+    "q": "Up in the blazing sun and down on slippery hiking trails…",
+    "tr": "Omhoog in de brandende zon en omlaag over gladde wandelpaden…",
+    "url": "https://www.komoot.com/smarttour/786072"
+   },
+   {
+    "who": "Bezoeker, Komoot-highlight Kolovrat Openluchtmuseum",
+    "q": "Worth visiting WW1 Outdoor museum Kolovrat, it's also free of charge.",
+    "tr": "De moeite waard om het openluchtmuseum Kolovrat te bezoeken, het is bovendien gratis.",
+    "url": "https://www.komoot.com/highlight/98772"
+   }
+  ],
+  "gap": "Bronnen zijn overwegend wandelaars, toeristenbureaus en race-georiënteerde klimsites (Giro d'Italia, Strava-challenge), niet gravelrijders specifiek — bevestigt het bestaande aandachtspunt in climbs.json. Geen enkele bron noemt bandenmaat; de meeste routebeschrijvingen zijn asfalt-gebaseerd (72-73% verhard volgens outdooractive/bike-alpeadria) met slechts kleine gravel/makadam-stroken, dus 650b x 55mm is ruim voldoende maar overkill voor het merendeel van de klim — het echte MTB-technische stuk zit alleen in de Zanuso Bivouac-afdaling (glad wandelpad, dismount nodig). Water op de kale richel zelf is nergens bevestigd als aanwezig; reken op zelf meenemen vanaf Kobarid/Idrsko. EV-laadinfrastructuur kon niet direct worden geverifieerd (Chargemap blokkeerde toegang met 402/403) — enige aanwijzing is een laadpunt bij Chalets Nebesa in Livek (11 kW, 4 laders), onbevestigd via eigen bronbezoek. Winterafsluiting van de Kolovrat-weg zelf kon niet worden bevestigd of ontkend; enkel indirect bewijs (Giro-etappe medio juni, museum-infopunt alleen juni-augustus bemand) wijst op een praktisch seizoen van juni t/m september. Afstand/hoogtemeter-cijfers lopen tussen bronnen uiteen (40 km/1.061 m vs. 48 km/1.360 m vs. 33,6 km/1.190 m) omdat het verschillende start/eindpunten en lusvarianten betreft — geen tegenstrijdigheid maar wel drie verschillende routes, GPX-keuze hangt af van gewenste lengte en aandeel MTB-technisch terrein."
+ },
+ "moutiere": {
+  "base": [
+   {
+    "t": "Saint-Dalmas-le-Selvage (1500 m) is de logische basis: de klim begint letterlijk aan de dorpsrand, richting Col de la Moutière.",
+    "u": "https://www.eau-cyclisme.com/alpes-maritimes/fontaine-de-st-dalmas-le-selvage-poi1470.htm"
+   },
+   {
+    "t": "Wie de lus met de Bonette-kant wil combineren, kan ook in Jausiers of Barcelonnette (Ubaye-vallei) basen; beide liggen aan de noordkant van de Cime de la Bonette.",
+    "u": "https://www.ubaye.com/en/activities/summer-activities/cycling/e-bike-charging-stations/"
+   },
+   {
+    "t": "Vanaf Saint-Étienne-de-Tinée volgt de weg eerst de Tinée, voorbij een brug slaat de route af naar Saint-Dalmas le Selvage — een logisch startpunt als je in de vallei overnacht.",
+    "u": "https://www.questel.co.uk/col-de-la-moutiere/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Gîte d'étape chez Philippe Issautier in Saint-Dalmas-le-Selvage: het hele jaar open, 15 bedden in slaapzalen, vanaf 20 euro/nacht of 42 euro halfpension; tel. 06 89 30 57 75.",
+    "u": "http://saintdalmasleselvage.fr/gites-2/"
+   },
+   {
+    "t": "Gîte d'étape communal de Bousiéyas (gehucht van de gemeente Saint-Dalmas), 15 bedden, mei–oktober, met restauratieservice, snack en café montagnard.",
+    "u": "https://www.saintdalmasleselvage.org/gite-d-etape-communal-de-bousieyas/accueil-et-h%C3%A9bergement/"
+   },
+   {
+    "t": "Voor reserveringen en overzicht van gîtes/chambres d'hôtes/meublés: Office du Tourisme, Maison de Pays, 06660 Saint-Dalmas-le-Selvage, tel. 04 93 02 46 40 (gesloten zo en wo).",
+    "u": "https://saintdalmasleselvage.fr/hebergements/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Auto (of camper) parkeren kan aan de rand van Saint-Dalmas-le-Selvage, aan het begin van de klim naar de Moutière.",
+    "u": "https://www.questel.co.uk/col-de-la-moutiere/"
+   },
+   {
+    "t": "EV laden: dichtstbijzijnde publieke laadpunten (9 stuks) in Saint-Étienne-de-Tinée, zo'n 13 km verderop in de vallei; niet in Saint-Dalmas zelf.",
+    "u": "https://chargemap.com/fr-fr/cities/saint-etienne-de-tinee-FR"
+   },
+   {
+    "t": "Basen aan de Bonette-kant: snellaadpunt (CCS 60 kW) van eBorn in Jausiers, Place d'Arnauville; Barcelonnette heeft vijf laadpunten.",
+    "u": "https://fr.chargemap.com/place-darnauville.html"
+   },
+   {
+    "t": "Let op: de laadpalen bij Maison de Pays de l'Ubaye (Jausiers) en bij het Office de Tourisme zijn Bosch-oplaadstations voor e-bikes, geen EV-laders voor auto's.",
+    "u": "https://www.ubaye.com/en/activities/summer-activities/cycling/e-bike-charging-stations/"
+   }
+  ],
+  "water": [
+   {
+    "t": "Laatste betrouwbare fontein: aan de uitgang van Saint-Dalmas-le-Selvage, rechts richting Col de la Moutière (44.284288, 6.864419).",
+    "u": "https://www.eau-cyclisme.com/alpes-maritimes/fontaine-de-st-dalmas-le-selvage-poi1470.htm"
+   },
+   {
+    "t": "Boven het dorp geen genoteerde waterpunten voor fietsers; dit klopt met de notitie dat het Mercantour-nationaalpark hierboven geen voorzieningen kent.",
+    "u": "https://www.questel.co.uk/col-de-la-moutiere/"
+   },
+   {
+    "t": "Op het plateau richting Restefond is geen mobiel bereik ('réseau 3G inexistant'); reken op volledige zelfredzaamheid qua water en eten.",
+    "u": "https://bike-cafe.fr/2017/11/gravel-et-cols-mythiques-cols-de-la-moutiere-bonnette-restefond/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Épicerie Saveurs de Montagne in het dorp Saint-Dalmas-le-Selvage: ma–za 08:00–20:00, zondag dicht, tel. 04 93 02 67 75.",
+    "u": "https://alternativi.fr/annuaire/epicerie/saint-dalmas-le-selvage-06660"
+   },
+   {
+    "t": "Gîte d'étape van Bousiéyas serveert ook niet-overnachtende fietsers: restauratie, snacks en café montagnard, eetzaal voor ca. 20 personen.",
+    "u": "https://www.saintdalmasleselvage.org/gite-d-etape-communal-de-bousieyas/accueil-et-h%C3%A9bergement/"
+   },
+   {
+    "t": "Voor een uitgebreider aanbod (supermarkt, meer restaurants): Saint-Étienne-de-Tinée op 6 km, of aan de Bonette-kant Jausiers/Barcelonnette.",
+    "u": "https://alternativi.fr/annuaire/epicerie/saint-dalmas-le-selvage-06660"
+   }
+  ],
+  "season": [
+   {
+    "t": "De piste van de Moutière naar de Bonette-weg (3 km grind) is officieel gesloten van 1 oktober tot 30 juni; van 1 juli tot 30 september alleen toegankelijk voor 4x4/hoge klaring, weersafhankelijk.",
+    "u": "https://ete.auron.com/actu/info-route-de-la-tinee-col-de-la-bonette/"
+   },
+   {
+    "t": "Een andere bron geeft een net iets andere einddatum voor de winterafsluiting: gemotoriseerd verkeer verboden van 1 oktober tot 15 juni.",
+    "u": "https://www.questel.co.uk/col-de-la-moutiere/"
+   },
+   {
+    "t": "Beste periode volgens een fietser die er eind oktober nog doorheen kwam: laat-september/begin oktober ('l'été indien'); begin november sluiten de eerste sneeuwval de grote cols al.",
+    "u": "https://bike-cafe.fr/2017/11/gravel-et-cols-mythiques-cols-de-la-moutiere-bonnette-restefond/"
+   },
+   {
+    "t": "De Route de la Bonette (RM2205) zelf is sinds 19 mei 2026 weer in beide richtingen open, ook 's nachts.",
+    "u": "https://ete.auron.com/actu/info-route-de-la-tinee-col-de-la-bonette/"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot-smarttour 'Col de la Moutière and Cime de la Bonette MTB Loop', 36,9 km, 1.400 hm, moeilijkheid 'hard' (Komoot-community).",
+    "u": "https://www.komoot.com/smarttour/e1009575143/cime-de-la-bonette-par-le-col-de-la-moutiere-parc-national-du-mercantour"
+   },
+   {
+    "t": "Bikemap-route 'Col de la Bonette and Col de la Moutière', 82,6 km, 2.854 hm, start in Jausiers, gemaakt door gebruiker 'Will' (14 jaar oud); 2,5 km onverhard tussen Moutière en Restefond.",
+    "u": "https://www.bikemap.net/en/r/1719936/"
+   },
+   {
+    "t": "Wikiloc-lus vanaf Guégnier via Restefond, Bonette, Raspaillon, Saint-Dalmas en Moutière, 84,4 km, 2.797 hm, door gebruiker 'Jordi' (juli 2025); in de comments: grindstuk 'pretty rough with a lot of loose rocks' over zo'n 4 km.",
+    "u": "https://www.wikiloc.com/cycling-trails/col-de-restefond-cime-de-la-bonette-and-col-de-la-moutiere-from-guegnier-223832549"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Reviewer, Wikiloc-comment (EN)",
+    "q": "pretty rough with a lot of loose rocks",
+    "tr": "behoorlijk ruw met veel losse stenen",
+    "url": "https://www.wikiloc.com/cycling-trails/col-de-restefond-cime-de-la-bonette-and-col-de-la-moutiere-from-guegnier-223832549"
+   },
+   {
+    "who": "Bike Café (FR), over het gebrek aan bereik",
+    "q": "le réseau 3G est inexistant",
+    "tr": "er is geen 3G-bereik",
+    "url": "https://bike-cafe.fr/2017/11/gravel-et-cols-mythiques-cols-de-la-moutiere-bonnette-restefond/"
+   },
+   {
+    "who": "Vince's Cycling Stuff (EN), over het asfalt na Saint-Dalmas",
+    "q": "good, but with many (well-made) repairs",
+    "tr": "goed wegdek, maar met veel (nette) reparaties",
+    "url": "https://www.questel.co.uk/col-de-la-moutiere/"
+   }
+  ],
+  "gap": "Vrijwel alle geraadpleegde bronnen zijn (motor)toeristische infosites, fietsblogs of wandel-/erfgoedpagina's, geen gravelspecifieke reviews — voor de fietsspecifieke praktijk (bandenmaat, exacte staat van het grind) blijven de Bike Café- en Wikiloc-comments de enige directe rijderservaring. Twee officiële bronnen geven een net iets andere einddatum voor de winterafsluiting van de Moutière-piste (30 juni vs. 15 juni) — vermoedelijk seizoensverschil tussen bronjaren, niet geverifieerd. Concrete openingstijden/prijzen van Saveurs de Montagne en de gîtes kunnen tussen seizoenen wijzigen; niet elk jaar herbevestigd. EV-laadpalen specifiek in Saint-Dalmas-le-Selvage zelf: onbevestigd, dichtstbijzijnde bevestigde punten liggen in Saint-Étienne-de-Tinée, Jausiers en Barcelonnette. Het Camp des Fourches ligt niet op deze route zelf (het is verderop aan de Bonette-weg richting Restefond/col), dus het is een oriëntatiepunt onderweg naar de top, geen tussenstop op de grindsectie."
+ },
+ "parpaillon": {
+  "base": [
+   {
+    "t": "Noordkant vanuit Embrun/Crévoux is duidelijk vriendelijker dan de zuidkant: 25 km en 1.850 hm met de laatste 8,5 km onverhard, tegen 18 km en 1.360 hm vanuit Jausiers-kant met 11 km rotsig gravel en meer 4x4-schade.",
+    "u": "https://bike-cafe.fr/2017/08/gravel-cols-mythiques-le-parpaillon/"
+   },
+   {
+    "t": "Twee toegangswegen naar de tunnel, verbonden door dezelfde militaire weg: via Crévoux (noord, Hautes-Alpes) of via La Condamine-Châtelard/Jausiers (zuid, Ubaye) — geen andere gemotoriseerde route over de col.",
+    "u": "https://www.lacondaminechatelard.fr/col-et-tunnel-du-parpaillon.html"
+   },
+   {
+    "t": "De militaire weg is al jaren niet onderhouden en de staat ervan laat te wensen over; mountainbike wordt sterk aangeraden, wandelen blijft mogelijk ook als de weg voor voertuigen dicht is.",
+    "u": "https://provence-alpes-cotedazur.com/en/things-to-do/water-activities/lakes/serre-poncon/parpaillon-tunnel/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Hôtel Le Parpaillon, Le Village, Crévoux: 21 kamers, restaurant met streekkeuken, gratis parkeren op eigen terrein, fietsenverhuur.",
+    "u": "https://www.fr.lastminute.com/hotel/france/crevoux/hotel-le-parpaillon_hid-686859"
+   },
+   {
+    "t": "Gîte Les Mélèzes in Crévoux (1.600 m): zelfstandige verdieping in een dorpshuis, parkeren op enkele meters op eigen terrein, dorpswinkel op 200 m.",
+    "u": "https://www.gites-de-france-hautes-alpes.com/location-vacances-Gite-Les-Melezes-a-Crevoux-05G6332.html"
+   },
+   {
+    "t": "Meerdere andere Gîtes de France in Crévoux beschikbaar (Le Méale, Les Bardeaux, Le Chalet e.a.), stuk voor stuk in het dorp op 1.600 m.",
+    "u": "https://www.gites-de-france-hautes-alpes.com/recherche/locations-vacances-gites-crevoux,type-g,insee-05044.html"
+   }
+  ],
+  "park": [
+   {
+    "t": "Embrun heeft 12 laadpunten (Chargemap): netwerken eborn, EVzen en Qovoltis; 3 snellaadpunten >43 kW, waaronder een 180 kW-lader bij Super U Embrun (Avenue des Métiers 25).",
+    "u": "https://chargemap.com/en-us/cities/embrun-FR"
+   },
+   {
+    "t": "Crévoux heeft slechts 1 laadpunt (eborn, Rue L..., basislaadsnelheid) — voor snelladen dus beter in Embrun blijven vóór het vertrek naar de klim.",
+    "u": "https://chargemap.com/en-us/cities/crevoux-FR"
+   },
+   {
+    "t": "Jausiers heeft 5 laadpunten, waaronder 1 snellader (60 kW) en een Tesla Destination Charger.",
+    "u": "https://chargemap.com/en-us/cities/jausiers-FR"
+   },
+   {
+    "t": "Parkeren bij de trailhead zelf (La Chalp / start onverhard gedeelte) wordt in geen enkele bron met adres of capaciteit bevestigd — onbevestigd.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Noordzijde: La Chalp (bar + fontein) net vóór het gravel-gedeelte is het laatste betrouwbare waterpunt richting de tunnel.",
+    "u": "https://bike-cafe.fr/2017/08/gravel-cols-mythiques-le-parpaillon/"
+   },
+   {
+    "t": "Bij het kerkhof van La Chalp is ook een kraan, maar die was tijdens een rit in juni 2025 niet werkend; de dorpsbak in La Chalp deed het wel.",
+    "u": "https://www.questel.co.uk/tunnel-du-parpaillon/"
+   },
+   {
+    "t": "Zuidzijde: laatste water bij de Chapelle St Anne, daarna is bevoorrading schaars tot de top; verderop richting Réals wordt een 'hut van de Spanjaarden' als pleisterplaats genoemd.",
+    "u": "https://bike-cafe.fr/2017/08/gravel-cols-mythiques-le-parpaillon/"
+   },
+   {
+    "t": "Op de tunnel/top zelf zijn geen cafés, winkels of toiletten.",
+    "u": "https://provence-alpes-cotedazur.com/en/things-to-do/water-activities/lakes/serre-poncon/parpaillon-tunnel/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Dorpswinkel in Crévoux op 200 m van de gîtes in het dorp; concreet uithangbord of openingstijden niet vermeld.",
+    "u": "https://www.gites-de-france-hautes-alpes.com/location-vacances-Gite-Les-Melezes-a-Crevoux-05G6332.html"
+   },
+   {
+    "t": "Embrun heeft volledige voorzieningen (supermarkt, bakkers) als laatste grote bevoorradingsstop voor wie van het noorden komt; exact adres en openingstijden van de supermarkt kon niet bevestigd worden (bronnen geblokkeerd voor scraping).",
+    "u": null
+   },
+   {
+    "t": "Onderweg en op de tunnel zelf geen horeca; de eerstvolgende bevoorrading ligt in de dorpen aan weerszijden.",
+    "u": "https://provence-alpes-cotedazur.com/en/things-to-do/water-activities/lakes/serre-poncon/parpaillon-tunnel/"
+   }
+  ],
+  "season": [
+   {
+    "t": "De tunnel is al 120+ jaar aan beide uiteinden afgesloten met deuren tegen sneeuw/ijs (historisch hout, later staal); normaal gaan die pas begin juli open en sluiten ze bij de eerste sneeuwval in oktober.",
+    "u": "https://mairie.crevoux.fr/route-dacces-tunnel-parpaillon"
+   },
+   {
+    "t": "Actuele status wijkt sterk af van dat normale ritme: sinds 12 juli 2024 is de tunnel volledig afgesloten (ook voor voetgangers) na een instorting/steenval bij de zuidoostelijke ingang en scheuren in het metselwerk van het gewelf.",
+    "u": "https://www.mon-sejour-en-montagne.com/actualites/degats-au-tunnel-du-parpaillon-vers-une-fermeture-definitive/"
+   },
+   {
+    "t": "Expertiserapport (2024/2025): 'l'ouvrage présente un danger grave et imminent' — geen enkele hersteldatum vastgesteld; ook zomer 2025 bleef de tunnel dicht.",
+    "u": "https://alpesdusud.alpes1.com/news/hautes-alpes/108731/le-tunnel-du-parpaillon-reste-ferme"
+   },
+   {
+    "t": "Stand mei 2026: de tunnel is niet langer met de oude stalen deuren dicht, maar met betonblokken — een fysieke, ogenschijnlijk langdurige afsluiting in plaats van de seizoensgebonden sneeuwdeuren.",
+    "u": "https://www.questel.co.uk/tunnel-du-parpaillon/"
+   },
+   {
+    "t": "Voor actuele status: Département Hautes-Alpes, Antenne technique d'Eygliers, tel. 04 92 45 04 85, of de mairies van Crévoux en La Condamine-Châtelard.",
+    "u": "https://mairie.crevoux.fr/route-dacces-tunnel-parpaillon"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot smarttour 'The mythical tunnel du Parpaillon', 111 km, 2.960 hm, hard/expert (10:52 u), samengesteld door Komoot met tips van lokale gebruikers.",
+    "u": "https://www.komoot.com/smarttour/e1030301608/the-mythical-tunnel-du-parpaillon"
+   },
+   {
+    "t": "Komoot-tour 'Col du Parpaillon' van gebruiker Jordi, 102 km, 3.480 hm, hard gravel, doorgaans in 2–3 dagen gereden.",
+    "u": "https://www.komoot.com/tour/47108970"
+   },
+   {
+    "t": "Komoot-route 'Tunnel du Parpaillon' (gravel), 95,7 km, 2.760 m",
+    "u": "https://www.komoot.com/smarttour/e1392009766/tunnel-du-parpaillon"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Expertiserapport geciteerd door Alpes 1, juli 2025",
+    "q": "l'ouvrage présente un danger grave et imminent",
+    "tr": "het bouwwerk vormt een ernstig en dreigend gevaar",
+    "url": "https://alpesdusud.alpes1.com/news/hautes-alpes/108731/le-tunnel-du-parpaillon-reste-ferme"
+   },
+   {
+    "who": "Vince, Vince's Cycling Stuff, mei 2026",
+    "q": "not with the old steel doors, but with ugly concrete blocks",
+    "tr": "niet meer met de oude stalen deuren, maar met lelijke betonblokken",
+    "url": "https://www.questel.co.uk/tunnel-du-parpaillon/"
+   },
+   {
+    "who": "Komoot-gebruiker, reactie op tour, 2024/2025",
+    "q": "Porter son vélo sur les éboulis est la seule option",
+    "tr": "je fiets over het puin dragen is de enige optie",
+    "url": "https://www.komoot.com/fr-fr/guide/3478719/velo-gravel-autour-de-embrun"
+   }
+  ],
+  "gap": "De meeste actuele bronnen zijn lokale nieuwssites, 4x4-forums en gemeentes over de sluiting, niet gravelrijders zelf — over de huidige rijbaarheid bestaan nauwelijks recente fietsersverslagen omdat de tunnel al sinds 12 juli 2024 dicht is. Duidelijke tegenstrijdigheid: officiële/historische bronnen (mairie Crévoux, PACA-toerisme) beschrijven een normaal seizoensritme (deuren dicht om sneeuw/ijs, open van begin juli tot de eerste sneeuw in oktober), terwijl bronnen van 2024–2026 een fysieke, structurele afsluiting met betonblokken beschrijven zonder aangekondigde hersteldatum — dit is dus geen gewone 'nog dicht vanwege ijs'-situatie maar een aanhoudende noodsluiting. Check dus altijd eerst bij de mairie of via een recent forumbericht of de tunnel deze zomer open is voordat je de rit plant. EV-laadgegevens (Chargemap) zijn wel actueel en betrouwbaar; supermarktadressen in Embrun konden niet bevestigd worden doordat de bronsites (Super U, PagesJaunes) scraping blokkeerden."
+ },
+ "picdumidi": {
+  "base": [
+   {
+    "t": "La Mongie (noordzijde, Bagnères-de-Bigorre-kant) is de logische basis: hier staat het kabelbaanstation naar het observatorium, met parkeren en horeca vlakbij.",
+    "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+   },
+   {
+    "t": "Barèges (zuidzijde, via Luz-Saint-Sauveur) is het alternatief; die beklimming naar de Pic du Midi wordt door een klimsite expliciet 'VTT verplicht' genoemd en zwaarder beoordeeld dan vanaf de Mongie-kant.",
+    "u": "https://www.cols-cyclisme.com/pyrenees-centrales/france/pic-du-midi-depuis-luz-saint-sauveur-c491.htm"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "La Voie Lactée, 22 Avenue du Tourmalet, La Mongie (4 sterren) — dichtst bij start en kabelbaan.",
+    "u": "https://www.n-py.com/fr/grand-tourmalet/hebergement"
+   },
+   {
+    "t": "Logis Hôtel le Central, 11 Rue Ramond, Barèges — optie voor wie de zuidkant als basis neemt.",
+    "u": "https://www.n-py.com/fr/grand-tourmalet/hebergement"
+   }
+  ],
+  "park": [
+   {
+    "t": "Gratis parkeren in La Mongie, op zo'n 5 minuten lopen van het kabelbaanstation.",
+    "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+   },
+   {
+    "t": "EV-laden: Révéo-paal op 'Parking La Mongie', Avenue du Tourmalet (Bagnères-de-Bigorre) — Type 2, 22 kW, badge RFID.",
+    "u": "https://chargemap.com/fr-fr/sde65-reveo-d918-bareges.html"
+   },
+   {
+    "t": "EV-laden in Barèges: Révéo-paal bij het gratis Parking Tournaboup aan de Route du Tourmalet, Type 2 22 kW, 24/7 open.",
+    "u": "https://chargemap.com/fr-fr/sde65-reveo-d918-bareges.html"
+   }
+  ],
+  "water": [
+   {
+    "t": "Geen bevestigd waterpunt boven de Col du Tourmalet: bij Col de Sencours en Col des Laquets staan alleen vervallen refuge-ruïnes, geen werkende bron gemeld.",
+    "u": "https://velomontagne.fr/19-juin-2011-15e-sortie-col-du-tourmalet-col-de-sencours-col-des-laquets-et-pic-du-midi/"
+   },
+   {
+    "t": "Laatste zekere stop is op de col zelf: restaurant/bar L'Étape du Berger, dagelijks open begin juli t/m eind september (08:30–17:00), in mei/juni/oktober alleen weekend.",
+    "u": "https://www.etapeduberger.com/restaurant-col-du-tourmalet-pyrenees/"
+   }
+  ],
+  "food": [
+   {
+    "t": "Op de top zelf (na de kabelbaan): restaurant 'le 2877' (reserveren aangeraden) en 'Le Bistrot' voor een snelle stop, doorlopend geopend.",
+    "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+   },
+   {
+    "t": "Op de Col du Tourmalet zelf: L'Étape du Berger, boerderijkeuken, seizoensgebonden (zie 'water').",
+    "u": "https://www.etapeduberger.com/restaurant-col-du-tourmalet-pyrenees/"
+   },
+   {
+    "t": "In La Mongie zelf zitten meerdere restaurants en winkels aan de voet van de kabelbaan; concrete namen/adressen onbevestigd.",
+    "u": null
+   }
+  ],
+  "season": [
+   {
+    "t": "Bergpassen in de Pyreneeën, waaronder de Tourmalet, gaan doorgaans open tussen mei en juni en sluiten tussen november en december; exacte data hangen af van sneeuw en weer.",
+    "u": "https://www.pyrenees-cyclo.com/destination-velo/organiser-mon-sejour/les-dates-douverture-et-de-fermeture-des-routes-de-montagne/"
+   },
+   {
+    "t": "Actuele wegstatus (ook winterafsluitingen) via Inforoute Hautes-Pyrénées: inforoute.ha-py.fr of telefonisch 0825 825 065.",
+    "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+   },
+   {
+    "t": "Kritiek: het observatorium zelf is van 20 april t/m 22 mei 2026 volledig gesloten wegens onderhoud aan de kabelbanen — check dit voor je erheen fietst als je ook binnen wilt.",
+    "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+   },
+   {
+    "t": "Toegang tot het observatorium zelf is alleen met kabelbaan vanaf La Mongie of, in de zomer, te voet via twee bewegwijzerde wandelroutes tegen betaling van entree — geen fietsroute genoemd als officiële toegangsweg.",
+    "u": "https://www.n-py.com/fr/ete/pic-du-midi/acces-transport"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot-tour 'Gravel: double Tourmalet e pic du Midi de Bigorre' van Flow_sur_le_vélo, 90 km, 3.430 hm, incl. waarschuwing dat je op stukken moet lopen met de fiets.",
+    "u": "https://www.komoot.com/tour/1332032035"
+   },
+   {
+    "t": "Komoot-wandeltour 'Col du Tourmalet – Pic du Midi de Bigorre' (Summit Seekers), 16,6 km, 820 hm — goed voor het hoogteprofiel van het laatste stuk, niet als fietsroute bedoeld.",
+    "u": "https://www.komoot.com/tour/571473083"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Velomontagne, fietsverslag juni 2011",
+    "q": "Un grand portail empêche les usagers d'y aller en voitures mais un portillon permet aux randonneurs et aux cyclistes de passer.",
+    "tr": "Een groot hek houdt auto's tegen, maar een klein poortje laat wandelaars en fietsers door.",
+    "url": "https://velomontagne.fr/19-juin-2011-15e-sortie-col-du-tourmalet-col-de-sencours-col-des-laquets-et-pic-du-midi/"
+   },
+   {
+    "who": "Cols-cyclisme.com, klimbeschrijving vanaf Luz-Saint-Sauveur",
+    "q": "La route des Laquets est indiquée comme interdite aux vélos.",
+    "tr": "De weg bij de Laquets staat aangegeven als verboden voor fietsen.",
+    "url": "https://www.cols-cyclisme.com/pyrenees-centrales/france/pic-du-midi-depuis-luz-saint-sauveur-c491.htm"
+   },
+   {
+    "who": "Cols-cyclisme.com, rijdersreactie",
+    "q": "la route est tellement dégradée que je fais le reste à pied",
+    "tr": "de weg is zo kapot dat ik de rest liep",
+    "url": "https://www.cols-cyclisme.com/pyrenees-centrales/france/pic-du-midi-depuis-luz-saint-sauveur-c491.htm"
+   }
+  ],
+  "gap": "Tegenstrijdig en verouderd: een fietsverslag uit 2011 (velomontagne.fr) beschrijft een klein poortje dat fietsers en wandelaars langs de autoslagboom laat, terwijl cols-cyclisme.com (klimsite, geen datum) juist meldt dat de weg bij Les Laquets is aangegeven als verboden voor fietsen en dat de toegang via de kabelbaanmaatschappij nu strikter is vanwege verbouwing van de Hôtellerie des Laquets (bevestigd door een betaalmuur-artikel op lasemainedespyrenees.fr dat spreekt van gereglementeerde toegang tot eind 2025, maar de volledige tekst was niet leesbaar). Geen enkele bron is een gravelfietser die de route in 2024/2025 zelf reed en expliciet meldt te zijn tegengehouden of beboet — de meeste toegangsclaims komen van klimsites en oudere tochtverslagen, niet van recente gravel-first-hand ervaringen. Behandel 'fietsen mag tot Col de Sencours, erboven op eigen risico/mogelijk verboden' als de veiligste aanname, niet als bevestigd feit. EV-laadpalen bij La Mongie en Barèges zijn bevestigd via Chargemap; concrete hotel-/restaurantnamen in La Mongie zelf (buiten het observatorium en L'Étape du Berger) kon ik niet met een geopende bron staven."
+ },
+ "picos": {
+  "base": [
+   {
+    "t": "Cangas de Onís is het logische startpunt: het ligt aan de voet van de Picos en fungeert als dé toegangspoort tot het Santuario de Covadonga, de Lagos en het nationale park zelf.",
+    "u": "https://www.turismocangasdeonis.com/"
+   },
+   {
+    "t": "Potes (Cantabrische kant) is uitgeroepen tot Hoofdstad van het Landelijk Toerisme 2020 en geldt als een van de mooiste dorpen van Spanje; het ligt direct aan de rand van het nationale park, aan de rivier de Quiviesa.",
+    "u": "https://www.potes.es/"
+   },
+   {
+    "t": "De ronde zelf loopt van Cangas de Onís via Posada de Valdeón (etappe 1, 68 km, incl. Puerto del Pontón en Panderrueda) naar Fuente Dé (etappe 2, 20 km, via Pandetrave), dan per kabelbaan verder naar Arenas de Cabrales via Sotres (etappe 3, 34 km) en terug naar Cangas via Lagos de Covadonga (etappe 4, 62,35 km) — Potes ligt dus niet ​op de route zelf maar is de logische uitvalsbasis voor de Fuente Dé-kant.",
+    "u": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Camping de El Cares Picos de Europa bij Santa Marina de Valdeón (afslag vanaf Posada de Valdeón): compleet, schoon, modern, vriendelijk personeel — logische stop na etappe 1.",
+    "u": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   },
+   {
+    "t": "Camping Fuente Dé, direct naast de eindstreep van etappe 2: mooie ligging maar heel eenvoudig en basic.",
+    "u": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   },
+   {
+    "t": "Camping Naranjo de Bulnes bij Poncebos/Arenas de Cabrales: groot, modern, schoon, vriendelijk — de auteur van de route bleef er twee nachten om de bepakking achter te laten voor de zwaarste etappe.",
+    "u": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   },
+   {
+    "t": "In Potes met naam genoemd op Booking.com: Casa Cayo, Hotel & Spa Arha by Maile, Arenas Suites, El Balcón de Potes, Hotel Valdecoro, Hostería La Antigua, Hostería Picos de Europa — adressen niet op deze pagina vermeld, onbevestigd.",
+    "u": "https://www.booking.com/city/es/potes.html"
+   }
+  ],
+  "park": [
+   {
+    "t": "Cangas de Onís: Aparcamiento de la Estación de Autobuses (P1 Cangas Centro), 500+ plaatsen, 2 minuten lopen naar het centrum via de voetgangersbrug over de Güeña — met oplaadpunt voor elektrische auto's.",
+    "u": "https://www.turismocangasdeonis.com/aparcamientos-en-cangas-de-onis.html"
+   },
+   {
+    "t": "Cangas de Onís: Aparcamiento del Censo, centraal achter de Plaza de Camila Beceña; in de zomer blauwe zone met goede doorstroming.",
+    "u": "https://www.turismocangasdeonis.com/aparcamientos-en-cangas-de-onis.html"
+   },
+   {
+    "t": "Fuente Dé: gratis parkeerplaats direct bij het kabelbaanstation, 24/7, geklinkerd, geen gemarkeerde vakken, geen mindervaliden-plekken; loopt in de zomer/rond Pasen snel vol, dan wijkt men uit naar de wei erboven.",
+    "u": "https://aparcarfacil.com/fuente-de/"
+   },
+   {
+    "t": "De parkeerplaats bij Fuente Dé loopt slechts zo'n 40 à 50 dagen per jaar over (zomer en Semana Santa); bij overloop wordt uitgeweken naar aangrenzende weidegrond van de Junta Vecinal van Espinama.",
+    "u": "http://espinama.es/noticia/2021/2/aparcftede.html"
+   },
+   {
+    "t": "EV-laden Potes: 6 laadpunten in het dorp (Zunder-netwerk), o.a. Calle San Roque 20, Parking La Serna, Barrio Sta. Olaja 4 (bij het gemeentelijk sportcomplex) en Plaza la Serna 6.",
+    "u": "https://chargemap.com/cities/potes-ES"
+   },
+   {
+    "t": "EV-laden Fuente Dé/Cangas de Onís centrum: geen specifiek laadpunt bevestigd buiten het punt bij de busstation-parking in Cangas; onbevestigd voor Fuente Dé zelf.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Op de GPX-track van de ronde staat vlak voor de Puerto del Pontón een waypoint 'Fountain' (± 1230 m) net onder de pas zelf (± 1287 m) — het laatste bevestigde waterpunt voor die klim.",
+    "u": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   },
+   {
+    "t": "Fuente del Infierno, een drinkbare bron vlak bij de Puerto del Pontón (N-625, km 111), geldt tevens als de officiële bron van de Río Sella.",
+    "u": "https://www.jfcamina.es/puertoscordillera/ponton/001-jfc-Pozua/travesia.html"
+   },
+   {
+    "t": "Puerto de Panderrueda: een fontein vlak bij het begin van de beklimming en een rustplek met informatieborden op de pas zelf.",
+    "u": "https://rubenwanderlust.com/puerto-de-panderrueda-cerras-de-cuenabres-1-747-m-pico-cebolleda-2-054-m-pico-gildar-2-078-m-nacimiento-del-rio-cares/"
+   },
+   {
+    "t": "Voor de Puerto de Pandetrave is geen waterpunt gevonden in enige geraadpleegde bron — vul bij in Posada de Valdeón vóór vertrek.",
+    "u": null
+   }
+  ],
+  "food": [
+   {
+    "t": "Cangas de Onís heeft elke zondag al meer dan 200 jaar een traditionele markt bij de Palaciu Pintu: ambachtelijke kaas (Cabrales, Gamonéu, Beyos), boter, honing, groente — en op zondag is in Cangas de Onís alles open.",
+    "u": "https://www.turismocangasdeonis.com/mercado-de-cangas-de-onis.html"
+   },
+   {
+    "t": "Cangas de Onís telt tientallen restaurants en cidrerías in en rond het centrum (o.a. Restaurante El Abuelo, Los Arcos, Taberna Asturcelta, Sidrería Covadonga) — ruim voldoende aanbod om na een etappe te eten.",
+    "u": "https://www.turismocangasdeonis.com/restaurantes-y-sidrerias-en-cangas-de-onis.html"
+   },
+   {
+    "t": "Na de kabelbaan-afdaling richting Sotres ligt een refugio 'op enkele kilometers' waar je een warme koffie kunt drinken.",
+    "u": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   },
+   {
+    "t": "Winkels/bakkerijen in Potes en Fuente Dé zelf: onbevestigd — geen enkele geraadpleegde bron noemt een concrete zaak met adres of openingstijden.",
+    "u": null
+   }
+  ],
+  "season": [
+   {
+    "t": "Lagos de Covadonga is verboden voor privéauto's van 1 juni tot 18 oktober (plus losse data rond Pasen, eind oktober, november en december); enige toegestane route voor wie wél mag rijden is de CO-4 via Covadonga — GPS-apps die via bospaden leiden worden beboet.",
+    "u": "https://www.turismocangasdeonis.com/acceso-a-lagos.html"
+   },
+   {
+    "t": "Tegenstrijdigheid: een artikel voor 2025 noemt een net iets andere periode, 1 juni t/m 19 oktober met uitzonderingen op 25 juli en 8 september — de uitzonderingsdata verschuiven dus jaarlijks, check vlak voor vertrek de actuele Ayuntamiento-pagina.",
+    "u": "https://www.elbuscolu.com/noticias-cangas-de-onis/los-lagos-de-covadonga-regulan-su-acceso-en-2025:-conoce-las-fechas-y-tarifas-11272710.html"
+   },
+   {
+    "t": "Pendelbus Cangas de Onís–Lagos: 24 vertrekken per dag, elke 30 minuten, €1,55 enkele reis, tickets via alsa.es — voor wie de rit liever niet fietst.",
+    "u": "https://www.turismocangasdeonis.com/acceso-a-lagos.html"
+   },
+   {
+    "t": "Teleférico de Fuente Dé: tickets minimaal 24 uur van tevoren online boeken in tijdslots van 30 minuten; hoogseizoen loopt van 1 juli t/m 30 september plus Pasen; gesloten op 1 en 6 januari en 24/25/31 december.",
+    "u": "https://entradas.telefericofuentede.com/"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Wikiloc-track van lucasgb, 'Gravel Cycling Around the Picos de Europa' — 183,9 km totaal, 5.145 m stijging, in 4 etappes met camping-overnachtingen, geüpload september 2022. Dit is de brontrack achter de PISTE-beschrijving.",
+    "u": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   },
+   {
+    "t": "Climbfinder-profiel Puerto de Pandetrave vanaf Portilla de la Reina, 10,1 km, 341 m (verhard, export naar GPS)",
+    "u": "https://climbfinder.com/en/climbs/puerto-de-pandetrave-portilla-de-la-reina"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "lucasgb, routebeschrijving Wikiloc",
+    "q": "ojo con problemas meteorológicos que cierran el servicio por fuertes vientos",
+    "tr": "let op: weersproblemen kunnen de kabelbaan sluiten door harde wind",
+    "url": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   },
+   {
+    "who": "lucasgb, reactie op Wikiloc-comment, juni 2026",
+    "q": "el día antes estuvo cerrado por fuertes vientos",
+    "tr": "de dag ervoor was hij dicht wegens harde wind",
+    "url": "https://www.wikiloc.com/gravel-bike-trails/vuelta-a-los-picos-de-europa-en-gravel-113999402"
+   }
+  ],
+  "gap": "Voeding in Potes en Fuente Dé zelf (winkels, bakker, openingstijden) kon niet worden bevestigd — alle geraadpleegde bronnen over eten gaan over Cangas de Onís. Water op de Pandetrave-beklimming is niet gedocumenteerd in enige bron die is geopend. EV-laden bij Fuente Dé is niet bevestigd (Chargemap gaf alleen data voor Potes en Cangas de Onís centrum). Voor Santander-vluchten vanuit NL/BE en rijtijden Santander–Potes/Cangas de Onís is geen bruikbare bron gevonden binnen het zoekbudget van deze sessie (websearch-quota liep vast); de vluchtinformatiepagina van het vliegveld toonde op 8 september 2026 wel een Ryanair-verbinding met Brussel-Charleroi, maar geen structurele routelijst met NL-bestemmingen — dit telt niet als bevestiging van een vaste dienstregeling. Rijtijd Nederland–Picos (~15-18 uur, zoals gesteld in de contextbrief) kon niet in een bron worden teruggevonden en blijft onbevestigd. De sluitingsdata voor Lagos de Covadonga verschillen tussen bronnen van verschillende jaren (zie season) — neem de meest recente Ayuntamiento-pagina als leidend en check vlak voor vertrek."
+ },
+ "puymary": {
+  "base": [
+   {
+    "t": "Pas de Peyrol (1.588-1.589 m) is de hoogste verharde bergpas van het Massif Central, met parkeerplaats, openbaar toilet, bar, snackbar, restaurant en een Maison de Site over de vulkaangeschiedenis.",
+    "u": "https://www.salers-tourisme.fr/en/pas-de-peyrol"
+   },
+   {
+    "t": "De weg naar Pas de Peyrol is jaarlijks open van ca. 1 mei tot 1 november (weersafhankelijk, in de praktijk 1 juni–1 november volgens de officiële toegangspagina); van 1 november tot 1 mei is de col volledig afgesloten.",
+    "u": "https://www.puymary.fr/se-deplacer-et-se-stationner-puy-mary-acces/?lang=en"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Camping du Puy Mary in Mandailles-Saint-Julien: familiecamping (4 generaties), 3 ha beboste grond langs de rivier de Jordanne, vlakbij winkels van het dorp.",
+    "u": "https://www.camping-puymary.com/en_GB"
+   },
+   {
+    "t": "Gîte d'étape du Falgoux (920 m, op de camping van het dorp): 24 bedden (2 tweepersoonskamers + 2 stapelbedkamers van 10), vanaf €17-20 per bed, hele gîte huren €390; sluit eind augustus.",
+    "u": "https://espacenature-puymary.fr/fr/site/35449"
+   }
+  ],
+  "park": [
+   {
+    "t": "Parkeren op Pas de Peyrol is 's zomers (1 juni–30 sept.) betaald: €4 per sticker, geldig voor onbeperkt in-/uitrijden dezelfde dag; parkeren buiten het vak wordt beboet.",
+    "u": "https://www.puymary.fr/se-deplacer-et-se-stationner-puy-mary-acces/?lang=en"
+   },
+   {
+    "t": "Campers mogen 8 juli–21 augustus tussen 10.00 en 18.00 uur niet op Pas de Peyrol parkeren; de wegen zijn te smal voor twee campers naast elkaar, dus eenrichtingsregels gelden per tijdstip/seizoen.",
+    "u": "https://www.ffrandonnee.fr/s-informer/actualites/les-navettes-estivales-du-volcan-puy-mary-du-08-juillet-au-21-aout"
+   }
+  ],
+  "water": [
+   {
+    "t": "Publiek toilet op Pas de Peyrol zelf bevestigd; drinkwaterpunt specifiek in Le Falgoux is niet in het (onvolledige) register terug te vinden — meenemen vanuit Salers of Mandailles is zekerder.",
+    "u": "https://www.eau-cyclisme.com/eau-departement-cantal-d15.htm"
+   },
+   {
+    "t": "In Salers is een openbare fontein (Fontaine de Salers) plus openbaar toilet bevestigd als vulpunt onderweg.",
+    "u": "https://www.eau-cyclisme.com/eau-departement-cantal-d15.htm"
+   }
+  ],
+  "food": [
+   {
+    "t": "Buron d'Eylac (aan de voet van Puy Mary, cirque d'Eylac, ca. 5 km van de top, vlak bij GR400): Auvergne-keuken en crêpes — charcuterie, bourriols, kaas, pachades. Open half juni–half september, alleen contant/cheque, sluit bij slecht weer.",
+    "u": "https://www.hautesterrestourisme.fr/fr/fiche/restauration/buron-d-eylac-lavigerie_TFO4840203/"
+   },
+   {
+    "t": "Op Pas de Peyrol zelf zijn bar, snackbar en restaurant aanwezig (seizoensgebonden, betaling met kaart/contant/cheque).",
+    "u": "https://www.salers-tourisme.fr/en/pas-de-peyrol"
+   }
+  ],
+  "season": [
+   {
+    "t": "Wegseizoen Pas de Peyrol: circa 1 mei/1 juni tot 1 november, daarbuiten volledig gesloten door sneeuw.",
+    "u": "https://www.puymary.fr/se-deplacer-et-se-stationner-puy-mary-acces/?lang=en"
+   },
+   {
+    "t": "Van 8 juli tot 21 augustus rijden 9 zomerse pendelbuslijnen ('navettes du volcan') tussen dalen als Le Falgoux, Mandailles, Le Claux, Dienne en Salers en Pas de Peyrol, bedoeld om autogebruik te verminderen — geen verplichte autovrije dag, wel expliciet ontmoedigingsbeleid.",
+    "u": "https://www.ffrandonnee.fr/s-informer/actualites/les-navettes-estivales-du-volcan-puy-mary-du-08-juillet-au-21-aout"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot-tour 'Neronne Pass – Pas de Peyrol Pass (1.589 m) loop from Saint-Projet-de-Salers', 71,9 km, 1.610 m, wegfiets-rit (overwegend asfalt), 4,8/5 (12 reviews).",
+    "u": "https://www.komoot.com/smarttour/4021828"
+   },
+   {
+    "t": "Komoot-tour 'Pas de Peyrol Pass (1.589 m) – Ascent to Pas de Peyrol loop from Aurillac', 106 km, 2.050 m, wegfiets-rit vanaf station Aurillac, 4 beklimmingen.",
+    "u": "https://www.komoot.com/smarttour/20792307"
+   },
+   {
+    "t": "Komoot Guide 'The best gravel rides in Cantal' noemt de 'Pas de Peyrol Pass Ascent Loop' vanaf Puy de Seycheuse: 65,1 km, 1.900 m, zwaar, 16 beoordelaars — de meest gerichte gravel-optie die we konden bevestigen (geen losse tourpagina meer beschikbaar, alleen via de guide).",
+    "u": "https://www.komoot.com/guide/3454103/gravel-biking-in-cantal"
+   },
+   {
+    "t": "Gravel-variant van de GTMC (Grande Traversée du Massif Central) loopt door de Monts du Cantal; volgens de routebeheerder gedraagt de gravel-versie zich eerder als een XC/trail-parcours met af en toe drager-werk — GPX essentieel omdat omleidingen niet bewegwijzerd zijn.",
+    "u": "https://www.la-gtmc.com/itineraire/grande-traversee-du-massif-central-gravel"
+   },
+   {
+    "t": "Komoot-gravelroute (smarttour), lus over de Pas de Peyrol vanaf Puy de Seycheuse, 65 km, 1.900 m",
+    "u": "https://www.komoot.com/smarttour/43669265"
+   },
+   {
+    "t": "Officiële GPX van de GTMC-gravelvariant (hele traversée, 39 etappes), la-gtmc.com",
+    "u": "https://www.la-gtmc.com/itineraire/gpx/53"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Vincent Reboul, Komoot, okt. 2021 (wegfietser)",
+    "q": "The last few kilometers have high percentages.",
+    "tr": "De laatste kilometers hebben hoge percentages.",
+    "url": "https://www.komoot.com/highlight/87241"
+   },
+   {
+    "who": "Martin Donat, Komoot, aug. 2020 (wegfietser)",
+    "q": "Inclines between twelve and 15 percent demand everything from you.",
+    "tr": "Hellingen tussen twaalf en vijftien procent vragen alles van je.",
+    "url": "https://www.komoot.com/highlight/87241"
+   },
+   {
+    "who": "Komoot-tourbeschrijving bij rit van Bart de Veer, gravelrit 65 km, aug. 2020",
+    "q": "You may need to push your bike for some segments of this route.",
+    "tr": "Op sommige stukken van deze route moet je je fiets mogelijk duwen.",
+    "url": "https://www.komoot.com/tour/240653662"
+   },
+   {
+    "who": "La-GTMC.com, officiële routebeschrijving gravel-variant",
+    "q": "il faut accepter le portage ponctuel, monter des pneus larges et robustes",
+    "tr": "je moet af en toe dragen accepteren en brede, stevige banden monteren.",
+    "url": "https://www.la-gtmc.com/itineraire/grande-traversee-du-massif-central-gravel"
+   }
+  ],
+  "gap": "Gemengd beeld, maar minder 'tour-operator-zwaar' dan de bestaande climbs.json-flag suggereert: we vonden echte Komoot-riders (Vincent Reboul, Martin Donat, Bart de Veer) met concrete beklimmingservaringen, plus één officiële gravel-routebeschrijver (GTMC) die eerlijk is over portage. Wat ontbreekt: (1) geen enkele bron noemt expliciet een 'Pas de Peyrol sans voiture'-dag zoals de opdracht veronderstelde — wat we vonden is een zomers pendelbus-netwerk (8 juli–21 aug) plus een middag-camperverbod, geen autovrije dag voor gewone auto's; dit moet als aanname worden behandeld, niet als bevestigd feit. (2) Geen bevestigde laadpalen in Le Falgoux of Mandailles-Saint-Julien zelf (Chargemap toont 0 punten voor Le Falgoux); dichtstbijzijnde bevestigde snellaadpunten liggen in Murat (150 kW CCS, ca. 25-30 km rijden) en mogelijk Salers (bron betaalmuur, niet volledig geverifieerd). (3) Drinkwater in Le Falgoux zelf kon niet bevestigd worden — alleen Salers en het toilet op Pas de Peyrol staan in het (zelf-onbetrouwbaar verklaarde) register. (4) Elevatie/hoogte van de col wisselt tussen bronnen (1.588 m, 1.589 m, 1.592 m) — vermoedelijk afronding, geen materieel verschil. (5) Voor de GTMC-gravelvariant vonden we geen route-specifieke GPX-downloadlink, alleen een verwijzing naar de ON PISTE-app; een direct bruikbare GPX voor de 650b×55mm-kalibratie ontbreekt dus nog."
+ },
+ "rallarvegen": {
+  "base": [
+   {
+    "t": "Route loopt Haugastøl → Finse → Flåm, ± 80-82 km. Haugastøl heeft goede aansluiting op de Rv7, ruime parkeergelegenheid en ligt vlak bij het station — de klassieke startbasis.",
+    "u": "https://www.haugastol.no/rallarvegen"
+   },
+   {
+    "t": "Geilo, ± 18 km van Haugastøl en een stuk groter qua voorzieningen, positioneert zich als alternatieve basis met een eigen verhuurmerk ('Rallarvegen Bike Rental | Geilo').",
+    "u": "https://www.geilo.com/en/rallarvegen-bike-rental"
+   },
+   {
+    "t": "Haugastøl 1000 MOH / Rallarvegen Sykkelutleie noemt zich 's lands grootste verhuurder van huurfietsen (30+ jaar ervaring); naast gewone gravel-/toerfietsen ook e-bikes. Twee pakketten: het 'Rallar-pakket' (trein naar Finse/Hallingskeid, terugfietsen naar Flåm) en het kortere 'Minipakket' (trein Haugastøl→Finse, terugfietsen naar Haugastøl).",
+    "u": "https://www.haugastol.no/en/all-inclusive-package"
+   },
+   {
+    "t": "Hotel Finse 1222 verhuurt zelf ook fietsen: comfortfiets 695 NOK/dag, juniorfiets (Merida Matts Machete 24\") 395 NOK/dag; ophalen aan het oostelijke uiteinde van het perron in Finse, inleveren in Flåm bij een klein rood huisje met opschrift 'Hotel Finse 1222' aan het einde van het perron.",
+    "u": "https://rental.hotellfinse1222.no/en/sykkelutleie"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Hotel Finse 1222, Rallarvegen 2660, 5719 Finse, tel. +47 56 52 71 00 — combineert overnachting met eigen fietsverhuur.",
+    "u": "https://old.finse1222.no/en/rallarvegen-the-navvy-road/"
+   },
+   {
+    "t": "Finsehytta (DNT, bemand): zomerseizoen opent met 'Finsefest' op 26 juni en loopt door tot begin oktober; buiten dat bemande seizoen is de zelfbedieningsannex Brebua beschikbaar.",
+    "u": "https://www.dnt.no/hytter/betjente/finsehytta/apningstider/"
+   },
+   {
+    "t": "Geiterygghytta (DNT), 1224 m, 88 bedden verspreid over 3 gebouwen, houtgestookte sauna; seizoen 2026: 26 juni – 13 september.",
+    "u": "https://hyttebestilling.dnt.no/hytte/10808"
+   },
+   {
+    "t": "Fretheim Hotel in Flåm (Nedre Fretheim), 122 kamers, op 5 minuten lopen van station en Flåmsbana.",
+    "u": "https://www.tripadvisor.com/Hotel_Review-g230076-d277739-Reviews-Fretheim_Hotel-Flam_Aurland_Municipality_Sogn_og_Fjordane_Western_Norway.html"
+   }
+  ],
+  "park": [
+   {
+    "t": "Haugastøl: parkeren bij het treinstation en (gratis) bij Haugastøl Turistsenter, vlak bij de start van de Rallarvegen.",
+    "u": "https://www.haugastol.no/rallarvegen"
+   },
+   {
+    "t": "EV-laden is in Geilo praktischer geregeld dan in Haugastøl: Geilojordet (23 laadpunten, CCS/CHAdeMO/Type2), snelladers in het centrum (240 kW, 7 punten, max. 2 uur parkeren) en Geilo Oost (11 punten).",
+    "u": "https://www.geilo.com/en/electric-car-charging-stations-and-parking-in-geilo"
+   },
+   {
+    "t": "EV-laadpaal bij Haugastøl zelf en publiek laden in Finse of Flåm: onbevestigd — check vooraf nobil.no. Finse is sowieso autovrij (alleen per trein bereikbaar), dus laden heeft daar geen zin.",
+    "u": null
+   }
+  ],
+  "water": [
+   {
+    "t": "Café Rallaren op station Myrdal (867 m), de schakel tussen Flåmsbana en Bergensbanen: piekopening 09:15-18:45 (juni-aug), beperktere uren in april-mei en september-oktober.",
+    "u": "https://www.caferallaren.no/sykkelutleige"
+   },
+   {
+    "t": "Finse Hotel bij het station fungeert als koffie- en wafelstop op de hoogste plek van de route; niet zelf op de hotelsite geverifieerd.",
+    "u": null
+   },
+   {
+    "t": "Kleine pleisterplaatsen onderweg verkopen koffie en wafels maar accepteren vaak alleen contant geld — dit komt uit één bron, dus zwak signaal, niet geverifieerd als patroon.",
+    "u": null
+   }
+  ],
+  "food": [
+   {
+    "t": "Haugastøl 1000 MOH heeft een eigen restaurant naast de fietsverhuur.",
+    "u": "https://www.haugastol.no/en"
+   },
+   {
+    "t": "Myrdal: Café Rallaren is seizoensgebonden en verhuurt geen fietsen meer — een verandering ten opzichte van oudere reisgidsen die Myrdal nog als ophaalpunt noemen. Logistieke valkuil voor wie op verouderde info afgaat.",
+    "u": "https://www.caferallaren.no/sykkelutleige"
+   },
+   {
+    "t": "Flåm: kiosk bij Flåm Camping & Hostel verkoopt brood, melk en boodschappen (alleen zomer), op 5 minuten lopen van het station.",
+    "u": "https://www.flaam-camping.no/"
+   }
+  ],
+  "season": [
+   {
+    "t": "Het onderste deel Haugastøl–Finse (26 km) is vaak al eind mei/juni berijdbaar; de hele route is doorgaans pas eind juli echt sneeuwvrij, seizoen loopt tot eind september. Check vooraf de 'Rallarvegrapporten' (conditierapport).",
+    "u": "https://www.haugastol.no/rallarvegen"
+   },
+   {
+    "t": "Fietsen mogen mee in de trein op Flåmsbana en Bergensbanen, maar plek is beperkt: Bergensbanen heeft 15 reserveerbare fietsplekken per trein, apart te boeken bovenop het treinkaartje.",
+    "u": "https://www.flamsbana.no/rallarvegen"
+   },
+   {
+    "t": "Bronnen spreken elkaar tegen over de exacte openingsdatum: '10 juli' als officiële datum in de ene bron, eind juni voor het onderste routedeel in een andere, 'medio juli' bij weer een derde. Zie ook 'gap'.",
+    "u": null
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot-tour 'Rallarvegen, Noorwegen' van Velozine, 80,8 km, 1.890 m stijgen.",
+    "u": "https://www.komoot.com/tour/679235064"
+   },
+   {
+    "t": "Komoot-tour 'Of Milk and Navvies' van Sabina Knezevic (Farawayistan), 382 km totaal (uitgebreide meerdaagse variant inclusief Mjølkevegen), 6.590 m stijgen — niet alleen het Rallarvegen-stuk.",
+    "u": "https://www.komoot.com/tour/1406071619"
+   },
+   {
+    "t": "RideWithGPS 'Rallarvegen: Haugastøl–Flåm', 77,4 km, 3.899 m stijgen — cijfers via zoekresultaat, de pagina zelf kon niet volledig geopend worden; lagere betrouwbaarheid.",
+    "u": "https://ridewithgps.com/routes/13846896"
+   },
+   {
+    "t": "RideWithGPS-route van Cycle Norway (Rallarvegen incl. Flåm-Voss), 150 km, 3.400 m, 55% onverhard",
+    "u": "https://ridewithgps.com/routes/39606831?privacy_code=E9Vjb0QdoUH3tbkG"
+   },
+   {
+    "t": "GPX-download van Cycle Norway (Rallarvegen)",
+    "u": "https://cyclenorway.com/wp-content/uploads/2025/08/Rallarvegen-3.gpx"
+   },
+   {
+    "t": "Bikepacking.com-route Of Milk and Navvies (Mjølkevegen + Rallarvegen), 383 km, 7.282 m, 71% onverhard",
+    "u": "https://bikepacking.com/routes/of-milk-and-navvies/"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "Café Rallaren, officiële routewaarschuwing",
+    "q": "It is not recommended to cycle in the steep section between Myrdal and Kårdal.",
+    "tr": "Het wordt afgeraden om te fietsen op het steile stuk tussen Myrdal en Kårdal.",
+    "url": "https://www.caferallaren.no/sykkelutleige"
+   },
+   {
+    "who": "Fietser, Tripadvisor-reviewtitel",
+    "q": "Don't rent the bikes from the Flam website!",
+    "tr": "Huur de fietsen niet via de Flåm-website!",
+    "url": "https://www.tripadvisor.com/ShowUserReviews-g678207-d3498285-r284058173-Rallarvegen-Aurland_Municipality_Sogn_og_Fjordane_Western_Norway.html"
+   }
+  ],
+  "gap": "Bronentransparantie — niet elke URL kon volledig als pagina geopend worden, ondanks 3 pogingen per site: (1) de RideWithGPS-track (77,4 km / 3.899 m) is alleen via het zoekresultaat/snippet bevestigd, de routepagina zelf gaf geen volledige laad; (2) Vy.no (Bergensbanen/Flåmsbana) blokkeerde herhaaldelijk het ophalen van pagina's (403), dus een exacte fietsticketprijs en de dagelijkse treinfrequentie konden niet bevestigd worden — check dit bij boeking rechtstreeks op vy.no; (3) de Finse Hotel-koffiestop en het 'alleen-contant'-signaal over pleisterplaatsen komen uit één niet-geopende bron elders online, vandaar expliciet u:null. Alle overige facts in dit dossier zijn wél tegen volledig geopende pagina's gecontroleerd. Verder: of fietsen mee mogen op de toeristische fjordboot Flåm-Gudvangen (Nærøyfjord, Norled/The Fjords) is niet bevestigd; niet aannemen dat dit kan zonder navraag. EV-laden bij Finse en Flåm is niet bevestigd (Finse is toch al autovrij). Bronnen spreken elkaar tegen over helmverhuur: Haugastøl.no zegt dat een helm te huur/koop is (499 NOK), een Tripadvisor-review meldt juist dat helmen nergens te huur waren. Ook de exacte openingsdatum van het seizoen verschilt per bron (10 juli officieel vs. eind juni voor het onderste deel vs. medio juli elders). De drie GPX-bronnen voor het pure Rallarvegen-stuk lopen qua hoogtemeters sterk uiteen (1.890 m Komoot tegenover 3.899 m RideWithGPS) — een bekend probleem met hoogteberekening tussen platforms, geen van beide is 'het' officiële cijfer. Coverage leunt sterk op de sites van verhuurbedrijven en DNT-hutten; onafhankelijke rijdersquotes specifiek over parkeren of treinlogistiek zijn dun gezaaid (twee anekdotische bronnen, geen patroon van drie)."
+ },
+ "strynefjell": {
+  "base": [
+   {
+    "t": "Grotli is de basis als je grind wilt: de klim start hier op ± 910 m, direct bij het hotel, en CycleNorway beoordeelt de kant vanaf Grotli met 4/10 en 75% onverhard.",
+    "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"
+   },
+   {
+    "t": "Videsæter/Hjelledalen is de basis voor de westkant; die blijft volgens CyclingRoutes.cc vrijwel de hele klim ruw asfalt, met alleen bovenaan een kort grindplateau.",
+    "u": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"
+   },
+   {
+    "t": "Grotli en Videsæter liggen 27 km uit elkaar over de Gamle Strynefjellsvegen.",
+    "u": "https://www.nasjonaleturistveger.no/en/routes/gamle-strynefjellsvegen/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Grotli Høyfjellshotell, Skjåkvegen 5383, 2695 Grotli — historisch fjellhotel uit 1905, ± 125 bedden/53 kamers, café met warm en koud eten overdag.",
+    "u": "https://www.1881.no/hotell/hotell-innlandet/hotell-grotli/grotli-hoeyfjellshotell_100150982S2/"
+   },
+   {
+    "t": "Hotel Videseter, Gamle Strynefjellsveg 150, 6798 Hjelledalen, tel. +47 57 87 60 50 — ligt letterlijk aan de weg; open van mei tot september, dicht 's winters door sneeuw.",
+    "u": "https://chargemap.com/en-gb/grotli-hoyfjellshotell.html"
+   },
+   {
+    "t": "Langs de weg liggen gletsjermeren die als wildkampeerplek worden aangeprezen bij goed weer.",
+    "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Gratis parkeerplaats bij de waterval Videfossen, aan de westkant van de route.",
+    "u": "https://www.lifeinnorway.net/gamle-strynefjellsvegen/"
+   },
+   {
+    "t": "Bij Hotel Videseter zelf wordt zowel voor toegang als voor parkeren betaald.",
+    "u": "https://www.lifeinnorway.net/gamle-strynefjellsvegen/"
+   },
+   {
+    "t": "EV bij Grotli Høyfjellshotell: laadpunten van Mer — CCS tot 70 kW, CHAdeMO 50 kW en Type 2 22 kW, drie palen op het terrein.",
+    "u": "https://chargemap.com/en-gb/grotli-hoyfjellshotell.html"
+   },
+   {
+    "t": "EV in Stryn: Esso aan Tonningsgata 2 (CCS2, tot 250 kW) en TOCN Stryn Torg aan Tonningsgate 4 (Type 2, 19,3 kW, 24/7).",
+    "u": "https://www.plugshare.com/location/652727"
+   }
+  ],
+  "water": [
+   {
+    "t": "Onderweg geen kranen, cafés of winkels — CyclingRoutes.cc noemt Gamlebutikken in Hjelle als enige eten/waterstop op de route.",
+    "u": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"
+   },
+   {
+    "t": "Laatste zekere punt aan de oostkant is het café van Grotli Høyfjellshotell, vlak bij de start.",
+    "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"
+   },
+   {
+    "t": "De gletsjermeren langs de weg ogen aanlokkelijk, maar geen enkele bron bevestigt of het water er drinkbaar is — onbevestigd.",
+    "u": null
+   }
+  ],
+  "food": [
+   {
+    "t": "Gamlebutikken in Hjelle: winkel/eetgelegenheid aan de westelijke voet van de klim, expliciet genoemd als enige bevoorrading op de route.",
+    "u": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"
+   },
+   {
+    "t": "Café bij Grotli Høyfjellshotell serveert overdag warm en koud eten.",
+    "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"
+   },
+   {
+    "t": "Hotel Videseter serveert ontbijt bij verblijf; een bakkerij wordt genoemd 'de andere kant op' vanaf het hotel, zonder verdere details.",
+    "u": "https://www.videseter.com/"
+   },
+   {
+    "t": "Stryn zelf heeft reguliere supermarkten (o.a. Coop Extra) op loopafstand van het centrum — voor wie er de nacht ervoor overnacht.",
+    "u": "https://www.plugshare.com/location/652727"
+   }
+  ],
+  "season": [
+   {
+    "t": "Officieel open van 15 juni tot eind september; daarbuiten potdicht door sneeuw.",
+    "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"
+   },
+   {
+    "t": "In 2026 bleef het volledige traject Grotli–Videsæter half juni nog dicht: het wegdek moest eerst worden gefreesd en drogen, en de opening werd tot medio juni uitgesteld vanwege de wilde rendieren in het gebied.",
+    "u": "https://www.nrk.no/vestland/heile-gamle-strynefjellsvegen-opnar-ikkje-for-i-midten-av-juni-1.17896234"
+   },
+   {
+    "t": "Gedeeltelijke opening kan eerder: het stuk Videsæter–zomerskicentrum was in 2026 al eind mei open, terwijl Videsæter–Grotli nog dicht bleef.",
+    "u": "https://www.nrk.no/vestland/heile-gamle-strynefjellsvegen-opnar-ikkje-for-i-midten-av-juni-1.17896234"
+   },
+   {
+    "t": "Ook na opening kan de weg tijdelijk dicht door noodweer — in de zomer van 2023 was hij door storm Hans ongeveer een week volledig gestremd.",
+    "u": "https://www.lifeinnorway.net/gamle-strynefjellsvegen/"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "CycleNorway-route 'Gamle Strynefjellsvegen', 27 km, 256 hm, 75% onverhard, incl. downloadbare GPX en aanbevolen bandenmaat 30–35 mm.",
+    "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"
+   },
+   {
+    "t": "Officiële routekaart en fotomateriaal van de Nasjonale Turistveger — geen GPX-download, wel exacte start/eindcoördinaten (Grotli 62.013444, 7.630327 / Videsæter 61.937043, 7.264409).",
+    "u": "https://www.nasjonaleturistveger.no/en/routes/gamle-strynefjellsvegen/"
+   },
+   {
+    "t": "RideWithGPS-route van Cycle Norway (NSR Gamle Strynefjellsvegen, Grotli-Videsæter), 29,6 km, 456 m, 54% onverhard",
+    "u": "https://ridewithgps.com/routes/41403109?privacy_code=jqwJuos1XHltCJRU"
+   },
+   {
+    "t": "GPX-download van Cycle Norway (Gamle Strynefjellsvegen)",
+    "u": "https://cyclenorway.com/wp-content/uploads/2025/09/NSR__Gamle_Strynefjellsvegen.gpx"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "CyclingRoutes.cc, ter plaatse (westkant)",
+    "q": "No cafés, water taps or shops on the route.",
+    "tr": "Geen cafés, kranen of winkels langs de route.",
+    "url": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"
+   },
+   {
+    "who": "Matthew Tolley, Cycle Norway",
+    "q": "It's a wild camping dream location if the weather is on your side",
+    "tr": "Bij goed weer is dit een droomplek om wild te kamperen.",
+    "url": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"
+   },
+   {
+    "who": "NRK Vestland, over het uitstel in 2026",
+    "q": "vegen fyrst må fresast og tørke",
+    "tr": "de weg moet eerst gefreesd worden en drogen",
+    "url": "https://www.nrk.no/vestland/heile-gamle-strynefjellsvegen-opnar-ikkje-for-i-midten-av-juni-1.17896234"
+   }
+  ],
+  "gap": "De kernvraag — is de oostkant (Grotli) echt grind of niet — blijft deels open: CycleNorway beoordeelt de route vanuit Grotli op '75% onverhard' met een moeilijkheidsgraad van 4/10, wat het grind-verhaal uit climbs.json ondersteunt, maar CyclingRoutes.cc reed alleen de westkant vanaf Hjelle en trof daar vrijwel alleen ruw oud asfalt met slechts een kort grindplateau bovenaan. Geen van de geraadpleegde bronnen heeft zelf beide kanten expliciet met elkaar vergeleken in één verslag. Verder is de dekking dun voor een echte gravelklim: de meeste bronnen zijn toeristische wegensites of een fietsverhuur-/tourblog (CycleNorway), niet onafhankelijke gravelrijders; ik vond geen bruikbare Komoot- of Strava-community-tracks specifiek voor dit traject. vegvesen.no zelf gaf bij direct bezoek 404's op de fjellovergangar-pagina's; de openingsdata komen via NRK, dat wél naar vegvesen verwijst als bron."
+ },
+ "ventoux": {
+  "base": [
+   {
+    "t": "Bédoin (313 m) is de vaste uitvalsbasis; de piste Graviers Blancs begint als DFCI-track vlak buiten het dorp en telt 15 km met hellingen tussen 6 en 12%.",
+    "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Montee-du-Ventoux-depuis-Bedoin-par-la-piste-des-Graviers-Blancs-descente-par-la-Combe-de-la-Grave-13332"
+   },
+   {
+    "t": "Op Komoot heet dezelfde track de \"White Gravel Trail\": 1.550 hm klimmen, grotendeels een lange, blootgestelde helling op het zuidwestflank, met een slotstuk hoger op de berg dat bij sneeuw en ijs \"particulier délicate\" wordt.",
+    "u": "https://www.komoot.com/fr-fr/highlight/5302798"
+   },
+   {
+    "t": "Chalet Reynard (1.440 m) is het scharnierpunt: hier komt de gravelpiste op de D974 uit voor het laatste asfaltstuk naar de top.",
+    "u": "https://www.provenceguide.com/restaurants/mont-ventoux/restaurant-le-chalet-reynard/provence-4603538-1.html"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "Camping municipal La Pinède en een aire de camping-cars zijn de enige door de gemeente zelf genoemde overnachtingsopties op de eigen Bédoin-site; concrete hotels/gîtes met adres staan niet op deze pagina.",
+    "u": "https://www.bedoin-mont-ventoux.fr/"
+   },
+   {
+    "t": "Logis Hôtel des Pins, 171 Chemin des Crans, 84410 Bédoin — heeft een Tesla-lader op het eigen terrein.",
+    "u": "https://chargemap.com/en-us/vaucluselec-sev84-route-du-mon-ventoux-bedoin.html"
+   },
+   {
+    "t": "Gîtes des Tournillayres, 287 Chemin des Tournillayres, 84410 Bédoin.",
+    "u": "https://chargemap.com/en-us/vaucluselec-sev84-route-du-mon-ventoux-bedoin.html"
+   }
+  ],
+  "park": [
+   {
+    "t": "Startpunt voor de piste Graviers Blancs: parking bij het Office de Tourisme in Bédoin.",
+    "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Montee-du-Ventoux-depuis-Bedoin-par-la-piste-des-Graviers-Blancs-descente-par-la-Combe-de-la-Grave-13332"
+   },
+   {
+    "t": "EV-laden: publieke snellader Vauclus'elec, Route de Carpentras, 84410 Bédoin — Type 2 (22 kW) en huishoudstekker (3 kW), betaling met bankpas contactloos of Alizecharge-badge.",
+    "u": "https://chargemap.com/en-us/vaucluselec-sev84-route-du-mon-ventoux-bedoin.html"
+   },
+   {
+    "t": "Extra laadpunt vlakbij: Logis Hôtel des Pins in Bédoin heeft een Tesla-oplaadpunt op 1,2 km van de dorpslader.",
+    "u": "https://chargemap.com/en-us/vaucluselec-sev84-route-du-mon-ventoux-bedoin.html"
+   }
+  ],
+  "water": [
+   {
+    "t": "Cruciaal en expliciet bevestigd: geen waterpunt tot Chalet Reynard, alleen een café op de top.",
+    "u": "https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/"
+   },
+   {
+    "t": "Fontaine de la Grave, 1,5 km na Chalet Reynard, is het enige waterpunt in de topzone — maar viel in augustus bij 34°C droog en trok wespen aan; behandel hem als back-up, niet als vaste stop.",
+    "u": "https://www.eau-cyclisme.com/vaucluse/fontaine-de-la-grave-poi256.htm"
+   },
+   {
+    "t": "Op de top zelf is geen bevestigd waterpunt; drinkwater is er alleen bij het toilet van Chalet Reynard en bij de Fontaine de la Grave.",
+    "u": "https://www.eau-cyclisme.com/vaucluse/fontaine-de-la-grave-poi256.htm"
+   }
+  ],
+  "food": [
+   {
+    "t": "Chalet Reynard (1.440 m), Route du Mont-Ventoux, 84410 Bédoin — buiten het hoogseizoen beperkte service (bijv. 15/10–30/11 alleen ma/do/vr en weekend 12–17u), afhankelijk van het weer.",
+    "u": "https://www.provenceguide.com/restaurants/mont-ventoux/restaurant-le-chalet-reynard/provence-4603538-1.html"
+   },
+   {
+    "t": "Marché paysan in Bédoin elke vrijdag op de Place de la République — vaste bevoorradingsdag voor lokale producten.",
+    "u": "https://www.bedoin-mont-ventoux.fr/"
+   },
+   {
+    "t": "Onderweg op de klim vanaf Bédoin is de enige genoemde tussenstop Chalet Liotard, met een omweg van ± 150 hoogtemeter af en aan.",
+    "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Montee-du-Ventoux-depuis-Bedoin-par-la-piste-des-Graviers-Blancs-descente-par-la-Combe-de-la-Grave-13332"
+   }
+  ],
+  "season": [
+   {
+    "t": "Officieel: de D974 naar de top vanaf Bédoin/Sault is dit seizoen gesloten van 18 november 2025 tot 17 april 2026 (heropening rond 9:30u); de noordkant via Malaucène blijft dicht tot 13 mei 2026 in de namiddag.",
+    "u": "https://www.ventouxprovence.fr/actualites/acces-au-sommet-du-ventoux.html"
+   },
+   {
+    "t": "De halve slagboom staat bij winterse afsluiting ter hoogte van Chalet Reynard; Chalet Reynard en het skistation Mont Serein blijven met wintermateriaal het hele jaar bereikbaar.",
+    "u": "https://www.ventouxprovence.fr/en/news/access-to-the-top-of-mont-ventoux.html"
+   },
+   {
+    "t": "\"Les journées ventées font perdre de nombreux degrés supplémentaires\" — windgevoeligheid boven Chalet Reynard blijft ook buiten de officiële winterperiode een risico.",
+    "u": "https://www.ventouxprovence.fr/actualites/acces-au-sommet-du-ventoux.html"
+   },
+   {
+    "t": "Het laatste stuk vóór de top wordt bij sneeuw of ijs volgens Komoot-reviewers \"particulier délicate\" en vrijwel niet meer berijdbaar op de fiets.",
+    "u": "https://www.komoot.com/fr-fr/highlight/5302798"
+   }
+  ],
+  "gpx": [
+   {
+    "t": "VisuGPX-track \"Ascension du Mont Ventoux par les blancs graviers\", 50,5 km, 1.641 hm, complete lus vanaf Bédoin (anonieme uploader, online sinds maart 2015, 524 downloads).",
+    "u": "https://www.visugpx.com/gF4bRQn8Q9"
+   },
+   {
+    "t": "Utagawavtt-tour van RenoVaucluse, 43 km, 1.690 hm, start bij het Office de Tourisme in Bédoin, via Graviers Blancs omhoog en Combe de la Grave omlaag.",
+    "u": "https://www.utagawavtt.com/randonnee-vtt-gps/Montee-du-Ventoux-depuis-Bedoin-par-la-piste-des-Graviers-Blancs-descente-par-la-Combe-de-la-Grave-13332"
+   },
+   {
+    "t": "Komoot-collectie \"Chalet Reynard – Graviers Blancs Trail Loop\", 46 km, 1.370 hm.",
+    "u": "https://www.komoot.com/guide/3456976/gravel-biking-around-reserve-de-biosphere-du-mont-ventoux"
+   },
+   {
+    "t": "Komoot-tour van jo van herck 'Mont Ventoux - Gravel Bedoin', 54,4 km, 1.780 m (31 km grind)",
+    "u": "https://www.komoot.com/tour/1177542679"
+   },
+   {
+    "t": "Komoot-collectie van cycliste_tricolore, route 3 'Climbing up Mont Ventoux' via bospiste, 50,9 km, 1.660 m",
+    "u": "https://www.komoot.com/collection/1851153/best-gravel-routes-from-bedoin-cycling-mont-ventoux"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "ClimbBikeSki, blog, 2021",
+    "q": "There is no source of water until Chalet Reynard though there is a café at the summit.",
+    "tr": "Er is geen waterpunt tot Chalet Reynard, wel een café op de top.",
+    "url": "https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/"
+   },
+   {
+    "who": "ClimbBikeSki, blog, 2021",
+    "q": "The bottom half is very stony and it was hard to get into a rhythm.",
+    "tr": "De onderste helft is erg stenig en het was lastig om ritme te vinden.",
+    "url": "https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/"
+   },
+   {
+    "who": "Ventoux Provence (officieel)",
+    "q": "Les journées ventées font perdre de nombreux degrés supplémentaires.",
+    "tr": "Op winderige dagen voelt het nog veel kouder aan.",
+    "url": "https://www.ventouxprovence.fr/actualites/acces-au-sommet-du-ventoux.html"
+   }
+  ],
+  "gap": "Vrijwel alle gravel-specifieke bronnen (Komoot, Utagawavtt, VisuGPX) zijn VTT-toertochten of algemene fietsroutes, geen zuivere gravelverslagen op 650b×55mm — de tyre-width-waarschuwing uit climbs.json (min. 40 mm) kon niet los bevestigd worden. Sleep-sectie blijft dun: de gemeente Bédoin noemt zelf alleen camping en camperplaats; hotelnamen komen indirect via een Chargemap-omgevingslijst, niet via een hotel- of boekingssite. Fontaine de la Grave wordt door één bron als onbetrouwbaar in augustus omschreven; een tweede, onafhankelijke bevestiging ontbreekt."
+ },
+ "walnascar": {
+  "base": [
+   {
+    "t": "Coniston is de logische basis: dorp aan het meer met winkels, pubs en de start van de verharde aanloop naar Walna Scar.",
+    "u": "https://www.visitlakedistrict.com/plan-your-visit/travel/walna-scar-car-park-near-coniston-p1221001"
+   },
+   {
+    "t": "Wie liever aan de andere kant begint: Seathwaite/Turner Hall Farm in de Duddon Valley ligt aan het zuidelijke uiteinde van de route.",
+    "u": "https://en.wikipedia.org/wiki/Walna_Scar"
+   },
+   {
+    "t": "Forumconsensus is rijden van Duddon naar Coniston, dus Coniston is ook de logische eindbestemming/overnachtingsplek.",
+    "u": "https://singletrackworld.com/forum/bike-forum/walna-scar-road-by-gravel-bike/"
+   }
+  ],
+  "sleep": [
+   {
+    "t": "YHA Coniston Holly How en YHA Coniston Coppermines: hostels in/bij het dorp.",
+    "u": "https://www.yha.org.uk/hostel/yha-coniston-holly-how"
+   },
+   {
+    "t": "Hotels/inns in het dorp: Black Bull Inn & Hotel, Crown Inn (17 kamers), Yewdale Inn.",
+    "u": "https://www.uktourismonline.co.uk/north-west-england/cumbria-lake-district/accommodation.php?town=1394"
+   },
+   {
+    "t": "Camping: Coniston Camping Hoathwaite en Coniston Park Coppice Caravan and Motorhome Club Campsite.",
+    "u": "https://www.uktourismonline.co.uk/north-west-england/cumbria-lake-district/accommodation.php?town=1394"
+   },
+   {
+    "t": "Aan de Duddon-kant: Turner Hall Campsite bij Seathwaite, direct naast de voet van de Walna Scar-track (5 pond in de honesty box).",
+    "u": "https://secretcamperuk.wordpress.com/2015/08/05/turner-hall-farm-seathwaite/"
+   }
+  ],
+  "park": [
+   {
+    "t": "Walna Scar Car Park, Bowmanstead, Coniston, LA21 8HD: pay-and-display, 70 plekken, aan het einde van een steile smalle weg vanaf het dorp; betaling via Ringo, circa 6,50 pond voor 4 uur.",
+    "u": "https://en.parkopedia.co.uk/parking/walna_scar_road_coniston/"
+   },
+   {
+    "t": "Toegangsweg naar de parking is smal met gaten in het wegdek; bij tegenliggers moet je vaak een stuk terugsteken.",
+    "u": "https://www.komoot.com/highlight/5084381"
+   },
+   {
+    "t": "Duddon-kant: kleine gratis parkeerplek aan het einde van Walna Scar Road, LA20 6EE / SD 239 696, ruimte voor circa 3-4 auto's, minder druk dan Coniston.",
+    "u": "http://sharkeysdream.co.uk/PAGES/PARKING/PARKING_SPACES_BOTTON_OF_WALNASCAR_ROAD_DUDDON.html"
+   },
+   {
+    "t": "EV-laden in Coniston: Ruskin Avenue Car Park (LA21 8EH, 2x 7kW Pod Point, operationeel) en Bluebird Car and Coach Park (LA21 8DU, 6x 7kW Voltshare); de derde locatie bij Boating Centre (LA21 8EW) stond gemeld als buiten werking.",
+    "u": "https://lakedistrict.gov.uk/explore/visitor-facilities/car-parks/evs-and-car-hire/"
+   }
+  ],
+  "water": [
+   {
+    "t": "Coop Coniston, 6 Yewdale Road, LA21 8DU, open 7 dagen per week — laatste bevoorrading in het dorp voor de klim.",
+    "u": "https://seearoundbritain.com/venues/village-stores-coniston-cumbria-la21-8du"
+   },
+   {
+    "t": "Onderweg zelf geen bevestigde waterpunten gevonden; forumdraad noemt hier niets over.",
+    "u": null
+   }
+  ],
+  "food": [
+   {
+    "t": "Newfield Inn (Seathwaite/Duddonvallei) ligt op ongeveer de helft van een lus-Komoot-route en werkt als pubstop.",
+    "u": "https://www.komoot.com/tour/704954225"
+   },
+   {
+    "t": "Wilson's in Torver wordt door een forumrijder als eindbestemming/pubstop na de afdaling naar Coniston genoemd.",
+    "u": "https://singletrackworld.com/forum/bike-forum/walna-scar-road-by-gravel-bike/"
+   },
+   {
+    "t": "Coniston zelf heeft meerdere pubs en eetgelegenheden in het dorp.",
+    "u": "https://www.uktourismonline.co.uk/north-west-england/cumbria-lake-district/accommodation.php?town=1394"
+   }
+  ],
+  "season": [
+   {
+    "t": "Walna Scar Road is een restricted byway (definitive map modification order 2011): open voor voetgangers, ruiters en fietsers, gesloten voor gemotoriseerd verkeer.",
+    "u": "https://en.wikipedia.org/wiki/Walna_Scar"
+   },
+   {
+    "t": "Rijden of berijden van een motorvoertuig op een restricted byway zonder toestemming van de grondeigenaar is strafbaar.",
+    "u": "https://lakedistrict.gov.uk/explore/plan-your-visit/rights-of-way-access/unsealed-roads/"
+   },
+   {
+    "t": "Geen officiële seizoensafsluiting gevonden voor Walna Scar Road specifiek; het is een berucht rotsig bergpad, geen doorgaande weg met winterafsluiting.",
+    "u": null
+   }
+  ],
+  "gpx": [
+   {
+    "t": "Komoot-tour 'Walna Scar Road' van Barney, mtb-rit, 19,6 km, 790 hm, start bij Torver; middenstuk bij Newfield Inn.",
+    "u": "https://www.komoot.com/tour/704954225"
+   },
+   {
+    "t": "Komoot-tour 'Walna Scar' van Steve Davies, mtb-rit, 38,6 km, 1.120 hm, zwaar, groot deel onverhard (20,7 km).",
+    "u": "https://www.komoot.com/tour/53304502"
+   },
+   {
+    "t": "Lonewalker GPX-bestand (213.gpx) van de Walna Scar Road-wandelroute; bruikbaar als lijntracé, niet fietsspecifiek.",
+    "u": "https://lonewalker.net/walkinfo.php?walk=213"
+   },
+   {
+    "t": "Komoot-MTB-route 'Coniston Shore Bridleway – Walna Scar Descent loop from Coniston', 20,9 km, 660 m",
+    "u": "https://www.komoot.com/smarttour/27143040"
+   }
+  ],
+  "quotes": [
+   {
+    "who": "martinhutch, Singletrack World forum",
+    "q": "I would descend into Coniston, personally. I think more of that will be rideable.",
+    "tr": "Ik zou zelf afdalen naar Coniston, denk dat meer daarvan rijdbaar is",
+    "url": "https://singletrackworld.com/forum/bike-forum/walna-scar-road-by-gravel-bike/"
+   },
+   {
+    "who": "sturmeyarcher, Singletrack World forum",
+    "q": "managed to ride no more than 25% of the ascent but enjoyed a clean descent",
+    "tr": "reed niet meer dan 25% van de klim, maar had een schone afdaling",
+    "url": "https://singletrackworld.com/forum/bike-forum/walna-scar-road-by-gravel-bike/"
+   },
+   {
+    "who": "Reviewer, Parkopedia",
+    "q": "take a good run up",
+    "tr": "neem goed de aanloop (voor de steile toegangsweg naar de parking)",
+    "url": "https://www.komoot.com/highlight/5084381"
+   }
+  ],
+  "gap": "Waterpunten onderweg (tussen dorp/parking en de top) zijn nergens expliciet bevestigd — noch in forums, noch op Komoot; neem voldoende water mee vanaf Coniston of Seathwaite. EV-laadpalen in Coniston zijn wisselend gemeld: één van de drie locaties (Boating Centre) stond op het moment van bronraadpleging als buiten werking, dus check Zap-Map/Pod Point vooraf. Bronnen over de bridleway/byway-status zijn overwegend wandelaars- en Wikipedia-gericht, niet fietsspecifiek — de juridische status (restricted byway sinds 2011) is duidelijk, maar praktijkervaring van gravelrijders over toegang is dunner dan die over de rotsige ondergrond zelf."
  }
 }

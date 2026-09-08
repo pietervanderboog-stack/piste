@@ -1,0 +1,32 @@
+{
+ "id": "picdumidi",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.cycling-challenge.com/the-highest-unpaved-cycling-roads-in-the-alps/",
+   "status": "ok",
+   "note": "Verbatim: 'OK, this is the Pyrenees, not the Alps, but one of my very favourite rides ever.'",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.pedalsure.com/blog/10-best-gravel-roads-in-europe",
+   "status": "ok",
+   "note": "Verbatim, maar Pedalsure is een fietsverzekeraar-listicle - geen rijder, grenst aan marketingcopy. Sterker alternatief op cycling-challenge.com/pic-du-midi-de-bigorre-via-col-du-tourmalet/: 'This is easily on my list of top 5 days on a bike.'",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Cycling-challenge: Tourmalet -> Col de Sencours circa 4 km, -> Col des Laquets circa 5 km (einde weg), dan circa 1 km lopen naar 2877 m; 2115 -> 2877 = 762 m. Hier 9 km / 760 m / 9 km grind - klopt. PJAMM geeft 5,8 km / 569 m tot 2675 m (stopt eerder, bij Laquets).",
+  "source": "https://www.cycling-challenge.com/pic-du-midi-de-bigorre-via-col-du-tourmalet/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-tour van Flow_sur_le_velo 'Gravel: double Tourmalet e pic du Midi de Bigorre', 90,0 km, 3.430 m",
+   "u": "https://www.komoot.com/tour/1332032035"
+  }
+ ],
+ "summary": "Beide stemmen verbatim, maar het bronmateriaal is dun: een echt rijdersverslag (Will) plus een verzekeraars-lijstje. Cijfers sporen met cycling-challenge. Slechts een verifieerbare GPX gevonden; Wikiloc-tracks (109236216, fr 40797911) bestaan maar gaven 403."
+}

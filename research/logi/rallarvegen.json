@@ -1,0 +1,123 @@
+{
+ "base": [
+  {
+   "t": "Route loopt Haugastøl → Finse → Flåm, ± 80-82 km. Haugastøl heeft goede aansluiting op de Rv7, ruime parkeergelegenheid en ligt vlak bij het station — de klassieke startbasis.",
+   "u": "https://www.haugastol.no/rallarvegen"
+  },
+  {
+   "t": "Geilo, ± 18 km van Haugastøl en een stuk groter qua voorzieningen, positioneert zich als alternatieve basis met een eigen verhuurmerk ('Rallarvegen Bike Rental | Geilo').",
+   "u": "https://www.geilo.com/en/rallarvegen-bike-rental"
+  },
+  {
+   "t": "Haugastøl 1000 MOH / Rallarvegen Sykkelutleie noemt zich 's lands grootste verhuurder van huurfietsen (30+ jaar ervaring); naast gewone gravel-/toerfietsen ook e-bikes. Twee pakketten: het 'Rallar-pakket' (trein naar Finse/Hallingskeid, terugfietsen naar Flåm) en het kortere 'Minipakket' (trein Haugastøl→Finse, terugfietsen naar Haugastøl).",
+   "u": "https://www.haugastol.no/en/all-inclusive-package"
+  },
+  {
+   "t": "Hotel Finse 1222 verhuurt zelf ook fietsen: comfortfiets 695 NOK/dag, juniorfiets (Merida Matts Machete 24\") 395 NOK/dag; ophalen aan het oostelijke uiteinde van het perron in Finse, inleveren in Flåm bij een klein rood huisje met opschrift 'Hotel Finse 1222' aan het einde van het perron.",
+   "u": "https://rental.hotellfinse1222.no/en/sykkelutleie"
+  }
+ ],
+ "sleep": [
+  {
+   "t": "Hotel Finse 1222, Rallarvegen 2660, 5719 Finse, tel. +47 56 52 71 00 — combineert overnachting met eigen fietsverhuur.",
+   "u": "https://old.finse1222.no/en/rallarvegen-the-navvy-road/"
+  },
+  {
+   "t": "Finsehytta (DNT, bemand): zomerseizoen opent met 'Finsefest' op 26 juni en loopt door tot begin oktober; buiten dat bemande seizoen is de zelfbedieningsannex Brebua beschikbaar.",
+   "u": "https://www.dnt.no/hytter/betjente/finsehytta/apningstider/"
+  },
+  {
+   "t": "Geiterygghytta (DNT), 1224 m, 88 bedden verspreid over 3 gebouwen, houtgestookte sauna; seizoen 2026: 26 juni – 13 september.",
+   "u": "https://hyttebestilling.dnt.no/hytte/10808"
+  },
+  {
+   "t": "Fretheim Hotel in Flåm (Nedre Fretheim), 122 kamers, op 5 minuten lopen van station en Flåmsbana.",
+   "u": "https://www.tripadvisor.com/Hotel_Review-g230076-d277739-Reviews-Fretheim_Hotel-Flam_Aurland_Municipality_Sogn_og_Fjordane_Western_Norway.html"
+  }
+ ],
+ "park": [
+  {
+   "t": "Haugastøl: parkeren bij het treinstation en (gratis) bij Haugastøl Turistsenter, vlak bij de start van de Rallarvegen.",
+   "u": "https://www.haugastol.no/rallarvegen"
+  },
+  {
+   "t": "EV-laden is in Geilo praktischer geregeld dan in Haugastøl: Geilojordet (23 laadpunten, CCS/CHAdeMO/Type2), snelladers in het centrum (240 kW, 7 punten, max. 2 uur parkeren) en Geilo Oost (11 punten).",
+   "u": "https://www.geilo.com/en/electric-car-charging-stations-and-parking-in-geilo"
+  },
+  {
+   "t": "EV-laadpaal bij Haugastøl zelf en publiek laden in Finse of Flåm: onbevestigd — check vooraf nobil.no. Finse is sowieso autovrij (alleen per trein bereikbaar), dus laden heeft daar geen zin.",
+   "u": null
+  }
+ ],
+ "water": [
+  {
+   "t": "Café Rallaren op station Myrdal (867 m), de schakel tussen Flåmsbana en Bergensbanen: piekopening 09:15-18:45 (juni-aug), beperktere uren in april-mei en september-oktober.",
+   "u": "https://www.caferallaren.no/sykkelutleige"
+  },
+  {
+   "t": "Finse Hotel bij het station fungeert als koffie- en wafelstop op de hoogste plek van de route; niet zelf op de hotelsite geverifieerd.",
+   "u": null
+  },
+  {
+   "t": "Kleine pleisterplaatsen onderweg verkopen koffie en wafels maar accepteren vaak alleen contant geld — dit komt uit één bron, dus zwak signaal, niet geverifieerd als patroon.",
+   "u": null
+  }
+ ],
+ "food": [
+  {
+   "t": "Haugastøl 1000 MOH heeft een eigen restaurant naast de fietsverhuur.",
+   "u": "https://www.haugastol.no/en"
+  },
+  {
+   "t": "Myrdal: Café Rallaren is seizoensgebonden en verhuurt geen fietsen meer — een verandering ten opzichte van oudere reisgidsen die Myrdal nog als ophaalpunt noemen. Logistieke valkuil voor wie op verouderde info afgaat.",
+   "u": "https://www.caferallaren.no/sykkelutleige"
+  },
+  {
+   "t": "Flåm: kiosk bij Flåm Camping & Hostel verkoopt brood, melk en boodschappen (alleen zomer), op 5 minuten lopen van het station.",
+   "u": "https://www.flaam-camping.no/"
+  }
+ ],
+ "season": [
+  {
+   "t": "Het onderste deel Haugastøl–Finse (26 km) is vaak al eind mei/juni berijdbaar; de hele route is doorgaans pas eind juli echt sneeuwvrij, seizoen loopt tot eind september. Check vooraf de 'Rallarvegrapporten' (conditierapport).",
+   "u": "https://www.haugastol.no/rallarvegen"
+  },
+  {
+   "t": "Fietsen mogen mee in de trein op Flåmsbana en Bergensbanen, maar plek is beperkt: Bergensbanen heeft 15 reserveerbare fietsplekken per trein, apart te boeken bovenop het treinkaartje.",
+   "u": "https://www.flamsbana.no/rallarvegen"
+  },
+  {
+   "t": "Bronnen spreken elkaar tegen over de exacte openingsdatum: '10 juli' als officiële datum in de ene bron, eind juni voor het onderste routedeel in een andere, 'medio juli' bij weer een derde. Zie ook 'gap'.",
+   "u": null
+  }
+ ],
+ "gpx": [
+  {
+   "t": "Komoot-tour 'Rallarvegen, Noorwegen' van Velozine, 80,8 km, 1.890 m stijgen.",
+   "u": "https://www.komoot.com/tour/679235064"
+  },
+  {
+   "t": "Komoot-tour 'Of Milk and Navvies' van Sabina Knezevic (Farawayistan), 382 km totaal (uitgebreide meerdaagse variant inclusief Mjølkevegen), 6.590 m stijgen — niet alleen het Rallarvegen-stuk.",
+   "u": "https://www.komoot.com/tour/1406071619"
+  },
+  {
+   "t": "RideWithGPS 'Rallarvegen: Haugastøl–Flåm', 77,4 km, 3.899 m stijgen — cijfers via zoekresultaat, de pagina zelf kon niet volledig geopend worden; lagere betrouwbaarheid.",
+   "u": "https://ridewithgps.com/routes/13846896"
+  }
+ ],
+ "quotes": [
+  {
+   "who": "Café Rallaren, officiële routewaarschuwing",
+   "q": "It is not recommended to cycle in the steep section between Myrdal and Kårdal.",
+   "tr": "Het wordt afgeraden om te fietsen op het steile stuk tussen Myrdal en Kårdal.",
+   "url": "https://www.caferallaren.no/sykkelutleige"
+  },
+  {
+   "who": "Fietser, Tripadvisor-reviewtitel",
+   "q": "Don't rent the bikes from the Flam website!",
+   "tr": "Huur de fietsen niet via de Flåm-website!",
+   "url": "https://www.tripadvisor.com/ShowUserReviews-g678207-d3498285-r284058173-Rallarvegen-Aurland_Municipality_Sogn_og_Fjordane_Western_Norway.html"
+  }
+ ],
+ "gap": "Bronentransparantie — niet elke URL kon volledig als pagina geopend worden, ondanks 3 pogingen per site: (1) de RideWithGPS-track (77,4 km / 3.899 m) is alleen via het zoekresultaat/snippet bevestigd, de routepagina zelf gaf geen volledige laad; (2) Vy.no (Bergensbanen/Flåmsbana) blokkeerde herhaaldelijk het ophalen van pagina's (403), dus een exacte fietsticketprijs en de dagelijkse treinfrequentie konden niet bevestigd worden — check dit bij boeking rechtstreeks op vy.no; (3) de Finse Hotel-koffiestop en het 'alleen-contant'-signaal over pleisterplaatsen komen uit één niet-geopende bron elders online, vandaar expliciet u:null. Alle overige facts in dit dossier zijn wél tegen volledig geopende pagina's gecontroleerd. Verder: of fietsen mee mogen op de toeristische fjordboot Flåm-Gudvangen (Nærøyfjord, Norled/The Fjords) is niet bevestigd; niet aannemen dat dit kan zonder navraag. EV-laden bij Finse en Flåm is niet bevestigd (Finse is toch al autovrij). Bronnen spreken elkaar tegen over helmverhuur: Haugastøl.no zegt dat een helm te huur/koop is (499 NOK), een Tripadvisor-review meldt juist dat helmen nergens te huur waren. Ook de exacte openingsdatum van het seizoen verschilt per bron (10 juli officieel vs. eind juni voor het onderste deel vs. medio juli elders). De drie GPX-bronnen voor het pure Rallarvegen-stuk lopen qua hoogtemeters sterk uiteen (1.890 m Komoot tegenover 3.899 m RideWithGPS) — een bekend probleem met hoogteberekening tussen platforms, geen van beide is 'het' officiële cijfer. Coverage leunt sterk op de sites van verhuurbedrijven en DNT-hutten; onafhankelijke rijdersquotes specifiek over parkeren of treinlogistiek zijn dun gezaaid (twee anekdotische bronnen, geen patroon van drie)."
+}

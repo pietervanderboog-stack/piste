@@ -1,0 +1,180 @@
+{
+ "id": "sommeiller",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.cycling-challenge.com/colle-del-sommeiller/",
+   "status": "ok",
+   "note": "Reactie van 'Patrick', 6 nov 2022; origineel bevat typo 'imstead'. Near-verbatim, attributie klopt. Een andere reactie (Jan, 2024) reed het op 650b/47 mm: 'to me that is the absolute limit' - bruikbaar voor de bandenkalibratie.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.komoot.com/smarttour/e1030357638/colle-del-sommeiller",
+   "status": "ok",
+   "note": "Verbatim, reactie Neil Henderson, 14 juli 2024 (voegt toe: vallend gesteente ontplofte een meter voor hem).",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://bike-cafe.fr/2020/09/bardonecchia-lexception-du-gravel-en-montagne/",
+   "status": "ok",
+   "note": "Verbatim: 'le col du Sommeiller est au gravel ce que l'Alpe d'Huez est au cyclisme routier'.",
+   "fix": null
+  },
+  {
+   "i": 3,
+   "url": "https://www.cycloworld.cc/en/article/col-de-sommeiller-het-ultieme-onverharde-fietsavontuur/2740",
+   "status": "ok",
+   "note": "Near-verbatim: 'though it's not impossible on a gravel bike; be prepared for a rugged ride!' Site geeft 429 aan bots, met Playwright bereikbaar. Het is de redactie zelf (op MTB), geen lezersreactie.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Raccontapassi: asfalt tot Rochemolles, daarna circa 8 km sterrato tot Rifugio Scarfiotti.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "Lagendanews: 'la piu alta d'Europa', 1.300 -> 3.009 m (noemt 27 km).",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Pagina bevestigt 2165 m, 24 bedden, lakenzak/slaapzak verplicht (te koop). NIET op de pagina: 'eigendom CAI Torino', wifi. Warme douches staan wel op de CAI-pagina. Pagina meldt bovendien: 'RIFUGIO CHIUSO PER LAVORI - PREVISTA RIAPERTURA ESTATE 2026'.",
+   "fix": {
+    "t": "Rifugio Camillo Scarfiotti, 2165 m: 24 slaapplaatsen, lakenzak of slaapzak verplicht (te koop in het rifugio), warme douches. Was dicht voor werkzaamheden; heropening voorzien zomer 2026.",
+    "u": "https://rifugidelpiemonte.it/rifugio-scarfiotti/"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "unsupported",
+   "note": "Telefoonnummer 02 2057231 staat niet op de pagina. CAI-pagina geeft +39 0122 901892 en +39 339 3506816, e-mail info@rifugioscarfiotti.it, en 'Aperto tutti i giorni da giugno a fine settembre 2026'.",
+   "fix": {
+    "t": "Reserveren via prenotarifugi.cai.it of tel. +39 0122 901892 / +39 339 3506816; in 2026 dagelijks open van juni tot eind september.",
+    "u": "https://www.prenotarifugi.cai.it/dettaglio/Rifugio+Scarfiotti/?id=5844"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 2,
+   "status": "ok",
+   "note": "Gulliver (11-07-2025): 'Rifugio Scarfiotti (attualmente chiuso per restauro)'.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "Chalet della Guida: 'Dal parcheggio di Rochemolles...'; rifugio 'raggiungibile anche in auto'. Raccontapassi bevestigt auto laten staan bij het rifugio.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 1,
+   "status": "dead",
+   "note": "Outdooractive 800741105 geeft 404; alternatieve outdooractive-routes (237185571, 6265234) ook 404. Geen andere bron gevonden voor parkeren bij Picreaux/op de Colle.",
+   "fix": {
+    "u": null
+   }
+  },
+  {
+   "section": "park",
+   "i": 2,
+   "status": "ok",
+   "note": "u is null; terecht onbevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Rifugio-pagina bevestigt ligging op de weg naar de Colle; laatste vaste punt.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "'il rifugio offre piatti semplici ma buoni, ricette tradizionali della Valle di Susa'. Let op sluiting voor werkzaamheden (zie sleep 0).",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "Lagendanews (29-06-2025): EUR 8, 1 juli-30 sept, 8:30-18:00, en ook 'chiusa ai veicoli tutti i martedi e giovedi'. Gemeente Bardonecchia meldt voor 2026 EUR 10 contant.",
+   "fix": {
+    "t": "De weg Rochemolles-Colle del Sommeiller is 1 juli-30 september tolplichtig voor motorvoertuigen (EUR 8 in 2025, EUR 10 contant in 2026), 8:30-18:00; 1 mei-30 juni en 1 okt-30 nov open als het wegdek het toelaat.",
+    "u": "https://bardonecchia.it/en/off-road-routes/colle-del-sommeiller/"
+   }
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "Ordinanza n. 100 (PDF, via requests gelezen): 'chiusi tutti i martedi e giovedi dalle ore 00:00 alle ore 24:00' in juli-sept. Lagendanews en bardonecchia.it zeggen ook di+do - de 'alleen donderdag'-tegenstrijdigheid in gap is niet teruggevonden in de bronnen; gap herformuleren of bron noemen.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 2,
+   "status": "ok",
+   "note": "Torinocronaca 25-06-2026: weg nog dicht, sneeuwruiming bezig.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "misquote",
+   "note": "Origineel: 'la strada diventera sterrata e molto dissestata (buche profonde, massi e alcuni guadi)'. Bovendien een wandelverslag over de autorit naar Scarfiotti, geen fietser.",
+   "fix": {
+    "q": "la strada diventerà sterrata e molto dissestata (buche profonde, massi e alcuni guadi)",
+    "tr": "de weg wordt onverhard en zwaar aangetast (diepe kuilen, rotsblokken en enkele doorwaadplaatsen)"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "misquote",
+   "note": "Origineel: 'Evitare, assolutamente, la carrozzabile che e estremamente polverosa al passaggio dei mezzi motorizzati!' - 'assolutamente,' weggelaten. Bron is een wandeladvies van een hotel.",
+   "fix": {
+    "q": "Evitare, assolutamente, la carrozzabile che è estremamente polverosa al passaggio dei mezzi motorizzati!",
+    "tr": "Mijd absoluut de rijweg, die is extreem stoffig als er gemotoriseerd verkeer passeert!"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 2,
+   "status": "ok",
+   "note": "Verbatim.",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Gemeente Bardonecchia: 26 km (7 km asfalt, 19 km grind), 1312 -> 3009 m = 1697 m. Hier 26 / 1700 / 3009 / 19 - exact.",
+  "source": "https://bardonecchia.it/en/off-road-routes/colle-del-sommeiller/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-route 'Colle del Sommeiller' (gravel, vanaf Bardonecchia), 56,8 km, 1.810 m",
+   "u": "https://www.komoot.com/smarttour/e1030357638/colle-del-sommeiller"
+  },
+  {
+   "t": "Officiele routebeschrijving gemeente Bardonecchia, 26 km (7 km asfalt / 19 km grind), met verkeersregeling 2026",
+   "u": "https://bardonecchia.it/en/off-road-routes/colle-del-sommeiller/"
+  }
+ ],
+ "summary": "Stemmen kloppen alle vier; het dossier is inhoudelijk goed maar slordig in details: rifugio-telefoonnummer en 'CAI Torino/wifi' staan niet op de bron, twee Italiaanse citaten waren ingekort en de outdooractive-parkeerbron is dood. Belangrijk nieuw feit: het rifugio was dicht voor renovatie (heropening zomer 2026) en de tol is in 2026 EUR 10. De gap over 'alleen donderdag' vindt geen steun in de geraadpleegde bronnen: gemeente, ordinanza en Lagendanews zeggen alle dinsdag en donderdag."
+}

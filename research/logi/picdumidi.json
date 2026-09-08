@@ -1,0 +1,109 @@
+{
+ "base": [
+  {
+   "t": "La Mongie (noordzijde, Bagnères-de-Bigorre-kant) is de logische basis: hier staat het kabelbaanstation naar het observatorium, met parkeren en horeca vlakbij.",
+   "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+  },
+  {
+   "t": "Barèges (zuidzijde, via Luz-Saint-Sauveur) is het alternatief; die beklimming naar de Pic du Midi wordt door een klimsite expliciet 'VTT verplicht' genoemd en zwaarder beoordeeld dan vanaf de Mongie-kant.",
+   "u": "https://www.cols-cyclisme.com/pyrenees-centrales/france/pic-du-midi-depuis-luz-saint-sauveur-c491.htm"
+  }
+ ],
+ "sleep": [
+  {
+   "t": "La Voie Lactée, 22 Avenue du Tourmalet, La Mongie (4 sterren) — dichtst bij start en kabelbaan.",
+   "u": "https://www.n-py.com/fr/grand-tourmalet/hebergement"
+  },
+  {
+   "t": "Logis Hôtel le Central, 11 Rue Ramond, Barèges — optie voor wie de zuidkant als basis neemt.",
+   "u": "https://www.n-py.com/fr/grand-tourmalet/hebergement"
+  }
+ ],
+ "park": [
+  {
+   "t": "Gratis parkeren in La Mongie, op zo'n 5 minuten lopen van het kabelbaanstation.",
+   "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+  },
+  {
+   "t": "EV-laden: Révéo-paal op 'Parking La Mongie', Avenue du Tourmalet (Bagnères-de-Bigorre) — Type 2, 22 kW, badge RFID.",
+   "u": "https://chargemap.com/fr-fr/sde65-reveo-d918-bareges.html"
+  },
+  {
+   "t": "EV-laden in Barèges: Révéo-paal bij het gratis Parking Tournaboup aan de Route du Tourmalet, Type 2 22 kW, 24/7 open.",
+   "u": "https://chargemap.com/fr-fr/sde65-reveo-d918-bareges.html"
+  }
+ ],
+ "water": [
+  {
+   "t": "Geen bevestigd waterpunt boven de Col du Tourmalet: bij Col de Sencours en Col des Laquets staan alleen vervallen refuge-ruïnes, geen werkende bron gemeld.",
+   "u": "https://velomontagne.fr/19-juin-2011-15e-sortie-col-du-tourmalet-col-de-sencours-col-des-laquets-et-pic-du-midi/"
+  },
+  {
+   "t": "Laatste zekere stop is op de col zelf: restaurant/bar L'Étape du Berger, dagelijks open begin juli t/m eind september (08:30–17:00), in mei/juni/oktober alleen weekend.",
+   "u": "https://www.etapeduberger.com/restaurant-col-du-tourmalet-pyrenees/"
+  }
+ ],
+ "food": [
+  {
+   "t": "Op de top zelf (na de kabelbaan): restaurant 'le 2877' (reserveren aangeraden) en 'Le Bistrot' voor een snelle stop, doorlopend geopend.",
+   "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+  },
+  {
+   "t": "Op de Col du Tourmalet zelf: L'Étape du Berger, boerderijkeuken, seizoensgebonden (zie 'water').",
+   "u": "https://www.etapeduberger.com/restaurant-col-du-tourmalet-pyrenees/"
+  },
+  {
+   "t": "In La Mongie zelf zitten meerdere restaurants en winkels aan de voet van de kabelbaan; concrete namen/adressen onbevestigd.",
+   "u": null
+  }
+ ],
+ "season": [
+  {
+   "t": "Bergpassen in de Pyreneeën, waaronder de Tourmalet, gaan doorgaans open tussen mei en juni en sluiten tussen november en december; exacte data hangen af van sneeuw en weer.",
+   "u": "https://www.pyrenees-cyclo.com/destination-velo/organiser-mon-sejour/les-dates-douverture-et-de-fermeture-des-routes-de-montagne/"
+  },
+  {
+   "t": "Actuele wegstatus (ook winterafsluitingen) via Inforoute Hautes-Pyrénées: inforoute.ha-py.fr of telefonisch 0825 825 065.",
+   "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+  },
+  {
+   "t": "Kritiek: het observatorium zelf is van 20 april t/m 22 mei 2026 volledig gesloten wegens onderhoud aan de kabelbanen — check dit voor je erheen fietst als je ook binnen wilt.",
+   "u": "https://www.tourmaletpicdumidi.com/patrimoine-culturel/pic-du-midi-de-bigorre/"
+  },
+  {
+   "t": "Toegang tot het observatorium zelf is alleen met kabelbaan vanaf La Mongie of, in de zomer, te voet via twee bewegwijzerde wandelroutes tegen betaling van entree — geen fietsroute genoemd als officiële toegangsweg.",
+   "u": "https://www.n-py.com/fr/ete/pic-du-midi/acces-transport"
+  }
+ ],
+ "gpx": [
+  {
+   "t": "Komoot-tour 'Gravel: double Tourmalet e pic du Midi de Bigorre' van Flow_sur_le_vélo, 90 km, 3.430 hm, incl. waarschuwing dat je op stukken moet lopen met de fiets.",
+   "u": "https://www.komoot.com/tour/1332032035"
+  },
+  {
+   "t": "Komoot-wandeltour 'Col du Tourmalet – Pic du Midi de Bigorre' (Summit Seekers), 16,6 km, 820 hm — goed voor het hoogteprofiel van het laatste stuk, niet als fietsroute bedoeld.",
+   "u": "https://www.komoot.com/tour/571473083"
+  }
+ ],
+ "quotes": [
+  {
+   "who": "Velomontagne, fietsverslag juni 2011",
+   "q": "Un grand portail empêche les usagers d'y aller en voitures mais un portillon permet aux randonneurs et aux cyclistes de passer.",
+   "tr": "Een groot hek houdt auto's tegen, maar een klein poortje laat wandelaars en fietsers door.",
+   "url": "https://velomontagne.fr/19-juin-2011-15e-sortie-col-du-tourmalet-col-de-sencours-col-des-laquets-et-pic-du-midi/"
+  },
+  {
+   "who": "Cols-cyclisme.com, klimbeschrijving vanaf Luz-Saint-Sauveur",
+   "q": "La route des Laquets est indiquée comme interdite aux vélos.",
+   "tr": "De weg bij de Laquets staat aangegeven als verboden voor fietsen.",
+   "url": "https://www.cols-cyclisme.com/pyrenees-centrales/france/pic-du-midi-depuis-luz-saint-sauveur-c491.htm"
+  },
+  {
+   "who": "Cols-cyclisme.com, rijdersreactie",
+   "q": "la route est tellement dégradée que je fais le reste à pied",
+   "tr": "de weg is zo kapot dat ik de rest liep",
+   "url": "https://www.cols-cyclisme.com/pyrenees-centrales/france/pic-du-midi-depuis-luz-saint-sauveur-c491.htm"
+  }
+ ],
+ "gap": "Tegenstrijdig en verouderd: een fietsverslag uit 2011 (velomontagne.fr) beschrijft een klein poortje dat fietsers en wandelaars langs de autoslagboom laat, terwijl cols-cyclisme.com (klimsite, geen datum) juist meldt dat de weg bij Les Laquets is aangegeven als verboden voor fietsen en dat de toegang via de kabelbaanmaatschappij nu strikter is vanwege verbouwing van de Hôtellerie des Laquets (bevestigd door een betaalmuur-artikel op lasemainedespyrenees.fr dat spreekt van gereglementeerde toegang tot eind 2025, maar de volledige tekst was niet leesbaar). Geen enkele bron is een gravelfietser die de route in 2024/2025 zelf reed en expliciet meldt te zijn tegengehouden of beboet — de meeste toegangsclaims komen van klimsites en oudere tochtverslagen, niet van recente gravel-first-hand ervaringen. Behandel 'fietsen mag tot Col de Sencours, erboven op eigen risico/mogelijk verboden' als de veiligste aanname, niet als bevestigd feit. EV-laadpalen bij La Mongie en Barèges zijn bevestigd via Chargemap; concrete hotel-/restaurantnamen in La Mongie zelf (buiten het observatorium en L'Étape du Berger) kon ik niet met een geopende bron staven."
+}

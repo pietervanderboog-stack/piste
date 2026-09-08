@@ -1,0 +1,29 @@
+{
+ "id": "chaberton",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.cycling-challenge.com/the-highest-unpaved-cycling-roads-in-the-alps/",
+   "status": "ok",
+   "note": "Verbatim: 'this is the one road on this list where even the strongest cyclists will likely do some pushing'.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Cycling-challenge beschrijft de Fenils-kant: 13 km, 1295 -> 3131 m (1836 m). Hier de Montgenevre-kant: 1850 -> 3131 = 1281 m over 16 km, geheel onverhard - andere start, consistent met Komoot-MTB-lussen (31,7 km / 1.830 m). Reactie 2019 op cycling-challenge: Fenils-weg ingestort bij Pra Claud, toegang alleen nog vanaf Col de Montgenevre.",
+  "source": "https://www.cycling-challenge.com/mont-chaberton/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-tour van MOUNTAINBIKE Magazin 'Val di Susa: Tour 1 - Auf den Mont Chaberton', 31,7 km, 1.830 m",
+   "u": "https://www.komoot.com/tour/186792393"
+  },
+  {
+   "t": "Komoot-tour van MOUNTAINBIKE Magazin 'MTB-Tour auf den Mont Chaberton', 32,9 km, 2.050 m",
+   "u": "https://www.komoot.com/tour/177248305"
+  }
+ ],
+ "summary": "Een stem, verbatim en correct. Te mager voor een klim van dit kaliber: geen gravelrijder, geen bandenbreedte. Cijfers zijn plausibel voor de Montgenevre-kant maar geen klimdatabase geeft die zijde; vermeld dat de Fenils-kant sinds 2019 onbegaanbaar is."
+}

@@ -1,0 +1,123 @@
+{
+ "id": "colombygex",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.cycling-challenge.com/high-jura-trails-colomby-de-gex-mont-rond/",
+   "status": "ok",
+   "note": "Letterlijk aanwezig; auteur Will (cycling-challenge) reed de route zelf vanuit Gex.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://en.montagnes-du-jura.fr/the-mountains-of-jura-a-nature-destination/cycling-and-mountain-biking-everywhere-and-for-everyone/cycle-touring-in-the-jura-mountains/exploring-the-jura-mountains-by-gravel-bike/",
+   "status": "ok",
+   "note": "Letterlijk aanwezig; toerismebureau, geen rijder (marketingtekst, maar feitelijk over La Forestière-gravel 118 km).",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Faucille 1323 m, Colomby 1688 m en start in Gex staan op de pagina; Mijoux/Lélex als uitvalsbasis niet, maar dat is eigen advies.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "ok",
+   "note": "'The itinerary starts from the Petite Chaumière hotel on the Col de la Faucille.'",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "unsupported",
+   "note": "'Free car park' staat er; 'parking du Pailly' komt nergens op de pagina voor.",
+   "fix": {
+    "t": "Gratis parking op de Col de la Faucille (start van de wandelroute naar Colomby de Gex).",
+    "u": "https://www.paysdegex-montsjura.com/en/routes-and-trails/walking-tour-la-faucille-colomby-de-gex/"
+   }
+  },
+  {
+   "section": "park",
+   "i": 1,
+   "status": "ok",
+   "note": "Getuigenis Siberian Wolf 10 (nov 2024): 'depuis le parking du Florimont (960m), un restaurant'. Tab Témoignages, achter cookiewall.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 2,
+   "status": "ok",
+   "note": "u=null, correct onbevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "'l'épingle de la fontaine Napoléon (1049m)' in getuigenis.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "'refuge de Florimont (959m)' / 'un restaurant' in getuigenissen; horeca op de col niet expliciet maar onomstreden.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "'Praticable d'avril à novembre'.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "unsupported",
+   "note": "Skitour bevestigt alleen de zone de quiétude (arrêté préfectoral) en 'alleen op gemarkeerde winterroutes'. Hondenverbod en de data 15/12–15/05 staan er niet. Hondenverbod staat wel op paysdegex ('Dogs are not allowed, even on a lead').",
+   "fix": {
+    "t": "Réserve naturelle de la Haute Chaîne du Jura: honden verboden, ook aangelijnd (Pays de Gex). De bosstrook tussen de route de la Maréchaude en de kammen is zone de quiétude: in de winter alleen op gemarkeerde routes.",
+    "u": "https://skitour.fr/topos/2899"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "misquote",
+   "note": "Origineel: 'So my first goal in this ride was to climb to the col primarily on gravel forest roads and hiking trails'. 'in this ride' was weggelaten.",
+   "fix": {
+    "q": "my first goal in this ride was to climb to the col primarily on gravel forest roads",
+    "tr": "mijn eerste doel op deze rit was de col vooral over grindbospaden te beklimmen"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "ok",
+   "note": "Letterlijk, maar het is een gebruikersgetuigenis (Siberian Wolf 10, nov 2024), geen redactie. Beter who: 'Fietser, cols-cyclisme november 2024'.",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Colomby 1688 m en Faucille 1323 m bevestigd; Bikemap-lus van dezelfde auteur 34,7 km/1216 m, quaeldich Faucille vanaf Gex 11,1 km/714 Hm. 20 km/1150 m tot de kam is consistent.",
+  "source": "https://www.cycling-challenge.com/high-jura-trails-colomby-de-gex-mont-rond/"
+ },
+ "gpx": [
+  {
+   "t": "Bikemap-route van Will (cycling-challenge), 'Faucille unpaved, Colomby de Gex', 34,7 km, 1.216 m",
+   "u": "https://www.bikemap.net/en/r/4062103/"
+  },
+  {
+   "t": "Komoot-gravelroute 'Across the Swiss and French Jura on a gravel bike', 142 km, 2.640 m (passeert de Faucille-zone, niet de kam)",
+   "u": "https://www.komoot.com/smarttour/e1646159261/across-the-swiss-and-french-jura-on-a-gravel-bike"
+  }
+ ],
+ "summary": "Stevig dossier: 10 van 11 logistieke feiten staan op de bron, één citaat miste twee woorden en 'parking du Pailly' plus de winterdata van de réserve zijn nergens terug te vinden. Kernbron is één eerstehands rit (cycling-challenge) met bijbehorende Bikemap-track; de rest is toerisme- en klimsite-materiaal."
+}

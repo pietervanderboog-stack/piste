@@ -1,0 +1,38 @@
+{
+ "id": "puymary",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.lesothers.com/gtmc-massif-central-velo-gravel",
+   "status": "wrong-attribution",
+   "note": "Pagina bereikbaar en citaat staat er letterlijk, maar het beschrijft de eerste klim vanuit Millau (Grands Causses, etappe Millau–Le Caylar), niet de Puy Mary. Les Others reed alleen het noordsegment (Morvan–Auvergne) en het zuidsegment (Occitanie); de Cantal komt niet voor.",
+   "fix": {
+    "remove": true
+   }
+  },
+  {
+   "i": 1,
+   "url": "https://partir-ici.fr/grande-traversee-massif-central-gtmc-aventure-vtt-gravel-exceptionnelle/",
+   "status": "ok",
+   "note": "Letterlijk: 'Dans un souci d'accessibilité, la GTMC propose désormais une variante adaptée aux vélos gravel et aux VTT chargés.' Auteur: redactie Partir ici (regionaal slow-tourismeplatform Auvergne-Rhône-Alpes), geen rijder.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "deviates",
+  "note": "Top 1589 m klopt (quaeldich). Wegklim Salers 20,2 km/731 Hm, Mandailles 11,9 km/673 Hm. Onze 25 km/1200 m is een gravellijn, maar het eigen profiel (segs 700→1589) levert 889 m; 1200 m is 35% hoger. Komoot-gravellus Pas de Peyrol: 65 km/1900 m.",
+  "source": "https://www.quaeldich.de/paesse/pas-de-peyrol/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-gravelroute (smarttour), lus over de Pas de Peyrol vanaf Puy de Seycheuse, 65 km, 1.900 m",
+   "u": "https://www.komoot.com/smarttour/43669265"
+  },
+  {
+   "t": "Officiële GPX van de GTMC-gravelvariant (hele traversée, 39 etappes), la-gtmc.com",
+   "u": "https://www.la-gtmc.com/itineraire/gpx/53"
+  }
+ ],
+ "summary": "Dun gedekt: van de twee stemmen valt er één weg omdat het citaat over Millau gaat, niet over de Cantal; de andere is redactionele tekst van een toerismeplatform. Er is geen eerstehands gravelverslag van de Puy Mary gevonden. De hoogtemeters (1200) sporen niet met het eigen profiel; de GTMC-gravel-GPX is wel officieel beschikbaar."
+}

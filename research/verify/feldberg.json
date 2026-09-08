@@ -1,0 +1,120 @@
+{
+ "id": "feldberg",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.outdooractive.com/en/cycle-routes/feldberg-schwarzwald-/cycling-in-feldberg-schwarzwald-/1440805/",
+   "status": "dead",
+   "note": "404 in EN en DE (route-ID 1440805 bestaat niet meer). Het citaat was bovendien Engels terwijl de reviews Duits waren (vertaald). Geen vervangende bron met deze review gevonden.",
+   "fix": {
+    "remove": true
+   }
+  },
+  {
+   "i": 1,
+   "url": "https://www.bike-magazin.de/touren/deutschland/graveltour-im-schwarzwald-querfeldwald/",
+   "status": "ok",
+   "note": "Verbatim.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Wegbeschreibung: 'Von Schönau aus … in Richtung Todtnau'; officiële start/finish is Gemeindehalle Utzenfeld (69,9 km, 1891 hm). Todtnau/Kirchzarten/Hinterzarten als basis is redactioneel.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "Taxi Frank Witte, Hinterzarten, Abholservice voor fietsers bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 2,
+   "status": "ok",
+   "note": "1493 m en 157 dagen sneeuwdek bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "ok",
+   "note": "Raimartihof en Todtnauer Hütte in de routebeschrijving (uitklaptab).",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "'Wohnmobilstellplatz' Todtnau in de routebeschrijving.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Geen waterpunten op de bron; hutten wel genoemd.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Pagina noemt Berggasthof Stübenwasen (1270 m), St. Wilhelmer Hütte (1423 m) en Zastler Hütte — NIET Todtnauer Hütte, Raimartihof of Hinterwaldkopfhütte.",
+   "fix": {
+    "t": "Berggasthof Stübenwasen (1270 m), St. Wilhelmer Hütte (1423 m, hoogste Almhütte van Baden-Württemberg) en Zastler Hütte in de afdaling.",
+    "u": "https://www.chilli-freiburg.de/specials/freizeit-in-der-region/freizeit-in-der-regio/dem-himmel-so-nah-radtour-vom-schauinsland-zum-feldberg/"
+   }
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "'Passstraße Feldberg aktuell von Todtnau kommend aufgrund von Bauarbeiten gesperrt … Alternativstrecke über die Todtnauer Hütte mit kurzem Schotterabschnitt' bevestigd (datum onbekend, tijdelijk).",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "dead",
+   "note": "Zelfde 404-route; niet elders gevonden.",
+   "fix": {
+    "remove": true
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "dead",
+   "note": "Zelfde 404-route; niet elders gevonden.",
+   "fix": {
+    "remove": true
+   }
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Climbfinder Feldberg vanuit Todtnau (asfalt): 15,8 km, 854 m, top 1491 m. Data 1450/1100/24/14 beschrijft de gravelcombinatie Feldberg & Schauinsland; officiële gravelroute 69,9 km/1891 hm. Top 1450 vs 1491 (-3%) ok; stijging niet direct toetsbaar.",
+  "source": "https://climbfinder.com/en/climbs/feldberg-todtnau"
+ },
+ "gpx": [
+  {
+   "t": "Officiële GPS-track 'Der Feldberg und der Schauinsland (Gravelbike Tour)', Schwarzwaldregion Belchen, 69,9 km, 1.891 m",
+   "u": "https://www.muenstertal-staufen.de/Media/Wandern-Radfahren-Naturgenuss/Der-Feldberg-und-der-Schauinsland-Gravelbike-Tour"
+  },
+  {
+   "t": "Komoot-tour van Tillmann, Feldberg über Kirchzarten und Rückfahrt über Schauinsland, 64,4 km, 1.840 m",
+   "u": "https://www.komoot.com/de-de/tour/48997889"
+  },
+  {
+   "t": "Komoot-gravelroute Feldsee – Feldberg Summit vanuit Todtnauberg, 32 km, 920 m",
+   "u": "https://www.komoot.com/smarttour/23629481"
+  }
+ ],
+ "summary": "Drie van de vier ooggetuigencitaten hingen aan één Outdooractive-route die in alle talen verdwenen is; die moeten weg, waarmee alleen BIKE Magazin als stem overblijft. De logistieke feiten van de officiële gravelroute kloppen wel, op de horecalijst na (verkeerde hutten aan de chilli-bron toegeschreven)."
+}

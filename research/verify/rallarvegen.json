@@ -1,0 +1,52 @@
+{
+ "id": "rallarvegen",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.tripadvisor.com/Attraction_Review-g7159542-d3497800-Reviews-Rallarvegen_The_Navvy_Road-Ulvik_Ulvik_Municipality_Hardanger_Hordaland_Western_.html",
+   "status": "unreachable",
+   "note": "403 op .com en .co.uk, ook via Playwright en r.jina.ai (Cloudflare). Citaat niet te verifieren; zoekbudget uitgeput. Vervanging met dezelfde strekking (lopen op steile stukken) gevonden bij Haugastol Turistsenter (officiele routegids, over Klevagjelet).",
+   "fix": {
+    "url": "https://www.haugastol.no/en/rallarvegen",
+    "q": "be careful and walk this part if needed",
+    "tr": "wees voorzichtig en loop dit stuk als het moet",
+    "who": "Haugastøl Turistsenter, routegids"
+   }
+  },
+  {
+   "i": 1,
+   "url": "https://cycloscope.net/cycling-rallarvegen-from-finse-to-flam/",
+   "status": "ok",
+   "note": "Verbatim: Noorse fietser op een camping bij Geilo, geciteerd door Cycloscope. Attributie en tr kloppen.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://bikepacking.com/routes/of-milk-and-navvies/",
+   "status": "ok",
+   "note": "Verbatim: 'with more than 20,000 cyclists visiting it each summer'. Routebeschrijving van bikepacking.com (redactie), attributie eerlijk.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Haugastol.no: Haugastol-Flam 78,4 km in etappes 26+19+17+16 (onze 82 km = +4,6%). Hoogste punt Fagervatnet 1.343 m (Cycloscope) klopt. Gain 600 niet exact te staven: Haugastol naar Finse +222 m; RWGPS Cycle Norway geeft +921 m tot Kardalstunnelen; orde van grootte ok. Gravel 70/82: Haugastol noemt het een 'historic gravel road'; alleen Flamsdalen deels verhard.",
+  "source": "https://www.haugastol.no/en/rallarvegen"
+ },
+ "gpx": [
+  {
+   "t": "RideWithGPS-route van Cycle Norway (Rallarvegen incl. Flåm-Voss), 150 km, 3.400 m, 55% onverhard",
+   "u": "https://ridewithgps.com/routes/39606831?privacy_code=E9Vjb0QdoUH3tbkG"
+  },
+  {
+   "t": "GPX-download van Cycle Norway (Rallarvegen)",
+   "u": "https://cyclenorway.com/wp-content/uploads/2025/08/Rallarvegen-3.gpx"
+  },
+  {
+   "t": "Bikepacking.com-route Of Milk and Navvies (Mjølkevegen + Rallarvegen), 383 km, 7.282 m, 71% onverhard",
+   "u": "https://bikepacking.com/routes/of-milk-and-navvies/"
+  }
+ ],
+ "summary": "Twee van drie stemmen kloppen letterlijk; de Tripadvisor-review zit achter een botmuur en is niet te controleren: vervang door het officiele Haugastol-advies of laat weg. Cijfers sporen met de routegids van Haugastol (78 km) en Cycloscope (1.343 m). GPX-dekking is sterk: Cycle Norway biedt zowel een RWGPS-route als een kale GPX."
+}

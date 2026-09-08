@@ -1,0 +1,112 @@
+{
+ "id": "jandri",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.cycling-challenge.com/the-best-cycling-climbs-from-bourg-doisans/",
+   "status": "misquote",
+   "note": "Pagina zegt over de laatste drie (onverharde) klimmen 'completely rideable'; de woorden 'ski-lift service road' staan niet op deze pagina maar op het aparte Jandri-verslag. Attributie (My Cycling Challenge, Will) klopt.",
+   "fix": {
+    "url": "https://www.cycling-challenge.com/col-du-jandri-glacier-de-mont-de-lans/",
+    "q": "a decent quality gravel road for the entire route",
+    "tr": "een grindweg van behoorlijke kwaliteit over het hele traject"
+   }
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "dead",
+   "note": "404. Engelstalige Centcols-pagina bevestigt 2734 m vanaf Le Bourg-d'Oisans en start van de piste bij Alpe du Mont-de-Lans; 'Le Clapier' staat niet op die pagina (wel 'Clapiers' bij cycling-challenge).",
+   "fix": {
+    "u": "https://centcols.org/en/the-jandri-pass/"
+   }
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "3150 m FR-38-3151 bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Pagina noemt 'un restaurant d'altitude' en Jandri 2; geen waterpunten genoemd, dus 'onbevestigd' is correct.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "'restaurant et la gare du téléphérique Jandri 2' op 2189 m en hoogterestaurant bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "Pagina laadt wel (502 in scan was tijdelijk). Tekst: 'début juillet ce devrait être bon', rit op 3 juli. Ondersteund.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "'signed as closed to motor traffic, there was the very occasional car/truck, mainly service vehicles' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 2,
+   "status": "ok",
+   "note": "'VTT en bon état obligatoire (surtout les freins pour le retour)' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "ok",
+   "note": "Verbatim.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "dead",
+   "note": "Oude libre_service-URL is 404; citaat staat verbatim op de nieuwe Franse Centcols-pagina (tekst René Poty).",
+   "fix": {
+    "url": "https://centcols.org/fr/le-col-du-jandri/"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 2,
+   "status": "ok",
+   "note": "Verbatim.",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Centcols: top 3150 m, 1500 m stijging vanaf Les Deux-Alpes (Col de l'Alpe 1652 m); Openrunner-track 28,9 km heen-en-terug = ±14,5 km enkel. Komt overeen met 3158/1500/14/14.",
+  "source": "https://centcols.org/en/the-jandri-pass/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-route 'Les 2 Alpes Bike Park and Col du Jandri Loop', 23,6 km, 1.610 m",
+   "u": "https://www.komoot.com/smarttour/e1376458461/les-2-alpes-bike-park-and-col-du-jandri-loop"
+  },
+  {
+   "t": "Openrunner-track van hd.farcy (VTT, heen-en-terug), 28,9 km, 1.683 m",
+   "u": "https://www.openrunner.com/route-details/146235"
+  },
+  {
+   "t": "Komoot-highlight Jandri Pass met tips en routes in de buurt",
+   "u": "https://www.komoot.com/highlight/6291459"
+  }
+ ],
+ "summary": "Bronnen zijn solide (Centcols, cycling-challenge, alpes4ever) en de cijfers kloppen, maar de Centcols-URL was verhuisd en het voices-citaat was uit twee pagina's samengeplakt. Met de twee URL-fixes en een verbatim citaat is dit dossier op orde; slaap/parkeren/laden blijven terecht onbevestigd."
+}

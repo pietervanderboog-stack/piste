@@ -222,6 +222,8 @@ $("#share").addEventListener("click",async()=>{
 });
 /* mobile drawer */
 const drawer=$("#drawer");
+try{if(localStorage.getItem("piste-intro")==="1")$("#intro").hidden=true;}catch(e){}
+$("#introClose").addEventListener("click",()=>{$("#intro").hidden=true;try{localStorage.setItem("piste-intro","1");}catch(e){}});
 if(window.innerWidth>820)drawer.classList.add("filt");
 $("#filtBtn").addEventListener("click",()=>{const on=drawer.classList.toggle("filt");$("#filtBtn").setAttribute("aria-expanded",on);});
 $("#handle").addEventListener("click",()=>{
@@ -270,7 +272,7 @@ function openProfile(id){
   $("#profile").innerHTML=
    '<div class="hero"><div class="m3d" id="m3d"></div>'+
    '<a class="back" href="#/'+q+'"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>Alle beklimmingen</a>'+
-   '<div class="hero-note"><span>Hoogte 1,4× uitvergroot</span><button type="button" id="spinBtn" aria-pressed="'+(!RM)+'">Draaien</button></div>'+
+   '<div class="hero-note"><span>Hoogte 1,4× uitvergroot</span><button type="button" id="spinBtn" aria-pressed="true">Draaien</button></div>'+
    '<div class="titlebox"><div class="in"><div class="area">'+esc(c.area)+', '+esc(c.land)+'</div><h1>'+esc(c.name)+'</h1>'+
    '<div class="dh"><b>'+fmtH(h)+'</b> rijden vanaf '+esc(state.origin.n)+(state.ev?', inclusief laadstops':'')+(c.cross?', inclusief overtocht':'')+'</div></div></div></div>'+
    '<nav class="pnav">'+nav.map(n=>'<a href="#'+n[0]+'" data-go="'+n[0]+'">'+n[1]+'</a>').join("")+'</nav>'+
@@ -313,11 +315,11 @@ function mount3d(c){
     layers:[{id:"sat",type:"raster",source:"sat"},{id:"hill",type:"hillshade",source:"dem2",paint:{"hillshade-exaggeration":.35,"hillshade-shadow-color":"#2b2f2a","hillshade-highlight-color":"#fff8e6"}}],
     sky:{"sky-color":"#cfdde8","horizon-color":"#f6f3ec","fog-color":"#f6f3ec","fog-ground-blend":.55,"horizon-fog-blend":.7,"sky-horizon-blend":.6,"atmosphere-blend":.8},
     terrain:{source:"dem",exaggeration:1.4}},
-    center:[c.lng,c.lat-.02],zoom:11.6,pitch:64,bearing,maxPitch:75,attributionControl:{compact:true},cooperativeGestures:true});
+    center:[c.lng,c.lat-.012],zoom:12.7,pitch:66,bearing,maxPitch:75,attributionControl:{compact:true},cooperativeGestures:true});
   map3d.addControl(new maplibregl.NavigationControl({visualizePitch:true}),"top-right");
   const el=document.createElement("div");el.className="pin sel";el.style.background=BANDCOL[band(driveH(state.origin,c,state.ev))];el.textContent="";el.style.width="16px";el.style.height="16px";
   new maplibregl.Marker({element:el}).setLngLat([c.lng,c.lat]).addTo(map3d);
-  let spinning=!RM;
+  let spinning=true;
   const step=()=>{if(!spinning)return;map3d.setBearing(map3d.getBearing()+.04);spin=requestAnimationFrame(step);};
   map3d.on("load",()=>{if(spinning)spin=requestAnimationFrame(step);});
   const stop=()=>{spinning=false;$("#spinBtn")?.setAttribute("aria-pressed","false");};

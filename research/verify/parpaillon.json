@@ -1,0 +1,45 @@
+{
+ "id": "parpaillon",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.cycloworld.cc/article/col-du-parpaillon-an-adventure-of-a-lifetime/1110",
+   "status": "dead",
+   "note": "Oude URL toont 'pagina bestaat niet meer' (HTTP 200). Artikel bestaat nog onder nieuwe URL; quote daar verbatim: 'A fully is strongly recommended!'",
+   "fix": {
+    "url": "https://www.cycloworld.cc/en/article/col-du-parpaillon/1110"
+   }
+  },
+  {
+   "i": 1,
+   "url": "https://www.questel.co.uk/tunnel-du-parpaillon",
+   "status": "ok",
+   "note": "Verbatim: 'The track proved straightforward on a gravel bike, and smoother still along the edges'. Noordkant.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://www.cycling-challenge.com/col-du-parpaillon/",
+   "status": "ok",
+   "note": "Verbatim; context: 'My hybrid was not really sufficient. This requires a mountain bike.' Auteur Will reed op hybride, niet op gravelbike.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "deviates",
+  "note": "Quaeldich noordwestkant vanaf Embrun: 27,5 km, 1862 m, top 2650 m, laatste 8 km onverhard (cycling-challenge: circa 10 km). Hier 30 / 1900 / 2643 / 13 km grind - lengte en stijging binnen 10%, maar grindlengte 13 km is 30-60% hoger dan de bronnen. Zwaarwegend: quaeldich meldt dat de tunnel op 12 juli 2025 definitief met betonblokken is afgesloten; beide kanten zijn nu doodlopend.",
+  "source": "https://www.quaeldich.de/paesse/col-du-parpaillon/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-route 'Tunnel du Parpaillon' (gravel), 95,7 km, 2.760 m",
+   "u": "https://www.komoot.com/smarttour/e1392009766/tunnel-du-parpaillon"
+  },
+  {
+   "t": "Komoot-tour van Jordi 'Col du Parpaillon', 102 km, 3.480 m (46,7 km onverhard)",
+   "u": "https://www.komoot.com/tour/47108970"
+  }
+ ],
+ "summary": "Stemmen kloppen na een URL-fix (Cycloworld heeft het artikel verhuisd). Twee zorgen: de 13 km grind is fors hoger dan quaeldich (8 km) en cycling-challenge (circa 10 km), en quaeldich meldt dat de tunnel sinds 12 juli 2025 permanent dicht is - dat raakt de hele 'line' van de klim en verdient een eigen note/gap."
+}

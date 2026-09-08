@@ -1,0 +1,123 @@
+{
+ "id": "hogevenen",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://ridersguide.nl/routes/graveltocht-ardennen/",
+   "status": "ok",
+   "note": "Verbatim.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.mountainbike.nl/forum/viewtopic.php?f=11&t=71949",
+   "status": "ok",
+   "note": "Verbatim forumpost.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "674 m, gemeente Jalhay, herberg bevestigd; Stavelot/Coo als dalbasis is redactioneel.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "694 m, hoogste punt van België bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "ok",
+   "note": "Adres 'Baraque Michel 36, 4845 Jalhay' bevestigd. Bron noemt het restaurant; overnachten er niet expliciet.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "ok",
+   "note": "Domaine des Hautes Fagnes, Rue de Botrange 133, 4950 Robertville bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "'plaats voor ongeveer 100 auto's. Kom dus zeker op tijd' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "VisitWallonia noemt alleen generiek 'waterpunten' in het landschap (geen drinkpunten); 'onbevestigd' is dus correct.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Wikiloc-pagina noemt 'Mont Rigi and Centre de Botrange … within 500 meters of the route', maar geen Restaurant Baraque Michel (dat staat bij Reisbeesten).",
+   "fix": {
+    "t": "Natuurcentrum Botrange en Mont Rigi liggen binnen 500 m van de route; Restaurant Baraque Michel bij de parking.",
+    "u": "https://www.wikiloc.com/hiking-trails/hoge-venen-baraque-michel-en-signal-de-botrange-63113314"
+   }
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "43 dagen sneeuwbedekking (KMI) bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "6,1 °C, 170, 115, 176 bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 2,
+   "status": "unreachable",
+   "note": "AllTrails geeft 403 via Playwright én WebFetch (bot-blokkade). Feit is generiek en plausibel maar nu niet controleerbaar.",
+   "fix": {
+    "u": null
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "ok",
+   "note": "Verbatim. 'tr' leeg is prima (Nederlands).",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Climbfinder Baraque Michel: 14,1 km, 425 m, top ±674 m; Signal de Botrange vanuit Membach 15,6 km, 476 m, top 694 m. Top 675 klopt; 1000 m over een 70 km-lus is niet in een klimdatabase te toetsen.",
+  "source": "https://climbfinder.com/en/climbs/baraque-michel"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-gravelroute Loop from Malmedy – Parc naturel des Hautes Fagnes-Eifel, 56 km, 755 m",
+   "u": "https://www.komoot.com/smarttour/e1852732981/loop-from-malmedy-parc-naturel-des-hautes-fagnes-eifel"
+  },
+  {
+   "t": "Komoot-gravelroute High Fens Nature Reserve – Brackvenn vanuit Xhoffraix, 66 km, 900 m",
+   "u": "https://www.komoot.com/smarttour/38023010"
+  },
+  {
+   "t": "Ridersguide.nl graveltocht Ardennen vanaf Coo (routebeschrijving met GPX)",
+   "u": "https://ridersguide.nl/routes/graveltocht-ardennen/"
+  }
+ ],
+ "summary": "Vrijwel alles is gedekt door wandel- en reisblogs (Reisbeesten, Ardennen.nl) en die feiten kloppen letterlijk; alleen de Wikiloc-attributie van het restaurant en de onbereikbare AllTrails-bron vragen een aanpassing. De gap-tekst ('vrijwel alle bronnen zijn wandelverslagen') blijft terecht staan."
+}

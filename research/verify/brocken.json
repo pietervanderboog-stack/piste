@@ -1,0 +1,150 @@
+{
+ "id": "brocken",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.canyon.com/de-de/blog-content/gravel-bike-news/besten-gravel-bike-touren-im-harz/b01032024.html",
+   "status": "ok",
+   "note": "Letterlijk; auteur Claudia Krug (Canyon-blog). Merkcontent, geen forumrijder.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.globetrotter.de/magazin/gravel-tour-harz-devils-trail/",
+   "status": "ok",
+   "note": "403 voor bots, met Playwright bereikbaar. Letterlijk in de zin '...hat der Harz wenig Teuflisches für mich als Gravelbiker.' Auteur Nils Thomsen, eerstehands (184 km Devil's Trail).",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://www.outdooractive.com/de/gravel-bike-touren/harz-mittelgebirge-/gravel-bike-touren-im-harz-mittelgebirge-/301589287/",
+   "status": "dead",
+   "note": "404. Citaat niet elders vindbaar. Vervanging: quaeldich-commentaar Martin K (26.06.2025) over de nieuwe grindklim: 'Der größte Teil ist dabei ein fein gekiester Wanderweg, also gut fahrbar' (met 28 mm banden).",
+   "fix": {
+    "q": "Der größte Teil ist dabei ein fein gekiester Wanderweg, also gut fahrbar",
+    "tr": "Het grootste deel is een fijn begrind wandelpad, dus goed berijdbaar",
+    "who": "Rijder op 28 mm, quaeldich-commentaar juni 2025",
+    "url": "https://www.quaeldich.de/paesse/brocken/kommentare/"
+   }
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Auffahrten Wernigerode, Brockenstraße ab Schierke en Westauffahrt vom Torfhaus (Schotter) staan op de pagina.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "'So ist die einzige Straße hinauf Radfahrern und Pferdekutschen vorbehalten.'",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 2,
+   "status": "ok",
+   "note": "Mietstation Ferienanlage Zum Wildbach GmbH, Barenberg 15f, Tel. 0 39 45 5 – 58 99 70.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "ok",
+   "note": "'Übernachtungen im Brockenhotel sind gefragt und nur mit Vorbestellung möglich.'",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "ok",
+   "note": "Fahrradreparaturset en luchtpomp bij Tourist-Information Schierke.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "u=null, correct onbevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "'Einkehrmöglichkeiten bietet der Brockenwirt im Bahnhof und im Touristensaal auf dem Gipfel.'",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "Zelfde zin; horeca Schierke niet op deze pagina maar onomstreden.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "'Der erste Schnee fällt meist schon im September und hält sich oft bis in den März.'",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "unsupported",
+   "note": "De Befahrungen-pagina bevat alleen tijden. 'Alte Schierker Straße' en 'Ehrenfriedhof Oderhaus' staan nergens op quaeldich. Wel op /kommentare/: Brockenstraße vanaf Schierke geasfalteerd (TorstenJ 2011) en de 'Neue Goetheweg' als fijn begrinde gravelklim (Martin K 2025).",
+   "fix": {
+    "t": "De Brockenstraße vanaf Schierke is geasfalteerd (sinds 2011/2012); het grindalternatief is de Neue Goetheweg langs het spoor vanaf Torfhaus, fijn grind, door een rijder op 28 mm gereden.",
+    "u": "https://www.quaeldich.de/paesse/brocken/kommentare/"
+   }
+  },
+  {
+   "section": "season",
+   "i": 2,
+   "status": "unsupported",
+   "note": "Komoot-highlight zegt alleen 'This Highlight is in a protected area. Please check local regulations'. Officiële regel: 'Radfahren ist auf den meisten Wanderwegen erlaubt.'",
+   "fix": {
+    "t": "Nationalpark Harz: fietsen is toegestaan op de meeste wandelwegen; uitzonderingen staan ter plaatse aangegeven.",
+    "u": "https://www.nationalpark-harz.de/de/natur-erleben/verhalten-im-nationalpark.php"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "ok",
+   "note": "Letterlijk in de thread.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "ok",
+   "note": "Letterlijk (schrijfwijze 'Götheweg' is van de poster).",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Top 1141 m; Wernigerode 27,1 km/949 Hm, Schierke 9,7 km/511 Hm, Torfhaus-Schotter 7,2 km/339 Hm. 25 km/1000 m spoort met de Wernigerode-lijn.",
+  "source": "https://www.quaeldich.de/paesse/brocken/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-gravelroute 'Neuer Goetheweg loop from Torfhaus', 16,7 km, 350 m",
+   "u": "https://www.komoot.com/smarttour/23627943"
+  },
+  {
+   "t": "Komoot-tour van The Gravel Fest, '2022 FEST 60' (Brocken-omgeving), 68,5 km, 1.410 m",
+   "u": "https://www.komoot.com/de-de/tour/750074600"
+  },
+  {
+   "t": "Komoot-tour van The Gravel Fest, '2022 FEST 120' met Brockenauffahrt, 117 km, 2.720 m",
+   "u": "https://www.komoot.com/de-de/tour/658941842"
+  }
+ ],
+ "summary": "Solide bronnenbasis (harzinfo, quaeldich, Schierke-VVV, Rennrad-News-forum), maar één stem was dood (Outdooractive 404) en twee seizoensfeiten hingen aan pagina's die de claim niet dragen. De 'alte Schierker Straße'-claim is nergens te vinden en is vervangen door wat rijders wél melden: asfalt vanaf Schierke, fijn grind op de Neue Goetheweg."
+}

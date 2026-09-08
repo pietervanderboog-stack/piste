@@ -1,0 +1,40 @@
+{
+ "id": "asiago",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://trektravel.com/tour/cycling/italian-dolomites-gravel/",
+   "status": "ok",
+   "note": "Letterlijk: 'About 60% of the riding is unpaved ... with loose rocks and chunky gravel.' Beschrijft de hele reis (Asiago + Dolomieten), reisorganisatie.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.dolomitigravel.com/",
+   "status": "ok",
+   "note": "Letterlijk aanwezig, maar de zin gaat over de Veneto-Dolomieten in het algemeen, niet over de Altopiano; eigenaar Alberto, kleine touroperator (marketingtekst).",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Niet toetsbaar: geen entry op quaeldich/climbfinder/cycling-challenge voor de militaire wegen van de Altopiano. Komoot-gravelroutes ter plaatse: 41 km/680 m, 142 km/2650 m, driedaagse 172 km/3810 m; 45 km/1005 m is plausibel, top 1400 m onbevestigd.",
+  "source": "https://www.komoot.com/it-it/collection/1777954/-tre-giorni-in-gravel-sull-altipiano-di-asiago"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-collectie van Situazione Gravel, 'Tre giorni in gravel sull'altipiano di Asiago', 172 km, 3.810 m",
+   "u": "https://www.komoot.com/it-it/collection/1777954/-tre-giorni-in-gravel-sull-altipiano-di-asiago"
+  },
+  {
+   "t": "Komoot-gravelroute 'Asiago Dolce, un piccolo assaggio gravel in altopiano', 41 km, 680 m",
+   "u": "https://www.komoot.com/it-it/tour/437762619"
+  },
+  {
+   "t": "Komoot-gravelroute van Max, 'Altopiano di Asiago (Barricata–Forte Lisser–Gallio)', 142 km, 2.650 m",
+   "u": "https://www.komoot.com/it-it/tour/886344860"
+  }
+ ],
+ "summary": "Beide citaten zijn letterlijk, maar allebei reisorganisatie-copy en geen van beide gaat specifiek over de Asiago-militaire wegen. Cijfers zijn niet aan een klimdatabase te toetsen; de Komoot-gravelscene rond Asiago (Situazione Gravel) is daarentegen rijk en levert betere stemmen én tracks."
+}

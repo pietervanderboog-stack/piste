@@ -1,0 +1,142 @@
+{
+ "id": "montsdarree",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://saint-jacques-compostelle-bretagne.fr/gravel-tro-breizh/",
+   "status": "ok",
+   "note": "Letterlijk aanwezig; routegids Gravel Tro Breizh, geen individuele rijder.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://vttour.fr/sorties/18153",
+   "status": "ok",
+   "note": "Reactie van enezvtt (25.08.20): 'Oui, j'étais content parce que les circuits en BZH ont souvent bcp de route.' Echte MTB'er.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://www.abicyclette-voyages.com/circuit/a-lassaut-des-monts-darree",
+   "status": "ok",
+   "note": "Letterlijk, maar het is verkooptekst van een reisorganisatie (regel 2: geen marketingcopy). Overweeg vervanging.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Huelgoat als start van Les Roc'h en 'Tél. 02 98 99 72 32 (Huelgoat)' staan op de pagina; Brennilis komt voor als boucle.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "'Une pause s'impose au Roc'h Trévézel, dernier point culminant du parcours à 385m.'",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Prijs € 61–118 en 200 m van de Chaos du Moulin kloppen, maar het hotel is twee sterren ('Hôtel Restaurant du lac**'), niet drie.",
+   "fix": {
+    "t": "Hôtel du Lac in Huelgoat, twee sterren, 200 m van de Chaos du Moulin; kamers € 61–118.",
+    "u": "https://www.hoteldulac-huelgoat.com/"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "ok",
+   "note": "'construite en 1801', 3 étoiles, 99/109 € per kamer incl. ontbijt.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 2,
+   "status": "ok",
+   "note": "Ravito R4 'aux troglogîtes de Roc'h Gwell Yann'.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "u=null, correct onbevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "'ravito de la maison du lac de Brennilis (km 50)' staat op de 65 km-pagina; La Feuillée is de R6 van de 120 km-route (andere lesroch-pagina).",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "'La Feuillée, plus haute commune de Bretagne'.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "u=null, eigen inschatting.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "13–14 september, gravel 65 km (za) en 80/100/125/150 km (zo).",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 2,
+   "status": "ok",
+   "note": "'au cœur du Parc Régional d'Armorique'.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "ok",
+   "note": "Letterlijk.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "ok",
+   "note": "Letterlijk.",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Roc'h Trévezel 385 m (lesroch) vs 384 m. 84 km/1600 m is een eigen lus; Komoot MTB-lus Huelgoat–Roc'h Trevezel 96,8 km/1530 m en Roc'h-gravel 67 km/1150 m liggen in dezelfde orde.",
+  "source": "https://www.lesroch.org/reco-du-mythique-120-km/"
+ },
+ "gpx": [
+  {
+   "t": "Officiële GPX van VTT en Finistère, GIT 'Crêtes Complètes' (Monts d'Arrée), 73 km",
+   "u": "https://vttenfinistere.fr/wp-content/uploads/2026/04/GITVTT-Bretagne-Finistere-Montarr-Cretes-Completes-73-km-2026.gpx"
+  },
+  {
+   "t": "Officiële GPX van VTT en Finistère, GIT 'Coeur Monts d'Arrée', 96 km",
+   "u": "https://vttenfinistere.fr/wp-content/uploads/2026/04/GITVTT-Bretagne-Finistere-Montarr-Coeur-Monts-Arree-96-km-2026-1-1.gpx"
+  },
+  {
+   "t": "Komoot-MTB-route 'Gouffre de Huelgoat – Roc'h Trevezel loop from Huelgoat', 96,8 km, 1.530 m",
+   "u": "https://www.komoot.com/smarttour/39339452"
+  }
+ ],
+ "summary": "Vrijwel alles staat op de bron; enige echte fout is de sterrenclassificatie van Hôtel du Lac (twee, niet drie). Zwakte zit in de stemmen: één reisorganisatie en één routegids, slechts één echte rijder (VTTour). Les Roc'h publiceert geen GPX, maar VTT en Finistère heeft officiële, vrij downloadbare tracks over de kam."
+}

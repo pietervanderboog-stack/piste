@@ -1,0 +1,47 @@
+{
+ "id": "corrieyairack",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://singletrackworld.com/forum/bike-forum/corrieyairack-pass-pylon-route/",
+   "status": "ok",
+   "note": "403 voor bots, met Playwright bereikbaar. Letterlijk in een post van een Free Member (5296 posts).",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.komoot.com/highlight/764781",
+   "status": "misquote",
+   "note": "Geen enkele tip bevat deze zin. De tip van januari 2020 (The Racing Collective) eindigt op '...it's a beast!'. 'Brutal but beautiful' en 'loose rocks' komen alleen voor in Komoot's automatisch gegenereerde FAQ-tekst, niet van een rijder.",
+   "fix": {
+    "q": "DO NOT DO THIS ON A ROAD BIKE",
+    "tr": "DOE DIT NIET OP EEN RACEFIETS",
+    "who": "Komoot-tip, augustus 2020"
+   }
+  },
+  {
+   "i": 2,
+   "url": "https://www.atlasrideco.com/news/scotland-gravel-riding-routes-tours",
+   "status": "ok",
+   "note": "Letterlijk: 'With its loose gravel, river crossings, and exposure to the elements, this ride is a true test...'. Atlas Ride Co is een MTB-reisorganisatie (marketingtekst).",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "770 m bevestigd (Wikipedia, Komoot). Militaire weg Melgarve–Culachy ca. 16 km als monument; 18 km/710 m vanaf Fort Augustus (~60 m) klopt. Komoot: lus vanaf Laggan 76,8 km/1670 m; Badger Divide etappe Fort Augustus–Loch Laggan 60,2 km/1180 m.",
+  "source": "https://en.wikipedia.org/wiki/Corrieyairack_Pass"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-MTB-route 'The Corrieyairack Pass — a loop from Laggan', 76,8 km, 1.670 m",
+   "u": "https://www.komoot.com/smarttour/e1022054583/the-corrieyairack-pass-a-loop-from-laggan"
+  },
+  {
+   "t": "Komoot-tour 'Stage 2: Fort Augustus to Loch Laggan — The Badger Divide' (over de pas), 60,2 km, 1.180 m",
+   "u": "https://www.komoot.com/tour/111874173"
+  }
+ ],
+ "summary": "Forumstem klopt en is eerstehands; de Komoot-'tip' was een samenraapsel van Komoot's eigen FAQ-tekst en is vervangen door een echte tip. Derde stem is reisorganisatie-copy. Cijfers en routes zijn goed gedocumenteerd (Badger Divide)."
+}

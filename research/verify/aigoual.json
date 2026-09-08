@@ -1,0 +1,49 @@
+{
+ "id": "aigoual",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://lecridescevennes.fr/2023/01/22/ma-22-grimper-sur-le-mont-aigoual-en-gravel/",
+   "status": "ok",
+   "note": "Verbatim in de Franse versie (pagina schakelt naar Engels bij en-locale). Auteur: CartoCyclo.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.sudcevennes.com/activites/nature/velo/5983011_aigoual-gravel/",
+   "status": "dead",
+   "note": "Oude URL redirect naar de algemene vélo-pagina; item is verhuisd. Citaat staat verbatim op de nieuwe URL (parcours 'Aigoual gravel', toegeschreven aan Arne Schroeter, met GPX).",
+   "fix": {
+    "url": "https://www.sudcevennes.com/sejour-vacances-gard/5983011_aigoual-gravel/"
+   }
+  },
+  {
+   "i": 2,
+   "url": "https://www.velorizons.com/voyage-velo-route-cyclo/france/massif-central/CG42-gravel-itineraire-cevennes-montpellier.html",
+   "status": "ok",
+   "note": "Verbatim, in de tab 'Programme' (jour 3). Let op: touroperator-tekst.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Geen database dekt de piste du Col de l'Estrade. Climbfinder Mont Aigoual vanuit Valleraugue (asfalt): 26,7 km, 1208 m, top 1557 m; Vélorizons: etappe via Col de l'Estrade ±60–65 km, 1300–1600 m. Top 1567 vs 1557 ok; 1100 m/20 km plausibel, gravel 16 km niet toetsbaar.",
+  "source": "https://climbfinder.com/en/climbs/mont-aigoual-valleraugue"
+ },
+ "gpx": [
+  {
+   "t": "GPX 'Aigoual gravel' van Sud Cévennes Tourisme (parcours 21, Le Vigan – L'Espérou – Col du Minier)",
+   "u": "https://www.sudcevennes.com/sejour-vacances-gard/5983011_aigoual-gravel/"
+  },
+  {
+   "t": "CartoCyclo-tronçon MA-22 Grimper sur le Mont Aigoual en gravel (piste du Col de l'Estrade, met hoogteprofiel)",
+   "u": "https://lecridescevennes.fr/2023/01/22/ma-22-grimper-sur-le-mont-aigoual-en-gravel/"
+  },
+  {
+   "t": "Komoot-highlight Mont Aigoual met gravel-tips en routes in de buurt",
+   "u": "https://www.komoot.com/highlight/5637211"
+  }
+ ],
+ "summary": "De drie citaten bestaan echt, maar één URL was dood-door-verhuizing en twee van de drie stemmen zijn touroperator/toeristische dienst — geen rijder. Geen Komoot-graveltour over de Col de l'Estrade gevonden; de piste is alleen via CartoCyclo gedocumenteerd, dus de gravelkilometers blijven onbevestigd."
+}

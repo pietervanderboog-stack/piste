@@ -1,0 +1,46 @@
+{
+ "base": [
+  {"t": "Grotli is de basis als je grind wilt: de klim start hier op ± 910 m, direct bij het hotel, en CycleNorway beoordeelt de kant vanaf Grotli met 4/10 en 75% onverhard.", "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"},
+  {"t": "Videsæter/Hjelledalen is de basis voor de westkant; die blijft volgens CyclingRoutes.cc vrijwel de hele klim ruw asfalt, met alleen bovenaan een kort grindplateau.", "u": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"},
+  {"t": "Grotli en Videsæter liggen 27 km uit elkaar over de Gamle Strynefjellsvegen.", "u": "https://www.nasjonaleturistveger.no/en/routes/gamle-strynefjellsvegen/"}
+ ],
+ "sleep": [
+  {"t": "Grotli Høyfjellshotell, Skjåkvegen 5383, 2695 Grotli — historisch fjellhotel uit 1905, ± 125 bedden/53 kamers, café met warm en koud eten overdag.", "u": "https://www.1881.no/hotell/hotell-innlandet/hotell-grotli/grotli-hoeyfjellshotell_100150982S2/"},
+  {"t": "Hotel Videseter, Gamle Strynefjellsveg 150, 6798 Hjelledalen, tel. +47 57 87 60 50 — ligt letterlijk aan de weg; open van mei tot september, dicht 's winters door sneeuw.", "u": "https://chargemap.com/en-gb/grotli-hoyfjellshotell.html"},
+  {"t": "Langs de weg liggen gletsjermeren die als wildkampeerplek worden aangeprezen bij goed weer.", "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"}
+ ],
+ "park": [
+  {"t": "Gratis parkeerplaats bij de waterval Videfossen, aan de westkant van de route.", "u": "https://www.lifeinnorway.net/gamle-strynefjellsvegen/"},
+  {"t": "Bij Hotel Videseter zelf wordt zowel voor toegang als voor parkeren betaald.", "u": "https://www.lifeinnorway.net/gamle-strynefjellsvegen/"},
+  {"t": "EV bij Grotli Høyfjellshotell: laadpunten van Mer — CCS tot 70 kW, CHAdeMO 50 kW en Type 2 22 kW, drie palen op het terrein.", "u": "https://chargemap.com/en-gb/grotli-hoyfjellshotell.html"},
+  {"t": "EV in Stryn: Esso aan Tonningsgata 2 (CCS2, tot 250 kW) en TOCN Stryn Torg aan Tonningsgate 4 (Type 2, 19,3 kW, 24/7).", "u": "https://www.plugshare.com/location/652727"}
+ ],
+ "water": [
+  {"t": "Onderweg geen kranen, cafés of winkels — CyclingRoutes.cc noemt Gamlebutikken in Hjelle als enige eten/waterstop op de route.", "u": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"},
+  {"t": "Laatste zekere punt aan de oostkant is het café van Grotli Høyfjellshotell, vlak bij de start.", "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"},
+  {"t": "De gletsjermeren langs de weg ogen aanlokkelijk, maar geen enkele bron bevestigt of het water er drinkbaar is — onbevestigd.", "u": null}
+ ],
+ "food": [
+  {"t": "Gamlebutikken in Hjelle: winkel/eetgelegenheid aan de westelijke voet van de klim, expliciet genoemd als enige bevoorrading op de route.", "u": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"},
+  {"t": "Café bij Grotli Høyfjellshotell serveert overdag warm en koud eten.", "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"},
+  {"t": "Hotel Videseter serveert ontbijt bij verblijf; een bakkerij wordt genoemd 'de andere kant op' vanaf het hotel, zonder verdere details.", "u": "https://www.videseter.com/"},
+  {"t": "Stryn zelf heeft reguliere supermarkten (o.a. Coop Extra) op loopafstand van het centrum — voor wie er de nacht ervoor overnacht.", "u": "https://www.plugshare.com/location/652727"}
+ ],
+ "season": [
+  {"t": "Officieel open van 15 juni tot eind september; daarbuiten potdicht door sneeuw.", "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"},
+  {"t": "In 2026 bleef het volledige traject Grotli–Videsæter half juni nog dicht: het wegdek moest eerst worden gefreesd en drogen, en de opening werd tot medio juni uitgesteld vanwege de wilde rendieren in het gebied.", "u": "https://www.nrk.no/vestland/heile-gamle-strynefjellsvegen-opnar-ikkje-for-i-midten-av-juni-1.17896234"},
+  {"t": "Gedeeltelijke opening kan eerder: het stuk Videsæter–zomerskicentrum was in 2026 al eind mei open, terwijl Videsæter–Grotli nog dicht bleef.", "u": "https://www.nrk.no/vestland/heile-gamle-strynefjellsvegen-opnar-ikkje-for-i-midten-av-juni-1.17896234"},
+  {"t": "Ook na opening kan de weg tijdelijk dicht door noodweer — in de zomer van 2023 was hij door storm Hans ongeveer een week volledig gestremd.", "u": "https://www.lifeinnorway.net/gamle-strynefjellsvegen/"}
+ ],
+ "gpx": [
+  {"t": "CycleNorway-route 'Gamle Strynefjellsvegen', 27 km, 256 hm, 75% onverhard, incl. downloadbare GPX en aanbevolen bandenmaat 30–35 mm.", "u": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"},
+  {"t": "Officiële routekaart en fotomateriaal van de Nasjonale Turistveger — geen GPX-download, wel exacte start/eindcoördinaten (Grotli 62.013444, 7.630327 / Videsæter 61.937043, 7.264409).", "u": "https://www.nasjonaleturistveger.no/en/routes/gamle-strynefjellsvegen/"},
+  {"t": "Losse Komoot- of Strava-tracks specifiek voor deze klim kon ik niet met zekerheid isoleren binnen het zoekbudget — onbevestigd, apart controleren voor vertrek.", "u": null}
+ ],
+ "quotes": [
+  {"who": "CyclingRoutes.cc, ter plaatse (westkant)", "q": "No cafés, water taps or shops on the route.", "tr": "Geen cafés, kranen of winkels langs de route.", "url": "https://www.cyclingroutes.cc/route/gamle-strynefjellsveg-cycling"},
+  {"who": "Matthew Tolley, Cycle Norway", "q": "It's a wild camping dream location if the weather is on your side", "tr": "Bij goed weer is dit een droomplek om wild te kamperen.", "url": "https://cyclenorway.com/en/routes/gamle-strynefjellsvegen/"},
+  {"who": "NRK Vestland, over het uitstel in 2026", "q": "vegen fyrst må fresast og tørke", "tr": "de weg moet eerst gefreesd worden en drogen", "url": "https://www.nrk.no/vestland/heile-gamle-strynefjellsvegen-opnar-ikkje-for-i-midten-av-juni-1.17896234"}
+ ],
+ "gap": "De kernvraag — is de oostkant (Grotli) echt grind of niet — blijft deels open: CycleNorway beoordeelt de route vanuit Grotli op '75% onverhard' met een moeilijkheidsgraad van 4/10, wat het grind-verhaal uit climbs.json ondersteunt, maar CyclingRoutes.cc reed alleen de westkant vanaf Hjelle en trof daar vrijwel alleen ruw oud asfalt met slechts een kort grindplateau bovenaan. Geen van de geraadpleegde bronnen heeft zelf beide kanten expliciet met elkaar vergeleken in één verslag. Verder is de dekking dun voor een echte gravelklim: de meeste bronnen zijn toeristische wegensites of een fietsverhuur-/tourblog (CycleNorway), niet onafhankelijke gravelrijders; ik vond geen bruikbare Komoot- of Strava-community-tracks specifiek voor dit traject. vegvesen.no zelf gaf bij direct bezoek 404's op de fjellovergangar-pagina's; de openingsdata komen via NRK, dat wél naar vegvesen verwijst als bron."
+}

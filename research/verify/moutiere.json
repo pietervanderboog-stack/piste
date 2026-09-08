@@ -1,0 +1,39 @@
+{
+ "id": "moutiere",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.questel.co.uk/col-de-la-moutiere/",
+   "status": "ok",
+   "note": "Verbatim: 'It started off quite smooth, with fine gravel, and that was easy to ride on.' Over het grindstuk Moutiere -> Faux Col.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.cycling-challenge.com/cime-de-la-bonette-4-routes/",
+   "status": "ok",
+   "note": "Verbatim; gaat over de Bayasse-variant, zoals 'who' aangeeft.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://bike-cafe.fr/2017/11/gravel-et-cols-mythiques-cols-de-la-moutiere-bonnette-restefond/",
+   "status": "ok",
+   "note": "Verbatim: 'la piste du col de la Moutiere (puis de Restefond) en partant de Bayasse n'est probablement pas adaptee a la pratique du Gravel'. Auteur Sebastien Paradowski.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Quaeldich rekent vanaf Saint-Etienne-de-Tinee: 18,3 km, 1309 m, top Moutiere 2454 m, daarna circa 3,9 km grind naar de Faux Col de Restefond. Hier start op 1500 m (Saint-Dalmas-le-Selvage): 20 km, 1150 m tot 2656 m, 3,5 km grind - consistent (1500 -> 2656 = 1156 m). Vermeld het startpunt expliciet.",
+  "source": "https://www.quaeldich.de/paesse/col-de-la-moutiere/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-route 'Col de la Moutiere and Cime de la Bonette MTB Loop', 36,9 km, 1.400 m",
+   "u": "https://www.komoot.com/smarttour/e1009575143/cime-de-la-bonette-par-le-col-de-la-moutiere-parc-national-du-mercantour"
+  }
+ ],
+ "summary": "Alle drie stemmen verbatim en correct toegeschreven; twee gaan expliciet over de ruwere Bayasse-variant, wat in 'who' netjes staat. Cijfers kloppen mits het startpunt Saint-Dalmas-le-Selvage wordt genoemd. GPX-aanbod is dun: een komoot-lus; Wikiloc-tracks bestaan (o.a. 53294961) maar waren geblokkeerd (403)."
+}

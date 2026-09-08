@@ -1,0 +1,43 @@
+{
+ "id": "ventoux",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://routestorelax.com/mont-ventoux-gravel-climb-in-a-summer-storm/",
+   "status": "ok",
+   "note": "Playwright krijgt 403; via WebFetch bereikbaar en quote verbatim aanwezig. Auteur niet bij naam genoemd; 'Routes to Relax' als attributie is correct.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.climbbikeski.com/2021/09/13/mont-ventoux-by-the-fourth-way/",
+   "status": "ok",
+   "note": "Verbatim. Auteur (Mark) raadt voor delen een MTB aan boven een gravelbike.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://www.mtbtrails.nl/mtb-trails-fr/mountainbiken-op-de-mont-ventoux",
+   "status": "ok",
+   "note": "Verbatim (Nederlands, tr leeg is terecht). Pagina stelt ook dat alle andere onverharde paden naar de top verboden zijn behalve de aangegeven MTB-route 5 - relevant voor de verdict.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "deviates",
+  "note": "Piste des Graviers Blancs Bedoin -> Chalet Reynard wordt door Komoot-highlight/Trailforks opgegeven als 15 km en circa 1037 m; hier 12 km grind (380 -> 1420 m). Totaal 22 km / 1600 m / top 1910 klopt (Bedoin 310 m). Grindlengte circa 20% te laag.",
+  "source": "https://www.komoot.com/highlight/3903680"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-tour van jo van herck 'Mont Ventoux - Gravel Bedoin', 54,4 km, 1.780 m (31 km grind)",
+   "u": "https://www.komoot.com/tour/1177542679"
+  },
+  {
+   "t": "Komoot-collectie van cycliste_tricolore, route 3 'Climbing up Mont Ventoux' via bospiste, 50,9 km, 1.660 m",
+   "u": "https://www.komoot.com/collection/1851153/best-gravel-routes-from-bedoin-cycling-mont-ventoux"
+  }
+ ],
+ "summary": "Alle drie stemmen verbatim en juist toegeschreven; Routes to Relax blokkeert bots maar is bereikbaar. Grindlengte (12 km) ligt onder de 15 km die Komoot/Trailforks voor de Graviers Blancs geven. MTBTrails.nl wijst erop dat onverhard doorsteken boven Chalet Reynard verboden is - check of 'line' dat respecteert."
+}

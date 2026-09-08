@@ -1,0 +1,46 @@
+{
+ "id": "altaviadelsale",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.komoot.com/smarttour/e1391976706/via-del-sale-loop",
+   "status": "misquote",
+   "note": "Origineel (Gregory Freychet, 22 juli 2025, Torino Nice Rally dag 8): 'Hard, oh it was hard, oh it was very hard. Beautiful, it was beautiful, oh it was very beautiful.' Het citaat was gecondenseerd. Voorstel < 15 woorden.",
+   "fix": {
+    "q": "oh it was very hard. Beautiful, it was beautiful, oh it was very beautiful.",
+    "tr": "o wat was het zwaar. Mooi, het was mooi, o wat was het mooi."
+   }
+  },
+  {
+   "i": 1,
+   "url": "https://cuneotrekking.com/trekking/alta-via-del-sale-in-mtb-limone-piemonte-ventimiglia/",
+   "status": "ok",
+   "note": "Verbatim: 'Nonostante ci sia qualche ardito che la percorre con bici gravel consigliamo caldamente l'uso di MTB biammortizzate.'",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://nest.bike/blog/via-del-sale-da-limone-piemonte-a-ventimiglia-in-bicicletta/",
+   "status": "ok",
+   "note": "Verbatim. Nest.bike is een fietswinkel-blog (geen rijdersverslag) - grensgeval met 'geen marketingtekst'.",
+   "fix": null
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Climbfinder heeft alleen het Tenda-deel: Limone -> Colle di Tenda 19,9 km, 1082 m, top 1872 m, deels grind. Het vervolg naar Colle della Boaria (circa 2100 m) staat niet in een klimdatabase; 30 km / 1510 m / top 2100 is daarmee plausibel maar niet extern bevestigd.",
+  "source": "https://climbfinder.com/en/climbs/col-de-tende-limone-piemonte"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-route 'Via del Sale Loop' (gravel, vanaf La Brigue), 87,0 km, 2.400 m",
+   "u": "https://www.komoot.com/smarttour/e1391976706/via-del-sale-loop"
+  },
+  {
+   "t": "Komoot-collectie van Situazione Gravel 'Via del Sale Limone-Ventimiglia', 2 etappes, 230 km, 5.510 m",
+   "u": "https://www.komoot.com/collection/2331038/-via-del-sale-limone-ventimiglia-gravel-mtb"
+  }
+ ],
+ "summary": "Bronnen bereikbaar en juist toegeschreven, maar het Komoot-citaat was tot een gladdere versie samengeknepen - gecorrigeerd naar verbatim. Twee van drie stemmen zijn Italiaanse MTB-/winkelsites, niet gravelrijders; dat verdient een gap-vermelding. Klimcijfers slechts deels controleerbaar (Tenda-deel klopt)."
+}

@@ -1,0 +1,116 @@
+{
+ "id": "sanktvith",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.trailmarkers.nl/trail-markers/belgie/gravelbiken-door-de-ardennen",
+   "status": "ok",
+   "note": "Verbatim. Trail Markers is onderdeel van SNP Natuurreizen — 'weekendorganisatie' is fair, maar het is aanbiederstekst.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Cultuurcentrum Triangel, Vennbahnstrasse 2 en horeca bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "unsupported",
+   "note": "'Pip Margraff' komt niet voor in de collectie noch in de tourpagina's dag 2–4 (ook niet na uitklappen). Wel 'hotel' zonder naam.",
+   "fix": {
+    "u": null
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "ok",
+   "note": "Hotel Zum Burghof, Schönberg bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "Bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 1,
+   "status": "ok",
+   "note": "'APAG Parkhaus Hauptbahnhof - Lagerhausstraße 20, 52064 Aachen, Distance to the Vennbahn: 3 km' bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Hauptstrasse 54, Sankt Vith bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "Bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "'completely paved' bevestigd; gravelvariant is de Komoot-collectie.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "Waarschuwing druk verkeer en 18% tussen kn 42–44 bevestigd.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "ok",
+   "note": "Verbatim (Komoot-vertaling van Nederlands origineel; auteur Gijs Hardeman).",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "misquote",
+   "note": "Pagina zegt: 'We start our adventure in Kornelimünster, where we prepare our bikes next to the old church' — niet 'parked our car'. Ook 'Kornelismünster' is fout gespeld.",
+   "fix": {
+    "q": "We start our adventure in Kornelimünster, where we prepare our bikes next to the old church",
+    "tr": "We beginnen ons avontuur in Kornelimünster, waar we de fietsen klaarmaken naast de oude kerk"
+   }
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Lus van 65 km/900 m is geen klim en staat in geen klimdatabase; top 690 m past bij de hoogten rond Rodt/Meyerode. Niet toetsbaar, geen tegenstrijdige bron gevonden.",
+  "source": "https://www.vennbahn.eu/nl/etappe/lus-8/"
+ },
+ "gpx": [
+  {
+   "t": "Officiële GPX Vennbahn-lus 8 'Zwischen Our und Amel' vanuit Sankt Vith (vennbahn.eu)",
+   "u": "https://www.vennbahn.eu/wp-content/uploads/2022/04/Zwischen-Our-und-Amel.gpx"
+  },
+  {
+   "t": "Komoot-collectie van Gijs Hardeman, Vennbahn-Variant (5 etappes), 355 km, 4.540 m",
+   "u": "https://www.komoot.com/collection/3120786/vennbahn-variant-a-new-gravel-mtb-adventure"
+  },
+  {
+   "t": "Komoot-gravelroute Saint Vith Town Centre – Koderbach vanuit Sankt Vith, 31 km, 535 m",
+   "u": "https://www.komoot.com/smarttour/27616866"
+  }
+ ],
+ "summary": "Officiële bronnen (vennbahn.eu, ostbelgien.eu) dragen bijna alles letterlijk; alleen de Komoot-collectie is te ruim gelezen: het hotel Pip Margraff staat er niet en het parkeercitaat is een parafrase. Gap mag leeg blijven, maar 'geen eigen gravel-ooggetuige buiten Komoot' zou eerlijk zijn."
+}

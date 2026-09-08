@@ -1,0 +1,159 @@
+{
+ "id": "valviola",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.trailforks.com/trails/passo-viola/",
+   "status": "ok",
+   "note": "403 voor bots, met Playwright bereikbaar. Verbatim 'Steady climb well maintained and rideable'. Let op: Trailforks-trail #32 is slechts 4,3 km / 253 m (Trans-Altarezia etappe 4), niet de hele klim.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://max-gio-mtb.jimdofree.com/percorsi-mtb/svizzera/val-viola-val-poschiavo/",
+   "status": "ok",
+   "note": "Verbatim, vervolg: '...tratto iniziale di discesa di circa 300 m. di dislivello dal Passo Val Viola verso Sfazu'. MTB-verslag (108 km / 2.230 m), tr klopt.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://training.camp/it/route/2825/passo-della-vallaccia-e-val-viola-/",
+   "status": "ok",
+   "note": "Verbatim; auteur 'marco', route 75 km / 1.900 m, aug. 2024. Slaat op de afdaling naar Angeli Custodi/Poschiavo; attributie 'over de Zwitserse afdaling' correct.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "SS301 del Foscagno, Arnoga (m. 1870) letterlijk op pagina.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "'Rent a Bike Arnoga', cell +39 371 587 8288 op pagina.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Homepage noemt 2314 m en Fraquelli, maar niet 1972 (staat op /storia: Marco Fraquelli), douche (staat op /pernottamento), e-bike laden (staat op /bici). 'Pinbetaling' nergens gevonden.",
+   "fix": {
+    "t": "Rifugio Viola op 2314 m, familie Fraquelli sinds 1972: slaapzaal met 16 bedden en kamer met 6 bedden, douche; halfpension € 60-75 (zomer 2026), reserveren met aanbetaling verplicht.",
+    "u": "https://www.rifugioviola.it/pernottamento"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "unsupported",
+   "note": "De zin op /bici ('Si consiglia la prenotazione anticipata soprattutto nei weekend e nel mese di agosto') gaat over de fietsverhuur, niet over overnachten. Voor overnachten zegt /pernottamento: reservering altijd verplicht.",
+   "fix": {
+    "t": "Overnachten: reserveren is altijd verplicht (aanbetaling); fietsverhuur Rent a Bike Arnoga: vooraf reserveren in weekends en augustus.",
+    "u": "https://www.rifugioviola.it/pernottamento"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 2,
+   "status": "ok",
+   "note": "Agriturismo Baita Caricc en Rifugio Federico Valgoi op pagina; 'Hotel di Arnoga' staat op saliinvetta, niet hier (klein).",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "'Posteggiamo sul tornante presso il Centro Italiano Sleddog Husky Village di Arnoga, oppure poco piu avanti (Hotel di Arnoga)'.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 1,
+   "status": "ok",
+   "note": "Tol het hele jaar, totem geeft alleen dagtickets, meerdaags via Proloco Valdidentro: alles op pagina. '2065 m' staat er niet (saliinvetta: 250 m hoogteverschil vanaf Altumeira naar 2314, dus ca. 2.065 m, consistent).",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 2,
+   "status": "ok",
+   "note": "E-bike laden op /bici bevestigd; auto-laden terecht onbevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Hedged fact; homepage noemt geen water expliciet maar het rifugio is een bemande hut met keuken. Acceptabel als 'onbevestigd'.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Saliinvetta noemt polenta/Valtellinese gerechten niet; wel shuttle 'Armando cell 3357696100 e Michel cell 3497179743'. Valtellinese producten staan op rifugioviola.it ('pranzi a base di prodotti tipici valtellinesi').",
+   "fix": {
+    "t": "Rifugio Viola serveert lunch met typische Valtellinese producten (rifugioviola.it); shuttle Arnoga-Altumeira: Armando 335 7696100 of Michel 349 7179743.",
+    "u": "https://www.saliinvetta.com/trekking/italia/lombardia/rifugio-viola/2132-rifugio-viola-da-arnoga-altumeira-so"
+   }
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "Pagina toont openingskalender en telefoon +39 348 3419794; 25 bedden, halfpension € 50-75. Het 'bel vooraf'-advies is redactie, geen bronclaim; mag.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "Wikipedia: 2,468 m, grens Poschiavo-Valdidentro.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "ok",
+   "note": "Verbatim op bormio.eu (toeristisch bureau): 'Da Arnoga: Tempo in bici 1.30 ore | Dislivello 500 m'.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "unsupported",
+   "note": "Verbatim, maar de context is fietsverhuur (Rent a Bike Arnoga), niet de hut; als hut-citaat misleidend. Vervang door de zin van /pernottamento.",
+   "fix": {
+    "q": "La prenotazione per il pernottamento è sempre obbligatoria",
+    "tr": "Reserveren voor een overnachting is altijd verplicht",
+    "url": "https://www.rifugioviola.it/pernottamento"
+   }
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Geen klimdatabase (climbfinder/quaeldich) heeft de Passo di Val Viola. Wikipedia: 2.468 m (wij 2.489, -0,8%); logistics season[1] zegt terecht 2468: maak climbs.json consistent. Gain 600 = Arnoga 1.870 naar 2.468 (598 m) klopt. Len 18: Bormiobike-lus Arnoga-Rifugio-Dosde 19,2 km / 823 m, Trailforks-segment 4,3 km; niet exact te staven maar plausibel. Gravel 16/18 consistent met Trailforks 'Dirt/Gravel Road'.",
+  "source": "https://en.wikipedia.org/wiki/Val_Viola_Pass"
+ },
+ "gpx": [
+  {
+   "t": "GPX-download van Bormio Bike (Val Viola Bormina: Arnoga-Altumeira-Rifugio Viola-Dosdè-Arnoga), 19,2 km, 823 m",
+   "u": "https://www.bormiobike.it/IT/tracciato/la-val-viola.aspx"
+  },
+  {
+   "t": "Training.camp-route van marco (Passo della Vallaccia e Val Viola, met GPX), 75 km, 1.900 m",
+   "u": "https://training.camp/it/route/2825/passo-della-vallaccia-e-val-viola-/"
+  },
+  {
+   "t": "Trailforks-trail Passo Viola #32 (Trans-Altarezia etappe Arnoga-Poschiavo), 4,3 km, 253 m",
+   "u": "https://www.trailforks.com/trails/passo-viola/"
+  }
+ ],
+ "summary": "Alle drie de stemmen zijn letterlijk en van echte MTB-rijders of trailbeheer, maar geen van een gravelrijder; de gap-notitie is terecht. Het logistiekdossier leunt zwaar op rifugioviola.it en is grotendeels gedekt; drie feiten hangen aan de verkeerde subpagina en een citaat (reserveren in weekends) gaat in werkelijkheid over fietsverhuur, niet over de hut. Tophoogte 2489 vs 2468 (Wikipedia) is intern inconsistent."
+}

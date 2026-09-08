@@ -1,0 +1,143 @@
+{
+ "id": "pfitscherjoch",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.quaeldich.de/paesse/pfitscher-joch/",
+   "status": "ok",
+   "note": "Verbatim: 'Diese letzten neun Kilometer verlaufen auf einer Erdpiste, welche allerdings auch mit schmaler Bereifung befahrbar ist.' Passbeschrijving door quaeldich-auteur Tieflieger; attributie en tr kloppen.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.berginsel.de/bikepacking-zillertal-trail/",
+   "status": "ok",
+   "note": "Verbatim: 'Pfitscher Joch zwar fahrbar, aber nicht asphaltiert.' Eigen bikepackingverslag; tr klopt.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://www.outdooractive.com/de/gravel-bike-touren/zillertal/gravel-bike-touren-im-zillertal/288066237/",
+   "status": "dead",
+   "note": "HTTP 404, ook via Playwright. Citaat nergens anders teruggevonden (zoekbudget uitgeput; Bing levert niets). Geen vervangende gravelrijder gevonden.",
+   "fix": {
+    "remove": true
+   }
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Hoehenrausch: 'ueber Wiesen, Afens, Platz und St. Jakob ... Von Stein der unasphaltierten Passstrasse bergauf'.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "'Vom Bahnhof in Sterzing mit der Bus-Linie 311 zur Haltestelle St. Jakob (Pfitsch), Angerhoefe'.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "ok",
+   "note": "1888, oudste private hut van Zuid-Tirol, vijfde generatie: op pagina. Naam Volgger staat op mayrhofen.at en pfitscherjochhaus.com (Michael/Thomas Volgger).",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "unsupported",
+   "note": "Mayrhofen.at zegt alleen 'Overnight stays possible until the end of September'. '30 slaapplaatsen + 10 noodbedden' en 'medio juni tot medio oktober' staan op Hoehenrausch, niet hier.",
+   "fix": {
+    "t": "30 slaapplaatsen plus 10 noodbedden; geopend medio juni tot medio oktober (Hoehenrausch); overnachten tot eind september, daarna alleen dagbedrijf (Mayrhofen).",
+    "u": "https://www.hoehenrausch.de/huetten/pfitscher-joch-haus/"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 2,
+   "status": "unsupported",
+   "note": "hdsports en de eigen site geven adres 'St. Jakob 103, 39049 Pfitsch', niet 'Val di Vizze 138/a'. Telefoon +39 0472 630 119 klopt.",
+   "fix": {
+    "t": "Adres St. Jakob 103, I-39049 Pfitsch; tel. +39 0472 630 119, mobiel +39 333 840 4587.",
+    "u": "https://www.pfitscherjochhaus.com/de/kontakt/"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 3,
+   "status": "ok",
+   "note": "Kontaktpagina met 'Uebernachtungsanfrage und Zimmerreservierung'-formulier; geopend juni tot begin oktober.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "'am grossen Parkplatz in der 4. Kehre das Auto abstellen'.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 1,
+   "status": "ok",
+   "note": "Geen bron (onbevestigd); terecht u:null.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Hedged fact; Bergwelten beschrijft de hut, geen waterpunten. Acceptabel.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "Bergwelten: '12 km lange Teilstueck ... 1936 vom italienischen Heer in Handarbeit angelegt und seither nie saniert'. Restaurant impliciet (bemande hut met Biergarten volgens quaeldich). NB: 12 km (Bergwelten) vs 9 km (quaeldich) onverhard.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "'Oeffnungszeiten Juni bis Oktober' en 'seit einigen Jahren im Sommer durchgehend befahrbar'.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Geparafraseerd. Letterlijk: 'wobei speziell das 12 km lange Teilstueck vom Pfitschtal zur Huette besonders reizvoll ist'. Bergwelten is redactie, geen rijder.",
+   "fix": {
+    "q": "das 12 km lange Teilstück vom Pfitschtal zur Hütte besonders reizvoll ist",
+    "tr": "het 12 km lange stuk van het Pfitschtal naar de hut is bijzonder aantrekkelijk",
+    "url": "https://www.bergwelten.com/h/pfitscher-joch-haus"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "ok",
+   "note": "Verbatim op Hoehenrausch.",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "deviates",
+  "note": "Quaeldich: 2.251 m klopt; zuidwestopklim vanaf Sterzing 33 km / 1.348 Hm (wij 25 km / 1.300 m: len -24%). 25 km past bij start Wiesen/Afens: startpunt expliciteren. Gravel 9 km = quaeldich ('letzten neun Kilometer ... Erdpiste'); Bergwelten zegt 12 km vanaf het Pfitschtal; beide in gap noteren.",
+  "source": "https://www.quaeldich.de/paesse/pfitscher-joch/"
+ },
+ "gpx": [
+  {
+   "t": "Quäldich-passpagina met kaart en profiel (Sterzing-Pfitscher Joch), 33 km, 1.348 m; geen directe GPX, wel Tourenplaner",
+   "u": "https://www.quaeldich.de/paesse/pfitscher-joch/"
+  }
+ ],
+ "summary": "Twee van drie stemmen zijn sterk en letterlijk (quaeldich, Berginsel); de Outdooractive-gravelrijder is dood (404) en niet terug te vinden; verwijderen. Het logistiekdossier is grotendeels solide op Hoehenrausch, maar het hutadres 'Val di Vizze 138/a' klopt niet (officieel St. Jakob 103) en een feit hangt aan de verkeerde bron. Geen Komoot/Wikiloc-GPX gevonden zonder zoekmachine; quaeldich is de enige routebron. Lengte 25 km vs 33 km vanaf Sterzing: startpunt benoemen."
+}

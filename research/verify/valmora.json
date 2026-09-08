@@ -1,0 +1,132 @@
+{
+ "id": "valmora",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.komoot.com/smarttour/e1391884966/passo-umbrail",
+   "status": "ok",
+   "note": "Verbatim, Alain Rumpf (A Swiss With A Pulse), 19 juli 2024 - het is de titelregel van zijn reactie.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.cyclist.co.uk/in-depth/shadow-of-the-stelvio-bormio-gravel-ride",
+   "status": "ok",
+   "note": "Verbatim: 'heading into the unknown is all part of the adventure of gravel riding'.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://www.cycling-challenge.com/stelvio-unpaved/",
+   "status": "ok",
+   "note": "Verbatim, reactie 'Stef' (3 okt 2018). Kanttekening: Stef had de route nog niet gereden ('wanted to attempt this summer') - het is een suggestie, geen ervaring. Alternatief op dezelfde pagina: Mat (24 sept 2018): 'Gravel, 100% cycleable.'",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "dead",
+   "note": "Outdooractive 800995414 geeft 404. Dezelfde tour staat bij SOB: 'Die Mountainbiketour startet in Muestair. Alternativ kann sie auch in Sta. Maria gestartet werden.' (69,5 km, 2285 hm).",
+   "fix": {
+    "u": "https://unterwegs.sob.ch/de/tour/muestair-umbrailpass-bocchetta-di-forcola-val-mora-muestair"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "unreachable",
+   "note": "Ride-mtb toont alleen de intro; details en 12 gebruikersreacties zitten achter een abonnement. Gaestekarte-claim niet controleerbaar; ook niet gevonden op val-muestair.ch.",
+   "fix": {
+    "u": null
+   }
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "u is null; terecht onbevestigd.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 1,
+   "status": "unsupported",
+   "note": "Bergfex noemt alleen 'shuttle possibility to the Umbrail Pass'; lijnnummer 90.821, traject Tirano-Muestair en reserveringsplicht tot 19 u staan er niet. Ook SOB noemt slechts 'PostAuto reservieren (online)'.",
+   "fix": {
+    "t": "PostAuto-shuttle naar de Umbrailpass bespaart de klim vanuit Sta. Maria; vooraf online reserveren voor de fiets. Lijnnummer en reserveringsdeadline onbevestigd.",
+    "u": "https://www.bergfex.com/sommer/lombardei/touren/mountainbike/2304184,bocchetta-di-forcola--bocchetta-di-pedenolo--val-mora-singletrailgarantie-und-spuren-des-1-weltkrieg/"
+   }
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "MTB-MAG forum: fontein in het centrum van S. Maria, 'da qui in poi non ci sono piu fontane sino alla fine dell'itinerario'. Let op: forumlid noemt wel 'alcune fontane lungo la valle' in de Val Mora zelf - de claim geldt voor de Umbrail-klim en verder in zijn rijrichting.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "unreachable",
+   "note": "'Solena' en 'Einkehr Lago di Fraele' niet zichtbaar op ride-mtb (paywall) en niet elders gevonden. Bergfex noemt wel 'Rifugio Val Fraele (1.955 m)' bij San Giacomo di Fraele.",
+   "fix": {
+    "t": "Pauzeplek onderweg: Rifugio Val Fraele bij San Giacomo di Fraele (1955 m), aan de Cancano-meren.",
+    "u": "https://www.bergfex.com/sommer/lombardei/touren/mountainbike/2304184,bocchetta-di-forcola--bocchetta-di-pedenolo--val-mora-singletrailgarantie-und-spuren-des-1-weltkrieg/"
+   }
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "Ride-mtb intro: 'The tour starts on the Umbrail Pass, which can be reached by post bus.' Seizoensafhankelijkheid volgt uit SOB/bergfex-seizoenskalenders.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "ok",
+   "note": "Verbatim (met aanloop 'attenzione:').",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "unreachable",
+   "note": "Gebruikersreacties op ride-mtb (12) alleen zichtbaar met abonnement; citaat niet te verifieren.",
+   "fix": {
+    "remove": true
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 2,
+   "status": "unreachable",
+   "note": "Idem: 'Einmal und nie wieder' niet controleerbaar achter de paywall.",
+   "fix": {
+    "remove": true
+   }
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Geen klimdatabase-vermelding voor deze combinatie. Referenties: SOB-lus Muestair 69,5 km / 2285 hm; Komoot 'Val Mora Gravel Tour' vanaf Sta. Maria 56,2 km / 1570 m; Umbrailpass 2503 m, Bocchetta di Forcola 2760 m (MTB-MAG). 35 km / 1750 m tot 2760 m is verdedigbaar als eenrichtings-klimtotaal, maar niet extern bevestigd.",
+  "source": "https://unterwegs.sob.ch/de/tour/muestair-umbrailpass-bocchetta-di-forcola-val-mora-muestair"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-route 'Val Mora Gravel Tour' van Switzerland Tourism, 56,2 km, 1.570 m (41 km onverhard)",
+   "u": "https://www.komoot.com/smarttour/e1002317858/val-mora-gravel-tour"
+  },
+  {
+   "t": "SOB-tour Muestair - Umbrailpass - Bocchetta di Forcola - Val Mora, 69,5 km, 2.285 m (GPX)",
+   "u": "https://unterwegs.sob.ch/de/tour/muestair-umbrailpass-bocchetta-di-forcola-val-mora-muestair"
+  },
+  {
+   "t": "Komoot-tour van Gravel Club (Stelvio - Umbrail - Forcola - Cancano - Val Mora), 118 km, 2.640 m",
+   "u": "https://www.komoot.com/tour/452544801"
+  }
+ ],
+ "summary": "Zwakste dossier van de negen: ride-mtb draagt vier feiten en twee citaten maar zit achter een paywall, en de outdooractive-basisbron is dood. Stemmen op climbs-niveau kloppen, al is Stef's 'nice gravel' een voornemen en geen ervaring. Fixes: SOB als vervanger, PostAuto-details en Gaestekarte terug naar onbevestigd, twee ride-mtb-citaten verwijderen."
+}

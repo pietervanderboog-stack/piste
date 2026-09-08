@@ -1,0 +1,49 @@
+{
+ "id": "corsica",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.gattu.corsica/en/gravel20",
+   "status": "ok",
+   "note": "Letterlijk: 'tracks that appear on maps but are actually closed, private, overgrown, impassable'. Gattu Bike Corsica, makers van de Gravel20.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.komoot.com/collection/2567507/the-great-crossing-of-corsica-by-bike-gt-20",
+   "status": "misquote",
+   "note": "Zin komt niet voor op de collectie- of etappepagina's. Komoot labelt de GT20 als 'Road Cycling Collection' en etappe 7 als 'Hard road ride ... Mostly well-paved surfaces'. Geen bron voor 'VTC, gravel, road, or electric'.",
+   "fix": {
+    "remove": true
+   }
+  },
+  {
+   "i": 2,
+   "url": "https://epicroadrides.com/destinations/cycling-france/corsica/",
+   "status": "misquote",
+   "note": "Zin staat er niet. De pagina zegt het tegendeel over de Vergio: 'minimal traffic. This is even the case on major routes like the Col de Vergio, the island's highest paved road.' De waarschuwing over drukte gaat over de T20/T10.",
+   "fix": {
+    "q": "minimal traffic. This is even the case on major routes like the Col de Vergio",
+    "tr": "weinig verkeer, zelfs op grote routes als de Col de Vergio",
+    "who": "Sébastien Rognoni (bedenker GT20) in Epic Road Rides"
+   }
+  }
+ ],
+ "logi": [],
+ "numbers": {
+  "status": "ok",
+  "note": "Col de Vergio 1477 m bevestigd (quaeldich; Epic Road Rides zegt 1467). Wegklimmen: Evisa 10,3 km/559 Hm, Castirla 38,6 km/1185 Hm; GT20-etappe Porto–Verghju 36 km/1560 m. 25 km/1200 m ligt daartussen, gravelaandeel niet toetsbaar.",
+  "source": "https://www.quaeldich.de/paesse/col-de-vergio/"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-tour van Visit Corsica, 'Stage 7: Portu to Verghju – GT 20' (asfalt), 36 km, 1.560 m",
+   "u": "https://www.komoot.com/tour/1474402125"
+  },
+  {
+   "t": "Wikiloc-route 'Córcega – Ruta GT20' (hele GT20, asfalt), 784 km, 10.009 m",
+   "u": "https://es.wikiloc.com/rutas-cicloturismo/corcega-ruta-gt20-205339005"
+  }
+ ],
+ "summary": "Twee van drie stemmen deugen niet: het Komoot-citaat bestaat niet en het Epic Road Rides-citaat zegt het omgekeerde van de bron (de Vergio is juist rustig). Alleen Gattu is betrouwbaar. Er is geen vrij beschikbare Gravel20-track; alle vindbare GPX volgt de asfalt-GT20."
+}

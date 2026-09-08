@@ -1,0 +1,164 @@
+{
+ "id": "rochilles",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.cycling-challenge.com/col-hunting-behind-le-grand-galibier/",
+   "status": "ok",
+   "note": "Verbatim: \"It's not an easy surface, but perfectly rideable.\" Eigen verslag van Will; pagina bevestigt Col des Rochilles 2.496 m en Seuil 2.459 m, start Plan Lachat.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://www.komoot.com/smarttour/e1030354455/vallee-de-claree-col-des-rochilles-et-ancienne-route-du-galibier",
+   "status": "misquote",
+   "note": "Citaat bestaat, maar is de Google-vertaling. Origineel (FR, rijderscommentaar op de komoot-smarttour): 'MAJ : entre le refuge des Drayeres et le Seuil des Rochilles sois pret.e a pousser et a porter sur 3km et 300hm.' Brief eist originele taal.",
+   "fix": {
+    "q": "sois prêt.e à pousser et à porter sur 3km et 300hm",
+    "tr": "reken op duwen en dragen over 3 km en 300 hoogtemeter"
+   }
+  },
+  {
+   "i": 2,
+   "url": "https://www.cols-cyclisme.com/cerces/france/col-des-rochilles-depuis-valloire-c1455.htm",
+   "status": "ok",
+   "note": "Verbatim in reactie van Michel J (24/08/2025): 'Une heure de poussage et 5 minutes de portage entre le refuge des Drayeres et le col des Rochilles.' Reacties laden via JS; attributie klopt. Extra: Damien P (16/07/2026) meldt afsluiting op 2.150 m door militairen.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "unsupported",
+   "note": "FFCAM-pagina noemt Valloire, Plan Lachat noch Seuil 2459 m. Die feiten staan op cycling-challenge (Seuil des Rochilles 2.459 m, start Plan Lachat ca. 2.000 m).",
+   "fix": {
+    "u": "https://www.cycling-challenge.com/col-hunting-behind-le-grand-galibier/"
+   }
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "dead",
+   "note": "Gites de France Savoie geeft 404; gites-de-france.com geeft 'Acces non autorise'. Listing 73G306255 lijkt verdwenen. Geen vervanging gevonden.",
+   "fix": {
+    "u": null
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "unsupported",
+   "note": "FFCAM: 2180 m klopt, maar 'Nombre de couchages: 60' in bewaakte periode (64 = places scolaires); demi-pension 63 euro staat niet op FFCAM maar op paysages-hautesalpes.fr (Outtrip: 60 euro in 2023).",
+   "fix": {
+    "t": "Refuge des Drayères (FFCAM), 2180 m, aan de Clarée-kant achter de Rochilles: 60 slaapplaatsen in dortoirs van 4, 6 en 8; demi-pension € 63 (tarief 2026, paysages-hautesalpes.fr).",
+    "u": "https://refugedesdrayeres.ffcam.fr/"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 1,
+   "status": "unsupported",
+   "note": "Reserveringspagina toont geen data (kalender via JS). Homepage zegt 'Ete : debut juin a mi septembre'; dat botst met '17 juni - 27 september'. Bron van die exacte data onbekend.",
+   "fix": {
+    "t": "Bewaakt in de zomer van begin juni tot half september (winter: begin februari tot half april); online reserveren via FFCAM.",
+    "u": "https://refugedesdrayeres.ffcam.fr/"
+   }
+  },
+  {
+   "section": "sleep",
+   "i": 2,
+   "status": "ok",
+   "note": "'Le port du drap de sac ... est obligatoire aux Drayeres'; geen verhuur ter plaatse.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 3,
+   "status": "dead",
+   "note": "Zelfde dode Gites de France-listing als base[1]. Details (negen logementen, sauna, schoendroger) niet elders bevestigd.",
+   "fix": {
+    "u": null
+   }
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "Geen bron (onbevestigd); terecht u:null.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Outtrip noemt alleen 'eau a l'exterieur du refuge' (buiten bewaking). 'Gratis drinkwater en heet water voor thermosflessen' staat er niet; ook niet op FFCAM, skitour of paysages.",
+   "fix": {
+    "u": null
+   }
+  },
+  {
+   "section": "water",
+   "i": 1,
+   "status": "ok",
+   "note": "FFCAM: 'Situe a proximite du lac Rond, du lac du Grand Ban et de la source de la Claree'.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Outtrip (tarieven 2023): demi-pension 60, repas du soir 26,50, petit dejeuner 13, pique-nique 12 euro. 'Middagmaal' en 'kleine epicerie' staan er niet.",
+   "fix": {
+    "t": "Refuge des Drayères: demi-pension, avondmaal, ontbijt en picknick (tarieven 2023 op Outtrip); maaltijden op reservering.",
+    "u": "https://outtrip.fr/refuge-garde/refuge-des-drayeres"
+   }
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Zie sleep[1]: data niet op de reserveringspagina; homepage zegt begin juni - half september.",
+   "fix": {
+    "t": "Refuge bewaakt van begin juni tot half september (zomer; FFCAM-homepage).",
+    "u": "https://refugedesdrayeres.ffcam.fr/"
+   }
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "'en hiver 2026, l'acces necessite 12 km de marche depuis Nevache'.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "unsupported",
+   "note": "Licht ingekort. Letterlijk: 'Le port du drap de sac, aussi appele sac a viande, est obligatoire aux Drayeres'. Bron is een SEO-achtige gids, geen rijder.",
+   "fix": {
+    "q": "Le port du drap de sac, aussi appelé sac à viande, est obligatoire aux Drayères",
+    "tr": "Een lakenzak, ook wel 'sac à viande', is verplicht in de Drayères"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "ok",
+   "note": "Verbatim op skitour.fr (tekst van de hutwachters).",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "deviates",
+  "note": "Cols-cyclisme: Col des Rochilles 2.500 m, vanaf Valloire 15 km / 1.000 m (VTT). Cycling-challenge: col 2.496 m, Seuil 2.459 m. Onze len 20 (+33%) en gain 1250 (+25%) passen bij geen enkel startpunt (Valloire 1.430 m naar 2.496 = ca. 1.070 m). Herrekenen.",
+  "source": "https://www.cols-cyclisme.com/cerces/france/col-des-rochilles-depuis-valloire-c1455.htm"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-smarttour (gepland door komoot, met GPX-download) Vallée de Clarée - Col des Rochilles - oude Galibier-weg, 84 km, 2.060 m",
+   "u": "https://www.komoot.com/smarttour/e1030354455/vallee-de-claree-col-des-rochilles-et-ancienne-route-du-galibier"
+  }
+ ],
+ "summary": "De drie stemmen zijn echte rijders en letterlijk terug te vinden; alleen het Komoot-citaat staat in Google-Engels in plaats van het Franse origineel. Het logistiekdossier is zwakker: de Gites de France-listing is dood, drie feiten hangen aan een FFCAM-pagina die ze niet noemt, en de bewakingsdata (17 juni-27 sept.) botsen met de FFCAM-homepage (begin juni-half sept.). Klimcijfers (20 km / 1.250 m) wijken meer dan 25% af van cols-cyclisme."
+}

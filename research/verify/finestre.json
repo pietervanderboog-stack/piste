@@ -1,0 +1,149 @@
+{
+ "id": "finestre",
+ "voices": [
+  {
+   "i": 0,
+   "url": "https://www.komoot.com/collection/1285096/colle-del-colombardo-and-the-colle-delle-finestre-two-of-the-italian-gravel-giants",
+   "status": "ok",
+   "note": "Verbatim in de dag-2-beschrijving van Katie-Jane L'Herpiniere (pas zichtbaar na 'Read more'). Zij reed op racefiets: '...the road bike is okay up, but a bit touch-and-go descending the gravel side'.",
+   "fix": null
+  },
+  {
+   "i": 1,
+   "url": "https://pjammcycling.com/climb/10.Colle-delle-Finestre-Cycling",
+   "status": "ok",
+   "note": "Verbatim, review van 'Austin' (2025), gravelbike met 40 mm banden. Attributie klopt.",
+   "fix": null
+  },
+  {
+   "i": 2,
+   "url": "https://climbfinder.com/us/climbs/colle-delle-finestre",
+   "status": "ok",
+   "note": "Verbatim, reviewer tadgoraucymru: 'We tackled this as a family on a warm Friday in August.' Attributie klopt.",
+   "fix": null
+  }
+ ],
+ "logi": [
+  {
+   "section": "base",
+   "i": 0,
+   "status": "ok",
+   "note": "Turbolento: 'parte da Meana di Susa (prima di entrare in paese comodo parcheggio sulla destra)'.",
+   "fix": null
+  },
+  {
+   "section": "base",
+   "i": 1,
+   "status": "ok",
+   "note": "Mondociclismo geeft 2178 m en 8 km sterrato; de 18,45 km en 2176 m staan op turbolento (Gazzetta 2015). Samen gedekt.",
+   "fix": null
+  },
+  {
+   "section": "sleep",
+   "i": 0,
+   "status": "ok",
+   "note": "Reviewer Cla7: 'Sono poi sceso ad un rifugio del Pian dell'Alpe per pernottare.' Geen naam genoemd, dus 'onbevestigd' voor namen is terecht.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 0,
+   "status": "ok",
+   "note": "Delmenico dekt alleen Sant'Ambrogio di Torino (auto's 30 km voor Susa); de Meana-parkeerplaats komt van turbolento (base 0). Feit blijft gedekt door de twee bronnen samen.",
+   "fix": null
+  },
+  {
+   "section": "park",
+   "i": 1,
+   "status": "ok",
+   "note": "u is null; terecht onbevestigd.",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 0,
+   "status": "ok",
+   "note": "Komoot-highlight 'Last Water Fountain and Start of the Colle delle Finestre Gravel Road'; tips bevestigen einde asfalt + fontein. 'Wit huis' en 1455 m komen uit turbolento/climbfinder ('fontanella e di un caseggiato', 'quota 1455 mt').",
+   "fix": null
+  },
+  {
+   "section": "water",
+   "i": 1,
+   "status": "ok",
+   "note": "Reviewer Cla7 (IT): 'la fontanella al colle non funzionava (17/08/2025)'.",
+   "fix": null
+  },
+  {
+   "section": "food",
+   "i": 0,
+   "status": "ok",
+   "note": "Visitvaldisusa beschrijft de ronde via Sestriere, Cesana Torinese, Oulx. 'Weinig onderweg' en de rifugi op Pian dell'Alpe staan niet letterlijk op deze pagina maar volgen uit climbfinder-reviews.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 0,
+   "status": "ok",
+   "note": "stradaassietta.it (2026): open 1 juli, winterafsluiting 1 nov 2026 - 30 juni 2027.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 1,
+   "status": "ok",
+   "note": "Bevestigd: 'totale chiusura al traffico motorizzato dalle 9 alle 17 nelle giornate del mercoledi e del sabato nei mesi di luglio e agosto'. Uitzondering 2026: Festa del Piemonte za 18 / zo 19 juli.",
+   "fix": null
+  },
+  {
+   "section": "season",
+   "i": 2,
+   "status": "ok",
+   "note": "Bevestigd: 30 km/u, verbod > 3,5 t en > 2 m breed.",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 0,
+   "status": "misquote",
+   "note": "Origineel (na 'Show original'): 'in corrispondenza di una fontanella e di un caseggiato cominciano i 6 km di sterrato'. 'e di un caseggiato' was weggelaten.",
+   "fix": {
+    "q": "in corrispondenza di una fontanella e di un caseggiato cominciano i 6 km di sterrato",
+    "tr": "bij een fonteintje en een gebouw beginnen de 6 km grind"
+   }
+  },
+  {
+   "section": "quotes",
+   "i": 1,
+   "status": "ok",
+   "note": "Verbatim (zonder aanloop 'Nota informativa,').",
+   "fix": null
+  },
+  {
+   "section": "quotes",
+   "i": 2,
+   "status": "ok",
+   "note": "Verbatim op followingmyway.blogspot.com.",
+   "fix": null
+  }
+ ],
+ "numbers": {
+  "status": "ok",
+  "note": "Climbfinder: 18,5 km, 1709 m stijging, top 2175 m, laatste 8 km onverhard. Hier 18,5 / 1680 / 2178 / 8 - afwijking < 2%.",
+  "source": "https://climbfinder.com/en/climbs/colle-delle-finestre"
+ },
+ "gpx": [
+  {
+   "t": "Komoot-tour van Niccolo (Finestre + Assietta + Oulx), 94,7 km, 2.760 m",
+   "u": "https://www.komoot.com/tour/276292166"
+  },
+  {
+   "t": "Komoot-route 'Assietta gravel ring from Susa - Salbertrand variant', 74,1 km, 2.500 m",
+   "u": "https://www.komoot.com/smarttour/e1276140692/anello-gravel-dellassietta-da-susa-variante-salbertrand"
+  },
+  {
+   "t": "Komoot-collectie van Katie-Jane L'Herpiniere, dag 2 Colle delle Finestre, 33,1 km, 1.850 m",
+   "u": "https://www.komoot.com/collection/1285096/colle-del-colombardo-and-the-colle-delle-finestre-two-of-the-italian-gravel-giants"
+  }
+ ],
+ "summary": "Sterk dossier: alle drie stemmen verbatim en juist toegeschreven, alle logistieke URL's bereikbaar en dekkend, seizoensregels rechtstreeks van stradaassietta.it (2026). Een Italiaans citaat was licht ingekort en is gecorrigeerd. Cijfers sporen met climbfinder."
+}
