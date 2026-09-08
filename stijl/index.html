@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piste stijlstudio</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=IBM+Plex+Mono:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Grotesk:wght@400..700&family=Inter+Tight:wght@200..800&family=Caveat:wght@400..700&family=Barlow+Condensed:ital,wght@0,400;0,600;0,800;1,800&family=Instrument+Serif:ital@0;1&family=Syne:wght@400..800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ===== studio chrome ===== */
+:root{--bg:#F6F3EC;--fg:#1F241F;--mute:#6b736c;--acc:#2F4A3D;--line:#dcd7cb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 "Bricolage Grotesque",system-ui,sans-serif;transition:background .5s,color .5s}
+button{font:inherit;cursor:pointer}
+.studio-top{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:16px;padding:12px 20px;background:color-mix(in oklab,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.studio-top b{font-weight:800;letter-spacing:-.03em;font-size:18px}
+.studio-top .sub{color:var(--mute);font-size:13.5px}
+.dots{margin-left:auto;display:flex;gap:6px}
+.dots a{width:10px;height:10px;border-radius:50%;background:var(--line);display:block;transition:transform .2s,background .2s}
+.dots a.on,.dots a:hover{background:var(--acc);transform:scale(1.3)}
+.choice{font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--fg)}
+.intro{max-width:760px;margin:56px auto 30px;padding:0 20px}
+.intro h1{font-size:clamp(34px,6vw,64px);letter-spacing:-.04em;line-height:.95;margin:0 0 14px;font-weight:800}
+.intro p{font-size:18px;color:var(--mute);margin:0 0 8px;max-width:60ch}
+.intro small{display:block;margin-top:10px;font-size:13px;color:var(--mute)}
+.grid{display:grid;gap:64px;padding:20px 20px 120px;max-width:1240px;margin:0 auto}
+.dir{scroll-margin-top:80px}
+.dir-hd{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 0 14px}
+.dir-hd .n{font-family:"IBM Plex Mono",monospace;color:var(--mute);font-size:13px}
+.dir-hd h2{margin:0;font-size:26px;letter-spacing:-.03em}
+.dir-hd p{margin:0;color:var(--mute);flex-basis:100%;max-width:70ch}
+.dir-hd .pick{margin-left:auto;border-radius:999px;border:1.5px solid var(--fg);background:transparent;color:var(--fg);padding:7px 14px;font-size:13.5px;transition:all .2s}
+.dir-hd .pick:hover,.dir-hd .pick.on{background:var(--fg);color:var(--bg)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);z-index:100;background:#1F241F;color:#F6F3EC;padding:9px 16px;border-radius:999px;font-size:13.5px;opacity:0;transition:all .3s;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+@supports (animation-timeline: view()){
+  .poster{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
+  @keyframes rise{from{opacity:.2;transform:translateY(30px) scale(.985)}to{opacity:1;transform:none}}
+}
+/* ===== shared mock skeleton (skinned per theme) ===== */
+.poster{position:relative;border-radius:var(--pr,16px);overflow:hidden;background:var(--pbg);color:var(--pfg);font-family:var(--pfont);border:var(--pborder,1px solid transparent);box-shadow:var(--pshadow,0 20px 60px rgba(0,0,0,.08));min-height:640px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+.p-top{grid-column:1/-1;display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:var(--pline);position:relative;z-index:3}
+.p-top .brand{font-weight:800;letter-spacing:-.03em;font-size:20px;font-family:var(--pdisplay,var(--pfont))}
+.p-top .tag{color:var(--pmute);font-size:13px}
+.p-top .pillz{margin-left:auto;display:flex;gap:6px}
+.pl{padding:6px 12px;border-radius:var(--pbr,999px);border:1px solid var(--pedge);font-size:12.5px;background:var(--pchip);color:var(--pfg)}
+.pl.on{background:var(--pacc);color:var(--pon,#fff);border-color:var(--pacc)}
+.hero{position:relative;min-height:420px;overflow:hidden;background:#333}
+.tiles{position:absolute;inset:-4%;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;filter:var(--ptile,none);transform:scale(1.04);transition:transform 6s ease}
+.poster:hover .tiles{transform:scale(1.1)}
+.tiles img{width:100%;height:100%;object-fit:cover;display:block}
+.veil{position:absolute;inset:0;background:var(--pveil)}
+.hero-in{position:absolute;left:0;right:0;bottom:0;padding:22px 24px;z-index:2}
+.eyebrow{font-size:13px;color:var(--pmute2,var(--pmute));margin-bottom:4px}
+.hero h3{margin:0;font-family:var(--pdisplay,var(--pfont));font-weight:var(--pw,800);font-size:clamp(30px,4.2vw,52px);letter-spacing:var(--pls,-.035em);line-height:.98;color:var(--phero,var(--pfg));max-width:16ch}
+.drive{margin-top:10px;font-size:15px;color:var(--pmute2,var(--pmute))}
+.drive b{color:var(--phero,var(--pfg));font-weight:700;font-family:var(--pnum,var(--pfont))}
+.pins{position:absolute;top:18px;right:18px;z-index:2;display:flex;gap:6px}
+.pin{width:26px;height:26px;border-radius:var(--ppin,50%);display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff;border:2px solid rgba(255,255,255,.85);box-shadow:0 2px 8px rgba(0,0,0,.35);font-family:var(--pnum,var(--pfont))}
+.side{padding:22px 22px 26px;display:flex;flex-direction:column;gap:14px;position:relative;z-index:2}
+.card{background:var(--pcard);border:var(--pcardb,1px solid var(--pedge));border-radius:var(--pcr,12px);padding:14px 16px;box-shadow:var(--pcards,none);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--pcardh,0 10px 30px rgba(0,0,0,.12))}
+.card .ttl{font-weight:600;font-size:16px;letter-spacing:-.01em;font-family:var(--pdisplay,var(--pfont))}
+.card .area{color:var(--pmute);font-size:13px}
+.row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.h{font-size:20px;font-weight:700;font-family:var(--pnum,var(--pfont));color:var(--pacc)}
+.band{margin-top:10px}
+.track{display:flex;height:var(--pbandh,12px);border-radius:var(--pbandr,6px);overflow:hidden;background:var(--pedge)}
+.sg{height:100%}
+.sg.a{background:var(--pasf,#4A5560)}
+.sg.g{background:repeating-linear-gradient(90deg,var(--pgr,#C89A3E) 0 3px,var(--pgr2,#E1BC6A) 3px 6px)}
+.sg.r{background:repeating-linear-gradient(45deg,var(--pru,#9A4E2A) 0 4px,var(--pru2,#BE6C43) 4px 8px)}
+.axis{display:flex;justify-content:space-between;font-size:11.5px;color:var(--pmute);margin-top:4px;font-family:var(--pnum,var(--pfont))}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{background:var(--pcard);border:1px solid var(--pedge);border-radius:var(--pcr,12px);padding:10px 12px}
+.stat .v{font-size:20px;font-weight:700;letter-spacing:-.02em;font-family:var(--pnum,var(--pfont))}
+.stat .k{font-size:12px;color:var(--pmute)}
+.verdict{background:var(--pverd);color:var(--pverdfg,var(--pfg));border-radius:var(--pcr,12px);padding:14px 16px;font-size:14.5px;line-height:1.45;border:var(--pverdb,none)}
+.verdict b{display:block;font-size:12.5px;margin-bottom:5px;color:var(--pacc);font-family:var(--pdisplay,var(--pfont))}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tg{font-size:11.5px;padding:2px 9px;border-radius:var(--pbr,999px);border:1px solid var(--pedge);color:var(--pmute);background:var(--pchip)}
+.tg.on{background:var(--pacc);color:var(--pon,#fff);border-color:var(--pacc)}
+.cta{display:flex;gap:8px;margin-top:auto}
+.btn{padding:10px 16px;border-radius:var(--pbr,999px);border:1.5px solid var(--pacc);background:var(--pacc);color:var(--pon,#fff);font-weight:600;font-size:14px;font-family:var(--pdisplay,var(--pfont));transition:transform .15s,filter .2s}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--pfg);border-color:var(--pedge)}
+@media (max-width:860px){.poster{grid-template-columns:1fr}.hero{min-height:340px}}
+
+/* ===== 1 Linnen ===== */
+.t-linnen{--pbg:#FBF9F4;--pfg:#1F241F;--pmute:#5A625B;--pmute2:#5A625B;--pedge:#DCD7CB;--pchip:#F6F3EC;--pcard:#FFFFFF;--pacc:#2F4A3D;--pverd:#DDE6DF;--pline:1px solid #E9E5DB;--pfont:"Bricolage Grotesque",sans-serif;--pveil:linear-gradient(180deg,rgba(246,243,236,0) 30%,rgba(246,243,236,.92) 100%)}
+/* ===== 2 Topo Noir ===== */
+.t-noir{--pbg:#0E1210;--pfg:#E6EDE6;--pmute:#7E8B80;--pmute2:#A9C7A7;--pedge:#1F2A22;--pchip:#141B16;--pcard:#121915;--pacc:#7CFF9B;--pon:#0E1210;--pverd:#132118;--pline:1px solid #1F2A22;--pfont:"Inter Tight",sans-serif;--pdisplay:"Bricolage Grotesque",sans-serif;--pnum:"JetBrains Mono",monospace;--pcr:6px;--pbr:4px;--pbandr:2px;--ptile:grayscale(1) contrast(1.15) brightness(.55);--pveil:linear-gradient(180deg,rgba(14,18,16,.1),rgba(14,18,16,.95));--pgr:#9AD9A0;--pgr2:#6FB077;--pasf:#3A4A3F;--pru:#D9A05B;--pru2:#B07A3E;--pshadow:0 0 0 1px #1F2A22,0 30px 80px rgba(0,0,0,.6)}
+.t-noir .hero::before{content:"";position:absolute;inset:0;z-index:1;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%237CFF9B' stroke-opacity='.28' stroke-width='1'%3E%3Cpath d='M-20 120c60-40 120 30 200 0s120-60 240-20'/%3E%3Cpath d='M-20 170c60-40 120 30 200 0s120-60 240-20'/%3E%3Cpath d='M-20 220c60-40 120 30 200 0s120-60 240-20'/%3E%3Cpath d='M-20 270c60-40 120 30 200 0s120-60 240-20'/%3E%3Cpath d='M-20 320c60-40 120 30 200 0s120-60 240-20'/%3E%3Cpath d='M-20 70c60-40 120 30 200 0s120-60 240-20'/%3E%3C/g%3E%3C/svg%3E") repeat;animation:drift 18s linear infinite;mix-blend-mode:screen}
+@keyframes drift{to{background-position:400px 200px}}
+.t-noir .h,.t-noir .stat .v{text-shadow:0 0 12px rgba(124,255,155,.35)}
+/* ===== 3 Kaartblad ===== */
+.t-kaart{--pbg:#FFFFFF;--pfg:#1a1a1a;--pmute:#6a6a6a;--pedge:#d9d9d9;--pchip:#fff;--pcard:#fff;--pacc:#B3502D;--pverd:#F5EDE8;--pline:1px solid #e5e5e5;--pfont:"Inter Tight",sans-serif;--pw:600;--pls:-.02em;--pnum:"IBM Plex Mono",monospace;--pcr:2px;--pbr:2px;--pbandr:0;--pbandh:10px;--pr:4px;--ppin:2px;--ptile:saturate(.6) contrast(1.05);--pveil:linear-gradient(180deg,rgba(255,255,255,0) 40%,rgba(255,255,255,.96) 100%);--pborder:1px solid #1a1a1a;--pshadow:none;--pgr:#B3502D;--pgr2:#D68A6A;--pasf:#333;--pru:#2F5DA8;--pru2:#6F92CF}
+.t-kaart .hero::after{content:"";position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(179,80,45,.25) 1px,transparent 1px),linear-gradient(90deg,rgba(179,80,45,.25) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.t-kaart .compass{position:absolute;left:18px;top:18px;z-index:2;width:44px;height:44px;border:1px solid #1a1a1a;border-radius:50%;background:#fff;display:grid;place-items:center;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.t-kaart .poster:hover .compass,.t-kaart:hover .compass{transform:rotate(-25deg)}
+.t-kaart .compass svg{width:26px;height:26px}
+.t-kaart .card,.t-kaart .stat{border-color:#1a1a1a}
+/* ===== 4 Glas ===== */
+.t-glas{--pbg:#0b0f14;--pfg:#f4f6f8;--pmute:rgba(244,246,248,.7);--pmute2:rgba(244,246,248,.8);--pedge:rgba(255,255,255,.22);--pchip:rgba(255,255,255,.1);--pcard:rgba(255,255,255,.12);--pacc:#fff;--pon:#0b0f14;--pverd:rgba(255,255,255,.14);--pline:1px solid rgba(255,255,255,.14);--pfont:"Inter Tight",sans-serif;--pdisplay:"Syne",sans-serif;--pw:700;--pcr:18px;--pr:28px;--pveil:linear-gradient(180deg,rgba(11,15,20,.15),rgba(11,15,20,.6));--ptile:saturate(1.2) brightness(.9);--pcardb:1px solid rgba(255,255,255,.25);--pcardh:0 20px 50px rgba(0,0,0,.35);--pgr:#F2C15A;--pgr2:#FFE08C;--pasf:rgba(255,255,255,.55);--pru:#FF8B5E;--pru2:#FFB08E}
+.t-glas .poster{grid-template-columns:1fr}
+.t-glas .hero{position:absolute;inset:0;min-height:100%}
+.t-glas .side{position:relative;z-index:3;margin-top:200px;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;padding:0 22px 26px}
+.t-glas .side>.card{grid-column:span 3}
+.t-glas .side .stats{grid-column:span 3;grid-template-columns:repeat(3,1fr)}
+.t-glas .side .verdict{grid-column:span 4}
+.t-glas .side .tags{grid-column:span 2;align-content:start}
+.t-glas .side .cta{grid-column:1/-1}
+.t-glas .card,.t-glas .stat,.t-glas .verdict,.t-glas .pl,.t-glas .tg{backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4)}
+.t-glas .stat{background:rgba(255,255,255,.12)}
+.t-glas .p-top{background:rgba(11,15,20,.25);backdrop-filter:blur(14px)}
+.t-glas .hero-in{position:relative;padding-top:60px}
+@media (max-width:860px){.t-glas .side{grid-template-columns:1fr 1fr}.t-glas .side>*{grid-column:1/-1!important}}
+/* ===== 5 Kinetiek ===== */
+.t-kinetiek{--pbg:#0A0A0A;--pfg:#F2F2F2;--pmute:#9a9a9a;--pmute2:#cfcfcf;--pedge:#2a2a2a;--pchip:#141414;--pcard:#111;--pacc:#D6FF3B;--pon:#0A0A0A;--pverd:#161616;--pline:1px solid #222;--pfont:"Bricolage Grotesque",sans-serif;--pls:-.06em;--pcr:0;--pbr:0;--pr:0;--pbandr:0;--pbandh:16px;--ppin:0;--ptile:grayscale(1) contrast(1.3) brightness(.7);--pveil:linear-gradient(0deg,#0A0A0A 10%,rgba(10,10,10,.2) 70%);--pgr:#D6FF3B;--pgr2:#9FBF1E;--pasf:#3a3a3a;--pru:#FF3B6B;--pru2:#B8244A;--pshadow:none}
+.t-kinetiek .hero h3{font-size:clamp(44px,7vw,96px);font-variation-settings:"wght" 300;transition:font-variation-settings .6s cubic-bezier(.2,.8,.2,1),letter-spacing .6s;max-width:none;text-transform:uppercase;line-height:.86}
+.t-kinetiek .poster:hover .hero h3,.t-kinetiek .hero:hover h3{font-variation-settings:"wght" 800;letter-spacing:-.08em}
+.t-kinetiek .marq{position:absolute;top:14px;left:0;right:0;z-index:2;white-space:nowrap;overflow:hidden;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--pacc)}
+.t-kinetiek .marq span{display:inline-block;animation:marq 22s linear infinite;padding-right:40px}
+@keyframes marq{to{transform:translateX(-50%)}}
+.t-kinetiek .h{font-size:28px}
+/* ===== 6 Veldboek ===== */
+.t-veldboek{--pbg:#F4EEDF;--pfg:#2B2A26;--pmute:#6E6A5E;--pedge:#D9CFB8;--pchip:#FAF6EC;--pcard:#FAF6EC;--pacc:#2F5D8A;--pverd:#FFF6B8;--pline:1px dashed #C9BC9C;--pfont:"Bricolage Grotesque",sans-serif;--pdisplay:"Caveat",cursive;--pw:700;--pls:0;--pcr:4px;--pbr:4px;--pr:6px;--ptile:sepia(.35) contrast(.95);--pveil:linear-gradient(180deg,rgba(244,238,223,0) 40%,rgba(244,238,223,.95) 100%);--pborder:1px solid #C9BC9C;--pshadow:0 1px 0 #fff inset,0 20px 40px rgba(60,40,10,.12);--pgr:#C89A3E;--pgr2:#E1BC6A;--pasf:#55534B;--pru:#9A4E2A;--pru2:#BE6C43}
+.t-veldboek .poster{background-image:radial-gradient(rgba(0,0,0,.035) 1px,transparent 1px);background-size:6px 6px}
+.t-veldboek .hero h3{font-size:clamp(40px,5.5vw,68px);transform:rotate(-1.5deg);display:inline-block}
+.t-veldboek .card:nth-child(1){transform:rotate(-.6deg)}
+.t-veldboek .card:hover{transform:rotate(0) translateY(-3px)}
+.t-veldboek .verdict{position:relative;font-family:"Bricolage Grotesque",sans-serif}
+.t-veldboek .verdict::before{content:"";position:absolute;inset:auto 12% -6px 6%;height:10px;background:#FFE94D;opacity:.7;transform:rotate(-1deg);z-index:-1}
+.t-veldboek .note{position:absolute;right:18px;top:16px;z-index:2;font-family:"Caveat",cursive;font-size:22px;color:#2F5D8A;transform:rotate(3deg);background:#FFF6B8;padding:4px 12px;box-shadow:2px 3px 0 rgba(0,0,0,.15)}
+/* ===== 7 Gloed ===== */
+.t-gloed{--pbg:#FFF7F0;--pfg:#2A1F1A;--pmute:#7A655B;--pmute2:#FFE9DA;--pedge:#F0D9CB;--pchip:#FFF1E7;--pcard:#FFFFFF;--pacc:#C2543A;--pverd:#FFE6D8;--pline:1px solid #F0D9CB;--pfont:"Inter Tight",sans-serif;--pdisplay:"Fraunces",serif;--pw:500;--pls:-.02em;--pcr:20px;--pr:30px;--phero:#fff;--pveil:linear-gradient(160deg,rgba(255,120,80,.25),rgba(120,40,90,.55) 60%,rgba(40,20,40,.8));--ptile:saturate(1.3);--pshadow:0 30px 80px rgba(194,84,58,.18);--pgr:#F2A25C;--pgr2:#FFC98F;--pasf:#5B4A55;--pru:#C2543A;--pru2:#E37F63}
+.t-gloed .hero h3{font-style:italic;font-variation-settings:"opsz" 144}
+.t-gloed .blob{position:absolute;z-index:1;width:60%;aspect-ratio:1;border-radius:50%;filter:blur(60px);opacity:.55;animation:blob 14s ease-in-out infinite alternate}
+.t-gloed .blob.a{background:#FF9C6B;left:-15%;top:-20%}
+.t-gloed .blob.b{background:#A64C8E;right:-20%;bottom:-30%;animation-delay:-7s}
+@keyframes blob{to{transform:translate(8%,10%) scale(1.15)}}
+/* ===== 8 Beton ===== */
+.t-beton{--pbg:#EDEDED;--pfg:#000;--pmute:#333;--pmute2:#000;--pedge:#000;--pchip:#fff;--pcard:#fff;--pacc:#FFD400;--pon:#000;--pverd:#fff;--pverdb:3px solid #000;--pline:3px solid #000;--pfont:"Space Grotesk",sans-serif;--pls:-.04em;--pcr:0;--pbr:0;--pr:0;--pbandr:0;--pbandh:18px;--ppin:0;--ptile:contrast(1.2) saturate(.8);--pveil:none;--pborder:3px solid #000;--pshadow:12px 12px 0 #000;--pcardb:3px solid #000;--pcards:6px 6px 0 #000;--pcardh:10px 10px 0 #000;--pgr:#FFD400;--pgr2:#000;--pasf:#000;--pru:#FF3B00;--pru2:#000}
+.t-beton .hero h3{background:#FFD400;color:#000;display:inline;padding:0 10px;box-decoration-break:clone;-webkit-box-decoration-break:clone;line-height:1.05;text-transform:uppercase}
+.t-beton .drive{background:#000;color:#fff;display:inline-block;padding:4px 10px;margin-top:12px}
+.t-beton .drive b{color:#FFD400}
+.t-beton .ticker{position:absolute;top:0;left:0;right:0;z-index:2;background:#000;color:#FFD400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 0;white-space:nowrap;overflow:hidden}
+.t-beton .ticker span{display:inline-block;animation:marq 16s linear infinite;padding-right:60px}
+.t-beton .stat .v{font-size:26px}
+.t-beton .btn{border:3px solid #000;box-shadow:4px 4px 0 #000}
+.t-beton .btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000}
+/* ===== 9 Nevel ===== */
+.t-nevel{--pbg:#F3F6F8;--pfg:#22303A;--pmute:#7C8B96;--pedge:#E1E8ED;--pchip:#FAFCFD;--pcard:#FAFCFD;--pacc:#3A5F7A;--pverd:#E8EFF4;--pline:1px solid #E1E8ED;--pfont:"Inter Tight",sans-serif;--pw:300;--pls:-.03em;--pcr:10px;--pr:14px;--ptile:saturate(.35) brightness(1.1) contrast(.9);--pveil:linear-gradient(180deg,rgba(243,246,248,.1),rgba(243,246,248,.98) 95%);--pshadow:0 30px 80px rgba(34,48,58,.08);--pgr:#9DB4C4;--pgr2:#C7D6E0;--pasf:#4B5C68;--pru:#8A6E58;--pru2:#B59A85}
+.t-nevel .hero h3{font-weight:200;font-size:clamp(36px,5vw,64px)}
+.t-nevel .hero h3 em{font-style:normal;font-weight:600}
+.t-nevel .h{font-weight:300;font-size:24px}
+.t-nevel .stat .v{font-weight:300}
+.t-nevel .mist{position:absolute;inset:0;z-index:1;background:radial-gradient(60% 50% at 30% 80%,rgba(255,255,255,.9),transparent 70%);animation:mist 12s ease-in-out infinite alternate}
+@keyframes mist{to{transform:translateX(12%) scale(1.1)}}
+/* ===== 10 Rally ===== */
+.t-rally{--pbg:#111318;--pfg:#F5F1E8;--pmute:#A9A39A;--pmute2:#F5F1E8;--pedge:#2B2E36;--pchip:#1A1D24;--pcard:#1A1D24;--pacc:#FF6A1F;--pon:#111318;--pverd:#1A1D24;--pline:1px solid #2B2E36;--pfont:"Barlow Condensed",sans-serif;--pw:800;--pls:-.01em;--pcr:4px;--pbr:2px;--pr:8px;--pbandr:0;--pbandh:14px;--ppin:4px;--ptile:contrast(1.15) saturate(1.1);--pveil:linear-gradient(180deg,rgba(17,19,24,.1),rgba(17,19,24,.9) 80%);--pgr:#FF6A1F;--pgr2:#FFA06A;--pasf:#3C4250;--pru:#19B3B3;--pru2:#5ED3D3;--pshadow:0 20px 60px rgba(0,0,0,.5)}
+.t-rally .poster::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;z-index:4;background:repeating-linear-gradient(-45deg,#FF6A1F 0 14px,#F5F1E8 14px 28px,#19B3B3 28px 42px)}
+.t-rally .hero h3{text-transform:uppercase;font-style:italic;font-size:clamp(46px,6.5vw,84px);line-height:.9}
+.t-rally .p-top .brand{text-transform:uppercase;font-style:italic;font-size:24px}
+.t-rally .h,.t-rally .stat .v{font-size:30px;font-weight:800;letter-spacing:.02em}
+.t-rally .plate{position:absolute;right:18px;top:18px;z-index:2;background:#F5F1E8;color:#111318;font-weight:800;font-size:28px;padding:2px 12px;border:3px solid #111318;box-shadow:0 0 0 3px #F5F1E8;line-height:1.1}
+.t-rally .plate small{display:block;font-size:10px;letter-spacing:.2em;font-weight:600}
+.t-rally .pins,.t-veldboek .pins{right:auto;left:18px}
+.t-kinetiek .pins{top:44px}
+.t-beton .pins{top:40px}
+</style>
+</head>
+<body>
+
+<header class="studio-top">
+  <b>Piste</b><span class="sub">Stijlstudio, tien richtingen voor 2027</span>
+  <nav class="dots" id="dots"></nav>
+  <button class="choice" id="choice">Nog niks gekozen</button>
+</header>
+
+<section class="intro">
+  <h1>Kies de huid, de botten blijven.</h1>
+  <p>Tien richtingen voor Piste. Elke mock gebruikt dezelfde inhoud: de Finestre, een echte kaarttegel, de oppervlaktebalk en een oordeel. Wat verschilt is alles wat je voelt: type, kleur, beweging, textuur.</p>
+  <p>Beweeg over de posters, ze reageren. Klik <em>Deze richting</em> om je keuze te onthouden; de hele studio kleurt dan mee zodat je ziet hoe het zit als chrome.</p>
+  <small>Geen van de tien is een kopie van een bestaande site. Elke richting heeft één gedurfd element en houdt de rest stil.</small>
+</section>
+
+<main class="grid" id="grid"></main>
+<div class="toast" id="toast"></div>
+
+<script>
+const DIRS=[
+ {id:"linnen",cls:"t-linnen",name:"Linnen",tile:[13,2944,4256],
+  what:"De huidige richting, aangescherpt. Warm linnen, mos, één lettertype met optische maten. Rustig, betrouwbaar, leest als een goed gedrukte gids.",
+  bold:"Het 3D-terrein is het enige spektakel."},
+ {id:"noir",cls:"t-noir",name:"Topo Noir",tile:[13,2943,4251],
+  what:"Nachtnavigatie. Diepzwart met een fosforgroen accent, drijvende hoogtelijnen over de kaart, cijfers in een echte mono. Voor wie 's avonds plant met een glas erbij.",
+  bold:"Bewegende contourlijnen als achtergrondlaag."},
+ {id:"kaart",cls:"t-kaart",name:"Kaartblad",tile:[13,2965,4257],
+  what:"Zwitserse topografie: wit papier, roestbruine hoogtelijnen, hairline-raster, één harde zwarte lijn. Precisie als stijl. Het kompas draait als je erover beweegt.",
+  bold:"Rasterlijnen en kompas als functioneel ornament."},
+ {id:"glas",cls:"t-glas",name:"Glas",tile:[13,2973,4216],
+  what:"De satellietfoto vult alles, de interface zweeft er als matglas overheen in een bento-raster. Het meest 'app-achtige' van de tien; mooi op telefoon.",
+  bold:"Frosted bento over full-bleed beeld."},
+ {id:"kinetiek",cls:"t-kinetiek",name:"Kinetiek",tile:[13,3012,4099],
+  what:"Type als hoofdrolspeler. De naam van de klim staat mager en dikt aan als je erover beweegt, zuurgroen op zwart, een lopende tekstband bovenin. Luid, jong, snel.",
+  bold:"Variabel lettertype dat reageert op de muis."},
+ {id:"veldboek",cls:"t-veldboek",name:"Veldboek",tile:[13,2759,4233],
+  what:"Een notitieboek uit de fietstas. Papier met korrel, handgeschreven koppen, een marker-highlight onder het oordeel, kaartjes die net scheef liggen. Persoonlijk en eerlijk.",
+  bold:"Handschrift en marker, maar alleen op de koppen."},
+ {id:"gloed",cls:"t-gloed",name:"Gloed",tile:[13,2974,4269],
+  what:"Zonsopgang op grind. Zachte kleurwolken in perzik en pruim, een cursieve serif met karakter, ronde vormen. Warm en editorial, richting reismagazine.",
+  bold:"Ademende kleurvlekken achter de held."},
+ {id:"beton",cls:"t-beton",name:"Beton",tile:[13,2713,4337],
+  what:"Brutalisme: drie pixel zwarte randen, harde schaduwen, waarschuwingsgeel, een tickerband. Geen zachtheid, wel helderheid. Past bij de toon: geen reclamepraat.",
+  bold:"Gemarkeerde titel en harde offset-schaduwen."},
+ {id:"nevel",cls:"t-nevel",name:"Nevel",tile:[13,2351,4266],
+  what:"Noors minimalisme. Mistig blauwgrijs, extreem licht lettertype, veel lucht, langzame bewegingen. Alles fluistert; de cijfers zijn het contrast.",
+  bold:"Ultralichte type en een drijvende mistlaag."},
+ {id:"rally",cls:"t-rally",name:"Rally",tile:[13,2507,3991],
+  what:"Gravelrally uit de jaren tachtig: gecondenseerde cursieve kapitalen, oranje en teal, een startnummerplaat, tellers die oplopen als de kaart in beeld komt.",
+  bold:"Startnummerplaat en oplopende tellers."}
+];
+const IMG="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/";
+const tiles=([z,y,x])=>[[y,x],[y,x+1],[y+1,x],[y+1,x+1]].map(([yy,xx])=>`<img alt="" loading="lazy" src="${IMG}${z}/${yy}/${xx}">`).join("");
+const extra={noir:"",kaart:'<div class="compass"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="M12 7l3 5-3 5-3-5z" fill="#B3502D" stroke="none"/></svg></div>',
+ kinetiek:'<div class="marq"><span>Grind tot boven de 3000 meter · rijtijd eerst · bronnen bij alles · Grind tot boven de 3000 meter · rijtijd eerst · bronnen bij alles ·</span></div>',
+ veldboek:'<div class="note">woe of za gaan, dan geen auto\'s!</div>',gloed:'<div class="blob a"></div><div class="blob b"></div>',
+ beton:'<div class="ticker"><span>Tunnel Parpaillon dicht sinds juli 2024 · Sommeiller autovrij di en do · Finestre grind vanaf 1690 m · Tunnel Parpaillon dicht sinds juli 2024 · Sommeiller autovrij di en do · Finestre grind vanaf 1690 m ·</span></div>',
+ nevel:'<div class="mist"></div>',rally:'<div class="plate">01<small>Finestre</small></div>'};
+const title=id=>id==="nevel"?'Colle delle <em>Finestre</em>':"Colle delle Finestre";
+function poster(d,i){
+ return `<section class="dir" id="${d.id}">
+  <div class="dir-hd"><span class="n">${String(i+1).padStart(2,"0")}</span><h2>${d.name}</h2>
+    <button class="pick" data-id="${d.id}">Deze richting</button>
+    <p>${d.what} <strong>${d.bold}</strong></p></div>
+  <article class="poster ${d.cls}">
+    <div class="p-top"><span class="brand">Piste</span><span class="tag">Grind waar je goesting in krijgt, op weekendafstand.</span>
+      <div class="pillz"><span class="pl on">Kaart</span><span class="pl">Lijst</span><span class="pl">Utrecht</span></div></div>
+    <div class="hero">
+      <div class="tiles">${tiles(d.tile)}</div><div class="veil"></div>${extra[d.id]||""}
+      <div class="pins"><span class="pin" style="background:#3E6150">1</span><span class="pin" style="background:#C89A3E">2</span><span class="pin" style="background:#9A4E2A">3</span></div>
+      <div class="hero-in"><div class="eyebrow">Val di Susa, Piemonte, Italië</div><h3>${title(d.id)}</h3>
+        <div class="drive"><b data-count="10:31">10 u 31</b> rijden vanaf Utrecht, inclusief laadstops</div></div>
+    </div>
+    <div class="side">
+      <div class="card"><div class="row"><div><div class="ttl">Colle delle Finestre + Assietta</div><div class="area">Val di Susa, Piemonte</div></div><div class="h">10 u 31</div></div>
+        <div class="band"><div class="track"><div class="sg a" style="width:71%"></div><div class="sg g" style="width:29%"></div></div><div class="axis"><span>500 m</span><span>onverhard vanaf 1690 m</span><span>2178 m</span></div></div></div>
+      <div class="stats"><div class="stat"><div class="v" data-n="2178">2178 m</div><div class="k">hoogste punt</div></div><div class="stat"><div class="v" data-n="1680">1680 m</div><div class="k">stijging</div></div><div class="stat"><div class="v" data-n="8">8 km</div><div class="k">onverhard</div></div></div>
+      <div class="verdict"><b>Is dit echt de moeite?</b>De meest evidente keuze van de hele lijst, en terecht. Het grind is hard aangereden door de 4×4's, dus klimmen is puur meters maken; de afdaling is waar mensen over klagen. Plan de Assietta op een woensdag of zaterdag, dan zijn er geen auto's.</div>
+      <div class="tags"><span class="tg on">Gravelbike prima</span><span class="tg">Naast Sestriere</span><span class="tg">Logistiek uitgezocht</span></div>
+      <div class="cta"><button class="btn">Bekijk deze klim</button><button class="btn ghost">Stuur door</button></div>
+    </div>
+  </article></section>`;
+}
+document.getElementById("grid").innerHTML=DIRS.map(poster).join("");
+document.getElementById("dots").innerHTML=DIRS.map(d=>`<a href="#${d.id}" title="${d.name}" data-id="${d.id}"></a>`).join("");
+/* active dot */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){document.querySelectorAll(".dots a").forEach(a=>a.classList.toggle("on",a.dataset.id===e.target.id));}}),{rootMargin:"-40% 0px -50% 0px"});
+document.querySelectorAll(".dir").forEach(s=>io.observe(s));
+/* rally counters */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);e.target.querySelectorAll("[data-n]").forEach(el=>{const n=+el.dataset.n,suf=el.textContent.replace(/[\d.]+/,"").trim();const t0=performance.now();const step=t=>{const p=Math.min(1,(t-t0)/1100);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+" "+suf;if(p<1)requestAnimationFrame(step);};requestAnimationFrame(step);});}),{threshold:.3});
+document.querySelectorAll(".t-rally,.t-kinetiek,.t-noir").forEach(p=>cio.observe(p));
+/* choice */
+const CHROME={linnen:["#F6F3EC","#1F241F","#2F4A3D"],noir:["#0E1210","#E6EDE6","#7CFF9B"],kaart:["#FFFFFF","#1a1a1a","#B3502D"],glas:["#0b0f14","#f4f6f8","#9dc4ff"],kinetiek:["#0A0A0A","#F2F2F2","#D6FF3B"],veldboek:["#F4EEDF","#2B2A26","#2F5D8A"],gloed:["#FFF7F0","#2A1F1A","#C2543A"],beton:["#EDEDED","#000","#000"],nevel:["#F3F6F8","#22303A","#3A5F7A"],rally:["#111318","#F5F1E8","#FF6A1F"]};
+let toastT;const toast=m=>{const t=document.getElementById("toast");t.textContent=m;t.classList.add("on");clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove("on"),2600);};
+function apply(id,quiet){
+  const d=DIRS.find(x=>x.id===id);if(!d)return;
+  const go=()=>{const [bg,fg,acc]=CHROME[id];document.documentElement.style.setProperty("--bg",bg);document.documentElement.style.setProperty("--fg",fg);document.documentElement.style.setProperty("--acc",acc);document.documentElement.style.setProperty("--mute",fg+"aa");document.documentElement.style.setProperty("--line",fg+"22");
+    document.querySelectorAll(".pick").forEach(b=>b.classList.toggle("on",b.dataset.id===id));document.getElementById("choice").textContent="Jouw keuze: "+d.name;};
+  if(document.startViewTransition&&!quiet)document.startViewTransition(go);else go();
+  try{localStorage.setItem("piste-stijl",id);}catch(e){}
+  if(!quiet)toast("Onthouden: "+d.name+". Zeg gewoon “ga voor "+d.name+"”.");
+}
+document.querySelectorAll(".pick").forEach(b=>b.addEventListener("click",()=>apply(b.dataset.id)));
+try{const s=localStorage.getItem("piste-stijl");if(s)apply(s,true);}catch(e){}
+</script>
+</body>
+</html>

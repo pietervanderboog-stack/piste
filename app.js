@@ -130,7 +130,7 @@ function focusOn(c,fly=true){
   if(fly)map.flyTo({center:[c.lng,c.lat],zoom:Math.max(map.getZoom(),8),duration:RM?0:900});
   if(popup)popup.remove();
   popup=new maplibregl.Popup({offset:18,closeButton:false,maxWidth:"260px"}).setLngLat([c.lng,c.lat])
-    .setHTML('<div class="pop"><span class="pn">'+esc(c.name)+'</span><span class="pm">'+esc(c.area)+', '+fmtH(c._h)+' rijden</span><a href="#/'+c.id+'">Bekijk de klim</a></div>').addTo(map);
+    .setHTML('<div class="pop"><span class="pn">'+esc(c.name)+'</span><span class="pm">'+esc(c.area)+', '+fmtH(c._h)+' rijden</span><a href="#/'+c.id+'">Bekijk deze klim</a></div>').addTo(map);
 }
 
 /* ---------- list ---------- */
@@ -172,7 +172,7 @@ function render(fit){
   const r=rows();
   $("#cnt").textContent=r.length;
   $("#cntlbl").textContent=(r.length===1?"beklimming":"beklimmingen")+" binnen "+(state.maxh<30?fmtH(state.maxh):"bereik")+" vanaf "+state.origin.n;
-  $("#list").innerHTML=r.length?r.map(cardHTML).join(""):'<div class="empty">Niets binnen deze filters.<button class="pill" id="resetBtn" type="button">Zet de filters terug</button></div>';
+  $("#list").innerHTML=r.length?r.map(cardHTML).join(""):'<div class="empty">Niets binnen deze filters. Rek de rijtijd wat op of zet een filter af.<button class="pill" id="resetBtn" type="button">Zet de filters terug</button></div>';
   const rb=$("#resetBtn");if(rb)rb.addEventListener("click",()=>{state.maxh=30;state.type="alle";state.bike="alle";syncControls();render(true);writeHash("");});
   $$("#list .card").forEach(el=>{
     el.addEventListener("click",()=>{location.hash="#/"+el.dataset.id+hashQuery();});
@@ -195,7 +195,7 @@ map.on("click",e=>{
   if(!state.picking)return;
   state.origin={n:"Eigen punt",id:"custom",lat:e.lngLat.lat,lng:e.lngLat.lng};
   state.picking=false;$("#pickBtn").setAttribute("aria-pressed","false");$("#picknote").hidden=true;map.getCanvas().style.cursor="";
-  syncControls();render(true);writeHash("");toast("Vertrekpunt gezet");
+  syncControls();render(true);writeHash("");toast("Vertrekpunt staat");
 });
 $("#maxh").addEventListener("input",e=>{state.maxh=+e.target.value;$("#maxhv").textContent=state.maxh<30?fmtH(state.maxh):"30 uur";render(false);writeHash("");});
 $("#maxh").addEventListener("change",()=>render(true));
@@ -217,7 +217,7 @@ function syncControls(){
 }
 $("#share").addEventListener("click",async()=>{
   writeHash("");
-  try{await navigator.clipboard.writeText(location.href);toast("Link gekopieerd");}
+  try{await navigator.clipboard.writeText(location.href);toast("Link gekopieerd, stuur maar door");}
   catch(e){toast(location.href);}
 });
 /* mobile drawer */
@@ -255,7 +255,7 @@ function logiHTML(c){
 }
 function gpxHTML(c){
   const L=LOGI[c.id];const g=(L&&L.gpx)||c.gpx||[];
-  if(!g.length)return '<p class="sub">Nog geen gecontroleerde route gevonden. Zoek op Komoot of RideWithGPS op de naam van de klim en controleer of het onverharde deel erin zit.</p>';
+  if(!g.length)return '<p class="sub">Nog geen gecontroleerde route gevonden. Zoek op Komoot of RideWithGPS op de naam van de klim en kijk goed of het onverharde stuk er wel in zit.</p>';
   return '<div class="gpx">'+g.map(x=>'<a href="'+esc(x.u)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M3 17l6-9 4 6 3-4 5 7"/></svg><span>'+esc(x.t)+'</span></a>').join("")+'</div>';
 }
 function openProfile(id){
@@ -272,7 +272,7 @@ function openProfile(id){
   $("#profile").innerHTML=
    '<div class="hero"><div class="m3d" id="m3d"></div>'+
    '<a class="back" href="#/'+q+'"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>Alle beklimmingen</a>'+
-   '<div class="hero-note"><span>Hoogte 1,4× uitvergroot</span><button type="button" id="spinBtn" aria-pressed="true">Draaien</button></div>'+
+   '<div class="hero-note"><span>Hoogte 1,4× uitvergroot</span><button type="button" id="spinBtn" aria-pressed="true">Laat draaien</button></div>'+
    '<div class="titlebox"><div class="in"><div class="area">'+esc(c.area)+', '+esc(c.land)+'</div><h1>'+esc(c.name)+'</h1>'+
    '<div class="dh"><b>'+fmtH(h)+'</b> rijden vanaf '+esc(state.origin.n)+(state.ev?', inclusief laadstops':'')+(c.cross?', inclusief overtocht':'')+'</div></div></div></div>'+
    '<nav class="pnav">'+nav.map(n=>'<a href="#'+n[0]+'" data-go="'+n[0]+'">'+n[1]+'</a>').join("")+'</nav>'+
@@ -283,27 +283,27 @@ function openProfile(id){
        '<div class="stat"><div class="v">'+c.len+' km</div><div class="k">klim</div></div>'+
        '<div class="stat"><div class="v">'+c.gravel+' km</div><div class="k">onverhard</div></div></div>'+
      tagsHTML(c)+
-     '<div class="verdict" id="oordeel"><h2>Is dit echt een goede optie?</h2>'+esc(c.verdict)+
+     '<div class="verdict" id="oordeel"><h2>Is dit echt de moeite?</h2>'+esc(c.verdict)+
        (shifted?'<div class="tyreline">Dit oordeel is geschreven voor 55 mm. Op jouw '+state.tyre+' mm tonen we het label één stap strenger: '+BIKELBL[b].toLowerCase()+'.</div>':'')+'</div>'+
-     '<h2 class="sec" id="praktisch">Kort praktisch</h2><ul class="notes-list">'+c.notes.map(n=>'<li>'+esc(n)+'</li>').join("")+'</ul>'+
-     '<h2 class="sec" id="stemmen">Wat rijders over de route zeggen</h2>'+c.voices.map(voiceHTML).join("")+
+     '<h2 class="sec" id="praktisch">Praktisch, kort en goed</h2><ul class="notes-list">'+c.notes.map(n=>'<li>'+esc(n)+'</li>').join("")+'</ul>'+
+     '<h2 class="sec" id="stemmen">Wat rijders erover zeggen</h2>'+c.voices.map(voiceHTML).join("")+
      logiHTML(c)+
      '<div class="nextprev">'+(prev?'<a href="#/'+prev.id+q+'"><small>Vorige, '+fmtH(prev._h)+' rijden</small>'+esc(prev.name)+'</a>':'<span></span>')+
        (next?'<a href="#/'+next.id+q+'" style="text-align:right"><small>Volgende, '+fmtH(next._h)+' rijden</small>'+esc(next.name)+'</a>':'')+'</div>'+
    '</div><aside class="pside">'+
-     '<div class="side-card" id="routes"><h2>Routes om te laden</h2>'+gpxHTML(c)+'</div>'+
+     '<div class="side-card" id="routes"><h2>Routes om in te laden</h2>'+gpxHTML(c)+'</div>'+
      '<div class="side-card"><h2>In het kort</h2><ul class="facts">'+
        '<li>'+(c.type==="parallel"?'Loopt naast '+esc(c.parallel):'Staat op zichzelf, puur grind')+'</li>'+
        '<li>'+BIKELBL[b]+(shifted?' op '+state.tyre+' mm':' op 55 mm')+'</li>'+
        '<li>Onverhard vanaf '+(c.segs.find(s=>s[2]!=="a")||c.segs[0])[0]+' m</li>'+
        (L?'<li>Logistiek uitgezocht, '+Object.keys(LOGI_LBL).reduce((a,k)=>a+((L[k]||[]).length),0)+' feiten met bron</li>':'<li>Logistiek nog niet uitgezocht</li>')+
      '</ul></div>'+
-     '<div class="side-card"><h2>Deel deze klim</h2><p class="sub">De link onthoudt je vertrekpunt en filters.</p><button class="pill" id="shareClimb" type="button">Kopieer link</button></div>'+
+     '<div class="side-card"><h2>Stuur deze klim door</h2><p class="sub">De link onthoudt je vertrekpunt en filters, handig voor de groepschat.</p><button class="pill" id="shareClimb" type="button">Kopieer de link</button></div>'+
    '</aside></div>';
   $("#profile").hidden=false;$("#home").setAttribute("aria-hidden","true");
   $("#profile").scrollTop=0;
   $$(".pnav a").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();const el=document.getElementById(a.dataset.go);if(el)el.scrollIntoView({behavior:RM?"auto":"smooth",block:"start"});}));
-  $("#shareClimb").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(location.href);toast("Link gekopieerd");}catch(e){toast(location.href);}});
+  $("#shareClimb").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(location.href);toast("Link gekopieerd, stuur maar door");}catch(e){toast(location.href);}});
   document.title=c.name+" — Piste";
   mount3d(c);
 }

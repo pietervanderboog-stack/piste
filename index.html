@@ -22,13 +22,13 @@
     <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 24 L13 11 L18 17 L22 13 L28 24 Z"/></svg>
     <span class="word">Piste</span>
   </a>
-  <p class="tag">Onverharde beklimmingen die in een weekend passen.</p>
+  <p class="tag">Grind waar je goesting in krijgt, op weekendafstand.</p>
   <div class="top-right">
     <label class="from">
       <span>Vertrek</span>
       <select id="origin"></select>
     </label>
-    <button class="pill" id="pickBtn" type="button" title="Kies een eigen vertrekpunt op de kaart">Eigen punt</button>
+    <button class="pill" id="pickBtn" type="button" title="Kies een eigen vertrekpunt op de kaart">Prik zelf een punt</button>
   </div>
 </header>
 
@@ -46,7 +46,7 @@
       <span><i class="dot far"></i>langer</span>
     </div>
   </div>
-  <div class="picknote" id="picknote" hidden>Klik op de kaart om je vertrekpunt te zetten. <button type="button" id="pickCancel">Annuleren</button></div>
+  <div class="picknote" id="picknote" hidden>Klik op de kaart waar je vertrekt. <button type="button" id="pickCancel">Annuleren</button></div>
 
   <aside class="drawer" id="drawer" aria-label="Beklimmingen">
     <button class="handle" id="handle" type="button" aria-label="Lijst open- of dichtklappen"><span></span></button>
@@ -90,13 +90,13 @@
       <p class="tyrenote" id="tyrenote" hidden>De oordelen zijn geijkt op 55 mm. Op smallere banden tonen we ze één stap strenger.</p>
     </div>
 
-    <div class="count"><button class="pill small" id="filtBtn" type="button" aria-expanded="true">Filters</button><b id="cnt">35</b> <span id="cntlbl">beklimmingen binnen bereik</span> <button class="linkbtn" id="share" type="button">Deel deze selectie</button></div>
+    <div class="count"><button class="pill small" id="filtBtn" type="button" aria-expanded="true">Filters</button><b id="cnt">35</b> <span id="cntlbl">beklimmingen binnen bereik</span> <button class="linkbtn" id="share" type="button">Stuur deze selectie door</button></div>
     <div class="scroll" id="scroll">
-      <div class="intro" id="intro"><p>De mooiste beklimmingen van Europa liggen naast de beroemde cols, niet erop. Oude militaire wegen, skipistes en bospaden, grind tot boven de 3000 meter. Hier gesorteerd op wat voor een weekend echt telt: hoe lang je in de auto zit. Elk oordeel komt van rijders die er geweest zijn, met een bron erbij.</p><button class="linkbtn" id="introClose" type="button">Begrepen</button></div>
+      <div class="intro" id="intro"><p>De mooiste beklimmingen van Europa liggen naast de beroemde cols, niet erop. Oude militaire wegen, skipistes en bospaden, grind tot boven de 3000 meter. Hier gesorteerd op wat voor een weekend echt telt: hoe lang je in de auto zit. Elk oordeel komt van rijders die er geweest zijn, met een bron erbij. Geen reclamepraat, wel bronnen.</p><button class="linkbtn" id="introClose" type="button">Oké, gesnapt</button></div>
       <div class="list" id="list"></div><details class="notes"><summary>Hoe de rijtijden en oordelen tot stand komen</summary>
-      <p><b>Rijtijden</b> zijn schattingen: hemelsbreed maal 1,15, met 62, 85 of 100 km/u naarmate de afstand groeit, plus 20 minuten pauze per 300 km en, als je dat aanvinkt, 15 minuten laden per 300 km na de eerste 250 km. Reken op tien procent speling.</p>
+      <p><b>Rijtijden</b> zijn schattingen: hemelsbreed maal 1,15, met 62, 85 of 100 km/u naarmate de afstand groeit, plus 20 minuten pauze per 300 km en, als je dat aanvinkt, 15 minuten laden per 300 km na de eerste 250 km. Reken op een tiental procent speling, het blijft een schatting.</p>
       <p><b>Overtochten</b> zijn vast meegerekend: Calais–Dover 2 uur, Hirtshals–Kristiansand 4,5 uur, Livorno–Bastia 7 uur, Livorno–Olbia 12 uur. Voor Corsica en Sardinië is vliegen en huren realistischer.</p>
-      <p><b>Oordelen</b> zijn geijkt op een gravelbike met 650b × 55 mm. <b>Citaten</b> komen van rijders die er geweest zijn en hebben allemaal een bronlink. Controleer openingsdagen, tol en sneeuw vlak voor vertrek bij de lokale bron.</p>
+      <p><b>Oordelen</b> zijn geijkt op een gravelbike met 650b × 55 mm. <b>Citaten</b> komen van rijders die er geweest zijn en hebben allemaal een bronlink. Check openingsdagen, tol en sneeuw vlak voor vertrek bij de lokale bron, dat scheelt ambras.</p>
       <p>Kaart: Esri World Shaded Relief en World Imagery, CARTO, OpenStreetMap-bijdragers, hoogtedata Mapzen Terrarium via AWS Open Data.</p>
     </details></div>
   </aside>
