@@ -2565,11 +2565,11 @@
    },
    {
     "t": "Vanaf Kobarid fiets je via Idrsko 5 km klimmend naar Livek, dan nog 3 km over minder goed asfalt naar Livške Ravne, waarna een panoramaweg over de Kolovrat-richel loopt.",
-    "u": "https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"
+    "u": null
    },
    {
     "t": "De grens Slovenië-Italië bij Robič/Breginj kent geen structurele grenscontroles (beide landen Schengen), maar het wegdek aan de Italiaanse kant richting Breginj is op stukken slecht.",
-    "u": "https://julian-alps.com/en/tour/bike-riding/soca-valley-i2a-robidisce-route/65479065/"
+    "u": null
    }
   ],
   "sleep": [
@@ -2631,7 +2631,7 @@
    },
    {
     "t": "Een hop-on-hop-off toeristenbus die de klim naar Livške Ravne overbrugt, rijdt alleen in juli en augustus.",
-    "u": "https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"
+    "u": null
    },
    {
     "t": "De Giro d'Italia reed etappe 19 met de Kolovrat-klim medio juni 2022, wat aantoont dat de weg dan al sneeuwvrij en berijdbaar is; expliciete winterafsluiting kon niet worden bevestigd.",
@@ -2639,10 +2639,6 @@
    }
   ],
   "gpx": [
-   {
-    "t": "Outdooractive-route Mt. Kolovrat panoramaweg vanaf Kobarid, 40 km, 1.061 m, overwegend asfalt (72,7%)",
-    "u": "https://www.outdooractive.com/en/route/bike-riding/littoral/mt.-kolovrat-along-the-panoramic-road-with-views-of-the-soca-valley/35053686/"
-   },
    {
     "t": "Komoot-smarttour Zanuso Bivouac - Kolovrat grensrichel-lus vanaf Tolmin, 33,6 km, 1.190 m, MTB, moeilijkheid 'hard', met afdaal-secties op glad wandelpad",
     "u": "https://www.komoot.com/smarttour/786072"
@@ -3331,7 +3327,7 @@
    },
    {
     "t": "Hotel Finse 1222 verhuurt zelf ook fietsen: comfortfiets 695 NOK/dag, juniorfiets (Merida Matts Machete 24\") 395 NOK/dag; ophalen aan het oostelijke uiteinde van het perron in Finse, inleveren in Flåm bij een klein rood huisje met opschrift 'Hotel Finse 1222' aan het einde van het perron.",
-    "u": "https://rental.hotellfinse1222.no/en/sykkelutleie"
+    "u": null
    }
   ],
   "sleep": [
