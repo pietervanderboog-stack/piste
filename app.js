@@ -33,7 +33,7 @@ function driveH(o,c,ev){
 }
 const fmtH=h=>{const t=Math.round(h*60);return Math.floor(t/60)+" u "+String(t%60).padStart(2,"0");};
 const band=h=>h<5?"near":h<9?"mid":"far";
-const BANDCOL={near:"#3E6150",mid:"#C89A3E",far:"#9A4E2A"};
+const BANDCOL={near:"#D6FF3B",mid:"#FFB238",far:"#FF3B6B"};
 const BIKELBL={gravel:"Gravelbike prima",grens:"Grensgeval",mtb:"MTB slimmer"};
 const SEGLBL={a:"asfalt",g:"grind",r:"ruw"};
 const LOGI_LBL={base:"Basisdorp",sleep:"Slapen",park:"Parkeren en laden",water:"Water",food:"Eten en bevoorrading",season:"Seizoen en toegang"};
@@ -41,7 +41,7 @@ const SHIFT={gravel:"grens",grens:"mtb",mtb:"mtb"};
 /* verdicts are calibrated on 55 mm; narrower tyres shift one step */
 const bikeFor=c=>state.tyre<45?SHIFT[c.bike]:c.bike;
 
-const state={origin:{...ORIGINS[0]},maxh:30,type:"alle",bike:"alle",sort:"drive",ev:true,tyre:55,layer:"relief",sel:null,picking:false,view:"home"};
+const state={origin:{...ORIGINS[0]},maxh:30,type:"alle",bike:"alle",sort:"drive",ev:true,tyre:55,layer:"sat",sel:null,picking:false,view:"home"};
 
 /* ---------- URL state ---------- */
 function readHash(){
@@ -71,7 +71,7 @@ function writeHash(path){
   if(state.sort!=="drive")q.set("sort",state.sort);
   if(!state.ev)q.set("ev","0");
   if(state.tyre!==55)q.set("tyre",state.tyre);
-  if(state.layer!=="relief")q.set("layer",state.layer);
+  if(state.layer!=="sat")q.set("layer",state.layer);
   const s=q.toString();
   const next="#/"+(path||"")+(s?"?"+s:"");
   if(location.hash!==next)history.replaceState(null,"",next);
@@ -82,19 +82,23 @@ let suppressHash=false;
 const RASTER={
   relief:{type:"raster",tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}"],tileSize:256,maxzoom:13,attribution:"Esri"},
   labels:{type:"raster",tiles:["https://a.basemaps.cartocdn.com/rastertiles/light_only_labels/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/rastertiles/light_only_labels/{z}/{x}/{y}.png","https://c.basemaps.cartocdn.com/rastertiles/light_only_labels/{z}/{x}/{y}.png"],tileSize:256,maxzoom:18,attribution:"CARTO, OpenStreetMap"},
+  labelsdark:{type:"raster",tiles:["https://a.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}.png","https://c.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}.png"],tileSize:256,maxzoom:18,attribution:"CARTO, OpenStreetMap"},
   sat:{type:"raster",tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"],tileSize:256,maxzoom:17,attribution:"Esri, Maxar"},
   dem:{type:"raster-dem",tiles:["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],encoding:"terrarium",tileSize:256,maxzoom:14,attribution:"Mapzen Terrarium"}
 };
 const map=new maplibregl.Map({container:"map",style:{version:8,sources:RASTER,layers:[
   {id:"relief",type:"raster",source:"relief",paint:{"raster-saturation":-.3,"raster-brightness-min":.05}},
   {id:"sat",type:"raster",source:"sat",layout:{visibility:"none"}},
-  {id:"labels",type:"raster",source:"labels",paint:{"raster-opacity":.9}}
+  {id:"labels",type:"raster",source:"labels",paint:{"raster-opacity":.9}},
+  {id:"labelsdark",type:"raster",source:"labelsdark",paint:{"raster-opacity":.95}}
 ]},center:[7.5,47.5],zoom:4.6,minZoom:3,maxZoom:15,attributionControl:{compact:true},scrollZoom:true});
 map.addControl(new maplibregl.NavigationControl({showCompass:false}),"bottom-right");
 map.on("load",()=>{applyLayer();render(true);});
 function applyLayer(){
   map.setLayoutProperty("sat","visibility",state.layer==="sat"?"visible":"none");
   map.setLayoutProperty("relief","visibility",state.layer==="sat"?"none":"visible");
+  map.setLayoutProperty("labels","visibility",state.layer==="sat"?"none":"visible");
+  map.setLayoutProperty("labelsdark","visibility",state.layer==="sat"?"visible":"none");
   $$(".layers button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.layer===state.layer));
 }
 $$(".layers button").forEach(b=>b.addEventListener("click",()=>{state.layer=b.dataset.layer;applyLayer();writeHash(currentPath());}));
@@ -313,11 +317,11 @@ function mount3d(c){
   const bearing=(c.lng*37)%360;
   map3d=new maplibregl.Map({container:"m3d",style:{version:8,sources:{sat:RASTER.sat,dem:RASTER.dem,dem2:RASTER.dem,labels:RASTER.labels},
     layers:[{id:"sat",type:"raster",source:"sat"},{id:"hill",type:"hillshade",source:"dem2",paint:{"hillshade-exaggeration":.35,"hillshade-shadow-color":"#2b2f2a","hillshade-highlight-color":"#fff8e6"}}],
-    sky:{"sky-color":"#cfdde8","horizon-color":"#f6f3ec","fog-color":"#f6f3ec","fog-ground-blend":.55,"horizon-fog-blend":.7,"sky-horizon-blend":.6,"atmosphere-blend":.8},
+    sky:{"sky-color":"#0A0A0A","horizon-color":"#1c1f18","fog-color":"#0A0A0A","fog-ground-blend":.6,"horizon-fog-blend":.75,"sky-horizon-blend":.7,"atmosphere-blend":.9},
     terrain:{source:"dem",exaggeration:1.4}},
     center:[c.lng,c.lat-.012],zoom:12.7,pitch:66,bearing,maxPitch:75,attributionControl:{compact:true},cooperativeGestures:true});
   map3d.addControl(new maplibregl.NavigationControl({visualizePitch:true}),"top-right");
-  const el=document.createElement("div");el.className="pin sel";el.style.background=BANDCOL[band(driveH(state.origin,c,state.ev))];el.textContent="";el.style.width="16px";el.style.height="16px";
+  const el=document.createElement("div");el.className="pin sel";el.style.background=BANDCOL[band(driveH(state.origin,c,state.ev))];el.textContent="";el.style.width="14px";el.style.height="14px";el.style.borderRadius="50%";
   new maplibregl.Marker({element:el}).setLngLat([c.lng,c.lat]).addTo(map3d);
   let spinning=true;
   const step=()=>{if(!spinning)return;map3d.setBearing(map3d.getBearing()+.04);spin=requestAnimationFrame(step);};

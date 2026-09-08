@@ -7,8 +7,8 @@
 <meta name="description" content="35 onverharde beklimmingen in Europa, gesorteerd op rijtijd vanaf jouw vertrekpunt. Met oordelen van rijders die er geweest zijn, bronnen bij elke bewering en logistiek per basisdorp.">
 <meta property="og:title" content="Piste — onverharde beklimmingen op weekendafstand">
 <meta property="og:description" content="Welke grindbeklimmingen zijn het waard, en passen ze in een weekend? Rijtijd eerst, bronnen bij alles.">
-<meta name="theme-color" content="#F6F3EC">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232F4A3D'/%3E%3Cpath d='M4 24 L13 11 L18 17 L22 13 L28 24 Z' fill='%23F6F3EC'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0A0A'/%3E%3Cpath d='M4 24 L13 11 L18 17 L22 13 L28 24 Z' fill='%23D6FF3B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800&display=swap" rel="stylesheet">
@@ -34,11 +34,12 @@
 
 <main id="home">
   <div id="map" role="region" aria-label="Kaart met beklimmingen"></div>
+  <div class="ticker" aria-hidden="true"><span>Grind tot boven de 3000 meter · Rijtijd eerst · Bronnen bij alles · Tunnel Parpaillon dicht sinds juli 2024 · Sommeiller autovrij op di en do · Assietta autovrij op wo en za · Grind tot boven de 3000 meter · Rijtijd eerst · Bronnen bij alles · Tunnel Parpaillon dicht sinds juli 2024 · Sommeiller autovrij op di en do · Assietta autovrij op wo en za · </span></div>
 
   <div class="mapbar">
     <div class="layers" role="group" aria-label="Kaartlaag">
-      <button data-layer="relief" aria-pressed="true">Reliëf</button>
-      <button data-layer="sat" aria-pressed="false">Satelliet</button>
+      <button data-layer="sat" aria-pressed="true">Satelliet</button>
+      <button data-layer="relief" aria-pressed="false">Reliëf</button>
     </div>
     <div class="legend">
       <span><i class="dot near"></i>tot 5 uur</span>
