@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Piste — onverharde beklimmingen op weekendafstand</title>
-<meta name="description" content="35 onverharde beklimmingen in Europa, gesorteerd op rijtijd vanaf jouw vertrekpunt. Met oordelen van rijders die er geweest zijn, bronnen bij elke bewering en logistiek per basisdorp.">
+<meta name="description" content="35 onverharde beklimmingen en 19 vlakke gravelgebieden in Europa, gesorteerd op rijtijd vanaf jouw vertrekpunt. Met oordelen van rijders die er geweest zijn, bronnen bij elke bewering, logistiek per basisdorp en gezinsbasiskampen.">
 <meta property="og:title" content="Piste — onverharde beklimmingen op weekendafstand">
 <meta property="og:description" content="Welke grindbeklimmingen zijn het waard, en passen ze in een weekend? Rijtijd eerst, bronnen bij alles.">
 <meta name="theme-color" content="#0A0A0A">
@@ -52,6 +52,11 @@
   <aside class="drawer" id="drawer" aria-label="Beklimmingen">
     <button class="handle" id="handle" type="button" aria-label="Lijst open- of dichtklappen"><span></span></button>
 
+    <div class="modes" id="modeSwitch" role="group" aria-label="Soort terrein">
+      <button type="button" data-mode="klim" aria-pressed="true">Klimmen<small>grind naar boven</small></button>
+      <button type="button" data-mode="vlak" aria-pressed="false">Vlak<small>avontuur zonder cols</small></button>
+    </div>
+
     <div class="filters">
       <div class="row">
         <label class="range">
@@ -63,6 +68,11 @@
         <button data-f="alle" aria-pressed="true">Alles</button>
         <button data-f="parallel" aria-pressed="false">Naast een bekende col</button>
         <button data-f="puur" aria-pressed="false">Puur grind</button>
+      </div>
+      <div class="row chips" id="vfChips" role="group" aria-label="Oordeel" hidden>
+        <button data-f="alle" aria-pressed="true">Alles, ook de afvallers</button>
+        <button data-f="lat" aria-pressed="false">Haalt de lat</button>
+        <button data-f="top" aria-pressed="false">Top 5 gezinsweekend</button>
       </div>
       <div class="row chips" id="bikeChips" role="group" aria-label="Geschiktheid">
         <button data-f="alle" aria-pressed="true">Elke fiets</button>
@@ -98,7 +108,8 @@
       <p><b>Rijtijden</b> zijn schattingen: hemelsbreed maal 1,15, met 62, 85 of 100 km/u naarmate de afstand groeit, plus 20 minuten pauze per 300 km en, als je dat aanvinkt, 15 minuten laden per 300 km na de eerste 250 km. Reken op een tiental procent speling, het blijft een schatting.</p>
       <p><b>Overtochten</b> zijn vast meegerekend: Calais–Dover 2 uur, Hirtshals–Kristiansand 4,5 uur, Livorno–Bastia 7 uur, Livorno–Olbia 12 uur. Voor Corsica en Sardinië is vliegen en huren realistischer.</p>
       <p><b>Oordelen</b> zijn geijkt op een gravelbike met 650b × 55 mm. <b>Citaten</b> komen van rijders die er geweest zijn en hebben allemaal een bronlink. Check openingsdagen, tol en sneeuw vlak voor vertrek bij de lokale bron, dat scheelt ambras.</p>
-      <p>Kaart: Esri World Shaded Relief en World Imagery, CARTO, OpenStreetMap-bijdragers, hoogtedata Mapzen Terrarium via AWS Open Data.</p>
+      <p><b>Vlakke bestemmingen</b> komen uit een aparte onderzoeksronde (september 2026): negentien gebieden buiten de bergen, beoordeeld op rijervaring én gezinsbasis. Accommodaties zijn niet op beschikbaarheid gecontroleerd, en Komoot-citaten zijn soms automatische vertalingen. "Weinig bronnen" betekent: weinig gevonden, niet per se weinig bestaand.</p>
+      <p>Kaart, alleen open bronnen: satelliet Sentinel-2 cloudless 2024 door EOX (s2maps.eu, bevat aangepaste Copernicus Sentinel-data, CC BY-NC-SA 4.0), reliëf berekend uit Mapzen Terrarium-hoogtedata via AWS Open Data, plaatsnamen OpenFreeMap en OpenStreetMap-bijdragers.</p>
     </details></div>
   </aside>
 </main>

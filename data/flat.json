@@ -1,0 +1,570 @@
+[
+ {
+  "id": "v-hogevenen",
+  "name": "Hoge Venen",
+  "area": "Robertville en Waimes, provincie Luik",
+  "land": "België",
+  "lat": 50.5, "lng": 6.08,
+  "tier": "top", "rank": 1, "bike": "gravel", "family": "ja",
+  "loop": "2 × 50 km", "hm": "700 hm per lus",
+  "risk": "mist en rode vlag",
+  "line": "Kaal, winderig hoogveen op het hoogste plateau van België, fundamenteel anders dan de beboste Ardennendalen. Brede grindwegen door bos en heide, stukken oude spoorbaan, lunch bij Botrange en afdalingen naar de meren van Eupen en de Gileppe.",
+  "verdict": "Haalt de lat ruim. Een open hoogveenplateau met deze weidsheid bestaat in Nederland niet, en met minder dan drie uur rijden is dit de beste verhouding tussen moeite en opbrengst van de hele lijst. Technisch weinig variatie: vooral breed grind, en dat kan eentonig worden. 55 mm is hier ruim voldoende.",
+  "notes": [
+   "Klimmetjes vanuit de dalen zijn 200 tot 300 hm. De klim uit het Gileppedal is steil en zwaar.",
+   "Rode vlag sluit zones af: bij droge oostenwind in het voorjaar, in het broedseizoen van het korhoen (maart tot juni) en bij extreem winterweer. Check hautesfagnes.be of bel het parkcentrum Botrange, 080/44 03 00.",
+   "Beste periode juni tot en met september. Mist kan het plateau volledig inpakken.",
+   "Je deelt de paden met veel e-bikers. Singletrack is zeldzaam.",
+   "Tegenspraak: dezelfde schrijver noemt het een gravelwalhalla én spreekt van grindmonotonie. Beide kloppen: spectaculair landschap, weinig technische variatie."
+  ],
+  "base": [
+   {"t": "La Maison du Lac (Waimes): gîte voor 15 tot 20 personen, 8 slaapkamers, sauna en pingpong, op loopafstand van het meer van Robertville.", "u": "https://www.liegetourisme.be/la-maison-du-lac-gite.html"},
+   {"t": "Gîte de charme Robertville: 20 personen, 8 kamers met eigen badkamer, speelruimte en grote tuin.", "u": "https://fr.ardennes-etape.be/maisons-de-vacances-ardennes/Waimes/Gite-de-charme-Sauna-Jacuzzi-106002-01/"},
+   {"t": "Meer opties: Gîtes du Lac aan het meer van Robertville.", "u": "https://gitesdulac.be/"},
+   {"t": "Camping Mont Dragon bij Eupen, de standplaats van het HiRoads-gravelweekend.", "u": "https://hiroads.nl/reizen/gravel-weekend-hoge-venen-en-eifel/"},
+   {"t": "Zwemmen: strandjes en waterfietsen aan de meren van Robertville en Bütgenbach.", "u": "https://www.gites.fr/gites_robertville_48040.html"},
+   {"t": "Bij regen: kasteel Reinhardstein en het stadje Malmedy.", "u": "https://www.lacderobertville.be/"}
+  ],
+  "voices": [
+   {"who": "Jeroen Kleiberg, Bestemming Onbekend", "q": "Als losse rit vind ik de Vennbahn wat saai", "tr": "de spoorbaan is een prima verbindingsweg, maar op zichzelf eentonig", "url": "https://www.bestemmingonbekend.nl/op-gravel-over-de-hoge-venen-het-lege-dak-van-de-ardennen/"},
+   {"who": "Jeroen Kleiberg, Bestemming Onbekend", "q": "de mountainbikers en de gravelrijders trappen vrijwel allemaal met een motortje.", "tr": "je deelt de paden met veel e-bikers", "url": "https://www.bestemmingonbekend.nl/op-gravel-over-de-hoge-venen-het-lege-dak-van-de-ardennen/"},
+   {"who": "PlugPlug Gravel", "q": "Twee stukjes single track onderbreken de grindmonotonie.", "tr": "vooral breed grind, en dat kan monotoon worden", "url": "https://www.plugpluggravel.cc/post/plugplug-hoge-venen-het-gravelwalhalla"},
+   {"who": "PlugPlug Gravel", "q": "trek en sleur je je uit het dal van de Gileppe", "tr": "de klim uit het Gileppedal is steil en zwaar", "url": "https://www.plugpluggravel.cc/post/plugplug-hoge-venen-het-gravelwalhalla"}
+  ],
+  "routes": [
+   {"t": "Bestemming Onbekend: 100 km, 1.400 hm, splitst in twee lussen van 50 km", "u": "https://www.bestemmingonbekend.nl/op-gravel-over-de-hoge-venen-het-lege-dak-van-de-ardennen/"},
+   {"t": "Gravel Hautes Fagnes, Sourbrodt: 45 en 75 km", "u": "https://visitwallonia.be/nl/content/wedstrijd-sourbrodt-gravel-hautes-fagnes"},
+   {"t": "PlugPlug Hoge Venen", "u": "https://www.plugpluggravel.cc/post/plugplug-hoge-venen-het-gravelwalhalla"},
+   {"t": "HiRoads-weekend: 85 km/1.200 hm en 107 km/1.500 hm", "u": "https://hiroads.nl/reizen/gravel-weekend-hoge-venen-en-eifel/"}
+  ]
+ },
+ {
+  "id": "v-vulkaneifel",
+  "name": "Vulkaneifel",
+  "area": "Daun en Gunderath, Rijnland-Palts",
+  "land": "Duitsland",
+  "lat": 50.2, "lng": 6.83,
+  "tier": "top", "rank": 3, "bike": "gravel", "family": "ja",
+  "loop": "40–60 km", "hm": "800–1.200 hm per 80 km",
+  "risk": "voelt als middelgebergte",
+  "line": "Kratermeren (maren), gemengd bos, weiden, basalt en minerale bronnen waar je je bidon vult. Daun was in 2023 gastheer van het eerste Duitse gravelkampioenschap.",
+  "verdict": "Haalt de lat. De maren en de schaal zijn echt anders dan de Veluwe. Het risico: het voelt eerder als middelgebergte dan als vlak. De kampioenschapsroute is 115 km met 2.700 hm, dus plan bewust vlakkere lussen van 800 tot 1.200 hm per 80 km.",
+  "notes": [
+   "Ondergrond is vooral vaste bosweg en schotter. Een onverhard-percentage is niet gevonden.",
+   "April tot oktober. Rijnland-Palts heeft geen 2m-regel zoals Baden-Württemberg, maar let op lokale borden in natuurgebieden.",
+   "In herfst en winter wordt er gejaagd: let op afsluitingen bij drijfjachten."
+  ],
+  "base": [
+   {"t": "Center Parcs Park Eifel (Gunderath): huizen voor 2 tot 8 personen, subtropisch zwembad en Kids Factory-speelhal.", "u": "https://www.centerparcs.de/de-de/deutschland/fp_HE_ferienpark-park-eifel"},
+   {"t": "Ferienhaus EifelNatur 2 in Immerath: groepshuis tot 22 gasten.", "u": "https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p2672890"},
+   {"t": "Ferienhaus am Waldrand in Ulmen: tot 25 personen, met spelkamer.", "u": "https://www.gruppenhaus.de/ferienhaus-am-waldrand-vulkaneifel-mosel-ahr-ulmen-hs2880.html"},
+   {"t": "Zwemmen in het Schalkenmehrener en het Gemündener Maar, en in de Vulkaneifel Therme. Bij regen: Eifel-Vulkanmuseum en Wild- & Erlebnispark Daun.", "u": "https://www.parkurlaub.de/ferienparks/deutschland/eifel/"}
+  ],
+  "voices": [
+   {"who": "Racefietsblog", "q": "Het gravelparadijs is niet ver, dat ligt in de Eifel!", "tr": "Nederlandse rijders vinden de Eifel dichtbij en top", "url": "https://racefietsblog.nl/het-gravelparadijs-is-niet-ver-dat-ligt-in-de-eifel/"},
+   {"who": "Wout, Cobbles", "q": "een rondje van zo'n 230 km met bijna 4000 hoogtemeters", "tr": "reken op ca. 1.300 hm per dag; dit is serieus heuvelland", "url": "https://cobblescycling.com/2022/08/03/eifel-bikepacking-gravel-weekend/"},
+   {"who": "Plugout, over Oostkantons en Eifel", "q": "Veel groen, rustig, brede gravelstroken en kleine bospaden.", "tr": "rustig, breed gravel met wat bospaadjes", "url": "https://www.plugout.be/blog/inspiratie-1/bikepacking-in-de-eifel-oostkantons-15"}
+  ],
+  "routes": [
+   {"t": "Gravelnetwerk Vulkaneifel op Outdooractive, incl. de kampioenschapsroute", "u": "https://www.outdooractive.com/en/gravel-bike-routes/vulkaneifel/gravel-bike-routes-in-the-vulkaneifel/296174849/"},
+   {"t": "Komoot-gids gravelbiken rond Vulkaneifel", "u": "https://www.komoot.com/nl-nl/guide/3440777/gravelbiken-rond-vulkaneifel"}
+  ]
+ },
+ {
+  "id": "v-nordeifel",
+  "name": "Nordeifel en Nationalpark Eifel",
+  "area": "Schleiden en Heimbach, Noordrijn-Westfalen",
+  "land": "Duitsland",
+  "lat": 50.53, "lng": 6.47,
+  "tier": "nipt", "rank": 14, "bike": "gravel", "family": "onbekend", "thin": true,
+  "loop": "60–80 km", "hm": "niet gevonden",
+  "risk": "dun onderbouwd",
+  "line": "Rustige dalen, grote bossen, de stuwmeren Rursee en Urftsee en het voormalige militaire oefenterrein Vogelsang. Vooral vaste bosgravel.",
+  "verdict": "Een goed alternatief voor de Vulkaneifel met een half uur minder rijden. Minder uitgesproken, maar de stuwmeren maken het gezinsvriendelijk. Wel dun onderbouwd: er is maar één echt ritverslag over Schleiden gevonden.",
+  "notes": [
+   "Vooral brede paden. In de natuurparkzone zijn singletracks verboden.",
+   "Mei tot oktober. In het nationaal park fiets je alleen op aangewezen wegen.",
+   "Onverhard-percentages zijn niet gevonden."
+  ],
+  "base": [
+   {"t": "Een Nederlandse Komoot-rijder noemt een weekendhuisje in Schleiden een mooie uitvalsbasis. Groepsaccommodatie is niet onderzocht.", "u": "https://www.komoot.com/collection/3350601/-graveltochten-in-de-eifel"},
+   {"t": "Zwemmen kan in de Rursee.", "u": null}
+  ],
+  "voices": [
+   {"who": "Komoot-collectie Graveltochten in de Eifel", "q": "prachtige, vaak goede gravelpaden in rustige dalen of dwars door de bossen", "tr": "mooie, meestal goede gravel, afwisselend dal en bos", "url": "https://www.komoot.com/collection/3350601/-graveltochten-in-de-eifel"}
+  ],
+  "routes": [
+   {"t": "Komoot-collectie: ritten van 60, 70 en bijna 80 km", "u": "https://www.komoot.com/collection/3350601/-graveltochten-in-de-eifel"},
+   {"t": "Cobbles: Eifel-bikepackingweekend op basis van de Eifel Graveller", "u": "https://cobblescycling.com/2022/08/03/eifel-bikepacking-gravel-weekend/"}
+  ]
+ },
+ {
+  "id": "v-hogekempen",
+  "name": "Nationaal Park Hoge Kempen",
+  "area": "Genk en Dilsen-Stokkem, Belgisch-Limburg",
+  "land": "België",
+  "lat": 50.98, "lng": 5.63,
+  "tier": "ja", "rank": 4, "bike": "gravel", "family": "ja",
+  "loop": "45–100 km", "hm": "vlak, korte stenige hellinkjes",
+  "risk": "modder na regen",
+  "line": "Dennenbos, heide, grote plassen en vooral het mijnverleden: terrils, mijnmeren, verlaten treinsporen en fietsen door het water. Het enige nationaal park van België.",
+  "verdict": "Haalt de lat net. Het mijnlandschap met terrils geeft iets wat de Veluwe niet heeft, en het gezinsaanbod is top. De ritten zelf lijken op wat je thuis rijdt: kies het als je kort wilt rijden, niet voor het avontuur.",
+  "notes": [
+   "In het park mag je alleen op uitgezette mountainbikepaden fietsen. Je bent gebonden aan het netwerk.",
+   "Ca. 200 km onverharde MTB-paden, waarvan veel goed te gravelen.",
+   "Steile stenige hellinkjes en na regen modder, zoals eind juni 2024. Zandstroken zijn minder mul dan op de Veluwe.",
+   "Tegenspraak: de ene blog noemt het na regen een modderpartij, de andere zegt dat veel paden goed berijdbaar blijven. Waarschijnlijk verschilt het per lus en per seizoen."
+  ],
+  "base": [
+   {"t": "Terhills Resort by Center Parcs: cottages voor 2 tot 12 personen, Aqua Garden, kidsclub en cablepark.", "u": "https://www.centerparcs.eu/in-en/belgium/fp_TH_holiday-park-terhills-resort"},
+   {"t": "Park Hengelhoef: suites voor 2 tot 11 personen, subtropisch zwembad en strandmeer.", "u": "https://www.holidaysuites.eu/hengelhoef"},
+   {"t": "Bij regen: Plopsa Indoor Hasselt, C-Mine en Bokrijk.", "u": "https://www.lucandjune.com/review-terhills-resort-by-center-parcs/"}
+  ],
+  "voices": [
+   {"who": "Gravelrides.cc", "q": "Veel waterplassen en nog meer modder. Dan fiets je ineens 5-6 km/h.", "tr": "na regen wordt het een modderpartij", "url": "https://gravelrides.cc/hoge-kempen-be/"},
+   {"who": "Gravelritten.nl", "q": "En hoeveel het ook geregend heeft, veel paden blijven echt goed te fietsen.", "tr": "veel paden blijven ook na regen goed berijdbaar", "url": "https://gravelritten.nl/2024/07/08/np-hoge-kempen-en-omstreken/"},
+   {"who": "christian, Gravel Route Database", "q": "Op een bepaald punt wel aan een poort gekomen van een wandelroute.", "tr": "de route liep tegen een afgesloten wandelpad aan", "url": "https://gravelroutedatabase.be/routes/limburgse-heide.htm"}
+  ],
+  "routes": [
+   {"t": "Nationaal Park Gravel: 45, 70 en 100 km (parcours Bram Tankink)", "u": "https://www.nationaalparkhogekempen.be/nl/kalender/2021-10/nationaal-park-gravel"},
+   {"t": "Limburgse Heide, 65 km", "u": "https://gravelroutedatabase.be/routes/limburgse-heide.htm"},
+   {"t": "Gravelritten.nl: NP Hoge Kempen en omstreken", "u": "https://gravelritten.nl/2024/07/08/np-hoge-kempen-en-omstreken/"}
+  ]
+ },
+ {
+  "id": "v-kempen",
+  "name": "Kempen en Groote Heide",
+  "area": "Hamont-Achel en Lommel, grens België–Nederland",
+  "land": "België",
+  "lat": 51.3, "lng": 5.45,
+  "tier": "nee", "rank": 6, "bike": "grens", "family": "ja",
+  "loop": "65% onverhard", "hm": "vlak",
+  "risk": "mul zand op tankbanen",
+  "line": "Heide, vennen, dennenbos, tankbanen en de trappistenabdij van Achel, tussen Turnhout, Eindhoven en Weert.",
+  "verdict": "Haalt de lat niet. Prachtig, maar in wezen Brabants-Limburgs heideland, en dat heb je binnen een uur. Geen reden om met gezinnen weg te gaan. Een deel van de rijders vond het bovendien meer MTB dan gravel.",
+  "notes": [
+   "Mul zand en MTB-stukken. Mul zand op tankbanen kost ontzettend veel kracht.",
+   "Veel Vlaamse paden zijn gesloten voor fietsers.",
+   "De Golden Gravel Series in Heeze rijdt in het najaar."
+  ],
+  "base": [
+   {"t": "Center Parcs De Vossemeren in Lommel: cottages voor 2 tot 10 personen, Aqua Mundo en twee meren.", "u": "https://www.centerparcs.eu/in-en/belgium/fp_VM_holiday-park-de-vossemeren/cottages"}
+  ],
+  "voices": [
+   {"who": "Willy, Gravel Route Database", "q": "Zeker geen gravelroute. Een MTB fiets was vereist.", "tr": "dit is eigenlijk mountainbiketerrein", "url": "https://gravelroutedatabase.be/route/kempen"},
+   {"who": "Yannick, Gravel Route Database", "q": "Van kasterlee - Grobbendonk is het meer MTB dan gravel.", "tr": "een deel is te technisch voor een gravelbike", "url": "https://gravelroutedatabase.be/route/kempen"},
+   {"who": "Avontuur op reis, over een tankbaan", "q": "Dit is leuk, maar loodzwaar.", "tr": "mul zand op tankbanen kost veel kracht", "url": "https://www.avontuuropreis.com/golden-gravel-series-heeze/"},
+   {"who": "PlugPlug Gravel (promotionele route-site)", "q": "Als je nog geen gravelbike hebt, zou je er voor deze route één kopen...", "tr": "enthousiast, maar promotioneel", "url": "https://www.plugpluggravel.cc/post/de-heide-in-bloei-deze-5-gravelroutes-passeren-langs-purperen-velden"}
+  ],
+  "routes": [
+   {"t": "Gravel Route Database: De Kempen, 65% onverhard", "u": "https://gravelroutedatabase.be/route/kempen"},
+   {"t": "PlugPlug: 100- en 200-mijlsroutes tussen Turnhout en Eindhoven", "u": "https://www.plugpluggravel.cc/post/de-heide-in-bloei-deze-5-gravelroutes-passeren-langs-purperen-velden"}
+  ]
+ },
+ {
+  "id": "v-meinweg",
+  "name": "Meinweg en Brachter Wald",
+  "area": "Roermond en Herkenbosch, grens Nederland–Duitsland",
+  "land": "Nederland",
+  "lat": 51.2, "lng": 6.15,
+  "tier": "nee", "rank": 15, "bike": "gravel", "family": "onbekend",
+  "loop": "90 km", "hm": "korte klimmetjes",
+  "risk": "zandstukken, soms lopen",
+  "line": "Brede gravel, slingerpaadjes, WOII-resten in het Brachter Wald en korte klimmetjes door drie natuurgebieden, plus de Maasduinen.",
+  "verdict": "Haalt de lat niet voor een weekend weg. Een topdagtrip vanuit Utrecht, met verrassend Duits grensbos, maar geen basiskampbestemming.",
+  "notes": [
+   "Het hele jaar te rijden. In Nederland mag je alleen op aangewezen fietspaden.",
+   "Zandstukken; sommige routes vragen om te lopen."
+  ],
+  "base": [
+   {"t": "Niet specifiek onderzocht. Er zijn wel veel vakantieparken in Midden-Limburg.", "u": null}
+  ],
+  "voices": [
+   {"who": "Cobbles", "q": "Maar wat een dijk van een omgeving is dit zeg! Een waar gravelparadijs.", "tr": "het Duitse grensbos verrast", "url": "https://cobblescycling.com/2026/02/20/gravel-zachte-g-gravelbike-routes-noord-midden-limburg/"},
+   {"who": "Land van Grind & Zand, over De prairie van Limburg", "q": "Niet bang zijn om een stukje te lopen", "tr": "soms moet je lopen", "url": "https://landvangrindenzand.nl/routesoort/gravel/"}
+  ],
+  "routes": [
+   {"t": "Cobbles: 7 gravelroutes in Noord- en Midden-Limburg", "u": "https://cobblescycling.com/2026/02/20/gravel-zachte-g-gravelbike-routes-noord-midden-limburg/"},
+   {"t": "Land van Grind & Zand, onder meer routes van Bart Brentjens", "u": "https://landvangrindenzand.nl/routesoort/gravel/"}
+  ]
+ },
+ {
+  "id": "v-luneburg",
+  "name": "Lüneburger Heide",
+  "area": "Bispingen en Undeloh, Nedersaksen",
+  "land": "Duitsland",
+  "lat": 53.17, "lng": 9.95,
+  "tier": "top", "rank": 2, "bike": "grens", "family": "ja",
+  "loop": "40–60 km", "hm": "210 hm op 42 km",
+  "risk": "mul zand bij droogte",
+  "line": "Paarse heide op tien keer Veluwe-schaal, jeneverbesbossen, hunebedden en een autovrije kern rond Wilsede en de Totengrund die je alleen op spierkracht bereikt. Koffie in Wilsede.",
+  "verdict": "Haalt de lat. Qua karakter Veluwe-verwant, maar de schaal en de leegte van de autovrije heide zijn in Nederland ongeëvenaard, en het kinderaanbod is waarschijnlijk het beste van de hele lijst. Het risico is zand: kies routes met veel vast grind en rijd na regen.",
+  "notes": [
+   "De route Pures Heidevergnügen (26 km) is 15,9 km los terrein, 3,45 km vast grind en 819 m asfalt. De Große Heidetour (39 km) heeft daarentegen 16 km asfalt.",
+   "Na lange droogte adviseren routes een MTB. Na regen rijdt het juist beter.",
+   "Beste periode augustus en september (heidebloei), maar dan is het ook het drukst.",
+   "Blijf op de aangegeven wegen: beschermd natuurgebied. Grote delen ten zuiden (Munster, Bergen) zijn militair terrein.",
+   "Tegenspraak: rijders noemen dezelfde regio een Waldautobahn én onberijdbaar mul zand. Beide kloppen, afhankelijk van route en droogte."
+  ],
+  "base": [
+   {"t": "Center Parcs Bispinger Heide: huizen voor 2 tot 8 personen, Aqua Mundo, klimparadijs en kinderboerderij.", "u": "https://www.centerparcs.de/de-de/deutschland/fp_BS_ferienpark-bispinger-heide"},
+   {"t": "Heidhof Behringen: groepshuis met 35 bedden, badmeer vlakbij.", "u": "https://www.gruppenhaus.de/heidhof-behringen-bispingen-hs9066.html"},
+   {"t": "Heide Park Holiday Camp in Soltau: 81 hutten.", "u": "https://www.heide-park.de/uebernachten/holiday-camp/"},
+   {"t": "Bij regen: Snow Dome Bispingen, Heide Park en Vogelpark Walsrode.", "u": "https://www.gruppenhaus.de/waldpaedagogikzentrum-lueneburger-heide-haus-ehrhorn--schneverdingen-hs1947.html"}
+  ],
+  "voices": [
+   {"who": "Komoot-reactie, automatische vertaling uit het Duits", "q": "a very sandy passage on which you can't progress with a gravel bike", "tr": "een zandstuk van km 8 tot 10 was onberijdbaar", "url": "https://www.komoot.com/tour/481393325"},
+   {"who": "Komoot-tip, automatische vertaling", "q": "Washed-out gravel, Mullersand, deep ruts.", "tr": "uitgespoeld grind, mul zand, diepe sporen", "url": "https://www.komoot.com/highlight/6259663"},
+   {"who": "Komoot-tip", "q": "Waldautobahn at it's best!", "tr": "brede, snelle bosweg", "url": "https://www.komoot.com/highlight/3582801"},
+   {"who": "Komoot-tip, automatische vertaling", "q": "Finest gravel road in the direction of Harmstorf.", "tr": "prima gravelweg", "url": "https://www.komoot.com/highlight/4473622"}
+  ],
+  "routes": [
+   {"t": "Officiële gravelroutes Lüneburger Heide", "u": "https://www.lueneburger-heide.de/natur/fahrrad/023131/gravel-bike-touren.html"},
+   {"t": "Heideregion Uelzen: weekend van 106 km", "u": "https://www.heideregion-uelzen.de/aktiv-natur/radfahren/gravel-mtb"},
+   {"t": "Wo Heidesand zum Highlight wird: ondergrond per route", "u": "https://www.lueneburger-heide.de/service/artikel/027033/wo-heidesand-zum-highlight-wird.html"},
+   {"t": "Marsian Mountains, Orbit360-route van 150 km (video)", "u": "https://www.youtube.com/watch?v=N8yFKrAkHiI"}
+  ]
+ },
+ {
+  "id": "v-mecklenburg",
+  "name": "Mecklenburgische Seenplatte",
+  "area": "Wesenberg en Waren (Müritz), Mecklenburg-Voor-Pommeren",
+  "land": "Duitsland",
+  "lat": 53.35, "lng": 13.0,
+  "tier": "top", "rank": 9, "bike": "gravel", "family": "basic", "nights": "Pas vanaf 3 nachten",
+  "loop": "60 km", "hm": "400 hm op 60 km",
+  "risk": "zand, rijdt best vochtig",
+  "line": "Het Müritz-Nationalpark: 322 km² met volgens het park 107 meren groter dan een hectare. Zeearenden, kraanvogels, dennenbos, zandpassages, kasseien en oude lanen. Een lus van 60 km met zwemstops.",
+  "verdict": "Haalt de lat, als je minstens drie nachten gaat. Deze combinatie van meren en wildernis bestaat in Nederland niet, en met water overal is het basiskamp ideaal. Voor twee nachten is ruim zes uur rijden te lang.",
+  "notes": [
+   "Veel zandpassages die pas goed berijdbaar zijn als ze vochtig genoeg zijn. Reken op kasseien. 55 mm is hier een voordeel.",
+   "Mei tot september; half september is er minder toerisme en zijn er minder muggen.",
+   "In het nationaal park fiets je alleen op aangewezen wegen.",
+   "Let op: het Saddle Stories-verslag lijkt verbonden aan de Gravel Weekender en is dus niet volledig onafhankelijk.",
+   "Tegenspraak: op hetzelfde segment staan een vaste ondergrond en grof grind met diepe kuilen. Waarschijnlijk is het pad tussen 2022 en 2024 verslechterd."
+  ],
+  "base": [
+   {"t": "Ferienpark Pelzkuhl (Wesenberg): ca. 100 bedden aan het meer, fietsen en kano's inbegrepen, eenvoudig.", "u": "https://www.ferienpark-pelzkuhl.de/"},
+   {"t": "Ihr Familienpark aan de Kleine Labussee: 81 bedden, badplek op 200 m, kinderanimatie.", "u": "https://www.gruppenhaus.de/ferienanlage-und-campingplatz-ihr-familienpark-wesenberg-hs1382.html"},
+   {"t": "Bij regen: Müritzeum in Waren.", "u": null}
+  ],
+  "voices": [
+   {"who": "Saddle Stories", "q": "Es gibt viele Sandpassagen, die erst bei ausreichend Feuchtigkeit richtig gut befahrbar sind.", "tr": "zand; rijdt het best als het wat nat is", "url": "https://www.saddlestories.at/mecklenburgische-seenplatte/"},
+   {"who": "Komoot-tip, automatische vertaling", "q": "Firm ground, fine gravel and a few potholes.", "tr": "vaste ondergrond, fijn grind", "url": "https://www.komoot.com/highlight/4661708"},
+   {"who": "Komoot-tip, andere rijder, zelfde segment", "q": "This section is quite bumpy: partly coarse gravel and deep potholes", "tr": "hobbelig, grof grind, diepe kuilen", "url": "https://www.komoot.com/highlight/4661708"}
+  ],
+  "routes": [
+   {"t": "Saddle Stories: vijf gravelroutes, o.a. 60 km/400 hm", "u": "https://www.saddlestories.at/mecklenburgische-seenplatte/"},
+   {"t": "Bikepacking Neustrelitz–Demmin, ca. 150 km/1.000 hm", "u": "https://www.auf-nach-mv.de/magazin/bikepacking-seenplatte-mecklenburgische-schweiz"},
+   {"t": "Gravel-rondtoertochten van het toeristenbureau", "u": "https://www.mecklenburgische-seenplatte.de/mountainbiker-gravelbiker-touren"},
+   {"t": "Gravel Weekender in Camp Wesenberg", "u": "https://www.radfahren.de/events/gravel-abenteuer-mecklenburgische-seenplatte/"}
+  ]
+ },
+ {
+  "id": "v-jueterbog",
+  "name": "Fläming en oefenterrein Jüterbog",
+  "area": "Jüterbog, Brandenburg",
+  "land": "Duitsland",
+  "lat": 51.98, "lng": 13.0,
+  "tier": "nee", "rank": 19, "bike": "grens", "family": "onbekend",
+  "loop": "52 km, vooral verhard", "hm": "160 hm op 52 km",
+  "risk": "verboden terrein, munitie",
+  "line": "In theorie Sovjet-oefenterrein als avontuur: zand, dennen en open steppe. In de praktijk is het terrein van 9.280 ha nu grotendeels natuurreservaat.",
+  "verdict": "Niet doen. Het beeld van een Sovjet-oefenterrein als gravelspeeltuin botst met verboden gebied, munitieresten en brandgevaar. Brandenburg als geheel kan leuk zijn, maar deze bestemming haalt de lat niet.",
+  "notes": [
+   "Delen zijn Totalreservat, waar betreden grundsätzlich untersagt is. De politie patrouilleert met drone en helikopter.",
+   "De bodem is verontreinigd met munitieresten.",
+   "Bosbranden in 2019 (744 ha) en 2023 (733 ha).",
+   "De populairste Komoot-route (52 km) is volgens Komoot zelf mostly paved."
+  ],
+  "base": [
+   {"t": "Niet onderzocht. De regio heeft zwemmeren en een boomkroonpad in de Hoher Fläming.", "u": "https://www.jueterbog.eu/seite/302214/radeln,-skaten-und-wandern.html"}
+  ],
+  "voices": [
+   {"who": "BikeX", "q": "Denn Brandenburg ist flach. Sehr flach.", "tr": "echt vlak", "url": "https://www.bike-x.de/rennrad/touren/gravelbike-brandenburg-bikepacking-reise/"}
+  ],
+  "routes": [
+   {"t": "Politie Brandenburg over de controles (lees dit eerst)", "u": "https://polizei.brandenburg.de/pressemeldung/kontrollen-im-waldgebiet-um-jueterbog-be/1556461"},
+   {"t": "Komoot-gids rond Jüterbog, vooral verhard", "u": "https://www.komoot.com/guide/3445980/gravel-biking-around-jueterbog"}
+  ]
+ },
+ {
+  "id": "v-haervejen",
+  "name": "Hærvejen",
+  "area": "Vejle, Billund en Horsens, Jutland",
+  "land": "Denemarken",
+  "lat": 55.55, "lng": 9.15,
+  "tier": "nee", "rank": 11, "bike": "gravel", "family": "onbekend", "thin": true,
+  "loop": "ruim 250 km (hele route)", "hm": "niet gevonden",
+  "risk": "veel asfalt, wind",
+  "line": "De prehistorische Ossenweg: grindwegen, bospaden, heide, grafheuvels, runenstenen en de Jutlandse waterscheiding, waar de bronnen van de twee grootste Deense rivieren 200 m van elkaar liggen.",
+  "verdict": "De bewegwijzerde route haalt de lat niet: te veel asfalt. Een zelf samengestelde route rond Horsens of Vejle, met Legoland als trekpleister voor de kinderen, kan interessant zijn, maar is dun onderbouwd. Alleen het zuidelijke deel past binnen acht uur rijden.",
+  "notes": [
+   "Waar het grind is, rolt het snel. 55 mm is eerder overmaats.",
+   "Mei tot september. Het is vaak winderig.",
+   "Tegenspraak: de officiële Hærvejen-site noemt de fietsroute 80% asfalt, Gravellex.dk claimt 80% grind. De rijder van Farawayistan bevestigt de officiële versie."
+  ],
+  "base": [
+   {"t": "Niet specifiek onderzocht. Billund met Legoland en Lalandia ligt dicht bij de route; controleer zelf.", "u": null}
+  ],
+  "voices": [
+   {"who": "Robin Patijn, Farawayistan", "q": "The majority of the route is paved", "tr": "het meeste is asfalt", "url": "https://farawayistan.com/bikepacking-haervejen/"},
+   {"who": "Robin Patijn, Farawayistan", "q": "we also finally got some gravel under our wheels", "tr": "pas na een tijd kwam er gravel", "url": "https://farawayistan.com/bikepacking-haervejen/"},
+   {"who": "Komoot-tip", "q": "Amazing and fast rolling gravel roads along the Hærvejen trail.", "tr": "waar het gravel is, is het geweldig snel", "url": "https://www.komoot.com/highlight/3692133"}
+  ],
+  "routes": [
+   {"t": "Jutland Backroad Overnighter, minimum pavement", "u": "https://bikepacking.com/routes/jutland-backroad-overnighter/"},
+   {"t": "Farawayistan: bikepacking the Hærvejen", "u": "https://farawayistan.com/bikepacking-haervejen/"}
+  ]
+ },
+ {
+  "id": "v-sauerland",
+  "name": "Sauerland en Rothaargebirge",
+  "area": "Winterberg, Hochsauerland",
+  "land": "Duitsland",
+  "lat": 51.19, "lng": 8.53,
+  "tier": "nee", "rank": 13, "bike": "gravel", "family": "onbekend", "hilly": true,
+  "loop": "54–71 km", "hm": "974–1.890 hm per dag",
+  "risk": "veel steile hoogtemeters",
+  "line": "Eindeloze bosgravelwegen (Forstautobahnen) en de Kahler Asten op 843 m.",
+  "verdict": "Haalt de lat niet voor deze categorie. De aantrekkingskracht is hier juist het klimmen. Uitstekende ondergrond, maar met kinderen die niet ver willen en volwassenen die vlak zoeken, zit je hier verkeerd.",
+  "notes": [
+   "Ondergrond uitstekend voor 55 mm. Het klimmen is het probleem.",
+   "Mei tot oktober. In NRW mag je op wegen rijden, niet door het bos."
+  ],
+  "base": [
+   {"t": "Winterberg heeft veel gezinsvoorzieningen, zoals een klimpark in Medebach. Niet diepgaand onderzocht.", "u": "https://www.outdooractive.com/de/gravel-bike-touren/sauerland-rothaargebirge/gravel-bike-touren-in-sauerland-rothaargebirge/280079655/"}
+  ],
+  "voices": [
+   {"who": "LifeCYCLE", "q": "Das Sauerland ist ja bekannt für seine endlosen „Forstautobahnen“", "tr": "veel brede, eentonige bosweg", "url": "https://lifecyclemag.de/gravel-biken-im-sauerland/"},
+   {"who": "GravelDeluxe", "q": "auch für seine vielen teilweise steilen Höhenmeter", "tr": "veel steile hoogtemeters", "url": "https://graveldeluxe.com/gravel-routen/bikepacking-das-kleine-grossee-sauerland-abenteuer"}
+  ],
+  "routes": [
+   {"t": "Sauerland-Radwelt, o.a. Zu den Steinen: 54 km/974 hm", "u": "https://www.sauerland-radwelt.de/de/gravelbike"},
+   {"t": "Gravel Fest Winterberg, negen gescoute routes", "u": "https://lifecyclemag.de/gravel-biken-im-sauerland/"}
+  ]
+ },
+ {
+  "id": "v-harz",
+  "name": "Harz",
+  "area": "Wernigerode en Drei Annen Hohne, Saksen-Anhalt",
+  "land": "Duitsland",
+  "lat": 51.8, "lng": 10.7,
+  "tier": "nee", "rank": 8, "bike": "gravel", "family": "onbekend", "hilly": true,
+  "loop": "25–202 km", "hm": "ca. 2.500 hm per 100 km",
+  "risk": "middelgebergte",
+  "line": "Schotterautobahnen, stuwmeren en door de schorskever kaalgevreten bossen.",
+  "verdict": "Haalt de lat niet voor vlak. Middelgebergte met ongeveer 2.500 hm per 100 km. Een uitstekende bestemming, alleen in de verkeerde categorie.",
+  "notes": [
+   "Harter Brocken Gravel: 202 km, 5.123 hm, meer dan 90% schotter. HarzGravel rijdt een ronde van 25 km met 400 hm.",
+   "Goed voor 55 mm, al zijn sommige paden MTB-terrein.",
+   "Mei tot oktober. In het nationaal park gelden paden-regels."
+  ],
+  "base": [
+   {"t": "Wernigerode is een fijn stadje. Niet diepgaand onderzocht.", "u": null}
+  ],
+  "voices": [
+   {"who": "Google-review", "q": "man fährt zu 98% auf den schönsten Schotterautobahnen des Harzes", "tr": "bijna alles is mooi, breed grind", "url": "https://mountainsquad.com/products/harter-brocken-gravel"},
+   {"who": "MTB-News-forum", "q": "es durchaus einige Wege gibt, auf denen ich mit dem MTB besser dran wäre", "tr": "sommige paden zijn beter met een MTB", "url": "https://www.mtb-news.de/forum/t/gravel-im-harz.920450/"},
+   {"who": "Globetrotter", "q": "Technisch sind keine besonderen Fähigkeiten erforderlich.", "tr": "technisch eenvoudig", "url": "https://www.globetrotter.de/magazin/gravel-tour-harz-devils-trail/"}
+  ],
+  "routes": [
+   {"t": "Devil's Trail van de HARZ-Agentur", "u": "https://www.globetrotter.de/magazin/gravel-tour-harz-devils-trail/"},
+   {"t": "HarzGravel, sinds 2025", "u": "https://www.bike-x.de/alle-radarten/gravelbike/harzgravel-race-drei-annen-hohne/"}
+  ]
+ },
+ {
+  "id": "v-pfalz",
+  "name": "Pfälzerwald",
+  "area": "Neustadt an der Weinstraße, Rijnland-Palts",
+  "land": "Duitsland",
+  "lat": 49.35, "lng": 7.9,
+  "tier": "nipt", "rank": 10, "bike": "gravel", "family": "onbekend", "hilly": true,
+  "loop": "55–65 km", "hm": "1.300–1.500 hm per dag",
+  "risk": "heuvelachtig",
+  "line": "Een van de grootste aaneengesloten bosgebieden van Duitsland: bontzandsteenrotsen, beukenbos, Pfälzerwaldhütten en de wijnstraat.",
+  "verdict": "Grensgeval. Het zandsteenbos is uniek, maar 1.300 hm of meer per dag is heuvelachtig, niet vlak. Vooral onderbouwd door vakbladen.",
+  "notes": [
+   "Bikepacking-tocht van 226 km met 4.570 hm in 4 dagen, ca. 1.100 hm per dag. Geleide tochten 55 tot 65 km met 1.300 tot 1.500 hm.",
+   "Goed voor 55 mm, met trails ertussen.",
+   "April tot oktober. Kampvuur alleen afhankelijk van de bosbrandindex."
+  ],
+  "base": [
+   {"t": "Niet onderzocht.", "u": null}
+  ],
+  "voices": [
+   {"who": "Tour Magazin, via GravelDeluxe", "q": "zeitweise flott, gelegentlich rampig, aber fast immer weich und flowig", "tr": "soms snel, soms steil, meestal zacht en vloeiend", "url": "https://graveldeluxe.com/gravel-routen/pfaelzerwald-bikepacking-gravelbike-von-tour-magazin"},
+   {"who": "Tour Magazin (EN)", "q": "with luggage and without suspension, this is a challenge in the terrain", "tr": "zonder vering is het terrein zwaar", "url": "https://www.tour-magazin.de/en/germany/bikepacking-in-the-palatinate-forest-4-days-on-a-gravel-bike-in-the-palatinate-forest/"}
+  ],
+  "routes": [
+   {"t": "Tour Magazin: vijf gravel- en racefietstochten voor het lange weekend", "u": "https://www.tour-magazin.de/touren/deutschland/funf-gravelbike-und-rennrad-touren-fur-das-lange-wochenende/"},
+   {"t": "Gravelbike Tour Pfalz Pur (geleid)", "u": "https://www.pfalz.de/de/veranstaltung/gravelbike-tour-pfalz-pur"}
+  ]
+ },
+ {
+  "id": "v-mullerthal",
+  "name": "Mullerthal",
+  "area": "Echternach en Beaufort, Oost-Luxemburg",
+  "land": "Luxemburg",
+  "lat": 49.8, "lng": 6.35,
+  "tier": "nee", "rank": 17, "bike": "grens", "family": "onbekend", "marketing": true,
+  "loop": "100 km", "hm": "niet gevonden",
+  "risk": "veel wandelpaden",
+  "line": "Kleine Zwitserland: zandsteenrotsen, mos, watervallen en bos rond Echternach.",
+  "verdict": "Vooral marketing. Er zijn geen onafhankelijke ritverslagen gevonden: de meeste resultaten zijn AI-samenvattingen van Komoot of Outdooractive, of teksten van het toeristenbureau.",
+  "notes": [
+   "Geschiktheid voor 55 mm onduidelijk: er lopen veel wandelpaden door.",
+   "Er gelden bosbrandvoorschriften.",
+   "De UCI-gravelrace Eislek Gravel start in Vianden (Éislek), niet in het Mullerthal."
+  ],
+  "base": [
+   {"t": "Echternach heeft een meer. Niet diepgaand onderzocht.", "u": null}
+  ],
+  "voices": [
+   {"who": "Outdooractive-review (pagina zelf met AI gemaakt)", "q": "Sind mit dem Gravelbike und 40 mm breiten Reifen gefahren.", "tr": "met 40 mm ging het", "url": "https://www.outdooractive.com/en/mountain-biking-trails/luxembourg/mountain-biking-trails-in-luxembourg/2502698/"}
+  ],
+  "routes": [
+   {"t": "Komoot-rit Mullerthal, 100 km", "u": "https://www.komoot.com/tour/864636303"},
+   {"t": "Visit Luxembourg over gravelbiken", "u": "https://www.visitluxembourg.com/experience-luxembourg/nature-outdoors/cycling/gravelbiking-in-luxembourg"}
+  ]
+ },
+ {
+  "id": "v-gaume",
+  "name": "Gaume",
+  "area": "Virton en Florenville, provincie Luxemburg",
+  "land": "België",
+  "lat": 49.6, "lng": 5.45,
+  "tier": "nee", "rank": 18, "bike": "gravel", "family": "onbekend", "marketing": true, "thin": true,
+  "loop": "59–87 km", "hm": "719–970 hm",
+  "risk": "geen ritverslagen",
+  "line": "Het zuidelijkste puntje van België: glooiende kleine Provence met bos, weiden en de abdij van Orval.",
+  "verdict": "Te weinig onderbouwd. Sfeervol, maar gravel-avontuur wordt niet door rijders bevestigd. Er zijn geen citeerbare ritverslagen gevonden.",
+  "notes": [
+   "Waarschijnlijk goed voor 55 mm; er kunnen stukken lopen bij zitten.",
+   "In Wallonië geldt de Code Forestier.",
+   "De Komoot-highlight Gravel path in Parc naturel de Gaume heeft 11 beoordelingen van vijf sterren, maar geen tips."
+  ],
+  "base": [
+   {"t": "Niet onderzocht.", "u": null}
+  ],
+  "voices": [],
+  "routes": [
+   {"t": "Komoot: Gravel Gaume & More, 87,4 km/970 hm, Expert", "u": "https://www.komoot.com/guide/3467597/gravel-biking-around-virton"},
+   {"t": "Tarmacs: gravelroute rond Virton, 59 km/719 hm", "u": "https://tarmacs.app/fietsroutes/belgium/prov-luxembourg-be/virton/gravel/139089/gravelroute-rond-virton"}
+  ]
+ },
+ {
+  "id": "v-champagne",
+  "name": "Champagne",
+  "area": "Montagne de Reims en Épernay, Marne",
+  "land": "Frankrijk",
+  "lat": 49.15, "lng": 4.05,
+  "tier": "nee", "rank": 16, "bike": "gravel", "family": "onbekend", "marketing": true,
+  "loop": "45 km", "hm": "700 hm op 45 km",
+  "risk": "kalk glad bij regen",
+  "line": "Witte kalkpaden, chemins blancs, door de wijngaarden van Reims, Épernay en de Côte des Bar: de Strade Bianche van Frankrijk.",
+  "verdict": "Vooral marketing, al is het landschap uniek. Alleen operators en media gevonden, geen onafhankelijke rijders. Bij regen wordt kalk glad en plakkerig, en dat risico is serieus.",
+  "notes": [
+   "Uitstekend bij droog weer. Dat kalk bij nat weer glad wordt is algemene kennis, geen gevonden bron.",
+   "April tot oktober. Tijdens de oogst in september is het druk in de wijngaarden.",
+   "Etappe 9 van de Tour de France 2024 (Troyes–Troyes) reed over 14 sectoren chemins blancs, samen 32,2 km."
+  ],
+  "base": [
+   {"t": "Operator Gravelup gebruikt Val de Livre als basiskamp. Voor gezinnen niet onderzocht.", "u": "https://gravelup.earth/fr/destinations/champagne/"}
+  ],
+  "voices": [
+   {"who": "Vojo (met bandensponsor)", "q": "Les Hutchinson Touareg fusent sur ce revêtement idéal.", "tr": "de banden vliegen over de ideale ondergrond", "url": "https://www.vojomag.com/decouverte-modestie-et-noblesse-la-champagne-en-gravel/"}
+  ],
+  "routes": [
+   {"t": "Gravelup: operatordagen van ca. 45 km/700 hm", "u": "https://gravelup.earth/fr/destinations/champagne/"}
+  ]
+ },
+ {
+  "id": "v-morvan",
+  "name": "Morvan",
+  "area": "Lac des Settons, Bourgogne",
+  "land": "Frankrijk",
+  "lat": 47.2, "lng": 4.05,
+  "tier": "top", "rank": 5, "bike": "gravel", "family": "ja", "nights": "Lang weekend",
+  "loop": "40–60 km", "hm": "ca. 1.000 hm per dag",
+  "risk": "stukken lopen; GTMC is MTB",
+  "line": "Petit Canada: meren, eindeloze naaldbossen, bospistes en een oude spoorbaan, met het Lac des Settons als basiskamp.",
+  "verdict": "Haalt de lat, maar alleen voor een lang weekend: het is ruim zeven uur rijden. De combinatie van meren en bos is fantastisch voor gezinnen. Laat de GTMC links liggen, die is echt MTB.",
+  "notes": [
+   "Stukken lopen of dragen van 250 tot 800 m. Een deel van de routes is ca. 40% onverhard.",
+   "Mei tot september is het beste. De jacht loopt van september tot en met februari.",
+   "Tegenspraak: de media noemen het gemaakt voor gravel, een solo-rijder ontwijkt de GTMC als te zwaar."
+  ],
+  "base": [
+   {"t": "Camping Plage du Midi: zandstrand, overdekt verwarmd zwembad en een groot chaletgîte.", "u": "https://settons-camping.fr/bienvenue-au-camping-plage-du-midi/"},
+   {"t": "ACTIVITAL – Base des Settons: groepsgîte voor 60 tot meer dan 100 personen.", "u": "https://www.gitedegroupe.fr/gite-groupe-PO-5801.html"}
+  ],
+  "voices": [
+   {"who": "Expemag", "q": "je choisis souvent d'éviter la GTMC préférant les petites routes aux chemins galère", "tr": "de GTMC-paden zijn te zwaar; kies kleine wegen", "url": "https://www.expemag.com/carnet/traversee-du-morvan-la-valse-a-mille-etangs"},
+   {"who": "Expemag", "q": "encore pas mal de profil VTT", "tr": "nog steeds veel MTB-achtig", "url": "https://www.expemag.com/carnet/traversee-du-morvan-la-valse-a-mille-etangs"},
+   {"who": "Chilowé", "q": "On dirait que les vélos de gravel ont été inventés pour sillonner le Morvan !", "tr": "gemaakt voor gravel", "url": "https://chilowe.com/articles/morvan-gravel/"}
+  ],
+  "routes": [
+   {"t": "Morvan Gravel-circuits van 20 tot 300 km", "u": "https://www.morvansommetsetgrandslacs.com/en/sit/circuit-de-gravel-boucle-200km-du-lac-des-settons"},
+   {"t": "Randomorvan: Lac des Settons, 200 km/4.000 hm", "u": "https://randomorvan.fr/index.php/140-fiches3/gravel/441-morvan-gravel-lac-des-settons-200-kms-4000d"},
+   {"t": "Chilowé: gravelweekend, dagen van 40 tot 60 km", "u": "https://club.chilowe.com/voyages/activites/velo/week-end-gravel-au-coeur-du-morvan/"}
+  ]
+ },
+ {
+  "id": "v-fontainebleau",
+  "name": "Forêt de Fontainebleau",
+  "area": "Fontainebleau en Barbizon, Seine-et-Marne",
+  "land": "Frankrijk",
+  "lat": 48.38, "lng": 2.52,
+  "tier": "ja", "rank": 7, "bike": "gravel", "family": "basic",
+  "loop": "72 km", "hm": "650 hm op 72 km",
+  "risk": "zand, rotstuinen, druk",
+  "line": "Boswachterij ten zuiden van Parijs met zandsteenblokken (de bekende boulders), zandpaden, heide en een aquaduct.",
+  "verdict": "Haalt de lat. De boulders zijn uniek, maar het is druk. Op de hoofdpaden goed te doen met 55 mm; reken wel op zand en, in de Trois Pignons, rotstuinen.",
+  "notes": [
+   "Het Trois Pignons-pad is verboden voor MTB.",
+   "Veel lekke banden bij rijders met binnenbanden."
+  ],
+  "base": [
+   {"t": "Camping Le Lido, met Accueil Vélo-keurmerk.", "u": "https://www.komoot.com/guide/3476924/velo-gravel-autour-de-fontainebleau"}
+  ],
+  "voices": [
+   {"who": "light-bikes.fr", "q": "à VTT c'est vraiment galère", "tr": "ook met een MTB is het zwaar", "url": "https://light-bikes.fr/viewtopic.php?t=2437"},
+   {"who": "Caminade", "q": "Les crevaisons furent nombreuses car beaucoup roulent encore en chambres à air", "tr": "veel lekke banden", "url": "https://caminade.eu/gravelblo.du.velo.gravel.au.coeur.de.la.foret.de.fontainebleau-33-620.php"},
+   {"who": "Outdooractive", "q": "un petit peu de chaque surfaces (sable, pierre, terre,bitume)", "tr": "gevarieerde ondergrond", "url": "https://www.outdooractive.com/en/cycle-routes/fontainebleau/cycling-in-fontainebleau/11382101/"}
+  ],
+  "routes": [
+   {"t": "Openrunner: 72 km/650 hm", "u": "https://www.openrunner.com/en/route-details/20904600"},
+   {"t": "Komoot: route van Sofiane Sehili, 142 km", "u": "https://www.komoot.com/tour/345236305"},
+   {"t": "Komoot-gids gravel rond Fontainebleau", "u": "https://www.komoot.com/guide/3476924/velo-gravel-autour-de-fontainebleau"}
+  ]
+ },
+ {
+  "id": "v-suissenormande",
+  "name": "Suisse Normande",
+  "area": "Clécy en Putanges-le-Lac, Normandië",
+  "land": "Frankrijk",
+  "lat": 48.92, "lng": -0.48,
+  "tier": "nipt", "rank": 12, "bike": "grens", "family": "basic",
+  "loop": "40–80 km", "hm": "niet gevonden",
+  "risk": "steenachtige afdalingen",
+  "line": "Bocage en rivierdalen van de Orne, met rotsen als de Roche d'Oëtre.",
+  "verdict": "Haalt de lat nipt. Rijders zijn verdeeld: de een vindt het heerlijk rijden, de organisator zelf noemt een circuit niet ideaal voor gravel.",
+  "notes": [
+   "Wisselende ondergrond, met steenachtige afdalingen.",
+   "Normandicat rijdt in januari, dus ook in de winter berijdbaar."
+  ],
+  "base": [
+   {"t": "Aan het meer van Rabodanges kun je zwemmen.", "u": "https://www.decathlon-outdoor.com/fr-fr/explore/france/sortie-gravel-autour-de-rouen-64bad9853dd30"}
+  ],
+  "voices": [
+   {"who": "Bike Café", "q": "c'est un régal d'y poser ses roues", "tr": "heerlijk om er te rijden", "url": "https://bike-cafe.fr/2021/01/normandicat-version-offroad-une-exploration-velocipedique-du-patrimoine-normand/"},
+   {"who": "Normandicat", "q": "Ce circuit n'est pas idéal en Gravel.", "tr": "niet ideaal voor gravel", "url": "https://normandicat.com/"},
+   {"who": "Decathlon Outdoor", "q": "Descente caillouteuse aux rochers des parcs, attention.", "tr": "steenachtige afdaling", "url": "https://www.decathlon-outdoor.com/fr-fr/explore/france/gravel-en-suisse-normande-68543fa4f238f"}
+  ],
+  "routes": [
+   {"t": "Normandicat Offroad: 40 tot 80 km", "u": "https://bike-cafe.fr/2021/01/normandicat-version-offroad-une-exploration-velocipedique-du-patrimoine-normand/"},
+   {"t": "Decathlon Outdoor: gravel in de Suisse Normande", "u": "https://www.decathlon-outdoor.com/fr-fr/explore/france/gravel-en-suisse-normande-68543fa4f238f"}
+  ]
+ }
+]

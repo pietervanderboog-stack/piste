@@ -6,9 +6,9 @@ const RM=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
 const esc=t=>String(t??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 
 /* ---------- data ---------- */
-let CLIMBS,LOGI,ORIGINS;
+let CLIMBS,LOGI,ORIGINS,FLAT;
 try{
-  [CLIMBS,LOGI,ORIGINS]=await Promise.all(["data/climbs.json","data/logistics.json","data/origins.json"].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()})));
+  [CLIMBS,LOGI,ORIGINS,FLAT]=await Promise.all(["data/climbs.json","data/logistics.json","data/origins.json","data/flat.json"].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()})));
 }catch(e){
   $("#list").innerHTML='<div class="empty">De gegevens laden niet. Open de site via een webserver (bijvoorbeeld <code>python -m http.server</code>), niet als los bestand.</div>';
   return;
@@ -40,8 +40,22 @@ const LOGI_LBL={base:"Basisdorp",sleep:"Slapen",park:"Parkeren en laden",water:"
 const SHIFT={gravel:"grens",grens:"mtb",mtb:"mtb"};
 /* verdicts are calibrated on 55 mm; narrower tyres shift one step */
 const bikeFor=c=>state.tyre<45?SHIFT[c.bike]:c.bike;
+const TIER={top:["Top 5 gezinsweekend","top"],ja:["Haalt de lat","ja"],nipt:["Haalt de lat nipt","nipt"],nee:["Haalt de lat niet","nee"]};
+const FAMLBL={ja:"Gezinsbasis uitgezocht",basic:"Gezinsbasis, eenvoudig",onbekend:"Gezinsbasis niet onderzocht"};
+const SORTS={klim:[["drive","rijtijd"],["alt","hoogste punt"],["gravel","grindkilometers"],["gain","stijging"]],vlak:[["drive","rijtijd"],["rank","onderbouwing door rijders"]]};
+/* per-mode copy: header tag, ticker, intro, count nouns */
+const COPY={
+  klim:{tag:"Grind waar je goesting in krijgt, op weekendafstand.",one:"beklimming",many:"beklimmingen",back:"Alle beklimmingen",see:"Bekijk deze klim",
+    ticker:"Grind tot boven de 3000 meter · Rijtijd eerst · Bronnen bij alles · Tunnel Parpaillon dicht sinds juli 2024 · Sommeiller autovrij op di en do · Assietta autovrij op wo en za · ",
+    intro:"De mooiste beklimmingen van Europa liggen naast de beroemde cols, niet erop. Oude militaire wegen, skipistes en bospaden, grind tot boven de 3000 meter. Hier gesorteerd op wat voor een weekend echt telt: hoe lang je in de auto zit. Elk oordeel komt van rijders die er geweest zijn, met een bron erbij. Geen reclamepraat, wel bronnen."},
+  vlak:{tag:"Grind zonder cols, met een meer voor de kinderen.",one:"bestemming",many:"bestemmingen",back:"Alle vlakke bestemmingen",see:"Bekijk deze bestemming",
+    ticker:"Vlak en avontuurlijk · Rijtijd eerst · Mul zand? Rijd de heide na regen · Hoge Venen: rode vlag bij brandgevaar · Kalk en leem worden glad na regen · Jüterbog: verboden terrein, munitie · ",
+    intro:"Geen cols, wel avontuur. Negentien gebieden buiten de bergen, gewogen op twee dingen: rijden de volwassenen er iets wat ze thuis niet hebben, en is er een basiskamp met meer, zwembad of speelhal voor de kinderen. Wat vooral marketing bleek, staat er ook, met die waarschuwing erbij."}
+};
 
-const state={origin:{...ORIGINS[0]},maxh:30,type:"alle",bike:"alle",sort:"drive",ev:true,tyre:55,layer:"sat",sel:null,picking:false,view:"home"};
+const state={mode:"klim",origin:{...ORIGINS[0]},maxh:30,type:"alle",vf:"alle",bike:"alle",sort:"drive",ev:true,tyre:55,layer:"sat",sel:null,picking:false,view:"home"};
+const DATA=()=>state.mode==="vlak"?FLAT:CLIMBS;
+const findAny=id=>CLIMBS.find(x=>x.id===id)||FLAT.find(x=>x.id===id);
 
 /* ---------- URL state ---------- */
 function readHash(){
@@ -53,10 +67,12 @@ function readHash(){
     if(o)state.origin={...o};
     else{const m=v.match(/^(-?\d+(\.\d+)?),(-?\d+(\.\d+)?)$/);if(m)state.origin={n:"Eigen punt",id:"custom",lat:+m[1],lng:+m[3]};}
   }
+  state.mode=q.get("m")==="vlak"||FLAT.some(c=>c.id===path)?"vlak":"klim";
   if(q.has("max"))state.maxh=Math.min(30,Math.max(2,+q.get("max")||30));
   if(q.has("type")&&["alle","parallel","puur"].includes(q.get("type")))state.type=q.get("type");
+  if(q.has("vf")&&["alle","lat","top"].includes(q.get("vf")))state.vf=q.get("vf");
   if(q.has("bike")&&["alle","gravel","grens","mtb"].includes(q.get("bike")))state.bike=q.get("bike");
-  if(q.has("sort")&&["drive","alt","gravel","gain"].includes(q.get("sort")))state.sort=q.get("sort");
+  state.sort=SORTS[state.mode].some(s=>s[0]===q.get("sort"))?q.get("sort"):"drive";
   if(q.has("ev"))state.ev=q.get("ev")!=="0";
   if(q.has("tyre"))state.tyre=+q.get("tyre")||55;
   if(q.has("layer")&&["relief","sat"].includes(q.get("layer")))state.layer=q.get("layer");
@@ -64,9 +80,11 @@ function readHash(){
 }
 function writeHash(path){
   const q=new URLSearchParams();
+  if(state.mode==="vlak")q.set("m","vlak");
   if(state.origin.id!==ORIGINS[0].id)q.set("from",state.origin.id==="custom"?state.origin.lat.toFixed(3)+","+state.origin.lng.toFixed(3):state.origin.id);
   if(state.maxh<30)q.set("max",state.maxh);
-  if(state.type!=="alle")q.set("type",state.type);
+  if(state.mode==="klim"&&state.type!=="alle")q.set("type",state.type);
+  if(state.mode==="vlak"&&state.vf!=="alle")q.set("vf",state.vf);
   if(state.bike!=="alle")q.set("bike",state.bike);
   if(state.sort!=="drive")q.set("sort",state.sort);
   if(!state.ev)q.set("ev","0");
@@ -79,26 +97,46 @@ function writeHash(path){
 let suppressHash=false;
 
 /* ---------- overview map ---------- */
+/* Open sources only. Esri served "Map data not yet available" tiles past its coverage and CARTO now stamps
+   "API KEY REQUIRED" over its label tiles. Satellite: Sentinel-2 cloudless (10 m, overzoomed past z14).
+   Relief: hillshade computed from the open Terrarium DEM. Place names: OpenFreeMap vector tiles (OSM), Dutch names first. */
+const S2="https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg";
+const TERRARIUM=["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"];
 const RASTER={
-  relief:{type:"raster",tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}"],tileSize:256,maxzoom:13,attribution:"Esri"},
-  labels:{type:"raster",tiles:["https://a.basemaps.cartocdn.com/rastertiles/light_only_labels/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/rastertiles/light_only_labels/{z}/{x}/{y}.png","https://c.basemaps.cartocdn.com/rastertiles/light_only_labels/{z}/{x}/{y}.png"],tileSize:256,maxzoom:18,attribution:"CARTO, OpenStreetMap"},
-  labelsdark:{type:"raster",tiles:["https://a.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}.png","https://b.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}.png","https://c.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}.png"],tileSize:256,maxzoom:18,attribution:"CARTO, OpenStreetMap"},
-  sat:{type:"raster",tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"],tileSize:256,maxzoom:17,attribution:"Esri, Maxar"},
-  dem:{type:"raster-dem",tiles:["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],encoding:"terrarium",tileSize:256,maxzoom:14,attribution:"Mapzen Terrarium"}
+  demshade:{type:"raster-dem",tiles:TERRARIUM,encoding:"terrarium",tileSize:256,maxzoom:12,attribution:"Mapzen Terrarium, AWS Open Data"},
+  sat:{type:"raster",tiles:[S2],tileSize:256,maxzoom:14,attribution:'<a href="https://s2maps.eu" target="_blank" rel="noopener">Sentinel-2 cloudless</a> door EOX IT Services GmbH (bevat aangepaste Copernicus Sentinel-data 2024)'},
+  dem:{type:"raster-dem",tiles:TERRARIUM,encoding:"terrarium",tileSize:256,maxzoom:14,attribution:"Mapzen Terrarium"}
 };
-const map=new maplibregl.Map({container:"map",style:{version:8,sources:RASTER,layers:[
-  {id:"relief",type:"raster",source:"relief",paint:{"raster-saturation":-.3,"raster-brightness-min":.05}},
+const OMT={type:"vector",url:"https://tiles.openfreemap.org/planet",attribution:'<a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>, <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap-bijdragers</a>'};
+const NAME=["coalesce",["get","name:nl"],["get","name"]];
+const place=(id,cls,minz,maxz,size,extra)=>({id,type:"symbol",source:"omt","source-layer":"place",minzoom:minz,maxzoom:maxz,
+  filter:["==",["get","class"],cls],layout:Object.assign({"text-field":NAME,"text-font":["Noto Sans Regular"],"text-size":size,"text-max-width":8},extra||{}),
+  paint:{"text-color":"#F2F2F2","text-halo-color":"rgba(10,10,10,.85)","text-halo-width":1.4}});
+const LABELS=[
+  place("pl-country","country",3,6.5,11,{"text-transform":"uppercase","text-letter-spacing":.18,"text-font":["Noto Sans Bold"]}),
+  place("pl-city","city",4,24,["interpolate",["linear"],["zoom"],4,10.5,9,15]),
+  place("pl-town","town",7,24,["interpolate",["linear"],["zoom"],7,11,12,14]),
+  place("pl-village","village",10,24,11.5)
+];
+const map=new maplibregl.Map({container:"map",style:{version:8,glyphs:"https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",sources:{...RASTER,omt:OMT},layers:[
+  {id:"paper",type:"background",paint:{"background-color":"#ECE9E1"}},
+  {id:"relief",type:"hillshade",source:"demshade",paint:{"hillshade-exaggeration":.55,"hillshade-shadow-color":"#5B5E57","hillshade-highlight-color":"#FFFFFF","hillshade-accent-color":"#8C8F86"}},
   {id:"sat",type:"raster",source:"sat",layout:{visibility:"none"}},
-  {id:"labels",type:"raster",source:"labels",paint:{"raster-opacity":.9}},
-  {id:"labelsdark",type:"raster",source:"labelsdark",paint:{"raster-opacity":.95}}
+  ...LABELS
 ]},center:[7.5,47.5],zoom:4.6,minZoom:3,maxZoom:15,attributionControl:{compact:true},scrollZoom:true});
 map.addControl(new maplibregl.NavigationControl({showCompass:false}),"bottom-right");
-map.on("load",()=>{applyLayer();render(true);});
+/* credits stay one click away behind the (i) button instead of sprawling over the map */
+const foldAttrib=m=>{const a=m.getContainer().querySelector(".maplibregl-ctrl-attrib");if(a){a.classList.remove("maplibregl-compact-show");a.removeAttribute("open");}};
+map.on("load",()=>{foldAttrib(map);applyLayer();render(true);});
 function applyLayer(){
-  map.setLayoutProperty("sat","visibility",state.layer==="sat"?"visible":"none");
-  map.setLayoutProperty("relief","visibility",state.layer==="sat"?"none":"visible");
-  map.setLayoutProperty("labels","visibility",state.layer==="sat"?"none":"visible");
-  map.setLayoutProperty("labelsdark","visibility",state.layer==="sat"?"visible":"none");
+  const sat=state.layer==="sat";
+  map.setLayoutProperty("sat","visibility",sat?"visible":"none");
+  map.setLayoutProperty("paper","visibility",sat?"none":"visible");
+  map.setLayoutProperty("relief","visibility",sat?"none":"visible");
+  LABELS.forEach(l=>{
+    map.setPaintProperty(l.id,"text-color",sat?"#F2F2F2":"#2A2C28");
+    map.setPaintProperty(l.id,"text-halo-color",sat?"rgba(10,10,10,.85)":"rgba(236,233,225,.9)");
+  });
   $$(".layers button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.layer===state.layer));
 }
 $$(".layers button").forEach(b=>b.addEventListener("click",()=>{state.layer=b.dataset.layer;applyLayer();writeHash(currentPath());}));
@@ -113,7 +151,7 @@ function drawMarkers(rows,fit){
   Object.values(markers).forEach(m=>m.remove());markers={};
   if(popup){popup.remove();popup=null;}
   rows.forEach((c,i)=>{
-    const el=document.createElement("div");el.className="pin"+(c.done?" done":"")+(state.sel===c.id?" sel":"");
+    const el=document.createElement("div");el.className="pin"+(c.tier?" flat":"")+(c.done?" done":"")+(state.sel===c.id?" sel":"");
     el.style.background=BANDCOL[band(c._h)];el.textContent=i+1;el.title=c.name;
     el.addEventListener("click",e=>{e.stopPropagation();focusOn(c,false);});
     markers[c.id]=new maplibregl.Marker({element:el}).setLngLat([c.lng,c.lat]).addTo(map);
@@ -134,7 +172,7 @@ function focusOn(c,fly=true){
   if(fly)map.flyTo({center:[c.lng,c.lat],zoom:Math.max(map.getZoom(),8),duration:RM?0:900});
   if(popup)popup.remove();
   popup=new maplibregl.Popup({offset:18,closeButton:false,maxWidth:"260px"}).setLngLat([c.lng,c.lat])
-    .setHTML('<div class="pop"><span class="pn">'+esc(c.name)+'</span><span class="pm">'+esc(c.area)+', '+fmtH(c._h)+' rijden</span><a href="#/'+c.id+'">Bekijk deze klim</a></div>').addTo(map);
+    .setHTML('<div class="pop"><span class="pn">'+esc(c.name)+'</span><span class="pm">'+esc(c.area)+', '+fmtH(c._h)+' rijden</span><a href="#/'+c.id+hashQuery()+'">'+COPY[state.mode].see+'</a></div>').addTo(map);
 }
 
 /* ---------- list ---------- */
@@ -155,7 +193,29 @@ function tagsHTML(c){
   t.push('<span class="tagp">'+esc(c.land)+'</span>');
   return '<div class="tags">'+t.join("")+'</div>';
 }
+function flatTagsHTML(c){
+  const b=bikeFor(c),t=[];
+  t.push('<span class="tagp tier-'+TIER[c.tier][1]+'">'+TIER[c.tier][0]+'</span>');
+  if(c.nights)t.push('<span class="tagp warn">'+esc(c.nights)+'</span>');
+  if(c.hilly)t.push('<span class="tagp warn">Eigenlijk heuvels</span>');
+  if(c.marketing)t.push('<span class="tagp mtb">Vooral marketing</span>');
+  if(c.thin)t.push('<span class="tagp">Dun onderbouwd</span>');
+  if(c.family!=="onbekend")t.push('<span class="tagp'+(c.family==="ja"?" logi":"")+'">'+FAMLBL[c.family]+'</span>');
+  t.push('<span class="tagp'+(b==="mtb"?" mtb":"")+'">'+BIKELBL[b]+'</span>');
+  t.push('<span class="tagp">'+esc(c.land)+'</span>');
+  return '<div class="tags">'+t.join("")+'</div>';
+}
+function flatCardHTML(c,i){
+  const bd=band(c._h);
+  return '<button class="card'+(state.sel===c.id?" sel":"")+'" data-id="'+c.id+'" style="--i:'+i+'">'+
+   '<div class="card-top"><div><h3 class="cname">'+esc(c.name)+'</h3><div class="carea">'+esc(c.area)+'</div></div>'+
+   '<div class="drive '+bd+'"><div class="h">'+fmtH(c._h)+'</div><div class="l">rijden</div></div></div>'+
+   '<div class="meta"><span><b>'+esc(c.loop)+'</b></span><span><b>'+esc(c.hm)+'</b></span></div>'+
+   '<div class="risk">Let op: '+esc(c.risk)+'</div>'+
+   flatTagsHTML(c)+'</button>';
+}
 function cardHTML(c,i){
+  if(c.tier)return flatCardHTML(c,i);
   const bd=band(c._h);
   return '<button class="card'+(state.sel===c.id?" sel":"")+'" data-id="'+c.id+'" style="--i:'+i+'">'+
    '<div class="card-top"><div><h3 class="cname">'+esc(c.name)+'</h3><div class="carea">'+esc(c.area)+'</div></div>'+
@@ -165,19 +225,22 @@ function cardHTML(c,i){
    tagsHTML(c)+'</button>';
 }
 function rows(){
-  let r=CLIMBS.map(c=>({...c,_h:driveH(state.origin,c,state.ev)}));
+  let r=DATA().map(c=>({...c,_h:driveH(state.origin,c,state.ev)}));
   r=r.filter(c=>c._h<=state.maxh+.001);
-  if(state.type!=="alle")r=r.filter(c=>c.type===state.type);
+  if(state.mode==="klim"&&state.type!=="alle")r=r.filter(c=>c.type===state.type);
+  if(state.mode==="vlak"&&state.vf==="lat")r=r.filter(c=>c.tier!=="nee");
+  if(state.mode==="vlak"&&state.vf==="top")r=r.filter(c=>c.tier==="top");
   if(state.bike!=="alle")r=r.filter(c=>bikeFor(c)===state.bike);
-  const S={drive:(a,b)=>a._h-b._h,alt:(a,b)=>b.top-a.top,gravel:(a,b)=>b.gravel-a.gravel,gain:(a,b)=>b.gain-a.gain};
+  const S={drive:(a,b)=>a._h-b._h,alt:(a,b)=>b.top-a.top,gravel:(a,b)=>b.gravel-a.gravel,gain:(a,b)=>b.gain-a.gain,rank:(a,b)=>a.rank-b.rank};
   return r.sort(S[state.sort]);
 }
 function render(fit){
   const r=rows();
   $("#cnt").textContent=r.length;
-  $("#cntlbl").textContent=(r.length===1?"beklimming":"beklimmingen")+" binnen "+(state.maxh<30?fmtH(state.maxh):"bereik")+" vanaf "+state.origin.n;
+  const C=COPY[state.mode];
+  $("#cntlbl").textContent=(r.length===1?C.one:C.many)+" binnen "+(state.maxh<30?fmtH(state.maxh):"bereik")+" vanaf "+state.origin.n;
   $("#list").innerHTML=r.length?r.map(cardHTML).join(""):'<div class="empty">Niets binnen deze filters. Rek de rijtijd wat op of zet een filter af.<button class="pill" id="resetBtn" type="button">Zet de filters terug</button></div>';
-  const rb=$("#resetBtn");if(rb)rb.addEventListener("click",()=>{state.maxh=30;state.type="alle";state.bike="alle";syncControls();render(true);writeHash("");});
+  const rb=$("#resetBtn");if(rb)rb.addEventListener("click",()=>{state.maxh=30;state.type="alle";state.vf="alle";state.bike="alle";syncControls();render(true);writeHash("");});
   $$("#list .card").forEach(el=>{
     el.addEventListener("click",()=>{location.hash="#/"+el.dataset.id+hashQuery();});
     el.addEventListener("mouseenter",()=>{const c=r.find(x=>x.id===el.dataset.id);if(c&&window.innerWidth>820)focusOn(c,false);});
@@ -211,12 +274,33 @@ function chipGroup(s,key){
   g.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
     state[key]=b.dataset.f;g.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));render(true);writeHash("");});
 }
-chipGroup("#typeChips","type");chipGroup("#bikeChips","bike");
+chipGroup("#typeChips","type");chipGroup("#vfChips","vf");chipGroup("#bikeChips","bike");
+$("#modeSwitch").addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b||b.dataset.mode===state.mode)return;
+  state.mode=b.dataset.mode;state.sel=null;
+  if(!SORTS[state.mode].some(s=>s[0]===state.sort))state.sort="drive";
+  syncControls();render(true);writeHash("");
+});
+let modeShown=null;
+function syncMode(){
+  const m=state.mode,C=COPY[m];
+  $$("#modeSwitch button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.mode===m));
+  $("#typeChips").hidden=m!=="klim";$("#vfChips").hidden=m!=="vlak";
+  document.body.dataset.mode=m;
+  if(modeShown===m)return;modeShown=m;
+  $("#sort").innerHTML=SORTS[m].map(s=>'<option value="'+s[0]+'">'+s[1]+'</option>').join("");
+  $(".top .tag").textContent=C.tag;
+  $(".ticker span").textContent=C.ticker+C.ticker;
+  $("#intro p").textContent=C.intro;
+  $("#map").setAttribute("aria-label","Kaart met "+C.many);
+}
 function syncControls(){
+  syncMode();
   sel.value=state.origin.id;
   $("#maxh").value=state.maxh;$("#maxhv").textContent=state.maxh<30?fmtH(state.maxh):"30 uur";
   $("#ev").checked=state.ev;$("#sort").value=state.sort;$("#tyre").value=String(state.tyre);
   $$("#typeChips button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===state.type));
+  $$("#vfChips button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===state.vf));
   $$("#bikeChips button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===state.bike));
 }
 $("#share").addEventListener("click",async()=>{
@@ -262,23 +346,72 @@ function gpxHTML(c){
   if(!g.length)return '<p class="sub">Nog geen gecontroleerde route gevonden. Zoek op Komoot of RideWithGPS op de naam van de klim en kijk goed of het onverharde stuk er wel in zit.</p>';
   return '<div class="gpx">'+g.map(x=>'<a href="'+esc(x.u)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M3 17l6-9 4 6 3-4 5 7"/></svg><span>'+esc(x.t)+'</span></a>').join("")+'</div>';
 }
+function heroHTML(c,h,q){
+  return '<div class="hero"><div class="m3d" id="m3d"></div>'+
+   '<a class="back" href="#/'+q+'"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>'+COPY[c.tier?"vlak":"klim"].back+'</a>'+
+   '<div class="hero-note"><span>Hoogte 1,4× uitvergroot</span><button type="button" id="spinBtn" aria-pressed="true">Laat draaien</button></div>'+
+   '<div class="titlebox"><div class="in"><div class="area">'+esc(c.area)+', '+esc(c.land)+'</div><h1>'+esc(c.name)+'</h1>'+
+   '<div class="dh"><b>'+fmtH(h)+'</b> rijden vanaf '+esc(state.origin.n)+(state.ev?', inclusief laadstops':'')+(c.cross?', inclusief overtocht':'')+'</div></div></div></div>';
+}
+function prevNextHTML(id,q){
+  const all=rows();const idx=all.findIndex(x=>x.id===id);
+  const prev=idx>0?all[idx-1]:null,next=idx>-1&&idx<all.length-1?all[idx+1]:null;
+  return '<div class="nextprev">'+(prev?'<a href="#/'+prev.id+q+'"><small>Vorige, '+fmtH(prev._h)+' rijden</small>'+esc(prev.name)+'</a>':'<span></span>')+
+    (next?'<a href="#/'+next.id+q+'" style="text-align:right"><small>Volgende, '+fmtH(next._h)+' rijden</small>'+esc(next.name)+'</a>':'')+'</div>';
+}
+function showProfile(c){
+  $("#profile").hidden=false;$("#home").setAttribute("aria-hidden","true");
+  $("#profile").scrollTop=0;
+  $$(".pnav a").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();const el=document.getElementById(a.dataset.go);if(el)el.scrollIntoView({behavior:RM?"auto":"smooth",block:"start"});}));
+  $("#shareClimb").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(location.href);toast("Link gekopieerd, stuur maar door");}catch(e){toast(location.href);}});
+  document.title=c.name+" — Piste";
+  mount3d(c);
+}
+function openFlat(c){
+  const id=c.id;
+  state.sel=id;state.view="profile";
+  const h=driveH(state.origin,c,state.ev),b=bikeFor(c),shifted=b!==c.bike;
+  const q=hashQuery();
+  const nav=[["oordeel","Oordeel"],["praktisch","Praktisch"],["basiskamp","Basiskamp"],["stemmen","Rijders"],["routes","Routes"]];
+  const voices=c.voices.length?c.voices.map(voiceHTML).join(""):'<div class="nolog">Geen citeerbare ritverslagen gevonden. Dat is hier het oordeel: weinig gevonden, dus weinig bevestigd.</div>';
+  $("#profile").innerHTML=heroHTML(c,h,q)+
+   '<nav class="pnav">'+nav.map(n=>'<a href="#'+n[0]+'" data-go="'+n[0]+'">'+n[1]+'</a>').join("")+'</nav>'+
+   '<div class="pbody"><div class="pmain">'+
+     '<p class="lead">'+esc(c.line)+'</p>'+
+     '<div class="stats flatstats"><div class="stat"><div class="v">'+esc(c.loop)+'</div><div class="k">typische rit</div></div>'+
+       '<div class="stat"><div class="v">'+esc(c.hm)+'</div><div class="k">klimwerk</div></div>'+
+       '<div class="stat"><div class="v">'+esc(c.risk)+'</div><div class="k">grootste risico</div></div>'+
+       '<div class="stat"><div class="v">#'+c.rank+' van '+FLAT.length+'</div><div class="k">onderbouwing door rijders</div></div></div>'+
+     flatTagsHTML(c)+
+     '<div class="verdict" id="oordeel"><h2>Is dit de rit waard?</h2>'+esc(c.verdict)+
+       (shifted?'<div class="tyreline">Dit oordeel is geschreven voor 55 mm. Op jouw '+state.tyre+' mm tonen we het label één stap strenger: '+BIKELBL[b].toLowerCase()+'.</div>':'')+'</div>'+
+     '<h2 class="sec" id="praktisch">Praktisch, kort en goed</h2><ul class="notes-list">'+c.notes.map(n=>'<li>'+esc(n)+'</li>').join("")+'</ul>'+
+     '<h2 class="sec" id="basiskamp">Basiskamp voor gezinnen</h2><ul class="facts">'+c.base.map(f=>'<li>'+esc(f.t)+srcLink(f.u)+'</li>').join("")+'</ul>'+
+     '<h2 class="sec" id="stemmen">Wat rijders erover zeggen</h2>'+voices+
+     prevNextHTML(id,q)+
+   '</div><aside class="pside">'+
+     '<div class="side-card" id="routes"><h2>Routes en verslagen</h2><div class="gpx">'+c.routes.map(x=>'<a href="'+esc(x.u)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M3 17l6-9 4 6 3-4 5 7"/></svg><span>'+esc(x.t)+'</span></a>').join("")+'</div></div>'+
+     '<div class="side-card"><h2>In het kort</h2><ul class="facts">'+
+       '<li>'+TIER[c.tier][0]+'</li>'+
+       '<li>'+FAMLBL[c.family]+'</li>'+
+       '<li>'+BIKELBL[b]+(shifted?' op '+state.tyre+' mm':' op 55 mm')+'</li>'+
+       (c.nights?'<li>'+esc(c.nights)+'</li>':'')+
+     '</ul></div>'+
+     '<div class="side-card"><h2>Stuur deze bestemming door</h2><p class="sub">De link onthoudt je vertrekpunt en filters, handig voor de groepschat.</p><button class="pill" id="shareClimb" type="button">Kopieer de link</button></div>'+
+   '</aside></div>';
+  showProfile(c);
+}
 function openProfile(id){
-  const c=CLIMBS.find(x=>x.id===id);if(!c){location.hash="#/";return;}
+  const c=findAny(id);if(!c){location.hash="#/";return;}
+  if(c.tier)return openFlat(c);
   state.sel=id;state.view="profile";
   const h=driveH(state.origin,c,state.ev),b=bikeFor(c),shifted=b!==c.bike;
   const L=LOGI[id];
   const nav=[["oordeel","Oordeel"],["praktisch","Praktisch"],["stemmen","Rijders"]];
   if(L)["base","sleep","park","water","food","season"].forEach(k=>{if(L[k]&&L[k].length)nav.push([k,LOGI_LBL[k]]);});
   nav.push(["routes","Routes"]);
-  const all=rows();const idx=all.findIndex(x=>x.id===id);
-  const prev=idx>0?all[idx-1]:null,next=idx>-1&&idx<all.length-1?all[idx+1]:null;
   const q=hashQuery();
-  $("#profile").innerHTML=
-   '<div class="hero"><div class="m3d" id="m3d"></div>'+
-   '<a class="back" href="#/'+q+'"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>Alle beklimmingen</a>'+
-   '<div class="hero-note"><span>Hoogte 1,4× uitvergroot</span><button type="button" id="spinBtn" aria-pressed="true">Laat draaien</button></div>'+
-   '<div class="titlebox"><div class="in"><div class="area">'+esc(c.area)+', '+esc(c.land)+'</div><h1>'+esc(c.name)+'</h1>'+
-   '<div class="dh"><b>'+fmtH(h)+'</b> rijden vanaf '+esc(state.origin.n)+(state.ev?', inclusief laadstops':'')+(c.cross?', inclusief overtocht':'')+'</div></div></div></div>'+
+  $("#profile").innerHTML=heroHTML(c,h,q)+
    '<nav class="pnav">'+nav.map(n=>'<a href="#'+n[0]+'" data-go="'+n[0]+'">'+n[1]+'</a>').join("")+'</nav>'+
    '<div class="pbody"><div class="pmain">'+
      '<p class="lead">'+esc(c.line)+'</p>'+bandHTML(c,0,true)+
@@ -292,8 +425,7 @@ function openProfile(id){
      '<h2 class="sec" id="praktisch">Praktisch, kort en goed</h2><ul class="notes-list">'+c.notes.map(n=>'<li>'+esc(n)+'</li>').join("")+'</ul>'+
      '<h2 class="sec" id="stemmen">Wat rijders erover zeggen</h2>'+c.voices.map(voiceHTML).join("")+
      logiHTML(c)+
-     '<div class="nextprev">'+(prev?'<a href="#/'+prev.id+q+'"><small>Vorige, '+fmtH(prev._h)+' rijden</small>'+esc(prev.name)+'</a>':'<span></span>')+
-       (next?'<a href="#/'+next.id+q+'" style="text-align:right"><small>Volgende, '+fmtH(next._h)+' rijden</small>'+esc(next.name)+'</a>':'')+'</div>'+
+     prevNextHTML(id,q)+
    '</div><aside class="pside">'+
      '<div class="side-card" id="routes"><h2>Routes om in te laden</h2>'+gpxHTML(c)+'</div>'+
      '<div class="side-card"><h2>In het kort</h2><ul class="facts">'+
@@ -304,18 +436,13 @@ function openProfile(id){
      '</ul></div>'+
      '<div class="side-card"><h2>Stuur deze klim door</h2><p class="sub">De link onthoudt je vertrekpunt en filters, handig voor de groepschat.</p><button class="pill" id="shareClimb" type="button">Kopieer de link</button></div>'+
    '</aside></div>';
-  $("#profile").hidden=false;$("#home").setAttribute("aria-hidden","true");
-  $("#profile").scrollTop=0;
-  $$(".pnav a").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();const el=document.getElementById(a.dataset.go);if(el)el.scrollIntoView({behavior:RM?"auto":"smooth",block:"start"});}));
-  $("#shareClimb").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(location.href);toast("Link gekopieerd, stuur maar door");}catch(e){toast(location.href);}});
-  document.title=c.name+" — Piste";
-  mount3d(c);
+  showProfile(c);
 }
 function mount3d(c){
   if(map3d){map3d.remove();map3d=null;}
   if(spin){cancelAnimationFrame(spin);spin=null;}
   const bearing=(c.lng*37)%360;
-  map3d=new maplibregl.Map({container:"m3d",style:{version:8,sources:{sat:RASTER.sat,dem:RASTER.dem,dem2:RASTER.dem,labels:RASTER.labels},
+  map3d=new maplibregl.Map({container:"m3d",style:{version:8,sources:{sat:RASTER.sat,dem:RASTER.dem,dem2:RASTER.dem},
     layers:[{id:"sat",type:"raster",source:"sat"},{id:"hill",type:"hillshade",source:"dem2",paint:{"hillshade-exaggeration":.35,"hillshade-shadow-color":"#2b2f2a","hillshade-highlight-color":"#fff8e6"}}],
     sky:{"sky-color":"#0A0A0A","horizon-color":"#1c1f18","fog-color":"#0A0A0A","fog-ground-blend":.6,"horizon-fog-blend":.75,"sky-horizon-blend":.7,"atmosphere-blend":.9},
     terrain:{source:"dem",exaggeration:1.4}},
@@ -325,7 +452,7 @@ function mount3d(c){
   new maplibregl.Marker({element:el}).setLngLat([c.lng,c.lat]).addTo(map3d);
   let spinning=true;
   const step=()=>{if(!spinning)return;map3d.setBearing(map3d.getBearing()+.04);spin=requestAnimationFrame(step);};
-  map3d.on("load",()=>{if(spinning)spin=requestAnimationFrame(step);});
+  map3d.on("load",()=>{foldAttrib(map3d);if(spinning)spin=requestAnimationFrame(step);});
   const stop=()=>{spinning=false;$("#spinBtn")?.setAttribute("aria-pressed","false");};
   ["mousedown","touchstart","wheel"].forEach(ev=>map3d.getCanvas().addEventListener(ev,stop,{passive:true}));
   $("#spinBtn").addEventListener("click",()=>{spinning=!spinning;$("#spinBtn").setAttribute("aria-pressed",spinning);if(spinning)spin=requestAnimationFrame(step);});
@@ -334,7 +461,7 @@ function closeProfile(){
   state.view="home";
   $("#profile").hidden=true;$("#home").removeAttribute("aria-hidden");
   if(map3d){map3d.remove();map3d=null;}if(spin){cancelAnimationFrame(spin);spin=null;}
-  document.title="Piste — onverharde beklimmingen op weekendafstand";
+  document.title=state.mode==="vlak"?"Piste — vlak grind op weekendafstand":"Piste — onverharde beklimmingen op weekendafstand";
   map.resize();
   const c=rows().find(x=>x.id===state.sel);if(c)focusOn(c,true);
 }
@@ -344,11 +471,11 @@ function route(){
   if(suppressHash){suppressHash=false;return;}
   const path=readHash();
   syncControls();
-  if(path&&CLIMBS.some(c=>c.id===path)){render(false);openProfile(path);}
+  if(path&&findAny(path)){render(false);openProfile(path);}
   else{if(state.view==="profile")closeProfile();else render(true);}
 }
 window.addEventListener("hashchange",route);
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&state.view==="profile")location.hash="#/"+hashQuery();});
 const initial=readHash();syncControls();
-if(initial&&CLIMBS.some(c=>c.id===initial)){map.once("load",()=>openProfile(initial));}
+if(initial&&findAny(initial)){map.once("load",()=>openProfile(initial));}
 })();
