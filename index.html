@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Piste — onverharde beklimmingen op weekendafstand</title>
-<meta name="description" content="35 onverharde beklimmingen en 19 vlakke gravelgebieden in Europa, gesorteerd op rijtijd vanaf jouw vertrekpunt. Met oordelen van rijders die er geweest zijn, bronnen bij elke bewering, logistiek per basisdorp en gezinsbasiskampen.">
+<meta name="description" content="35 onverharde beklimmingen en 16 gravelgebieden in Europa, gesorteerd op rijtijd vanaf jouw vertrekpunt. Met oordelen van rijders die er geweest zijn, bronnen bij elke bewering, logistiek per basisdorp en gezinsbasiskampen.">
 <meta property="og:title" content="Piste — onverharde beklimmingen op weekendafstand">
 <meta property="og:description" content="Welke grindbeklimmingen zijn het waard, en passen ze in een weekend? Rijtijd eerst, bronnen bij alles.">
 <meta name="theme-color" content="#0A0A0A">
@@ -34,7 +34,7 @@
 
 <main id="home">
   <div id="map" role="region" aria-label="Kaart met beklimmingen"></div>
-  <div class="ticker" aria-hidden="true"><span>Grind tot boven de 3000 meter · Rijtijd eerst · Bronnen bij alles · Tunnel Parpaillon dicht sinds juli 2024 · Sommeiller autovrij op di en do · Assietta autovrij op wo en za · Grind tot boven de 3000 meter · Rijtijd eerst · Bronnen bij alles · Tunnel Parpaillon dicht sinds juli 2024 · Sommeiller autovrij op di en do · Assietta autovrij op wo en za · </span></div>
+  <div class="ticker" aria-hidden="true"><span>Grind tot boven de 3000 meter · Rijtijd eerst · Bronnen bij alles · Tunnel Parpaillon dicht sinds juli 2024 · Beste legale grensgravel ligt net over de Duitse grens · Mul zand? Rijd de heide na regen · Hoge Venen: rode vlag bij brandgevaar · Pieterpad is een wandelpad · Grind tot boven de 3000 meter · Rijtijd eerst · Bronnen bij alles · Tunnel Parpaillon dicht sinds juli 2024 · Beste legale grensgravel ligt net over de Duitse grens · Mul zand? Rijd de heide na regen · Hoge Venen: rode vlag bij brandgevaar · Pieterpad is een wandelpad · </span></div>
 
   <div class="mapbar">
     <div class="layers" role="group" aria-label="Kaartlaag">
@@ -52,10 +52,6 @@
   <aside class="drawer" id="drawer" aria-label="Beklimmingen">
     <button class="handle" id="handle" type="button" aria-label="Lijst open- of dichtklappen"><span></span></button>
 
-    <div class="modes" id="modeSwitch" role="group" aria-label="Soort terrein">
-      <button type="button" data-mode="klim" aria-pressed="true">Klimmen<small>grind naar boven</small></button>
-      <button type="button" data-mode="vlak" aria-pressed="false">Vlak<small>avontuur zonder cols</small></button>
-    </div>
 
     <div class="filters">
       <div class="row">
@@ -68,11 +64,8 @@
         <button data-f="alle" aria-pressed="true">Alles</button>
         <button data-f="parallel" aria-pressed="false">Naast een bekende col</button>
         <button data-f="puur" aria-pressed="false">Puur grind</button>
-      </div>
-      <div class="row chips" id="vfChips" role="group" aria-label="Oordeel" hidden>
-        <button data-f="alle" aria-pressed="true">Alles, ook de afvallers</button>
-        <button data-f="lat" aria-pressed="false">Haalt de lat</button>
-        <button data-f="top" aria-pressed="false">Top 5 gezinsweekend</button>
+        <button data-f="vlak" aria-pressed="false">Vlak gebied</button>
+        <button data-f="top" aria-pressed="false">Toppick gezinsweekend</button>
       </div>
       <div class="row chips" id="bikeChips" role="group" aria-label="Geschiktheid">
         <button data-f="alle" aria-pressed="true">Elke fiets</button>
@@ -103,12 +96,12 @@
 
     <div class="count"><button class="pill small" id="filtBtn" type="button" aria-expanded="true">Filters</button><b id="cnt">35</b> <span id="cntlbl">beklimmingen binnen bereik</span> <button class="linkbtn" id="share" type="button">Stuur deze selectie door</button></div>
     <div class="scroll" id="scroll">
-      <div class="intro" id="intro"><p>De mooiste beklimmingen van Europa liggen naast de beroemde cols, niet erop. Oude militaire wegen, skipistes en bospaden, grind tot boven de 3000 meter. Hier gesorteerd op wat voor een weekend echt telt: hoe lang je in de auto zit. Elk oordeel komt van rijders die er geweest zijn, met een bron erbij. Geen reclamepraat, wel bronnen.</p><button class="linkbtn" id="introClose" type="button">Oké, gesnapt</button></div>
-      <div class="list" id="list"></div><details class="notes"><summary>Hoe de rijtijden en oordelen tot stand komen</summary>
+      <div class="intro" id="intro"><p>Grind waar je iets beleeft, gesorteerd op wat voor een weekend echt telt: hoe lang je in de auto zit. Van oude militaire wegen tot boven de 3000 meter tot heide, kolonies en grensbossen op anderhalf uur van huis, met een basiskamp waar de kinderen ook iets te doen hebben. Elk oordeel komt van rijders die er geweest zijn, met een bron erbij. Wat rijders afraden, laten we weg.</p><button class="linkbtn" id="introClose" type="button">Oké, gesnapt</button></div>
+      <div class="list" id="list"></div><div id="extra"></div><details class="notes"><summary>Hoe de rijtijden en oordelen tot stand komen</summary>
       <p><b>Rijtijden</b> zijn schattingen: hemelsbreed maal 1,15, met 62, 85 of 100 km/u naarmate de afstand groeit, plus 20 minuten pauze per 300 km en, als je dat aanvinkt, 15 minuten laden per 300 km na de eerste 250 km. Reken op een tiental procent speling, het blijft een schatting.</p>
       <p><b>Overtochten</b> zijn vast meegerekend: Calais–Dover 2 uur, Hirtshals–Kristiansand 4,5 uur, Livorno–Bastia 7 uur, Livorno–Olbia 12 uur. Voor Corsica en Sardinië is vliegen en huren realistischer.</p>
       <p><b>Oordelen</b> zijn geijkt op een gravelbike met 650b × 55 mm. <b>Citaten</b> komen van rijders die er geweest zijn en hebben allemaal een bronlink. Check openingsdagen, tol en sneeuw vlak voor vertrek bij de lokale bron, dat scheelt ambras.</p>
-      <p><b>Vlakke bestemmingen</b> komen uit een aparte onderzoeksronde (september 2026): negentien gebieden buiten de bergen, beoordeeld op rijervaring én gezinsbasis. Accommodaties zijn niet op beschikbaarheid gecontroleerd, en Komoot-citaten zijn soms automatische vertalingen. "Weinig bronnen" betekent: weinig gevonden, niet per se weinig bestaand.</p>
+      <p><b>Gebieden</b> (de ronde bolletjes zonder hoogteprofiel) komen uit twee onderzoeksrondes in september 2026, beoordeeld op rijervaring én gezinsbasis. Gebieden die rijders of het onderzoek duidelijk afraden, staan niet op de kaart: <span id="hiddenlist"></span>. Accommodaties zijn niet op beschikbaarheid gecontroleerd, en Komoot-citaten zijn soms automatische vertalingen. "Weinig bronnen" betekent: weinig gevonden, niet per se weinig bestaand.</p>
       <p>Kaart, alleen open bronnen: satelliet Sentinel-2 cloudless 2024 door EOX (s2maps.eu, bevat aangepaste Copernicus Sentinel-data, CC BY-NC-SA 4.0), reliëf berekend uit Mapzen Terrarium-hoogtedata via AWS Open Data, plaatsnamen OpenFreeMap en OpenStreetMap-bijdragers.</p>
     </details></div>
   </aside>

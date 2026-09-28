@@ -69,7 +69,7 @@ select{appearance:none;-webkit-appearance:none;background:rgba(255,255,255,.06) 
 .picknote button{background:none;border:none;color:var(--onacc);text-decoration:underline;margin-left:6px}
 
 /* pins */
-.pin{width:28px;height:28px;border-radius:0;display:grid;place-items:center;font-size:11.5px;font-weight:700;color:var(--onacc);
+.pin{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:11.5px;font-weight:700;color:var(--onacc);
   border:2px solid #0A0A0A;box-shadow:0 2px 6px rgba(0,0,0,.5);cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s}
 .pin:hover{transform:scale(1.15)}
 .pin.sel{transform:scale(1.25);box-shadow:0 0 0 3px #fff,0 3px 8px rgba(0,0,0,.5)}
@@ -82,14 +82,6 @@ select{appearance:none;-webkit-appearance:none;background:rgba(255,255,255,.06) 
 .drawer{position:absolute;top:38px;left:12px;bottom:12px;width:var(--drawer-w);z-index:10;display:flex;flex-direction:column;
   background:var(--linen2);backdrop-filter:var(--glass);-webkit-backdrop-filter:var(--glass);border:1px solid var(--line);border-radius:0;box-shadow:0 12px 40px rgba(0,0,0,.35);overflow:hidden}
 .handle{display:none}
-.modes{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line2);flex:none}
-.modes button{border:none;background:none;padding:12px 18px 10px;text-align:left;font-size:20px;font-weight:800;letter-spacing:-.05em;text-transform:uppercase;line-height:1;color:var(--ink3);
-  border-bottom:3px solid transparent;transition:color .18s var(--ease),border-color .18s var(--ease),background .18s var(--ease)}
-.modes button small{display:block;margin-top:4px;font-size:11.5px;font-weight:400;letter-spacing:0;text-transform:none;color:var(--ink3)}
-.modes button:hover{color:var(--ink);background:rgba(255,255,255,.04)}
-.modes button[aria-pressed=true]{color:var(--moss);border-bottom-color:var(--moss)}
-.modes button[aria-pressed=true] small{color:var(--ink2)}
-.modes button+button{border-left:1px solid var(--line2)}
 .filters{padding:16px 18px 6px;border-bottom:1px solid var(--line2)}
 .row{margin-bottom:10px}
 .range{display:block}
@@ -146,7 +138,6 @@ input[type=range]{width:100%;accent-color:var(--moss);margin:0}
 .tagp.tier-nee{border-color:var(--far);background:rgba(255,59,107,.12);color:var(--far)}
 .risk{margin-top:6px;font-size:13px;color:var(--mid)}
 .flatstats .v{font-size:16px;line-height:1.2;letter-spacing:-.01em}
-.pin.flat{border-radius:50%}
 .empty{padding:40px 18px;text-align:center;color:var(--ink2)}
 .empty button{display:block;margin:12px auto 0}
 
@@ -248,8 +239,6 @@ span.src{color:var(--ink3);border-style:dashed}
   .drawer.up{height:calc(100% - 10px)}
   .drawer.down{height:112px}
   .drawer.down .filters,.drawer.down .scroll{display:none}
-  .drawer.down{height:170px}
-  .modes button{padding:8px 14px;font-size:17px}
   .handle{display:grid;place-items:center;height:22px;background:none;border:none;flex:none}
   .handle span{width:40px;height:4px;border-radius:2px;background:var(--line)}
   .filters{padding:4px 14px 6px}
@@ -272,3 +261,14 @@ select,option{color:var(--ink);background-color:#141414}
 .range b,.count b,.meta b{color:var(--ink)}
 .top .tag{color:var(--ink2)}
 .stat .k,.drive .l,.band-axis,.carea{color:var(--ink3)}
+
+/* long routes and no-go panels under the list */
+.xtra{margin:6px 10px;border:1px solid var(--line2);background:rgba(255,255,255,.03)}
+.xtra summary{cursor:pointer;padding:11px 12px;font-size:14px;font-weight:600;display:flex;justify-content:space-between}
+.xtra summary span{color:var(--ink3);font-weight:400}
+.xr{padding:10px 12px;border-top:1px solid var(--line2);font-size:13.5px}
+.xr .xn{font-weight:600;color:var(--ink)}
+.xr .xn small{font-weight:400;color:var(--ink3);margin-left:4px}
+.xr p{margin:4px 0;color:var(--ink2)}
+.xr p.xw{color:var(--mid)}
+.xr .src{margin-left:0}

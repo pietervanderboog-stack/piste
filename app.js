@@ -6,9 +6,9 @@ const RM=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
 const esc=t=>String(t??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 
 /* ---------- data ---------- */
-let CLIMBS,LOGI,ORIGINS,FLAT;
+let CLIMBS,LOGI,ORIGINS,FLAT,CORR;
 try{
-  [CLIMBS,LOGI,ORIGINS,FLAT]=await Promise.all(["data/climbs.json","data/logistics.json","data/origins.json","data/flat.json"].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()})));
+  [CLIMBS,LOGI,ORIGINS,FLAT,CORR]=await Promise.all(["data/climbs.json","data/logistics.json","data/origins.json","data/flat.json","data/corridors.json"].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()})));
 }catch(e){
   $("#list").innerHTML='<div class="empty">De gegevens laden niet. Open de site via een webserver (bijvoorbeeld <code>python -m http.server</code>), niet als los bestand.</div>';
   return;
@@ -40,22 +40,14 @@ const LOGI_LBL={base:"Basisdorp",sleep:"Slapen",park:"Parkeren en laden",water:"
 const SHIFT={gravel:"grens",grens:"mtb",mtb:"mtb"};
 /* verdicts are calibrated on 55 mm; narrower tyres shift one step */
 const bikeFor=c=>state.tyre<45?SHIFT[c.bike]:c.bike;
-const TIER={top:["Top 5 gezinsweekend","top"],ja:["Haalt de lat","ja"],nipt:["Haalt de lat nipt","nipt"],nee:["Haalt de lat niet","nee"]};
+const TIER={top:["Toppick gezinsweekend","top"],ja:["Haalt de lat","ja"],nipt:["Haalt de lat nipt","nipt"],nee:["Haalt de lat niet","nee"]};
 const FAMLBL={ja:"Gezinsbasis uitgezocht",basic:"Gezinsbasis, eenvoudig",onbekend:"Gezinsbasis niet onderzocht"};
-const SORTS={klim:[["drive","rijtijd"],["alt","hoogste punt"],["gravel","grindkilometers"],["gain","stijging"]],vlak:[["drive","rijtijd"],["rank","onderbouwing door rijders"]]};
-/* per-mode copy: header tag, ticker, intro, count nouns */
-const COPY={
-  klim:{tag:"Grind waar je goesting in krijgt, op weekendafstand.",one:"beklimming",many:"beklimmingen",back:"Alle beklimmingen",see:"Bekijk deze klim",
-    ticker:"Grind tot boven de 3000 meter · Rijtijd eerst · Bronnen bij alles · Tunnel Parpaillon dicht sinds juli 2024 · Sommeiller autovrij op di en do · Assietta autovrij op wo en za · ",
-    intro:"De mooiste beklimmingen van Europa liggen naast de beroemde cols, niet erop. Oude militaire wegen, skipistes en bospaden, grind tot boven de 3000 meter. Hier gesorteerd op wat voor een weekend echt telt: hoe lang je in de auto zit. Elk oordeel komt van rijders die er geweest zijn, met een bron erbij. Geen reclamepraat, wel bronnen."},
-  vlak:{tag:"Grind zonder cols, met een meer voor de kinderen.",one:"bestemming",many:"bestemmingen",back:"Alle vlakke bestemmingen",see:"Bekijk deze bestemming",
-    ticker:"Vlak en avontuurlijk · Rijtijd eerst · Mul zand? Rijd de heide na regen · Hoge Venen: rode vlag bij brandgevaar · Kalk en leem worden glad na regen · Jüterbog: verboden terrein, munitie · ",
-    intro:"Geen cols, wel avontuur. Negentien gebieden buiten de bergen, gewogen op twee dingen: rijden de volwassenen er iets wat ze thuis niet hebben, en is er een basiskamp met meer, zwembad of speelhal voor de kinderen. Wat vooral marketing bleek, staat er ook, met die waarschuwing erbij."}
-};
+/* areas riders or the research clearly advise against stay in data/flat.json for provenance, but never reach the page */
+const HIDDEN=FLAT.filter(c=>c.tier==="nee");
+const ALL=CLIMBS.concat(FLAT.filter(c=>c.tier!=="nee"));
+const findAny=id=>ALL.find(x=>x.id===id);
 
-const state={mode:"klim",origin:{...ORIGINS[0]},maxh:30,type:"alle",vf:"alle",bike:"alle",sort:"drive",ev:true,tyre:55,layer:"sat",sel:null,picking:false,view:"home"};
-const DATA=()=>state.mode==="vlak"?FLAT:CLIMBS;
-const findAny=id=>CLIMBS.find(x=>x.id===id)||FLAT.find(x=>x.id===id);
+const state={origin:{...ORIGINS[0]},maxh:30,type:"alle",bike:"alle",sort:"drive",ev:true,tyre:55,layer:"sat",sel:null,picking:false,view:"home"};
 
 /* ---------- URL state ---------- */
 function readHash(){
@@ -67,12 +59,11 @@ function readHash(){
     if(o)state.origin={...o};
     else{const m=v.match(/^(-?\d+(\.\d+)?),(-?\d+(\.\d+)?)$/);if(m)state.origin={n:"Eigen punt",id:"custom",lat:+m[1],lng:+m[3]};}
   }
-  state.mode=q.get("m")==="vlak"||FLAT.some(c=>c.id===path)?"vlak":"klim";
   if(q.has("max"))state.maxh=Math.min(30,Math.max(2,+q.get("max")||30));
-  if(q.has("type")&&["alle","parallel","puur"].includes(q.get("type")))state.type=q.get("type");
-  if(q.has("vf")&&["alle","lat","top"].includes(q.get("vf")))state.vf=q.get("vf");
+  if(q.has("type")&&["alle","parallel","puur","vlak","top"].includes(q.get("type")))state.type=q.get("type");
+  if(q.get("m")==="vlak"&&!q.has("type"))state.type="vlak"; /* links from the old Klimmen/Vlak switch */
   if(q.has("bike")&&["alle","gravel","grens","mtb"].includes(q.get("bike")))state.bike=q.get("bike");
-  state.sort=SORTS[state.mode].some(s=>s[0]===q.get("sort"))?q.get("sort"):"drive";
+  state.sort=["drive","alt","gravel","gain"].includes(q.get("sort"))?q.get("sort"):"drive";
   if(q.has("ev"))state.ev=q.get("ev")!=="0";
   if(q.has("tyre"))state.tyre=+q.get("tyre")||55;
   if(q.has("layer")&&["relief","sat"].includes(q.get("layer")))state.layer=q.get("layer");
@@ -80,11 +71,9 @@ function readHash(){
 }
 function writeHash(path){
   const q=new URLSearchParams();
-  if(state.mode==="vlak")q.set("m","vlak");
   if(state.origin.id!==ORIGINS[0].id)q.set("from",state.origin.id==="custom"?state.origin.lat.toFixed(3)+","+state.origin.lng.toFixed(3):state.origin.id);
   if(state.maxh<30)q.set("max",state.maxh);
-  if(state.mode==="klim"&&state.type!=="alle")q.set("type",state.type);
-  if(state.mode==="vlak"&&state.vf!=="alle")q.set("vf",state.vf);
+  if(state.type!=="alle")q.set("type",state.type);
   if(state.bike!=="alle")q.set("bike",state.bike);
   if(state.sort!=="drive")q.set("sort",state.sort);
   if(!state.ev)q.set("ev","0");
@@ -151,7 +140,7 @@ function drawMarkers(rows,fit){
   Object.values(markers).forEach(m=>m.remove());markers={};
   if(popup){popup.remove();popup=null;}
   rows.forEach((c,i)=>{
-    const el=document.createElement("div");el.className="pin"+(c.tier?" flat":"")+(c.done?" done":"")+(state.sel===c.id?" sel":"");
+    const el=document.createElement("div");el.className="pin"+(c.done?" done":"")+(state.sel===c.id?" sel":"");
     el.style.background=BANDCOL[band(c._h)];el.textContent=i+1;el.title=c.name;
     el.addEventListener("click",e=>{e.stopPropagation();focusOn(c,false);});
     markers[c.id]=new maplibregl.Marker({element:el}).setLngLat([c.lng,c.lat]).addTo(map);
@@ -172,7 +161,7 @@ function focusOn(c,fly=true){
   if(fly)map.flyTo({center:[c.lng,c.lat],zoom:Math.max(map.getZoom(),8),duration:RM?0:900});
   if(popup)popup.remove();
   popup=new maplibregl.Popup({offset:18,closeButton:false,maxWidth:"260px"}).setLngLat([c.lng,c.lat])
-    .setHTML('<div class="pop"><span class="pn">'+esc(c.name)+'</span><span class="pm">'+esc(c.area)+', '+fmtH(c._h)+' rijden</span><a href="#/'+c.id+hashQuery()+'">'+COPY[state.mode].see+'</a></div>').addTo(map);
+    .setHTML('<div class="pop"><span class="pn">'+esc(c.name)+'</span><span class="pm">'+esc(c.area)+', '+fmtH(c._h)+' rijden</span><a href="#/'+c.id+hashQuery()+'">'+'Bekijk deze bestemming'+'</a></div>').addTo(map);
 }
 
 /* ---------- list ---------- */
@@ -225,22 +214,23 @@ function cardHTML(c,i){
    tagsHTML(c)+'</button>';
 }
 function rows(){
-  let r=DATA().map(c=>({...c,_h:driveH(state.origin,c,state.ev)}));
+  let r=ALL.map(c=>({...c,_h:driveH(state.origin,c,state.ev)}));
   r=r.filter(c=>c._h<=state.maxh+.001);
-  if(state.mode==="klim"&&state.type!=="alle")r=r.filter(c=>c.type===state.type);
-  if(state.mode==="vlak"&&state.vf==="lat")r=r.filter(c=>c.tier!=="nee");
-  if(state.mode==="vlak"&&state.vf==="top")r=r.filter(c=>c.tier==="top");
+  if(state.type==="vlak")r=r.filter(c=>c.tier);
+  else if(state.type==="top")r=r.filter(c=>c.tier==="top");
+  else if(state.type!=="alle")r=r.filter(c=>c.type===state.type);
   if(state.bike!=="alle")r=r.filter(c=>bikeFor(c)===state.bike);
-  const S={drive:(a,b)=>a._h-b._h,alt:(a,b)=>b.top-a.top,gravel:(a,b)=>b.gravel-a.gravel,gain:(a,b)=>b.gain-a.gain,rank:(a,b)=>a.rank-b.rank};
+  /* areas carry no single top/gravel/gain figure: they sort after the climbs */
+  const by=k=>(a,b)=>(b[k]??-1)-(a[k]??-1);
+  const S={drive:(a,b)=>a._h-b._h,alt:by("top"),gravel:by("gravel"),gain:by("gain")};
   return r.sort(S[state.sort]);
 }
 function render(fit){
   const r=rows();
   $("#cnt").textContent=r.length;
-  const C=COPY[state.mode];
-  $("#cntlbl").textContent=(r.length===1?C.one:C.many)+" binnen "+(state.maxh<30?fmtH(state.maxh):"bereik")+" vanaf "+state.origin.n;
+  $("#cntlbl").textContent=(r.length===1?"bestemming":"bestemmingen")+" binnen "+(state.maxh<30?fmtH(state.maxh):"bereik")+" vanaf "+state.origin.n;
   $("#list").innerHTML=r.length?r.map(cardHTML).join(""):'<div class="empty">Niets binnen deze filters. Rek de rijtijd wat op of zet een filter af.<button class="pill" id="resetBtn" type="button">Zet de filters terug</button></div>';
-  const rb=$("#resetBtn");if(rb)rb.addEventListener("click",()=>{state.maxh=30;state.type="alle";state.vf="alle";state.bike="alle";syncControls();render(true);writeHash("");});
+  const rb=$("#resetBtn");if(rb)rb.addEventListener("click",()=>{state.maxh=30;state.type="alle";state.bike="alle";syncControls();render(true);writeHash("");});
   $$("#list .card").forEach(el=>{
     el.addEventListener("click",()=>{location.hash="#/"+el.dataset.id+hashQuery();});
     el.addEventListener("mouseenter",()=>{const c=r.find(x=>x.id===el.dataset.id);if(c&&window.innerWidth>820)focusOn(c,false);});
@@ -274,33 +264,12 @@ function chipGroup(s,key){
   g.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
     state[key]=b.dataset.f;g.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));render(true);writeHash("");});
 }
-chipGroup("#typeChips","type");chipGroup("#vfChips","vf");chipGroup("#bikeChips","bike");
-$("#modeSwitch").addEventListener("click",e=>{
-  const b=e.target.closest("button");if(!b||b.dataset.mode===state.mode)return;
-  state.mode=b.dataset.mode;state.sel=null;
-  if(!SORTS[state.mode].some(s=>s[0]===state.sort))state.sort="drive";
-  syncControls();render(true);writeHash("");
-});
-let modeShown=null;
-function syncMode(){
-  const m=state.mode,C=COPY[m];
-  $$("#modeSwitch button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.mode===m));
-  $("#typeChips").hidden=m!=="klim";$("#vfChips").hidden=m!=="vlak";
-  document.body.dataset.mode=m;
-  if(modeShown===m)return;modeShown=m;
-  $("#sort").innerHTML=SORTS[m].map(s=>'<option value="'+s[0]+'">'+s[1]+'</option>').join("");
-  $(".top .tag").textContent=C.tag;
-  $(".ticker span").textContent=C.ticker+C.ticker;
-  $("#intro p").textContent=C.intro;
-  $("#map").setAttribute("aria-label","Kaart met "+C.many);
-}
+chipGroup("#typeChips","type");chipGroup("#bikeChips","bike");
 function syncControls(){
-  syncMode();
   sel.value=state.origin.id;
   $("#maxh").value=state.maxh;$("#maxhv").textContent=state.maxh<30?fmtH(state.maxh):"30 uur";
   $("#ev").checked=state.ev;$("#sort").value=state.sort;$("#tyre").value=String(state.tyre);
   $$("#typeChips button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===state.type));
-  $$("#vfChips button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===state.vf));
   $$("#bikeChips button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===state.bike));
 }
 $("#share").addEventListener("click",async()=>{
@@ -348,7 +317,7 @@ function gpxHTML(c){
 }
 function heroHTML(c,h,q){
   return '<div class="hero"><div class="m3d" id="m3d"></div>'+
-   '<a class="back" href="#/'+q+'"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>'+COPY[c.tier?"vlak":"klim"].back+'</a>'+
+   '<a class="back" href="#/'+q+'"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>'+'Alle bestemmingen'+'</a>'+
    '<div class="hero-note"><span>Hoogte 1,4× uitvergroot</span><button type="button" id="spinBtn" aria-pressed="true">Laat draaien</button></div>'+
    '<div class="titlebox"><div class="in"><div class="area">'+esc(c.area)+', '+esc(c.land)+'</div><h1>'+esc(c.name)+'</h1>'+
    '<div class="dh"><b>'+fmtH(h)+'</b> rijden vanaf '+esc(state.origin.n)+(state.ev?', inclusief laadstops':'')+(c.cross?', inclusief overtocht':'')+'</div></div></div></div>';
@@ -381,7 +350,7 @@ function openFlat(c){
      '<div class="stats flatstats"><div class="stat"><div class="v">'+esc(c.loop)+'</div><div class="k">typische rit</div></div>'+
        '<div class="stat"><div class="v">'+esc(c.hm)+'</div><div class="k">klimwerk</div></div>'+
        '<div class="stat"><div class="v">'+esc(c.risk)+'</div><div class="k">grootste risico</div></div>'+
-       '<div class="stat"><div class="v">#'+c.rank+' van '+FLAT.length+'</div><div class="k">onderbouwing door rijders</div></div></div>'+
+       '<div class="stat"><div class="v">'+({ja:"uitgezocht",basic:"eenvoudig",onbekend:"niet onderzocht"})[c.family]+'</div><div class="k">gezinsbasis</div></div></div>'+
      flatTagsHTML(c)+
      '<div class="verdict" id="oordeel"><h2>Is dit de rit waard?</h2>'+esc(c.verdict)+
        (shifted?'<div class="tyreline">Dit oordeel is geschreven voor 55 mm. Op jouw '+state.tyre+' mm tonen we het label één stap strenger: '+BIKELBL[b].toLowerCase()+'.</div>':'')+'</div>'+
@@ -461,10 +430,18 @@ function closeProfile(){
   state.view="home";
   $("#profile").hidden=true;$("#home").removeAttribute("aria-hidden");
   if(map3d){map3d.remove();map3d=null;}if(spin){cancelAnimationFrame(spin);spin=null;}
-  document.title=state.mode==="vlak"?"Piste — vlak grind op weekendafstand":"Piste — onverharde beklimmingen op weekendafstand";
+  document.title="Piste — grind op weekendafstand";
   map.resize();
   const c=rows().find(x=>x.id===state.sel);if(c)focusOn(c,true);
 }
+
+/* ---------- long routes, no-go's, hidden areas ---------- */
+$("#extra").innerHTML=
+  '<details class="xtra"><summary>Lange routes door Nederland en langs de grens <span>'+CORR.routes.length+'</span></summary>'+
+    CORR.routes.map(x=>'<div class="xr"><div class="xn">'+esc(x.n)+' <small>'+esc(x.km)+'</small></div><p>'+esc(x.t)+'</p>'+(x.w?'<p class="xw">'+esc(x.w)+'</p>':'')+srcLink(x.u)+'</div>').join("")+'</details>'+
+  '<details class="xtra"><summary>Niet doen: verboden of geen gravel <span>'+CORR.nogo.length+'</span></summary>'+
+    CORR.nogo.map(x=>'<div class="xr"><div class="xn">'+esc(x.n)+'</div><p>'+esc(x.t)+'</p>'+srcLink(x.u)+'</div>').join("")+'</details>';
+$("#hiddenlist").textContent=HIDDEN.map(c=>c.name).join(", ");
 
 /* ---------- routing ---------- */
 function route(){

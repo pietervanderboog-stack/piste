@@ -1,9 +1,9 @@
 # Piste
 
-Onverharde beklimmingen én vlakke gravelgebieden in Europa die in een weekend passen. Schakel bovenaan de lijst tussen Klimmen en Vlak. Gesorteerd op rijtijd vanaf jouw vertrekpunt, met oordelen van rijders die er geweest zijn en een bron bij elke bewering.
+Onverharde beklimmingen en gravelgebieden in Europa die in een weekend passen, in één lijst en op één kaart. Gesorteerd op rijtijd vanaf jouw vertrekpunt, met oordelen van rijders die er geweest zijn en een bron bij elke bewering.
 
 - `index.html`, `styles.css`, `app.js` — de site, geen build-stap. MapLibre GL voor de kaart en het 3D-terrein, alleen open kaartbronnen (Sentinel-2 cloudless, Terrarium-hoogtedata, OpenFreeMap).
-- `data/climbs.json` — 35 beklimmingen. `data/flat.json` — 19 vlakke gebieden met gezinsbasis, uit `research/vlak-onderzoek-2026-09.md`. `data/logistics.json` — logistiekdossiers per klim. `data/origins.json` — vertrekpunten.
+- `data/climbs.json` — 35 beklimmingen. `data/flat.json` — gravelgebieden met gezinsbasis, uit `research/vlak-onderzoek-2026-09.md` en `research/corridors-nl-be-grens-2026-09.md`; gebieden met `tier: "nee"` blijven als herkomst in het bestand maar komen niet op de site. `data/corridors.json` — lange routes en no-go's. `data/logistics.json` — logistiekdossiers per klim. `data/origins.json` — vertrekpunten.
 - `research/` — briefing, verificatierapporten en ruwe dossiers van de onderzoeksronde. Provenance, geen runtime.
 - `tools/apply-research.cjs` — voegt `research/logi/*.json` samen in `data/logistics.json` en past gecontroleerde fixes uit `research/verify/*.json` toe.
 - `archive/` — de oorspronkelijke single-file versie.

@@ -1,0 +1,78 @@
+{
+ "routes": [
+  {
+   "n": "Pieterpad Divide",
+   "km": "560 km, vijf dagen",
+   "t": "Pieterburen naar de Sint-Pietersberg, gebouwd om níet over wandelpaden te gaan. Hotspots: Lochem, Ruurlo, Zelhem, het pontje bij Millingen, Groesbeek en de Maasduinen. Voor een weekend knip je er één regio uit.",
+   "w": "Betaald ebook; het enthousiasme komt van de makers, onafhankelijke verslagen niet gevonden.",
+   "u": "https://cobblescycling.com/2024/11/22/pieterpad-divide-gravel-bikepacking/"
+  },
+  {
+   "n": "Grenspaal 600",
+   "km": "600 km, vijf dagen",
+   "t": "Cadzand-Bad naar het Drielandenpunt, langs de hele Nederlands-Belgische grens, van grenspaal 369 naar grenspaal 1.",
+   "w": "Betaald ebook (€ 12) van de makers zelf.",
+   "u": "https://cobblescycling.com/2025/12/09/gravel-bikepacking-nederland-belgie-600km-grenspalen-grenspaal-600/"
+  },
+  {
+   "n": "Limburg Divide",
+   "km": "vijf etappes van 29–66 km",
+   "t": "Nijmegen, Afferden, Velden, Herkenbosch, Schinnen. De etappeplaatsen zijn campings, dus direct bruikbaar als basiskamp.",
+   "w": "",
+   "u": "https://outdoorinspiratie.nl/limburg-divide-geile-strecke/"
+  },
+  {
+   "n": "Trans Nederland gravelroute",
+   "km": "Groningen naar Vaals",
+   "t": "Gratis en uitgebreid gedocumenteerd op Komoot, afgeleid van een MTB-route.",
+   "w": "De maker zegt zelf dat de route niet gravelcode-proof is en nog wandelstukken bevat. Haal die eruit.",
+   "u": "https://www.komoot.com/nl-nl/collection/1296085/-trans-nederland-gravelroute-bikepacking"
+  },
+  {
+   "n": "Expeditie Noord-Zuid",
+   "km": "Groningen naar de Vaalserberg",
+   "t": "Slimme aanpak van Gravelrides.cc: bestaande goede gravelroutes aaneengeregen tot een gravelversie van het Pieterpad.",
+   "w": "Geen onafhankelijke ritverslagen gevonden.",
+   "u": "https://indekopgroep.nl/expeditie-noord-zuid/"
+  },
+  {
+   "n": "Gravelty Pieter",
+   "km": "620 km in vier etappes",
+   "t": "Georganiseerd meerdaags event van Pieterburen naar de Sint-Pietersberg.",
+   "w": "Dag 1 is volgens de organisatie maar 50% onverhard; de route volgt het wandelpad waar mogelijk en toegestaan.",
+   "u": "https://www.nltourrides.nl/gravelty-pieter/"
+  }
+ ],
+ "nogo": [
+  {
+   "n": "Het Pieterpad zelf",
+   "t": "Een wandelpad. Het officiële Pieterfietspad volgt fietsknooppunten, dus asfalt. Gebruik een van de gravelvarianten.",
+   "u": "https://racefietsblog.nl/het-pieterpad-op-de-fiets-bikepacken-langs-het-fietserpad/"
+  },
+  {
+   "n": "Grenspark Kalmthoutse Heide",
+   "t": "Alleen singletracks en openbare wegen, MTB-vignet verplicht, € 95 boete op verboden plekken zoals de Ossendrechtse Duinen. 26 km singletrack is geen gravelbestemming.",
+   "u": "https://grensparkkalmthoutseheide.com/mountainbiken-veelgestelde-vragen/"
+  },
+  {
+   "n": "De kern van de Peel",
+   "t": "Fietsen door de natuurgebieden zelf is grotendeels niet toegestaan. De randen wel.",
+   "u": "https://npdepeel.nl/nl/doen-en-beleven/fietsen"
+  },
+  {
+   "n": "Bossen rond Camerig",
+   "t": "In Zuid-Limburg niet vrij te fietsen.",
+   "u": "https://www.komoot.com/collection/1145050/-limburgs-finest-gravel"
+  },
+  {
+   "n": "Delen van de Brabantse Wal",
+   "t": "Sinds 2023 verboden; oude GPX-bestanden zijn onbetrouwbaar.",
+   "u": "https://gravelritten.nl/2021/03/30/de-brabantse-wal-a-k-a-platte-tieten-gravelrit/"
+  },
+  {
+   "n": "Bels Lijntje",
+   "t": "Geen verbod, maar volledig geasfalteerd en smal. Verbinding, geen bestemming.",
+   "u": "https://fietsperspectief.nl/bels-lijntje-fietsroute-tilburg-turnhout-via-knooppunten/"
+  }
+ ]
+}
